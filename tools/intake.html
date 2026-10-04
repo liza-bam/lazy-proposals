@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Proposal intake — Lazy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&display=swap">
+<style>
+  :root { --font: "Noto Serif", serif; --ink: #17363c; --ink-mute: #8fa3a4; --coral: #f9426f; --teal: #2fa18c;
+          --line: #d3ede6; --cream: #fffdf6; --white: #fff; --r2: 12px; --r-btn: 8px;
+          --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --col: 1000px; --frame: 1px; --side-w: 280px; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.5 var(--font); }
+  .in { max-width: var(--col); margin: 0 auto; padding: var(--s4) var(--s3); display: grid; grid-template-columns: var(--side-w) 1fr; gap: var(--s4); }
+  h1 { grid-column: 1 / -1; margin: 0; font-size: 26px; }
+  .box { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r2); padding: var(--s3); display: flex; flex-direction: column; gap: var(--s2); }
+  .list button { text-align: left; background: none; border: 0; padding: var(--s2); border-radius: var(--r-btn); font: inherit; color: inherit; cursor: pointer; }
+  .list button[aria-current="true"] { background: var(--line); }
+  .main { display: flex; flex-direction: column; gap: var(--s3); }
+  label { display: flex; flex-direction: column; gap: var(--s1); color: var(--ink-mute); font-size: 14px; }
+  input, select { font: inherit; color: var(--ink); padding: var(--s2); border: var(--frame) solid var(--line); border-radius: var(--r-btn); }
+  .go { align-self: flex-start; background: var(--coral); color: var(--white); border: 0; padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; }
+  .msg { color: var(--coral); }
+  .done a { color: var(--teal); overflow-wrap: anywhere; }
+  .muted { color: var(--ink-mute); }
+</style>
+</head>
+<body>
+<div class="in">
+  <h1>Proposal intake</h1>
+  <aside class="main">
+    <div class="box list" id="clients"></div>
+    <form class="box" id="new-client">
+      <strong>New client</strong>
+      <label>Name<input name="name" required></label>
+      <label>Email<input name="email" type="email"></label>
+      <button class="go">Add client</button>
+    </form>
+  </aside>
+  <section class="main" id="detail"><div class="box muted">Pick a client, or add one.</div></section>
+</div>
+<script>
+let clients = [], current = null;
+const $ = (s) => document.querySelector(s);
+const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+async function api(url, data) {
+  const r = await fetch(url, data ? { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(data) } : {});
+  const j = await r.json(); if (!r.ok) throw new Error(j.error || r.status); return j;
+}
+const form = (f) => Object.fromEntries(new FormData(f));
+async function load(pick) {
+  clients = await api('/api/clients');
+  if (pick) current = pick;
+  $('#clients').innerHTML = '<strong>Clients (' + clients.length + ')</strong>' + clients.map((c) =>
+    '<button data-id="' + esc(c.id) + '" aria-current="' + (c.id === current) + '">' + esc(c.name) +
+    ' <span class="muted">· ' + c.properties.length + ' properties</span></button>').join('');
+  render();
+}
+function render() {
+  const c = clients.find((x) => x.id === current);
+  if (!c) return;
+  const props = c.properties.map((p) => '<option value="' + esc(p.id) + '">' + esc(p.name) + '</option>').join('');
+  const name = (id) => (c.properties.find((p) => p.id === id) || {}).name || id;
+  $('#detail').innerHTML =
+    '<div class="box"><strong>' + esc(c.name) + '</strong><span class="muted">' + esc(c.email) + '</span></div>' +
+    '<form class="box" id="new-prop"><strong>Add a property</strong><label>Property name<input name="name" required></label><button class="go">Add property</button></form>' +
+    (props ? '<form class="box" id="new-prop-proposal"><strong>New proposal</strong>' +
+      '<label>Property<select name="property">' + props + '</select></label>' +
+      '<label>Website address<input name="siteUrl" type="url" required placeholder="https://"></label>' +
+      '<label>Editor demo link<input name="editorUrl" type="url" required placeholder="https://app.lazy.vacations/…"></label>' +
+      '<label>Login<input name="login" required></label>' +
+      '<label>Password<input name="password" required></label>' +
+      '<button class="go">Make proposal</button><span class="msg" id="msg"></span></form>' : '') +
+    '<div class="box done"><strong>Proposals (' + c.proposals.length + ')</strong>' + (c.proposals.map((p) =>
+      '<div>' + esc(name(p.property)) + ' · ' + esc(p.date) + ' — <a href="/p/' + esc(p.token) + '/" target="_blank">page</a> · ' +
+      '<a href="/email/' + esc(p.token) + '" target="_blank">email</a> · <span class="muted">p/' + esc(p.token) + '/</span></div>').join('') || '<span class="muted">None yet.</span>') + '</div>';
+}
+document.addEventListener('click', (e) => { const b = e.target.closest('#clients button'); if (b) { current = b.dataset.id; load(); } });
+document.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const f = e.target, d = form(f);
+  try {
+    if (f.id === 'new-client') { const c = await api('/api/client', d); f.reset(); await load(c.id); }
+    if (f.id === 'new-prop') { await api('/api/property', Object.assign(d, { client: current })); await load(); }
+    if (f.id === 'new-prop-proposal') { $('#msg').textContent = 'Building…'; await api('/api/proposal', Object.assign(d, { client: current })); await load(); }
+  } catch (er) { const m = $('#msg'); if (m) m.textContent = er.message; else alert(er.message); }
+});
+load();
+</script>
+</body>
+</html>

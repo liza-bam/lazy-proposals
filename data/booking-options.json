@@ -1,0 +1,57 @@
+[
+  {
+    "name": "Stripe Payments",
+    "about": "Payment processing only — no calendar or channel sync. A Stripe Payment Link is a ready-made payment page you create in a few clicks.",
+    "withLazy": "Paste the Payment Link into your property's booking link on your Lazy account; the Book button on your site opens it.",
+    "bestFor": "Taking deposits or full payment for stays you confirm yourself.",
+    "price": "2.9% + 30¢ per card payment, no monthly fee",
+    "services": ["Payment links and checkout", "Cards, Apple Pay and Google Pay", "Fraud screening", "Payouts to your bank"],
+    "url": "https://stripe.com/payments/payment-links",
+    "source": "https://stripe.com/pricing",
+    "checked": "2026-10-04"
+  },
+  {
+    "name": "OwnerRez",
+    "about": "Full vacation rental software: channel management, CRM, property management, accounting, messaging and websites, for single homeowners up to large managers.",
+    "withLazy": "Paste your OwnerRez booking widget or link into your Lazy account; the Book button on your site opens it.",
+    "bestFor": "Hosts who want one system for Airbnb, Vrbo and direct bookings, with agreements and accounting.",
+    "price": "from $88/month for 1 property",
+    "services": ["Channel manager: Airbnb, Vrbo, Booking.com, Google", "Direct booking and payments", "Guest messaging", "Rental agreements and e-signatures"],
+    "url": "https://www.ownerrez.com",
+    "source": "https://www.ownerrez.com/pricing",
+    "checked": "2026-10-04"
+  },
+  {
+    "name": "Lodgify",
+    "about": "A booking system with an embeddable booking widget: generate the code in Lodgify and paste it into any website to take bookings and payments, with calendar sync and channel management.",
+    "withLazy": "Paste the Lodgify booking widget code into your Lazy account; it shows on your site as the booking box.",
+    "bestFor": "Hosts who want a booking box with live availability right on their own site.",
+    "price": "from about $16/month (yearly) or $23 month to month, per property; 1.9% booking fee below Ultimate",
+    "services": ["Embeddable booking widget", "Channel manager", "Online payments", "Central calendar and inbox"],
+    "url": "https://www.lodgify.com",
+    "source": "https://frontdeskreview.com/software/vacation-rental-software/lodgify/",
+    "checked": "2026-10-04"
+  },
+  {
+    "name": "Hospitable",
+    "about": "Automation-first software for short-term rentals: one inbox and calendar across Airbnb, Vrbo and Booking.com, with automated messages; the Professional plan adds a direct booking site.",
+    "withLazy": "Paste your Hospitable direct booking link into your Lazy account; the Book button on your site opens it.",
+    "bestFor": "Hosts already on Airbnb who want messaging and turnovers on autopilot.",
+    "price": "Professional about $59/month for 2 properties, $15 each extra",
+    "services": ["Direct booking website", "Airbnb, Vrbo, Booking.com sync", "Automated guest messaging", "Guest payment collection"],
+    "url": "https://hospitable.com",
+    "source": "https://www.roommaster.com/blog/hospitable-pricing",
+    "checked": "2026-10-04"
+  },
+  {
+    "name": "Guesty",
+    "about": "Property management software; Guesty Lite is its plan for hosts with 1–3 listings, syncing Airbnb, Booking.com and Vrbo into one calendar and inbox.",
+    "withLazy": "Paste your Guesty booking link into your Lazy account; the Book button on your site opens it.",
+    "bestFor": "Small hosts who may grow into a larger property manager setup.",
+    "price": "Guesty Lite from about $9/month per listing (1–3 listings)",
+    "services": ["Airbnb, Booking.com, Vrbo sync", "Multi-calendar", "Unified inbox", "Add-ons: pricing, locks, damage protection"],
+    "url": "https://www.guesty.com",
+    "source": "https://www.guesty.com/pricing/",
+    "checked": "2026-10-04"
+  }
+]

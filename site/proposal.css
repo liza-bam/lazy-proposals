@@ -1,0 +1,60 @@
+/* Lazy brand tokens, as on lazy.vacations (rentals-marketing/site/index.html). */
+:root {
+  --font: "Noto Serif", serif;
+  --white: #fff;
+  --ink: #17363c;
+  --ink-mute: #8fa3a4;
+  --coral: #f9426f;
+  --coral-hover: #e6295a;
+  --teal: #2fa18c;
+  --tint: #eafaf6;
+  --line: #d3ede6;
+  --cream: #fffdf6;
+  --r2: 12px;
+  --r3: 22px;
+  --r-btn: 8px;
+  --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --s5: 40px; --s6: 64px;
+  --col: 880px;
+  --card-min: 240px;
+  --logo-h: 40px;
+  --text: 17px; --text-sm: 14px; --text-lg: 22px; --text-xl: 36px;
+  --lh: 1.5;
+  --frame: 1px;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--cream); color: var(--ink); font: var(--text)/var(--lh) var(--font); }
+.pp { max-width: var(--col); margin: 0 auto; padding: var(--s5) var(--s3) var(--s6); display: flex; flex-direction: column; gap: var(--s5); }
+/* The logo file is white (drawn for the marketing header); here it is painted in the ink. */
+.pp__logo { display: block; height: var(--logo-h); aspect-ratio: 430 / 250; background: var(--ink);
+  -webkit-mask: url(lazy-logo.svg) center / contain no-repeat; mask: url(lazy-logo.svg) center / contain no-repeat; }
+.pp__top { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); }
+.pp__print { font: inherit; cursor: pointer; }
+.pp__title { margin: 0; font-size: var(--text-xl); line-height: 1.15; }
+.pp__sub { margin: var(--s2) 0 0; color: var(--ink-mute); }
+.pp__sec { display: flex; flex-direction: column; gap: var(--s3); }
+.pp__h { margin: 0; font-size: var(--text-lg); }
+.pp__box { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r3); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s2); }
+.pp__row { display: flex; gap: var(--s2); flex-wrap: wrap; }
+.pp__label { color: var(--ink-mute); min-width: 7em; }
+.pp__value { font-weight: 600; overflow-wrap: anywhere; }
+a { color: var(--teal); }
+.pp__btn { align-self: flex-start; display: inline-block; padding: var(--s2) var(--s4); border-radius: var(--r-btn); background: var(--coral); color: var(--white); text-decoration: none; font-weight: 600; }
+.pp__btn:hover { background: var(--coral-hover); }
+.pp__cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr)); gap: var(--s3); }
+.pp__card { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r3); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s2); break-inside: avoid; }
+.pp__card h3 { margin: 0; font-size: var(--text-lg); }
+.pp__card p { margin: 0; }
+.pp__about { color: var(--ink); }
+.pp__btn--ghost { background: none; color: var(--coral); border: var(--frame) solid var(--coral); margin-top: auto; }
+.pp__btn--ghost:hover { background: var(--coral); color: var(--white); }
+.pp__url { color: var(--ink-mute); font-size: var(--text-sm); overflow-wrap: anywhere; }
+.pp__price { font-weight: 600; }
+.pp__card ul { margin: 0; padding-left: var(--s4); }
+.pp__note { color: var(--ink-mute); font-size: var(--text-sm); }
+@media print {
+  .pp__logo { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { background: var(--white); }
+  .pp { padding: 0; gap: var(--s4); }
+  .pp__print { display: none; }
+  .pp__btn--ghost { border: 0; padding: 0; color: var(--teal); }
+}

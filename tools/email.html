@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Email — Lazy proposal</title>
+<style>
+  :root { --ink: #17363c; --ink-mute: #8fa3a4; --coral: #f9426f; --teal: #2fa18c; --line: #d3ede6; --cream: #fffdf6; --white: #fff;
+          --s2: 8px; --s3: 16px; --r-btn: 8px; --frame: 1px; --col: 760px; --frame-h: 80vh; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.5 Georgia, serif; }
+  .em { max-width: var(--col); margin: 0 auto; padding: var(--s3); display: flex; flex-direction: column; gap: var(--s3); }
+  .row { display: flex; gap: var(--s2); align-items: center; flex-wrap: wrap; }
+  .lbl { color: var(--ink-mute); min-width: 5em; }
+  .go { background: var(--coral); color: var(--white); border: 0; padding: var(--s2) var(--s3); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; }
+  .ghost { background: none; color: var(--coral); border: var(--frame) solid var(--coral); }
+  .ok { color: var(--teal); }
+  iframe { width: 100%; height: var(--frame-h); border: var(--frame) solid var(--line); background: var(--white); }
+</style>
+</head>
+<body>
+<div class="em">
+  <div class="row"><span class="lbl">To</span><strong id="to"></strong></div>
+  <div class="row"><span class="lbl">Subject</span><strong id="subject"></strong><button class="go ghost" id="copy-subject">Copy subject</button></div>
+  <div class="row"><button class="go" id="copy">Copy email</button><span class="ok" id="ok"></span></div>
+  <iframe id="preview" title="Email preview"></iframe>
+</div>
+<script>
+const meta = __META__, html = __HTML__;
+document.getElementById('to').textContent = meta.to || '—';
+document.getElementById('subject').textContent = meta.subject;
+document.getElementById('preview').srcdoc = html;
+const ok = (t) => { document.getElementById('ok').textContent = t; };
+document.getElementById('copy').onclick = async () => {
+  // Rich HTML on the clipboard: pasted into Gmail's compose box it keeps its formatting.
+  const item = new ClipboardItem({ 'text/html': new Blob([html], { type: 'text/html' }),
+    'text/plain': new Blob([document.getElementById('preview').contentDocument.body.innerText], { type: 'text/plain' }) });
+  await navigator.clipboard.write([item]);
+  ok('Copied — paste into a new email.');
+};
+document.getElementById('copy-subject').onclick = async () => { await navigator.clipboard.writeText(meta.subject); ok('Subject copied.'); };
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "lazy-proposals",
+  "private": true,
+  "scripts": {
+    "intake": "node tools/intake.js",
+    "build": "node tools/build.js"
+  }
+}
