@@ -62,6 +62,7 @@ function page(client, prop, pr, settings, options) {
   </section>
   <section class="pp__sec">
     <h2 class="pp__h">4. Direct booking options</h2>
+    <p class="pp__intro">${esc(settings.bookingIntro)}</p>
     <div class="pp__cards">${cards}
     </div>
   </section>
@@ -101,6 +102,7 @@ function email(client, prop, pr, settings, options, url) {
   ${h('3. About Lazy')}
   <tr><td>${btn(settings.whitepaperUrl, 'Read the whitepaper')}</td></tr>
   ${h('4. Direct booking options')}
+  <tr><td style="${font}font-size:16px;line-height:1.6;color:${C.ink};padding:0 0 14px;">${esc(settings.bookingIntro)}</td></tr>
   ${engines}
   <tr><td style="padding-top:16px;">${btn(url, 'See the full proposal')}</td></tr>
   <tr><td style="${font}font-size:13px;color:${C.mute};padding-top:16px;">Prices are approximate, as listed by each provider on ${esc(options[0] ? options[0].checked : '')}.</td></tr>

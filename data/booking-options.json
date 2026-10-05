@@ -1,20 +1,5 @@
 [
   {
-    "name": "Stripe Payments",
-    "about": "Payments only: a ready-made payment link for deposits or full payment. No calendar or channel sync.",
-    "price": "2.9% + 30¢ per card payment, no monthly fee",
-    "services": [
-      "Payment links and checkout",
-      "Cards, Apple Pay and Google Pay",
-      "Fraud screening",
-      "Payouts to your bank",
-      "Lazy rental agreement included"
-    ],
-    "url": "https://stripe.com/payments/payment-links",
-    "source": "https://stripe.com/pricing",
-    "checked": "2026-10-04"
-  },
-  {
     "name": "OwnerRez",
     "about": "All-in-one rental software: Airbnb, Vrbo and direct bookings in one system, with agreements and accounting.",
     "price": "from $88/month for 1 property",
