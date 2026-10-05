@@ -6,6 +6,7 @@
   --ink-mute: #8fa3a4;
   --coral: #f9426f;
   --coral-hover: #e6295a;
+  --logo-coral: #ff6f5e;   /* the editor's --la-coral, the colour the logo wears */
   --teal: #2fa18c;
   --tint: #eafaf6;
   --line: #d3ede6;
@@ -25,8 +26,8 @@
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--cream); color: var(--ink); font: var(--text)/var(--lh) var(--font); }
 .pp { max-width: var(--col); margin: 0 auto; padding: var(--s5) var(--s3) var(--s6); display: flex; flex-direction: column; gap: var(--s5); }
-/* The logo file is white (drawn for the marketing header); here it is painted in the ink. */
-.pp__logo { display: block; height: var(--logo-h); aspect-ratio: 430 / 250; background: var(--ink);
+/* The Lazy logo (app.lazy.vacations/logos/lazy.svg), painted in the editor's coral. */
+.pp__logo { display: block; height: var(--logo-h); aspect-ratio: 499.14 / 329.7; background: var(--logo-coral);
   -webkit-mask: url(lazy-logo.svg) center / contain no-repeat; mask: url(lazy-logo.svg) center / contain no-repeat; }
 .pp__top { display: flex; align-items: center; justify-content: space-between; gap: var(--s3); }
 .pp__print { font: inherit; cursor: pointer; }
