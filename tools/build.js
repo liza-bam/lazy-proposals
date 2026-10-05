@@ -84,7 +84,7 @@ function email(client, props, pr, settings) {
   ${h(many ? '1. Your websites' : '1. Your website')}
   ${props.map((p) => `<tr><td style="padding-bottom:10px;">${btn(p.siteUrl, many ? 'Visit ' + p.name : 'Visit your website')}</td></tr>`).join('')}
   ${h('2. Try the editor')}
-  ${props.map((p) => `<tr><td style="padding-bottom:10px;">${btn(p.editorUrl, many ? 'Open the editor for ' + p.name : 'Open the editor')}</td></tr>`).join('')}
+  <tr><td>${btn(settings.editorUrl, 'Open the editor')}</td></tr>
   ${pr.login ? `<tr><td style="${text}padding-top:12px;">Your login: <strong>${esc(pr.login)}</strong>. ${esc(settings.editorNote)}</td></tr>` : ''}
   ${h('3. About Lazy')}
   <tr><td>${btn(settings.whitepaperUrl, 'Read the whitepaper')}</td></tr>

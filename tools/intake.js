@@ -67,7 +67,7 @@ http.createServer(async (req, res) => {
     if (req.method === 'POST' && req.url === '/api/property/update') {   // same id, so its proposals stay linked
       const b = await body(req), c = all().find((x) => x.id === b.client), p = c && c.properties.find((x) => x.id === b.id);
       if (!p || !String(b.name || '').trim()) return send(res, 400, { error: 'Give the property a name.' });
-      p.name = b.name.trim(); p.siteUrl = String(b.siteUrl || '').trim(); p.editorUrl = String(b.editorUrl || '').trim(); save(c);
+      p.name = b.name.trim(); p.siteUrl = String(b.siteUrl || '').trim(); save(c);
       for (const pr of c.proposals) if ((pr.properties || []).includes(p.id)) build(pr.token);
       return send(res, 200, c);
     }
@@ -76,15 +76,15 @@ http.createServer(async (req, res) => {
       if (!c || !String(b.name || '').trim()) return send(res, 400, { error: 'Pick a client and give the property a name.' });
       let id = slug(b.name), n = 2;
       while (c.properties.some((p) => p.id === id)) id = slug(b.name) + '-' + n++;
-      c.properties.push({ id, name: b.name.trim(), siteUrl: String(b.siteUrl || '').trim(), editorUrl: String(b.editorUrl || '').trim() });
+      c.properties.push({ id, name: b.name.trim(), siteUrl: String(b.siteUrl || '').trim() });
       save(c); return send(res, 200, c);
     }
     if (req.method === 'POST' && req.url === '/api/proposal') {
       const b = await body(req), c = all().find((x) => x.id === b.client);
       const ids = [].concat(b.properties || []).filter((id) => c && c.properties.some((p) => p.id === id));
       if (!ids.length) return send(res, 400, { error: 'Tick at least one property.' });
-      const bare = c.properties.filter((p) => ids.includes(p.id) && (!p.siteUrl || !p.editorUrl)).map((p) => p.name);
-      if (bare.length) return send(res, 400, { error: 'Add the website and editor link for: ' + bare.join(', ') + '.' });
+      const bare = c.properties.filter((p) => ids.includes(p.id) && !p.siteUrl).map((p) => p.name);
+      if (bare.length) return send(res, 400, { error: 'Add the website for: ' + bare.join(', ') + '.' });
       const pr = { token: crypto.randomBytes(6).toString('hex'), properties: ids, date: new Date().toISOString().slice(0, 10) };
       c.proposals.push(pr); save(c);
       const built = build(pr.token);

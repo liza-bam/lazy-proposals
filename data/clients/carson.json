@@ -6,14 +6,12 @@
     {
       "id": "saddleback-ski-lodge-lazy-vacations",
       "name": "Saddleback Chalet",
-      "siteUrl": "https://saddleback-chalet.lazy.vacations/",
-      "editorUrl": "https://app.lazy.vacations/palette-editor.dc.html?property=saddleback-chalet"
+      "siteUrl": "https://saddleback-chalet.lazy.vacations/"
     },
     {
       "id": "saddleback-lodge",
       "name": "Saddleback Lodge",
-      "siteUrl": "",
-      "editorUrl": ""
+      "siteUrl": "https://saddleback-ski-lodge.lazy.vacations/"
     }
   ],
   "proposals": [
@@ -23,6 +21,14 @@
       "properties": [
         "saddleback-ski-lodge-lazy-vacations"
       ]
+    },
+    {
+      "token": "e156a27aeeee",
+      "properties": [
+        "saddleback-ski-lodge-lazy-vacations",
+        "saddleback-lodge"
+      ],
+      "date": "2026-10-05"
     }
   ],
   "login": "ryan-carson",

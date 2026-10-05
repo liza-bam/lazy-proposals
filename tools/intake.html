@@ -84,12 +84,10 @@ function render() {
       '<span class="saved" aria-live="polite"></span></form>' +
     c.properties.map((p) => '<details class="box acc" data-acc="' + esc(p.id) + '"' + (openProps.has(p.id) ? ' open' : '') + '><summary>' + esc(p.name) + '</summary><form data-prop="' + esc(p.id) + '" class="acc__body">' +
       field('Property name', 'name', p.name, 'required') + field('Website address', 'siteUrl', p.siteUrl, 'type="url" placeholder="https://"') +
-      field('Editor link', 'editorUrl', p.editorUrl, 'type="url" placeholder="https://app.lazy.vacations/…"') +
       '<span class="saved" aria-live="polite"></span></form></details>').join('') +
     (!addingProp ? '<button class="go" id="add-prop">Add property</button>' :
     '<form class="box" id="new-prop"><strong>New property</strong>' +
       field('Property name', 'name', '', 'required') + field('Website address', 'siteUrl', '', 'type="url" placeholder="https://"') +
-      field('Editor link', 'editorUrl', '', 'type="url" placeholder="https://app.lazy.vacations/…"') +
       '<div class="row"><button class="go">Add property</button><button type="button" class="ghost" id="cancel-prop">Cancel</button></div></form>') +
     (c.properties.length ? '<form class="box" id="new-proposal"><strong>New proposal</strong><span class="muted">Tick the properties it covers.</span>' +
       c.properties.map((p) => '<label class="tick"><input type="checkbox" name="f_properties" value="' + esc(p.id) + '"> ' + esc(p.name) + '</label>').join('') +
