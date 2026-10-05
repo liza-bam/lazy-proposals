@@ -14,7 +14,7 @@ function clients() {
 }
 
 function page(client, prop, pr, settings, options) {
-  const cards = options.map((o) => `
+  const card = (o) => `
       <article class="pp__card">
         <header class="pp__cardhead">
           <h3>${esc(o.name)}</h3>
@@ -26,7 +26,10 @@ function page(client, prop, pr, settings, options) {
           <a class="pp__btn pp__btn--ghost" href="${esc(o.url)}" target="_blank" rel="noopener">Visit ${esc(o.name)} →</a>
           <span class="pp__note">Approximate price, checked ${esc(o.checked)}</span>
         </footer>
-      </article>`).join('');
+      </article>`;
+  // Payments (Stripe) stand before the booking platforms.
+  const pay = options.filter((o) => o.kind === 'payments').map(card).join('');
+  const cards = options.filter((o) => o.kind !== 'payments').map(card).join('');
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -62,6 +65,8 @@ function page(client, prop, pr, settings, options) {
   </section>
   <section class="pp__sec">
     <h2 class="pp__h">4. Direct booking options</h2>
+    <div class="pp__cards">${pay}
+    </div>
     <p class="pp__intro">${esc(settings.bookingIntro)}</p>
     <div class="pp__cards">${cards}
     </div>
@@ -78,7 +83,7 @@ function email(client, prop, pr, settings, options, url) {
   const font = "font-family:'Noto Serif',Georgia,serif;";
   const h = (t) => `<tr><td style="${font}font-size:20px;font-weight:600;color:${C.ink};padding:28px 0 10px;">${t}</td></tr>`;
   const btn = (u, t) => `<a href="${esc(u)}" style="display:inline-block;background:${C.coral};color:${C.white};text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;${font}">${esc(t)}</a>`;
-  const engines = options.map((o) => `
+  const engine = (o) => `
       <tr><td style="padding:0 0 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.white};border:1px solid ${C.line};border-radius:12px;">
         <tr><td style="padding:16px 20px;${font}font-size:15px;line-height:1.55;color:${C.ink};">
           <div style="font-size:18px;font-weight:600;">${esc(o.name)}</div>
@@ -86,7 +91,9 @@ function email(client, prop, pr, settings, options, url) {
           <div style="margin:4px 0 8px;">${esc(o.about)}</div>
           <div style="color:${C.mute};font-size:14px;">${o.services.map(esc).join(' · ')}</div>
           <div style="margin-top:12px;">${btn(o.url, 'Visit ' + o.name + ' →')}</div>
-        </td></tr></table></td></tr>`).join('');
+        </td></tr></table></td></tr>`;
+  const payEngines = options.filter((o) => o.kind === 'payments').map(engine).join('');
+  const engines = options.filter((o) => o.kind !== 'payments').map(engine).join('');
   const subject = 'Your Lazy proposal — ' + prop.name;
   const html = `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>${esc(subject)}</title></head>
@@ -102,6 +109,7 @@ function email(client, prop, pr, settings, options, url) {
   ${h('3. About Lazy')}
   <tr><td>${btn(settings.whitepaperUrl, 'Read the whitepaper')}</td></tr>
   ${h('4. Direct booking options')}
+  ${payEngines}
   <tr><td style="${font}font-size:16px;line-height:1.6;color:${C.ink};padding:0 0 14px;">${esc(settings.bookingIntro)}</td></tr>
   ${engines}
   <tr><td style="padding-top:16px;">${btn(url, 'See the full proposal')}</td></tr>
