@@ -106,7 +106,7 @@ const pause = (ms) => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 
 
 // Chrome prints the whitepaper in about a second but never exits on its own, so it is stopped
 // as soon as the PDF stops growing; its throwaway profile and any process left on it go with it.
-function pdf(htmlFile, pdfFile) {
+function pdfOnce(htmlFile, pdfFile) {
   const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
   const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'lazy-proposals-chrome-'));
   fs.rmSync(pdfFile, { force: true });
@@ -125,7 +125,11 @@ function pdf(htmlFile, pdfFile) {
     spawnSync('pkill', ['-9', '-f', profile]);
     fs.rmSync(profile, { recursive: true, force: true });
   }
-  if (!fs.existsSync(pdfFile) || !fs.statSync(pdfFile).size) throw new Error('The whitepaper PDF was not written.');
+  return fs.existsSync(pdfFile) && fs.statSync(pdfFile).size > 0;
+}
+// Chrome now and then starts without printing; one more try covers it.
+function pdf(htmlFile, pdfFile) {
+  if (!pdfOnce(htmlFile, pdfFile) && !pdfOnce(htmlFile, pdfFile)) throw new Error('The whitepaper PDF was not written.');
 }
 
 function build(only) {

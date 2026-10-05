@@ -54,9 +54,6 @@ a { color: var(--teal); }
 .pp__btn--ghost { background: none; color: var(--coral); border: var(--frame) solid var(--coral); white-space: nowrap; }
 .pp__btn--ghost:hover { background: var(--coral); color: var(--white); }
 .pp__note { color: var(--ink-mute); font-size: var(--text-sm); }
-/* A site built with Lazy: its screenshot, linking to it (lazy.html). */
-.pp__shot { display: flex; flex-direction: column; gap: var(--s2); text-decoration: none; color: var(--ink); font-weight: 600; }
-.pp__shot img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; border: var(--frame) solid var(--line); border-radius: var(--r3); }
 /* The whitepaper prints on Letter, two cards to a row. */
 @page { size: Letter; margin: 0.5in; }
 @media print {
