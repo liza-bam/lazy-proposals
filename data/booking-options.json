@@ -20,7 +20,6 @@
     "about": "All-in-one rental software: Airbnb, Vrbo and direct bookings in one system, with agreements and accounting.",
     "price": "from $88/month for 1 property",
     "services": [
-      "Booking widget",
       "Rental agreements",
       "E-signatures"
     ],
@@ -33,7 +32,6 @@
     "about": "A booking box with live availability for your site, plus calendar sync and channel management.",
     "price": "from about $39/month per property",
     "services": [
-      "Booking widget",
       "1.9% booking fee"
     ],
     "url": "https://www.lodgify.com",
