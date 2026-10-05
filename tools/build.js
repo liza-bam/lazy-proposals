@@ -21,13 +21,10 @@ function page(client, prop, pr, settings, options) {
           <span class="pp__price">${esc(o.price)}</span>
         </header>
         <p class="pp__about">${esc(o.about)}</p>
-        <dl class="pp__facts">
-          <dt>Best for</dt><dd>${esc(o.bestFor)}</dd>
-        </dl>
         <ul class="pp__chips">${o.services.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
         <footer class="pp__cardfoot">
           <a class="pp__btn pp__btn--ghost" href="${esc(o.url)}" target="_blank" rel="noopener">Visit ${esc(o.name)} →</a>
-          <span class="pp__note">Price checked ${esc(o.checked)} · <a href="${esc(o.source)}" target="_blank" rel="noopener">source</a></span>
+          <span class="pp__note">Approximate price, checked ${esc(o.checked)}</span>
         </footer>
       </article>`).join('');
   return `<!DOCTYPE html>
@@ -53,13 +50,11 @@ function page(client, prop, pr, settings, options) {
   </div>
   <section class="pp__sec">
     <h2 class="pp__h">1. Your website</h2>
-    <div class="pp__box"><a class="pp__value" href="${esc(pr.siteUrl)}" target="_blank" rel="noopener">${esc(pr.siteUrl)}</a></div>
+    <a class="pp__btn" href="${esc(pr.siteUrl)}" target="_blank" rel="noopener">Visit your website</a>
   </section>
   <section class="pp__sec">
     <h2 class="pp__h">2. Try the editor</h2>
-    <div class="pp__box">
-      <div class="pp__row"><span class="pp__label">Editor</span><a class="pp__value" href="${esc(pr.editorUrl)}" target="_blank" rel="noopener">${esc(pr.editorUrl)}</a></div>
-    </div>
+    <a class="pp__btn" href="${esc(pr.editorUrl)}" target="_blank" rel="noopener">Open the editor</a>
   </section>
   <section class="pp__sec">
     <h2 class="pp__h">3. About Lazy</h2>
@@ -78,21 +73,18 @@ function page(client, prop, pr, settings, options) {
 
 // Email clients ignore stylesheets: tables and inline styles only, values from the brand tokens in proposal.css.
 function email(client, prop, pr, settings, options, url) {
-  const C = { ink: '#17363c', mute: '#8fa3a4', coral: '#f9426f', teal: '#2fa18c', line: '#d3ede6', cream: '#fffdf6', white: '#ffffff' };
+  const C = { ink: '#17363c', mute: '#8fa3a4', coral: '#f9426f', teal: '#2fa18c', line: '#d3ede6', tint: '#eafaf6', cream: '#fffdf6', white: '#ffffff' };
   const font = "font-family:'Noto Serif',Georgia,serif;";
   const h = (t) => `<tr><td style="${font}font-size:20px;font-weight:600;color:${C.ink};padding:28px 0 10px;">${t}</td></tr>`;
-  const box = (inner) => `<tr><td style="background:${C.white};border:1px solid ${C.line};border-radius:12px;padding:18px 20px;${font}font-size:16px;line-height:1.6;color:${C.ink};">${inner}</td></tr>`;
-  const link = (u, t) => `<a href="${esc(u)}" style="color:${C.teal};">${esc(t || u)}</a>`;
   const btn = (u, t) => `<a href="${esc(u)}" style="display:inline-block;background:${C.coral};color:${C.white};text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;${font}">${esc(t)}</a>`;
   const engines = options.map((o) => `
       <tr><td style="padding:0 0 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.white};border:1px solid ${C.line};border-radius:12px;">
         <tr><td style="padding:16px 20px;${font}font-size:15px;line-height:1.55;color:${C.ink};">
           <div style="font-size:18px;font-weight:600;">${esc(o.name)}</div>
+          <div style="margin:6px 0 10px;"><span style="display:inline-block;background:${C.tint};border-radius:999px;padding:3px 12px;font-size:14px;font-weight:600;">${esc(o.price)}</span></div>
           <div style="margin:4px 0 8px;">${esc(o.about)}</div>
-          <div><strong>Best for:</strong> ${esc(o.bestFor)}</div>
-          <div style="margin:8px 0;font-weight:600;">${esc(o.price)}</div>
           <div style="color:${C.mute};font-size:14px;">${o.services.map(esc).join(' · ')}</div>
-          <div style="margin-top:10px;">${link(o.url, 'Visit ' + o.name + ' →')}</div>
+          <div style="margin-top:12px;">${btn(o.url, 'Visit ' + o.name + ' →')}</div>
         </td></tr></table></td></tr>`).join('');
   const subject = 'Your Lazy proposal — ' + prop.name;
   const html = `<!DOCTYPE html>
@@ -103,9 +95,9 @@ function email(client, prop, pr, settings, options, url) {
   <tr><td style="${font}font-size:26px;font-weight:600;color:${C.ink};">${esc(prop.name)}</td></tr>
   <tr><td style="${font}font-size:16px;color:${C.ink};padding-top:12px;line-height:1.6;">Hi ${esc(client.name)},<br>here is your proposal for ${esc(prop.name)}.</td></tr>
   ${h('1. Your website')}
-  ${box(link(pr.siteUrl))}
+  <tr><td>${btn(pr.siteUrl, 'Visit your website')}</td></tr>
   ${h('2. Try the editor')}
-  ${box(`<strong>Editor:</strong> ${link(pr.editorUrl)}`)}
+  <tr><td>${btn(pr.editorUrl, 'Open the editor')}</td></tr>
   ${h('3. About Lazy')}
   <tr><td>${btn(settings.whitepaperUrl, 'Read the whitepaper')}</td></tr>
   ${h('4. Direct booking options')}
