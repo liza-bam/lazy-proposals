@@ -45,12 +45,13 @@
   {
     "name": "Hospitable",
     "about": "Automation for Airbnb hosts: one inbox and calendar, automatic messages, and a direct booking site.",
-    "price": "Professional about $59/month for 2 properties, $15 each extra",
+    "price": "about $59/month for 2 properties",
     "services": [
       "Direct booking website",
       "Airbnb, Vrbo, Booking.com sync",
       "Automated guest messaging",
-      "Guest payment collection"
+      "Guest payment collection",
+      "$15/month per extra property"
     ],
     "url": "https://hospitable.com",
     "source": "https://www.roommaster.com/blog/hospitable-pricing",
@@ -59,7 +60,7 @@
   {
     "name": "Guesty",
     "about": "Management software for 1–3 listings: one calendar and inbox for Airbnb, Booking.com and Vrbo.",
-    "price": "Guesty Lite from about $9/month per listing (1–3 listings)",
+    "price": "from about $9/month per listing",
     "services": [
       "Airbnb, Booking.com, Vrbo sync",
       "Multi-calendar",
