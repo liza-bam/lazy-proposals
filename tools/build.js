@@ -56,8 +56,6 @@ function page(client, prop, pr, settings, options) {
     <h2 class="pp__h">2. Try the editor</h2>
     <div class="pp__box">
       <div class="pp__row"><span class="pp__label">Editor</span><a class="pp__value" href="${esc(pr.editorUrl)}" target="_blank" rel="noopener">${esc(pr.editorUrl)}</a></div>
-      <div class="pp__row"><span class="pp__label">Login</span><span class="pp__value">${esc(pr.login)}</span></div>
-      <div class="pp__row"><span class="pp__label">Password</span><span class="pp__value">${esc(pr.password)}</span></div>
     </div>
   </section>
   <section class="pp__sec">
@@ -105,7 +103,7 @@ function email(client, prop, pr, settings, options, url) {
   ${h('1. Your website')}
   ${box(link(pr.siteUrl))}
   ${h('2. Try the editor')}
-  ${box(`<strong>Editor:</strong> ${link(pr.editorUrl)}<br><strong>Login:</strong> ${esc(pr.login)}<br><strong>Password:</strong> ${esc(pr.password)}`)}
+  ${box(`<strong>Editor:</strong> ${link(pr.editorUrl)}`)}
   ${h('3. About Lazy')}
   <tr><td>${btn(settings.whitepaperUrl, 'Read the whitepaper')}</td></tr>
   ${h('4. Direct booking options')}

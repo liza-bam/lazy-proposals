@@ -67,8 +67,6 @@ function render() {
       '<label>Property<select name="property">' + props + '</select></label>' +
       '<label>Website address<input name="siteUrl" type="url" required placeholder="https://"></label>' +
       '<label>Editor demo link<input name="editorUrl" type="url" required placeholder="https://app.lazy.vacations/…"></label>' +
-      '<label>Login<input name="login" required></label>' +
-      '<label>Password<input name="password" required></label>' +
       '<button class="go">Make proposal</button><span class="msg" id="msg"></span></form>' : '') +
     '<div class="box done"><strong>Proposals (' + c.proposals.length + ')</strong>' + (c.proposals.map((p) =>
       '<div>' + esc(name(p.property)) + ' · ' + esc(p.date) + ' — <a href="/p/' + esc(p.token) + '/" target="_blank">page</a> · ' +
