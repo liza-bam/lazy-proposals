@@ -80,7 +80,7 @@ function email(client, props, pr, settings) {
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
   <tr><td style="padding-bottom:16px;"><img src="${esc(settings.siteBase)}lazy-logo-email.png" width="120" alt="Lazy" style="display:block;border:0;"></td></tr>
   <tr><td style="${font}font-size:26px;font-weight:600;color:${C.ink};">Welcome, ${esc(first)}!</td></tr>
-  <tr><td style="${text}padding-top:12px;">${esc(settings.welcome.replace('{property}', joined))}</td></tr>
+  <tr><td style="${text}padding-top:12px;">${esc((client.temp === 'cold' ? settings.coldIntro : settings.welcome).replace('{property}', joined))}</td></tr>
   ${h(many ? '1. Your websites' : '1. Your website')}
   ${props.map((p) => `<tr><td style="padding-bottom:10px;">${btn(p.siteUrl, many ? 'Visit ' + p.name : 'Visit your website')}</td></tr>`).join('')}
   ${h('2. Try the editor')}
@@ -91,6 +91,10 @@ function email(client, props, pr, settings) {
   ${h('4. Direct booking options')}
   <tr><td style="${text}padding:0 0 14px;">${esc(settings.emailBookingNote)}</td></tr>
   <tr><td>${btn(settings.siteBase + PAPER + '.pdf', 'Direct booking options')}</td></tr>
+  ${client.temp === 'cold' ? `${h('5. ' + esc(settings.offer.heading))}
+  <tr><td style="${text}padding:0 0 8px;">${esc(settings.offer.note)}</td></tr>
+  <tr><td style="${text}"><ul style="margin:0 0 14px;padding-left:20px;">${settings.offer.items.map((i) => `<li style="margin-bottom:6px;">${esc(i)}</li>`).join('')}</ul></td></tr>
+  <tr><td>${btn(settings.offer.url, settings.offer.button)}</td></tr>` : ''}
   <tr><td style="${text}padding-top:28px;white-space:pre-line;">${esc(settings.signoff)}</td></tr>
 </table></td></tr></table>
 </body></html>

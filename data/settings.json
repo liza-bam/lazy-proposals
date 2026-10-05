@@ -9,5 +9,18 @@
   "paymentsNote": "We support any direct payment system; here is the most standard one.",
   "platformsHeading": "2. Platforms",
   "welcome": "We're so glad you're here. Your new website for {property} is ready, and everything you need to get started is below.",
-  "signoff": "Talk soon!\nSandy"
+  "signoff": "Talk soon!\nSandy",
+  "coldIntro": "Airbnb should not control your property. You need a cool website you can edit, direct booking integration, and reliable support. That's Lazy: we design your website, connect it and launch it. You stay in control. Your new website for {property} is ready to see, and everything is below.",
+  "offer": {
+    "heading": "Founding Host Offer",
+    "note": "For the first 50 hosts only.",
+    "items": [
+      "$1,500 one time per property for design and integration — 50% off $3,000",
+      "Support free for 12 months, then $50/month per property",
+      "Big discount for multiple properties",
+      "Your website remains yours, even if you cancel"
+    ],
+    "url": "https://liza-bam.github.io/lazy-proposals/lazy.html",
+    "button": "See the offer"
+  }
 }

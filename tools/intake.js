@@ -54,13 +54,13 @@ http.createServer(async (req, res) => {
       if (!String(b.name || '').trim()) return send(res, 400, { error: 'Client name is required.' });
       let id = slug(b.name), n = 2;
       while (fs.existsSync(path.join(DIR, id + '.json'))) id = slug(b.name) + '-' + n++;
-      const c = { id, name: b.name.trim(), email: (b.email || '').trim(), login: String(b.login || '').trim(), properties: [], proposals: [] };
+      const c = { id, name: b.name.trim(), email: (b.email || '').trim(), login: String(b.login || '').trim(), temp: 'warm', properties: [], proposals: [] };
       save(c); return send(res, 200, c);
     }
     if (req.method === 'POST' && req.url === '/api/client/update') {
       const b = await body(req), c = all().find((x) => x.id === b.client);
       if (!c || !String(b.name || '').trim()) return send(res, 400, { error: 'Give the client a name.' });
-      c.name = b.name.trim(); c.email = String(b.email || '').trim(); c.login = String(b.login || '').trim(); save(c);
+      c.name = b.name.trim(); c.email = String(b.email || '').trim(); c.login = String(b.login || '').trim(); c.temp = ['cold', 'warm', 'hot'].includes(b.temp) ? b.temp : 'warm'; save(c);
       for (const pr of c.proposals) build(pr.token);
       return send(res, 200, c);
     }

@@ -22,6 +22,13 @@
   .msg { color: var(--coral); }
   .done a { color: var(--teal); overflow-wrap: anywhere; }
   .muted { color: var(--ink-mute); }
+  .acc summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; align-items: center; gap: var(--s2); }
+  .acc summary::before { content: "\25B8"; color: var(--ink-mute); }
+  .acc[open] summary::before { content: "\25BE"; }
+  .acc__body { display: flex; flex-direction: column; gap: var(--s2); margin-top: var(--s2); }
+  .row { display: flex; gap: var(--s2); align-items: center; }
+  .ghost { background: none; border: var(--frame) solid var(--coral); color: var(--coral); padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; }
+  #add-prop { align-self: flex-start; }
   .tick { flex-direction: row; align-items: center; gap: var(--s2); color: var(--ink); font-size: 16px; }
 </style>
 </head>
@@ -41,6 +48,8 @@
 </div>
 <script>
 let clients = [], current = null;
+let addingProp = false;   // the new-property form opens from its button
+const openProps = new Set();   // property accordions left open stay open after a save
 const $ = (s) => document.querySelector(s);
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 async function api(url, data) {
@@ -54,7 +63,7 @@ async function load(pick) {
   if (pick) current = pick;
   $('#clients').innerHTML = '<strong>Clients (' + clients.length + ')</strong>' + clients.map((c) =>
     '<button data-id="' + esc(c.id) + '" aria-current="' + (c.id === current) + '">' + esc(c.name) +
-    ' <span class="muted">· ' + c.properties.length + ' properties</span></button>').join('');
+    ' <span class="muted">· ' + c.properties.length + ' properties · ' + esc(c.temp || 'warm') + '</span></button>').join('');
   render();
 }
 // Field names are neutral (f_*): password managers pick fields by names like "name" and "login".
@@ -68,15 +77,18 @@ function render() {
     '<form class="box" id="edit-client"><strong>Client</strong>' +
       field('Name', 'name', c.name, 'required') + field('Email', 'email', c.email, 'type="email"') +
       field('Login (username only — the password goes in a separate email)', 'login', c.login) +
+      '<label>Temperature (cold: the email introduces Lazy and the Founding Host Offer)<select name="f_temp">' +
+        ['cold', 'warm', 'hot'].map((t) => '<option value="' + t + '"' + ((c.temp || 'warm') === t ? ' selected' : '') + '>' + t[0].toUpperCase() + t.slice(1) + '</option>').join('') + '</select></label>' +
       '<button class="go">Save</button></form>' +
-    c.properties.map((p) => '<form class="box" data-prop="' + esc(p.id) + '"><strong>' + esc(p.name) + '</strong>' +
+    c.properties.map((p) => '<details class="box acc" data-acc="' + esc(p.id) + '"' + (openProps.has(p.id) ? ' open' : '') + '><summary>' + esc(p.name) + '</summary><form data-prop="' + esc(p.id) + '" class="acc__body">' +
       field('Property name', 'name', p.name, 'required') + field('Website address', 'siteUrl', p.siteUrl, 'type="url" placeholder="https://"') +
       field('Editor link', 'editorUrl', p.editorUrl, 'type="url" placeholder="https://app.lazy.vacations/…"') +
-      '<button class="go">Save</button></form>').join('') +
-    '<form class="box" id="new-prop"><strong>Add a property</strong>' +
+      '<button class="go">Save</button></form></details>').join('') +
+    (!addingProp ? '<button class="go" id="add-prop">Add property</button>' :
+    '<form class="box" id="new-prop"><strong>New property</strong>' +
       field('Property name', 'name', '', 'required') + field('Website address', 'siteUrl', '', 'type="url" placeholder="https://"') +
       field('Editor link', 'editorUrl', '', 'type="url" placeholder="https://app.lazy.vacations/…"') +
-      '<button class="go">Add property</button></form>' +
+      '<div class="row"><button class="go">Add property</button><button type="button" class="ghost" id="cancel-prop">Cancel</button></div></form>') +
     (c.properties.length ? '<form class="box" id="new-proposal"><strong>New proposal</strong><span class="muted">Tick the properties it covers.</span>' +
       c.properties.map((p) => '<label class="tick"><input type="checkbox" name="f_properties" value="' + esc(p.id) + '"> ' + esc(p.name) + '</label>').join('') +
       '<button class="go">Make proposal</button><span class="msg" id="msg"></span></form>' : '') +
@@ -84,7 +96,10 @@ function render() {
       '<div>' + (p.properties || []).map((id) => esc(name(id))).join(', ') + ' · ' + esc(p.date) + ' — ' +
       '<a href="/email/' + esc(p.token) + '" target="_blank">email</a></div>').join('') || '<span class="muted">None yet.</span>') + '</div>';
 }
-document.addEventListener('click', (e) => { const b = e.target.closest('#clients button'); if (b) { current = b.dataset.id; load(); } });
+document.addEventListener('toggle', (e) => { const d = e.target; if (d.dataset && d.dataset.acc) d.open ? openProps.add(d.dataset.acc) : openProps.delete(d.dataset.acc); }, true);
+document.addEventListener('click', (e) => {
+  if (e.target.id === 'add-prop') { addingProp = true; render(); return; }
+  if (e.target.id === 'cancel-prop') { addingProp = false; render(); return; } const b = e.target.closest('#clients button'); if (b) { current = b.dataset.id; addingProp = false; load(); } });
 document.addEventListener('submit', async (e) => {
   e.preventDefault();
   const f = e.target, d = form(f);
@@ -92,7 +107,7 @@ document.addEventListener('submit', async (e) => {
     if (f.id === 'new-client') { const c = await api('/api/client', d); f.reset(); await load(c.id); }
     if (f.id === 'edit-client') { await api('/api/client/update', Object.assign(d, { client: current })); await load(); }
     if (f.dataset.prop) { await api('/api/property/update', Object.assign(d, { client: current, id: f.dataset.prop })); await load(); }
-    if (f.id === 'new-prop') { await api('/api/property', Object.assign(d, { client: current })); f.reset(); await load(); }
+    if (f.id === 'new-prop') { await api('/api/property', Object.assign(d, { client: current })); addingProp = false; await load(); }
     if (f.id === 'new-proposal') { $('#msg').textContent = 'Building…'; await api('/api/proposal', Object.assign(d, { client: current })); await load(); }
   } catch (er) { const m = $('#msg'); if (m) m.textContent = er.message; else alert(er.message); }
 });
