@@ -35,6 +35,7 @@ body { margin: 0; background: var(--cream); color: var(--ink); font: var(--text)
 .pp__sec { display: flex; flex-direction: column; gap: var(--s3); }
 .pp__h { margin: 0; font-size: var(--text-lg); }
 .pp__intro { margin: 0; max-width: var(--measure); }
+.pp__subh { margin: var(--s3) 0 0; font-size: var(--text-lg); }
 a { color: var(--teal); }
 .pp__btn { align-self: flex-start; display: inline-block; padding: var(--s2) var(--s4); border-radius: var(--r-btn); background: var(--coral); color: var(--white); text-decoration: none; font-weight: 600; }
 .pp__btn:hover { background: var(--coral-hover); }
@@ -52,7 +53,10 @@ a { color: var(--teal); }
 .pp__btn--ghost { background: none; color: var(--coral); border: var(--frame) solid var(--coral); white-space: nowrap; }
 .pp__btn--ghost:hover { background: var(--coral); color: var(--white); }
 .pp__note { color: var(--ink-mute); font-size: var(--text-sm); }
+/* The whitepaper prints on Letter, two cards to a row. */
+@page { size: Letter; margin: 0.5in; }
 @media print {
+  .pp__card { break-inside: avoid; }
   .pp__logo { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { background: var(--white); }
   .pp { padding: 0; gap: var(--s4); }

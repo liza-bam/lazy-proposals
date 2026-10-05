@@ -2,5 +2,12 @@
   "whitepaperUrl": "https://lazy.vacations/Lazy%20Founding%20Host%20Offer.pdf",
   "siteBase": "https://liza-bam.github.io/lazy-proposals/",
   "bookingIntro": "Every platform provides a channel manager for Airbnb, Vrbo and Booking.com. On premium plans they also manage Google stays. All of them handle payments, message automation and calendar sync.",
-  "editorNote": "You'll get a separate email with your password. You can also open the link and click “Change password”."
+  "editorNote": "You'll get a separate email with your password. You can also open the link and click “Change password”.",
+  "bookingPaperTitle": "Direct booking options",
+  "emailBookingNote": "The direct booking options are in the attached whitepaper: what each platform does, what it costs, and a link to each.",
+  "paymentsHeading": "1. Direct payment",
+  "paymentsNote": "We support any direct payment system; here is the most standard one.",
+  "platformsHeading": "2. Platforms",
+  "welcome": "We're so glad you're here. Your new website for {property} is ready, and everything you need to get started is below.",
+  "signoff": "Warmly,\nThe Lazy team"
 }

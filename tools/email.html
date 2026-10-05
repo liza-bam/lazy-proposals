@@ -20,6 +20,7 @@
 <div class="em">
   <div class="row"><span class="lbl">To</span><strong id="to"></strong></div>
   <div class="row"><span class="lbl">Subject</span><strong id="subject"></strong><button class="go ghost" id="copy-subject">Copy subject</button></div>
+  <div class="row"><span class="lbl">Attach</span><a id="attach" download>Download the whitepaper PDF</a></div>
   <div class="row"><button class="go" id="copy">Copy email</button><span class="ok" id="ok"></span></div>
   <iframe id="preview" title="Email preview"></iframe>
 </div>
@@ -28,6 +29,7 @@ const meta = __META__, html = __HTML__;
 document.getElementById('to').textContent = meta.to || '—';
 document.getElementById('subject').textContent = meta.subject;
 document.getElementById('preview').srcdoc = html;
+const at = document.getElementById('attach'); at.href = '/' + meta.attach; at.textContent = meta.attach;
 const ok = (t) => { document.getElementById('ok').textContent = t; };
 document.getElementById('copy').onclick = async () => {
   // Rich HTML on the clipboard: pasted into Gmail's compose box it keeps its formatting.

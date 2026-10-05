@@ -70,8 +70,8 @@ function render() {
       '<label>Login (username only — the password goes in a separate email)<input name="login"></label>' +
       '<button class="go">Make proposal</button><span class="msg" id="msg"></span></form>' : '') +
     '<div class="box done"><strong>Proposals (' + c.proposals.length + ')</strong>' + (c.proposals.map((p) =>
-      '<div>' + esc(name(p.property)) + ' · ' + esc(p.date) + ' — <a href="/p/' + esc(p.token) + '/" target="_blank">page</a> · ' +
-      '<a href="/email/' + esc(p.token) + '" target="_blank">email</a> · <span class="muted">p/' + esc(p.token) + '/</span></div>').join('') || '<span class="muted">None yet.</span>') + '</div>';
+      '<div>' + esc(name(p.property)) + ' · ' + esc(p.date) + ' — ' +
+      '<a href="/email/' + esc(p.token) + '" target="_blank">email</a></div>').join('') || '<span class="muted">None yet.</span>') + '</div>';
 }
 document.addEventListener('click', (e) => { const b = e.target.closest('#clients button'); if (b) { current = b.dataset.id; load(); } });
 document.addEventListener('submit', async (e) => {

@@ -1,10 +1,13 @@
-// Builds every proposal in data/clients/*.json: the web page site/p/<token>/index.html
-// and the email emails/<token>.html (local only, not published).
+// Builds the proposal emails (emails/<token>.html, local only) from data/clients/*.json, and the
+// shared whitepaper site/direct-booking-options.pdf that each email carries as its attachment.
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const os = require('os');
+const { spawn, spawnSync } = require('child_process');
 
 const ROOT = path.resolve(__dirname, '..');
+const PAPER = 'direct-booking-options';   // the shared options whitepaper, site/<PAPER>.pdf
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -13,8 +16,8 @@ function clients() {
   return fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => read('data/clients/' + f));
 }
 
-function page(client, prop, pr, settings, options) {
-  const card = (o) => `
+// One booking card in the whitepaper.
+const card = (o) => `
       <article class="pp__card">
         <header class="pp__cardhead">
           <h3>${esc(o.name)}</h3>
@@ -27,51 +30,31 @@ function page(client, prop, pr, settings, options) {
           <span class="pp__note">Approximate price, checked ${esc(o.checked)}</span>
         </footer>
       </article>`;
-  // Payments (Stripe) stand before the booking platforms.
+
+// The whitepaper: direct payment first, then the platforms, two cards to a row on Letter pages.
+function paper(settings, options) {
   const pay = options.filter((o) => o.kind === 'payments').map(card).join('');
-  const cards = options.filter((o) => o.kind !== 'payments').map(card).join('');
+  const platforms = options.filter((o) => o.kind !== 'payments').map(card).join('');
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
-<title>Proposal for ${esc(client.name)} — ${esc(prop.name)}</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>${esc(settings.bookingPaperTitle)} — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&display=swap">
-<link rel="stylesheet" href="../../proposal.css">
+<link rel="stylesheet" href="proposal.css">
 </head>
 <body>
 <main class="pp">
-  <header class="pp__top">
-    <span class="pp__logo" role="img" aria-label="Lazy"></span>
-    <button class="pp__btn pp__btn--ghost pp__print" onclick="window.print()">Print / save as PDF</button>
-  </header>
-  <div>
-    <h1 class="pp__title">${esc(prop.name)}</h1>
-    <p class="pp__sub">Proposal for ${esc(client.name)} · ${esc(pr.date)}</p>
+  <header class="pp__top"><span class="pp__logo" role="img" aria-label="Lazy"></span></header>
+  <h1 class="pp__title">${esc(settings.bookingPaperTitle)}</h1>
+  <h3 class="pp__subh">${esc(settings.paymentsHeading)}</h3>
+  <p class="pp__intro">${esc(settings.paymentsNote)}</p>
+  <div class="pp__cards">${pay}
   </div>
-  <section class="pp__sec">
-    <h2 class="pp__h">1. Your website</h2>
-    <a class="pp__btn" href="${esc(pr.siteUrl)}" target="_blank" rel="noopener">Visit your website</a>
-  </section>
-  <section class="pp__sec">
-    <h2 class="pp__h">2. Try the editor</h2>
-    <a class="pp__btn" href="${esc(pr.editorUrl)}" target="_blank" rel="noopener">Open the editor</a>
-    ${pr.login ? `<p class="pp__intro">Your login: <strong>${esc(pr.login)}</strong>. ${esc(settings.editorNote)}</p>` : ''}
-  </section>
-  <section class="pp__sec">
-    <h2 class="pp__h">3. About Lazy</h2>
-    <a class="pp__btn" href="${esc(settings.whitepaperUrl)}" target="_blank" rel="noopener">Read the whitepaper</a>
-  </section>
-  <section class="pp__sec">
-    <h2 class="pp__h">4. Direct booking options</h2>
-    <div class="pp__cards">${pay}
-    </div>
-    <p class="pp__intro">${esc(settings.bookingIntro)}</p>
-    <div class="pp__cards">${cards}
-    </div>
-  </section>
+  <h3 class="pp__subh">${esc(settings.platformsHeading)}</h3>
+  <p class="pp__intro">${esc(settings.bookingIntro)}</p>
+  <div class="pp__cards">${platforms}
+  </div>
 </main>
 </body>
 </html>
@@ -79,47 +62,63 @@ function page(client, prop, pr, settings, options) {
 }
 
 // Email clients ignore stylesheets: tables and inline styles only, values from the brand tokens in proposal.css.
-function email(client, prop, pr, settings, options, url) {
-  const C = { ink: '#17363c', mute: '#8fa3a4', coral: '#f9426f', teal: '#2fa18c', line: '#d3ede6', tint: '#eafaf6', cream: '#fffdf6', white: '#ffffff' };
+function email(client, prop, pr, settings) {
+  const C = { ink: '#17363c', coral: '#f9426f', cream: '#fffdf6' };
   const font = "font-family:'Noto Serif',Georgia,serif;";
+  const text = `${font}font-size:16px;line-height:1.6;color:${C.ink};`;
+  const first = String(client.name || '').trim().split(/\s+/)[0] || client.name;
   const h = (t) => `<tr><td style="${font}font-size:20px;font-weight:600;color:${C.ink};padding:28px 0 10px;">${t}</td></tr>`;
-  const btn = (u, t) => `<a href="${esc(u)}" style="display:inline-block;background:${C.coral};color:${C.white};text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;${font}">${esc(t)}</a>`;
-  const engine = (o) => `
-      <tr><td style="padding:0 0 12px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.white};border:1px solid ${C.line};border-radius:12px;">
-        <tr><td style="padding:16px 20px;${font}font-size:15px;line-height:1.55;color:${C.ink};">
-          <div style="font-size:18px;font-weight:600;">${esc(o.name)}</div>
-          <div style="margin:6px 0 10px;"><span style="display:inline-block;background:${C.tint};border-radius:999px;padding:3px 12px;font-size:14px;font-weight:600;">${esc(o.price)}</span></div>
-          <div style="margin:4px 0 8px;">${esc(o.about)}</div>
-          <div style="color:${C.mute};font-size:14px;">${o.services.map(esc).join(' · ')}</div>
-          <div style="margin-top:12px;">${btn(o.url, 'Visit ' + o.name + ' →')}</div>
-        </td></tr></table></td></tr>`;
-  const payEngines = options.filter((o) => o.kind === 'payments').map(engine).join('');
-  const engines = options.filter((o) => o.kind !== 'payments').map(engine).join('');
-  const subject = 'Your Lazy proposal — ' + prop.name;
+  const btn = (u, t) => `<a href="${esc(u)}" style="display:inline-block;background:${C.coral};color:#ffffff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;${font}">${esc(t)}</a>`;
+  const subject = 'Welcome to Lazy — your proposal for ' + prop.name;
   const html = `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>${esc(subject)}</title></head>
 <body style="margin:0;padding:0;background:${C.cream};">
 <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:${C.cream};"><tr><td align="center" style="padding:24px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
-  <tr><td style="${font}font-size:26px;font-weight:600;color:${C.ink};">${esc(prop.name)}</td></tr>
-  <tr><td style="${font}font-size:16px;color:${C.ink};padding-top:12px;line-height:1.6;">Hi ${esc(client.name)},<br>here is your proposal for ${esc(prop.name)}.</td></tr>
+  <tr><td style="padding-bottom:16px;"><img src="${esc(settings.siteBase)}lazy-logo-email.png" width="72" alt="Lazy" style="display:block;border:0;"></td></tr>
+  <tr><td style="${font}font-size:26px;font-weight:600;color:${C.ink};">Welcome, ${esc(first)}!</td></tr>
+  <tr><td style="${text}padding-top:12px;">${esc(settings.welcome.replace('{property}', prop.name))}</td></tr>
   ${h('1. Your website')}
   <tr><td>${btn(pr.siteUrl, 'Visit your website')}</td></tr>
   ${h('2. Try the editor')}
   <tr><td>${btn(pr.editorUrl, 'Open the editor')}</td></tr>
-  ${pr.login ? `<tr><td style="${font}font-size:16px;line-height:1.6;color:${C.ink};padding-top:12px;">Your login: <strong>${esc(pr.login)}</strong>. ${esc(settings.editorNote)}</td></tr>` : ''}
+  ${pr.login ? `<tr><td style="${text}padding-top:12px;">Your login: <strong>${esc(pr.login)}</strong>. ${esc(settings.editorNote)}</td></tr>` : ''}
   ${h('3. About Lazy')}
   <tr><td>${btn(settings.whitepaperUrl, 'Read the whitepaper')}</td></tr>
   ${h('4. Direct booking options')}
-  ${payEngines}
-  <tr><td style="${font}font-size:16px;line-height:1.6;color:${C.ink};padding:0 0 14px;">${esc(settings.bookingIntro)}</td></tr>
-  ${engines}
-  <tr><td style="padding-top:16px;">${btn(url, 'See the full proposal')}</td></tr>
-  <tr><td style="${font}font-size:13px;color:${C.mute};padding-top:16px;">Prices are approximate, as listed by each provider on ${esc(options[0] ? options[0].checked : '')}.</td></tr>
+  <tr><td style="${text}padding:0 0 14px;">${esc(settings.emailBookingNote)}</td></tr>
+  <tr><td>${btn(settings.siteBase + PAPER + '.pdf', 'Direct booking options')}</td></tr>
+  <tr><td style="${text}padding-top:28px;white-space:pre-line;">${esc(settings.signoff)}</td></tr>
 </table></td></tr></table>
 </body></html>
 `;
   return { subject, html };
+}
+
+const pause = (ms) => Atomics.wait(new Int32Array(new SharedArrayBuffer(4)), 0, 0, ms);
+
+// Chrome prints the whitepaper in about a second but never exits on its own, so it is stopped
+// as soon as the PDF stops growing; its throwaway profile and any process left on it go with it.
+function pdf(htmlFile, pdfFile) {
+  const CHROME = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+  const profile = fs.mkdtempSync(path.join(os.tmpdir(), 'lazy-proposals-chrome-'));
+  fs.rmSync(pdfFile, { force: true });
+  const child = spawn(CHROME, ['--headless=new', '--disable-gpu', '--no-first-run', '--no-pdf-header-footer',
+    '--user-data-dir=' + profile, '--print-to-pdf=' + pdfFile, 'file://' + htmlFile], { stdio: 'ignore', detached: true });
+  try {
+    let last = -1;
+    for (let waited = 0; waited < 45000; waited += 500) {
+      pause(500);
+      const size = fs.existsSync(pdfFile) ? fs.statSync(pdfFile).size : 0;
+      if (size > 0 && size === last) break;
+      last = size;
+    }
+  } finally {
+    try { process.kill(-child.pid, 'SIGKILL'); } catch (e) { /* already gone */ }
+    spawnSync('pkill', ['-9', '-f', profile]);
+    fs.rmSync(profile, { recursive: true, force: true });
+  }
+  if (!fs.existsSync(pdfFile) || !fs.statSync(pdfFile).size) throw new Error('The whitepaper PDF was not written.');
 }
 
 function build(only) {
@@ -127,22 +126,21 @@ function build(only) {
   const options = read('data/booking-options.json');
   const out = [];
   fs.mkdirSync(path.join(ROOT, 'emails'), { recursive: true });
+  const paperHtml = path.join(ROOT, 'site', PAPER + '.html');
+  fs.writeFileSync(paperHtml, paper(settings, options));
+  pdf(paperHtml, path.join(ROOT, 'site', PAPER + '.pdf'));
   for (const c of clients()) {
     for (const pr of c.proposals || []) {
       if (only && pr.token !== only) continue;
       const prop = (c.properties || []).find((p) => p.id === pr.property) || { name: pr.property };
-      const url = settings.siteBase + 'p/' + pr.token + '/';
-      const dir = path.join(ROOT, 'site/p', pr.token);
-      fs.mkdirSync(dir, { recursive: true });
-      fs.writeFileSync(path.join(dir, 'index.html'), page(c, prop, pr, settings, options));
-      const m = email(c, prop, pr, settings, options, url);
+      const m = email(c, prop, pr, settings);
       fs.writeFileSync(path.join(ROOT, 'emails', pr.token + '.html'), m.html);
-      fs.writeFileSync(path.join(ROOT, 'emails', pr.token + '.json'), JSON.stringify({ to: c.email, subject: m.subject }, null, 2) + '\n');
-      out.push({ client: c.name, property: prop.name, url, email: 'emails/' + pr.token + '.html', subject: m.subject });
+      fs.writeFileSync(path.join(ROOT, 'emails', pr.token + '.json'), JSON.stringify({ to: c.email, subject: m.subject, attach: PAPER + '.pdf' }, null, 2) + '\n');
+      out.push({ client: c.name, property: prop.name, email: 'emails/' + pr.token + '.html', subject: m.subject });
     }
   }
   return out;
 }
 
 module.exports = { build };
-if (require.main === module) for (const r of build(process.argv[2])) console.log(r.client + ' — ' + r.property + ': ' + r.url + '  ·  email: ' + r.email);
+if (require.main === module) for (const r of build(process.argv[2])) console.log(r.client + ' — ' + r.property + ': ' + r.email + '  ·  ' + r.subject);
