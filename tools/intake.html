@@ -79,11 +79,11 @@ function render() {
       field('Login (username only — the password goes in a separate email)', 'login', c.login) +
       '<label>Temperature (cold: the email introduces Lazy and the Founding Host Offer)<select name="f_temp">' +
         ['cold', 'warm', 'hot'].map((t) => '<option value="' + t + '"' + ((c.temp || 'warm') === t ? ' selected' : '') + '>' + t[0].toUpperCase() + t.slice(1) + '</option>').join('') + '</select></label>' +
-      '<button class="go">Save</button></form>' +
+      '<button class="go">Save client</button></form>' +
     c.properties.map((p) => '<details class="box acc" data-acc="' + esc(p.id) + '"' + (openProps.has(p.id) ? ' open' : '') + '><summary>' + esc(p.name) + '</summary><form data-prop="' + esc(p.id) + '" class="acc__body">' +
       field('Property name', 'name', p.name, 'required') + field('Website address', 'siteUrl', p.siteUrl, 'type="url" placeholder="https://"') +
       field('Editor link', 'editorUrl', p.editorUrl, 'type="url" placeholder="https://app.lazy.vacations/…"') +
-      '<button class="go">Save</button></form></details>').join('') +
+      '<button class="go">Save property</button></form></details>').join('') +
     (!addingProp ? '<button class="go" id="add-prop">Add property</button>' :
     '<form class="box" id="new-prop"><strong>New property</strong>' +
       field('Property name', 'name', '', 'required') + field('Website address', 'siteUrl', '', 'type="url" placeholder="https://"') +
