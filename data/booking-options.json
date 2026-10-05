@@ -21,7 +21,6 @@
     "price": "from $88/month for 1 property",
     "services": [
       "Booking widget",
-      "Online payments",
       "Rental agreements",
       "E-signatures"
     ],
@@ -35,7 +34,6 @@
     "price": "from about $39/month per property",
     "services": [
       "Booking widget",
-      "Online payments",
       "1.9% booking fee"
     ],
     "url": "https://www.lodgify.com",
@@ -47,7 +45,6 @@
     "about": "Automation for Airbnb hosts: one inbox and calendar, automatic messages, and a direct booking site.",
     "price": "about $59/month for 2 properties",
     "services": [
-      "Online payments",
       "$15/month per extra property"
     ],
     "url": "https://hospitable.com",
