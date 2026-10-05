@@ -70,7 +70,7 @@ http.createServer(async (req, res) => {
       const need = ['property', 'siteUrl', 'editorUrl'];
       if (!c || need.some((k) => !String(b[k] || '').trim())) return send(res, 400, { error: 'Every field is required.' });
       const pr = { token: crypto.randomBytes(6).toString('hex'), property: b.property, siteUrl: b.siteUrl.trim(),
-        editorUrl: b.editorUrl.trim(), date: new Date().toISOString().slice(0, 10) };
+        editorUrl: b.editorUrl.trim(), login: String(b.login || '').trim(), date: new Date().toISOString().slice(0, 10) };
       c.proposals.push(pr); save(c);
       const built = build(pr.token);
       return send(res, 200, { client: c, built });
