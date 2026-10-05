@@ -5,17 +5,19 @@
   "properties": [
     {
       "id": "clearlake-paradise",
-      "name": "Clearlake Paradise"
+      "name": "Clearlake Paradise",
+      "siteUrl": "https://clearlake-paradise.lazy.vacations",
+      "editorUrl": "https://app.lazy.vacations/palette-editor.dc.html?property=clearlake-paradise"
     }
   ],
   "proposals": [
     {
       "token": "5a1d481c64bd",
-      "property": "clearlake-paradise",
-      "siteUrl": "https://clearlake-paradise.lazy.vacations",
-      "editorUrl": "https://app.lazy.vacations/palette-editor.dc.html?property=clearlake-paradise",
       "date": "2026-10-05",
-      "login": "anna_g"
+      "properties": [
+        "clearlake-paradise"
+      ]
     }
-  ]
+  ],
+  "login": "anna_g"
 }

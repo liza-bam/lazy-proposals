@@ -24,7 +24,7 @@ function send(res, code, data) { res.writeHead(code, { 'content-type': 'applicat
 
 http.createServer(async (req, res) => {
   try {
-    if (req.method === 'GET' && req.url === '/') {
+    if (req.method === 'GET' && req.url.split('?')[0] === '/') {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
       return res.end(fs.readFileSync(path.join(__dirname, 'intake.html')));
     }
@@ -54,14 +54,21 @@ http.createServer(async (req, res) => {
       if (!String(b.name || '').trim()) return send(res, 400, { error: 'Client name is required.' });
       let id = slug(b.name), n = 2;
       while (fs.existsSync(path.join(DIR, id + '.json'))) id = slug(b.name) + '-' + n++;
-      const c = { id, name: b.name.trim(), email: (b.email || '').trim(), properties: [], proposals: [] };
+      const c = { id, name: b.name.trim(), email: (b.email || '').trim(), login: String(b.login || '').trim(), properties: [], proposals: [] };
       save(c); return send(res, 200, c);
     }
-    if (req.method === 'POST' && req.url === '/api/property/rename') {   // same id, so its proposals stay linked
+    if (req.method === 'POST' && req.url === '/api/client/update') {
+      const b = await body(req), c = all().find((x) => x.id === b.client);
+      if (!c || !String(b.name || '').trim()) return send(res, 400, { error: 'Give the client a name.' });
+      c.name = b.name.trim(); c.email = String(b.email || '').trim(); c.login = String(b.login || '').trim(); save(c);
+      for (const pr of c.proposals) build(pr.token);
+      return send(res, 200, c);
+    }
+    if (req.method === 'POST' && req.url === '/api/property/update') {   // same id, so its proposals stay linked
       const b = await body(req), c = all().find((x) => x.id === b.client), p = c && c.properties.find((x) => x.id === b.id);
       if (!p || !String(b.name || '').trim()) return send(res, 400, { error: 'Give the property a name.' });
-      p.name = b.name.trim(); save(c);
-      for (const pr of c.proposals) if (pr.property === p.id) build(pr.token);
+      p.name = b.name.trim(); p.siteUrl = String(b.siteUrl || '').trim(); p.editorUrl = String(b.editorUrl || '').trim(); save(c);
+      for (const pr of c.proposals) if ((pr.properties || []).includes(p.id)) build(pr.token);
       return send(res, 200, c);
     }
     if (req.method === 'POST' && req.url === '/api/property') {
@@ -69,15 +76,16 @@ http.createServer(async (req, res) => {
       if (!c || !String(b.name || '').trim()) return send(res, 400, { error: 'Pick a client and give the property a name.' });
       let id = slug(b.name), n = 2;
       while (c.properties.some((p) => p.id === id)) id = slug(b.name) + '-' + n++;
-      c.properties.push({ id, name: b.name.trim() });
+      c.properties.push({ id, name: b.name.trim(), siteUrl: String(b.siteUrl || '').trim(), editorUrl: String(b.editorUrl || '').trim() });
       save(c); return send(res, 200, c);
     }
     if (req.method === 'POST' && req.url === '/api/proposal') {
       const b = await body(req), c = all().find((x) => x.id === b.client);
-      const need = ['property', 'siteUrl', 'editorUrl'];
-      if (!c || need.some((k) => !String(b[k] || '').trim())) return send(res, 400, { error: 'Every field is required.' });
-      const pr = { token: crypto.randomBytes(6).toString('hex'), property: b.property, siteUrl: b.siteUrl.trim(),
-        editorUrl: b.editorUrl.trim(), login: String(b.login || '').trim(), date: new Date().toISOString().slice(0, 10) };
+      const ids = [].concat(b.properties || []).filter((id) => c && c.properties.some((p) => p.id === id));
+      if (!ids.length) return send(res, 400, { error: 'Tick at least one property.' });
+      const bare = c.properties.filter((p) => ids.includes(p.id) && (!p.siteUrl || !p.editorUrl)).map((p) => p.name);
+      if (bare.length) return send(res, 400, { error: 'Add the website and editor link for: ' + bare.join(', ') + '.' });
+      const pr = { token: crypto.randomBytes(6).toString('hex'), properties: ids, date: new Date().toISOString().slice(0, 10) };
       c.proposals.push(pr); save(c);
       const built = build(pr.token);
       return send(res, 200, { client: c, built });

@@ -62,14 +62,17 @@ function paper(settings, options) {
 }
 
 // Email clients ignore stylesheets: tables and inline styles only, values from the brand tokens in proposal.css.
-function email(client, prop, pr, settings) {
+function email(client, props, pr, settings) {
   const C = { ink: '#17363c', coral: '#f9426f', cream: '#fffdf6' };
   const font = "font-family:'Noto Serif',Georgia,serif;";
   const text = `${font}font-size:16px;line-height:1.6;color:${C.ink};`;
   const first = String(client.name || '').trim().split(/\s+/)[0] || client.name;
   const h = (t) => `<tr><td style="${font}font-size:20px;font-weight:600;color:${C.ink};padding:28px 0 10px;">${t}</td></tr>`;
   const btn = (u, t) => `<a href="${esc(u)}" target="_blank" rel="noopener" style="display:inline-block;background:${C.coral};color:#ffffff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;${font}">${esc(t)}</a>`;
-  const subject = 'Welcome to Lazy — your proposal for ' + prop.name;
+  const names = props.map((p) => p.name);
+  const joined = names.length > 1 ? names.slice(0, -1).join(', ') + ' and ' + names[names.length - 1] : (names[0] || '');
+  const many = props.length > 1;
+  const subject = 'Welcome to Lazy — your proposal for ' + joined;
   const html = `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>${esc(subject)}</title></head>
 <body style="margin:0;padding:0;background:${C.cream};">
@@ -77,11 +80,11 @@ function email(client, prop, pr, settings) {
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">
   <tr><td style="padding-bottom:16px;"><img src="${esc(settings.siteBase)}lazy-logo-email.png" width="120" alt="Lazy" style="display:block;border:0;"></td></tr>
   <tr><td style="${font}font-size:26px;font-weight:600;color:${C.ink};">Welcome, ${esc(first)}!</td></tr>
-  <tr><td style="${text}padding-top:12px;">${esc(settings.welcome.replace('{property}', prop.name))}</td></tr>
-  ${h('1. Your website')}
-  <tr><td>${btn(pr.siteUrl, 'Visit your website')}</td></tr>
+  <tr><td style="${text}padding-top:12px;">${esc(settings.welcome.replace('{property}', joined))}</td></tr>
+  ${h(many ? '1. Your websites' : '1. Your website')}
+  ${props.map((p) => `<tr><td style="padding-bottom:10px;">${btn(p.siteUrl, many ? 'Visit ' + p.name : 'Visit your website')}</td></tr>`).join('')}
   ${h('2. Try the editor')}
-  <tr><td>${btn(pr.editorUrl, 'Open the editor')}</td></tr>
+  ${props.map((p) => `<tr><td style="padding-bottom:10px;">${btn(p.editorUrl, many ? 'Open the editor for ' + p.name : 'Open the editor')}</td></tr>`).join('')}
   ${pr.login ? `<tr><td style="${text}padding-top:12px;">Your login: <strong>${esc(pr.login)}</strong>. ${esc(settings.editorNote)}</td></tr>` : ''}
   ${h('3. About Lazy')}
   <tr><td>${btn(settings.whitepaperUrl, 'Read the whitepaper')}</td></tr>
@@ -132,11 +135,11 @@ function build(only) {
   for (const c of clients()) {
     for (const pr of c.proposals || []) {
       if (only && pr.token !== only) continue;
-      const prop = (c.properties || []).find((p) => p.id === pr.property) || { name: pr.property };
-      const m = email(c, prop, pr, settings);
+      const props = (pr.properties || []).map((id) => (c.properties || []).find((p) => p.id === id)).filter(Boolean);
+      const m = email(c, props, Object.assign({}, pr, { login: c.login || '' }), settings);
       fs.writeFileSync(path.join(ROOT, 'emails', pr.token + '.html'), m.html);
       fs.writeFileSync(path.join(ROOT, 'emails', pr.token + '.json'), JSON.stringify({ to: c.email, subject: m.subject, attach: PAPER + '.pdf' }, null, 2) + '\n');
-      out.push({ client: c.name, property: prop.name, email: 'emails/' + pr.token + '.html', subject: m.subject });
+      out.push({ client: c.name, property: props.map((p) => p.name).join(', '), email: 'emails/' + pr.token + '.html', subject: m.subject });
     }
   }
   return out;
