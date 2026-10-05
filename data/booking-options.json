@@ -61,15 +61,16 @@
   {
     "name": "Guesty",
     "about": "Management software for 1–3 listings: one calendar and inbox for Airbnb, Booking.com and Vrbo.",
-    "price": "from about $9/month per listing",
+    "price": "from $20/month per listing",
     "services": [
       "Airbnb, Booking.com, Vrbo sync",
       "Multi-calendar",
       "Unified inbox",
-      "Add-ons: pricing, locks, damage protection"
+      "Add-ons: pricing, locks, damage protection",
+      "$20 yearly, $29 month to month, or $9 + 1% per booking"
     ],
     "url": "https://www.guesty.com",
-    "source": "https://www.guesty.com/pricing/",
+    "source": "https://www.roommaster.com/blog/guesty-pricing",
     "checked": "2026-10-04"
   }
 ]
