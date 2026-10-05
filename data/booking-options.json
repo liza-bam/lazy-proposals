@@ -20,9 +20,10 @@
     "about": "All-in-one rental software: Airbnb, Vrbo and direct bookings in one system, with agreements and accounting.",
     "price": "from $88/month for 1 property",
     "services": [
-      "Direct booking and payments",
-      "Guest messaging",
-      "Rental agreements and e-signatures"
+      "Booking widget",
+      "Online payments",
+      "Rental agreements",
+      "E-signatures"
     ],
     "url": "https://www.ownerrez.com",
     "source": "https://www.ownerrez.com/pricing",
@@ -33,10 +34,9 @@
     "about": "A booking box with live availability for your site, plus calendar sync and channel management.",
     "price": "from about $39/month per property",
     "services": [
-      "Embeddable booking widget",
+      "Booking widget",
       "Online payments",
-      "Central calendar and inbox",
-      "1.9% booking fee below Ultimate"
+      "1.9% booking fee"
     ],
     "url": "https://www.lodgify.com",
     "source": "https://frontdeskreview.com/software/vacation-rental-software/lodgify/",
@@ -47,9 +47,7 @@
     "about": "Automation for Airbnb hosts: one inbox and calendar, automatic messages, and a direct booking site.",
     "price": "about $59/month for 2 properties",
     "services": [
-      "Direct booking website",
-      "Automated guest messaging",
-      "Guest payment collection",
+      "Online payments",
       "$15/month per extra property"
     ],
     "url": "https://hospitable.com",
@@ -61,10 +59,9 @@
     "about": "Management software for 1–3 listings: one calendar and inbox for Airbnb, Booking.com and Vrbo.",
     "price": "from $20/month per listing",
     "services": [
-      "Multi-calendar",
-      "Unified inbox",
-      "Add-ons: pricing, locks, damage protection",
-      "$20 yearly, $29 month to month, or $9 + 1% per booking"
+      "$29 month to month",
+      "Or $9 + 1% per booking",
+      "Pricing, locks, damage add-ons"
     ],
     "url": "https://www.guesty.com",
     "source": "https://www.roommaster.com/blog/guesty-pricing",
