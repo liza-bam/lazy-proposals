@@ -29,6 +29,8 @@
   .row { display: flex; gap: var(--s2); align-items: center; }
   .ghost { background: none; border: var(--frame) solid var(--coral); color: var(--coral); padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; }
   #add-prop { align-self: flex-start; }
+  .saved { color: var(--teal); font-size: 14px; min-height: 1.4em; }
+  .saved.err { color: var(--coral); }
   .tick { flex-direction: row; align-items: center; gap: var(--s2); color: var(--ink); font-size: 16px; }
 </style>
 </head>
@@ -79,11 +81,11 @@ function render() {
       field('Login (username only — the password goes in a separate email)', 'login', c.login) +
       '<label>Temperature (cold: the email introduces Lazy and the Founding Host Offer)<select name="f_temp">' +
         ['cold', 'warm', 'hot'].map((t) => '<option value="' + t + '"' + ((c.temp || 'warm') === t ? ' selected' : '') + '>' + t[0].toUpperCase() + t.slice(1) + '</option>').join('') + '</select></label>' +
-      '<button class="go">Save client</button></form>' +
+      '<span class="saved" aria-live="polite"></span></form>' +
     c.properties.map((p) => '<details class="box acc" data-acc="' + esc(p.id) + '"' + (openProps.has(p.id) ? ' open' : '') + '><summary>' + esc(p.name) + '</summary><form data-prop="' + esc(p.id) + '" class="acc__body">' +
       field('Property name', 'name', p.name, 'required') + field('Website address', 'siteUrl', p.siteUrl, 'type="url" placeholder="https://"') +
       field('Editor link', 'editorUrl', p.editorUrl, 'type="url" placeholder="https://app.lazy.vacations/…"') +
-      '<button class="go">Save property</button></form></details>').join('') +
+      '<span class="saved" aria-live="polite"></span></form></details>').join('') +
     (!addingProp ? '<button class="go" id="add-prop">Add property</button>' :
     '<form class="box" id="new-prop"><strong>New property</strong>' +
       field('Property name', 'name', '', 'required') + field('Website address', 'siteUrl', '', 'type="url" placeholder="https://"') +
@@ -96,6 +98,22 @@ function render() {
       '<div>' + (p.properties || []).map((id) => esc(name(id))).join(', ') + ' · ' + esc(p.date) + ' — ' +
       '<a href="/email/' + esc(p.token) + '" target="_blank">email</a></div>').join('') || '<span class="muted">None yet.</span>') + '</div>';
 }
+// Client and property details save themselves when a field is left or the selector changes;
+// the page is not redrawn, so focus stays where it is.
+async function autosave(f) {
+  const d = form(f), note = f.querySelector('.saved');
+  try {
+    const c = f.id === 'edit-client'
+      ? await api('/api/client/update', Object.assign(d, { client: current }))
+      : await api('/api/property/update', Object.assign(d, { client: current, id: f.dataset.prop }));
+    clients = clients.map((x) => (x.id === c.id ? c : x));
+    if (f.dataset.prop) { const s = f.closest('details').querySelector('summary'); if (s) s.textContent = d.name; }
+    const b = document.querySelector('#clients button[data-id="' + c.id + '"]');
+    if (b) b.innerHTML = esc(c.name) + ' <span class="muted">· ' + c.properties.length + ' properties · ' + esc(c.temp || 'warm') + '</span>';
+    if (note) { note.textContent = 'Saved'; note.classList.remove('err'); }
+  } catch (er) { if (note) { note.textContent = er.message; note.classList.add('err'); } }
+}
+document.addEventListener('change', (e) => { const f = e.target.form; if (f && (f.id === 'edit-client' || f.dataset.prop) && e.target.type !== 'checkbox') autosave(f); });
 document.addEventListener('toggle', (e) => { const d = e.target; if (d.dataset && d.dataset.acc) d.open ? openProps.add(d.dataset.acc) : openProps.delete(d.dataset.acc); }, true);
 document.addEventListener('click', (e) => {
   if (e.target.id === 'add-prop') { addingProp = true; render(); return; }
@@ -105,8 +123,7 @@ document.addEventListener('submit', async (e) => {
   const f = e.target, d = form(f);
   try {
     if (f.id === 'new-client') { const c = await api('/api/client', d); f.reset(); await load(c.id); }
-    if (f.id === 'edit-client') { await api('/api/client/update', Object.assign(d, { client: current })); await load(); }
-    if (f.dataset.prop) { await api('/api/property/update', Object.assign(d, { client: current, id: f.dataset.prop })); await load(); }
+    if (f.id === 'edit-client' || f.dataset.prop) await autosave(f);
     if (f.id === 'new-prop') { await api('/api/property', Object.assign(d, { client: current })); addingProp = false; await load(); }
     if (f.id === 'new-proposal') { $('#msg').textContent = 'Building…'; await api('/api/proposal', Object.assign(d, { client: current })); await load(); }
   } catch (er) { const m = $('#msg'); if (m) m.textContent = er.message; else alert(er.message); }
