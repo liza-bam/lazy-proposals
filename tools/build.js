@@ -23,7 +23,6 @@ function page(client, prop, pr, settings, options) {
         <p class="pp__about">${esc(o.about)}</p>
         <dl class="pp__facts">
           <dt>Best for</dt><dd>${esc(o.bestFor)}</dd>
-          <dt>With your Lazy site</dt><dd>${esc(o.withLazy)}</dd>
         </dl>
         <ul class="pp__chips">${o.services.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
         <footer class="pp__cardfoot">
@@ -91,7 +90,6 @@ function email(client, prop, pr, settings, options, url) {
           <div style="font-size:18px;font-weight:600;">${esc(o.name)}</div>
           <div style="margin:4px 0 8px;">${esc(o.about)}</div>
           <div><strong>Best for:</strong> ${esc(o.bestFor)}</div>
-          <div><strong>With your Lazy site:</strong> ${esc(o.withLazy)}</div>
           <div style="margin:8px 0;font-weight:600;">${esc(o.price)}</div>
           <div style="color:${C.mute};font-size:14px;">${o.services.map(esc).join(' · ')}</div>
           <div style="margin-top:10px;">${link(o.url, 'Visit ' + o.name + ' →')}</div>
