@@ -13,11 +13,13 @@
   --r2: 12px;
   --r3: 22px;
   --r-btn: 8px;
+  --r-pill: 999px;
+  --facts-label-w: 11em;
+  --track-label: .08em;
   --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --s5: 40px; --s6: 64px;
   --col: 880px;
-  --card-min: 240px;
   --logo-h: 40px;
-  --text: 17px; --text-sm: 14px; --text-lg: 22px; --text-xl: 36px;
+  --text: 17px; --text-xs: 12px; --text-sm: 14px; --text-lg: 22px; --text-xl: 36px;
   --lh: 1.5;
   --frame: 1px;
 }
@@ -40,17 +42,23 @@ body { margin: 0; background: var(--cream); color: var(--ink); font: var(--text)
 a { color: var(--teal); }
 .pp__btn { align-self: flex-start; display: inline-block; padding: var(--s2) var(--s4); border-radius: var(--r-btn); background: var(--coral); color: var(--white); text-decoration: none; font-weight: 600; }
 .pp__btn:hover { background: var(--coral-hover); }
-.pp__cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(var(--card-min), 1fr)); gap: var(--s3); }
-.pp__card { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r3); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s2); break-inside: avoid; }
+/* One wide card per booking engine: name and price on top, two labelled lines, services as chips. */
+.pp__cards { display: flex; flex-direction: column; gap: var(--s3); }
+.pp__card { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r3); padding: var(--s4); display: flex; flex-direction: column; gap: var(--s3); break-inside: avoid; }
+.pp__cardhead { display: flex; align-items: baseline; justify-content: space-between; gap: var(--s2) var(--s3); flex-wrap: wrap; }
 .pp__card h3 { margin: 0; font-size: var(--text-lg); }
-.pp__card p { margin: 0; }
-.pp__about { color: var(--ink); }
-.pp__btn--ghost { background: none; color: var(--coral); border: var(--frame) solid var(--coral); margin-top: auto; }
+.pp__price { background: var(--tint); color: var(--ink); border-radius: var(--r-pill); padding: var(--s1) var(--s3); font-size: var(--text-sm); font-weight: 600; }
+.pp__about { margin: 0; }
+.pp__facts { margin: 0; display: grid; grid-template-columns: var(--facts-label-w) 1fr; gap: var(--s2) var(--s3); font-size: var(--text-sm); }
+.pp__facts dt { color: var(--ink-mute); text-transform: uppercase; letter-spacing: var(--track-label); font-size: var(--text-xs); padding-top: var(--s1); }
+.pp__facts dd { margin: 0; }
+.pp__chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--s2); }
+.pp__chips li { border: var(--frame) solid var(--line); border-radius: var(--r-pill); padding: var(--s1) var(--s3); font-size: var(--text-sm); }
+.pp__cardfoot { display: flex; align-items: center; justify-content: space-between; gap: var(--s2) var(--s3); flex-wrap: wrap; padding-top: var(--s3); border-top: var(--frame) solid var(--line); }
+.pp__btn--ghost { background: none; color: var(--coral); border: var(--frame) solid var(--coral); white-space: nowrap; }
 .pp__btn--ghost:hover { background: var(--coral); color: var(--white); }
-.pp__url { color: var(--ink-mute); font-size: var(--text-sm); overflow-wrap: anywhere; }
-.pp__price { font-weight: 600; }
-.pp__card ul { margin: 0; padding-left: var(--s4); }
 .pp__note { color: var(--ink-mute); font-size: var(--text-sm); }
+@media (max-width: 600px) { .pp__facts { grid-template-columns: 1fr; } .pp__facts dt { padding-top: 0; } }
 @media print {
   .pp__logo { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
   body { background: var(--white); }

@@ -7,7 +7,6 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const bare = (u) => String(u).replace(/^https?:\/\//, '');
 
 function clients() {
   const dir = path.join(ROOT, 'data/clients');
@@ -16,17 +15,22 @@ function clients() {
 
 function page(client, prop, pr, settings, options) {
   const cards = options.map((o) => `
-      <div class="pp__card">
-        <h3>${esc(o.name)}</h3>
+      <article class="pp__card">
+        <header class="pp__cardhead">
+          <h3>${esc(o.name)}</h3>
+          <span class="pp__price">${esc(o.price)}</span>
+        </header>
         <p class="pp__about">${esc(o.about)}</p>
-        <p><strong>Best for:</strong> ${esc(o.bestFor)}</p>
-        <p><strong>With your Lazy site:</strong> ${esc(o.withLazy)}</p>
-        <div class="pp__price">${esc(o.price)}</div>
-        <ul>${o.services.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
-        <a class="pp__btn pp__btn--ghost" href="${esc(o.url)}" target="_blank" rel="noopener">Visit ${esc(o.name)} →</a>
-        <div class="pp__url">${esc(bare(o.url))}</div>
-        <div class="pp__note">Approximate, checked ${esc(o.checked)} — <a href="${esc(o.source)}" target="_blank" rel="noopener">source</a></div>
-      </div>`).join('');
+        <dl class="pp__facts">
+          <dt>Best for</dt><dd>${esc(o.bestFor)}</dd>
+          <dt>With your Lazy site</dt><dd>${esc(o.withLazy)}</dd>
+        </dl>
+        <ul class="pp__chips">${o.services.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
+        <footer class="pp__cardfoot">
+          <a class="pp__btn pp__btn--ghost" href="${esc(o.url)}" target="_blank" rel="noopener">Visit ${esc(o.name)} →</a>
+          <span class="pp__note">Price checked ${esc(o.checked)} · <a href="${esc(o.source)}" target="_blank" rel="noopener">source</a></span>
+        </footer>
+      </article>`).join('');
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
