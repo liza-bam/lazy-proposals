@@ -68,7 +68,7 @@ function email(client, prop, pr, settings) {
   const text = `${font}font-size:16px;line-height:1.6;color:${C.ink};`;
   const first = String(client.name || '').trim().split(/\s+/)[0] || client.name;
   const h = (t) => `<tr><td style="${font}font-size:20px;font-weight:600;color:${C.ink};padding:28px 0 10px;">${t}</td></tr>`;
-  const btn = (u, t) => `<a href="${esc(u)}" style="display:inline-block;background:${C.coral};color:#ffffff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;${font}">${esc(t)}</a>`;
+  const btn = (u, t) => `<a href="${esc(u)}" target="_blank" rel="noopener" style="display:inline-block;background:${C.coral};color:#ffffff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;${font}">${esc(t)}</a>`;
   const subject = 'Welcome to Lazy — your proposal for ' + prop.name;
   const html = `<!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8"><title>${esc(subject)}</title></head>
