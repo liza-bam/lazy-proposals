@@ -57,6 +57,13 @@ http.createServer(async (req, res) => {
       const c = { id, name: b.name.trim(), email: (b.email || '').trim(), properties: [], proposals: [] };
       save(c); return send(res, 200, c);
     }
+    if (req.method === 'POST' && req.url === '/api/property/rename') {   // same id, so its proposals stay linked
+      const b = await body(req), c = all().find((x) => x.id === b.client), p = c && c.properties.find((x) => x.id === b.id);
+      if (!p || !String(b.name || '').trim()) return send(res, 400, { error: 'Give the property a name.' });
+      p.name = b.name.trim(); save(c);
+      for (const pr of c.proposals) if (pr.property === p.id) build(pr.token);
+      return send(res, 200, c);
+    }
     if (req.method === 'POST' && req.url === '/api/property') {
       const b = await body(req), c = all().find((x) => x.id === b.client);
       if (!c || !String(b.name || '').trim()) return send(res, 400, { error: 'Pick a client and give the property a name.' });

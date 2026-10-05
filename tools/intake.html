@@ -22,6 +22,8 @@
   .msg { color: var(--coral); }
   .done a { color: var(--teal); overflow-wrap: anywhere; }
   .muted { color: var(--ink-mute); }
+  .row-edit { display: flex; gap: var(--s2); }
+  .row-edit input { flex: 1; }
 </style>
 </head>
 <body>
@@ -31,8 +33,8 @@
     <div class="box list" id="clients"></div>
     <form class="box" id="new-client">
       <strong>New client</strong>
-      <label>Name<input name="name" required></label>
-      <label>Email<input name="email" type="email"></label>
+      <label>Name<input autocomplete="off" data-lpignore="true" data-1p-ignore name="name" required></label>
+      <label>Email<input autocomplete="off" data-lpignore="true" data-1p-ignore name="email" type="email"></label>
       <button class="go">Add client</button>
     </form>
   </aside>
@@ -62,12 +64,14 @@ function render() {
   const name = (id) => (c.properties.find((p) => p.id === id) || {}).name || id;
   $('#detail').innerHTML =
     '<div class="box"><strong>' + esc(c.name) + '</strong><span class="muted">' + esc(c.email) + '</span></div>' +
-    '<form class="box" id="new-prop"><strong>Add a property</strong><label>Property name<input name="name" required></label><button class="go">Add property</button></form>' +
+    (c.properties.length ? '<div class="box"><strong>Properties</strong>' + c.properties.map((p) =>
+      '<form class="row-edit" data-prop="' + esc(p.id) + '"><input autocomplete="off" data-lpignore="true" data-1p-ignore name="name" value="' + esc(p.name) + '" required><button class="go">Save</button></form>').join('') + '</div>' : '') +
+    '<form class="box" id="new-prop"><strong>Add a property</strong><label>Property name<input autocomplete="off" data-lpignore="true" data-1p-ignore name="name" required></label><button class="go">Add property</button></form>' +
     (props ? '<form class="box" id="new-prop-proposal"><strong>New proposal</strong>' +
       '<label>Property<select name="property">' + props + '</select></label>' +
-      '<label>Website address<input name="siteUrl" type="url" required placeholder="https://"></label>' +
-      '<label>Editor demo link<input name="editorUrl" type="url" required placeholder="https://app.lazy.vacations/…"></label>' +
-      '<label>Login (username only — the password goes in a separate email)<input name="login"></label>' +
+      '<label>Website address<input autocomplete="off" data-lpignore="true" data-1p-ignore name="siteUrl" type="url" required placeholder="https://"></label>' +
+      '<label>Editor demo link<input autocomplete="off" data-lpignore="true" data-1p-ignore name="editorUrl" type="url" required placeholder="https://app.lazy.vacations/…"></label>' +
+      '<label>Login (username only — the password goes in a separate email)<input autocomplete="off" data-lpignore="true" data-1p-ignore name="login"></label>' +
       '<button class="go">Make proposal</button><span class="msg" id="msg"></span></form>' : '') +
     '<div class="box done"><strong>Proposals (' + c.proposals.length + ')</strong>' + (c.proposals.map((p) =>
       '<div>' + esc(name(p.property)) + ' · ' + esc(p.date) + ' — ' +
@@ -79,6 +83,7 @@ document.addEventListener('submit', async (e) => {
   const f = e.target, d = form(f);
   try {
     if (f.id === 'new-client') { const c = await api('/api/client', d); f.reset(); await load(c.id); }
+    if (f.dataset.prop) { await api('/api/property/rename', Object.assign(d, { client: current, id: f.dataset.prop })); await load(); }
     if (f.id === 'new-prop') { await api('/api/property', Object.assign(d, { client: current })); await load(); }
     if (f.id === 'new-prop-proposal') { $('#msg').textContent = 'Building…'; await api('/api/proposal', Object.assign(d, { client: current })); await load(); }
   } catch (er) { const m = $('#msg'); if (m) m.textContent = er.message; else alert(er.message); }

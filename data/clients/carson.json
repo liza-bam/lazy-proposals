@@ -1,0 +1,16 @@
+{
+  "id": "carson",
+  "name": "Carson",
+  "email": "",
+  "properties": [
+    {
+      "id": "saddleback-ski-lodge-lazy-vacations",
+      "name": "saddleback-ski-lodge.lazy.vacations"
+    },
+    {
+      "id": "saddleback-lodge",
+      "name": "Saddleback Lodge"
+    }
+  ],
+  "proposals": []
+}
