@@ -79,7 +79,7 @@ function render() {
     '<form class="box" id="edit-client"><strong>Client</strong>' +
       field('Name', 'name', c.name, 'required') + field('Email', 'email', c.email, 'type="email"') +
       field('Login (username only — the password goes in a separate email)', 'login', c.login) +
-      '<label>Temperature (cold: the email introduces Lazy and the Founding Host Offer)<select name="f_temp">' +
+      '<label>Temperature (cold: the email introduces Lazy and the Launch Offer)<select name="f_temp">' +
         ['cold', 'warm', 'hot'].map((t) => '<option value="' + t + '"' + ((c.temp || 'warm') === t ? ' selected' : '') + '>' + t[0].toUpperCase() + t.slice(1) + '</option>').join('') + '</select></label>' +
       '<span class="saved" aria-live="polite"></span></form>' +
     c.properties.map((p) => '<details class="box acc" data-acc="' + esc(p.id) + '"' + (openProps.has(p.id) ? ' open' : '') + '><summary>' + esc(p.name) + '</summary><form data-prop="' + esc(p.id) + '" class="acc__body">' +
