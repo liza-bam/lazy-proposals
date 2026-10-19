@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Make proposal — Lazy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600&display=swap">
+<style>
+  :root { --font: "Noto Serif", serif; --ink: #17363c; --ink-mute: #8fa3a4; --coral: #f9426f; --teal: #2fa18c;
+          --line: #d3ede6; --cream: #fffdf6; --white: #fff; --r2: 12px; --r-btn: 8px;
+          --s1: 4px; --s2: 8px; --s3: 16px; --s4: 24px; --col: 760px; --frame: 1px; --pdf-h: 90vh; }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--cream); color: var(--ink); font: 16px/1.5 var(--font); }
+  .pr { max-width: var(--col); margin: 0 auto; padding: var(--s4) var(--s3); display: flex; flex-direction: column; gap: var(--s3); }
+  h1 { margin: 0; font-size: 26px; }
+  .box { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r2); padding: var(--s3); display: flex; flex-direction: column; gap: var(--s3); }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s3); }
+  label { display: flex; flex-direction: column; gap: var(--s1); color: var(--ink-mute); font-size: 14px; }
+  input, select, textarea { font: inherit; color: var(--ink); padding: var(--s2); border: var(--frame) solid var(--line); border-radius: var(--r-btn); background: var(--white); }
+  textarea { min-height: 96px; resize: vertical; }
+  .go { align-self: flex-start; background: var(--coral); color: var(--white); border: 0; padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; }
+  .go[disabled] { opacity: .6; cursor: progress; }
+  .warn { color: var(--coral); margin: 0; }
+  .ok { color: var(--teal); margin: 0; }
+  iframe { width: 100%; height: var(--pdf-h); border: var(--frame) solid var(--line); background: var(--white); }
+  @media (max-width: 600px) { .two { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main class="pr">
+  <h1>Make proposal</h1>
+  <label>Property <select id="pick"></select></label>
+  <form class="box" id="form">
+    <p class="warn" id="missing" hidden></p>
+    <div class="two">
+      <label>To (owner email)<input name="to" type="email"></label>
+      <label>Owner<input name="owner"></label>
+    </div>
+    <div class="two">
+      <label>Greeting name<input name="first"></label>
+      <label>Owner phone<input name="phone" type="tel"></label>
+    </div>
+    <div class="two">
+      <label>Property<input name="property"></label>
+      <label>Website<input name="siteUrl" type="url"></label>
+    </div>
+    <div class="two">
+      <label>Editor login<input name="login"></label>
+      <label>Airbnb listing<input name="listingUrl" type="url"></label>
+    </div>
+    <label>Subject<input name="subject"></label>
+    <label>Email opening<textarea name="intro"></textarea></label>
+    <button class="go" id="make" type="submit">Looks good — make the email and PDF</button>
+    <p class="warn" id="err"></p>
+  </form>
+  <section class="box" id="done" hidden>
+    <p class="ok" id="made"></p>
+    <iframe id="pdf" title="The one-page proposal"></iframe>
+  </section>
+</main>
+<script>
+const form = document.getElementById('form'), pick = document.getElementById('pick');
+const say = (id, t) => { document.getElementById(id).textContent = t; };
+async function api(url, opts) {
+  const r = await fetch(url, opts), j = await r.json();
+  if (!r.ok) throw new Error(j.error || r.status);
+  return j;
+}
+async function fill(id) {
+  say('err', ''); document.getElementById('done').hidden = true;
+  const f = await api('/api/propose/prefill?id=' + encodeURIComponent(id));
+  for (const el of form.elements) if (el.name) el.value = f[el.name] || '';
+  const m = document.getElementById('missing');
+  m.hidden = !f.missing.length; m.textContent = f.missing.length ? 'Not found: ' + f.missing.join(', ') + '.' : '';
+}
+(async () => {
+  const list = await api('/api/propose/properties');
+  pick.innerHTML = list.map((p) => `<option value="${p.id}">${p.name.replace(/</g, '&lt;')}</option>`).join('');
+  const want = new URLSearchParams(location.search).get('property');
+  if (want && list.some((p) => p.id === want)) pick.value = want;
+  pick.onchange = () => fill(pick.value).catch((e) => say('err', e.message));
+  await fill(pick.value);
+})().catch((e) => say('err', e.message));
+form.onsubmit = async (e) => {
+  e.preventDefault(); say('err', '');
+  const b = document.getElementById('make'); b.disabled = true;
+  try {
+    const out = await api('/api/propose', { method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(Object.fromEntries(new FormData(form))) });
+    say('made', 'Made. Proposal ' + out.token + ' for ' + out.to + ' — tell Claude it is good, and the Gmail draft opens with this PDF attached.');
+    document.getElementById('pdf').src = '/proposal/' + out.token + '.pdf';
+    document.getElementById('done').hidden = false;
+  } catch (err) { say('err', err.message); }
+  b.disabled = false;
+};
+</script>
+</body>
+</html>

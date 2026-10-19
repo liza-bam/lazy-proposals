@@ -23,5 +23,76 @@
     "url": "https://lazy.vacations/",
     "button": "See the offer"
   },
-  "editorUrl": "https://app.lazy.vacations/"
+  "editorUrl": "https://app.lazy.vacations/",
+  "proposal": {
+    "intakeDir": "../lazy-project/Website maker/.intake-projects",
+    "adminJar": "../lazy-project/Website maker/.intake-projects/lazy-admin-session.json",
+    "subject": "Your website for {property} is ready",
+    "attachNote": "Your proposal is attached: what you get and what it costs.",
+    "pdfName": "LAZY proposal - {property}.pdf",
+    "title": "Proposal for {owner}",
+    "free": {
+      "heading": "Design & setup",
+      "price": "FREE",
+      "note": "During launch",
+      "groups": [
+        [
+          "Your site",
+          [
+            "Designed around your place and your photos",
+            "Looks right on every phone",
+            "AI assistant that answers guest questions",
+            "Local guidebook, built automatically",
+            "Your Airbnb reviews, on your own site",
+            "Inquiry form built in",
+            "Readable by AI agents"
+          ]
+        ],
+        [
+          "Your editor",
+          [
+            "Edit it like a blog post, not like Wix",
+            "Change any text, photo, or section",
+            "Restyle the whole site in one click",
+            "Fine-tune fonts, colors, and shapes",
+            "Choose which reviews guests see",
+            "Add weather, social feed, and other widgets"
+          ]
+        ],
+        [
+          "Booking",
+          [
+            "Guests book directly on your site",
+            "Works with Hospitable, Guesty, Lodgify, OwnerRez",
+            "Calendars stay in sync through your platform",
+            "No platform yet? Guests send inquiries to you"
+          ]
+        ],
+        [
+          "Domain & account",
+          [
+            "Your own domain or a free lazy.vacations address",
+            "Ask for features on the wishlist",
+            "Simple settings and billing"
+          ]
+        ]
+      ]
+    },
+    "support": {
+      "heading": "Hosting & support",
+      "badge": "First month free",
+      "price": "$50 per month",
+      "note": "$25 for each additional property",
+      "items": [
+        "We host and maintain your site",
+        "Your AI assistant, kept up to date",
+        "We manage your forms and reviews",
+        "New editor features as they ship",
+        "Help from a real person, who is a host too"
+      ]
+    },
+    "cancel": "No lock-in. Cancel anytime and take your site with you, or leave it with us as a portfolio piece.",
+    "start": "No credit card to start.",
+    "contact": "Sandy · sandy@lazy.vacations · +1 (415) 317-3404 · lazy.vacations"
+  }
 }

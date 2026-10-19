@@ -64,3 +64,22 @@ a { color: var(--teal); }
   .pp__print { display: none; }
   .pp__btn--ghost { border: 0; padding: 0; color: var(--teal); }
 }
+
+/* THE ONE-PAGE PROPOSAL (tools/propose.js): the offer's two cards for one owner and property, on one Letter page. */
+.op { max-width: var(--col); margin: 0 auto; display: flex; flex-direction: column; gap: var(--s3); font-size: var(--text-sm); }
+.op__logo { display: block; height: 32px; width: auto; color: var(--logo-coral); }
+.op__date { color: var(--ink-mute); }
+.op__title { margin: 0; font-size: 28px; line-height: 1.15; }
+.op__for { margin: var(--s1) 0 0; font-size: var(--text); }
+.op__card { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r3); padding: var(--s3) var(--s4); break-inside: avoid; }
+.op__head { display: flex; justify-content: space-between; align-items: flex-start; gap: var(--s3); margin-bottom: var(--s2); }
+.op__head h2 { margin: 0; font-size: var(--text-lg); }
+.op__price { font-weight: 700; font-size: var(--text-lg); text-align: right; line-height: 1.2; }
+.op__price span { display: block; font-size: var(--text-xs); font-weight: 600; color: var(--ink-mute); }
+.op__badge { display: inline-block; vertical-align: middle; background: var(--tint); border-radius: var(--r-pill); padding: 2px var(--s2); font-size: var(--text-xs); font-weight: 600; }
+.op__groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s2) var(--s4); }
+.op h3 { margin: 0 0 2px; font-size: var(--text-sm); }
+.op ul { margin: 0; padding-left: 18px; line-height: 1.45; }
+.op__cancel { margin: var(--s2) 0 0; padding-top: var(--s2); border-top: var(--frame) solid var(--line); color: var(--ink-mute); }
+.op__foot { display: flex; justify-content: space-between; gap: var(--s3); flex-wrap: wrap; }
+@media print { .op { gap: var(--s3); } .op__card { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }

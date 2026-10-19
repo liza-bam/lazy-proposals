@@ -129,7 +129,7 @@ function pdfOnce(htmlFile, pdfFile) {
 }
 // Chrome now and then starts without printing; one more try covers it.
 function pdf(htmlFile, pdfFile) {
-  if (!pdfOnce(htmlFile, pdfFile) && !pdfOnce(htmlFile, pdfFile)) throw new Error('The whitepaper PDF was not written.');
+  if (!pdfOnce(htmlFile, pdfFile) && !pdfOnce(htmlFile, pdfFile)) throw new Error('The PDF was not written: ' + path.basename(pdfFile));
 }
 
 function build(only) {
@@ -153,5 +153,5 @@ function build(only) {
   return out;
 }
 
-module.exports = { build };
+module.exports = { build, pdf };
 if (require.main === module) for (const r of build(process.argv[2])) console.log(r.client + ' — ' + r.property + ': ' + r.email + '  ·  ' + r.subject);

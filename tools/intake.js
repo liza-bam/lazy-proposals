@@ -5,6 +5,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { build } = require('./build');
+const propose = require('./propose');
 
 const ROOT = path.resolve(__dirname, '..');
 const DIR = path.join(ROOT, 'data/clients');
@@ -29,6 +30,22 @@ http.createServer(async (req, res) => {
       return res.end(fs.readFileSync(path.join(__dirname, 'intake.html')));
     }
     if (req.method === 'GET' && req.url === '/api/clients') return send(res, 200, all());
+    // Make proposal: the filled form, then the email and its one-page PDF.
+    const u = new URL(req.url, 'http://localhost');
+    if (req.method === 'GET' && u.pathname === '/propose') {
+      res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
+      return res.end(fs.readFileSync(path.join(__dirname, 'propose.html')));
+    }
+    if (req.method === 'GET' && u.pathname === '/api/propose/properties') return send(res, 200, propose.properties());
+    if (req.method === 'GET' && u.pathname === '/api/propose/prefill') return send(res, 200, await propose.prefill(u.searchParams.get('id') || ''));
+    if (req.method === 'POST' && u.pathname === '/api/propose') return send(res, 200, propose.make(await body(req)));
+    const pp = req.method === 'GET' && u.pathname.match(/^\/proposal\/([a-f0-9]+)\.pdf$/);
+    if (pp) {
+      const file = path.join(ROOT, 'emails', pp[1] + '.pdf');
+      if (!fs.existsSync(file)) return send(res, 404, { error: 'No PDF for that proposal.' });
+      res.writeHead(200, { 'content-type': 'application/pdf' });
+      return res.end(fs.readFileSync(file));
+    }
     const em = req.method === 'GET' && req.url.match(/^\/email\/([a-f0-9]+)$/);
     if (em) {   // the email, with its subject and a Copy button for pasting into Gmail
       const base = path.join(ROOT, 'emails', em[1]);
