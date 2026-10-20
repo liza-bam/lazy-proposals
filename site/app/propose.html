@@ -7,7 +7,7 @@
 <title>Make proposal — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css">
-<link rel="stylesheet" href="app.css">
+<link rel="stylesheet" href="app.css?v=9514d24">
 </head>
 <body>
 <div class="app">
@@ -20,7 +20,7 @@
 <!-- The one-page proposal is drawn here, off screen, and printed to PDF in the browser. -->
 <div id="sheet" style="position: fixed; left: -10000px; top: 0; width: 7.5in; background: var(--white);"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script src="app.js"></script>
+<script src="app.js?v=9514d24"></script>
 <script>
 const $ = (s) => document.querySelector(s);
 const id = new URLSearchParams(location.search).get('id') || '';
