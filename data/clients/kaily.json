@@ -1,0 +1,15 @@
+{
+  "id": "kaily",
+  "name": "Kaily",
+  "email": "",
+  "login": "lisbon-falls",
+  "temp": "warm",
+  "properties": [
+    {
+      "id": "lisbon-falls",
+      "name": "Cozy Retreat in Lisbon Falls",
+      "siteUrl": "https://lisbon-falls-retreat.lazy.vacations/"
+    }
+  ],
+  "proposals": []
+}

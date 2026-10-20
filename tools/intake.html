@@ -18,7 +18,7 @@
   .main { display: flex; flex-direction: column; gap: var(--s3); }
   label { display: flex; flex-direction: column; gap: var(--s1); color: var(--ink-mute); font-size: 14px; }
   input, select { font: inherit; color: var(--ink); padding: var(--s2); border: var(--frame) solid var(--line); border-radius: var(--r-btn); }
-  .go { align-self: flex-start; background: var(--coral); color: var(--white); border: 0; padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; }
+  .go { align-self: flex-start; text-decoration: none; background: var(--coral); color: var(--white); border: 0; padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; }
   .msg { color: var(--coral); }
   .done a { color: var(--teal); overflow-wrap: anywhere; }
   .muted { color: var(--ink-mute); }
@@ -36,7 +36,7 @@
 </head>
 <body>
 <div class="in">
-  <h1>Proposal intake</h1>
+  <h1>Clients</h1>
   <aside class="main">
     <div class="box list" id="clients"></div>
     <form class="box" id="new-client">
@@ -74,7 +74,6 @@ const field = (label, key, value, extra) => '<label>' + label + '<input ' + NO_P
 function render() {
   const c = clients.find((x) => x.id === current);
   if (!c) return;
-  const name = (id) => (c.properties.find((p) => p.id === id) || {}).name || id;
   $('#detail').innerHTML =
     '<form class="box" id="edit-client"><strong>Client</strong>' +
       field('Name', 'name', c.name, 'required') + field('Email', 'email', c.email, 'type="email"') +
@@ -84,17 +83,13 @@ function render() {
       '<span class="saved" aria-live="polite"></span></form>' +
     c.properties.map((p) => '<details class="box acc" data-acc="' + esc(p.id) + '"' + (openProps.has(p.id) ? ' open' : '') + '><summary>' + esc(p.name) + '</summary><form data-prop="' + esc(p.id) + '" class="acc__body">' +
       field('Property name', 'name', p.name, 'required') + field('Website address', 'siteUrl', p.siteUrl, 'type="url" placeholder="https://"') +
+      '<a class="go" href="/propose?property=' + encodeURIComponent(p.id) + '">Make proposal</a>' +
       '<span class="saved" aria-live="polite"></span></form></details>').join('') +
     (!addingProp ? '<button class="go" id="add-prop">Add property</button>' :
     '<form class="box" id="new-prop"><strong>New property</strong>' +
       field('Property name', 'name', '', 'required') + field('Website address', 'siteUrl', '', 'type="url" placeholder="https://"') +
       '<div class="row"><button class="go">Add property</button><button type="button" class="ghost" id="cancel-prop">Cancel</button></div></form>') +
-    (c.properties.length ? '<form class="box" id="new-proposal"><strong>New proposal</strong><span class="muted">Tick the properties it covers.</span>' +
-      c.properties.map((p) => '<label class="tick"><input type="checkbox" name="f_properties" value="' + esc(p.id) + '"> ' + esc(p.name) + '</label>').join('') +
-      '<button class="go">Make proposal</button><span class="msg" id="msg"></span></form>' : '') +
-    '<div class="box done"><strong>Proposals (' + c.proposals.length + ')</strong>' + (c.proposals.map((p) =>
-      '<div>' + (p.properties || []).map((id) => esc(name(id))).join(', ') + ' · ' + esc(p.date) + ' — ' +
-      '<a href="/email/' + esc(p.token) + '" target="_blank">email</a></div>').join('') || '<span class="muted">None yet.</span>') + '</div>';
+    '';
 }
 // Client and property details save themselves when a field is left or the selector changes;
 // the page is not redrawn, so focus stays where it is.
@@ -123,7 +118,6 @@ document.addEventListener('submit', async (e) => {
     if (f.id === 'new-client') { const c = await api('/api/client', d); f.reset(); await load(c.id); }
     if (f.id === 'edit-client' || f.dataset.prop) await autosave(f);
     if (f.id === 'new-prop') { await api('/api/property', Object.assign(d, { client: current })); addingProp = false; await load(); }
-    if (f.id === 'new-proposal') { $('#msg').textContent = 'Building…'; await api('/api/proposal', Object.assign(d, { client: current })); await load(); }
   } catch (er) { const m = $('#msg'); if (m) m.textContent = er.message; else alert(er.message); }
 });
 load();

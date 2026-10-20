@@ -1,0 +1,15 @@
+{
+  "id": "andrey",
+  "name": "Andrey",
+  "email": "",
+  "login": "andrey",
+  "temp": "warm",
+  "properties": [
+    {
+      "id": "augusta-lake",
+      "name": "Augusta Lake House",
+      "siteUrl": "https://augusta-lake.lazy.vacations/"
+    }
+  ],
+  "proposals": []
+}
