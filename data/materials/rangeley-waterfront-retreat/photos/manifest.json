@@ -1,0 +1,342 @@
+{
+  "intakeId": "rangeley-waterfront-retreat",
+  "property": "Rangeley Waterfront Retreat",
+  "owner": "Michelle & Darryl",
+  "status": "archived",
+  "archivedAt": "2026-10-20T05:18:39.325015+00:00",
+  "sourceFiles": 33,
+  "uniqueImages": 31,
+  "generatedArtworkFiles": 0,
+  "files": [
+    {
+      "sourceFilename": "000329ba-1b8c-4142-b6c8-f248231b3c1d.avif",
+      "original": "originals/000329ba-1b8c-4142-b6c8-f248231b3c1d.avif",
+      "preview": "previews/9e1f4289b8fa49920b94.jpg",
+      "bytes": 81626,
+      "sha256": "9e1f4289b8fa49920b94c4d12bac00529e2795e30d31f21f98f01cbdc8d2b3c4",
+      "duplicateOf": null,
+      "caption": "Shared lake access through trees",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "06e08ab5-0470-4910-a45b-5693b9228f18.avif",
+      "original": "originals/06e08ab5-0470-4910-a45b-5693b9228f18.avif",
+      "preview": "previews/89290fa8f8edc7a71c9c.jpg",
+      "bytes": 42156,
+      "sha256": "89290fa8f8edc7a71c9c6342b0e9c2476b74330380d78445367f925c4ab0d5f6",
+      "duplicateOf": null,
+      "caption": "Condo exterior in falling snow",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "0e8bd291-a1c5-4e5c-a173-3fffcee1e7f7.avif",
+      "original": "originals/0e8bd291-a1c5-4e5c-a173-3fffcee1e7f7.avif",
+      "preview": "previews/aa428ada8419b89e1553.jpg",
+      "bytes": 28817,
+      "sha256": "aa428ada8419b89e1553d8d86bdc1308987a75791b40d720c2b68a04531effbf",
+      "duplicateOf": null,
+      "caption": "Covered deck with lounge seating",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "135ae259-5b2a-4907-955d-6040de427554.avif",
+      "original": "originals/135ae259-5b2a-4907-955d-6040de427554.avif",
+      "preview": "previews/e7319665c684dbbdf8a0.jpg",
+      "bytes": 53637,
+      "sha256": "e7319665c684dbbdf8a001d3d70ae12cba2760e3ba2549fa433c55773dbc3509",
+      "duplicateOf": null,
+      "caption": "Winter exterior from the grounds",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "14f90087-fb5d-4285-9d25-bcc91c1af842.avif",
+      "original": "originals/14f90087-fb5d-4285-9d25-bcc91c1af842.avif",
+      "preview": "previews/31096f2456abf163b204.jpg",
+      "bytes": 39763,
+      "sha256": "31096f2456abf163b204ab5ab0e577f30a2639bc7e99d370b988d0072854128c",
+      "duplicateOf": null,
+      "caption": "Snowy woodland view from the deck",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "15208273-a16c-4818-b35d-a87c5e516994.avif",
+      "original": "originals/15208273-a16c-4818-b35d-a87c5e516994.avif",
+      "preview": "previews/d1c54d500bc1a40b6260.jpg",
+      "bytes": 23637,
+      "sha256": "d1c54d500bc1a40b62601c552afc841d99ba7e196346fff48c040c5971ae0cf9",
+      "duplicateOf": null,
+      "caption": "Bathroom vanity and shower",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "230d83f6-3155-4ed6-acf1-63dc20a3112e.avif",
+      "original": "originals/230d83f6-3155-4ed6-acf1-63dc20a3112e.avif",
+      "preview": "previews/e11d3faa30a043c036d8.jpg",
+      "bytes": 59722,
+      "sha256": "e11d3faa30a043c036d8dd0c761a9c8b670a55b9548e8d2012151527f6f512c5",
+      "duplicateOf": null,
+      "caption": "Wooded grounds with a glimpse of the lake",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "24026667-3602-4d65-af79-2d812458cc99.avif",
+      "original": "originals/24026667-3602-4d65-af79-2d812458cc99.avif",
+      "preview": "previews/59241231e6a299ab24b6.jpg",
+      "bytes": 54922,
+      "sha256": "59241231e6a299ab24b6fc9643fab621db03a2662b2a5b1925d18c61520524ea",
+      "duplicateOf": null,
+      "caption": "Bathroom with timber vanity",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "3ebdc381-f335-44fd-9d37-3d5b7446f852.avif",
+      "original": "originals/3ebdc381-f335-44fd-9d37-3d5b7446f852.avif",
+      "preview": "previews/cfd0bbcd6715b409b1a0.jpg",
+      "bytes": 63176,
+      "sha256": "cfd0bbcd6715b409b1a036c83f7b5ab28c287bb0a8d82c45c60e4514beb2216a",
+      "duplicateOf": null,
+      "caption": "Golden sky over the grounds",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "4b07e0dd-f908-4e93-92ca-e539abc0c04a.avif",
+      "original": "originals/4b07e0dd-f908-4e93-92ca-e539abc0c04a.avif",
+      "preview": "previews/e08c069019f96d640ef2.jpg",
+      "bytes": 46004,
+      "sha256": "e08c069019f96d640ef2ffc9253ea4a4d668442f2498b3ecf8acc96ebc9afeaf",
+      "duplicateOf": null,
+      "caption": "Basement dry bar",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "4cafdd01-3c1e-4d96-a5ab-35aa36de34e9.avif",
+      "original": "originals/4cafdd01-3c1e-4d96-a5ab-35aa36de34e9.avif",
+      "preview": "previews/0a1dee92252783c008b2.jpg",
+      "bytes": 36999,
+      "sha256": "0a1dee92252783c008b286d7977005bbb57eb3b7fd7c69d169006d6d0ddfd9f9",
+      "duplicateOf": null,
+      "caption": "Sunset through the trees",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "51f175cc-ebd7-45a9-b76d-a8d1750ce8b2.avif",
+      "original": "originals/51f175cc-ebd7-45a9-b76d-a8d1750ce8b2.avif",
+      "preview": "previews/fe3c7a862c0e536206e8.jpg",
+      "bytes": 53911,
+      "sha256": "fe3c7a862c0e536206e83d2884001b94d952f1add39967f33391ce94430c64f2",
+      "duplicateOf": null,
+      "caption": "Living room viewed from the landing",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "5ba5d99c-5ddf-4751-b082-2b11642e8f4a.avif",
+      "original": "originals/5ba5d99c-5ddf-4751-b082-2b11642e8f4a.avif",
+      "preview": "previews/ab031ba78df6f5b4fab8.jpg",
+      "bytes": 36607,
+      "sha256": "ab031ba78df6f5b4fab818b770c7ad51e997b0d9cc365eeb52e1985be16ba7f7",
+      "duplicateOf": null,
+      "caption": "Living room beside the wood-burning fireplace",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "64a85bcd-61e1-4236-b2aa-5a8771341529.avif",
+      "original": "originals/64a85bcd-61e1-4236-b2aa-5a8771341529.avif",
+      "preview": "previews/3d95888c5996ee653260.jpg",
+      "bytes": 48764,
+      "sha256": "3d95888c5996ee65326063a32d5b8ad9beda7c856c7d996add31d532f6c5fa1c",
+      "duplicateOf": null,
+      "caption": "Bunk room with woodland windows",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "654f2ec0-934d-4332-8311-3277d7f4bcba.avif",
+      "original": "originals/654f2ec0-934d-4332-8311-3277d7f4bcba.avif",
+      "preview": "previews/ba90e3e7d424bbb2685b.jpg",
+      "bytes": 39516,
+      "sha256": "ba90e3e7d424bbb2685bd0bd1358f9f189970a1d971c73f901987c161b439c01",
+      "duplicateOf": null,
+      "caption": "Oversized bunk room",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "655f5b2f-a7f7-4856-9a04-abc26f0e4cae.avif",
+      "original": "originals/655f5b2f-a7f7-4856-9a04-abc26f0e4cae.avif",
+      "preview": "previews/670d02fbbe9c5061db55.jpg",
+      "bytes": 28093,
+      "sha256": "670d02fbbe9c5061db554d466d358a93a57793e71f98e1e0de654e71a54c9510",
+      "duplicateOf": null,
+      "caption": "Green-walled bedroom",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "72a3c67f-d624-4475-8e68-1b2462def86e-1.avif",
+      "original": "originals/72a3c67f-d624-4475-8e68-1b2462def86e-1.avif",
+      "preview": "previews/b070b3dd8d87729b8a0b.jpg",
+      "bytes": 130271,
+      "sha256": "b070b3dd8d87729b8a0b2e9f66818d4e1937de8b4a9e2e481f240dee83874100",
+      "duplicateOf": null,
+      "caption": "Lake shore and trees",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "72a3c67f-d624-4475-8e68-1b2462def86e.avif",
+      "original": "originals/72a3c67f-d624-4475-8e68-1b2462def86e.avif",
+      "preview": "previews/dc18c1f78a96c72465b0.jpg",
+      "bytes": 50901,
+      "sha256": "dc18c1f78a96c72465b02951f01bbf3daf659390775791bbb6a88146b5aa21ac",
+      "duplicateOf": null,
+      "caption": "Lake shore and trees",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "75562bb6-f47e-42aa-9086-f5eae5314014.avif",
+      "original": "originals/75562bb6-f47e-42aa-9086-f5eae5314014.avif",
+      "preview": "previews/3427241e465c4062f1be.jpg",
+      "bytes": 45012,
+      "sha256": "3427241e465c4062f1bef525b9f52a9978363bb21afa44b233c77eac15ae2fb6",
+      "duplicateOf": null,
+      "caption": "Shared beach beside Rangeley Lake",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "84ebd0ea-29d5-449f-ba43-9b7b624db5d0-1.avif",
+      "original": "originals/84ebd0ea-29d5-449f-ba43-9b7b624db5d0-1.avif",
+      "preview": "previews/79d05cab7ffdca6fe465.jpg",
+      "bytes": 37829,
+      "sha256": "79d05cab7ffdca6fe465df5d3bddfdbbae0b4e9a377f82eb6c755174b0466534",
+      "duplicateOf": null,
+      "caption": "Blue-accent bedroom",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "84ebd0ea-29d5-449f-ba43-9b7b624db5d0.avif",
+      "original": "originals/84ebd0ea-29d5-449f-ba43-9b7b624db5d0.avif",
+      "preview": "previews/79d05cab7ffdca6fe465.jpg",
+      "bytes": 37829,
+      "sha256": "79d05cab7ffdca6fe465df5d3bddfdbbae0b4e9a377f82eb6c755174b0466534",
+      "duplicateOf": "84ebd0ea-29d5-449f-ba43-9b7b624db5d0-1.avif",
+      "caption": "Blue-accent bedroom",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "8bf0fdc0-2334-4ea5-826c-68d07a768128-1.avif",
+      "original": "originals/8bf0fdc0-2334-4ea5-826c-68d07a768128-1.avif",
+      "preview": "previews/49471eda11009b788cae.jpg",
+      "bytes": 46591,
+      "sha256": "49471eda11009b788caeab37787fbcd993d5aee97589bb0b20dc83eab1f7e3bd",
+      "duplicateOf": null,
+      "caption": "Dining table and timber kitchen",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "8bf0fdc0-2334-4ea5-826c-68d07a768128.avif",
+      "original": "originals/8bf0fdc0-2334-4ea5-826c-68d07a768128.avif",
+      "preview": "previews/13f4fe45bfb0988ccb49.jpg",
+      "bytes": 32171,
+      "sha256": "13f4fe45bfb0988ccb49efae811d51cab54fc16c3d853f47d73f3edca4fe9a0c",
+      "duplicateOf": null,
+      "caption": "Dining table and timber kitchen",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "93472649-3352-4ac5-86b1-c3378b0fc3bd.avif",
+      "original": "originals/93472649-3352-4ac5-86b1-c3378b0fc3bd.avif",
+      "preview": "previews/8db61ce82001fe721cc2.jpg",
+      "bytes": 49786,
+      "sha256": "8db61ce82001fe721cc2e9220a91627136e469c5e0d336ce617a6010b6ba6455",
+      "duplicateOf": null,
+      "caption": "Basement ping-pong room",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "99da05c4-d1cd-42aa-a42d-a72b88e3d1a0-1.avif",
+      "original": "originals/99da05c4-d1cd-42aa-a42d-a72b88e3d1a0-1.avif",
+      "preview": "previews/a6fcb692b8c0adeed8c9.jpg",
+      "bytes": 12446,
+      "sha256": "a6fcb692b8c0adeed8c9554c42f42373a43140c6319cd3631f1ccface47d8f22",
+      "duplicateOf": null,
+      "caption": "Shared dock on Rangeley Lake",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "99da05c4-d1cd-42aa-a42d-a72b88e3d1a0.avif",
+      "original": "originals/99da05c4-d1cd-42aa-a42d-a72b88e3d1a0.avif",
+      "preview": "previews/a6fcb692b8c0adeed8c9.jpg",
+      "bytes": 12446,
+      "sha256": "a6fcb692b8c0adeed8c9554c42f42373a43140c6319cd3631f1ccface47d8f22",
+      "duplicateOf": "99da05c4-d1cd-42aa-a42d-a72b88e3d1a0-1.avif",
+      "caption": "Shared dock on Rangeley Lake",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "a50f681d-757f-4c6b-811b-c98232b66869.avif",
+      "original": "originals/a50f681d-757f-4c6b-811b-c98232b66869.avif",
+      "preview": "previews/1705d30cc4c09b42add4.jpg",
+      "bytes": 84905,
+      "sha256": "1705d30cc4c09b42add4d5041be07771eaa6f5d85c211d9b4a83bc0a319942d1",
+      "duplicateOf": null,
+      "caption": "Deer in the grounds",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "a7963a17-778a-4b75-8da6-e91402f44527.avif",
+      "original": "originals/a7963a17-778a-4b75-8da6-e91402f44527.avif",
+      "preview": "previews/f8e1388411764af37112.jpg",
+      "bytes": 50813,
+      "sha256": "f8e1388411764af3711218f14a1397637cf3a546f83078ba684ee9eeff84ba5f",
+      "duplicateOf": null,
+      "caption": "Equipped kitchen with timber cabinets",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "a7ab4794-2cb8-4b1d-863f-a473537d77f0.avif",
+      "original": "originals/a7ab4794-2cb8-4b1d-863f-a473537d77f0.avif",
+      "preview": "previews/1e9e9862329c782454be.jpg",
+      "bytes": 37876,
+      "sha256": "1e9e9862329c782454bee78de68553132aeaffac997f1c3c78f17708f626d5e4",
+      "duplicateOf": null,
+      "caption": "First-floor sitting nook with sofa",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "cd889613-0373-4897-bcba-12474d9c502f.avif",
+      "original": "originals/cd889613-0373-4897-bcba-12474d9c502f.avif",
+      "preview": "previews/3a06a37e8b74a7cc1f3d.jpg",
+      "bytes": 19299,
+      "sha256": "3a06a37e8b74a7cc1f3dd10dd264826877c2c6d0f22cf57ac20b18db750b3098",
+      "duplicateOf": null,
+      "caption": "Staircase between levels",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "cf37c086-d263-4e57-a90a-372097155665.avif",
+      "original": "originals/cf37c086-d263-4e57-a90a-372097155665.avif",
+      "preview": "previews/e02720f0ed4542e155c9.jpg",
+      "bytes": 11770,
+      "sha256": "e02720f0ed4542e155c9cd5e03e316977d75ba5a46523b4a97a5d98e7733630d",
+      "duplicateOf": null,
+      "caption": "Upstairs landing",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "d3cb49b5-010b-407a-9194-c4d4f86078f7.avif",
+      "original": "originals/d3cb49b5-010b-407a-9194-c4d4f86078f7.avif",
+      "preview": "previews/509fb733165026e49cb5.jpg",
+      "bytes": 30998,
+      "sha256": "509fb733165026e49cb53299b9db7634597dc5b48722aff191f9b633f17d1c22",
+      "duplicateOf": null,
+      "caption": "Washer, dryer and bathroom",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "ecedb044-dae7-44df-ab5b-81612f0aa9b2.avif",
+      "original": "originals/ecedb044-dae7-44df-ab5b-81612f0aa9b2.avif",
+      "preview": "previews/86cf5bf98e8a49d6a6a2.jpg",
+      "bytes": 29062,
+      "sha256": "86cf5bf98e8a49d6a6a2132f56764eab93bc3b8c82cae7614da25e89759fed1c",
+      "duplicateOf": null,
+      "caption": "Winter sunset over the trees",
+      "provenance": "supplied for this property"
+    }
+  ]
+}

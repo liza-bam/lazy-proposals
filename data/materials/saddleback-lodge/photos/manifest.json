@@ -1,0 +1,492 @@
+{
+  "intakeId": "saddleback-lodge",
+  "property": "Saddleback Lodge",
+  "owner": "Ryan & Carson",
+  "status": "archived",
+  "archivedAt": "2026-10-20T05:18:39.325015+00:00",
+  "sourceFiles": 48,
+  "uniqueImages": 46,
+  "generatedArtworkFiles": 2,
+  "files": [
+    {
+      "sourceFilename": "067ae960-0782-40ed-8cba-1c17fe5d3451.avif",
+      "original": "originals/067ae960-0782-40ed-8cba-1c17fe5d3451.avif",
+      "preview": "previews/ee7384ead610ba799d62.jpg",
+      "bytes": 16248,
+      "sha256": "ee7384ead610ba799d62ee4c88522ad7bee2a9e0cf9be28759eb72e8e0e0e7d3",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "06c4dc91-46d8-4a56-985b-b29b2e830e05.avif",
+      "original": "originals/06c4dc91-46d8-4a56-985b-b29b2e830e05.avif",
+      "preview": "previews/38584ecddf9aac4b3b74.jpg",
+      "bytes": 24149,
+      "sha256": "38584ecddf9aac4b3b74a81b4ade9cb976408b73a02831f01b5d20458a05520c",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "0a17ab1e-9f30-4724-a0fa-b5b9a74e7a69.avif",
+      "original": "originals/0a17ab1e-9f30-4724-a0fa-b5b9a74e7a69.avif",
+      "preview": "previews/a6b815613565749d9467.jpg",
+      "bytes": 18564,
+      "sha256": "a6b815613565749d94671dc3d7c42d8c5c0eb21ce4f9cc9efc1cf958b2f7d9a4",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "0cc0f6bd-0bd8-40b1-b7cd-5656560413b3.avif",
+      "original": "originals/0cc0f6bd-0bd8-40b1-b7cd-5656560413b3.avif",
+      "preview": "previews/7c41601ff73e1affb646.jpg",
+      "bytes": 14930,
+      "sha256": "7c41601ff73e1affb6463f6d2e65e604915116daecdb14abfac35bc6ac7aa4ce",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "116acefc-7994-44b8-b5cb-7b955356a904.avif",
+      "original": "originals/116acefc-7994-44b8-b5cb-7b955356a904.avif",
+      "preview": "previews/38727015834c08fcd355.jpg",
+      "bytes": 14313,
+      "sha256": "38727015834c08fcd3558c7ade119f9f89099ac4526ebc51ad58036ceb1dcc91",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "1a1975aa-bf21-48b0-897a-26189465727e.avif",
+      "original": "originals/1a1975aa-bf21-48b0-897a-26189465727e.avif",
+      "preview": "previews/286090654ed7a12be5c4.jpg",
+      "bytes": 27080,
+      "sha256": "286090654ed7a12be5c42b487c691bb006f2371520a34062b88a2f41fcb0b8e4",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "2c1711eb-c24d-48d8-b03f-69bf5e95e693.avif",
+      "original": "originals/2c1711eb-c24d-48d8-b03f-69bf5e95e693.avif",
+      "preview": "previews/d26975ceb5737a9f17bb.jpg",
+      "bytes": 11403,
+      "sha256": "d26975ceb5737a9f17bb9b8a484ec62475d3660cedd2533210a9917db2cf265e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "2c30ee6b-1a04-48f5-85fe-9c280459d98c.avif",
+      "original": "originals/2c30ee6b-1a04-48f5-85fe-9c280459d98c.avif",
+      "preview": "previews/e1b46796fd44b007ebba.jpg",
+      "bytes": 26476,
+      "sha256": "e1b46796fd44b007ebba6cb5110b51c561aa2699cf0907d6f06acfea9bda8300",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "3323ccb6-d353-4da1-b920-ca7fc139c46d.avif",
+      "original": "originals/3323ccb6-d353-4da1-b920-ca7fc139c46d.avif",
+      "preview": "previews/fd02d9d852d27a335565.jpg",
+      "bytes": 55299,
+      "sha256": "fd02d9d852d27a335565c92ef7be0f69fa37951879a19ceea47652d334ee6b89",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "38f482d1-baff-41e4-9465-68bd1b54b07f.avif",
+      "original": "originals/38f482d1-baff-41e4-9465-68bd1b54b07f.avif",
+      "preview": "previews/ca208741d26f4f118e66.jpg",
+      "bytes": 109643,
+      "sha256": "ca208741d26f4f118e66099d8865ca980090afde61621b3e20a226a530e430e7",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "52dae43c-bb88-448f-9bf4-c5c6a3185fc7.avif",
+      "original": "originals/52dae43c-bb88-448f-9bf4-c5c6a3185fc7.avif",
+      "preview": "previews/585162179651649264bf.jpg",
+      "bytes": 75270,
+      "sha256": "585162179651649264bf8cee29ba63d2aedcedcaefd7987f0637732807131907",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "54e4eed1-2fb3-4270-a18b-a406d07d76cd.avif",
+      "original": "originals/54e4eed1-2fb3-4270-a18b-a406d07d76cd.avif",
+      "preview": "previews/69021982780acffc5b80.jpg",
+      "bytes": 40701,
+      "sha256": "69021982780acffc5b801173e7598b337bbb8d8b7658db1338bf10c229e2f024",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "696c098d-aa56-432c-8d06-f6304c58879c.avif",
+      "original": "originals/696c098d-aa56-432c-8d06-f6304c58879c.avif",
+      "preview": "previews/d820652c30de4f5b7387.jpg",
+      "bytes": 47578,
+      "sha256": "d820652c30de4f5b73877cf1369ce28af4fcf43ff7366c575dcc2548cea3afb2",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "78672159-b2ed-4ff9-8359-67d882625bc4.avif",
+      "original": "originals/78672159-b2ed-4ff9-8359-67d882625bc4.avif",
+      "preview": "previews/e6fbaf7cffdb61e5a8b7.jpg",
+      "bytes": 18288,
+      "sha256": "e6fbaf7cffdb61e5a8b731fe9c22c045efe095339811d7c0a02c070db4cdc6e7",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "7c261bd6-e5dc-49fc-9423-f41957ca6fff.avif",
+      "original": "originals/7c261bd6-e5dc-49fc-9423-f41957ca6fff.avif",
+      "preview": "previews/68f49b89f36c652ece39.jpg",
+      "bytes": 55116,
+      "sha256": "68f49b89f36c652ece39bb8016632912f431e7e02ba20387add727c119e27e9a",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "7f3aae43-d5b6-4ede-9953-a284de7062e1 (1).avif",
+      "original": "originals/7f3aae43-d5b6-4ede-9953-a284de7062e1 (1).avif",
+      "preview": "previews/6a8daf944bbe36779bc6.jpg",
+      "bytes": 139533,
+      "sha256": "6a8daf944bbe36779bc63e168e430c642845b86bb07e094f913f4f83748f63de",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "7f3aae43-d5b6-4ede-9953-a284de7062e1.avif",
+      "original": "originals/7f3aae43-d5b6-4ede-9953-a284de7062e1.avif",
+      "preview": "previews/6a8daf944bbe36779bc6.jpg",
+      "bytes": 139533,
+      "sha256": "6a8daf944bbe36779bc63e168e430c642845b86bb07e094f913f4f83748f63de",
+      "duplicateOf": "7f3aae43-d5b6-4ede-9953-a284de7062e1 (1).avif",
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "814ab670-2b79-46da-b4e9-831457efbc9e.avif",
+      "original": "originals/814ab670-2b79-46da-b4e9-831457efbc9e.avif",
+      "preview": "previews/0985408d502ef1f2a120.jpg",
+      "bytes": 25863,
+      "sha256": "0985408d502ef1f2a1204bbbe83ab6d617986c1dc635b9e0835650ccea962cea",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "851bf34b-7b3d-417d-bcbe-fc74cedaca04.avif",
+      "original": "originals/851bf34b-7b3d-417d-bcbe-fc74cedaca04.avif",
+      "preview": "previews/7c6d42f6e441daed1bb1.jpg",
+      "bytes": 56474,
+      "sha256": "7c6d42f6e441daed1bb115adeff8c19bf92f82e20566613ea016067cb4f66ca4",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "89e3e184-85cd-4a19-b7d3-be07fd4cc4c6.avif",
+      "original": "originals/89e3e184-85cd-4a19-b7d3-be07fd4cc4c6.avif",
+      "preview": "previews/883c3807e28f5701ba67.jpg",
+      "bytes": 52350,
+      "sha256": "883c3807e28f5701ba67d7afbb92616ea2b8363758af35ca2258896d6e12d708",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "93769bf1-fc4a-41dd-84f2-b21270c806a8.avif",
+      "original": "originals/93769bf1-fc4a-41dd-84f2-b21270c806a8.avif",
+      "preview": "previews/4e888f7685fe40eeee82.jpg",
+      "bytes": 44197,
+      "sha256": "4e888f7685fe40eeee827b38e2fd6b4282f80e05a35aa6236ae57fe5e917e961",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "9f8f49d6-950b-42b9-9598-f0d5bd1016db.avif",
+      "original": "originals/9f8f49d6-950b-42b9-9598-f0d5bd1016db.avif",
+      "preview": "previews/da7a3655b373e30ef2ab.jpg",
+      "bytes": 14302,
+      "sha256": "da7a3655b373e30ef2ab1921744c2f18fb6b74b03f8f7e2c9c829bcea8909aca",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "BJVbAn29rcvq6j1lwcaj29520rQpttnOvZT-gkGRH2uYgRduRA3972AthstnBCkJKZpO5eME8Uq1uNx60iJFVOu4D7dNTmD7FoB998rC3oMA33D2HE1c248qldfET26xz2L7uorfdfw9VojiEEJwy3dmSSSTsvY8Q2De2mgff8PsUpjaPBW2v_lgei_aqlca.jpeg",
+      "original": "originals/BJVbAn29rcvq6j1lwcaj29520rQpttnOvZT-gkGRH2uYgRduRA3972AthstnBCkJKZpO5eME8Uq1uNx60iJFVOu4D7dNTmD7FoB998rC3oMA33D2HE1c248qldfET26xz2L7uorfdfw9VojiEEJwy3dmSSSTsvY8Q2De2mgff8PsUpjaPBW2v_lgei_aqlca.jpeg",
+      "preview": "previews/2f42465c0ac3c61195eb.jpg",
+      "bytes": 394699,
+      "sha256": "2f42465c0ac3c61195eb5990f1ed61255787828948707913214332ff29b6d34e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 8, 2026, 08_14_44 PM.png",
+      "original": "originals/ChatGPT Image Sep 8, 2026, 08_14_44 PM.png",
+      "preview": "previews/3deea66e5fc89b12ec12.jpg",
+      "bytes": 2660748,
+      "sha256": "3deea66e5fc89b12ec12ffd7a89cbfa966fb673ecee3d8888d3646e549b90046",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 8, 2026, 09_54_42 PM.png",
+      "original": "originals/ChatGPT Image Sep 8, 2026, 09_54_42 PM.png",
+      "preview": "previews/3970aa85a19d749b5777.jpg",
+      "bytes": 2635404,
+      "sha256": "3970aa85a19d749b57772086b5369eb3d97bc5e708e063160ea075e63d034dae",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "OIP.jpeg",
+      "original": "originals/OIP.jpeg",
+      "preview": "previews/cf65ccf3f4f58bac3afc.jpg",
+      "bytes": 26696,
+      "sha256": "cf65ccf3f4f58bac3afc5fb31840faa4925af6145bc609374353805b6df338fc",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "PmWZ7UA8ATvb5UQjwfDtJ3lISS6GRS3Wb9RvQt2sSp7WgHhMKZzJGDe3A7rc8QwLRu82cBCBLwKwzW3psfYGvHyE986PukHq0SgbuhQlAVKdJpWR0R83EPT6Eue2nVQmwkfLb1J8pHu7SEe5ZfFuL-S7mMizFPNEhs5wUbuMbLnqRE8DxGV0zt4nJAJYMo1Q.jpeg",
+      "original": "originals/PmWZ7UA8ATvb5UQjwfDtJ3lISS6GRS3Wb9RvQt2sSp7WgHhMKZzJGDe3A7rc8QwLRu82cBCBLwKwzW3psfYGvHyE986PukHq0SgbuhQlAVKdJpWR0R83EPT6Eue2nVQmwkfLb1J8pHu7SEe5ZfFuL-S7mMizFPNEhs5wUbuMbLnqRE8DxGV0zt4nJAJYMo1Q.jpeg",
+      "preview": "previews/4db5f77e454df20e5398.jpg",
+      "bytes": 562198,
+      "sha256": "4db5f77e454df20e5398ef9660292def3968af26a8e19bab7992b27d7d654c2c",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "XUFmkrWMF6AtgaeT5qO799u0V-dZJXG6m7Jjuw5gg02VfwXWbDC66iom_xTXQnWOR6VYqv5aPbkiBgqB3GiCsJnCRJx7_KOmWcMGJYE4YUXlZx1xqUbiGP9ZuhbipTcOB79GV_NJVA4qba8_OqVvxj6fOjUxnEpylih_F9pQBdA_Gbz8iNOou66IdA9iMRWM.jpeg",
+      "original": "originals/XUFmkrWMF6AtgaeT5qO799u0V-dZJXG6m7Jjuw5gg02VfwXWbDC66iom_xTXQnWOR6VYqv5aPbkiBgqB3GiCsJnCRJx7_KOmWcMGJYE4YUXlZx1xqUbiGP9ZuhbipTcOB79GV_NJVA4qba8_OqVvxj6fOjUxnEpylih_F9pQBdA_Gbz8iNOou66IdA9iMRWM.jpeg",
+      "preview": "previews/bf76e1e469dcb4435686.jpg",
+      "bytes": 369750,
+      "sha256": "bf76e1e469dcb44356862ba3da120cec518122884911cd245c26479ffe86fe10",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "a4c724ec-8e35-4ec6-bc64-f0ff2cf645b5.avif",
+      "original": "originals/a4c724ec-8e35-4ec6-bc64-f0ff2cf645b5.avif",
+      "preview": "previews/62989772036b381a9b8f.jpg",
+      "bytes": 24682,
+      "sha256": "62989772036b381a9b8f3d9d2bbfd42d0a3bf1805d6ea7d00bef44edd177d32e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "a6f55350-7582-4ab6-9731-ebe3f9c5be52.avif",
+      "original": "originals/a6f55350-7582-4ab6-9731-ebe3f9c5be52.avif",
+      "preview": "previews/b13611781e5175ed9432.jpg",
+      "bytes": 221478,
+      "sha256": "b13611781e5175ed94326d225da1bb687b8410a74bf214d5c4a0eac66f00cfbd",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "a8c8a221-d2e3-4e44-b905-37e38ee4cd43.avif",
+      "original": "originals/a8c8a221-d2e3-4e44-b905-37e38ee4cd43.avif",
+      "preview": "previews/4124a92d2781b70ae543.jpg",
+      "bytes": 44554,
+      "sha256": "4124a92d2781b70ae543d142ede965fa4abe73860e160c1dc349cb6b50e8d28b",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "afe38584-5b8b-4dbe-b857-0e88f863ccb7.avif",
+      "original": "originals/afe38584-5b8b-4dbe-b857-0e88f863ccb7.avif",
+      "preview": "previews/bc31c73bda23a8715e9b.jpg",
+      "bytes": 41211,
+      "sha256": "bc31c73bda23a8715e9b7247f9938221cc3da39794bd92e3705bc327c597f4d2",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "b190a030-6f26-40f1-b8c8-406a168ed22e.avif",
+      "original": "originals/b190a030-6f26-40f1-b8c8-406a168ed22e.avif",
+      "preview": "previews/9d312ab0541367bcfc73.jpg",
+      "bytes": 101373,
+      "sha256": "9d312ab0541367bcfc73864e6cc4462011487c702e2f3ad89cf591f108efad3e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "b22b8622-c9b9-4da3-982d-85a8c6d19169.avif",
+      "original": "originals/b22b8622-c9b9-4da3-982d-85a8c6d19169.avif",
+      "preview": "previews/755b4f8687e14dcb0e42.jpg",
+      "bytes": 36577,
+      "sha256": "755b4f8687e14dcb0e42977b2a2a93c7fb7d7704b703c14e363a9b91013ada22",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "bathroom2/772528f8-fdb3-467a-bf70-7b56c19e16ac.avif",
+      "original": "originals/bathroom2/772528f8-fdb3-467a-bf70-7b56c19e16ac.avif",
+      "preview": "previews/b0ace7378127ffe8fa1e.jpg",
+      "bytes": 30298,
+      "sha256": "b0ace7378127ffe8fa1efc2a502e7f454e0af2b56698737e6b635c038505cb67",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "bathroom2/8726a3df-18f0-49dd-881b-0a26ce5de079.avif",
+      "original": "originals/bathroom2/8726a3df-18f0-49dd-881b-0a26ce5de079.avif",
+      "preview": "previews/aab2d965c0c4f807b3eb.jpg",
+      "bytes": 14546,
+      "sha256": "aab2d965c0c4f807b3ebaec19957bc2ce14140ba28b8686e98691704b834bc37",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "bb436ddc-d702-4629-a369-9fa4f283aed8.avif",
+      "original": "originals/bb436ddc-d702-4629-a369-9fa4f283aed8.avif",
+      "preview": "previews/d7293f04bf5c02435004.jpg",
+      "bytes": 25803,
+      "sha256": "d7293f04bf5c024350049bbb1b2e9d182a98bd54ad640f43f14b5597494ee1a0",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "be236be2-4e39-4076-bdbc-4a48b039fb3d.avif",
+      "original": "originals/be236be2-4e39-4076-bdbc-4a48b039fb3d.avif",
+      "preview": "previews/dd05a6193f2e5e82489a.jpg",
+      "bytes": 29014,
+      "sha256": "dd05a6193f2e5e82489a548244c1d3790048909163b38868a57480f43dd2af84",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "c46d8adf-be5d-4c8b-91d7-006a3920dbd5.avif",
+      "original": "originals/c46d8adf-be5d-4c8b-91d7-006a3920dbd5.avif",
+      "preview": "previews/477e3fe247cd4d68020d.jpg",
+      "bytes": 15692,
+      "sha256": "477e3fe247cd4d68020dae3ee944d6ffdf927e3ffa524b97c2a9d0cc772f16b6",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "cfe8ef95-6393-45e8-b2c7-cd93b59c8989.avif",
+      "original": "originals/cfe8ef95-6393-45e8-b2c7-cd93b59c8989.avif",
+      "preview": "previews/e919cf281e7e738a3ecb.jpg",
+      "bytes": 19685,
+      "sha256": "e919cf281e7e738a3ecb2c1b61c5a89c3be3f114283f787cceea4696bc22e3f7",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "d591c7a7-20d7-45f5-9d18-6bfdd945e9a8.avif",
+      "original": "originals/d591c7a7-20d7-45f5-9d18-6bfdd945e9a8.avif",
+      "preview": "previews/d20c7788543c53594ef9.jpg",
+      "bytes": 144854,
+      "sha256": "d20c7788543c53594ef9da7f9a602c7ceb4d4947d4d7baa402d6e8532bece219",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "d8d85a53-dfc4-4f16-a5c3-3e719400b920.avif",
+      "original": "originals/d8d85a53-dfc4-4f16-a5c3-3e719400b920.avif",
+      "preview": "previews/c2b48cfbec76e30b1110.jpg",
+      "bytes": 60511,
+      "sha256": "c2b48cfbec76e30b1110542f8855e75d53463869423be230009d9b1ffd88660d",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "d9e1634b-b159-491f-ae8a-d369316961c5.avif",
+      "original": "originals/d9e1634b-b159-491f-ae8a-d369316961c5.avif",
+      "preview": "previews/8edaf6f6bf1d7201ac35.jpg",
+      "bytes": 28548,
+      "sha256": "8edaf6f6bf1d7201ac35be0867e224d9c631d57089a260097dcce0eba01a05c0",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "dd87e5c6-cdbe-433a-a884-82c8d922be03 (1).avif",
+      "original": "originals/dd87e5c6-cdbe-433a-a884-82c8d922be03 (1).avif",
+      "preview": "previews/9ca458635c5eae46089e.jpg",
+      "bytes": 15294,
+      "sha256": "9ca458635c5eae46089e19ee581b6f6d16c5e1f5d230b2a7f0555b5371093c2d",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "dd87e5c6-cdbe-433a-a884-82c8d922be03.avif",
+      "original": "originals/dd87e5c6-cdbe-433a-a884-82c8d922be03.avif",
+      "preview": "previews/9ca458635c5eae46089e.jpg",
+      "bytes": 15294,
+      "sha256": "9ca458635c5eae46089e19ee581b6f6d16c5e1f5d230b2a7f0555b5371093c2d",
+      "duplicateOf": "dd87e5c6-cdbe-433a-a884-82c8d922be03 (1).avif",
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "de1bc110-776a-4e5e-9bbd-a08fc17f5039.avif",
+      "original": "originals/de1bc110-776a-4e5e-9bbd-a08fc17f5039.avif",
+      "preview": "previews/b1f4896647952984e66e.jpg",
+      "bytes": 47908,
+      "sha256": "b1f4896647952984e66e87a1089bad07a4828d5a5e627c6e506a5f148403323b",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "f0db834f-cb2d-4555-935b-c8e5808e8d89.avif",
+      "original": "originals/f0db834f-cb2d-4555-935b-c8e5808e8d89.avif",
+      "preview": "previews/d7ba81cbf59c03279441.jpg",
+      "bytes": 13361,
+      "sha256": "d7ba81cbf59c03279441c13addbf1d1a4d86d6b1d0891272cdaa7e3e6a9943cf",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    },
+    {
+      "sourceFilename": "f7c7834c-3756-46ed-929c-2102c2875184.avif",
+      "original": "originals/f7c7834c-3756-46ed-929c-2102c2875184.avif",
+      "preview": "previews/8273f3237190c9201ed5.jpg",
+      "bytes": 65098,
+      "sha256": "8273f3237190c9201ed55ac69e158df4328b132aaa5d59b008b624a62f4e044c",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    }
+  ]
+}

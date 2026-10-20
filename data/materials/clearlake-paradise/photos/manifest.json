@@ -1,0 +1,322 @@
+{
+  "intakeId": "clearlake-paradise",
+  "property": "Clearlake Paradise",
+  "owner": "Anna Gingis",
+  "status": "archived",
+  "archivedAt": "2026-10-20T05:18:39.325015+00:00",
+  "sourceFiles": 31,
+  "uniqueImages": 29,
+  "generatedArtworkFiles": 30,
+  "files": [
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_11_01 PM (1).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_11_01 PM (1).png",
+      "preview": "previews/8a7e7034963620ea93b0.jpg",
+      "bytes": 3039233,
+      "sha256": "8a7e7034963620ea93b0cf5a24d83c4ac7b96b3a7f773287f75cab6c8b395680",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_11_01 PM (2).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_11_01 PM (2).png",
+      "preview": "previews/41fc2e6f96b385dabd5c.jpg",
+      "bytes": 2126850,
+      "sha256": "41fc2e6f96b385dabd5cbb7238003cdd1a4fb82388a123e958831e223ede44c1",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_11_01 PM (3).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_11_01 PM (3).png",
+      "preview": "previews/6cfac97d0466a37060ff.jpg",
+      "bytes": 2641345,
+      "sha256": "6cfac97d0466a37060ff0d0d07bf3421c23d22c5a54a615f702340a0fd1aaf83",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_11_01 PM (4).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_11_01 PM (4).png",
+      "preview": "previews/5edbb69d636212abe71b.jpg",
+      "bytes": 2782195,
+      "sha256": "5edbb69d636212abe71bb0f86cc5bcbbef2bb68e6f72a42c8c957d4ecb6112a5",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_11_02 PM (5).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_11_02 PM (5).png",
+      "preview": "previews/51fcf064ae3f1e976a3f.jpg",
+      "bytes": 2271218,
+      "sha256": "51fcf064ae3f1e976a3f7a86bb23aff01b589f008d0d4cf911fe32db12aad9e2",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_13_02 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_13_02 PM.png",
+      "preview": "previews/239dd1b25de0900febb3.jpg",
+      "bytes": 3328573,
+      "sha256": "239dd1b25de0900febb3c8b2e946516a3fdacffcc2f0f23892eac826f95c0add",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_16_57 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_16_57 PM.png",
+      "preview": "previews/843ee30d31bcd74fcc5e.jpg",
+      "bytes": 2260769,
+      "sha256": "843ee30d31bcd74fcc5e757bc4c374002b54f19622614e5bce9d296ca53aa728",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_23_45 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_23_45 PM.png",
+      "preview": "previews/74701c0512c9e16f50c3.jpg",
+      "bytes": 2236296,
+      "sha256": "74701c0512c9e16f50c396bda08488166654aeadcc7832350725f154ad2d3394",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_23_57 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_23_57 PM.png",
+      "preview": "previews/ab997ff7433a3d1980c5.jpg",
+      "bytes": 2522585,
+      "sha256": "ab997ff7433a3d1980c5d424a9e208543eeae467559272404b47df0bf4f31d3d",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_24_10 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_24_10 PM.png",
+      "preview": "previews/d5b78a852f54c4b59329.jpg",
+      "bytes": 2269485,
+      "sha256": "d5b78a852f54c4b5932942f126a9c21b4bd0db9afbddaafd8390ee563e42807e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_24_41 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_24_41 PM.png",
+      "preview": "previews/f99f2de0fa4b0867273a.jpg",
+      "bytes": 2993900,
+      "sha256": "f99f2de0fa4b0867273aa850b7911fc98d43c69158d70254019a322a77e2ffed",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_28_29 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_28_29 PM.png",
+      "preview": "previews/e396162e87eec7c81068.jpg",
+      "bytes": 2538662,
+      "sha256": "e396162e87eec7c81068229feddf6074110b61020b5123fb4ec8ce4e13475a70",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_28_38 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_28_38 PM.png",
+      "preview": "previews/83ce7209fdb87261d6e5.jpg",
+      "bytes": 2472583,
+      "sha256": "83ce7209fdb87261d6e5e4e480e424e2ee6365574eaf2243492069b9a71a90f6",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_28_45 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_28_45 PM.png",
+      "preview": "previews/a2a295d34bcb6488242f.jpg",
+      "bytes": 2992320,
+      "sha256": "a2a295d34bcb6488242fe1b94c38167ebf9263b71a1d79b2810864f8cb92a376",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_29_54 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_29_54 PM.png",
+      "preview": "previews/74b80910c1df16444cd4.jpg",
+      "bytes": 3087301,
+      "sha256": "74b80910c1df16444cd440f5403dfcdf301645f3c12f811691dfe3154935a32e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_31_12 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_31_12 PM.png",
+      "preview": "previews/74b80910c1df16444cd4.jpg",
+      "bytes": 3087301,
+      "sha256": "74b80910c1df16444cd440f5403dfcdf301645f3c12f811691dfe3154935a32e",
+      "duplicateOf": "ChatGPT Image Sep 13, 2026, 04_29_54 PM.png",
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_31_20 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_31_20 PM.png",
+      "preview": "previews/e396162e87eec7c81068.jpg",
+      "bytes": 2538662,
+      "sha256": "e396162e87eec7c81068229feddf6074110b61020b5123fb4ec8ce4e13475a70",
+      "duplicateOf": "ChatGPT Image Sep 13, 2026, 04_28_29 PM.png",
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_19 PM (1).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_19 PM (1).png",
+      "preview": "previews/4e8e208f2b7600079ef2.jpg",
+      "bytes": 2131955,
+      "sha256": "4e8e208f2b7600079ef234b5680e1c9d54fbf8d0fa2233487c3ace43dce1467e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_19 PM (2).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_19 PM (2).png",
+      "preview": "previews/6797b807636b547c6b4f.jpg",
+      "bytes": 2368301,
+      "sha256": "6797b807636b547c6b4fa75449ffe557a3972dd3e9c0baacebc39e32e3df6209",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_19 PM (3).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_19 PM (3).png",
+      "preview": "previews/ff3b10ccd48b03954d09.jpg",
+      "bytes": 1863533,
+      "sha256": "ff3b10ccd48b03954d099db669597d17303987221d03a14c83833640df34066d",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_19 PM (4).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_19 PM (4).png",
+      "preview": "previews/8ab936745b18ef34fc7b.jpg",
+      "bytes": 1849364,
+      "sha256": "8ab936745b18ef34fc7b3b46acd95743cc09e177a1357c74619573cec4e61baa",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_19 PM (5).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_19 PM (5).png",
+      "preview": "previews/1be6805ee84e0488d68e.jpg",
+      "bytes": 3065165,
+      "sha256": "1be6805ee84e0488d68eddf2e9290cae9e5aac6779dadb5a8cdee9464de8432a",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_19 PM (6).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_19 PM (6).png",
+      "preview": "previews/0501d6e704a204ecc761.jpg",
+      "bytes": 2702509,
+      "sha256": "0501d6e704a204ecc761dd00998f21742979ab25ed2467edec65a465b38f2cd3",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_20 PM (7).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_20 PM (7).png",
+      "preview": "previews/55dbc137337fa1374b51.jpg",
+      "bytes": 2613121,
+      "sha256": "55dbc137337fa1374b5168d6dc875c146c6c10da6bbbf8163463e876ddc6f1f1",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_20 PM (8).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_20 PM (8).png",
+      "preview": "previews/5d5f800767a851424c8b.jpg",
+      "bytes": 2409145,
+      "sha256": "5d5f800767a851424c8bc42c2c1a1d1d092072c8042a9e11208b08a0b92f5614",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_32_20 PM (9).png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_32_20 PM (9).png",
+      "preview": "previews/ea02ba487dddf5e4d911.jpg",
+      "bytes": 2629017,
+      "sha256": "ea02ba487dddf5e4d911379478c82c5b7d83d1eaeb1608b324cf12bc08606a73",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_33_52 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_33_52 PM.png",
+      "preview": "previews/9540e0502f01ad150f80.jpg",
+      "bytes": 2875067,
+      "sha256": "9540e0502f01ad150f807f80ba5c62a5e126e4988a38d7d8fa061a12f3c300bf",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_34_59 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_34_59 PM.png",
+      "preview": "previews/7e43bc78c80cefd57f74.jpg",
+      "bytes": 2022536,
+      "sha256": "7e43bc78c80cefd57f74c6dcbf979d7346abda7d56358189eb67593363152b11",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 13, 2026, 04_36_19 PM.png",
+      "original": "originals/ChatGPT Image Sep 13, 2026, 04_36_19 PM.png",
+      "preview": "previews/70bc38dd11b0fd11cd63.jpg",
+      "bytes": 2738901,
+      "sha256": "70bc38dd11b0fd11cd630c4cb25384169c16ab612e9ec6bbc6b3309c025e5e7c",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "ChatGPT Image Sep 14, 2026, 06_25_59 PM.png",
+      "original": "originals/ChatGPT Image Sep 14, 2026, 06_25_59 PM.png",
+      "preview": "previews/03b4d4b209efead871de.jpg",
+      "bytes": 1901266,
+      "sha256": "03b4d4b209efead871de35128aa7771fcfe3b481a71f87ddc1f807ccd855ecdc",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "generated artwork (filename identifies ChatGPT)"
+    },
+    {
+      "sourceFilename": "water-cover.jpg",
+      "original": "originals/water-cover.jpg",
+      "preview": "previews/ca3e6dd6ed5ecd43f53c.jpg",
+      "bytes": 869004,
+      "sha256": "ca3e6dd6ed5ecd43f53cebb1a5ee5cf3a8f0ccb38d9b618eb75e232d82a4bf4f",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "existing client folder; photography not verified for live use"
+    }
+  ]
+}

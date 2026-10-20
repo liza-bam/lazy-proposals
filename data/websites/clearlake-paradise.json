@@ -7,7 +7,7 @@
   "ownerEmail": "annagingis@me.com",
   "approximateLocation": "",
   "mapNotes": "",
-  "imageLink": "",
+  "imageLink": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/clearlake-paradise/photos",
   "listingFacts": "Existing proposal website: https://clearlake-paradise.lazy.vacations",
   "amenitiesGroups": "# Anna — Clearlake Paradise amenities\n\nSource: supplied directly by Sandy; Airbnb listing https://www.airbnb.com/rooms/19056423\n\nKeep this complete source in the intake. The guest-facing Stay section emphasizes distinctive benefits and omits routine basics such as hot water. Use native editable sections only.\n\n## Scenic views\n- Canal view\n- Lake view\n- Mountain view\n\n## Bathroom\n- Bathtub\n- Hair dryer\n- Cleaning products\n- Shampoo\n- Body soap\n- Hot water\n- Shower gel\n\n## Bedroom and laundry\n- Essentials: towels, bed sheets, soap, and toilet paper\n- Hangers\n- Bed linens: cotton linens\n- Extra pillows and blankets\n- Room-darkening shades\n- Iron\n- Clothing storage: closet\n\n## Entertainment\n- TV\n\n## Heating and cooling\n- Air conditioning\n- Indoor fireplace\n- Portable fans\n- Heating\n\n## Home safety\n- Exterior security cameras on property: security cameras exterior of the house\n- Smoke alarm\n- Carbon monoxide alarm\n\n## Internet and office\n- Wifi\n\n## Kitchen and dining\n- Kitchen: space where guests can cook their own meals\n- Refrigerator\n- Microwave\n- Cooking basics: pots and pans, oil, salt and pepper\n- Dishes and silverware: plates, bowls, cups, cutlery, and other utensils\n- Freezer\n- Dishwasher\n- Electric stove\n- Samsung double oven\n- Hot water kettle\n- Coffee maker: drip coffee maker\n- Wine glasses\n- Toaster\n- Baking sheet\n- Blender\n- Rice maker\n- Dining table\n- Coffee\n\n## Location features\n- Waterfront: right next to a body of water\n- Beach access: guests can enjoy a nearby beach\n- Lake access: guests can get to a lake using a path or dock\n- Private entrance: separate street or building entrance\n- Laundromat nearby\n\n## Outdoor\n- Private patio or balcony\n- Private backyard, fully fenced: an open space on the property usually covered in grass\n- Outdoor furniture\n- Outdoor dining area\n- Private boat slip\n- Sun loungers\n\n## Parking and facilities\n- Free parking on premises\n- Free street parking\n- Private sauna\n- Single level home: no stairs in home\n\n## Services\n- Pets allowed; assistance animals are always allowed\n- Long term stays allowed: stays of 28 days or more\n- Self check-in: keypad, check yourself into the home with a door code\n\n## Not included\n- Washer unavailable\n- Dryer unavailable\n",
   "reviews": "",
@@ -31,5 +31,29 @@
   "login": "anna_g",
   "timeline": {},
   "ownerHighlights": "",
-  "updatedAt": "2026-10-20T02:28:06.510Z"
+  "updatedAt": "2026-10-20T05:18:39.325015+00:00",
+  "photoRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/clearlake-paradise/photos",
+    "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/photos/manifest.json",
+    "status": "archived",
+    "sourceFiles": 31,
+    "uniqueImages": 29,
+    "generatedArtworkFiles": 30
+  },
+  "files": [
+    {
+      "kind": "photos",
+      "name": "photos/README.md",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/photos/README.md",
+      "size": 10713,
+      "sha256": "3c7a291c7e8db74bf9bb5892f2328a1f292c9a9d0c2d9511108f681badeddeaf"
+    },
+    {
+      "kind": "photos",
+      "name": "photos/manifest.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/photos/manifest.json",
+      "size": 14028,
+      "sha256": "02c225b75b8a385d84cfe64f4e83069d97802091dd709b7388e7a6e0a255a5b9"
+    }
+  ]
 }

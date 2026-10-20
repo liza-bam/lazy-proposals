@@ -1,0 +1,742 @@
+{
+  "intakeId": "augusta-lake",
+  "property": "Augusta Lake House",
+  "owner": "Andrey",
+  "status": "archived",
+  "archivedAt": "2026-10-20T05:18:39.325015+00:00",
+  "sourceFiles": 73,
+  "uniqueImages": 69,
+  "generatedArtworkFiles": 0,
+  "files": [
+    {
+      "sourceFilename": "019fda41-d197-4c4c-be7e-036d0762af35.avif",
+      "original": "originals/019fda41-d197-4c4c-be7e-036d0762af35.avif",
+      "preview": "previews/4cfbde4f170ae4f9d1dd.jpg",
+      "bytes": 17304,
+      "sha256": "4cfbde4f170ae4f9d1dd51d2c3bf94337c1e607b2ef33e64932f31b343448884",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "05e2a09e-d2cb-4565-9e9c-c8bc821dc339.avif",
+      "original": "originals/05e2a09e-d2cb-4565-9e9c-c8bc821dc339.avif",
+      "preview": "previews/a6d6155a9f46921c3623.jpg",
+      "bytes": 85341,
+      "sha256": "a6d6155a9f46921c3623a20117452365da36ef1367532c93bda6b4820623acc4",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "0c711bd7-65bf-44bf-a69f-8a18d1ea2133.avif",
+      "original": "originals/0c711bd7-65bf-44bf-a69f-8a18d1ea2133.avif",
+      "preview": "previews/97bb3d81f230243adb48.jpg",
+      "bytes": 21511,
+      "sha256": "97bb3d81f230243adb486464eca178a3f8a1d785aae8b3ecad9f9f38db1c423e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "0df83173-2758-4a66-a16a-9a4c9f58db8d-1.avif",
+      "original": "originals/0df83173-2758-4a66-a16a-9a4c9f58db8d-1.avif",
+      "preview": "previews/22998dddc913f594e9cd.jpg",
+      "bytes": 40372,
+      "sha256": "22998dddc913f594e9cdf35d195efebea02b5d71eeb657ec8622aeec68519bb0",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "0df83173-2758-4a66-a16a-9a4c9f58db8d.avif",
+      "original": "originals/0df83173-2758-4a66-a16a-9a4c9f58db8d.avif",
+      "preview": "previews/22998dddc913f594e9cd.jpg",
+      "bytes": 40372,
+      "sha256": "22998dddc913f594e9cdf35d195efebea02b5d71eeb657ec8622aeec68519bb0",
+      "duplicateOf": "0df83173-2758-4a66-a16a-9a4c9f58db8d-1.avif",
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "0e79e3b0-9a95-4c31-8ce8-7cf9b3a86ed6.avif",
+      "original": "originals/0e79e3b0-9a95-4c31-8ce8-7cf9b3a86ed6.avif",
+      "preview": "previews/19cc453df4e969dd5e10.jpg",
+      "bytes": 82723,
+      "sha256": "19cc453df4e969dd5e1070168c2ef396f7af97ae4dcef16b157f8d67eaa9d212",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "10df43d3-882a-4615-b264-abb2917bcfd7.avif",
+      "original": "originals/10df43d3-882a-4615-b264-abb2917bcfd7.avif",
+      "preview": "previews/58b3f5de3612e823756b.jpg",
+      "bytes": 22006,
+      "sha256": "58b3f5de3612e823756bbac128e1b08aa3ef023a72572d86028683558cd7a00c",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "11c8a5d0-a93d-4d2f-b368-96f8299c25bd.avif",
+      "original": "originals/11c8a5d0-a93d-4d2f-b368-96f8299c25bd.avif",
+      "preview": "previews/0f7512ab0a526f7335a8.jpg",
+      "bytes": 66827,
+      "sha256": "0f7512ab0a526f7335a812196d8a55373154c29b5d88e0421c0332bd09d68c47",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "133c9b67-1b13-4566-bd3f-0828a5a32900.avif",
+      "original": "originals/133c9b67-1b13-4566-bd3f-0828a5a32900.avif",
+      "preview": "previews/4f47808a1c8da4286643.jpg",
+      "bytes": 84799,
+      "sha256": "4f47808a1c8da42866435392502d391c8894327f1681e12cb1b3c795d358653c",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "1351b60c-c4c4-4027-98e9-6b69b8498078.avif",
+      "original": "originals/1351b60c-c4c4-4027-98e9-6b69b8498078.avif",
+      "preview": "previews/5c3b701bfe6e4cbed99f.jpg",
+      "bytes": 56502,
+      "sha256": "5c3b701bfe6e4cbed99fef19699e9a836128c99039dcf8125bf42f57effb7e0d",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "14429d6c-05cb-453b-8239-385f38341f45.avif",
+      "original": "originals/14429d6c-05cb-453b-8239-385f38341f45.avif",
+      "preview": "previews/a3e07c1e02d42ed2dc50.jpg",
+      "bytes": 88749,
+      "sha256": "a3e07c1e02d42ed2dc503c469e9f3b305032c68aaaeefa4782eb4221d13ecf0e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "14c01707-4fbf-457b-a9d1-bf76c153a6fe.avif",
+      "original": "originals/14c01707-4fbf-457b-a9d1-bf76c153a6fe.avif",
+      "preview": "previews/8dd5cd178f827561b442.jpg",
+      "bytes": 16589,
+      "sha256": "8dd5cd178f827561b442b1fd9ce6680796ea61cce2c7fbf6a0a403ee5d652413",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "23f22a0e-3d30-4f7c-b21b-9c460e236ba9.avif",
+      "original": "originals/23f22a0e-3d30-4f7c-b21b-9c460e236ba9.avif",
+      "preview": "previews/c07adb50d41d424be597.jpg",
+      "bytes": 29813,
+      "sha256": "c07adb50d41d424be597ce02e0b38f4bc21242b21d0fdfba5b44d5880105da0b",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "2cc2ad3f-39fd-41ba-b956-8ec13ab740ac.avif",
+      "original": "originals/2cc2ad3f-39fd-41ba-b956-8ec13ab740ac.avif",
+      "preview": "previews/ac60acb321a5d0105d11.jpg",
+      "bytes": 17686,
+      "sha256": "ac60acb321a5d0105d11e2456f1b000af5df8a47bb3fc8116982fb8cf19b3ece",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "2e1fe767-2629-4e2e-8ae7-aa15f53e123c.avif",
+      "original": "originals/2e1fe767-2629-4e2e-8ae7-aa15f53e123c.avif",
+      "preview": "previews/ebd9f33914b827bf6cda.jpg",
+      "bytes": 11194,
+      "sha256": "ebd9f33914b827bf6cda88c064d8b3978ff3761e0096884f8e35f7e1a3b35860",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "2f9bdcee-665a-406a-996c-d2f46c82298a.avif",
+      "original": "originals/2f9bdcee-665a-406a-996c-d2f46c82298a.avif",
+      "preview": "previews/9b6da4f34ae17daab0ea.jpg",
+      "bytes": 17045,
+      "sha256": "9b6da4f34ae17daab0ea999af0712bbe0749db880b58388931bbb58b7a1b8a73",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "30363adb-95cb-483a-9a1f-c9d44ce2557c.avif",
+      "original": "originals/30363adb-95cb-483a-9a1f-c9d44ce2557c.avif",
+      "preview": "previews/45fe2c505e893b7d3b63.jpg",
+      "bytes": 103732,
+      "sha256": "45fe2c505e893b7d3b63efa99300c028d5302af1184c273bc35d3587c53253b0",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "3294b26a-9e96-42da-8d29-9347db010586-1.avif",
+      "original": "originals/3294b26a-9e96-42da-8d29-9347db010586-1.avif",
+      "preview": "previews/c951361965488a354006.jpg",
+      "bytes": 49377,
+      "sha256": "c951361965488a354006d1b503d7144320582fd3971dcc5af483d4896d466c98",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "3294b26a-9e96-42da-8d29-9347db010586.avif",
+      "original": "originals/3294b26a-9e96-42da-8d29-9347db010586.avif",
+      "preview": "previews/c951361965488a354006.jpg",
+      "bytes": 49377,
+      "sha256": "c951361965488a354006d1b503d7144320582fd3971dcc5af483d4896d466c98",
+      "duplicateOf": "3294b26a-9e96-42da-8d29-9347db010586-1.avif",
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "446c8da0-7fbf-4659-b0ef-3e67a3e3683a.avif",
+      "original": "originals/446c8da0-7fbf-4659-b0ef-3e67a3e3683a.avif",
+      "preview": "previews/b050d2aa76e3b6d35d48.jpg",
+      "bytes": 142773,
+      "sha256": "b050d2aa76e3b6d35d48dc94ec3a5c3ebc24b5dbd6e6f0373890c78554906a7e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "4a38a8c5-4a50-4f03-986c-b3f1df82c6ec.avif",
+      "original": "originals/4a38a8c5-4a50-4f03-986c-b3f1df82c6ec.avif",
+      "preview": "previews/98de2c66fe54a0ada4ab.jpg",
+      "bytes": 89725,
+      "sha256": "98de2c66fe54a0ada4ab6656546694cf2e43fc9dc6d0d5e1b4fbcdbadc5ae834",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "53a8bca4-81b6-49dd-b735-388c630dae8e.avif",
+      "original": "originals/53a8bca4-81b6-49dd-b735-388c630dae8e.avif",
+      "preview": "previews/f776371acbc77e8534a6.jpg",
+      "bytes": 23641,
+      "sha256": "f776371acbc77e8534a6052a080a567d622205cf2eadae1ebdd9d5917f71f3aa",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "550e9171-52fb-413b-95c8-a5a759b9a370.avif",
+      "original": "originals/550e9171-52fb-413b-95c8-a5a759b9a370.avif",
+      "preview": "previews/77d3ab40261b1c239e19.jpg",
+      "bytes": 36197,
+      "sha256": "77d3ab40261b1c239e196666ad33d75a0bd40b00010635d90248acaf74179d90",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "58f1dd5f-de60-44b8-ada3-dbed6d99e37c.avif",
+      "original": "originals/58f1dd5f-de60-44b8-ada3-dbed6d99e37c.avif",
+      "preview": "previews/f9a2a1bedebc8bd4a902.jpg",
+      "bytes": 11751,
+      "sha256": "f9a2a1bedebc8bd4a902ee7fe2cb5fbe6923f7d6caf2a699801c2ff4908e7f3c",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "5ac4863f-d6fb-4088-804f-6c0308f9c7bc.avif",
+      "original": "originals/5ac4863f-d6fb-4088-804f-6c0308f9c7bc.avif",
+      "preview": "previews/84923e51a6d06e2d2561.jpg",
+      "bytes": 56089,
+      "sha256": "84923e51a6d06e2d25614ef2b42a33a44cf3dac90d743168d2d2d3ca148972d1",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "5e17a79a-063b-4249-9236-61dd73df7398.avif",
+      "original": "originals/5e17a79a-063b-4249-9236-61dd73df7398.avif",
+      "preview": "previews/a8f283273a3572ab442b.jpg",
+      "bytes": 47245,
+      "sha256": "a8f283273a3572ab442b304492563b98da711bcb54e0744efa2312cafa6a5107",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "63f08e17-01d5-4efa-b9d2-22fa94394864.avif",
+      "original": "originals/63f08e17-01d5-4efa-b9d2-22fa94394864.avif",
+      "preview": "previews/8e485e9c9642f6509f30.jpg",
+      "bytes": 155547,
+      "sha256": "8e485e9c9642f6509f307aabea853fc3e06ea0b0c9e05ddd2022d3800d537e94",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "6524e02c-006e-4309-ad5f-c626f6837612.webp",
+      "original": "originals/6524e02c-006e-4309-ad5f-c626f6837612.webp",
+      "preview": "previews/6cf09dad1e773d9c9fee.jpg",
+      "bytes": 170594,
+      "sha256": "6cf09dad1e773d9c9fee646d27131c8fffb2762cc589b791898d145095f655c8",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "670b8577-72b8-4f78-8e68-81888ab105aa.avif",
+      "original": "originals/670b8577-72b8-4f78-8e68-81888ab105aa.avif",
+      "preview": "previews/f08e48a459b80ebcb17d.jpg",
+      "bytes": 69354,
+      "sha256": "f08e48a459b80ebcb17d3a1edfc28c0e5b66efe05aaa9a4858c5b065ad2f983b",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "67b041ce-fcb2-439d-a040-12aaf77f0bc7.avif",
+      "original": "originals/67b041ce-fcb2-439d-a040-12aaf77f0bc7.avif",
+      "preview": "previews/b866457eae3d1fc9a422.jpg",
+      "bytes": 31643,
+      "sha256": "b866457eae3d1fc9a4220313d376469ef87197a236b43df82a272b16d48abd0f",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "6a78a592-84dc-4a3c-a8c5-80dd14774d85.avif",
+      "original": "originals/6a78a592-84dc-4a3c-a8c5-80dd14774d85.avif",
+      "preview": "previews/bec1e397d4bf436f9887.jpg",
+      "bytes": 65459,
+      "sha256": "bec1e397d4bf436f98872cd3c7b0612a0f664853605e63fb811e94c6d6421880",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "6be7b8cf-3b7b-417d-89b5-ea36eb3b00d7.avif",
+      "original": "originals/6be7b8cf-3b7b-417d-89b5-ea36eb3b00d7.avif",
+      "preview": "previews/6aa6deda7425ef53e8d4.jpg",
+      "bytes": 95769,
+      "sha256": "6aa6deda7425ef53e8d4831bf6b51d5e1047523597ce038eb1b2e9fd8d89bdc7",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "6dc7d438-b231-4784-be06-da5b12a0eac7.avif",
+      "original": "originals/6dc7d438-b231-4784-be06-da5b12a0eac7.avif",
+      "preview": "previews/defcaa32ed336b9c79ad.jpg",
+      "bytes": 32303,
+      "sha256": "defcaa32ed336b9c79ad1e57470c91b2ed2cefdceb960e7b84c0a9639a0ffbbe",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "7d2d35ee-ac45-4bc6-8071-e581b51b8482.avif",
+      "original": "originals/7d2d35ee-ac45-4bc6-8071-e581b51b8482.avif",
+      "preview": "previews/fcf08adde393b3118494.jpg",
+      "bytes": 34329,
+      "sha256": "fcf08adde393b3118494af4e2236dc04777a742cd88395b991048a46f1a4729b",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "88c62a77-97f3-4f4f-bfbf-140d14dd0055-1.avif",
+      "original": "originals/88c62a77-97f3-4f4f-bfbf-140d14dd0055-1.avif",
+      "preview": "previews/cb4df4971c513f61e444.jpg",
+      "bytes": 80259,
+      "sha256": "cb4df4971c513f61e4441f5f41e2759570aea2f98e791a5487f3dec2f1688bc4",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "88c62a77-97f3-4f4f-bfbf-140d14dd0055.avif",
+      "original": "originals/88c62a77-97f3-4f4f-bfbf-140d14dd0055.avif",
+      "preview": "previews/cb4df4971c513f61e444.jpg",
+      "bytes": 80259,
+      "sha256": "cb4df4971c513f61e4441f5f41e2759570aea2f98e791a5487f3dec2f1688bc4",
+      "duplicateOf": "88c62a77-97f3-4f4f-bfbf-140d14dd0055-1.avif",
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "895e4658-b4f4-4460-a97d-0549f1a54d92.avif",
+      "original": "originals/895e4658-b4f4-4460-a97d-0549f1a54d92.avif",
+      "preview": "previews/b05741864f5b3ffa311b.jpg",
+      "bytes": 35905,
+      "sha256": "b05741864f5b3ffa311b17361e6a6c2c3fc1c99c0325eb902a93850e5060a7d4",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "8b78f517-158f-4761-83fb-6c7b30dc2397.avif",
+      "original": "originals/8b78f517-158f-4761-83fb-6c7b30dc2397.avif",
+      "preview": "previews/96fa41a9e6e50d0aedaa.jpg",
+      "bytes": 62553,
+      "sha256": "96fa41a9e6e50d0aedaaee3c9172d09b5519f0c0f94704f3d3e3d6f8deb1de11",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "8c7697a8-7f45-438c-9a08-079a9657a510.avif",
+      "original": "originals/8c7697a8-7f45-438c-9a08-079a9657a510.avif",
+      "preview": "previews/a42750faf14e72c484d6.jpg",
+      "bytes": 79500,
+      "sha256": "a42750faf14e72c484d6f18ac37ae7bb5c97a23cf9df78bd4593d1a4c1bbf0f9",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "8e67cdfb-8660-469f-b7f4-a8392ad17308.avif",
+      "original": "originals/8e67cdfb-8660-469f-b7f4-a8392ad17308.avif",
+      "preview": "previews/313f313986d56a2a0e00.jpg",
+      "bytes": 80943,
+      "sha256": "313f313986d56a2a0e00139c54c95c8cea8fd2423b12bf5da95e4c6ac71dfc6a",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "94e70e98-ace2-4e83-b0da-03e77fb814ee.avif",
+      "original": "originals/94e70e98-ace2-4e83-b0da-03e77fb814ee.avif",
+      "preview": "previews/04ec3074266df2e9fa68.jpg",
+      "bytes": 63090,
+      "sha256": "04ec3074266df2e9fa68d7ca17490b97d6fbb7c69cfe2128e4e0b6b798a8b60f",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "960004b1-9c37-4a77-9222-51eacf226b41.avif",
+      "original": "originals/960004b1-9c37-4a77-9222-51eacf226b41.avif",
+      "preview": "previews/c9f07089ea0e0bfa9fd8.jpg",
+      "bytes": 60798,
+      "sha256": "c9f07089ea0e0bfa9fd85673d4514d2912712b1e049ab24d1848fcd5759499d0",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "9b498d93-a03e-46cc-b301-73a440f539fb.avif",
+      "original": "originals/9b498d93-a03e-46cc-b301-73a440f539fb.avif",
+      "preview": "previews/ae82a98ecc89f6eb5937.jpg",
+      "bytes": 38635,
+      "sha256": "ae82a98ecc89f6eb593710c864e3c30f6bd0c15bea784811500a89cf42639f4c",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "a27d1b8e-539e-4bc6-9af7-c0901dd7d7b9.avif",
+      "original": "originals/a27d1b8e-539e-4bc6-9af7-c0901dd7d7b9.avif",
+      "preview": "previews/d536eaff610fece4ce4a.jpg",
+      "bytes": 38663,
+      "sha256": "d536eaff610fece4ce4a6aa3607798b155b21179c77de27cdf1ab8d141df5cb7",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "a29e121b-0f67-4d0d-8403-3fc3db2556be.avif",
+      "original": "originals/a29e121b-0f67-4d0d-8403-3fc3db2556be.avif",
+      "preview": "previews/f44bb80d8b5b74b107a0.jpg",
+      "bytes": 92505,
+      "sha256": "f44bb80d8b5b74b107a0e8293e1a1c498050e98b015f55a52a7ec5a383616b07",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "ab3bf4ea-9781-4585-9a54-a104eab0a74d.avif",
+      "original": "originals/ab3bf4ea-9781-4585-9a54-a104eab0a74d.avif",
+      "preview": "previews/463cfddd3e30a0dbc466.jpg",
+      "bytes": 21686,
+      "sha256": "463cfddd3e30a0dbc466b7dd2dd30b488ee70be07a0f3036ab1087e0c607c28a",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "ad32886c-4862-4f36-83e8-cfa00a969dae-1.avif",
+      "original": "originals/ad32886c-4862-4f36-83e8-cfa00a969dae-1.avif",
+      "preview": "previews/c8cc81680eb31ba9812a.jpg",
+      "bytes": 33185,
+      "sha256": "c8cc81680eb31ba9812a4b08a01d68604f2a6d778de4c90efb597fe56f71ead5",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "ad32886c-4862-4f36-83e8-cfa00a969dae.avif",
+      "original": "originals/ad32886c-4862-4f36-83e8-cfa00a969dae.avif",
+      "preview": "previews/c8cc81680eb31ba9812a.jpg",
+      "bytes": 33185,
+      "sha256": "c8cc81680eb31ba9812a4b08a01d68604f2a6d778de4c90efb597fe56f71ead5",
+      "duplicateOf": "ad32886c-4862-4f36-83e8-cfa00a969dae-1.avif",
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "aea2245e-37c1-446d-bd5e-de5c9ac1cbc4.avif",
+      "original": "originals/aea2245e-37c1-446d-bd5e-de5c9ac1cbc4.avif",
+      "preview": "previews/2940da51bde5c345f29a.jpg",
+      "bytes": 39924,
+      "sha256": "2940da51bde5c345f29a54da44212acb5f0e89bf008c18916f4af01c1dd1459d",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "aeb7bdff-8bfa-4765-8b83-e258ad9cc6dd.avif",
+      "original": "originals/aeb7bdff-8bfa-4765-8b83-e258ad9cc6dd.avif",
+      "preview": "previews/aab389978d1fb1778fa5.jpg",
+      "bytes": 20408,
+      "sha256": "aab389978d1fb1778fa5b94d86936a28ecc79568ca4b7f573ea3bc1f75b0a68a",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "b04279cb-cbab-4e08-a026-1f1d883cd983.avif",
+      "original": "originals/b04279cb-cbab-4e08-a026-1f1d883cd983.avif",
+      "preview": "previews/d1be7f4a2db0d6df7e8f.jpg",
+      "bytes": 23645,
+      "sha256": "d1be7f4a2db0d6df7e8f902e0920b0d93d57e39fcb8a52bc60441c286dfd5fb8",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "bb90c5a6-8abd-4238-8c1d-c675d18e8d74.avif",
+      "original": "originals/bb90c5a6-8abd-4238-8c1d-c675d18e8d74.avif",
+      "preview": "previews/0a26895a1d65a4e78c8f.jpg",
+      "bytes": 124515,
+      "sha256": "0a26895a1d65a4e78c8fe1f8f5057e23fab5123bcd2950cc60dec2a00b35010b",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "ce1276d8-9556-417d-b522-2b59b8085695.avif",
+      "original": "originals/ce1276d8-9556-417d-b522-2b59b8085695.avif",
+      "preview": "previews/6c1f2e2110210bab1020.jpg",
+      "bytes": 28442,
+      "sha256": "6c1f2e2110210bab1020fc522712dd16423bf79d7dfa5b41d8dfcb64fe7cc5bc",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "cover copy.jpg",
+      "original": "originals/cover copy.jpg",
+      "preview": "previews/faf1a4db72ed228fe05f.jpg",
+      "bytes": 1442179,
+      "sha256": "faf1a4db72ed228fe05f3151c89fcffd8564af164be213dfdda01536124023d3",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "cover.avif",
+      "original": "originals/cover.avif",
+      "preview": "previews/2e28f29343b5d992fee8.jpg",
+      "bytes": 577578,
+      "sha256": "2e28f29343b5d992fee8a5c2dbcfc9f35e8bb4631aa41f4262a6b90bc9232583",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "daded91d-6212-41f0-90a3-e0c2d6599fcd.avif",
+      "original": "originals/daded91d-6212-41f0-90a3-e0c2d6599fcd.avif",
+      "preview": "previews/850ce22d8b4963344a83.jpg",
+      "bytes": 90042,
+      "sha256": "850ce22d8b4963344a8357f2027933c4a3afb9a64101825157592fe90aeb52aa",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "dc6eab7d-6f9a-48c8-8212-3a1b5c80beea.avif",
+      "original": "originals/dc6eab7d-6f9a-48c8-8212-3a1b5c80beea.avif",
+      "preview": "previews/c6acaaacfe380251a0b0.jpg",
+      "bytes": 41403,
+      "sha256": "c6acaaacfe380251a0b06daaa60358dd5fc348ea46fe2116be37279823c5dd1b",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "e23bd493-c54d-4bb2-a991-e057ec12a6ab.avif",
+      "original": "originals/e23bd493-c54d-4bb2-a991-e057ec12a6ab.avif",
+      "preview": "previews/b4a807b8d04d26cae130.jpg",
+      "bytes": 116368,
+      "sha256": "b4a807b8d04d26cae1306c0edcb135a27daa323b6c8a81e9f8bd7883ffb2e5f2",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "e3b9bf8f-feb2-4810-b84a-32f1d5a88efa.jpg",
+      "original": "originals/e3b9bf8f-feb2-4810-b84a-32f1d5a88efa.jpg",
+      "preview": "previews/a67129f4cd32e32cb70f.jpg",
+      "bytes": 113528,
+      "sha256": "a67129f4cd32e32cb70fbcf68ae8f7b34b5ccb218774975b2b330323a98e75cd",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "e71248af-bc8a-474e-bd10-e7cea718cedb.avif",
+      "original": "originals/e71248af-bc8a-474e-bd10-e7cea718cedb.avif",
+      "preview": "previews/bbee1bb4b1e1f444c6d7.jpg",
+      "bytes": 50515,
+      "sha256": "bbee1bb4b1e1f444c6d7b01b96912944533d270d250e0f05503e128cd8819640",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "e8c00299-561f-4e19-979c-e91d9c408c8a.avif",
+      "original": "originals/e8c00299-561f-4e19-979c-e91d9c408c8a.avif",
+      "preview": "previews/83c6261d893652b12e16.jpg",
+      "bytes": 156893,
+      "sha256": "83c6261d893652b12e16c58329813f26d2e258f52ba589dd17bb0dc2801c3ab3",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "e9c0f5af-a1ca-47cb-9193-1b279149dc9d.avif",
+      "original": "originals/e9c0f5af-a1ca-47cb-9193-1b279149dc9d.avif",
+      "preview": "previews/2511896896e986026f7f.jpg",
+      "bytes": 16851,
+      "sha256": "2511896896e986026f7f702646c610ef190583bf7b275ee63bab3814fe6d20e3",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "e9c9dd29-4612-484c-88eb-412610808844.avif",
+      "original": "originals/e9c9dd29-4612-484c-88eb-412610808844.avif",
+      "preview": "previews/78b3507267b5fa1df277.jpg",
+      "bytes": 56907,
+      "sha256": "78b3507267b5fa1df2777dc95d8b688f3019016e5f1df212498e4fcaeae64043",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "ecef817e-feda-44b3-8233-643a25227546.avif",
+      "original": "originals/ecef817e-feda-44b3-8233-643a25227546.avif",
+      "preview": "previews/4fae22892f6c5265b9eb.jpg",
+      "bytes": 68372,
+      "sha256": "4fae22892f6c5265b9eb31276a1039a3d2352bd9a7437ee05c4773db7b8c472d",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "f330f8ed-0988-47d4-a78d-4de51ade8c47.avif",
+      "original": "originals/f330f8ed-0988-47d4-a78d-4de51ade8c47.avif",
+      "preview": "previews/139cbad3228792805292.jpg",
+      "bytes": 73331,
+      "sha256": "139cbad3228792805292d6aee721ed91ec7873fb2f23ca1aaabe47ed186a14dc",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "f6b8d5d2-5009-4406-9eba-4318918c93aa.avif",
+      "original": "originals/f6b8d5d2-5009-4406-9eba-4318918c93aa.avif",
+      "preview": "previews/711751fada423f85dced.jpg",
+      "bytes": 31683,
+      "sha256": "711751fada423f85dcedde551f938218bc120b953162e692fe91018d5687c876",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "f8b60ae7-dbd9-4d17-aa9b-0a3ffec451ba.avif",
+      "original": "originals/f8b60ae7-dbd9-4d17-aa9b-0a3ffec451ba.avif",
+      "preview": "previews/a46775af6f96a936dd2a.jpg",
+      "bytes": 74219,
+      "sha256": "a46775af6f96a936dd2a91dd63ec5419e63d86a750b73d34276679d50e7815c2",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "f9cc1dbc-0cee-4f22-8fb6-e7691cac0a57.avif",
+      "original": "originals/f9cc1dbc-0cee-4f22-8fb6-e7691cac0a57.avif",
+      "preview": "previews/e59dbd8f01638c344338.jpg",
+      "bytes": 15924,
+      "sha256": "e59dbd8f01638c3443383925457ee77b5a42a65f8931d83325a44b81051baf0e",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "fb9719f4-4d1f-416c-8d1f-470860db46a5.avif",
+      "original": "originals/fb9719f4-4d1f-416c-8d1f-470860db46a5.avif",
+      "preview": "previews/563ccec92d4acb4b3c2b.jpg",
+      "bytes": 26426,
+      "sha256": "563ccec92d4acb4b3c2b363aa54331e368bba39b105d8d37234d31e8f772adf7",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "fcb183ba-e035-4204-9b57-e6feb1554017.avif",
+      "original": "originals/fcb183ba-e035-4204-9b57-e6feb1554017.avif",
+      "preview": "previews/c1186a686fae10345512.jpg",
+      "bytes": 55172,
+      "sha256": "c1186a686fae10345512a58e1ebc5246fa30f3e4e963a1d1dd263c169f0b9d6a",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "fd5406c0-8654-4daf-b27b-8e51f806cc80.avif",
+      "original": "originals/fd5406c0-8654-4daf-b27b-8e51f806cc80.avif",
+      "preview": "previews/85d7f773db082004bb18.jpg",
+      "bytes": 55371,
+      "sha256": "85d7f773db082004bb18f196d26694dc48fd80d501d264d71dde830d333f6ecc",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "fe64e6b2-5975-4dbd-a4ce-4c434ae0f16b.avif",
+      "original": "originals/fe64e6b2-5975-4dbd-a4ce-4c434ae0f16b.avif",
+      "preview": "previews/1b77cb9ef3bf5c9991e8.jpg",
+      "bytes": 38250,
+      "sha256": "1b77cb9ef3bf5c9991e83b94b74c50c0f869e077439887657c1bd3cef2cd820f",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    },
+    {
+      "sourceFilename": "fe842a7e-497c-4e65-9754-515ad903608a.avif",
+      "original": "originals/fe842a7e-497c-4e65-9754-515ad903608a.avif",
+      "preview": "previews/3dda7e6fa1c634774f1d.jpg",
+      "bytes": 24187,
+      "sha256": "3dda7e6fa1c634774f1dcad29bc2cc3f3d1bfbf89e63cd0260140329eaa96380",
+      "duplicateOf": null,
+      "caption": "",
+      "provenance": "supplied for this property"
+    }
+  ]
+}

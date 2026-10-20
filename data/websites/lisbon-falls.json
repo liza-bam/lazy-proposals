@@ -7,7 +7,7 @@
   "ownerEmail": "",
   "approximateLocation": "Lisbon Falls, Maine — approximate town-level location",
   "mapNotes": "Airbnb map screenshot not supplied. Use Lisbon Falls town center only as an approximate public map reference; never imply a street address.",
-  "imageLink": "",
+  "imageLink": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/lisbon-falls/photos",
   "listingFacts": "Airbnb title: Cozy Retreat in Lisbon Falls. Entire home in Lisbon, Maine. Up to 4 guests; 2 bedrooms, 2 beds, 1 bath. Bedroom 1: king bed (listing photo caption says medium-firm mattress). Bedroom 2: queen bed. Hosted by Kaily, Superhost; listing shows 5 years hosting. Listing describes a simple, welcoming home with fully equipped kitchen, comfy living room and peaceful atmosphere. Property sits on a quiet one-acre lot with spacious front yard, set back from Main Street. Neighbor shares driveway entrance and has five acres. Guests have access to entire home and property. Listing highlights Wi-Fi, dedicated workspace, free parking on premises, pets allowed, window AC unit. Listing says all amenities are simple and the home has lived-in qualities. No smoking inside; smoking outside is allowed; listing states a $200 cleaning fee if smoking occurs indoors. Nearby areas named by listing: Lisbon Falls, Brunswick, Freeport, Portland and Maine coast. Fresh Airbnb page shows 4.94 rating from 49 reviews, matching all 49 supplied entries. The host highlighted ten amenities for prominent placement; use four as top points of interest and show the full deduplicated amenity list near the top. Safety disclosures and complete house rules were not exposed in the fetched page and need source confirmation. Host-highlighted amenities supplied directly: Wifi; dedicated workspace; free parking on premises; pets allowed; window AC unit; bathtub; backyard; refrigerator; microwave; long term stays allowed. Full Airbnb amenity categories and items were supplied in chat, and washer, dryer, soap, and a very good TV were separately confirmed by the user. Preserve the distinction in source notes.\nFresh Airbnb rule and safety panels, read October 19, 2026: Check-in after 3 PM; checkout before 11 AM; self check-in with lockbox. Four guests maximum. House-trained dogs allowed; cats not allowed. Quiet hours 9 PM–7 AM. No parties or events. No indoor smoking; the description permits smoking outside. Indoor smoking fee $200. Eat meals in the dining area, not on beds. Damaged linens fee $75; damaged duvet cover and insert fee $150. Leave the space neat: wash dishes, wipe counters, bag trash, and place used towels in the bathroom. No deep cleaning required; excessive mess can incur a cleaning fee. Stolen items can incur a fee; amount not specified. Before leaving: gather used towels, strip beds, wash dirty dishes, set thermostat to 50 (unit unspecified in listing), turn things off, return keys, and lock up. Smoke and carbon monoxide alarms installed. Cancellation details depend on selected trip dates.",
   "amenitiesGroups": "Bathroom\n- Bathtub\n- Cleaning products\n- Hot water\n- Soap\n\nBedroom and laundry\n- Bed linens\n- Clothing storage\n- Washer\n- Dryer\n\nEntertainment\n- TV\n- Books and reading material\n\nHeating and cooling\n- Window AC unit\n- Heating\n\nHome safety\n- Smoke alarm\n- Carbon monoxide alarm\n\nInternet and office\n- Wifi\n- Dedicated workspace\n\nKitchen and dining\n- Refrigerator\n- Microwave\n- Cooking basics (pots, pans, oil, salt and pepper)\n- Dishes and silverware (plates, bowls, cups and utensils)\n- Freezer\n- Stove\n- Oven\n- Hot water kettle\n- Coffee maker\n- Wine glasses\n- Toaster\n- Blender\n- Coffee\n\nOutdoor\n- Backyard\n\nParking and facilities\n- Free parking on premises\n\nServices\n- Pets allowed\n- Long term stays allowed\n- Self check-in\n- Lockbox",
   "reviews": "49 supplied review records preserved in reviews.csv, in the builder schema: name,review,rating,date,location,stay,source. Date strings such as '1 day ago' and '2 weeks ago' are preserved as supplied. Host responses were not imported because the builder review schema has no response field. The full supplied review text is in the conversation; verify the CSV against the original paste before production import.",
@@ -31,5 +31,36 @@
   "login": "lisbon-falls",
   "timeline": {},
   "ownerHighlights": "\nWifi\nDedicated workspace\nPets allowed\nBackyard\nLong term stays allowed",
-  "updatedAt": "2026-10-20T05:15:32.540Z"
+  "updatedAt": "2026-10-20T05:18:39.325015+00:00",
+  "photoRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/lisbon-falls/photos",
+    "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/photos/manifest.json",
+    "status": "archived",
+    "sourceFiles": 35,
+    "uniqueImages": 30,
+    "generatedArtworkFiles": 0
+  },
+  "files": [
+    {
+      "kind": "photos",
+      "name": "photos/README.md",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/photos/README.md",
+      "size": 8910,
+      "sha256": "c1cefb298727dd7941c991d8d22b43228c2438af3ccc58720dc29feaf1d759ca"
+    },
+    {
+      "kind": "photos",
+      "name": "photos/manifest.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/photos/manifest.json",
+      "size": 14939,
+      "sha256": "9b57c2200943f1b985c5a7c18958e18c481d1cf325072be8a367018eb3856a18"
+    },
+    {
+      "kind": "photos",
+      "name": "photos/originals.zip",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/photos/originals.zip",
+      "size": 3528374,
+      "sha256": "e2ef62316dd23d5eb873ae77d912bd46d496bea97cdcd5c523b67c31ca49fcfc"
+    }
+  ]
 }
