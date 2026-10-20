@@ -7,6 +7,8 @@
 .app__main { min-width: 0; display: flex; flex-direction: column; gap: var(--s3); }
 .box { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r2); padding: var(--s3); display: flex; flex-direction: column; gap: var(--s3); }
 .box h2 { margin: 0; font-size: var(--text-lg); }
+.box[hidden] { display: none; }
+#client-rec { display: flex; flex-direction: column; gap: var(--s3); }
 #rec { display: flex; flex-direction: column; gap: var(--s3); }
 .property-card { padding: var(--s3) 0; border-top: var(--frame) solid var(--line); min-width: 0; }
 .property-card h3 { margin: 0 0 var(--s1); font-size: var(--text-lg); }
