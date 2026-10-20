@@ -23,9 +23,10 @@
   "timeline": {
     "request": "skip",
     "confirmation": "skip",
-    "deliveryDate": "skip"
+    "deliveryDate": "skip",
+    "proposal": "2026-10-20"
   },
-  "updatedAt": "2026-10-20T17:25:14.600Z",
+  "updatedAt": "2026-10-20T17:25:17.161Z",
   "phone": "",
   "notes": "Anna's website is ready to be online.  We are leaving 54r",
   "billingNotes": ""
