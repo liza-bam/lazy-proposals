@@ -35,9 +35,13 @@ async function start() {
     if (want && records.some((r) => r.id === want)) open(want); else $('#main').innerHTML = '<p class="muted">Pick a client website, or add one.</p>';
   } catch (e) { $('#main').innerHTML = '<p class="msg msg--err">' + esc(e.message) + '</p>'; }
 }
+// The step a client is on: the first one neither done nor skipped.
+const nowStep = (tl) => (TIMELINE.find(([k]) => !(tl || {})[k]) || [''])[0];
+const nowLabel = (tl) => { const i = TIMELINE.findIndex(([k]) => k === nowStep(tl)); return i < 0 ? 'All steps done' : (i + 1) + '. ' + TIMELINE[i][1].split(' — ')[0]; };
 function side() {
   $('#side').innerHTML = '<button class="go" id="new" type="button">New client website</button>' + records.map((r) =>
-    '<button class="pick" data-id="' + esc(r.id) + '" aria-current="' + (r.id === current) + '">' + esc(r.name) + '<span>' + esc(r.ownerName || '—') + '</span></button>').join('');
+    '<button class="pick" data-id="' + esc(r.id) + '" aria-current="' + (r.id === current) + '">' + esc(r.name) +
+    '<span>' + esc(r.ownerName || '—') + ' · Now: ' + esc(nowLabel(r.timeline)) + '</span></button>').join('');
 }
 function field([key, label, kind], r) {
   const v = r[key] || '';
@@ -53,9 +57,14 @@ async function open(id) {
   sha = f ? f.sha : null;
   const tl = r.timeline || {};
   $('#main').innerHTML = '<form id="rec">' +
-    '<div class="box"><h2>Timeline</h2><div class="tl">' + TIMELINE.map(([k, l], i) =>
-      '<span class="tl__step' + (tl[k] ? ' tl__step--done' : '') + '"><span class="tl__n">' + (i + 1) + '.</span>' + esc(l) + '</span>' +
-      '<input type="date" name="tl_' + k + '" value="' + esc(tl[k] || '') + '" aria-label="' + esc(l) + '">').join('') + '</div></div>' +
+    '<div class="box"><h2>Timeline</h2><div class="tl">' + TIMELINE.map(([k, l], i) => {
+      const v = tl[k] || '', skip = v === 'skip', now = k === nowStep(tl);
+      return '<span class="tl__step' + (v && !skip ? ' tl__step--done' : '') + (skip ? ' tl__step--skip' : '') + (now ? ' tl__step--now' : '') + '">' +
+        '<span class="tl__n">' + (i + 1) + '.</span>' + esc(l) + (now ? ' <b class="tl__now">Now</b>' : '') + '</span>' +
+        '<span class="row"><input type="date" name="tl_' + k + '" value="' + esc(skip ? '' : v) + '" aria-label="' + esc(l) + '"' + (skip ? ' disabled' : '') + '>' +
+        '<input type="hidden" name="sk_' + k + '" value="' + (skip ? '1' : '') + '">' +
+        '<button type="button" class="tl__btn" data-done="' + k + '">Done</button><button type="button" class="tl__btn" data-skip="' + k + '">' + (skip ? 'Unskip' : 'Skip') + '</button></span>';
+    }).join('') + '</div></div>' +
     SECTIONS.map(([h, rows]) => '<div class="box"><h2>' + h + '</h2><div class="grid2">' +
       rows.filter((x) => !x[2] || x[2] === 'choice').map((x) => field(x, r)).join('') + '</div>' +
       rows.filter((x) => x[2] === 'area' || x[2] === 'tall').map((x) => field(x, r)).join('') + '</div>').join('') +
@@ -69,7 +78,11 @@ async function submit(e) {
   const d = Object.fromEntries(new FormData(e.target));
   if (!String(d.name || '').trim()) return say('Give the property a name.', true);
   const r = { id: current || slug(d.name), timeline: {} };
-  for (const [k, v] of Object.entries(d)) if (k.startsWith('tl_')) { if (v) r.timeline[k.slice(3)] = v; } else r[k] = String(v).trim();
+  for (const [k, v] of Object.entries(d)) {
+    if (k.startsWith('sk_')) { if (v) r.timeline[k.slice(3)] = 'skip'; }
+    else if (k.startsWith('tl_')) { if (v && !r.timeline[k.slice(3)]) r.timeline[k.slice(3)] = v; }
+    else r[k] = String(v).trim();
+  }
   try {
     say('Saving…');
     sha = await save('data/websites/' + r.id + '.json', JSON.stringify(r, null, 2) + '\n', sha, 'Client website: ' + r.name);
@@ -83,6 +96,9 @@ async function submit(e) {
 document.addEventListener('click', (e) => {
   const b = e.target.closest('.pick'); if (b) { history.replaceState(null, '', '?id=' + encodeURIComponent(b.dataset.id)); open(b.dataset.id); }
   if (e.target.id === 'new') { current = null; open(null); }
+  const done = e.target.dataset.done, skip = e.target.dataset.skip;
+  if (done) { const f = $('#rec'); f['tl_' + done].disabled = false; f['tl_' + done].value = new Date().toISOString().slice(0, 10); f['sk_' + done].value = ''; f.requestSubmit(); }
+  if (skip) { const f = $('#rec'); f['sk_' + skip].value = f['sk_' + skip].value ? '' : '1'; if (f['sk_' + skip].value) f['tl_' + skip].value = ''; f.requestSubmit(); }
 });
 start();
 </script>

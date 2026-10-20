@@ -29,5 +29,9 @@
   "missing": "Exact address and map screenshot not supplied; show approximate area only. Personal host recommendations were not supplied.\nOwner phone not on file: the Lazy account lists Sandy’s number.",
   "siteUrl": "https://augusta-lake.lazy.vacations/",
   "login": "andrey",
-  "timeline": {}
+  "timeline": {
+    "request": "skip",
+    "confirmation": "skip",
+    "deliveryDate": "skip"
+  }
 }
