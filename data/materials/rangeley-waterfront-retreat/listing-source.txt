@@ -1,0 +1,158 @@
+Source: https://www.airbnb.com/rooms/1615903668655366123
+Captured: 2026-10-19 America/Los_Angeles
+
+- link "Skip to content":
+  - /url: "#site-content"
+  - text: Skip to content
+- alert
+- banner:
+  - link "Airbnb homepage":
+    - /url: /
+  - navigation "Profile":
+    - link "Switch to hosting":
+      - /url: /hosting
+      - generic: Switch to hosting
+    - link "Profile":
+      - /url: /users/profile
+    - button "Main navigation menu. Has notifications.":
+  - search:
+    - generic: Start a new search
+    - textbox "Search using natural language":
+      - /placeholder: ""
+    - generic: You can include destination, dates, guests, amenities, or price.
+    - generic: Start a new search
+    - button "Search by voice":
+    - button "Search using AI":
+    - button:
+- main:
+  - heading "Spacious 4BR Retreat | Walk to Town | Close to Ski" [level=1]
+  - button "Share" [active]:
+    - text: Share
+  - button "Save to wishlist":
+    - text: Save
+  - button "Living room":
+  - button "Spacious 4BR Retreat | Walk to Town | Close to Ski image 2":
+  - button "Spacious 4BR Retreat | Walk to Town | Close to Ski image 3":
+  - button "A shared dock area is available for kayak and canoe launching. Temporary motorized boat loading and unloading is permitted. The Rangeley Town Park Boat Launch is less than 1 mile away.":
+  - button "Dining area":
+  - button "Show all photos":
+    - text: Show all photos
+  - heading "Entire condo in Rangeley, Maine" [level=2]
+  - list:
+    - listitem: 10 guests
+    - generic: ·
+    - text: 4 bedrooms
+    - generic: ·
+    - text: 8 beds
+    - generic: ·
+    - text: 2.5 baths
+  - button "Top guest favorite One of the most loved homes on Airbnb, according to guests Rated 5.0 out of 5 stars. 14 reviews":
+    - img "Top guest favorite":
+      - generic: Guest favorite
+    - generic: One of the most loved homes on Airbnb, according to guests
+    - generic: Rated 5.0 out of 5 stars.
+    - generic: "5.0"
+    - generic: 14 reviews
+    - generic: "14"
+    - generic: Reviews
+  - button "Michelle & Darryl is a superhost. Learn more about Michelle & Darryl.":
+  - generic: Hosted by Michelle & Darryl
+  - list:
+    - listitem: Superhost
+    - generic: ·
+    - text: 8 months hosting
+  - heading "Listing highlights" [level=2]
+  - heading "Top 10% of homes" [level=3]
+  - generic: This home is highly ranked based on ratings, reviews, and reliability.
+  - button "In Rangeley, near the lake. About a 10-min walk to Rangeley Lake, with downtown shops and restaurants a short drive away":
+    - heading [level=3]: In Rangeley, near the lake
+    - generic: About a 10-min walk to Rangeley Lake, with downtown shops and restaurants a short drive away
+  - heading "Fireplace and basement game room" [level=3]
+  - generic: A basement play space with a ping-pong table, basketball hoop, and a wood-burning fireplace upstairs
+  - heading "Attentive, responsive hosts" [level=3]
+  - generic: Guests highlight how responsive and friendly Michelle and Darryl are throughout each stay
+  - text: Welcome to your Rangeley escape, tucked among the trees with peaceful views and perfectly positioned for adventure in every season. This multi-level condo comfortably sleeps up to 10 and is ideal for families or groups. Enjoy open-concept living with a wood-burning fireplace, games, and books. Relax on private decks with wooded views and glimpses of Rangeley Lake. Guests enjoy shared lake access, snowmobile trail access, and a prime location near skiing, downtown, and four season adventure.
+  - text: The space
+  - text: This warm, treehouse-style condo is designed for making memories year-round. Spread across multiple levels, it balances spacious gathering areas with private retreat. Enjoy the rare combination of walkable access to downtown Rangeley and immediate access to the region’s outdoor recreation, from lake activities to hiking, skiing, and snowmobiling. It’s the kind of place families return to in every season.
+  - text: The condo sleeps up to 10 guests across four bedrooms and 2.5 baths, ideal for extended or multi-generational families. Hardwood floors, soaring ceilings, and expansive windows fill the main living space with natural light and wooded views with glimpses of Rangeley Lake. A wood-burning fireplace anchors the room, creating a cozy spot for games, stories, and relaxed evenings together.
+  - text: Sleeping Arrangements
+  - text: "Bedrooms are thoughtfully separated for privacy:"
+  - text: "Second floor: King bedroom with adjoining bunk room"
+  - text: "Third floor: Queen bedroom with futon, plus an oversized bunk room ideal for teens or mixed-age groups"
+  - text: Additionally, a queen pull out sofa is available on the first floor. Multiple bathrooms across levels help streamline mornings and bedtimes.
+  - text: The open living, dining, and kitchen area keeps everyone connected without feeling crowded. The fully equipped kitchen features updated cabinetry and granite countertops, making group meals easy. A wide selection of books and games adds to the home’s family-friendly feel.
+  - text: A private deck off the main living area overlooks the woods and lake—perfect for morning coffee or evening drinks. The primary bedroom includes its own small, adults-only deck for a quiet retreat.
+  - text: Downstairs, the basement play space features a ping-pong table, dry bar, and indoor basketball hoop—perfect for rainy days or friendly competition. A cozy sitting nook near the main living area offers a quieter place to read or unwind.
+  - text: Outdoor Access & Location
+  - text: The condo is just half a mile from downtown Rangeley’s shops and restaurants. Nearby attractions include hiking at Rangeley Lake State Park, waterfalls like Angel Falls and Cascade Stream Gorge, live shows at the Lakeside Theater, and year-round family fun at Moose Alley. Boat and watercraft rentals are available locally.
+  - text: Winter Adventures
+  - text: In winter, snowmobile trails connect directly from the driveway. Saddleback Mountain—recently ranked the No. 1 ski resort in the Eastern U.S. in SKI Magazine’s 2026 Reader Resort Survey—is a quick 15 minute drive, along with Sugarloaf Ski Area about 40 minutes away. The Rangeley Lakes Trail Center offers groomed trails for cross-country skiing, fat biking, and snowshoeing.
+  - text: Why Guests Love It
+  - text: The Treehouse places you in the heart of Rangeley’s four-season recreation. Whether you’re boating, hiking, skiing, snowmobiling, or simply gathering around the fireplace, this home offers the space, comfort, and location families need for a memorable stay.
+  - text: Guest access
+  - text: The entire Condo is yours.
+  - text: Additionally, guests enjoy 40 feet of shared lake access on Rangeley Lake, including a swimming area and canoe/kayak storage.
+  - text: The shared waterfront is reached by a short downhill walk through the grounds; the natural path may be best suited for guests comfortable with uneven terrain.
+  - text: A shared dock area is available for kayak and canoe launching. Temporary motorized boat loading and unloading is permitted. Boats may not be tied up, moored, or left at the dock. The Rangeley Town Park Boat Launch is less than 1 mile away.
+  - text: There is parking available on the property with space for trailers.
+  - text: A wood shed is fully stocked for the fireplace or outdoor firepit.
+  - link "Show more about this place":
+    - /url: /rooms/1615903668655366123?unique_share_id=e2fb7035-1192-49d3-883e-a0b47b4d4951&viralityEntryPoint=1&s=76&source_impression_id=p3_1792459599_P3TtqYtrvuMTNzlP&modal=DESCRIPTION
+    - generic: Show more
+  - region "Where you’ll sleep":
+    - heading "Where you’ll sleep" [level=2]
+    - generic: 1 of 3 pages
+    - generic: 1 / 3
+    - button "Previous" [disabled]:
+    - button "Next":
+    - list:
+      - button "Second floor - Master bedroom with King Bed and adults only deck. Bedroom 1 1 king bed":
+        - img "Second floor - Master bedroom with King Bed and adults only deck.":
+        - generic: Bedroom 1
+        - generic: 1 king bed
+      - button "Second floor bunk room - adjoins with master bedroom Bedroom 2 1 bunk bed":
+        - img "Second floor bunk room - adjoins with master bedroom":
+        - generic: Bedroom 2
+        - generic: 1 bunk bed
+      - button "Third floor Queen bedroom Bedroom 3 1 queen bed":
+        - img "Third floor Queen bedroom":
+        - generic: Bedroom 3
+        - generic: 1 queen bed
+      - button "Third floor bunk room including oversize bunk with bottom Queen bed + full size futon. Bedroom 4 1 bunk bed, 1 small double bed":
+        - img "Third floor bunk room including oversize bunk with bottom Queen bed + full size futon.":
+        - generic: Bedroom 4
+        - generic: 1 bunk bed, 1 small double bed
+      - button "Cozy first floor lounge area with Queen Pull-Out. Living room 1 sofa bed":
+        - img "Cozy first floor lounge area with Queen Pull-Out.":
+        - generic: Living room
+        - generic: 1 sofa bed
+  - heading "What this place offers" [level=2]
+  - generic: Beach access
+  - generic: Kitchen
+  - generic: Wifi
+  - generic: Dedicated workspace
+  - generic: Free parking on premises
+  - generic: TV
+  - generic: Washer
+  - generic: Dryer
+  - generic: Air conditioning
+  - generic: Exterior security cameras on property
+  - button "Show all 55 amenities":
+    - generic: Show all 55 amenities
+
+  - heading "Things to know" [level=2]:
+    - generic: Things to know
+  - generic: Cancellation policy
+  - generic: Add your trip dates to get the cancellation details for this stay.
+  - button "Add dates"
+  - generic "Learn more about House rules":
+    - generic: House rules
+    - generic: Check-in after 4:00 PM
+    - generic: Checkout before 11:00 AM
+    - generic: 10 guests maximum
+    - button "Learn more about House rules": Learn more
+  - generic: Safety & property
+  - generic: Exterior security cameras on property
+  - generic: Carbon monoxide alarm
+  - generic: Smoke alarm
+  - button "Learn more"

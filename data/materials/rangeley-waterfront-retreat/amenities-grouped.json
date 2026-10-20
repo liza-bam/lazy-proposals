@@ -1,0 +1,235 @@
+[
+  {
+    "label": "Bathroom",
+    "items": [
+      {
+        "label": "Hair dryer"
+      },
+      {
+        "label": "Cleaning products"
+      },
+      {
+        "label": "Hot water"
+      }
+    ]
+  },
+  {
+    "label": "Bedroom and laundry",
+    "items": [
+      {
+        "label": "Washer"
+      },
+      {
+        "label": "Dryer"
+      },
+      {
+        "label": "Essentials",
+        "detail": "Towels, bed sheets, soap, and toilet paper"
+      },
+      {
+        "label": "Hangers"
+      },
+      {
+        "label": "Bed linens"
+      },
+      {
+        "label": "Extra pillows and blankets"
+      },
+      {
+        "label": "Iron"
+      },
+      {
+        "label": "Clothing storage"
+      }
+    ]
+  },
+  {
+    "label": "Entertainment",
+    "items": [
+      {
+        "label": "TV"
+      },
+      {
+        "label": "Ping pong table"
+      },
+      {
+        "label": "Books and reading material"
+      }
+    ]
+  },
+  {
+    "label": "Family",
+    "items": [
+      {
+        "label": "Board games"
+      }
+    ]
+  },
+  {
+    "label": "Heating and cooling",
+    "items": [
+      {
+        "label": "Air conditioning"
+      },
+      {
+        "label": "Indoor fireplace"
+      },
+      {
+        "label": "Ceiling fan"
+      },
+      {
+        "label": "Portable fans"
+      },
+      {
+        "label": "Heating"
+      }
+    ]
+  },
+  {
+    "label": "Home safety",
+    "items": [
+      {
+        "label": "Exterior security cameras on property",
+        "detail": "Doorbell camera"
+      },
+      {
+        "label": "Smoke alarm"
+      },
+      {
+        "label": "Carbon monoxide alarm"
+      },
+      {
+        "label": "Fire extinguisher"
+      },
+      {
+        "label": "First aid kit"
+      }
+    ]
+  },
+  {
+    "label": "Internet and office",
+    "items": [
+      {
+        "label": "Wifi"
+      },
+      {
+        "label": "Dedicated workspace"
+      }
+    ]
+  },
+  {
+    "label": "Kitchen and dining",
+    "items": [
+      {
+        "label": "Kitchen",
+        "detail": "Space where guests can cook their own meals"
+      },
+      {
+        "label": "Refrigerator"
+      },
+      {
+        "label": "Microwave"
+      },
+      {
+        "label": "Cooking basics",
+        "detail": "Pots and pans, oil, salt and pepper"
+      },
+      {
+        "label": "Dishes and silverware",
+        "detail": "Plates, bowls, cups, cutlery, and other utensils"
+      },
+      {
+        "label": "Freezer"
+      },
+      {
+        "label": "Dishwasher"
+      },
+      {
+        "label": "Stove"
+      },
+      {
+        "label": "Oven"
+      },
+      {
+        "label": "Hot water kettle"
+      },
+      {
+        "label": "Coffee maker"
+      },
+      {
+        "label": "Wine glasses"
+      },
+      {
+        "label": "Toaster"
+      },
+      {
+        "label": "Baking sheet"
+      },
+      {
+        "label": "Blender"
+      },
+      {
+        "label": "Barbecue utensils",
+        "detail": "Grill, charcoal, bamboo skewers/iron skewers, etc."
+      },
+      {
+        "label": "Dining table"
+      },
+      {
+        "label": "Coffee"
+      }
+    ]
+  },
+  {
+    "label": "Location features",
+    "items": [
+      {
+        "label": "Beach access",
+        "detail": "Guests can enjoy a nearby beach"
+      },
+      {
+        "label": "Lake access",
+        "detail": "Guests can get to a lake using a path or dock"
+      },
+      {
+        "label": "Private entrance",
+        "detail": "Separate street or building entrance"
+      }
+    ]
+  },
+  {
+    "label": "Outdoor",
+    "items": [
+      {
+        "label": "Patio or balcony"
+      },
+      {
+        "label": "Backyard",
+        "detail": "An open space on the property usually covered in grass"
+      },
+      {
+        "label": "Fire pit"
+      },
+      {
+        "label": "BBQ grill"
+      }
+    ]
+  },
+  {
+    "label": "Parking and facilities",
+    "items": [
+      {
+        "label": "Free parking on premises"
+      }
+    ]
+  },
+  {
+    "label": "Services",
+    "items": [
+      {
+        "label": "Self check-in",
+        "detail": "Keypad; check yourself into the home with a door code"
+      }
+    ]
+  }
+]
