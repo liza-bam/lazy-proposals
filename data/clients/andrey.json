@@ -11,11 +11,21 @@
       "siteUrl": "https://augusta-lake.lazy.vacations/"
     }
   ],
-  "proposals": [],
+  "proposals": [
+    {
+      "token": "mvga9cw8",
+      "date": "2026-10-20",
+      "properties": [
+        "augusta-lake"
+      ],
+      "path": "proposals/clients/andrey/mvga9cw8/"
+    }
+  ],
   "timeline": {
     "request": "skip",
     "confirmation": "skip",
-    "deliveryDate": "skip"
+    "deliveryDate": "skip",
+    "proposal": "2026-10-20"
   },
-  "updatedAt": "2026-10-20T05:44:28.615363+00:00"
+  "updatedAt": "2026-10-20T06:09:18.148Z"
 }
