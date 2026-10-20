@@ -35,5 +35,8 @@
     "deliveryDate": "skip",
     "proposal": "2026-10-20"
   },
-  "updatedAt": "2026-10-20T17:13:14.860Z"
+  "updatedAt": "2026-10-20T17:25:42.436Z",
+  "phone": "",
+  "notes": "",
+  "billingNotes": ""
 }
