@@ -1,0 +1,311 @@
+{
+  "propertySlug": "rangeley-retreat",
+  "siteId": "ef2b0e8d-9fe5-4b80-860f-8d0968a46d7f",
+  "savedRevision": 5,
+  "draftMatchesPublished": true,
+  "publicUrl": "https://rangeley-retreat.lazy.vacations/",
+  "verifiedAt": "2026-10-20T03:32:26.486263+00:00",
+  "uniquePhotos": 31,
+  "sourceFiles": 33,
+  "genuineReviews": 14,
+  "nativeEditableSections": 13,
+  "editorSectionChecks": [
+    {
+      "section": "What this place offers",
+      "editableTextFields": 9,
+      "thumbnailUrls": 0,
+      "expectedPhotos": 0
+    },
+    {
+      "section": "Welcome to Rangeley",
+      "editableTextFields": 9,
+      "thumbnailUrls": 6,
+      "expectedPhotos": 6
+    },
+    {
+      "section": "The good things",
+      "editableTextFields": 15,
+      "thumbnailUrls": 4,
+      "expectedPhotos": 4
+    },
+    {
+      "section": "At the water",
+      "editableTextFields": 5,
+      "thumbnailUrls": 2,
+      "expectedPhotos": 2
+    },
+    {
+      "section": "Sleep",
+      "editableTextFields": 8,
+      "thumbnailUrls": 2,
+      "expectedPhotos": 2
+    },
+    {
+      "section": "A look inside",
+      "editableTextFields": 10,
+      "thumbnailUrls": 7,
+      "expectedPhotos": 7
+    },
+    {
+      "section": "The useful details",
+      "editableTextFields": 11,
+      "thumbnailUrls": 0,
+      "expectedPhotos": 0
+    },
+    {
+      "section": "Settle into your rhythm",
+      "editableTextFields": 15,
+      "thumbnailUrls": 4,
+      "expectedPhotos": 4
+    },
+    {
+      "section": "Arrival",
+      "editableTextFields": 5,
+      "thumbnailUrls": 2,
+      "expectedPhotos": 2
+    },
+    {
+      "section": "Through the seasons",
+      "editableTextFields": 10,
+      "thumbnailUrls": 7,
+      "expectedPhotos": 7
+    },
+    {
+      "section": "Stay close",
+      "editableTextFields": 5,
+      "thumbnailUrls": 2,
+      "expectedPhotos": 2
+    },
+    {
+      "section": "Choose your day",
+      "editableTextFields": 15,
+      "thumbnailUrls": 4,
+      "expectedPhotos": 4
+    },
+    {
+      "section": "The area",
+      "editableTextFields": 6,
+      "thumbnailUrls": 0,
+      "expectedPhotos": 0
+    }
+  ],
+  "editorWidths": {
+    "desktop": 1739,
+    "tablet": 834,
+    "phone": 402
+  },
+  "editorHorizontalOverflow": false,
+  "slideshowAspectRatio": "4:3; verified all 3 authored pages at editor widths",
+  "publicPagesVisiblyVerified": [
+    "home.dc.html",
+    "houseinfo.dc.html",
+    "about.dc.html",
+    "guidebook.dc.html"
+  ],
+  "publicSeparatePhoneTabletVerification": "unverified; responsive widths checked through native editor",
+  "booking": "Verified canonical Airbnb link; no booking submitted",
+  "publicPhotoChecks": [
+    {
+      "id": "rangeley_01",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_02",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_03",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_04",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_05",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_06",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_07",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_08",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_09",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_10",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_11",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_12",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_13",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_14",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_15",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_16",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_17",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_18",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_19",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_20",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_22",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_23",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_24",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_25",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_27",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_28",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_29",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_30",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_31",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_32",
+      "status": 200,
+      "type": "image/webp"
+    },
+    {
+      "id": "rangeley_33",
+      "status": 200,
+      "type": "image/webp"
+    }
+  ],
+  "backendChecks": {
+    "revision": 5,
+    "originalPreservationGate": "Not applicable: authorized replacement of unrelated seed Guidebook and requested styling/navigation",
+    "comparisonContract": "verification-contract.json; original rev2 baseline retained",
+    "authorizedScopeVerification": {
+      "revision": 5,
+      "libraryRecords": 31,
+      "placedPhotos": 31,
+      "protectedUnchanged": true,
+      "sharedThemeUnchanged": true
+    },
+    "pages": [
+      {
+        "name": "homeNav",
+        "sectionTypes": [
+          "list",
+          "photos",
+          "highlights",
+          "guide"
+        ]
+      },
+      {
+        "name": "yourStay",
+        "sectionTypes": [
+          "guide",
+          "photos",
+          "list",
+          "highlights",
+          "guide"
+        ]
+      },
+      {
+        "name": "about",
+        "sectionTypes": [
+          "photos",
+          "guide",
+          "highlights",
+          "map"
+        ]
+      }
+    ]
+  },
+  "deviations": [
+    "Shared generator failed twice; used established exact-revision draft endpoint for native content.",
+    "Replaced unrelated seed Guidebook, navigation and styling under explicit user requests; retained original rev2 baseline. Verification uses a clearly named authorized-scope contract.",
+    "Removed 7 unrelated seed photo records from this property library configuration; asset originals not deleted."
+  ]
+}

@@ -1,6 +1,8 @@
 {
   "id": "rangeley-waterfront-retreat",
-  "timeline": {},
+  "timeline": {
+    "built": "2026-10-19"
+  },
   "name": "Rangeley Waterfront Retreat",
   "ownerName": "Michelle & Darryl",
   "ownerPhone": "",
@@ -9,7 +11,7 @@
   "login": "",
   "listingUrl": "https://www.airbnb.com/rooms/1615903668655366123",
   "approximateLocation": "Rangeley, Maine, United States",
-  "imageLink": "",
+  "imageLink": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/uploaded-photos.json",
   "listingFacts": "Verified from Airbnb listing 1615903668655366123 on 2026-10-19 (America/Los_Angeles).\nListing title: Spacious 4BR Retreat | Walk to Town | Close to Ski.\nEntire multi-level condo in Rangeley, Maine. Hosts: Michelle & Darryl. Up to 10 guests; 4 bedrooms; 2.5 bathrooms. Header reports 8 beds; use explicit sleeping descriptions instead of inventing a derived total.\nSecond floor: king bedroom with adjoining bunk room. Third floor: queen bedroom and oversized bunk room. First-floor lounge has a queen pull-out sofa. The listing narrative and bedroom-card captions differ on the precise futon placement; do not assert a futon's room until resolved.\nOpen living, dining and equipped kitchen; wood-burning fireplace; books and games. Private main deck with wooded views and glimpses of Rangeley Lake. The primary bedroom has a small adults-only deck.\nBasement play space: ping-pong table, dry bar and indoor basketball hoop. Separate sitting nook for reading.\nAbout half a mile from downtown Rangeley. Listing estimates Saddleback at a 15-minute drive and Sugarloaf at about 40 minutes; these are host estimates, not verified route guarantees. Snowmobile trails connect from the driveway. No resort-ranking claim should be reused without checking its primary source.\nGuests have the whole condo and 40 feet of SHARED lake access with swimming area and canoe/kayak storage. A short downhill walk over a natural, uneven path leads to the shared waterfront. No private beach or private dock claim.\nShared dock for canoe/kayak launching and temporary motorboat loading/unloading only. Boats may not be tied up, moored or left there. Rangeley Town Park Boat Launch is listed as less than 1 mile away.\nOn-property parking with trailer space. Wood shed stocked for fireplace or outdoor fire pit.\nCheck-in after 4:00 PM; checkout before 11:00 AM; 10 guests maximum. Keypad self check-in. Exterior doorbell camera. No pet permission, nightly price or cancellation policy inferred.\n14 supplied genuine reviews, each rated 5 stars. Retain Lynn's date as “1 week ago”; do not invent a precise review date. Reviewer account tenure is not their location.\n",
   "amenitiesGroups": "## Bathroom\n- Hair dryer\n- Cleaning products\n- Hot water\n\n## Bedroom and laundry\n- Washer\n- Dryer\n- Essentials: Towels, bed sheets, soap, and toilet paper\n- Hangers\n- Bed linens\n- Extra pillows and blankets\n- Iron\n- Clothing storage\n\n## Entertainment\n- TV\n- Ping pong table\n- Books and reading material\n\n## Family\n- Board games\n\n## Heating and cooling\n- Air conditioning\n- Indoor fireplace\n- Ceiling fan\n- Portable fans\n- Heating\n\n## Home safety\n- Exterior security cameras on property: Doorbell camera\n- Smoke alarm\n- Carbon monoxide alarm\n- Fire extinguisher\n- First aid kit\n\n## Internet and office\n- Wifi\n- Dedicated workspace\n\n## Kitchen and dining\n- Kitchen: Space where guests can cook their own meals\n- Refrigerator\n- Microwave\n- Cooking basics: Pots and pans, oil, salt and pepper\n- Dishes and silverware: Plates, bowls, cups, cutlery, and other utensils\n- Freezer\n- Dishwasher\n- Stove\n- Oven\n- Hot water kettle\n- Coffee maker\n- Wine glasses\n- Toaster\n- Baking sheet\n- Blender\n- Barbecue utensils: Grill, charcoal, bamboo skewers/iron skewers, etc.\n- Dining table\n- Coffee\n\n## Location features\n- Beach access: Guests can enjoy a nearby beach\n- Lake access: Guests can get to a lake using a path or dock\n- Private entrance: Separate street or building entrance\n\n## Outdoor\n- Patio or balcony\n- Backyard: An open space on the property usually covered in grass\n- Fire pit\n- BBQ grill\n\n## Parking and facilities\n- Free parking on premises\n\n## Services\n- Self check-in: Keypad; check yourself into the home with a door code\n",
   "mapNotes": "Public map should show the general Rangeley area. Shared lake access is reached by a short downhill natural path with uneven terrain; the shared dock is not for mooring boats.",
@@ -17,19 +19,19 @@
   "propertyType": "Condominium",
   "setting": "Small town or village",
   "propertyStyle": "",
-  "websiteStyle": "",
+  "websiteStyle": "Cosy and inviting: warm cream, forest green, timber photographs, soft terracotta accents; native editable sections only.",
   "focus": "Family stays",
-  "pageOneName": "",
-  "pageTwoName": "",
-  "homeContent": "",
-  "pageOneContent": "",
-  "pageTwoContent": "",
-  "guidebookContent": "",
+  "pageOneName": "Your Stay",
+  "pageTwoName": "Family Days",
+  "homeContent": "Amenities first; welcoming 6-photo slideshow; four photo Highlights; shared waterfront details and limitations.",
+  "pageOneContent": "Sleeping arrangements, 7-photo room tour, grouped practical amenities, four photo Highlights, arrival information.",
+  "pageTwoContent": "Seasonal 7-photo gallery, family downtime, four photo Highlights, native Rangeley area map.",
+  "guidebookContent": "Four verified local destinations: Saddleback Mountain, Rangeley Lakes Trails Center, Rangeley Lake State Park, Moose Alley. Approximate town map; not the condo address.",
   "hostStory": "",
   "hostTips": "",
   "additionalIdeas": "",
-  "additionalSources": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/amenities-grouped.json\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/amenities-source.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/listing-source.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/main-features.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/photo-inventory.json\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/reviews-source.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/reviews.csv\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/reviews.json\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/verified-facts.txt",
-  "missing": "Owner email and phone are not supplied. Photos are inventoried locally; their Rangeley library upload has not been verified. The current Lazy draft is seed revision 2 with unrelated photos, 149 seed reviews, an unrelated booking widget and a Guidebook centered in another town. Website content and booking configuration need source correction before publishing; preserve the Guidebook baseline unless explicitly authorized to replace it. Precise futon placement needs clarification before describing that bed by room. Review CSV is prepared; website review import is not yet saved.",
+  "additionalSources": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/amenities-grouped.json\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/amenities-source.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/listing-source.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/main-features.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/photo-inventory.json\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/reviews-source.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/reviews.csv\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/reviews.json\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/verified-facts.txt\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/uploaded-photos.json\nhttps://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/website-build-evidence.json\nhttps://www.saddlebackmaine.com/\nhttps://rangeleylakestrailscenter.org/what-we-do\nhttps://apps.web.maine.gov/cgi-bin/online/doc/parksearch/details.pl?park_id=25\nhttps://moosealley.me/",
+  "missing": "Owner email and phone are not supplied. Precise futon placement conflicts in the source and is omitted. Separate public phone/tablet browser verification is unverified; all authored pages checked at three widths through native editor controls.",
   "siteId": "ef2b0e8d-9fe5-4b80-860f-8d0968a46d7f",
   "propertySlug": "rangeley-retreat",
   "ownerHighlights": "Main features supplied by Sandy\n\nBeach access\nKitchen\nWifi\nDedicated workspace\nFree parking on premises\nTV\nWasher\nDryer\nAir conditioning\nExterior security cameras on property\n",
@@ -38,9 +40,11 @@
     "totalFiles": 33,
     "uniqueImages": 31,
     "duplicateFiles": 2,
-    "inspected": "Contact sheet of all 33 supplied files"
+    "inspected": "Contact sheet of all 33 supplied files",
+    "uploadedUniqueImages": 31,
+    "publicUrlsVerified": 31
   },
-  "updatedAt": "2026-10-20T02:58:38.054634+00:00",
+  "updatedAt": "2026-10-20T03:32:26.488464+00:00",
   "files": [
     {
       "kind": "listing",
@@ -104,6 +108,41 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/verified-facts.txt",
       "size": 2141,
       "sha256": "d87c6fc77f705ecead08acb53c9d4bee7a7b3df28d21223736e6a5addb0f49f1"
+    },
+    {
+      "name": "uploaded-photos.json",
+      "kind": "photos",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/uploaded-photos.json",
+      "size": 12400,
+      "sha256": "268db9f1e63400564a348bce29db1daa49a7df10a0785b9451b52d1eb5214764"
+    },
+    {
+      "name": "website-build-evidence.json",
+      "kind": "other",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/website-build-evidence.json",
+      "size": 6770,
+      "sha256": "c351885a93eb3523f06d0852ff9054f6d3da422734d3b8988667753247445ca6"
+    },
+    {
+      "name": "live-highlights.jpg",
+      "kind": "photos",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/live-highlights.jpg",
+      "size": 224643,
+      "sha256": "11fd41227d05894880b508d2e65ba5694afbde29eafa5bc7927b24fc6095111f"
+    },
+    {
+      "name": "editor-home-phone.jpg",
+      "kind": "photos",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/editor-home-phone.jpg",
+      "size": 110054,
+      "sha256": "b29ce8105701e80c2eaa0e361855c2e72580fa6e47f5eee17d56b2a046822eb5"
     }
-  ]
+  ],
+  "websiteBuild": {
+    "savedRevision": 5,
+    "publicVerified": true,
+    "photos": 31,
+    "reviews": 14,
+    "evidenceUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/website-build-evidence.json"
+  }
 }
