@@ -37,7 +37,7 @@ async function start() {
 }
 // The step a client is on: the first one neither done nor skipped.
 const nowStep = (tl) => (TIMELINE.find(([k]) => !(tl || {})[k]) || [''])[0];
-const nowLabel = (tl) => { const i = TIMELINE.findIndex(([k]) => k === nowStep(tl)); return i < 0 ? 'All steps done' : (i + 1) + '. ' + TIMELINE[i][1].split(' — ')[0]; };
+const nowLabel = (tl) => { const i = TIMELINE.findIndex(([k]) => k === nowStep(tl)); return i < 0 ? 'All steps done' : TIMELINE[i][1]; };
 function side() {
   $('#side').innerHTML = '<button class="go" id="new" type="button">New client website</button>' + records.map((r) =>
     '<button class="pick" data-id="' + esc(r.id) + '" aria-current="' + (r.id === current) + '">' + esc(r.name) +
@@ -57,14 +57,16 @@ async function open(id) {
   sha = f ? f.sha : null;
   const tl = r.timeline || {};
   $('#main').innerHTML = '<form id="rec">' +
-    '<div class="box"><h2>Timeline</h2><div class="tl">' + TIMELINE.map(([k, l], i) => {
+    '<div class="box"><h2>Timeline</h2><ol class="tl">' + TIMELINE.map(([k, title, note], i) => {
       const v = tl[k] || '', skip = v === 'skip', now = k === nowStep(tl);
-      return '<span class="tl__step' + (v && !skip ? ' tl__step--done' : '') + (skip ? ' tl__step--skip' : '') + (now ? ' tl__step--now' : '') + '">' +
-        '<span class="tl__n">' + (i + 1) + '.</span>' + esc(l) + (now ? ' <b class="tl__now">Now</b>' : '') + '</span>' +
-        '<span class="row"><input type="date" name="tl_' + k + '" value="' + esc(skip ? '' : v) + '" aria-label="' + esc(l) + '"' + (skip ? ' disabled' : '') + '>' +
+      return '<li class="tl__row' + (v && !skip ? ' is-done' : '') + (skip ? ' is-skip' : '') + (now ? ' is-now' : '') + '">' +
+        '<span class="tl__n">' + (v && !skip ? '&#10003;' : i + 1) + '</span>' +
+        '<span class="tl__text"><b>' + esc(title) + '</b>' + (now ? '<span class="tl__now">Now</span>' : '') + (note ? '<small>' + esc(note) + '</small>' : '') + '</span>' +
+        '<input class="tl__date" type="date" name="tl_' + k + '" value="' + esc(skip ? '' : v) + '" aria-label="' + esc(title) + ' date"' + (skip ? ' disabled' : '') + '>' +
         '<input type="hidden" name="sk_' + k + '" value="' + (skip ? '1' : '') + '">' +
-        '<button type="button" class="tl__btn" data-done="' + k + '">Done</button><button type="button" class="tl__btn" data-skip="' + k + '">' + (skip ? 'Unskip' : 'Skip') + '</button></span>';
-    }).join('') + '</div></div>' +
+        '<button type="button" class="tl__btn" data-done="' + k + '">Done</button>' +
+        '<button type="button" class="tl__btn" data-skip="' + k + '">' + (skip ? 'Unskip' : 'Skip') + '</button></li>';
+    }).join('') + '</ol></div>' +
     SECTIONS.map(([h, rows]) => '<div class="box"><h2>' + h + '</h2><div class="grid2">' +
       rows.filter((x) => !x[2] || x[2] === 'choice').map((x) => field(x, r)).join('') + '</div>' +
       rows.filter((x) => x[2] === 'area' || x[2] === 'tall').map((x) => field(x, r)).join('') + '</div>').join('') +

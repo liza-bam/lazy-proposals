@@ -55,18 +55,18 @@ const CHOICES = {
 
 // The client's timeline, in order; a client can start at any step.
 const TIMELINE = [
-  ['request', 'Request received — free, no credit card to start'],
-  ['confirmation', 'Confirmation email sent'],
-  ['deliveryDate', 'Delivery date given (within 1 business day)'],
-  ['built', 'Website built (usually 3–4 business days) — design and setup free during launch'],
-  ['intake', 'Intake filled'],
-  ['proposal', 'Proposal sent — website and one-page PDF with the offer'],
-  ['doneEmail', 'Done email sent, with the demo invite'],
-  ['demo', 'Demo and training session'],
-  ['integration', 'Integration session, if booked — integration is free'],
-  ['launch', 'Launch — first month of hosting and support free'],
-  ['billing', 'Billing starts — $50 per month, $25 per additional property'],
-  ['cancel', 'Cancelled — took the site, or kept as a portfolio piece']];
+  ['request', 'Request received', 'Free, no credit card to start'],
+  ['confirmation', 'Confirmation email sent', ''],
+  ['deliveryDate', 'Delivery date given', 'Within 1 business day'],
+  ['built', 'Website built', 'Usually 3–4 business days · design and setup free during launch'],
+  ['intake', 'Intake filled', ''],
+  ['proposal', 'Proposal sent', 'Website and one-page PDF with the offer'],
+  ['doneEmail', 'Done email sent', 'With the demo invite'],
+  ['demo', 'Demo and training session', ''],
+  ['integration', 'Integration session', 'If booked · integration is free'],
+  ['launch', 'Launch', 'First month of hosting and support free'],
+  ['billing', 'Billing starts', '$50 per month · $25 per additional property'],
+  ['cancel', 'Cancelled', 'Took the site, or kept as a portfolio piece']];
 
 // The token box, shown until a token is saved.
 function needToken(el, then) {
