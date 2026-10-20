@@ -17,9 +17,8 @@
   </header>
   <main class="app__main" id="main" style="grid-column: 1 / -1;"><p class="muted">Loading…</p></main>
 </div>
-<!-- The one-page proposal is drawn here, off screen, and printed to PDF in the browser. -->
-<div id="sheet" style="position: fixed; left: -10000px; top: 0; width: 7.5in; background: var(--white);"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="vendor/pdfkit-0.15.2.js"></script>
+<script src="proposal-pdf.js?v=vector1"></script>
 <script src="app.js?v=clients1"></script>
 <script src="client-model.js?v=clients1"></script>
 <script>
@@ -46,7 +45,7 @@ async function start(){
     if(!owned.length)throw Error('Add a property for this client first.');
     $('#back').href='./?client='+encodeURIComponent(id);
     const f=ClientModel.proposalFields(client,websites,S);
-    $('#main').innerHTML='<form class="box" id="pf"><h2>Proposal for '+esc(client.name)+'</h2><fieldset><legend>Websites in this proposal</legend>'+owned.map(p=>'<label class="property-choice"><input type="checkbox" name="properties" value="'+esc(p.id)+'" checked><span>'+esc(p.name)+'<small>'+esc(p.siteUrl||'Website missing')+'</small></span></label>').join('')+'</fieldset><p class="muted" id="scope-summary"></p><div class="grid2">'+FIELDS.map(([k,l,t])=>'<label>'+l+'<input name="'+k+'" value="'+esc(f[k])+'"'+(t?' type="'+t+'"':'')+(k==='to'?' required':'')+'></label>').join('')+'</div><label>Email opening<textarea name="intro">'+esc(f.intro)+'</textarea></label><div class="row"><button class="go" id="ok">Make email and PDF</button><span class="msg" id="msg" role="status"></span></div></form><div class="box" id="done" hidden><iframe id="pdf" title="The one-page proposal" style="width:100%;height:80vh;border:0"></iframe></div>';
+    $('#main').innerHTML='<form class="box" id="pf"><h2>Proposal for '+esc(client.name)+'</h2><fieldset><legend>Websites in this proposal</legend>'+owned.map(p=>'<label class="property-choice"><input type="checkbox" name="properties" value="'+esc(p.id)+'" checked><span>'+esc(p.name)+'<small>'+esc(p.siteUrl||'Website missing')+'</small></span></label>').join('')+'</fieldset><p class="muted" id="scope-summary"></p><div class="grid2">'+FIELDS.map(([k,l,t])=>'<label>'+l+'<input name="'+k+'" value="'+esc(f[k])+'"'+(t?' type="'+t+'"':'')+(k==='to'?' required':'')+'></label>').join('')+'</div><label>Email opening<textarea name="intro">'+esc(f.intro)+'</textarea></label><div class="row"><button class="go" id="ok">Make email and PDF</button><span class="msg" id="msg" role="status"></span></div></form><section class="box" id="done" hidden aria-label="Finished proposal"><h2>Your email and PDF are ready</h2><p>Copy the email, download the PDF and attach it in your email app.</p><div class="row"><button type="button" class="go" id="copy-email">Copy email</button><button type="button" class="go go--quiet" id="copy-subject">Copy subject</button><a class="go go--quiet" id="download-pdf">Download PDF</a><a class="go go--quiet" id="download-email">Download email</a></div><p class="msg" id="result-msg" role="status"></p><p><strong>Subject:</strong> <span id="result-subject"></span></p><iframe id="email-preview" title="Email draft" sandbox="allow-popups allow-popups-to-escape-sandbox" style="width:100%;height:460px;border:1px solid var(--line)"></iframe><details><summary>View PDF</summary><iframe id="pdf" title="The one-page proposal" style="width:100%;height:80vh;border:0"></iframe></details><div class="row"><a class="go" id="finish">Done — back to client</a><button type="button" class="go go--quiet" id="edit-draft">Make changes</button></div></section>';
     $('#pf').onsubmit=make;$('#pf').onchange=e=>{if(e.target.name==='properties')scopeChanged();};scopeChanged();
   }catch(e){$('#main').innerHTML='<p class="msg msg--err">'+esc(e.message)+'</p>';}
 }
@@ -74,21 +73,32 @@ function email(f) {
     '<tr><td style="' + text + 'padding-top:20px;">' + esc(S.proposal.attachNote) + '</td></tr>' +
     '<tr><td style="' + text + 'padding-top:28px;white-space:pre-line;">' + esc(S.signoff) + '</td></tr></table></td></tr></table></body></html>';
 }
-// The one-page proposal: the offer's two cards for this owner and property.
-async function sheet(f) {
-  const P = Object.assign({}, S.proposal, { support: f.support }), li = (a) => '<ul>' + a.map((x) => '<li>' + esc(x) + '</li>').join('') + '</ul>';
-  const logo = (await (await fetch('../lazy-logo.svg')).text()).replace(/<\?xml[^>]*>\s*/, '').replace('<svg ', '<svg class="op__logo" role="img" aria-label="Lazy" ');
-  const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-  const sites = f.properties.map(p => '<div>' + esc(p.name) + ' · ' + esc(p.siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')) + '</div>').join('');
-  $('#sheet').innerHTML = '<main class="op"><header class="pp__top">' + logo + '<span class="op__date">' + esc(date) + '</span></header>' +
-    '<div><h1 class="op__title">' + esc(P.title.replace('{owner}', f.owner)) + '</h1><div class="op__for">' + sites + '</div></div>' +
-    '<section class="op__card"><div class="op__head"><h2>' + esc(P.free.heading) + '</h2><div class="op__price">' + esc(P.free.price) + '<span>' + esc(P.free.note) + '</span></div></div>' +
-    '<div class="op__groups">' + P.free.groups.map(([h, a]) => '<div><h3>' + esc(h) + '</h3>' + li(a) + '</div>').join('') + '</div></section>' +
-    '<section class="op__card"><div class="op__head"><h2>' + esc(P.support.heading) + ' <span class="op__badge">' + esc(P.support.badge) + '</span></h2><div class="op__price">' + esc(P.support.price) + '<span>' + esc(P.support.note) + '</span></div></div>' +
-    li(P.support.items) + '<p class="op__cancel">' + esc(P.cancel) + '</p></section>' +
-    '<footer class="op__foot"><strong>' + esc(P.start) + '</strong><span>' + esc(P.contact) + '</span></footer></main>';
-  return html2pdf().set({ margin: 0.5, image: { type: 'jpeg', quality: 0.95 }, html2canvas: { scale: 2, useCORS: true },
-    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' } }).from($('#sheet').firstChild).outputPdf('datauristring');
+// Draw the same vector PDF as the working CLI, independently of page scroll or viewport.
+let pdfAssetsPromise=null,previewUrl=null,emailUrl=null,generatedDraft=null;
+async function pdfAssets(){
+ if(!pdfAssetsPromise)pdfAssetsPromise=Promise.all(['fonts/NotoSerif-Regular.ttf','fonts/NotoSerif-Bold.ttf','../lazy-logo.svg'].map(async(url,i)=>{const r=await fetch(url);if(!r.ok)throw Error('Could not load proposal asset: '+url);return i===2?r.text():r.arrayBuffer();}));
+ const [regular,bold,svg]=await pdfAssetsPromise;return {regular,bold,svg};
+}
+async function sheet(f){
+ const assets=await pdfAssets(),doc=new PDFDocument({size:'LETTER',margin:40,bufferPages:true,info:{Title:S.proposal.title.replace('{owner}',f.owner),Author:'Lazy'}});
+ const chunks=[];let length=0;
+ const done=new Promise((resolve,reject)=>{doc.on('data',chunk=>{chunks.push(chunk);length+=chunk.length;});doc.on('error',reject);doc.on('end',()=>{const bytes=new Uint8Array(length);let offset=0;for(const c of chunks){bytes.set(c,offset);offset+=c.length;}resolve(new Blob([bytes],{type:'application/pdf'}));});});
+ const result=ProposalPDF.draw(doc,f,S,assets);if(result.pages!==1)throw Error('The proposal does not fit on one page.');doc.end();return done;
+}
+function blobBase64(blob){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=reject;reader.readAsDataURL(blob);});}
+
+function plainEmail(f){return ['Welcome, '+f.first+'!',f.intro,...f.properties.map(p=>p.name+': '+p.siteUrl),'Open the editor: '+S.editorUrl,f.login?'Your login: '+f.login+'. '+S.editorNote:'',S.proposal.attachNote,S.signoff].filter(Boolean).join('\n\n');}
+function showResult(f,pdf){
+ generatedDraft={fields:f,html:email(f),plain:plainEmail(f)};
+ if(previewUrl)URL.revokeObjectURL(previewUrl);if(emailUrl)URL.revokeObjectURL(emailUrl);
+ previewUrl=URL.createObjectURL(pdf);emailUrl=URL.createObjectURL(new Blob([generatedDraft.html],{type:'text/html'}));
+ $('#pdf').src=previewUrl;$('#download-pdf').href=previewUrl;$('#download-pdf').download=S.proposal.pdfName.replace('{property}',f.property);
+ $('#download-email').href=emailUrl;$('#download-email').download='LAZY email - '+f.owner+'.html';
+ $('#result-subject').textContent=f.subject;$('#email-preview').srcdoc=generatedDraft.html;
+ $('#finish').href='./?client='+encodeURIComponent(client.id);$('#done').hidden=false;$('#done').scrollIntoView({behavior:'smooth',block:'start'});$('#ok').textContent='Update email and PDF';
+ $('#copy-subject').onclick=async()=>{try{await navigator.clipboard.writeText(f.subject);$('#result-msg').textContent='Subject copied';}catch(e){$('#result-msg').textContent='Select the subject above and copy it.';}};
+ $('#copy-email').onclick=async()=>{try{if(window.ClipboardItem){try{await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([generatedDraft.html],{type:'text/html'}),'text/plain':new Blob([generatedDraft.plain],{type:'text/plain'})})]);}catch(e){await navigator.clipboard.writeText(generatedDraft.plain);}}else await navigator.clipboard.writeText(generatedDraft.plain);$('#result-msg').textContent='Email copied — paste it in your email app and attach the downloaded PDF.';}catch(e){$('#result-msg').textContent='Clipboard access was unavailable. Download the email to copy it.';}};
+ $('#edit-draft').onclick=()=>{$('#pf').scrollIntoView({behavior:'smooth',block:'start'});$('#pf').elements.intro.focus();};
 }
 
 async function make(e){
@@ -99,14 +109,14 @@ async function make(e){
     f.properties=selectedFields().properties;f.propertyIds=f.properties.map(p=>p.id);f.support=ClientModel.supportForCount(S,f.properties.length);
     if(!String(f.to||'').trim())throw Error('Add a recipient email.');
     if(f.properties.some(p=>!p.siteUrl))throw Error('Add a website URL for every selected property.');
-    say('Making the PDF…');const uri=await sheet(f),token=Date.now().toString(36),dir='proposals/clients/'+client.id+'/'+token+'/';
+    say('Making the PDF…');const pdf=await sheet(f),encoded=await blobBase64(pdf),token=Date.now().toString(36),dir='proposals/clients/'+client.id+'/'+token+'/';
     const today=new Date().toISOString().slice(0,10);say('Saving…');
-    await save(dir+'proposal.pdf',uri.split(',')[1],null,'Client proposal PDF: '+client.name,true);
+    await save(dir+'proposal.pdf',encoded,null,'Client proposal PDF: '+client.name,true);
     await save(dir+'email.html',email(f),null,'Client proposal email: '+client.name);
-    await save(dir+'proposal.json',JSON.stringify({id:client.id,clientId:client.id,propertyIds:f.propertyIds,properties:f.properties.map(p=>({id:p.id,name:p.name,siteUrl:p.siteUrl})),to:f.to.trim(),subject:f.subject,attachName:S.proposal.pdfName.replace('{property}',f.property),made:new Date().toISOString()},null,2)+'\n',null,'Client proposal: '+client.name);
+    await save(dir+'proposal.json',JSON.stringify({id:client.id,clientId:client.id,propertyIds:f.propertyIds,properties:f.properties.map(p=>({id:p.id,name:p.name,siteUrl:p.siteUrl})),to:f.to.trim(),subject:f.subject,attachName:S.proposal.pdfName.replace('{property}',f.property),fields:{owner:f.owner,first:f.first,login:f.login,intro:f.intro},renderer:'pdfkit-0.15.2',made:new Date().toISOString()},null,2)+'\n',null,'Client proposal: '+client.name);
     const updated=Object.assign({},client,{timeline:Object.assign({},client.timeline,{proposal:today}),proposals:[...(client.proposals||[]),{token,date:today,properties:f.propertyIds,path:dir}],updatedAt:new Date().toISOString()});
     clientSha=await save('data/clients/'+client.id+'.json',JSON.stringify(updated,null,2)+'\n',clientSha,'Proposal prepared: '+client.name);client=updated;
-    $('#pdf').src=uri;$('#done').hidden=false;say('Email and PDF saved for '+client.name+' · '+f.properties.length+' '+(f.properties.length===1?'website':'websites')+'.');
+    showResult(f,pdf);say('Email and PDF saved for '+client.name+' · '+f.properties.length+' '+(f.properties.length===1?'website':'websites')+'.');
   }catch(er){say(er.message,true);}finally{ok.disabled=false;}
 }
 start();

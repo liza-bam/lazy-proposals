@@ -20,5 +20,7 @@
   "to": "support@207housekeeping.com",
   "subject": "Your websites for Saddleback Chalet and Saddleback Lodge are ready",
   "attachName": "LAZY proposal - Saddleback Chalet and Saddleback Lodge.pdf",
-  "made": "2026-10-20T05:54:14.069Z"
+  "made": "2026-10-20T05:54:14.069Z",
+  "renderer": "pdfkit-0.15.2",
+  "repairedAt": "2026-10-20T05:59:28.042Z"
 }
