@@ -16,7 +16,7 @@
   }
   function mergeClientRecord(existing, entries, id) {
     const fields = Object.fromEntries(entries), out = Object.assign({}, existing || {}, { id, timeline: Object.assign({}, (existing || {}).timeline) });
-    for (const k of ['name', 'email', 'phone', 'login', 'notes', 'billingNotes']) if (Object.prototype.hasOwnProperty.call(fields, k)) out[k] = String(fields[k]).trim();
+    for (const k of ['name', 'email', 'phone', 'login', 'notes', 'billingNotes', 'kind', 'business', 'platform', 'status', 'siteUrl', 'driveUrl']) if (Object.prototype.hasOwnProperty.call(fields, k)) out[k] = String(fields[k]).trim();
     for (const k of CLIENT_STEPS) {
       if (fields['sk_' + k] === '1') out.timeline[k] = 'skip';
       else if (fields['tl_' + k]) out.timeline[k] = fields['tl_' + k];
@@ -26,6 +26,8 @@
     if (!out.createdAt && !(existing || {}).id) out.createdAt = out.updatedAt;
     return out;
   }
+  // Other clients: anyone who is not a Lazy website client, e.g. a Shopify store.
+  const isOther = c => (c || {}).kind === 'other';
   function supportForCount(settings, count) {
     const s = settings.proposal.support, base = s.price.match(/\$([\d.]+)/), extra = s.note.match(/\$([\d.]+)/);
     if (count > 1 && base && extra) return Object.assign({}, s, { price: '$' + (Number(base[1]) + Number(extra[1]) * (count - 1)) + ' per month', note: 'For ' + count + ' websites · ' + s.price + ' for the first, ' + s.note.toLowerCase() });
@@ -46,5 +48,5 @@
       attachName: settings.proposal.pdfName.replace('{property}', joined), support: supportForCount(settings, properties.length),
       missing: [!client.email && 'client email', ...properties.filter(p => !p.siteUrl).map(p => 'website for ' + p.name), !owner && 'client name'].filter(Boolean) };
   }
-  return { CLIENT_STEPS, PROPERTY_STEPS, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields };
+  return { CLIENT_STEPS, PROPERTY_STEPS, isOther, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields };
 });

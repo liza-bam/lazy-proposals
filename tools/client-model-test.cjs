@@ -24,3 +24,7 @@ test('explicit property ownership takes priority over a stale client summary',()
 test('legacy property links resolve to the same grouped proposal as the client CLI',()=>{
  const {fields,email}=require('./make-proposal.js'),a=fields('carson'),b=fields('saddleback-lodge');assert.deepEqual(a.propertyIds,b.propertyIds);const html=email(a,S);for(const p of a.properties)assert(html.includes(p.siteUrl));assert(!html.includes('Becky'));
 });
+test('an other client keeps its loose fields and is told apart from Lazy clients',()=>{
+ const r=M.mergeClientRecord({name:'',kind:'other'},[['kind','other'],['name',' Oliver '],['business','HTMKR'],['platform','Shopify'],['status',''],['driveUrl','https://drive.google.com/x'],['siteUrl','']],'oliver');
+ assert.equal(r.name,'Oliver');assert.equal(r.business,'HTMKR');assert.equal(r.platform,'Shopify');assert.equal(r.driveUrl,'https://drive.google.com/x');assert(M.isOther(r));assert(!M.isOther(clients.find(c=>c.id==='carson')));assert(M.isOther(clients.find(c=>c.id==='oliver')));
+});

@@ -7,7 +7,7 @@
 <title>Clients — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css">
-<link rel="stylesheet" href="app.css?v=clients3">
+<link rel="stylesheet" href="app.css?v=clients4">
 </head>
 <body>
 <div class="app">
@@ -19,7 +19,7 @@
   <main class="app__main" id="main"><p class="muted">Loading…</p></main>
 </div>
 <script src="app.js?v=clients2"></script>
-<script src="client-model.js?v=clients1"></script>
+<script src="client-model.js?v=clients2"></script>
 <script>
 
 let records = [], clientRecords = [], current = null, currentClient = null, currentRecord = null, sha = null, clientSha = null, openSequence = 0, saving = false;
@@ -45,14 +45,15 @@ async function start() {
     const q=new URLSearchParams(location.search), property=q.get('property')||q.get('id'), client=q.get('client');
     if(property && records.some(r=>r.id===property)) await open(property);
     else if(client && clientRecords.some(c=>c.id===client)) await showClient(client);
-    else { side(); $('#main').innerHTML='<section class="box"><h2>Your clients</h2><p>Choose a client to see their properties, photos and proposals.</p><p class="muted">'+clientRecords.length+' clients · '+records.length+' properties</p></section>'; }
+    else { side(); $('#main').innerHTML='<section class="box"><h2>Your clients</h2><p>Choose a client to see their details, properties and proposals.</p><p class="muted">'+clientRecords.filter(c=>!ClientModel.isOther(c)).length+' Lazy clients · '+records.length+' properties · '+clientRecords.filter(ClientModel.isOther).length+' other clients</p></section>'; }
   } catch(e) { $('#main').innerHTML='<p class="msg msg--err">'+esc(e.message)+'</p>'; }
 }
 function side() {
-  $('#side').innerHTML='<button class="go" id="new" type="button">New client</button>'+clientRecords.map(c=>{
+  const pick=(c,sub)=>'<button class="pick" data-client="'+esc(c.id)+'" aria-current="'+(currentClient&&currentClient.id===c.id)+'">'+esc(c.name)+'<span>'+esc(sub)+'</span></button>';
+  $('#side').innerHTML='<h2 class="app__group">Lazy clients</h2><button class="go" id="new" type="button">New client</button>'+clientRecords.filter(c=>!ClientModel.isOther(c)).map(c=>{
     const count=ClientModel.propertiesForClient(c,records).length;
-    return '<button class="pick" data-client="'+esc(c.id)+'" aria-current="'+(currentClient&&currentClient.id===c.id)+'">'+esc(c.name)+'<span>'+count+' '+(count===1?'property':'properties')+'</span></button>';
-  }).join('');
+    return pick(c,count+' '+(count===1?'property':'properties'));
+  }).join('')+'<h2 class="app__group">Other clients</h2><button class="go go--quiet" id="new-other" type="button">New other client</button>'+clientRecords.filter(ClientModel.isOther).map(c=>pick(c,[c.business,c.platform].filter(Boolean).join(' · '))).join('');
 }
 function timeline(tl,steps) {
   return '<ol class="tl">'+steps.map(([k,title,note],i)=>{
@@ -63,18 +64,25 @@ function timeline(tl,steps) {
 function clientField(key,label,value,kind='') {
   return '<label>'+esc(label)+(kind==='area'?'<textarea name="'+key+'">'+esc(value||'')+'</textarea>':'<input name="'+key+'" value="'+esc(value||'')+'"'+(key==='name'?' required':'')+(kind?' type="'+kind+'"':'')+'>')+'</label>';
 }
-async function showClient(id) {
+async function showClient(id,kind) {
   const sequence=++openSequence,hit=id?await readJson('data/clients/'+id+'.json'):null;
   if(sequence!==openSequence)return;
   if(id&&!hit)throw Error('Client not found. Reload the list.');
-  const c=hit?hit.data:{name:'',properties:[],proposals:[],timeline:{}};
+  const c=hit?hit.data:kind==='other'?{name:'',kind:'other'}:{name:'',properties:[],proposals:[],timeline:{}};
   currentClient=c;clientSha=hit?hit.sha:null;current=null;currentRecord=null;
   if(id) { const i=clientRecords.findIndex(x=>x.id===id);if(i>=0)clientRecords[i]=c; }
   history.replaceState(null,'',id?'?client='+encodeURIComponent(id):location.pathname);side();
+  if(ClientModel.isOther(c)) return showOther(c,id);
   const props=ClientModel.propertiesForClient(c,records);
   $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id&&props.length?'<a class="go" href="propose.html?v=vector2&client='+encodeURIComponent(id)+'">Make proposal</a>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
     (id?'<details class="box optional"><summary>Client details</summary><div class="optional__body">':'')+'<form class="'+(id?'':'box')+'" id="client-rec">'+(id?'':'<h2>Client details</h2>')+'<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>'+clientField('notes','Client notes',c.notes,'area')+'<details class="optional"><summary>Billing notes</summary><div class="optional__body">'+clientField('billingNotes','Billing notes',c.billingNotes,'area')+'</div></details>'+(id?'<details class="optional"><summary>Client timeline</summary><div class="optional__body">'+timeline(c.timeline,clientSteps())+'</div></details>':'')+'<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>'+(id?'</div></details>':'')+
     (id?'<section class="box"><div class="row"><h2>Properties</h2><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>')+'</section>'+proposalHistory(c):'');
+  $('#client-rec').onsubmit=saveClient;
+}
+// An other client: one loose card — who, what, where their files are, and notes.
+function showOther(c,id) {
+  $('#main').innerHTML='<section class="box"><h2>'+esc(c.name||'New other client')+'</h2><p class="muted">'+esc([c.business,c.platform,c.status].filter(Boolean).join(' · ')||'Not a Lazy website client')+'</p>'+(id?'<div class="row">'+link(c.driveUrl,'Drive folder')+link(c.siteUrl,'Website')+'</div>':'')+'</section>'+
+    '<form class="box" id="client-rec"><h2>Client details</h2><input type="hidden" name="kind" value="other"><div class="grid2">'+clientField('name','Client name',c.name)+clientField('business','Business',c.business)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('platform','Platform',c.platform)+clientField('status','Status',c.status)+clientField('siteUrl','Website',c.siteUrl,'url')+clientField('driveUrl','Drive folder',c.driveUrl,'url')+'</div>'+clientField('notes','Notes',c.notes,'area')+'<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>';
   $('#client-rec').onsubmit=saveClient;
 }
 function proposalHistory(c) {
@@ -155,6 +163,7 @@ document.addEventListener('click',async e=>{
     const c=e.target.closest('[data-client]');if(c){await showClient(c.dataset.client);return;}
     const p=e.target.closest('[data-property]');if(p){await open(p.dataset.property);return;}
     if(e.target.id==='new'){await showClient(null);return;}
+    if(e.target.id==='new-other'){await showClient(null,'other');return;}
     if(e.target.id==='add-property'){await open(null);return;}
     const cal=e.target.closest('[data-cal]');if(cal){const d=cal.form.elements['tl_'+cal.dataset.cal];try{d.showPicker();}catch(er){d.focus();d.click();}}
     const done=e.target.closest('[data-done]'),skip=e.target.closest('[data-skip]'),b=done||skip;
