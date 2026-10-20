@@ -13,9 +13,10 @@
   ],
   "proposals": [],
   "timeline": {
-    "request": "skip"
+    "request": "skip",
+    "confirmation": "skip"
   },
-  "updatedAt": "2026-10-20T23:03:40.849Z",
+  "updatedAt": "2026-10-20T23:03:43.762Z",
   "phone": "",
   "notes": "",
   "billingNotes": ""
