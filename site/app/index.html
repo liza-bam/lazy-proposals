@@ -78,7 +78,7 @@ async function showClient(id,kind) {
   const details='<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>'+clientField('notes','Client notes',c.notes,'area');
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
   const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>');
-  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id&&props.length?'<a class="go" href="propose.html?v=vector2&client='+encodeURIComponent(id)+'">Make proposal</a>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
+  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id&&props.length?latestProposal(c,id):'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
     '<form id="client-rec">'+(id?accordion('Details',details)+accordion('Billing',billing)+accordion('Timeline',timeline(c.timeline,clientSteps())):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
     '<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>'+
     (id?accordion('Properties',properties)+proposalHistory(c):'');
@@ -90,9 +90,18 @@ function showOther(c,id) {
     '<form class="box" id="client-rec"><h2>Client details</h2><input type="hidden" name="kind" value="other"><div class="grid2">'+clientField('name','Client name',c.name)+clientField('business','Business',c.business)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('platform','Platform',c.platform)+clientField('status','Status',c.status)+clientField('siteUrl','Website',c.siteUrl,'url')+clientField('driveUrl','Drive folder',c.driveUrl,'url')+'</div>'+clientField('notes','Notes',c.notes,'area')+'<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>';
   $('#client-rec').onsubmit=saveClient;
 }
+// The newest saved proposal, with its PDF and email; New proposal stays, quiet, for changed terms or properties.
+function latestProposal(c,id) {
+  const make=(cls,label)=>'<a class="'+cls+'" href="propose.html?v=vector2&client='+encodeURIComponent(id)+'">'+label+'</a>';
+  const p=[...(c.proposals||[])].reverse().find(x=>x.path);
+  if(!p) return make('go','Make proposal');
+  const dir=p.path.replace(/\/$/,'');
+  return '<span class="muted">Proposal · '+esc(p.date||'')+'</span>'+link('https://raw.githubusercontent.com/'+REPO+'/main/'+dir+'/proposal.pdf','PDF')+
+    link('https://github.com/'+REPO+'/blob/main/'+dir+'/email.html','Email')+make('go go--quiet','New proposal');
+}
 function proposalHistory(c) {
   const rows=[...(c.proposals||[])].reverse();
-  return '<details class="box optional"><summary>Proposals</summary><div class="optional__body">'+(rows.length?rows.map(p=>{
+  return '<details class="box optional"'+(rows.length?' open':'')+'><summary>Proposals</summary><div class="optional__body">'+(rows.length?rows.map(p=>{
     const names=(p.properties||[]).map(id=>records.find(r=>r.id===id)?.name||id).join(', ');
     const base=p.path?'https://raw.githubusercontent.com/'+REPO+'/main/'+p.path.replace(/\/$/,'')+'/':'';
     return '<article class="property-card"><strong>'+esc(names||c.name)+'</strong><p class="muted">'+esc(p.date||'Date not recorded')+'</p><div class="row">'+(base?link(base+'proposal.pdf','Proposal PDF')+link('https://github.com/'+REPO+'/blob/main/'+p.path.replace(/\/$/,'')+'/email.html','Saved email'):'<span class="muted">Legacy proposal reference · '+esc(p.token)+'</span>')+'</div></article>';
