@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Clients — Lazy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../proposal.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+  <header class="app__head">
+    <h1>Clients</h1>
+    <nav class="app__nav"><a href="https://lazy.vacations/hq/">Command center</a></nav>
+  </header>
+  <aside class="app__side" id="side"></aside>
+  <main class="app__main" id="main"><p class="muted">Loading…</p></main>
+</div>
+<script src="app.js"></script>
+<script>
+let records = [], current = null, sha = null;
+const $ = (s) => document.querySelector(s);
+const say = (t, err) => { const m = $('#msg'); if (m) { m.textContent = t; m.className = 'msg' + (err ? ' msg--err' : ''); } };
+const slug = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
+
+async function start() {
+  if (needToken($('#main'), start)) { $('#side').innerHTML = ''; return; }
+  try {
+    const files = (await list('data/websites')).filter((f) => f.name.endsWith('.json'));
+    records = (await Promise.all(files.map((f) => readJson(f.path)))).map((r) => r.data).sort((a, b) => a.name.localeCompare(b.name));
+    const want = new URLSearchParams(location.search).get('id');
+    side();
+    if (want && records.some((r) => r.id === want)) open(want); else $('#main').innerHTML = '<p class="muted">Pick a client website, or add one.</p>';
+  } catch (e) { $('#main').innerHTML = '<p class="msg msg--err">' + esc(e.message) + '</p>'; }
+}
+function side() {
+  $('#side').innerHTML = '<button class="go" id="new" type="button">New client website</button>' + records.map((r) =>
+    '<button class="pick" data-id="' + esc(r.id) + '" aria-current="' + (r.id === current) + '">' + esc(r.name) + '<span>' + esc(r.ownerName || '—') + '</span></button>').join('');
+}
+function field([key, label, kind], r) {
+  const v = r[key] || '';
+  if (kind === 'choice') return '<label>' + label + '<select name="' + key + '"><option value="">Choose…</option>' +
+    CHOICES[key].map((c) => '<option' + (c === v ? ' selected' : '') + '>' + esc(c) + '</option>').join('') + '</select></label>';
+  if (kind === 'area' || kind === 'tall') return '<label>' + label + '<textarea name="' + key + '"' + (kind === 'tall' ? ' class="tall"' : '') + '>' + esc(v) + '</textarea></label>';
+  return '<label>' + label + '<input name="' + key + '" value="' + esc(v) + '"' + (key === 'ownerEmail' ? ' type="email"' : '') + '></label>';
+}
+async function open(id) {
+  current = id; side();
+  const f = id ? await readJson('data/websites/' + id + '.json') : null;
+  const r = f ? f.data : { id: '', name: '', timeline: {} };
+  sha = f ? f.sha : null;
+  const tl = r.timeline || {};
+  $('#main').innerHTML = '<form id="rec">' +
+    '<div class="box"><h2>Timeline</h2><div class="tl">' + TIMELINE.map(([k, l], i) =>
+      '<span class="tl__step' + (tl[k] ? ' tl__step--done' : '') + '"><span class="tl__n">' + (i + 1) + '.</span>' + esc(l) + '</span>' +
+      '<input type="date" name="tl_' + k + '" value="' + esc(tl[k] || '') + '" aria-label="' + esc(l) + '">').join('') + '</div></div>' +
+    SECTIONS.map(([h, rows]) => '<div class="box"><h2>' + h + '</h2><div class="grid2">' +
+      rows.filter((x) => !x[2] || x[2] === 'choice').map((x) => field(x, r)).join('') + '</div>' +
+      rows.filter((x) => x[2] === 'area' || x[2] === 'tall').map((x) => field(x, r)).join('') + '</div>').join('') +
+    '<div class="box"><div class="row"><button class="go" type="submit">Save</button>' +
+    (r.id ? '<a class="go go--quiet" href="propose.html?id=' + encodeURIComponent(r.id) + '">Make proposal</a>' : '') +
+    '<span class="msg" id="msg"></span></div></div></form>';
+  $('#rec').onsubmit = submit;
+}
+async function submit(e) {
+  e.preventDefault();
+  const d = Object.fromEntries(new FormData(e.target));
+  if (!String(d.name || '').trim()) return say('Give the property a name.', true);
+  const r = { id: current || slug(d.name), timeline: {} };
+  for (const [k, v] of Object.entries(d)) if (k.startsWith('tl_')) { if (v) r.timeline[k.slice(3)] = v; } else r[k] = String(v).trim();
+  try {
+    say('Saving…');
+    sha = await save('data/websites/' + r.id + '.json', JSON.stringify(r, null, 2) + '\n', sha, 'Client website: ' + r.name);
+    const i = records.findIndex((x) => x.id === r.id);
+    if (i < 0) records.push(r); else records[i] = r;
+    records.sort((a, b) => a.name.localeCompare(b.name));
+    history.replaceState(null, '', '?id=' + encodeURIComponent(r.id));
+    await open(r.id); say('Saved');
+  } catch (er) { say(er.message, true); }
+}
+document.addEventListener('click', (e) => {
+  const b = e.target.closest('.pick'); if (b) { history.replaceState(null, '', '?id=' + encodeURIComponent(b.dataset.id)); open(b.dataset.id); }
+  if (e.target.id === 'new') { current = null; open(null); }
+});
+start();
+</script>
+</body>
+</html>

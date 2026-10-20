@@ -1,0 +1,29 @@
+/* The clients pages: the brand tokens of ../proposal.css. */
+.app { max-width: 1160px; margin: 0 auto; padding: var(--s4) var(--s3); display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: var(--s4); }
+.app__head { grid-column: 1 / -1; display: flex; align-items: baseline; justify-content: space-between; gap: var(--s3); flex-wrap: wrap; }
+.app__head h1 { margin: 0; font-size: 28px; }
+.app__nav { display: flex; gap: var(--s3); font-size: var(--text-sm); }
+.app__side { display: flex; flex-direction: column; gap: var(--s2); align-self: start; position: sticky; top: var(--s3); }
+.app__main { min-width: 0; display: flex; flex-direction: column; gap: var(--s3); }
+.box { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r2); padding: var(--s3); display: flex; flex-direction: column; gap: var(--s3); }
+.box h2 { margin: 0; font-size: var(--text-lg); }
+.pick { text-align: left; background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r-btn); padding: var(--s2) var(--s3); font: inherit; font-size: var(--text-sm); color: var(--ink); cursor: pointer; }
+.pick[aria-current="true"] { border-color: var(--teal); box-shadow: 0 0 0 1px var(--teal); }
+.pick span { display: block; color: var(--ink-mute); font-size: var(--text-xs); }
+.grid2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s3); }
+label { display: flex; flex-direction: column; gap: var(--s1); font-size: var(--text-sm); font-weight: 600; }
+input, select, textarea { font: inherit; font-weight: 400; color: var(--ink); padding: var(--s2); border: var(--frame) solid var(--line); border-radius: var(--r-btn); background: var(--white); width: 100%; box-sizing: border-box; }
+textarea { min-height: 96px; resize: vertical; }
+textarea.tall { min-height: 180px; }
+.go { align-self: flex-start; background: var(--coral); color: var(--white); border: 0; padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; }
+.go--quiet { background: var(--tint); color: var(--ink); }
+.go[disabled] { opacity: .6; cursor: progress; }
+.row { display: flex; gap: var(--s2); align-items: center; flex-wrap: wrap; }
+.muted { color: var(--ink-mute); margin: 0; }
+.msg { color: var(--teal); margin: 0; }
+.msg--err { color: var(--coral); }
+.tl { display: grid; grid-template-columns: minmax(0, 1fr) 160px; gap: var(--s2) var(--s3); align-items: center; font-size: var(--text-sm); }
+.tl__step { display: flex; gap: var(--s2); align-items: baseline; }
+.tl__n { color: var(--ink-mute); min-width: 1.6em; }
+.tl__step--done { font-weight: 600; }
+@media (max-width: 760px) { .app { grid-template-columns: 1fr; } .app__side { position: static; } .grid2 { grid-template-columns: 1fr; } }

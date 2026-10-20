@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Make proposal — Lazy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="../proposal.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="app">
+  <header class="app__head">
+    <h1>Make proposal</h1>
+    <nav class="app__nav"><a href="./" id="back">Clients</a><a href="https://lazy.vacations/hq/">Command center</a></nav>
+  </header>
+  <main class="app__main" id="main" style="grid-column: 1 / -1;"><p class="muted">Loading…</p></main>
+</div>
+<!-- The one-page proposal is drawn here, off screen, and printed to PDF in the browser. -->
+<div id="sheet" style="position: fixed; left: -10000px; top: 0; width: 7.5in; background: var(--white);"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+<script src="app.js"></script>
+<script>
+const $ = (s) => document.querySelector(s);
+const id = new URLSearchParams(location.search).get('id') || '';
+let rec = null, recSha = null, S = null;
+const say = (t, err) => { const m = $('#msg'); m.textContent = t; m.className = 'msg' + (err ? ' msg--err' : ''); };
+const FIELDS = [['to', 'To (owner email)', 'email'], ['owner', 'Owner'], ['first', 'Greeting name'], ['property', 'Property'],
+  ['siteUrl', 'Website', 'url'], ['login', 'Editor login'], ['subject', 'Subject']];
+
+async function start() {
+  if (needToken($('#main'), start)) return;
+  try {
+    $('#back').href = './?id=' + encodeURIComponent(id);
+    const [r, s] = await Promise.all([readJson('data/websites/' + id + '.json'), readJson('data/settings.json')]);
+    if (!r) throw new Error('No client website ' + id + '.');
+    rec = r.data; recSha = r.sha; S = s.data;
+    const owner = rec.ownerName || '';
+    const f = { to: rec.ownerEmail || '', owner, first: /&| and /.test(owner) ? owner : owner.split(/\s+/)[0] || '', property: rec.name,
+      siteUrl: rec.siteUrl || '', login: rec.login || '', subject: S.proposal.subject.replace('{property}', rec.name),
+      intro: S.welcome.replace('{property}', rec.name) };
+    const missing = [!f.to && 'owner email', !f.siteUrl && 'website'].filter(Boolean);
+    $('#main').innerHTML = '<form class="box" id="pf">' +
+      (missing.length ? '<p class="msg msg--err">Not on the record: ' + missing.join(', ') + '.</p>' : '') +
+      '<div class="grid2">' + FIELDS.map(([k, l, t]) => '<label>' + l + '<input name="' + k + '" value="' + esc(f[k]) + '"' + (t ? ' type="' + t + '"' : '') + '></label>').join('') + '</div>' +
+      '<label>Email opening<textarea name="intro">' + esc(f.intro) + '</textarea></label>' +
+      '<div class="row"><button class="go" id="ok">Looks good — make the email and PDF</button><span class="msg" id="msg"></span></div></form>' +
+      '<div class="box" id="done" hidden><iframe id="pdf" title="The one-page proposal" style="width:100%;height:80vh;border:0"></iframe></div>';
+    $('#pf').onsubmit = make;
+  } catch (e) { $('#main').innerHTML = '<p class="msg msg--err">' + esc(e.message) + '</p>'; }
+}
+
+// The email: tables and inline styles, as email clients need.
+function email(f) {
+  const C = { ink: '#17363c', coral: '#f9426f', cream: '#fffdf6' }, font = "font-family:'Noto Serif',Georgia,serif;";
+  const text = font + 'font-size:16px;line-height:1.6;color:' + C.ink + ';';
+  const btn = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener" style="display:inline-block;background:' + C.coral + ';color:#ffffff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;' + font + '">' + esc(t) + '</a>';
+  return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>' + esc(f.subject) + '</title></head>' +
+    '<body style="margin:0;padding:0;background:' + C.cream + ';"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:' + C.cream + ';"><tr><td align="center" style="padding:24px 12px;">' +
+    '<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">' +
+    '<tr><td style="padding-bottom:16px;"><img src="' + esc(S.siteBase) + 'lazy-logo-email.png" width="120" alt="Lazy" style="display:block;border:0;"></td></tr>' +
+    '<tr><td style="' + font + 'font-size:26px;font-weight:600;color:' + C.ink + ';">Welcome, ' + esc(f.first) + '!</td></tr>' +
+    '<tr><td style="' + text + 'padding-top:12px;">' + esc(f.intro) + '</td></tr>' +
+    (f.siteUrl ? '<tr><td style="padding-top:20px;">' + btn(f.siteUrl, 'Visit your website') + '</td></tr>' : '') +
+    '<tr><td style="padding-top:12px;">' + btn(S.editorUrl, 'Open the editor') + '</td></tr>' +
+    (f.login ? '<tr><td style="' + text + 'padding-top:12px;">Your login: <strong>' + esc(f.login) + '</strong>. ' + esc(S.editorNote) + '</td></tr>' : '') +
+    '<tr><td style="' + text + 'padding-top:20px;">' + esc(S.proposal.attachNote) + '</td></tr>' +
+    '<tr><td style="' + text + 'padding-top:28px;white-space:pre-line;">' + esc(S.signoff) + '</td></tr></table></td></tr></table></body></html>';
+}
+// The one-page proposal: the offer's two cards for this owner and property.
+async function sheet(f) {
+  const P = S.proposal, li = (a) => '<ul>' + a.map((x) => '<li>' + esc(x) + '</li>').join('') + '</ul>';
+  const logo = (await (await fetch('../lazy-logo.svg')).text()).replace(/<\?xml[^>]*>\s*/, '').replace('<svg ', '<svg class="op__logo" role="img" aria-label="Lazy" ');
+  const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  const host = f.siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '');
+  $('#sheet').innerHTML = '<main class="op"><header class="pp__top">' + logo + '<span class="op__date">' + esc(date) + '</span></header>' +
+    '<div><h1 class="op__title">' + esc(P.title.replace('{owner}', f.owner)) + '</h1><p class="op__for">' + esc(f.property) + (host ? ' · ' + esc(host) : '') + '</p></div>' +
+    '<section class="op__card"><div class="op__head"><h2>' + esc(P.free.heading) + '</h2><div class="op__price">' + esc(P.free.price) + '<span>' + esc(P.free.note) + '</span></div></div>' +
+    '<div class="op__groups">' + P.free.groups.map(([h, a]) => '<div><h3>' + esc(h) + '</h3>' + li(a) + '</div>').join('') + '</div></section>' +
+    '<section class="op__card"><div class="op__head"><h2>' + esc(P.support.heading) + ' <span class="op__badge">' + esc(P.support.badge) + '</span></h2><div class="op__price">' + esc(P.support.price) + '<span>' + esc(P.support.note) + '</span></div></div>' +
+    li(P.support.items) + '<p class="op__cancel">' + esc(P.cancel) + '</p></section>' +
+    '<footer class="op__foot"><strong>' + esc(P.start) + '</strong><span>' + esc(P.contact) + '</span></footer></main>';
+  return html2pdf().set({ margin: 0.5, image: { type: 'jpeg', quality: 0.95 }, html2canvas: { scale: 2, useCORS: true },
+    jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' } }).from($('#sheet').firstChild).outputPdf('datauristring');
+}
+async function make(e) {
+  e.preventDefault();
+  const f = Object.fromEntries(new FormData(e.target)), ok = $('#ok');
+  if (!f.to.trim()) return say('Add the owner email.', true);
+  ok.disabled = true;
+  try {
+    say('Making the PDF…');
+    const uri = await sheet(f), token = Date.now().toString(36), dir = 'proposals/' + id + '/' + token + '/';
+    const today = new Date().toISOString().slice(0, 10);
+    say('Saving…');
+    await save(dir + 'proposal.pdf', uri.split(',')[1], null, 'Proposal PDF: ' + f.property, true);
+    await save(dir + 'email.html', email(f), null, 'Proposal email: ' + f.property);
+    await save(dir + 'proposal.json', JSON.stringify({ id, to: f.to.trim(), subject: f.subject, attachName: S.proposal.pdfName.replace('{property}', f.property), made: new Date().toISOString() }, null, 2) + '\n', null, 'Proposal: ' + f.property);
+    rec.timeline = Object.assign({}, rec.timeline, { proposal: today });
+    recSha = await save('data/websites/' + id + '.json', JSON.stringify(rec, null, 2) + '\n', recSha, 'Timeline: proposal for ' + f.property);
+    $('#pdf').src = uri; $('#done').hidden = false;
+    say('Made: ' + dir + ' — tell Claude it is good, and the Gmail draft opens with this PDF attached.');
+  } catch (er) { say(er.message, true); }
+  ok.disabled = false;
+}
+start();
+</script>
+</body>
+</html>

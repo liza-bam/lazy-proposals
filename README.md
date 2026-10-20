@@ -2,6 +2,8 @@
 
 Client proposals for Lazy: an email per proposal, with the Direct booking options whitepaper attached.
 
+**Clients, online:** https://liza-bam.github.io/lazy-proposals/app/ — one record per client website (`data/websites/<id>.json`: owner, website, login, every website-intake field) and its timeline. **Make proposal** fills the form from the record and the offer (`data/settings.json` → `proposal`); **Looks good** saves the one-page PDF, the email and its details to `proposals/<id>/<token>/`, and dates the timeline. The page saves through GitHub with a token kept in the browser (Contents: read and write on this repo).
+
 - `npm run intake` — open http://localhost:4317, add a client, a property, then a proposal. It saves `data/clients/<client>.json` and builds the email `emails/<code>.html` (local only) and the whitepaper `site/direct-booking-options.pdf`.
 - In the intake, open the proposal's **email**: Copy subject, Copy email, paste into Gmail, attach the PDF it offers.
 - **Make proposal** — http://localhost:4317/propose?property=<intake id>: a form filled from the website intake (lazy-project/Website maker/.intake-projects: owner, email, property), the Lazy account (website, login) and the offer in `data/settings.json` → `proposal`. Check it, press **Looks good**: it writes the short email and a one-page PDF to `emails/` (local only). Claude then makes the Gmail draft to the owner with the PDF attached and opens it.
