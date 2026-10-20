@@ -74,9 +74,14 @@ async function showClient(id,kind) {
   history.replaceState(null,'',id?'?client='+encodeURIComponent(id):location.pathname);side();
   if(ClientModel.isOther(c)) return showOther(c,id);
   const props=ClientModel.propertiesForClient(c,records);
+  const accordion=(title,body)=>'<details class="box optional"><summary>'+title+'</summary><div class="optional__body">'+body+'</div></details>';
+  const details='<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>'+clientField('notes','Client notes',c.notes,'area');
+  const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
+  const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>');
   $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id&&props.length?'<a class="go" href="propose.html?v=vector2&client='+encodeURIComponent(id)+'">Make proposal</a>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
-    (id?'<details class="box optional"><summary>Client details</summary><div class="optional__body">':'')+'<form class="'+(id?'':'box')+'" id="client-rec">'+(id?'':'<h2>Client details</h2>')+'<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>'+clientField('notes','Client notes',c.notes,'area')+'<details class="optional"><summary>Billing notes</summary><div class="optional__body">'+clientField('billingNotes','Billing notes',c.billingNotes,'area')+'</div></details>'+(id?'<details class="optional"><summary>Client timeline</summary><div class="optional__body">'+timeline(c.timeline,clientSteps())+'</div></details>':'')+'<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>'+(id?'</div></details>':'')+
-    (id?'<section class="box"><div class="row"><h2>Properties</h2><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>')+'</section>'+proposalHistory(c):'');
+    '<form id="client-rec">'+(id?accordion('Details',details)+accordion('Billing',billing)+accordion('Timeline',timeline(c.timeline,clientSteps())):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
+    '<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>'+
+    (id?accordion('Properties',properties)+proposalHistory(c):'');
   $('#client-rec').onsubmit=saveClient;
 }
 // An other client: one loose card — who, what, where their files are, and notes.
@@ -87,11 +92,11 @@ function showOther(c,id) {
 }
 function proposalHistory(c) {
   const rows=[...(c.proposals||[])].reverse();
-  return '<section class="box"><h2>Proposals</h2>'+(rows.length?rows.map(p=>{
+  return '<details class="box optional"><summary>Proposals</summary><div class="optional__body">'+(rows.length?rows.map(p=>{
     const names=(p.properties||[]).map(id=>records.find(r=>r.id===id)?.name||id).join(', ');
     const base=p.path?'https://raw.githubusercontent.com/'+REPO+'/main/'+p.path.replace(/\/$/,'')+'/':'';
     return '<article class="property-card"><strong>'+esc(names||c.name)+'</strong><p class="muted">'+esc(p.date||'Date not recorded')+'</p><div class="row">'+(base?link(base+'proposal.pdf','Proposal PDF')+link('https://github.com/'+REPO+'/blob/main/'+p.path.replace(/\/$/,'')+'/email.html','Saved email'):'<span class="muted">Legacy proposal reference · '+esc(p.token)+'</span>')+'</div></article>';
-  }).join(''):'<p class="muted">Create one proposal for any or all of this client’s properties.</p>')+'</section>';
+  }).join(''):'<p class="muted">Create one proposal for any or all of this client’s properties.</p>')+'</div></details>';
 }
 async function saveClient(e) {
   e.preventDefault();if(saving)return;
