@@ -26,9 +26,10 @@
     "deliveryDate": "skip",
     "proposal": "2026-10-20",
     "doneEmail": "2026-10-20",
-    "demo": "2026-10-20"
+    "demo": "2026-10-20",
+    "billing": "2027-03-20"
   },
-  "updatedAt": "2026-10-20T17:25:27.232Z",
+  "updatedAt": "2026-10-20T23:03:25.252Z",
   "phone": "",
   "notes": "Anna's website is ready to be online.  We are leaving 54r",
   "billingNotes": ""
