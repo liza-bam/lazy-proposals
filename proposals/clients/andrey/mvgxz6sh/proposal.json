@@ -1,0 +1,25 @@
+{
+  "id": "andrey",
+  "clientId": "andrey",
+  "propertyIds": [
+    "augusta-lake"
+  ],
+  "properties": [
+    {
+      "id": "augusta-lake",
+      "name": "Augusta Lake House",
+      "siteUrl": "https://augusta-lake.lazy.vacations/"
+    }
+  ],
+  "to": "support@207housekeeping.com",
+  "subject": "Your website for Augusta Lake House is ready",
+  "attachName": "LAZY proposal - Augusta Lake House.pdf",
+  "fields": {
+    "owner": "Andrey",
+    "first": "Andrey",
+    "login": "andrey",
+    "intro": "We're so glad you're here. Your new website for Augusta Lake House is ready, and everything you need to get started is below."
+  },
+  "renderer": "pdfkit-0.15.2",
+  "made": "2026-10-20T17:13:13.477Z"
+}
