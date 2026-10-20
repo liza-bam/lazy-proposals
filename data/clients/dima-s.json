@@ -1,7 +1,7 @@
 {
   "id": "dima-s",
   "name": "Dmitry",
-  "email": "",
+  "email": "yuri.shlyakhter@gmail.com",
   "login": "dima",
   "temp": "warm",
   "properties": [
@@ -11,5 +11,7 @@
       "siteUrl": "https://milford-by-the-sea.lazy.vacations/"
     }
   ],
-  "proposals": []
+  "proposals": [],
+  "timeline": {},
+  "updatedAt": "2026-10-20T05:44:28.615363+00:00"
 }

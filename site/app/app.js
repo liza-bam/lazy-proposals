@@ -1,5 +1,4 @@
-/* CLIENTS, ONLINE. The records are JSON files in this repo (data/websites/<id>.json), read and saved
-   through GitHub with the token kept in this browser only. Shared by the clients page and Make proposal. */
+/* Clients own property intakes. GitHub stores both, using the browser's existing connection. */
 'use strict';
 const REPO = 'liza-bam/lazy-proposals';
 const API = 'https://api.github.com/repos/' + REPO + '/contents/';
@@ -37,8 +36,7 @@ const SECTIONS = [
     ['ownerHighlights', 'What does the owner want guests to notice?', 'area'], ['amenitiesGroups', 'Full amenities list', 'tall']]],
   ['Photos, reviews & property details', [['imageLink', 'Photo collection link'], ['approximateLocation', 'Approximate public location'],
     ['reviews', 'Guest reviews to import', 'area'], ['listingFacts', 'Listing text & practical details', 'tall'], ['mapNotes', 'Location notes', 'area']]],
-  ['Owner & website', [['ownerName', "Owner's name"], ['ownerPhone', "Owner's phone"], ['ownerEmail', "Owner's email"],
-    ['siteUrl', 'Existing website'], ['login', 'Editor login']]],
+  ['Website', [['siteUrl', 'Existing website'], ['login', 'Property editor login']]],
   ['Design preferences', [['propertyType', 'Property type', 'choice'], ['setting', 'Setting', 'choice'], ['propertyStyle', 'Property style', 'choice'],
     ['websiteStyle', 'Website style', 'choice'], ['focus', 'Website focus', 'choice']]],
   ['Host story & local tips', [['hostStory', 'Host introduction & property story', 'area'], ['hostTips', 'Host recommendations & local tips', 'area']]],
@@ -92,7 +90,7 @@ const TIMELINE = [
   ['deliveryDate', 'Delivery date given', 'Within 1 business day'],
   ['built', 'Website built', 'Usually 3–4 business days · design and setup free during launch'],
   ['intake', 'Intake filled', ''],
-  ['proposal', 'Proposal sent', 'Website and one-page PDF with the offer'],
+  ['proposal', 'Proposal prepared', 'Email and PDF saved for this client'],
   ['doneEmail', 'Done email sent', 'With the demo invite'],
   ['demo', 'Demo and training session', ''],
   ['integration', 'Integration session', 'If booked · integration is free'],

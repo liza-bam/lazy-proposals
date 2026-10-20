@@ -1,7 +1,7 @@
 {
   "id": "andrey",
   "name": "Andrey",
-  "email": "",
+  "email": "support@207housekeeping.com",
   "login": "andrey",
   "temp": "warm",
   "properties": [
@@ -11,5 +11,11 @@
       "siteUrl": "https://augusta-lake.lazy.vacations/"
     }
   ],
-  "proposals": []
+  "proposals": [],
+  "timeline": {
+    "request": "skip",
+    "confirmation": "skip",
+    "deliveryDate": "skip"
+  },
+  "updatedAt": "2026-10-20T05:44:28.615363+00:00"
 }

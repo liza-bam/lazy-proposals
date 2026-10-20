@@ -4,48 +4,100 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Website intake — Lazy</title>
+<title>Clients — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css">
-<link rel="stylesheet" href="app.css?v=intake3">
+<link rel="stylesheet" href="app.css?v=clients1">
 </head>
 <body>
 <div class="app">
   <header class="app__head">
-    <h1>Website intake</h1>
+    <h1>Clients</h1>
     <nav class="app__nav"><a href="https://lazy.vacations/hq/">Command center</a></nav>
   </header>
   <aside class="app__side" id="side"></aside>
   <main class="app__main" id="main"><p class="muted">Loading…</p></main>
 </div>
-<script src="app.js?v=intake3"></script>
+<script src="app.js?v=clients1"></script>
+<script src="client-model.js?v=clients1"></script>
 <script>
-let records = [], current = null, currentRecord = null, sha = null, openSequence = 0, saving = false;
-const $ = (s) => document.querySelector(s);
-const say = (t, err) => { const m = $('#msg'); if (m) { m.textContent = t; m.className = 'msg' + (err ? ' msg--err' : ''); } };
-const slug = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
 
-async function start() {
-  if (needToken($('#main'), start)) { $('#side').innerHTML = ''; return; }
-  try {
-    const files = (await list('data/websites')).filter((f) => f.name.endsWith('.json'));
-    records = (await Promise.all(files.map((f) => readJson(f.path)))).map((r) => r.data).sort((a, b) => a.name.localeCompare(b.name));
-    const want = new URLSearchParams(location.search).get('id');
-    side();
-    if (want && records.some((r) => r.id === want)) open(want); else $('#main').innerHTML = '<p class="muted">Pick a client website, or add one.</p>';
-  } catch (e) { $('#main').innerHTML = '<p class="msg msg--err">' + esc(e.message) + '</p>'; }
-}
-// A step's date: a calendar button until one is picked, then the date, small.
+let records = [], clientRecords = [], current = null, currentClient = null, currentRecord = null, sha = null, clientSha = null, openSequence = 0, saving = false;
+const $ = s => document.querySelector(s);
+const say = (t, err) => { const m = $('#msg'); if (m) { m.textContent = t; m.className = 'msg' + (err ? ' msg--err' : ''); } };
+const slug = s => String(s || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0,60);
+const clientSteps = () => TIMELINE.filter(([k]) => ClientModel.CLIENT_STEPS.includes(k));
+const propertySteps = () => TIMELINE.filter(([k]) => ClientModel.PROPERTY_STEPS.includes(k));
 const CAL = '<svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2"/></svg>';
-const short = (d) => new Date(d + 'T12:00:00').toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: d.slice(0, 4) === String(new Date().getFullYear()) ? undefined : 'numeric' });
-// The step a client is on: the first one neither done nor skipped.
-const nowStep = (tl) => (TIMELINE.find(([k]) => !(tl || {})[k]) || [''])[0];
-const nowLabel = (tl) => { const i = TIMELINE.findIndex(([k]) => k === nowStep(tl)); return i < 0 ? 'All steps done' : TIMELINE[i][1]; };
-function side() {
-  $('#side').innerHTML = '<button class="go" id="new" type="button">New client website</button>' + records.map((r) =>
-    '<button class="pick" data-id="' + esc(r.id) + '" aria-current="' + (r.id === current) + '">' + esc(r.name) +
-    '<span>' + esc(r.ownerName || '—') + ' · Now: ' + esc(nowLabel(r.timeline)) + '</span></button>').join('');
+const short = d => new Date(d+'T12:00:00').toLocaleDateString('en-US',{month:'short',day:'numeric',year:d.slice(0,4)===String(new Date().getFullYear())?undefined:'numeric'});
+const nowStep = (tl, steps) => ((steps || TIMELINE).find(([k])=>!(tl||{})[k])||[''])[0];
+const safeUrl = u => /^https?:\/\//i.test(u || '') ? u : '';
+const link = (url,label,cls='') => safeUrl(url) ? '<a class="'+cls+'" href="'+esc(url)+'" target="_blank" rel="noopener">'+esc(label)+'</a>' : '';
+async function loadRecords(dir) {
+  const files=(await list(dir)).filter(f=>f.name.endsWith('.json'));
+  return Promise.all(files.map(async f=>{const v=await readJson(f.path);if(!v)throw Error('Record missing: '+f.path);return v.data;}));
 }
+async function start() {
+  if(needToken($('#main'),start)) { $('#side').innerHTML=''; return; }
+  try {
+    [records,clientRecords]=await Promise.all([loadRecords('data/websites'),loadRecords('data/clients')]);
+    clientRecords.sort((a,b)=>a.name.localeCompare(b.name));
+    const q=new URLSearchParams(location.search), property=q.get('property')||q.get('id'), client=q.get('client');
+    if(property && records.some(r=>r.id===property)) await open(property);
+    else if(client && clientRecords.some(c=>c.id===client)) await showClient(client);
+    else { side(); $('#main').innerHTML='<section class="box"><h2>Your clients</h2><p>Choose a client to see their properties, photos and proposals.</p><p class="muted">'+clientRecords.length+' clients · '+records.length+' properties</p></section>'; }
+  } catch(e) { $('#main').innerHTML='<p class="msg msg--err">'+esc(e.message)+'</p>'; }
+}
+function side() {
+  $('#side').innerHTML='<button class="go" id="new" type="button">New client</button>'+clientRecords.map(c=>{
+    const count=ClientModel.propertiesForClient(c,records).length;
+    return '<button class="pick" data-client="'+esc(c.id)+'" aria-current="'+(currentClient&&currentClient.id===c.id)+'">'+esc(c.name)+'<span>'+count+' '+(count===1?'property':'properties')+'</span></button>';
+  }).join('');
+}
+function timeline(tl,steps) {
+  return '<ol class="tl">'+steps.map(([k,title,note],i)=>{
+    const v=(tl||{})[k]||'', skip=v==='skip',now=k===nowStep(tl,steps);
+    return '<li class="tl__row'+(v&&!skip?' is-done':'')+(skip?' is-skip':'')+(now?' is-now':'')+'"><span class="tl__n">'+(v&&!skip?'&#10003;':i+1)+'</span><span class="tl__text"><b>'+esc(title)+'</b>'+(note?'<small>'+esc(note)+'</small>':'')+'</span><span class="tl__when"><button type="button" class="tl__cal" data-cal="'+k+'"'+(skip?' disabled':'')+' aria-label="'+esc(title)+': pick a date">'+(v&&!skip?esc(short(v)):CAL)+'</button><input class="tl__date" type="date" name="tl_'+k+'" value="'+esc(skip?'':v)+'" tabindex="-1" aria-hidden="true"'+(skip?' disabled':'')+'></span><input type="hidden" name="sk_'+k+'" value="'+(skip?'1':'')+'"><button type="button" class="tl__btn" data-done="'+k+'">Done</button><button type="button" class="tl__btn" data-skip="'+k+'">'+(skip?'Unskip':'Skip')+'</button></li>';
+  }).join('')+'</ol>';
+}
+function clientField(key,label,value,kind='') {
+  return '<label>'+esc(label)+(kind==='area'?'<textarea name="'+key+'">'+esc(value||'')+'</textarea>':'<input name="'+key+'" value="'+esc(value||'')+'"'+(key==='name'?' required':'')+(kind?' type="'+kind+'"':'')+'>')+'</label>';
+}
+async function showClient(id) {
+  const sequence=++openSequence,hit=id?await readJson('data/clients/'+id+'.json'):null;
+  if(sequence!==openSequence)return;
+  if(id&&!hit)throw Error('Client not found. Reload the list.');
+  const c=hit?hit.data:{name:'',properties:[],proposals:[],timeline:{}};
+  currentClient=c;clientSha=hit?hit.sha:null;current=null;currentRecord=null;
+  if(id) { const i=clientRecords.findIndex(x=>x.id===id);if(i>=0)clientRecords[i]=c; }
+  history.replaceState(null,'',id?'?client='+encodeURIComponent(id):location.pathname);side();
+  const props=ClientModel.propertiesForClient(c,records);
+  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id&&props.length?'<a class="go" href="propose.html?client='+encodeURIComponent(id)+'">Make proposal</a>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
+    '<form class="box" id="client-rec"><h2>Client details</h2><div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>'+clientField('notes','Client notes',c.notes,'area')+'<details class="optional"><summary>Billing notes</summary><div class="optional__body">'+clientField('billingNotes','Billing notes',c.billingNotes,'area')+'</div></details>'+(id?'<details class="optional"><summary>Client timeline</summary><div class="optional__body">'+timeline(c.timeline,clientSteps())+'</div></details>':'')+'<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>'+
+    (id?'<section class="box"><div class="row"><h2>Properties</h2><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>')+'</section>'+proposalHistory(c):'');
+  $('#client-rec').onsubmit=saveClient;
+}
+function proposalHistory(c) {
+  const rows=[...(c.proposals||[])].reverse();
+  return '<section class="box"><h2>Proposals</h2>'+(rows.length?rows.map(p=>{
+    const names=(p.properties||[]).map(id=>records.find(r=>r.id===id)?.name||id).join(', ');
+    const base=p.path?'https://raw.githubusercontent.com/'+REPO+'/main/'+p.path.replace(/\/$/,'')+'/':'';
+    return '<article class="property-card"><strong>'+esc(names||c.name)+'</strong><p class="muted">'+esc(p.date||'Date not recorded')+'</p><div class="row">'+(base?link(base+'proposal.pdf','Proposal PDF')+link('https://github.com/'+REPO+'/blob/main/'+p.path.replace(/\/$/,'')+'/email.html','Saved email'):'<span class="muted">Legacy proposal reference · '+esc(p.token)+'</span>')+'</div></article>';
+  }).join(''):'<p class="muted">Create one proposal for any or all of this client’s properties.</p>')+'</section>';
+}
+async function saveClient(e) {
+  e.preventDefault();if(saving)return;
+  const f=e.target,d=new FormData(f),source=currentClient,revision=clientSha,id=source.id||slug(d.get('name'));
+  if(!id||!String(d.get('name')||'').trim())return say('Give the client a name.',true);
+  saving=true;
+  try {
+    if(!source.id && await readJson('data/clients/'+id+'.json'))throw Error('A client with that name already exists. Choose it from the list.');
+    const c=ClientModel.mergeClientRecord(source,d.entries(),id);
+    await save('data/clients/'+id+'.json',JSON.stringify(c,null,2)+'\n',revision,'Client: '+c.name);
+    const i=clientRecords.findIndex(x=>x.id===id);if(i<0)clientRecords.push(c);else clientRecords[i]=c;clientRecords.sort((a,b)=>a.name.localeCompare(b.name));await showClient(id);say('Client saved');
+  }catch(er){say(er.message,true);}finally{saving=false;}
+}
+
 function field([key, label, kind], r) {
   const v = r[key] || '';
   const help = FIELD_HELP[key] ? '<small id="help-' + key + '">' + esc(FIELD_HELP[key]) + '</small>' : '';
@@ -70,67 +122,47 @@ function readiness(r) {
     .filter(([key]) => !String(r[key] || '').trim()).map(([, label]) => label);
   return missing.length ? 'To build: add ' + missing.join(', ') + '.' : 'The three core sources are present. Verify the listing and materials before building.';
 }
+
 async function open(id) {
-  const sequence = ++openSequence;
-  current = id; side();
-  const f = id ? await readJson('data/websites/' + id + '.json') : null;
-  if (sequence !== openSequence) return;
-  const r = f ? f.data : { id: '', name: '', timeline: {} };
-  if (id && !f) { $('#main').innerHTML = '<p class="msg msg--err">This intake could not be found. Reload the client list before editing.</p>'; return; }
-  currentRecord = r;
-  sha = f ? f.sha : null;
-  const tl = r.timeline || {};
-  $('#main').innerHTML = '<form id="rec">' +
-    '<div class="box intake-actions"><div class="row"><button class="go" type="submit">Save intake</button>' +
-    (r.id ? '<a class="go go--quiet" href="propose.html?id=' + encodeURIComponent(r.id) + '">Make proposal</a>' : '') +
-    '<span class="msg" id="msg" role="status" aria-live="polite"></span></div><p class="muted" id="readiness">' + esc(readiness(r)) + '</p></div>' +
-    SECTIONS.map((s, i) => section(s, r, i)).join('') +
-    '<details class="box optional"><summary>Business timeline<span>Internal</span></summary><div class="optional__body"><ol class="tl">' + TIMELINE.map(([k, title, note], i) => {
-      const v = tl[k] || '', skip = v === 'skip', now = k === nowStep(tl);
-      return '<li class="tl__row' + (v && !skip ? ' is-done' : '') + (skip ? ' is-skip' : '') + (now ? ' is-now' : '') + '">' +
-        '<span class="tl__n">' + (v && !skip ? '&#10003;' : i + 1) + '</span>' +
-        '<span class="tl__text"><b>' + esc(title) + '</b>' + (now ? '<span class="tl__now">Now</span>' : '') + (note ? '<small>' + esc(note) + '</small>' : '') + '</span>' +
-        '<span class="tl__when"><button type="button" class="tl__cal" data-cal="' + k + '"' + (skip ? ' disabled' : '') + ' aria-label="' + esc(title) + ': pick a date">' +
-          (v && !skip ? esc(short(v)) : CAL) + '</button>' +
-          '<input class="tl__date" type="date" name="tl_' + k + '" value="' + esc(skip ? '' : v) + '" tabindex="-1" aria-hidden="true"' + (skip ? ' disabled' : '') + '></span>' +
-        '<input type="hidden" name="sk_' + k + '" value="' + (skip ? '1' : '') + '">' +
-        '<button type="button" class="tl__btn" data-done="' + k + '">Done</button>' +
-        '<button type="button" class="tl__btn" data-skip="' + k + '">' + (skip ? 'Unskip' : 'Skip') + '</button></li>';
-    }).join('') + '</ol></div></details></form>';
-  $('#rec').onsubmit = submit;
-  $('#rec').oninput = () => { $('#readiness').textContent = readiness(Object.fromEntries(new FormData($('#rec')))); say('Unsaved changes'); };
+  const sequence=++openSequence, f=id?await readJson('data/websites/'+id+'.json'):null;
+  if(sequence!==openSequence)return;
+  if(id&&!f)throw Error('Property not found. Reload the client.');
+  const r=f?f.data:{id:'',name:'',clientId:currentClient.id,timeline:{}};
+  const client=ClientModel.clientForProperty(r,clientRecords)||currentClient;
+  if(!client)throw Error('This property needs a client before it can be edited.');
+  current=id;currentRecord=r;currentClient=client;sha=f?f.sha:null;side();
+  history.replaceState(null,'','?client='+encodeURIComponent(client.id)+(id?'&property='+encodeURIComponent(id):'&newProperty=1'));
+  $('#main').innerHTML='<div class="row"><button class="go go--quiet" type="button" data-client="'+esc(client.id)+'">← '+esc(client.name)+'</button><span>'+esc(r.name||'New property')+'</span></div><form id="rec"><div class="box intake-actions"><div class="row"><button class="go" type="submit">Save intake</button><a class="go go--quiet" href="propose.html?client='+encodeURIComponent(client.id)+'">Client proposal</a><span class="msg" id="msg" role="status"></span></div><p class="muted" id="readiness">'+esc(readiness(r))+'</p>'+link(r.imageLink,'Open photo collection')+'</div>'+SECTIONS.map((s,i)=>section(s,r,i)).join('')+'<details class="box optional"><summary>Property progress</summary><div class="optional__body">'+timeline(r.timeline,propertySteps())+'</div></details></form>';
+  $('#rec').onsubmit=submit;$('#rec').oninput=()=>{$('#readiness').textContent=readiness(Object.fromEntries(new FormData($('#rec'))));say('Unsaved changes');};
 }
 async function submit(e) {
-  e.preventDefault();
-  if (saving) return;
-  const d = Object.fromEntries(new FormData(e.target));
-  if (!String(d.name || '').trim()) return say('Give the property a name.', true);
-  const r = mergeIntakeRecord(currentRecord, Object.entries(d), current || slug(d.name));
-  saving = true;
-  const controls = Array.from(e.target.querySelectorAll('input, textarea, select, button')).map((el) => [el, el.disabled]);
-  controls.forEach(([el]) => { el.disabled = true; });
+  e.preventDefault();if(saving)return;
+  const entries=new FormData(e.target),d=Object.fromEntries(entries),propertyId=current,source=currentRecord,client=currentClient,revision=sha,id=propertyId||slug(d.name);
+  if(!id||!String(d.name||'').trim())return say('Give the property a name.',true);
+  saving=true;
   try {
-    say('Saving…');
-    sha = await save('data/websites/' + r.id + '.json', JSON.stringify(r, null, 2) + '\n', sha, 'Client website: ' + r.name);
-    const i = records.findIndex((x) => x.id === r.id);
-    if (i < 0) records.push(r); else records[i] = r;
-    records.sort((a, b) => a.name.localeCompare(b.name));
-    history.replaceState(null, '', '?id=' + encodeURIComponent(r.id));
-    await open(r.id); say('Saved to the online intake');
-  } catch (er) { say(er.message, true); }
-  finally { saving = false; controls.forEach(([el, disabled]) => { el.disabled = disabled; }); }
+    if(!propertyId && await readJson('data/websites/'+id+'.json'))throw Error('A property with that name already exists. Choose another name.');
+    const r=mergeIntakeRecord(source,entries,id);r.clientId=client.id;
+    if(!propertyId){r.ownerName=client.name;r.ownerEmail=client.email||'';r.ownerPhone=client.phone||'';r.login=r.login||client.login||'';}
+    await save('data/websites/'+id+'.json',JSON.stringify(r,null,2)+'\n',revision,'Property intake: '+r.name);
+    const i=records.findIndex(x=>x.id===id);if(i<0)records.push(r);else records[i]=r;
+    await open(id);say('Intake saved');
+  } catch(er){say(er.message,true);}finally{saving=false;}
 }
-document.addEventListener('change', (e) => { if (e.target.classList.contains('tl__date')) $('#rec').requestSubmit(); });
-document.addEventListener('click', (e) => {
-  const b = e.target.closest('.pick'); if (b) { history.replaceState(null, '', '?id=' + encodeURIComponent(b.dataset.id)); open(b.dataset.id); }
-  if (e.target.id === 'new') { history.replaceState(null, '', location.pathname); current = null; open(null); }
-  const cal = e.target.closest('[data-cal]');
-  if (cal) { const d = $('#rec')['tl_' + cal.dataset.cal]; try { d.showPicker(); } catch (er) { d.focus(); d.click(); } }
-  const done = e.target.dataset.done, skip = e.target.dataset.skip;
-  if (done) { const f = $('#rec'); f['tl_' + done].disabled = false; f['tl_' + done].value = new Date().toISOString().slice(0, 10); f['sk_' + done].value = ''; f.requestSubmit(); }
-  if (skip) { const f = $('#rec'); f['sk_' + skip].value = f['sk_' + skip].value ? '' : '1'; if (f['sk_' + skip].value) f['tl_' + skip].value = ''; f.requestSubmit(); }
+document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
+document.addEventListener('click',async e=>{
+  try {
+    const c=e.target.closest('[data-client]');if(c){await showClient(c.dataset.client);return;}
+    const p=e.target.closest('[data-property]');if(p){await open(p.dataset.property);return;}
+    if(e.target.id==='new'){await showClient(null);return;}
+    if(e.target.id==='add-property'){await open(null);return;}
+    const cal=e.target.closest('[data-cal]');if(cal){const d=cal.form.elements['tl_'+cal.dataset.cal];try{d.showPicker();}catch(er){d.focus();d.click();}}
+    const done=e.target.closest('[data-done]'),skip=e.target.closest('[data-skip]'),b=done||skip;
+    if(b){const k=done?b.dataset.done:b.dataset.skip,f=b.form;f.elements['tl_'+k].disabled=false;if(done){f.elements['tl_'+k].value=new Date().toISOString().slice(0,10);f.elements['sk_'+k].value='';}else{const h=f.elements['sk_'+k];h.value=h.value?'':'1';if(h.value)f.elements['tl_'+k].value='';}f.requestSubmit();}
+  }catch(er){say(er.message,true);}
 });
 start();
+
 </script>
 </body>
 </html>

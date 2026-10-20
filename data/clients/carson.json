@@ -1,7 +1,7 @@
 {
   "id": "carson",
   "name": "Ryan & Carson",
-  "email": "",
+  "email": "support@207housekeeping.com",
   "properties": [
     {
       "id": "saddleback-ski-lodge-lazy-vacations",
@@ -40,5 +40,7 @@
     }
   ],
   "login": "ryan-carson",
-  "temp": "cold"
+  "temp": "cold",
+  "timeline": {},
+  "updatedAt": "2026-10-20T05:44:28.615363+00:00"
 }

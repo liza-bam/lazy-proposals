@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-/* MAKE PROPOSAL, no browser. One client website's record (data/websites/<id>.json) and the offer
+/* MAKE PROPOSAL, no browser. A client and their selected property intakes, plus the offer
  * (data/settings.json → proposal) make the short email and the one-page PDF.
- *   node tools/make-proposal.js <id>           show the filled proposal, to check
- *   node tools/make-proposal.js <id> --make    write proposals/<id>/<token>/ (proposal.pdf, email.html, proposal.json)
+ *   node tools/make-proposal.js <client-id>           show the filled proposal, to check
+ *   node tools/make-proposal.js <client-id> --make    write proposals/clients/<client-id>/<token>/ (proposal.pdf, email.html, proposal.json)
  *                                              and date the timeline's Proposal step
  * Claude then makes the Gmail draft from proposal.json, email.html and proposal.pdf (skill make-proposal). */
 'use strict';
@@ -15,17 +15,14 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
 const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const C = { ink: '#17363c', mute: '#8fa3a4', line: '#d3ede6', tint: '#eafaf6', coral: '#f9426f', logo: '#ff6f5e', cream: '#fffdf6' };
 
-function fields(id) {
-  const file = 'data/websites/' + path.basename(id) + '.json';
-  if (!fs.existsSync(path.join(ROOT, file))) throw new Error('No client website ' + id + ' (' + file + ').');
-  const r = read(file), S = read('data/settings.json'), owner = r.ownerName || '';
-  return {
-    id: r.id, to: r.ownerEmail || '', owner, first: /&| and /.test(owner) ? owner : owner.split(/\s+/)[0] || '',
-    property: r.name, siteUrl: r.siteUrl || '', login: r.login || '',
-    subject: S.proposal.subject.replace('{property}', r.name), intro: S.welcome.replace('{property}', r.name),
-    attachName: S.proposal.pdfName.replace('{property}', r.name),
-    missing: [!r.ownerEmail && 'owner email', !r.siteUrl && 'website', !owner && 'owner name'].filter(Boolean),
-  };
+const Model = require('../site/app/client-model.js');
+function fields(id, propertyIds) {
+  const all = dir => fs.readdirSync(path.join(ROOT, dir)).filter(n => n.endsWith('.json')).map(n => read(dir + '/' + n));
+  const clients = all('data/clients'), websites = all('data/websites');
+  const property = websites.find(p => p.id === id);
+  const client = clients.find(c => c.id === id) || (property && Model.clientForProperty(property, clients));
+  if (!client) throw new Error('No client or linked property ' + id + '.');
+  return Model.proposalFields(client, websites, read('data/settings.json'), propertyIds);
 }
 
 // The email: tables and inline styles, as email clients need.
@@ -38,7 +35,7 @@ function email(f, S) {
     '<tr><td style="padding-bottom:16px;"><img src="' + esc(S.siteBase) + 'lazy-logo-email.png" width="120" alt="Lazy" style="display:block;border:0;"></td></tr>' +
     '<tr><td style="' + font + 'font-size:26px;font-weight:600;color:' + C.ink + ';">Welcome, ' + esc(f.first) + '!</td></tr>' +
     '<tr><td style="' + text + 'padding-top:12px;">' + esc(f.intro) + '</td></tr>' +
-    (f.siteUrl ? '<tr><td style="padding-top:20px;">' + btn(f.siteUrl, 'Visit your website') + '</td></tr>' : '') +
+    f.properties.map(p => '<tr><td style="padding-top:20px;">' + btn(p.siteUrl, f.properties.length > 1 ? p.name : 'Visit your website') + '</td></tr>').join('') +
     '<tr><td style="padding-top:12px;">' + btn(S.editorUrl, 'Open the editor') + '</td></tr>' +
     (f.login ? '<tr><td style="' + text + 'padding-top:12px;">Your login: <strong>' + esc(f.login) + '</strong>. ' + esc(S.editorNote) + '</td></tr>' : '') +
     '<tr><td style="' + text + 'padding-top:20px;">' + esc(S.proposal.attachNote) + '</td></tr>' +
@@ -47,7 +44,7 @@ function email(f, S) {
 
 // The one-page proposal on Letter: the offer's two cards for this owner and property.
 function pdf(f, S, out) {
-  const P = S.proposal, M = 40, W = 612 - 2 * M;
+  const P = Object.assign({}, S.proposal, { support: f.support || Model.supportForCount(S, (f.properties || []).length || 1) }), M = 40, W = 612 - 2 * M;
   const doc = new PDFDocument({ size: 'LETTER', margin: M, info: { Title: P.title.replace('{owner}', f.owner), Author: 'Lazy' } });
   doc.registerFont('r', path.join(__dirname, 'fonts/NotoSerif-Regular.ttf'));
   doc.registerFont('b', path.join(__dirname, 'fonts/NotoSerif-Bold.ttf'));
@@ -65,8 +62,10 @@ function pdf(f, S, out) {
   let y = M + h + 18;
   doc.font('b').fontSize(22).fillColor(C.ink).text(P.title.replace('{owner}', f.owner), M, y, { width: W });
   y = doc.y + 2;
-  const host = f.siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '');
-  doc.font('r').fontSize(11).text(f.property + (host ? ' · ' + host : ''), M, y, { width: W });
+  for (const p of f.properties || [{ name: f.property, siteUrl: f.siteUrl }]) {
+    const host = p.siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '');
+    doc.font('r').fontSize(10).text(p.name + (host ? ' · ' + host : ''), M, doc.y, { width: W });
+  }
   y = doc.y + 14;
 
   const PAD = 16, IN = W - 2 * PAD;
@@ -119,22 +118,28 @@ function pdf(f, S, out) {
 }
 
 async function main() {
-  const [id, flag] = process.argv.slice(2);
-  if (!id) throw new Error('Usage: node tools/make-proposal.js <id> [--make]');
-  const f = fields(id), S = read('data/settings.json');
+  const [id, ...args] = process.argv.slice(2);
+  const flag = args.includes('--make') ? '--make' : '';
+  const option = args.find(x => x.startsWith('--properties='));
+  if (!id) throw new Error('Usage: node tools/make-proposal.js <client-id> [--properties=id1,id2] [--make]');
+  const f = fields(id, option ? option.slice('--properties='.length).split(',') : undefined), S = read('data/settings.json');
   if (flag !== '--make') {
     for (const k of ['to', 'owner', 'first', 'property', 'siteUrl', 'login', 'subject', 'intro', 'attachName']) console.log(k.padEnd(10), f[k] || '—');
+    console.log('websites  ', f.properties.length);
+    console.log('support   ', f.support.price);
     if (f.missing.length) console.log('MISSING   ', f.missing.join(', '));
     return;
   }
-  if (!f.to) throw new Error('No owner email on ' + id + '; add it to the record first.');
-  const token = Date.now().toString(36), dir = path.join(ROOT, 'proposals', f.id, token);
+  if (f.missing.length) throw new Error('Missing: ' + f.missing.join(', '));
+  const token = Date.now().toString(36), dir = path.join(ROOT, 'proposals', 'clients', f.clientId, token);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, 'email.html'), email(f, S));
   await pdf(f, S, path.join(dir, 'proposal.pdf'));
-  fs.writeFileSync(path.join(dir, 'proposal.json'), JSON.stringify({ id: f.id, to: f.to, subject: f.subject, attachName: f.attachName, made: new Date().toISOString() }, null, 2) + '\n');
-  const rf = path.join(ROOT, 'data/websites', f.id + '.json'), r = JSON.parse(fs.readFileSync(rf, 'utf8'));
+  fs.writeFileSync(path.join(dir, 'proposal.json'), JSON.stringify({ id: f.clientId, clientId: f.clientId, propertyIds: f.propertyIds, properties: f.properties.map(p => ({ id: p.id, name: p.name, siteUrl: p.siteUrl })), to: f.to, subject: f.subject, attachName: f.attachName, made: new Date().toISOString() }, null, 2) + '\n');
+  const rf = path.join(ROOT, 'data/clients', f.clientId + '.json'), r = JSON.parse(fs.readFileSync(rf, 'utf8'));
   r.timeline = Object.assign({}, r.timeline, { proposal: new Date().toISOString().slice(0, 10) });
+  r.proposals = [...(r.proposals || []), { token, date: new Date().toISOString().slice(0, 10), properties: f.propertyIds, path: path.relative(ROOT, dir) + '/' }];
+  r.updatedAt = new Date().toISOString();
   fs.writeFileSync(rf, JSON.stringify(r, null, 2) + '\n');
   console.log(path.relative(ROOT, dir));
 }

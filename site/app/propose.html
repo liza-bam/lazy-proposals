@@ -7,7 +7,7 @@
 <title>Make proposal — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css">
-<link rel="stylesheet" href="app.css?v=cal1">
+<link rel="stylesheet" href="app.css?v=clients1">
 </head>
 <body>
 <div class="app">
@@ -20,37 +20,43 @@
 <!-- The one-page proposal is drawn here, off screen, and printed to PDF in the browser. -->
 <div id="sheet" style="position: fixed; left: -10000px; top: 0; width: 7.5in; background: var(--white);"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-<script src="app.js?v=cal1"></script>
+<script src="app.js?v=clients1"></script>
+<script src="client-model.js?v=clients1"></script>
 <script>
-const $ = (s) => document.querySelector(s);
-const id = new URLSearchParams(location.search).get('id') || '';
-let rec = null, recSha = null, S = null;
-const say = (t, err) => { const m = $('#msg'); m.textContent = t; m.className = 'msg' + (err ? ' msg--err' : ''); };
-const FIELDS = [['to', 'To (owner email)', 'email'], ['owner', 'Owner'], ['first', 'Greeting name'], ['property', 'Property'],
-  ['siteUrl', 'Website', 'url'], ['login', 'Editor login'], ['subject', 'Subject']];
 
-async function start() {
-  if (needToken($('#main'), start)) return;
-  try {
-    $('#back').href = './?id=' + encodeURIComponent(id);
-    const [r, s] = await Promise.all([readJson('data/websites/' + id + '.json'), readJson('data/settings.json')]);
-    if (!r) throw new Error('No client website ' + id + '.');
-    rec = r.data; recSha = r.sha; S = s.data;
-    const owner = rec.ownerName || '';
-    const f = { to: rec.ownerEmail || '', owner, first: /&| and /.test(owner) ? owner : owner.split(/\s+/)[0] || '', property: rec.name,
-      siteUrl: rec.siteUrl || '', login: rec.login || '', subject: S.proposal.subject.replace('{property}', rec.name),
-      intro: S.welcome.replace('{property}', rec.name) };
-    const missing = [!f.to && 'owner email', !f.siteUrl && 'website'].filter(Boolean);
-    $('#main').innerHTML = '<form class="box" id="pf">' +
-      (missing.length ? '<p class="msg msg--err">Not on the record: ' + missing.join(', ') + '.</p>' : '') +
-      '<div class="grid2">' + FIELDS.map(([k, l, t]) => '<label>' + l + '<input name="' + k + '" value="' + esc(f[k]) + '"' + (t ? ' type="' + t + '"' : '') + '></label>').join('') + '</div>' +
-      '<label>Email opening<textarea name="intro">' + esc(f.intro) + '</textarea></label>' +
-      '<div class="row"><button class="go" id="ok">Looks good — make the email and PDF</button><span class="msg" id="msg"></span></div></form>' +
-      '<div class="box" id="done" hidden><iframe id="pdf" title="The one-page proposal" style="width:100%;height:80vh;border:0"></iframe></div>';
-    $('#pf').onsubmit = make;
-  } catch (e) { $('#main').innerHTML = '<p class="msg msg--err">' + esc(e.message) + '</p>'; }
+const $ = s => document.querySelector(s);
+const query=new URLSearchParams(location.search);
+let client=null,clientSha=null,websites=[],owned=[],S=null;
+const say=(t,err)=>{const m=$('#msg');if(m){m.textContent=t;m.className='msg'+(err?' msg--err':'');}};
+const FIELDS=[['to','Recipient email','email'],['owner','Client name'],['first','Greeting name'],['login','Editor login'],['subject','Subject']];
+async function start(){
+  if(needToken($('#main'),start))return;
+  try{
+    const files=(await list('data/websites')).filter(f=>f.name.endsWith('.json'));
+    websites=(await Promise.all(files.map(f=>readJson(f.path)))).map(r=>r.data);
+    let id=query.get('client');
+    if(!id&&query.get('id')){
+      const property=websites.find(p=>p.id===query.get('id'));if(!property)throw Error('Property not found.');
+      if(property.clientId)id=property.clientId;
+      else{const files=(await list('data/clients')).filter(f=>f.name.endsWith('.json'));const clients=(await Promise.all(files.map(f=>readJson(f.path)))).map(r=>r.data);id=ClientModel.clientForProperty(property,clients)?.id;}
+    }
+    if(!id)throw Error('Choose a client before making a proposal.');
+    const [c,s]=await Promise.all([readJson('data/clients/'+id+'.json'),readJson('data/settings.json')]);
+    if(!c||!s)throw Error('Client or proposal settings not found.');client=c.data;clientSha=c.sha;S=s.data;owned=ClientModel.propertiesForClient(client,websites);
+    if(!owned.length)throw Error('Add a property for this client first.');
+    $('#back').href='./?client='+encodeURIComponent(id);
+    const f=ClientModel.proposalFields(client,websites,S);
+    $('#main').innerHTML='<form class="box" id="pf"><h2>Proposal for '+esc(client.name)+'</h2><fieldset><legend>Websites in this proposal</legend>'+owned.map(p=>'<label class="property-choice"><input type="checkbox" name="properties" value="'+esc(p.id)+'" checked><span>'+esc(p.name)+'<small>'+esc(p.siteUrl||'Website missing')+'</small></span></label>').join('')+'</fieldset><p class="muted" id="scope-summary"></p><div class="grid2">'+FIELDS.map(([k,l,t])=>'<label>'+l+'<input name="'+k+'" value="'+esc(f[k])+'"'+(t?' type="'+t+'"':'')+(k==='to'?' required':'')+'></label>').join('')+'</div><label>Email opening<textarea name="intro">'+esc(f.intro)+'</textarea></label><div class="row"><button class="go" id="ok">Make email and PDF</button><span class="msg" id="msg" role="status"></span></div></form><div class="box" id="done" hidden><iframe id="pdf" title="The one-page proposal" style="width:100%;height:80vh;border:0"></iframe></div>';
+    $('#pf').onsubmit=make;$('#pf').onchange=e=>{if(e.target.name==='properties')scopeChanged();};scopeChanged();
+  }catch(e){$('#main').innerHTML='<p class="msg msg--err">'+esc(e.message)+'</p>';}
 }
-
+function selectedFields(){
+  return ClientModel.proposalFields(client,websites,S,new FormData($('#pf')).getAll('properties'));
+}
+function scopeChanged(){
+  try{const f=selectedFields();$('#scope-summary').textContent=f.properties.length+' '+(f.properties.length===1?'website':'websites')+' · Hosting & support: '+f.support.price+' · '+f.support.badge;$('#pf').elements.subject.value=f.subject;$('#pf').elements.intro.value=f.intro;$('#ok').disabled=false;say('');}
+  catch(e){$('#scope-summary').textContent=e.message;$('#ok').disabled=true;}
+}
 // The email: tables and inline styles, as email clients need.
 function email(f) {
   const C = { ink: '#17363c', coral: '#f9426f', cream: '#fffdf6' }, font = "font-family:'Noto Serif',Georgia,serif;";
@@ -62,7 +68,7 @@ function email(f) {
     '<tr><td style="padding-bottom:16px;"><img src="' + esc(S.siteBase) + 'lazy-logo-email.png" width="120" alt="Lazy" style="display:block;border:0;"></td></tr>' +
     '<tr><td style="' + font + 'font-size:26px;font-weight:600;color:' + C.ink + ';">Welcome, ' + esc(f.first) + '!</td></tr>' +
     '<tr><td style="' + text + 'padding-top:12px;">' + esc(f.intro) + '</td></tr>' +
-    (f.siteUrl ? '<tr><td style="padding-top:20px;">' + btn(f.siteUrl, 'Visit your website') + '</td></tr>' : '') +
+    f.properties.map(p => '<tr><td style="padding-top:20px;">' + btn(p.siteUrl, f.properties.length > 1 ? p.name : 'Visit your website') + '</td></tr>').join('') +
     '<tr><td style="padding-top:12px;">' + btn(S.editorUrl, 'Open the editor') + '</td></tr>' +
     (f.login ? '<tr><td style="' + text + 'padding-top:12px;">Your login: <strong>' + esc(f.login) + '</strong>. ' + esc(S.editorNote) + '</td></tr>' : '') +
     '<tr><td style="' + text + 'padding-top:20px;">' + esc(S.proposal.attachNote) + '</td></tr>' +
@@ -70,12 +76,12 @@ function email(f) {
 }
 // The one-page proposal: the offer's two cards for this owner and property.
 async function sheet(f) {
-  const P = S.proposal, li = (a) => '<ul>' + a.map((x) => '<li>' + esc(x) + '</li>').join('') + '</ul>';
+  const P = Object.assign({}, S.proposal, { support: f.support }), li = (a) => '<ul>' + a.map((x) => '<li>' + esc(x) + '</li>').join('') + '</ul>';
   const logo = (await (await fetch('../lazy-logo.svg')).text()).replace(/<\?xml[^>]*>\s*/, '').replace('<svg ', '<svg class="op__logo" role="img" aria-label="Lazy" ');
   const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-  const host = f.siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '');
+  const sites = f.properties.map(p => '<div>' + esc(p.name) + ' · ' + esc(p.siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')) + '</div>').join('');
   $('#sheet').innerHTML = '<main class="op"><header class="pp__top">' + logo + '<span class="op__date">' + esc(date) + '</span></header>' +
-    '<div><h1 class="op__title">' + esc(P.title.replace('{owner}', f.owner)) + '</h1><p class="op__for">' + esc(f.property) + (host ? ' · ' + esc(host) : '') + '</p></div>' +
+    '<div><h1 class="op__title">' + esc(P.title.replace('{owner}', f.owner)) + '</h1><p class="op__for">' + sites + '</p></div>' +
     '<section class="op__card"><div class="op__head"><h2>' + esc(P.free.heading) + '</h2><div class="op__price">' + esc(P.free.price) + '<span>' + esc(P.free.note) + '</span></div></div>' +
     '<div class="op__groups">' + P.free.groups.map(([h, a]) => '<div><h3>' + esc(h) + '</h3>' + li(a) + '</div>').join('') + '</div></section>' +
     '<section class="op__card"><div class="op__head"><h2>' + esc(P.support.heading) + ' <span class="op__badge">' + esc(P.support.badge) + '</span></h2><div class="op__price">' + esc(P.support.price) + '<span>' + esc(P.support.note) + '</span></div></div>' +
@@ -84,27 +90,27 @@ async function sheet(f) {
   return html2pdf().set({ margin: 0.5, image: { type: 'jpeg', quality: 0.95 }, html2canvas: { scale: 2, useCORS: true },
     jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' } }).from($('#sheet').firstChild).outputPdf('datauristring');
 }
-async function make(e) {
-  e.preventDefault();
-  const f = Object.fromEntries(new FormData(e.target)), ok = $('#ok');
-  if (!f.to.trim()) return say('Add the owner email.', true);
-  ok.disabled = true;
-  try {
-    say('Making the PDF…');
-    const uri = await sheet(f), token = Date.now().toString(36), dir = 'proposals/' + id + '/' + token + '/';
-    const today = new Date().toISOString().slice(0, 10);
-    say('Saving…');
-    await save(dir + 'proposal.pdf', uri.split(',')[1], null, 'Proposal PDF: ' + f.property, true);
-    await save(dir + 'email.html', email(f), null, 'Proposal email: ' + f.property);
-    await save(dir + 'proposal.json', JSON.stringify({ id, to: f.to.trim(), subject: f.subject, attachName: S.proposal.pdfName.replace('{property}', f.property), made: new Date().toISOString() }, null, 2) + '\n', null, 'Proposal: ' + f.property);
-    rec.timeline = Object.assign({}, rec.timeline, { proposal: today });
-    recSha = await save('data/websites/' + id + '.json', JSON.stringify(rec, null, 2) + '\n', recSha, 'Timeline: proposal for ' + f.property);
-    $('#pdf').src = uri; $('#done').hidden = false;
-    say('Made: ' + dir + ' — tell Claude it is good, and the Gmail draft opens with this PDF attached.');
-  } catch (er) { say(er.message, true); }
-  ok.disabled = false;
+
+async function make(e){
+  e.preventDefault();const ok=$('#ok');ok.disabled=true;
+  try{
+    const f=Object.assign(selectedFields(),Object.fromEntries(new FormData(e.target)));
+    // FormData's repeated checkbox names are not the property records.
+    f.properties=selectedFields().properties;f.propertyIds=f.properties.map(p=>p.id);f.support=ClientModel.supportForCount(S,f.properties.length);
+    if(!String(f.to||'').trim())throw Error('Add a recipient email.');
+    if(f.properties.some(p=>!p.siteUrl))throw Error('Add a website URL for every selected property.');
+    say('Making the PDF…');const uri=await sheet(f),token=Date.now().toString(36),dir='proposals/clients/'+client.id+'/'+token+'/';
+    const today=new Date().toISOString().slice(0,10);say('Saving…');
+    await save(dir+'proposal.pdf',uri.split(',')[1],null,'Client proposal PDF: '+client.name,true);
+    await save(dir+'email.html',email(f),null,'Client proposal email: '+client.name);
+    await save(dir+'proposal.json',JSON.stringify({id:client.id,clientId:client.id,propertyIds:f.propertyIds,properties:f.properties.map(p=>({id:p.id,name:p.name,siteUrl:p.siteUrl})),to:f.to.trim(),subject:f.subject,attachName:S.proposal.pdfName.replace('{property}',f.property),made:new Date().toISOString()},null,2)+'\n',null,'Client proposal: '+client.name);
+    const updated=Object.assign({},client,{timeline:Object.assign({},client.timeline,{proposal:today}),proposals:[...(client.proposals||[]),{token,date:today,properties:f.propertyIds,path:dir}],updatedAt:new Date().toISOString()});
+    clientSha=await save('data/clients/'+client.id+'.json',JSON.stringify(updated,null,2)+'\n',clientSha,'Proposal prepared: '+client.name);client=updated;
+    $('#pdf').src=uri;$('#done').hidden=false;say('Email and PDF saved for '+client.name+' · '+f.properties.length+' '+(f.properties.length===1?'website':'websites')+'.');
+  }catch(er){say(er.message,true);}finally{ok.disabled=false;}
 }
 start();
+
 </script>
 </body>
 </html>

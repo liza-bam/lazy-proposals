@@ -8,6 +8,15 @@
 .box { background: var(--white); border: var(--frame) solid var(--line); border-radius: var(--r2); padding: var(--s3); display: flex; flex-direction: column; gap: var(--s3); }
 .box h2 { margin: 0; font-size: var(--text-lg); }
 #rec { display: flex; flex-direction: column; gap: var(--s3); }
+.property-card { padding: var(--s3) 0; border-top: var(--frame) solid var(--line); min-width: 0; }
+.property-card h3 { margin: 0 0 var(--s1); font-size: var(--text-lg); }
+.property-card p { margin: 0 0 var(--s2); }
+.property-card .row a { margin-right: var(--s2); }
+.box a, .box p { overflow-wrap: anywhere; }
+.property-choice { flex-direction: row; align-items: flex-start; gap: var(--s2); padding: var(--s2) 0; }
+.property-choice input { width: auto; margin-top: 5px; }
+.property-choice span { display: flex; flex-direction: column; }
+.property-choice small { font-weight: 400; overflow-wrap: anywhere; }
 .intake-actions { position: sticky; top: 0; z-index: 2; }
 .optional { display: block; }
 .optional summary { display: list-item; cursor: pointer; font-size: var(--text-lg); font-weight: 600; }

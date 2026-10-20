@@ -2,7 +2,19 @@
 
 Client proposals for Lazy: an email per proposal, with the Direct booking options whitepaper attached.
 
-**Clients, online:** https://liza-bam.github.io/lazy-proposals/app/ — one record per client website (`data/websites/<id>.json`: owner, website, login, every website-intake field) and its timeline. **Make proposal** fills the form from the record and the offer (`data/settings.json` → `proposal`); **Looks good** saves the one-page PDF, the email and its details to `proposals/<id>/<token>/`, and dates the timeline. The page saves through GitHub with a token kept in the browser (Contents: read and write on this repo).
+**Clients, online:** https://liza-bam.github.io/lazy-proposals/app/ — the main view lists clients. Each client opens their contacts, properties, photo collections, saved proposals, billing notes and business timeline. Property intakes retain their own content and build progress.
+
+- `data/clients/<client-id>.json` holds the client, contact details, notes, client timeline and proposal history.
+- `data/websites/<property-id>.json` holds the property intake and its `clientId`. Existing property IDs, URLs, attachments and photo folders are preserved.
+- `?client=carson` opens Carson with both properties. `?client=carson&property=saddleback-lodge` opens one intake. Existing `?id=<property-id>` links still resolve to the correct property and client.
+- **Make proposal** starts from the client and selects any or all of their properties. One email and PDF can cover both of Carson's websites. Pricing comes from `data/settings.json`, including its additional-property rate.
+- New proposals save to `proposals/clients/<client-id>/<token>/`; the client records the selected property IDs and saved artifact path. Existing property-level proposal files and legacy history remain accessible.
+- The app uses the existing signed-in GitHub connection. Version SHA checks prevent overwriting a newer save. No sales-contact routing or automatic email sending is added.
+- `node tools/make-proposal.js carson` previews the grouped proposal without writing. Add `--properties=saddleback-lodge` to select a subset; add `--make` to save the email and PDF plus client history. A legacy property ID also resolves to its client.
+- Photo collections: https://github.com/liza-bam/lazy-proposals/tree/main/data/materials — one collection per property, linked from the client view.
+- Checks: `node --test tools/intake-test.cjs tools/client-model-test.cjs`.
+
+The local tools below are retained for compatibility; the online client app is the current workspace.
 
 - `npm run intake` — open http://localhost:4317, add a client, a property, then a proposal. It saves `data/clients/<client>.json` and builds the email `emails/<code>.html` (local only) and the whitepaper `site/direct-booking-options.pdf`.
 - In the intake, open the proposal's **email**: Copy subject, Copy email, paste into Gmail, attach the PDF it offers.
