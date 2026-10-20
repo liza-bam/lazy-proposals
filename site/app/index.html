@@ -98,16 +98,27 @@ function proposalHistory(c) {
     return '<article class="property-card"><strong>'+esc(names||c.name)+'</strong><p class="muted">'+esc(p.date||'Date not recorded')+'</p><div class="row">'+(base?link(base+'proposal.pdf','Proposal PDF')+link('https://github.com/'+REPO+'/blob/main/'+p.path.replace(/\/$/,'')+'/email.html','Saved email'):'<span class="muted">Legacy proposal reference · '+esc(p.token)+'</span>')+'</div></article>';
   }).join(''):'<p class="muted">Create one proposal for any or all of this client’s properties.</p>')+'</div></details>';
 }
+// Saves refresh the record; keep the user's place in its native accordions.
+function captureViewState() {
+  return {
+    openPanels: [...document.querySelectorAll('#main details[open]')].map(d=>d.querySelector(':scope > summary').textContent),
+    x: window.scrollX, y: window.scrollY
+  };
+}
+function restoreViewState(view) {
+  document.querySelectorAll('#main details').forEach(d=>{d.open=view.openPanels.includes(d.querySelector(':scope > summary').textContent);});
+  window.scrollTo(view.x,view.y);
+}
 async function saveClient(e) {
   e.preventDefault();if(saving)return;
-  const f=e.target,d=new FormData(f),source=currentClient,revision=clientSha,id=source.id||slug(d.get('name'));
+  const view=captureViewState(),f=e.target,d=new FormData(f),source=currentClient,revision=clientSha,id=source.id||slug(d.get('name'));
   if(!id||!String(d.get('name')||'').trim())return say('Give the client a name.',true);
   saving=true;
   try {
     if(!source.id && await readJson('data/clients/'+id+'.json'))throw Error('A client with that name already exists. Choose it from the list.');
     const c=ClientModel.mergeClientRecord(source,d.entries(),id);
     await save('data/clients/'+id+'.json',JSON.stringify(c,null,2)+'\n',revision,'Client: '+c.name);
-    const i=clientRecords.findIndex(x=>x.id===id);if(i<0)clientRecords.push(c);else clientRecords[i]=c;clientRecords.sort((a,b)=>a.name.localeCompare(b.name));await showClient(id);say('Client saved');
+    const i=clientRecords.findIndex(x=>x.id===id);if(i<0)clientRecords.push(c);else clientRecords[i]=c;clientRecords.sort((a,b)=>a.name.localeCompare(b.name));await showClient(id);say('Client saved');restoreViewState(view);
   }catch(er){say(er.message,true);}finally{saving=false;}
 }
 
@@ -150,7 +161,7 @@ async function open(id) {
 }
 async function submit(e) {
   e.preventDefault();if(saving)return;
-  const entries=new FormData(e.target),d=Object.fromEntries(entries),propertyId=current,source=currentRecord,client=currentClient,revision=sha,id=propertyId||slug(d.name);
+  const view=captureViewState(),entries=new FormData(e.target),d=Object.fromEntries(entries),propertyId=current,source=currentRecord,client=currentClient,revision=sha,id=propertyId||slug(d.name);
   if(!id||!String(d.name||'').trim())return say('Give the property a name.',true);
   saving=true;
   try {
@@ -159,7 +170,7 @@ async function submit(e) {
     if(!propertyId){r.ownerName=client.name;r.ownerEmail=client.email||'';r.ownerPhone=client.phone||'';r.login=r.login||client.login||'';}
     await save('data/websites/'+id+'.json',JSON.stringify(r,null,2)+'\n',revision,'Property intake: '+r.name);
     const i=records.findIndex(x=>x.id===id);if(i<0)records.push(r);else records[i]=r;
-    await open(id);say('Intake saved');
+    await open(id);say('Intake saved');restoreViewState(view);
   } catch(er){say(er.message,true);}finally{saving=false;}
 }
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
