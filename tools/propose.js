@@ -12,14 +12,26 @@ const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&':
 const settings = () => read('data/settings.json');
 const intakeDir = () => path.resolve(ROOT, settings().proposal.intakeDir);
 
-// The properties in the website intake.
-function properties() {
+// Every property: the website intake's, and any that only this app's clients hold.
+function intakes() {
   const dir = intakeDir();
   return fs.readdirSync(dir, { withFileTypes: true })
     .filter((d) => d.isDirectory() && fs.existsSync(path.join(dir, d.name, 'intake.json')))
-    .map((d) => JSON.parse(fs.readFileSync(path.join(dir, d.name, 'intake.json'), 'utf8')))
-    .map((p) => ({ id: p.id, name: p.name }))
-    .sort((a, b) => a.name.localeCompare(b.name));
+    .map((d) => JSON.parse(fs.readFileSync(path.join(dir, d.name, 'intake.json'), 'utf8')));
+}
+function clients() {
+  const dir = path.join(ROOT, 'data/clients');
+  return fs.readdirSync(dir).filter((f) => f.endsWith('.json')).map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8')));
+}
+// The client holding a property, matched by id or name.
+function clientOf(id, name) {
+  for (const c of clients()) for (const p of c.properties || []) if (p.id === id || p.name === name) return { client: c, property: p };
+  return null;
+}
+function properties() {
+  const out = intakes().map((p) => ({ id: p.id, name: p.name }));
+  for (const c of clients()) for (const p of c.properties || []) if (!out.some((x) => x.id === p.id || x.name === p.name)) out.push({ id: p.id, name: p.name });
+  return out.sort((a, b) => a.name.localeCompare(b.name));
 }
 
 // The property's Lazy account, matched by property name: its website address and editor login.
@@ -36,18 +48,20 @@ async function account(name) {
 
 async function prefill(id) {
   const file = path.join(intakeDir(), path.basename(id), 'intake.json');
-  if (!fs.existsSync(file)) throw new Error('No website intake for ' + id + '.');
-  const i = JSON.parse(fs.readFileSync(file, 'utf8')), s = settings();
+  const own = clientOf(id, null);
+  if (!fs.existsSync(file) && !own) throw new Error('No property ' + id + '.');
+  const i = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : { name: own.property.name }, s = settings();
+  const c = own || clientOf(null, i.name);
   const hit = await account(i.name);
-  const owner = i.ownerName || '';
+  const owner = i.ownerName || (c && c.client.name) || '';
   return {
     property: i.name,
     owner,
     first: owner.split(/\s+/)[0] || '',
-    to: i.ownerEmail || '',
+    to: i.ownerEmail || (c && c.client.email) || '',
     phone: i.ownerPhone || '',
-    siteUrl: hit ? 'https://' + hit.property.slug + '.lazy.vacations/' : '',
-    login: hit ? hit.account.username || '' : '',
+    siteUrl: hit ? 'https://' + hit.property.slug + '.lazy.vacations/' : (c && c.property.siteUrl) || '',
+    login: hit ? hit.account.username || '' : (c && c.client.login) || '',
     listingUrl: i.listingUrl || '',
     subject: s.proposal.subject.replace('{property}', i.name),
     intro: s.welcome.replace('{property}', i.name),

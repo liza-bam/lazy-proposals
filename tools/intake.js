@@ -25,14 +25,14 @@ function send(res, code, data) { res.writeHead(code, { 'content-type': 'applicat
 
 http.createServer(async (req, res) => {
   try {
-    if (req.method === 'GET' && req.url.split('?')[0] === '/') {
+    if (req.method === 'GET' && req.url.split('?')[0] === '/clients') {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
       return res.end(fs.readFileSync(path.join(__dirname, 'intake.html')));
     }
     if (req.method === 'GET' && req.url === '/api/clients') return send(res, 200, all());
     // Make proposal: the filled form, then the email and its one-page PDF.
     const u = new URL(req.url, 'http://localhost');
-    if (req.method === 'GET' && u.pathname === '/propose') {
+    if (req.method === 'GET' && (u.pathname === '/' || u.pathname === '/propose')) {
       res.writeHead(200, { 'content-type': 'text/html; charset=utf-8' });
       return res.end(fs.readFileSync(path.join(__dirname, 'propose.html')));
     }
