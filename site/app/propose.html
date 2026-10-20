@@ -81,7 +81,7 @@ async function sheet(f) {
   const date = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
   const sites = f.properties.map(p => '<div>' + esc(p.name) + ' · ' + esc(p.siteUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')) + '</div>').join('');
   $('#sheet').innerHTML = '<main class="op"><header class="pp__top">' + logo + '<span class="op__date">' + esc(date) + '</span></header>' +
-    '<div><h1 class="op__title">' + esc(P.title.replace('{owner}', f.owner)) + '</h1><p class="op__for">' + sites + '</p></div>' +
+    '<div><h1 class="op__title">' + esc(P.title.replace('{owner}', f.owner)) + '</h1><div class="op__for">' + sites + '</div></div>' +
     '<section class="op__card"><div class="op__head"><h2>' + esc(P.free.heading) + '</h2><div class="op__price">' + esc(P.free.price) + '<span>' + esc(P.free.note) + '</span></div></div>' +
     '<div class="op__groups">' + P.free.groups.map(([h, a]) => '<div><h3>' + esc(h) + '</h3>' + li(a) + '</div>').join('') + '</div></section>' +
     '<section class="op__card"><div class="op__head"><h2>' + esc(P.support.heading) + ' <span class="op__badge">' + esc(P.support.badge) + '</span></h2><div class="op__price">' + esc(P.support.price) + '<span>' + esc(P.support.note) + '</span></div></div>' +
