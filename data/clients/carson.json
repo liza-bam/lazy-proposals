@@ -46,6 +46,15 @@
         "saddleback-lodge"
       ],
       "path": "proposals/clients/carson/mvg9q02k/"
+    },
+    {
+      "token": "mvg9q8wl",
+      "date": "2026-10-20",
+      "properties": [
+        "saddleback-ski-lodge-lazy-vacations",
+        "saddleback-lodge"
+      ],
+      "path": "proposals/clients/carson/mvg9q8wl/"
     }
   ],
   "login": "ryan-carson",
@@ -53,7 +62,7 @@
   "timeline": {
     "proposal": "2026-10-20"
   },
-  "updatedAt": "2026-10-20T05:54:15.574Z",
+  "updatedAt": "2026-10-20T05:54:27.049Z",
   "phone": "",
   "notes": "",
   "billingNotes": ""
