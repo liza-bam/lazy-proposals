@@ -4,5 +4,8 @@
   "scripts": {
     "intake": "node tools/intake.js",
     "build": "node tools/build.js"
+  },
+  "dependencies": {
+    "pdfkit": "^0.15.2"
   }
 }
