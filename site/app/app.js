@@ -65,8 +65,8 @@ const FIELD_HELP = {
 function mergeIntakeRecord(existing, entries, id) {
   const fields = Object.fromEntries(entries);
   const r = Object.assign({}, existing || {}, { id, timeline: Object.assign({}, (existing || {}).timeline) });
-  for (const [, rows] of SECTIONS) for (const [key] of rows) {
-    if (Object.prototype.hasOwnProperty.call(fields, key)) r[key] = String(fields[key]).trim();
+  for (const [, rows] of SECTIONS) for (const [key, , kind] of rows) {
+    if (Object.prototype.hasOwnProperty.call(fields, key)) r[key] = ['area', 'tall'].includes(kind) ? String(fields[key]) : String(fields[key]).trim();
   }
   for (const [key] of TIMELINE) {
     if (!Object.prototype.hasOwnProperty.call(fields, 'sk_' + key) && !Object.prototype.hasOwnProperty.call(fields, 'tl_' + key)) continue;
@@ -75,7 +75,7 @@ function mergeIntakeRecord(existing, entries, id) {
     else delete r.timeline[key];
   }
   r.updatedAt = new Date().toISOString();
-  if (!r.createdAt) r.createdAt = r.updatedAt;
+  if (!r.createdAt && !(existing || {}).id) r.createdAt = r.updatedAt;
   return r;
 }
 const CHOICES = {

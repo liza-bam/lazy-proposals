@@ -40,8 +40,14 @@ test('existing custom choice values remain selected instead of silently clearing
 });
 
 test('the complete pasted amenities text survives a save and the core fields are first', () => {
-  const source = 'Outdoor\nPrivate sauna\nNot included\nWasher unavailable\nDryer unavailable';
+  const source = 'Outdoor\n  Private sauna\nNot included\nWasher unavailable\nDryer unavailable\n';
   assert.equal(merge({}, [['amenitiesGroups', source]], 'house').amenitiesGroups, source);
   const first = normalize(vm.runInContext('SECTIONS[0][1].map(row => row[0])', context));
   assert.deepEqual(first, ['name', 'listingUrl', 'ownerHighlights', 'amenitiesGroups']);
+});
+
+test('saving an older record does not invent its creation date', () => {
+  const result = merge({ id: 'house', name: 'House' }, [['name', 'House']], 'house');
+  assert.equal(result.createdAt, undefined);
+  assert.ok(result.updatedAt);
 });
