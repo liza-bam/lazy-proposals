@@ -57,7 +57,7 @@ async function prefill(id) {
   return {
     property: i.name,
     owner,
-    first: owner.split(/\s+/)[0] || '',
+    first: /&| and /.test(owner) ? owner : owner.split(/\s+/)[0] || '',   // "Ryan & Carson" greets both
     to: i.ownerEmail || (c && c.client.email) || '',
     phone: i.ownerPhone || '',
     siteUrl: hit ? 'https://' + hit.property.slug + '.lazy.vacations/' : (c && c.property.siteUrl) || '',

@@ -1,0 +1,15 @@
+{
+  "id": "dima-s",
+  "name": "Dima S",
+  "email": "",
+  "login": "dima",
+  "temp": "warm",
+  "properties": [
+    {
+      "id": "milford-sound-beach-house",
+      "name": "Milford Sound Beach House",
+      "siteUrl": "https://milford-by-the-sea.lazy.vacations/"
+    }
+  ],
+  "proposals": []
+}
