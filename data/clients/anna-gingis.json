@@ -22,9 +22,10 @@
   "temp": "warm",
   "timeline": {
     "request": "skip",
-    "confirmation": "skip"
+    "confirmation": "skip",
+    "deliveryDate": "skip"
   },
-  "updatedAt": "2026-10-20T17:25:11.891Z",
+  "updatedAt": "2026-10-20T17:25:14.600Z",
   "phone": "",
   "notes": "Anna's website is ready to be online.  We are leaving 54r",
   "billingNotes": ""
