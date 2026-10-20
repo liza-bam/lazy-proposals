@@ -4,23 +4,23 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Clients — Lazy</title>
+<title>Website intake — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css">
-<link rel="stylesheet" href="app.css?v=cal1">
+<link rel="stylesheet" href="app.css?v=intake2">
 </head>
 <body>
 <div class="app">
   <header class="app__head">
-    <h1>Clients</h1>
+    <h1>Website intake</h1>
     <nav class="app__nav"><a href="https://lazy.vacations/hq/">Command center</a></nav>
   </header>
   <aside class="app__side" id="side"></aside>
   <main class="app__main" id="main"><p class="muted">Loading…</p></main>
 </div>
-<script src="app.js?v=cal1"></script>
+<script src="app.js?v=intake2"></script>
 <script>
-let records = [], current = null, sha = null;
+let records = [], current = null, currentRecord = null, sha = null, openSequence = 0, saving = false;
 const $ = (s) => document.querySelector(s);
 const say = (t, err) => { const m = $('#msg'); if (m) { m.textContent = t; m.className = 'msg' + (err ? ' msg--err' : ''); } };
 const slug = (s) => String(s || '').toLowerCase().normalize('NFKD').replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '').slice(0, 60);
@@ -48,19 +48,44 @@ function side() {
 }
 function field([key, label, kind], r) {
   const v = r[key] || '';
-  if (kind === 'choice') return '<label>' + label + '<select name="' + key + '"><option value="">Choose…</option>' +
-    CHOICES[key].map((c) => '<option' + (c === v ? ' selected' : '') + '>' + esc(c) + '</option>').join('') + '</select></label>';
-  if (kind === 'area' || kind === 'tall') return '<label>' + label + '<textarea name="' + key + '"' + (kind === 'tall' ? ' class="tall"' : '') + '>' + esc(v) + '</textarea></label>';
-  return '<label>' + label + '<input name="' + key + '" value="' + esc(v) + '"' + (key === 'ownerEmail' ? ' type="email"' : '') + '></label>';
+  const help = FIELD_HELP[key] ? '<small id="help-' + key + '">' + esc(FIELD_HELP[key]) + '</small>' : '';
+  const attrs = ' id="field-' + key + '" name="' + key + '" aria-labelledby="label-' + key + '"' + (help ? ' aria-describedby="help-' + key + '"' : '');
+  let control;
+  if (kind === 'choice') control = '<select' + attrs + '><option value="">No preference</option>' +
+    (v && !CHOICES[key].includes(v) ? '<option selected>' + esc(v) + '</option>' : '') +
+    CHOICES[key].map((c) => '<option' + (c === v ? ' selected' : '') + '>' + esc(c) + '</option>').join('') + '</select>';
+  else if (kind === 'area' || kind === 'tall') control = '<textarea' + attrs + (kind === 'tall' ? ' class="tall"' : '') + '>' + esc(v) + '</textarea>';
+  else control = '<input' + attrs + ' value="' + esc(v) + '"' + (key === 'name' ? ' required' : '') +
+    (key === 'ownerEmail' ? ' type="email"' : key === 'ownerPhone' ? ' type="tel"' : ['listingUrl', 'siteUrl'].includes(key) ? ' type="url"' : '') + '>';
+  return '<label for="field-' + key + '"><span id="label-' + key + '">' + esc(label) + '</span>' + help + control + '</label>';
+}
+function section([heading, rows], r, i) {
+  const body = '<div class="grid2">' + rows.filter((x) => !x[2] || x[2] === 'choice').map((x) => field(x, r)).join('') + '</div>' +
+    rows.filter((x) => x[2] === 'area' || x[2] === 'tall').map((x) => field(x, r)).join('');
+  return i === 0 ? '<section class="box"><h2>' + heading + '</h2><p class="muted">Start with these three sources. Save a partial intake at any time; the remaining sections are optional.</p>' + body + '</section>' :
+    '<details class="box optional"><summary>' + heading + '<span>Optional</span></summary><div class="optional__body">' + body + '</div></details>';
+}
+function readiness(r) {
+  const missing = [['listingUrl', 'Airbnb listing'], ['ownerHighlights', 'owner’s selling points'], ['amenitiesGroups', 'amenities list']]
+    .filter(([key]) => !String(r[key] || '').trim()).map(([, label]) => label);
+  return missing.length ? 'To build: add ' + missing.join(', ') + '.' : 'The three core sources are present. Verify the listing and materials before building.';
 }
 async function open(id) {
+  const sequence = ++openSequence;
   current = id; side();
   const f = id ? await readJson('data/websites/' + id + '.json') : null;
+  if (sequence !== openSequence) return;
   const r = f ? f.data : { id: '', name: '', timeline: {} };
+  if (id && !f) { $('#main').innerHTML = '<p class="msg msg--err">This intake could not be found. Reload the client list before editing.</p>'; return; }
+  currentRecord = r;
   sha = f ? f.sha : null;
   const tl = r.timeline || {};
   $('#main').innerHTML = '<form id="rec">' +
-    '<div class="box"><h2>Timeline</h2><ol class="tl">' + TIMELINE.map(([k, title, note], i) => {
+    '<div class="box intake-actions"><div class="row"><button class="go" type="submit">Save intake</button>' +
+    (r.id ? '<a class="go go--quiet" href="propose.html?id=' + encodeURIComponent(r.id) + '">Make proposal</a>' : '') +
+    '<span class="msg" id="msg" role="status" aria-live="polite"></span></div><p class="muted" id="readiness">' + esc(readiness(r)) + '</p></div>' +
+    SECTIONS.map((s, i) => section(s, r, i)).join('') +
+    '<details class="box optional"><summary>Business timeline<span>Internal</span></summary><div class="optional__body"><ol class="tl">' + TIMELINE.map(([k, title, note], i) => {
       const v = tl[k] || '', skip = v === 'skip', now = k === nowStep(tl);
       return '<li class="tl__row' + (v && !skip ? ' is-done' : '') + (skip ? ' is-skip' : '') + (now ? ' is-now' : '') + '">' +
         '<span class="tl__n">' + (v && !skip ? '&#10003;' : i + 1) + '</span>' +
@@ -71,25 +96,19 @@ async function open(id) {
         '<input type="hidden" name="sk_' + k + '" value="' + (skip ? '1' : '') + '">' +
         '<button type="button" class="tl__btn" data-done="' + k + '">Done</button>' +
         '<button type="button" class="tl__btn" data-skip="' + k + '">' + (skip ? 'Unskip' : 'Skip') + '</button></li>';
-    }).join('') + '</ol></div>' +
-    SECTIONS.map(([h, rows]) => '<div class="box"><h2>' + h + '</h2><div class="grid2">' +
-      rows.filter((x) => !x[2] || x[2] === 'choice').map((x) => field(x, r)).join('') + '</div>' +
-      rows.filter((x) => x[2] === 'area' || x[2] === 'tall').map((x) => field(x, r)).join('') + '</div>').join('') +
-    '<div class="box"><div class="row"><button class="go" type="submit">Save</button>' +
-    (r.id ? '<a class="go go--quiet" href="propose.html?id=' + encodeURIComponent(r.id) + '">Make proposal</a>' : '') +
-    '<span class="msg" id="msg"></span></div></div></form>';
+    }).join('') + '</ol></div></details></form>';
   $('#rec').onsubmit = submit;
+  $('#rec').oninput = () => { $('#readiness').textContent = readiness(Object.fromEntries(new FormData($('#rec')))); say('Unsaved changes'); };
 }
 async function submit(e) {
   e.preventDefault();
+  if (saving) return;
   const d = Object.fromEntries(new FormData(e.target));
   if (!String(d.name || '').trim()) return say('Give the property a name.', true);
-  const r = { id: current || slug(d.name), timeline: {} };
-  for (const [k, v] of Object.entries(d)) {
-    if (k.startsWith('sk_')) { if (v) r.timeline[k.slice(3)] = 'skip'; }
-    else if (k.startsWith('tl_')) { if (v && !r.timeline[k.slice(3)]) r.timeline[k.slice(3)] = v; }
-    else r[k] = String(v).trim();
-  }
+  const r = mergeIntakeRecord(currentRecord, Object.entries(d), current || slug(d.name));
+  saving = true;
+  const controls = Array.from(e.target.querySelectorAll('input, textarea, select, button')).map((el) => [el, el.disabled]);
+  controls.forEach(([el]) => { el.disabled = true; });
   try {
     say('Saving…');
     sha = await save('data/websites/' + r.id + '.json', JSON.stringify(r, null, 2) + '\n', sha, 'Client website: ' + r.name);
@@ -97,13 +116,14 @@ async function submit(e) {
     if (i < 0) records.push(r); else records[i] = r;
     records.sort((a, b) => a.name.localeCompare(b.name));
     history.replaceState(null, '', '?id=' + encodeURIComponent(r.id));
-    await open(r.id); say('Saved');
+    await open(r.id); say('Saved to the online intake');
   } catch (er) { say(er.message, true); }
+  finally { saving = false; controls.forEach(([el, disabled]) => { el.disabled = disabled; }); }
 }
 document.addEventListener('change', (e) => { if (e.target.classList.contains('tl__date')) $('#rec').requestSubmit(); });
 document.addEventListener('click', (e) => {
   const b = e.target.closest('.pick'); if (b) { history.replaceState(null, '', '?id=' + encodeURIComponent(b.dataset.id)); open(b.dataset.id); }
-  if (e.target.id === 'new') { current = null; open(null); }
+  if (e.target.id === 'new') { history.replaceState(null, '', location.pathname); current = null; open(null); }
   const cal = e.target.closest('[data-cal]');
   if (cal) { const d = $('#rec')['tl_' + cal.dataset.cal]; try { d.showPicker(); } catch (er) { d.focus(); d.click(); } }
   const done = e.target.dataset.done, skip = e.target.dataset.skip;

@@ -31,21 +31,53 @@ async function save(path, body, sha, message, raw) {
 }
 async function list(dir) { return (await gh(dir)) || []; }
 
-// The website intake's fields, its sections and choices (lazy-project/Website maker/tools/intake-assets/index.html).
+// The online intake is the handoff for website content. Keep the three source essentials first.
 const SECTIONS = [
-  ['Owner and website', [['name', 'Property name'], ['ownerName', "Owner's name"], ['ownerPhone', "Owner's phone"], ['ownerEmail', "Owner's email"],
-    ['siteUrl', 'Website'], ['login', 'Editor login'], ['listingUrl', 'Airbnb listing URL']]],
-  ['1. Source materials', [['listingFacts', 'Full listing fact inventory', 'tall'], ['amenitiesGroups', 'Amenities — groups and exact items', 'tall'],
-    ['approximateLocation', 'Approximate public location'], ['mapNotes', 'Map screenshot / location notes', 'area'], ['reviews', 'Reviews to import', 'area'],
-    ['imageLink', 'Image collection link']]],
-  ['2. Designer direction', [['propertyType', 'Property type', 'choice'], ['setting', 'Setting', 'choice'], ['propertyStyle', 'Property style', 'choice'],
+  ['Website essentials', [['name', 'Property name'], ['listingUrl', 'Airbnb listing URL'],
+    ['ownerHighlights', 'What does the owner want guests to notice?', 'area'], ['amenitiesGroups', 'Full amenities list', 'tall']]],
+  ['Photos, reviews & property details', [['imageLink', 'Photo collection link'], ['approximateLocation', 'Approximate public location'],
+    ['reviews', 'Guest reviews to import', 'area'], ['listingFacts', 'Listing text & practical details', 'tall'], ['mapNotes', 'Location notes', 'area']]],
+  ['Owner & website', [['ownerName', "Owner's name"], ['ownerPhone', "Owner's phone"], ['ownerEmail', "Owner's email"],
+    ['siteUrl', 'Existing website'], ['login', 'Editor login']]],
+  ['Design preferences', [['propertyType', 'Property type', 'choice'], ['setting', 'Setting', 'choice'], ['propertyStyle', 'Property style', 'choice'],
     ['websiteStyle', 'Website style', 'choice'], ['focus', 'Website focus', 'choice']]],
-  ['3. Page plan', [['homeContent', 'Home: content, images, reviews and source assignments', 'area'], ['pageOneName', 'Custom page 1 name'],
-    ['pageOneContent', 'Custom page 1: content, images, reviews and sources', 'area'], ['pageTwoName', 'Custom page 2 name'],
-    ['pageTwoContent', 'Custom page 2: content, images, reviews and sources', 'area'], ['guidebookContent', 'Guidebook: directory and approximate map plan', 'area']]],
-  ['4. Additional content', [['hostStory', 'Host introduction and property story', 'area'], ['hostTips', 'Host recommendations and local tips', 'area'],
-    ['additionalIdeas', 'Article, card and itinerary ideas', 'area'], ['additionalSources', 'Supporting images and verified sources', 'area'],
-    ['missing', 'Missing source material and unresolved choices', 'area']]]];
+  ['Host story & local tips', [['hostStory', 'Host introduction & property story', 'area'], ['hostTips', 'Host recommendations & local tips', 'area']]],
+  ['Page plan — internal', [['homeContent', 'Home content & sources', 'area'], ['pageOneName', 'Stay page name'],
+    ['pageOneContent', 'Stay content & sources', 'area'], ['pageTwoName', 'Experience page name'],
+    ['pageTwoContent', 'Experience content & sources', 'area'], ['guidebookContent', 'Guidebook notes', 'area'],
+    ['additionalIdeas', 'Article & itinerary ideas', 'area'], ['additionalSources', 'Other source links & file references', 'area'],
+    ['missing', 'Missing information & questions', 'area']]]];
+const FIELD_HELP = {
+  listingUrl: 'Paste the Airbnb room link. We use it to verify the property, description, sleeping arrangements and house rules.',
+  ownerHighlights: 'In the owner’s words: what makes this stay special, who it suits and what to feature first. A few bullets are enough.',
+  amenitiesGroups: 'Paste the complete Airbnb amenities list with its category headings, descriptions and “Not included” items. We keep the full source, remove duplicates and feature the useful benefits on Stay. Skip obvious basics such as hot water in guest-facing copy.',
+  imageLink: 'Link to the actual photo collection or this property’s Lazy photo library. Filenames and a local folder path alone are not an online collection.',
+  reviews: 'Paste genuine reviews, including guest name, rating, date and full review text, or link to the review file. Do not invent dates or testimonials.',
+  listingFacts: 'Paste the listing description and practical details: capacity, bedrooms, beds, bathrooms, check-in, rules and any limitations. No need to rewrite them.',
+  approximateLocation: 'Town or general area for the public website. Keep private arrival instructions out of this field.',
+  focus: 'Optional direction, such as family stays. This complements the owner’s selling points above.',
+  guidebookContent: 'Record the intended audience and useful local tips. Preserve an existing Guidebook unless changes are specifically requested.',
+  additionalSources: 'Keep retrievable links and file references with this property. Never paste passwords or session tokens.',
+  missing: 'Track gaps here. Missing design preferences do not prevent source collection.'
+};
+
+// Merge visible edits into the version that was opened. Preserve attachments, metadata and future fields.
+function mergeIntakeRecord(existing, entries, id) {
+  const fields = Object.fromEntries(entries);
+  const r = Object.assign({}, existing || {}, { id, timeline: Object.assign({}, (existing || {}).timeline) });
+  for (const [, rows] of SECTIONS) for (const [key] of rows) {
+    if (Object.prototype.hasOwnProperty.call(fields, key)) r[key] = String(fields[key]).trim();
+  }
+  for (const [key] of TIMELINE) {
+    if (!Object.prototype.hasOwnProperty.call(fields, 'sk_' + key) && !Object.prototype.hasOwnProperty.call(fields, 'tl_' + key)) continue;
+    if (fields['sk_' + key] === '1') r.timeline[key] = 'skip';
+    else if (fields['tl_' + key]) r.timeline[key] = fields['tl_' + key];
+    else delete r.timeline[key];
+  }
+  r.updatedAt = new Date().toISOString();
+  if (!r.createdAt) r.createdAt = r.updatedAt;
+  return r;
+}
 const CHOICES = {
   propertyType: ['Lake house', 'Beach house', 'Bungalow', 'Cottage', 'Cabin', 'Chalet', 'Farmhouse', 'Country house', 'Villa', 'Townhouse', 'Brownstone', 'Apartment', 'Luxury apartment or penthouse', 'Loft', 'Studio', 'Guesthouse', 'Tiny house', 'Converted space', 'Unusual stay'],
   setting: ['City center', 'Residential city neighborhood', 'Suburbs', 'Small town or village', 'Countryside', 'Remote wilderness', 'Lakefront or riverside', 'Beachfront or coastal', 'Mountains', 'Forest', 'Desert', 'Tropical garden or jungle'],
