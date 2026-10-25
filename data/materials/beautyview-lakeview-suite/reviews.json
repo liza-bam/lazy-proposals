@@ -1,0 +1,3895 @@
+[
+  {
+    "name": "Kippy",
+    "location": "",
+    "rating": 5,
+    "date": "September 2026",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "We had a wonderful stay! The Airbnb had everything we could have asked for, with great amenities, we especially loved the pool and hot tub. The kitchen was fully stocked with everything we needed, which made our stay so easy and comfortable. The views were absolutely amazing, and the space was beautiful and relaxing. Debra was very welcoming and easy to communicate with. We would definitely stay here again!"
+  },
+  {
+    "name": "Jacob",
+    "location": "",
+    "rating": 5,
+    "date": "3 weeks ago",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Second time staying there and I will definitely be back. Beautiful spot in west Kelowna."
+  },
+  {
+    "name": "Shaylynn",
+    "location": "Lethbridge, Canada",
+    "rating": 5,
+    "date": "August 2026",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Incredible stay!! In a very quiet and peaceful neighborhood, the pool and hot tub were perfect for a hang out spot, so much room in the place for sleeping and hanging out and very easy access and close to wineries and local shops/restaurants. Will for sure stay here again when we return!"
+  },
+  {
+    "name": "Gurpreet Singh",
+    "location": "",
+    "rating": 5,
+    "date": "September 2026",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Its very nice place with amazing view and hot tub and private pool. Highly recommended"
+  },
+  {
+    "name": "Carolane",
+    "location": "",
+    "rating": 5,
+    "date": "August 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Amazing experience with the best view and location! Debra was very communicative and helpful when we needed anything even had amazing recommendations for restaurants! Overall enjoyed and will be back!"
+  },
+  {
+    "name": "Brittany Gillian",
+    "location": "",
+    "rating": 3,
+    "date": "August 2026",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "The backyard area was very nice and great for the kids and adults and was really nice to go back and relax at after a day at the beach. The big thing is there is a lot of rules and so we were walking on egg shells the whole trip. Rules on not being able to use the pool or hot tub after 10pm and only being allowed to have music on low for the entire day at a level that couldn’t be heard upstairs or by the neighbours definitely killed the vibe a bit. There were limited towels provided for the pool and shower even though it is advertised for up to 8 people, and limited kitchen clothes provided so I would recommend bringing your own. The bathroom was also quite ran down. Debra was quite responsive to any questions that we had during the stay."
+  },
+  {
+    "name": "Fabiola",
+    "location": "",
+    "rating": 5,
+    "date": "August 2026",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "We had a wonderful stay! The place was exactly as described, comfortable, and in a great location. We really enjoyed our weekend in Kelowna, and the accommodation made our trip even better. The host was responsive, and made the check-in process easy. Thank you!!"
+  },
+  {
+    "name": "Katelyn",
+    "location": "",
+    "rating": 5,
+    "date": "July 2026",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We took our family of 4 (two kiddos ages 2.5 and 11 months) and my parents. we had a blast. The place is beautiful. My littles had a blast in the pool. Debra was amazing to communicate with, always answered very quickly with any questions we had. This stay couldn’t have been more perfect. Highly recommend!"
+  },
+  {
+    "name": "Zahran",
+    "location": "",
+    "rating": 4,
+    "date": "July 2026",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Overall the place is great positioned in a nice neighborhood with great views. Pool and hot tub made it entertaining and fun, however there is a cut off at 10 and you are warned to not make noise after 10 as she lives upstairs and neighbours are stingy. Made the experience feel a little constricted and constant thought of noise. She is conflicting at times with her words with stayijg a little later in the hot tub but overall nice. If youre calm youll like this."
+  },
+  {
+    "name": "Heidi Suzzane",
+    "location": "",
+    "rating": 5,
+    "date": "August 2026",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Was short but lovely stay, the Pool and hot tub were amazing along with the view and privacy. I would book again, the beds were comfortable and lots of space for our party. Thank you Debra for the great hospitality ❤️"
+  },
+  {
+    "name": "Esther Barbara",
+    "location": "",
+    "rating": 4,
+    "date": "June 2026",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Very clean, great pool and spa. Easy to find. Spacious. Big kitchen. No washing machine. Comfortable beds. Short drive to shops."
+  },
+  {
+    "name": "Yaroslava",
+    "location": "",
+    "rating": 5,
+    "date": "July 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Everything's great"
+  },
+  {
+    "name": "Aleena",
+    "location": "",
+    "rating": 5,
+    "date": "June 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great place to stay in Kelowna! The pool and hot tub were nice. Kitchen has appliances not an actual stove, but that wasn’t a problem for us."
+  },
+  {
+    "name": "Heather",
+    "location": "Whitehorse, Canada",
+    "rating": 5,
+    "date": "June 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great location.  Beautiful views. Would stay again."
+  },
+  {
+    "name": "Tyra",
+    "location": "",
+    "rating": 3,
+    "date": "June 2026",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The view was amazing! Hot tub and pool were a great addition, kitchen had what we needed to cook. Check in was easy and quick. \nAlthough, host definitely could have addressed a miscommunication better, instead of what I felt as an attack, which left my group and I feeling the need to walk on egg shells the rest of the weekend. Upon reading other reviews, it would appear that any partial negative review is twisted around on the guest. Before booking, we asked for permission to have some drinks around the pool and it was allowed.  We had hung a banner for photos (not knowing it wasn’t allowed) and host had came down into our space without warning, twice, after we were told the space would be ours. Host was mad it was never disclosed it was for an event, although there was no partying. We feel there was not the level of privacy that was advertised. You can hear them walking around early mornings, with a pet as well which was not disclosed and a friend suffered allergy symptoms all weekend"
+  },
+  {
+    "name": "Dave",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "June 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Everything was as described. The unit had lots of space. Pool & Hot Tub were great. Debra was easy to communicate with and welcoming for our stay."
+  },
+  {
+    "name": "Sherrene",
+    "location": "Abbotsford, Canada",
+    "rating": 5,
+    "date": "May 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We had a fantastic stay at Debra's place! Sparkling clean, very spacious suite with all the amenities you could need. Beds and linens were so comfortable. Debra was very friendly and communicative. Extremely quiet neighbourhood with amazing view. Being able to relax in the hot tub in the evening was such a nice bonus. Would definitely stay again!"
+  },
+  {
+    "name": "Craig",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "August 2026",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Fantastic"
+  },
+  {
+    "name": "Kin Fung",
+    "location": "",
+    "rating": 5,
+    "date": "June 2026",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Good host"
+  },
+  {
+    "name": "Kara-Lee",
+    "location": "Langley Township, Canada",
+    "rating": 3,
+    "date": "July 2022",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The location and amenities made up for the host being very strict on rules. \nWe were a small six-girl bachelorette party celebrating our bride-to-be! We were not rowdy or over the top, keeping quiet while in the house playing board games. While we definitely had a good time and really enjoyed the pool and water slide during the day, but the host was very strict on her rules. Upon arrival, a large rules book was waiting for us. We got complaints about noise, though we were a small group that wouldn’t have been louder than any other group heading up there. We also got complaints about street parking, saying we were parked in a neighbours “air bnb spot” (when the entire street was empty and regular street parking). \nOverall a nice unit to stay in though, and again the pool and outdoor space was very nice with a beautiful view!"
+  },
+  {
+    "name": "Brianne",
+    "location": "Greater Sudbury, Canada",
+    "rating": 4,
+    "date": "September 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "We enjoyed our stay at Debra’s place. The suite was very clean, and the amenities were a highlight—we loved being able to use the pool, sauna, and hot tub. Debra was also very accommodating with our request for an early check-in, which we appreciated.\nThere were a couple of small things that could be improved. The outdoor garbage hadn’t been taken care of before our arrival, which caused an unpleasant smell on the patio. We also experienced some miscommunication during our stay. Upon arrival, we were questioned about our check-in time and not very warmly greeted by the upstairs owner, who was working on the pool, which made it unavailable even though we had arranged early access. At checkout, we were asked about damage we did not cause, and when we requested details or photos, none were provided. We were later told all was fine, but it caused unnecessary stress.\nOverall, we had a lovely stay and enjoyed the space and amenities. With a few adjustments, it would be even better."
+  },
+  {
+    "name": "Kim",
+    "location": "Sarnia, Canada",
+    "rating": 4,
+    "date": "September 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Gorgeous views from the outside and in!  Even though it was a coolish September, I was able to get a swim in daily, and then enjoy the warmth of the hottub. The sauna was an added bonus that was well enjoyed!  Debra and Mike were very responsive and timely for any requests made, even rearranging a personal appointment when our check-in time changed that day. Good towels for both bath and pool. Bedroom beds were quite comfortable. As noted, this is not a party house, one of R&R.  Do realize that the owners live above, and as this was built as a house you will hear the occasional noise/steps from upstairs. TV had most anything you'd like to watch. All in all, great amenities!"
+  },
+  {
+    "name": "Emma",
+    "location": "Nanoose Bay, Canada",
+    "rating": 5,
+    "date": "August 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We really loved staying at Debra's place, the view is fabulous. \nThe pool, slide and and hot tub are a great addition and one of the reasons we chose this accommodation. \nThere is some noise from a road below but we do not hear it when we are inside and we found that we weren't bothered by it at all.\nThe home is very clean and spacious and we would certainly like to return. \nWe found that the space was very private, however when we needed to get in touch with Debra (for a small request), she was available immediately. \nGreat place to stay, we would definitely recommended."
+  },
+  {
+    "name": "Melissa",
+    "location": "Abbotsford, Canada",
+    "rating": 5,
+    "date": "May 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Absolutely loved staying at Debra’s poolside getaway. The place was clean, organized, and perfectly set up to enjoy a relaxing vacation. \nThe pool and hot tub we found were surprisingly private, there was even a water slide!  Only side note I would mention is that the backyard/pool area is not enclosed. There is a large drop off with no fence, just some bushes. Although our little one just stayed close to our side, so it didn’t effect us much. But might if you had a 2-5 year old who liked to run around, or had difficulties listening to boundaries. \nAll in all, we would 100% stay again!"
+  },
+  {
+    "name": "Sarah",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "I came to Debra's place with my 4 girlfriends, we were looking for a beautiful place to relax and have fun and we found just that! We had to delay check-in multiple times due to traffic and Debra was very accommodating. The neighbourhood is nice and quiet, the views from the pool deck are even better than the photos. Even though the owners live upstairs, it is as though you have the place to yourself. The hosts were quiet and pretty much out of sight, unless something was needed. We had a great trip - enjoyed the pool (the slide is a must!), were a quick drive to the beach, wineries and downtown Kelowna. Debra was an excellent host and we would love to come back and stay here again!"
+  },
+  {
+    "name": "Vickie",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "July 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great location. Awesome view. \n\n\n\nHad a very swift and easy check-in. Was enjoying the pool and waterslide right away. \n\n\n\nDebra was very accessible and quick to respond to messages, but also left us alone to do our own thing, which was nice.\n\n\n\nKitchen is well stocked. Lots of space to comfortably sleep 8. Would stay again."
+  },
+  {
+    "name": "Hunter",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "April 2023",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The place was great and spacious. The view was beautiful and relaxing. The hot tub was great. Debra was quick to respond to my messages. Kitchen had everything we needed. If I was being picky I would note that you can definitely hear foot steps upstairs if you're a light sleeper, but it wasn't as noticeable in the main living area where the two beds are located. Overall we had a great time and really enjoyed our stay."
+  },
+  {
+    "name": "Sarah",
+    "location": "Burnaby, Canada",
+    "rating": 5,
+    "date": "July 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Spent the weekend at Debra's place with my 2 sisters.  It was a spacious suite that really would sleep 8 comfortably. There is only 1 washroom though so I would fare warning if you do have a large group as even with just 3 women, we did have to plan accordingly and use other spaces to get ready. However, 2 large bedrooms plus 2 large common room type space gives you lots of roomy options to do so.  The pool, hot tub and views were beautiful. Although Debra and her family were home, we felt like we had the house to ourselves and never felt like people were watching us or in the space.  If you are a light sleeper, then you can hear people above you but nothing above normal then a typical ground level suite.  5 minute drive to all the West Kelowna wineries and you can clearly see Mission Hills from the home.  Looking forward to staying here again in the future."
+  },
+  {
+    "name": "Eric",
+    "location": "Peterborough, Canada",
+    "rating": 5,
+    "date": "August 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Our host was gracious, informative and inconspicuous. \n\n\n\nAn example of their kindness: We were going to arrive an hour earlier than the agreed upon time and she didn't hesitate to make these arrangements for us. \n\n\n\nThe space suited our needs, the kitchen was plain, but functional. The beds were comfortable and everything was clean.\n\n\n\nThe hot tub, pool and view were amazing.\n\n\n\nWe would certainly stay here again in the future."
+  },
+  {
+    "name": "Sue",
+    "location": "Langley, Canada",
+    "rating": 5,
+    "date": "October 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We were 4 retired ladies looking for a girls get away weekend.  It was perfect....comfy beds, crisp linens, lots of towels for the hot tub,  sauna and shower.  The weather was a tad cool for the pool...but we loved sitting on the patio for our morning coffee and in the afternoon with our freshly bought wines!  The location is awesome for wine touring.  I'm planning to be back and will also recommend this place to my grown children and grankids.  They would love it.  \nI communicated with Debra and she always responded quickly.  We were missing a couple of items...Kleenex and tin foil...and Debra popped them down within minutes.\nAll in all....the 4 of us had a great, relaxing time and would recommend this air bnb for families and small groups of friends.  I am so happy we found and tried this place."
+  },
+  {
+    "name": "Kathleen",
+    "location": "Courtenay, Canada",
+    "rating": 5,
+    "date": "April 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This was a very comfortable stay.  Kitchen was well equipped, bed in bedroom was comfortable, infrared sauna was nice as right in unit.  Hot tub out the door of unit.  Very private and quiet.  Lots of towels.  Everything was perfect.  Debra even had a heater for me in the unit as I had mentioned that I was concerned that the unit be warm.  Lots of room in the unit to accommodate more people.  It was only me staying so I really enjoyed the amenities."
+  },
+  {
+    "name": "Elliot",
+    "location": "North Vancouver, Canada",
+    "rating": 5,
+    "date": "June 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Our stay at Debra’s house was great. The setup is perfect for families or larger groups and especially nice to have full use of the backyard with pool, hot tub, comfy furniture and BBQ. The interior is spacious and well laid out with enough space for everyone. We didn’t get a chance to enjoy the sauna but would for sure on another trip. It is easy to find and the location is pretty good, being just about 10 minutes from the bridge to downtown depending on traffic. There are many amenities nearby. Communication with Debra was easy and she responded quick to all our questions. Would definitely stay again."
+  },
+  {
+    "name": "Barb",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "May 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra communicated well beforehand, met us and showed us how to use everything and was friendly. The accommodations were very spacious and comfortable. Nice bedding and comfy bed. The best part was the backyard with the pool and hot tub with a great view of the valley. Great for a quiet stay or for families."
+  },
+  {
+    "name": "Scott",
+    "location": "Regina, Canada",
+    "rating": 5,
+    "date": "September 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great views, pool and hot tub were clean and fun. The place was as great as the pictures made it out to be.\nThe host met us to go through the place and show us what we needed to know and after that left us to enjoy our stay. She was also quick to respond to questions and concerns which is nice. \nYou can hear foot traffic as it is a basement, it didn't really bother us but it's probably something light sleepers would like to know."
+  },
+  {
+    "name": "Bell",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "July 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The home had a beautiful view and the kitchen was very well stocked. We also appreciated the welcoming greeting upon arrival. That said, we found that the indoor space didn’t have enough seating for our group, so we had to spend more time outside. Since the hosts were often outside as well and mentioned they had early mornings, we tried to keep noise to a minimum, which made it a bit challenging to fully relax. There were quite a few house rules, and overall it felt like we weren’t able to make full use of the space."
+  },
+  {
+    "name": "Mike",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2022",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Another amazing stay in Debra's lovely home! This place has so many amenities for everyone to enjoy. From the obvious pool, hot tub and water slide to the indoor sauna and gorgeous patio to enjoy the view of the lake, a BBQ feast or an evening drink under the well placed mood lighting. Whether a family getaway or a trip for you and someone special, you will not be disappointed with your stay. Everything about our time here was easy going from the get go. Debra is a great host and I appreciate her ensuring that we had everything we needed. No hesitation that I'll be back here again. Thanks for the memories!"
+  },
+  {
+    "name": "Grant",
+    "location": "Castlegar, Canada",
+    "rating": 3,
+    "date": "July 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We enjoyed our 2 nights at Debra's house. We also thought we were renting the entire house, however the basement suite was very large. The beds were very comfortable and we loved the the pool and hot tub. The water slide was great fun even for a 62 yr old kid. The kitchen could use more lighting and more dish towels. Our feeling is that not all guests wash dishes thoroughly and I found a bowl in the cupboard that wasn't clean and a couple of utensils too. We would suggest that Airbnb policy should mandate dishwashers for all rentals. We also found the stairs uneven and steep and  the noise level was bad during our visit. Wouldn't want to live with all the highway and construction noise. Not a bad deal for a rental but probably wouldn't stay here again."
+  },
+  {
+    "name": "Stephanie",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2019",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Everything about Debra's place is great. The location is perfect, about 10 mins from downtown Kelowna, in a quiet residential neighborhood. Debra is very quick with responding to messages. We were a group of 8 girls, and there were enough space for all of us.  The pool and view is amazing, such a great feature to have for those hot summer days! Would definitely stay here again."
+  },
+  {
+    "name": "Kevin",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "My cousins and I had a great time staying at the Lakeview Suite in West Kelowna. Debra and Mike were great hosts, and the suite was very private. The view is amazing and the pool/waterslide/hot tub/sauna combo was excellent. The Natural Gas BBQ cooked the chicken we brought very nicely as well. The kitchen area was a good size, the lighting was a little dim but all in all, it worked out well."
+  },
+  {
+    "name": "Chrislyne",
+    "location": "Burnaby, Canada",
+    "rating": 4,
+    "date": "December 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great place to stay, beds were comfortable. Too bad we were not able to use the amenities that we think we paid for because of our tight schedule. Also, we woke up at 4:30 am because of the fire alarm - batteries went out and was alarming non stop and need to wake up in the middle of our sleep to turn it off. No body wash in washroom as well. But, All in all place is nice!"
+  },
+  {
+    "name": "Rachel-Clark",
+    "location": "",
+    "rating": 3,
+    "date": "May 2025",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Overall, I would not choose to stay again.\nWhat was great : The location and view were great, and there was a lot of nice shared space and outdoor space for families.\nNot so good: The cleanliness - there was too much dust, both inside and on outdoor furniture, and the bathroom was not in the best condition. Additionally, the utensils and kitchen equipment were outdated, and the condiments were very poor and out of date. I also prefer more flexibility with check-in times and more privacy."
+  },
+  {
+    "name": "Ashley",
+    "location": "",
+    "rating": 3,
+    "date": "July 2023",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "This is a great location, pool and hot tub are amazing! It was clean and the beds were comfortable. The host greeted us, explained the rules and showed us how to use the hot tub. We were aware of the rules to reduce the noise by 10pm. We were there to have a great time - just 5 gals. \nWe requested to communicate any issues via text only, which we felt was very reasonable - we expected privacy.\nWhat surprised us is the host continuously came downstairs into the space, and told us her family would be using the pool while we were gone at the beach. We voiced that made us feel uncomfortable & we felt it was inappropriate. If we rent out a space that states private pool and hot tub, we expect that is to be used by us only. We were also woken up at 430am by loud stomping above every morning. \nThis property is great for small families & senior citizens. Based on what we've read in other reviews, we fully expect a reply with something we've done wrong and placing blame on us for everything."
+  },
+  {
+    "name": "Lisa",
+    "location": "British Columbia, Canada",
+    "rating": 5,
+    "date": "March 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Our stay was so relaxing! Debra's place was very clean, close to lots of shopping and restaurants, very quick responses, amazing hot tub with a gorgeous view!!! The pictures of the space don't do it justice. There's TONS of space! Thank you Debra and Mike for a very restful and beautiful stay for two tired Mom's in need of a night away!"
+  },
+  {
+    "name": "Christa",
+    "location": "Fort Saskatchewan, Canada",
+    "rating": 5,
+    "date": "August 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We are a family of 5, and this place was perfect! There was plenty of room, kitchen is FULLY equipped. The kids loved the pool and hot tub. The view is gorgeous and the hosts were great to deal with! No complaints at all, had a great stay!"
+  },
+  {
+    "name": "Nadia",
+    "location": "",
+    "rating": 2,
+    "date": "March 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "You might want to read this. We stayed at Debra’s house for two nights. The location and views are nice and it is close by to a lot of things. However... Few things that we weren’t happy with. Firstly the door/entrance to the house did not lock or curtains and when I brought it to her attention she mentioned that it is not a worry. Except it is a safety issue for many reasons. Secondly since we had booked the place at a cold season there was no heating system. Only two small electric heaters which is not enough to heat up the space properly for the size of her place. There was a fireplace too but every time i turned it on it would shut off after few mins as well it would cut off the electricity for the tv and the lights in the bathroom. Thirdly, her “kitchen” i assume used to be a bedroom. There is no vent above her gas/fire stove which is yet another safety issue. In her rules she states that everything has to be clean but when we looked at her cutlery and dishes almost everything was dirty and not properly washed. We also found bugs and stains in her cutlery drawers which suggests it has not been cleaned prior to our arrival, but she has so many rules on cleanliness? The towels that were provided looked like they were from the stone ages, discoloured and dirty looking. We bought our own towels and paper plates and cups etc because we did not want to use anything there. Another thing to mention is that she was constantly watching everything we do. We felt uncomfortable and unwelcome at all times. In conclusion it is not worth the view and your money."
+  },
+  {
+    "name": "Aaron",
+    "location": "Sioux Center, Iowa",
+    "rating": 2,
+    "date": "September 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The place had a great pool, hot tub, and patio setup. These were very enjoyable. Also, prior to our stay, owners were very quick to respond to all questions and inquiries. Inside, accommodations were adequate but carpet had some stains, the furniture is quite dated, the kitchen area is rather dark and the dishes in the cupboards weren't all clean. \nThe bathroom was very small. \nWe also had to contact owners the first night because the air bed was leaking. They seemed bothered by the request and then insinuated that we broke it. I asked for a suggested compensation in the total rental cost as it wasn't fixed the second night either. No compensation was given. \nIn the end, for the price, I would suggest pursuing a different rental in the area."
+  },
+  {
+    "name": "Jenn",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "September 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Absolutely loved our stay here! The neighbourhood was nice and quiet and still close to everything.\nThe space was nice and spacious and had everything we needed. The pool and hot tub was an incredible bonus! We would definitely stay here again!"
+  },
+  {
+    "name": "Jessie",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "June 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra was friendly and responsive.  We showed up last minute and she was very accommodating, even tapped the NHL game for us while we used the pool so we wouldn't miss anything. They do live above as clearly stated in the description but I felt they gave us our own space. Bed was super comfy and made for a restful sleep before catching a flight the next day."
+  },
+  {
+    "name": "Sandy",
+    "location": "",
+    "rating": 4,
+    "date": "April 2021",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "The space was great! Had definitely been updated since the pictures too! It is a walkout basement so can hear the people living upstairs sometimes but was usually not too loud! Very clean and styled well! We really enjoyed the outdoor amenities and Debra was always available to help whenever we needed anything extra! Great host and a great stay!"
+  },
+  {
+    "name": "Christine",
+    "location": "Lions Bay, Canada",
+    "rating": 5,
+    "date": "August 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Debra's place is perfect for families. It's clean, has plenty of space, and great amenities. Our son loved the pool, waterslide, and hot tub - there were even water games and pool noodles available. There's also a sauna, thought we didn't use it during our stay. There are 2 bedrooms each with a queen bed, plus 2 queen beds in the open area beside the dining room. Kitchen was large and well equipped."
+  },
+  {
+    "name": "Emma",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "June 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This was an excellent Airbnb experience in beautiful West Kelowna. We were a group of 7 and the house was perfect for us - lots of room, comfortable sleeping arrangements and a beautiful pool/deck area with stunning views of the lake. Location was great for accessibility to wineries and all of the scenery the Okanagan has to offer. Little bit of a trek to downtown Kelowna - $30 cab ride each way. Debra and her husband were great hosts - checked in with me regularly to make sure we had everything we needed but also left us to our own devices. It felt like we had the entire place to ourselves even though they live above. Would definitely recommend this place to groups who are looking for a fun Okanagan getaway."
+  },
+  {
+    "name": "Jasmine",
+    "location": "Surrey, Canada",
+    "rating": 4,
+    "date": "August 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra’s place was beautiful and I would definitely recommend the home. If you are a noisy group she will give you warnings as she is strict about noise (we were a group of 6 girls so it was hard to keep it down after 10pm). Sometimes it felt like big brother because it’s like you are being watched all the time since the host lives upstairs. Overall a cool place, great location and well kept (both inside and outside)."
+  },
+  {
+    "name": "Justin",
+    "location": "Red Deer, Canada",
+    "rating": 4,
+    "date": "June 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Good stay for a good price. \nI wouldn’t considering this a luxury suite but it gets the job done especially if you plan on spending most of your time outside. The beds in the common space are a little hard and they squeak but would be fine for kids (but FYI they are in the dining space). The suite is large and the pool/view/outdoor lounge space is wonderful! The owners were kind and offered us complete privacy! \nThe kitchen is dark and closed off so if you plan to do a lot of cooking I would recommend to do your prep work before hand and plan bbq meals. Overall things were clean but the kitchen appliances and bbq could use a deep clean. \nOverall would recommend to a small group who’s not wanting to spend too much and wants to spend lots of time in the pool!\nThanks Debra!"
+  },
+  {
+    "name": "Thomas",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "May 2022",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "This is such a terrific space!  There is ample room to relax and unwind inside and out.  The pool, hot tub, and sauna are really amazing amenities, and having private access to them all was really awesome.  The view from the backyard is really special as well.   We really had a fantastic family trip and our home base was a key reason why we could really unwind and relax."
+  },
+  {
+    "name": "Kari",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "September 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This property was beautiful with a beautiful. Hot tub and pool were awesome. \nDebra was away available and checked in often to see how we were doing. \nThis home was kept very clean and had everything you need for a comfortable stay. \nWould definitely recommend this property."
+  },
+  {
+    "name": "Katt",
+    "location": "Nelson, Canada",
+    "rating": 5,
+    "date": "May 2024",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "I read reviews before going and some of the not so good reviews about Debra’s place were totally WRONG! \nDebra has a beautiful home and we had an amazing stay. She was attentive and very understanding of our very late (11pm) check-in due to traffic delays we experienced on our trip. \nWe had an amazing experience. We went to Kelowna for my son’s tournament and thought this would be the cherry on top of a special trip, and it definitely was! \nWe felt right at home there. We experienced great privacy due to the location but also from the hosts. Debra was also quick to help us with anything we needed while we were there. \nBeautiful home, amazing outside area, great location, awesome host. \nThe kids and us were all amazed by how comfy the beds and pillows were! We slept like babies! \nIn the end I have nothing but amazing things to say about our host, stay, and their beautiful home they shared with us. We absolutely loved it and we can’t wait to come again in the summer! \nThank you!"
+  },
+  {
+    "name": "Delaney",
+    "location": "Cartier, Canada",
+    "rating": 5,
+    "date": "May 2019",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Deb’s place was great. The view from the pool area is unbeatable. The beds were comfortable and the living area was very clean. Check in was a breeze and overall communication was very good. Our group spent a lot of time in downtown Kelowna and at wineries but it was awesome to come back to a peaceful environment and also enjoy a pool day!"
+  },
+  {
+    "name": "Andrew",
+    "location": "",
+    "rating": 5,
+    "date": "February 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We had an amazing stay! The house was very spacious and extremely clean everything felt fresh and well taken care of. The new hot tub was a huge highlight and made the stay even better. The host was incredibly helpful, super nice, and easy to communicate with the entire time."
+  },
+  {
+    "name": "Rick",
+    "location": "Regina, Canada",
+    "rating": 4,
+    "date": "March 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Everything was as advertised. Great location for us as it was close to my Dad in West Kelowna.\nOnly issue was sound proofing as we could hear walking around above us. Otherwise fabulous place."
+  },
+  {
+    "name": "Kelley",
+    "location": "",
+    "rating": 5,
+    "date": "August 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "The property had a stunning view and the children loved the pool. Host was very responsive and really enjoyed the peacefulness and surrounding nature. \nThis was the first time staying at an Air BnB where people are living on the property and the only drawback was not knowing the “ house rules” in advance and not being able to control the thermostat. \nLovely area and felt safe and great attractions close by like Griffin farms, Kangaroo Creek Farm, many winery’s, highly recommend Derrick’s Steakhouse, Pulp Fiction Coffee House, and very close a recommended masseuse by the host that was very affordable and amazing service. Definitely recommend for a relaxing and calm stay to recharge your batteries."
+  },
+  {
+    "name": "Susan",
+    "location": "North Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Our family of four had a fantastic time at Debra’s house.  The pool and waterslide were so much fun and the suite itself is clean, huge and completely above ground (apart from the kitchen).   Debra and Mike were friendly and helpful but also very respectful of our space and vacation time.  We’d definitely stay here again."
+  },
+  {
+    "name": "Jess",
+    "location": "Fernie, Canada",
+    "rating": 3,
+    "date": "June 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The place was clean and in a great location and the outside space was amazing!  The layout was a little weird with two of the beds being in the dining room. we felt that it was under stocked, we had to ask for more toilet paper, garbage bags, dishwasher pucks over the course of our 4 day stay, There was no coffee in the kitchen. There was a full binder of rules we received when we checked in ( lots that where not listed on the air bnb site) having to communicate with the owners about the above listed we found it wasn't as relaxing as it could have been. It felt that we where being watched to make sure none of the rules where being broken. We where not a rowdy bunch it was a family vacation and we just wanted to relax and enjoy each others company."
+  },
+  {
+    "name": "Sandra",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "September 2020",
+    "stay": "Stayed about a week",
+    "source": "Airbnb",
+    "review": "The location of this suite and the view are outstanding.  We weren't lucky to have warm enough weather to enjoy the pool, but that made the hot tub even more of a bonus. The care that was taken to keep the hot tub running was and clean was truly appreciated.  The kitchen was really well stocked and the sheets & towels were fantastic and plentiful. There were lots of pamphlets and brochures to help us make our plans and there was so much to see and do really close by.  Debra was a lovely host - responsive yet not intrusive."
+  },
+  {
+    "name": "Jenn",
+    "location": "Langley, Canada",
+    "rating": 5,
+    "date": "September 2020",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Our family had such a wonderful stay at Debra’s place! The apartment was very spacious, tons of room for all, great linens, full stocked kitchen, big tv, private entrance not to mention amazing pool and hot tub space. Our family of five including two teenagers had an absolute blast. Debra was even so kind bringing out pool toys for the kids. Great central\nLocation close to everything you need. Wonderful host. Highly recommend!"
+  },
+  {
+    "name": "Jessica",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "June 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We had a wonderful time here at Debra’s guest suite it was clean and organized well. She greeted us at the door and walked us through she was lovely. We enjoyed the hot tub and pool. The views were incredible you can’t ask for a better location. It is clearly stated it is not a party house but perfect for relaxation. As long as you treat the property like your own and respect it you will have a wonder time here. Definitely will be back this summer with my partner !! Thanks again Debra!"
+  },
+  {
+    "name": "Carla",
+    "location": "Midway, Canada",
+    "rating": 5,
+    "date": "April 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Staying at this Airbnb was an absolute delight! Debra was warm and welcoming and was quick to respond if I had any questions.  The space was impeccably clean, beautifully decorated, and equipped with everything we needed for a comfortable stay. The location was perfect, allowing us to easily explore the surrounding area whether it was Kelowna or West Kelowna with easy access to the highway.  We were able to enjoy a peaceful retreat at the end of the day that still felt secluded. I would highly recommend this Airbnb high."
+  },
+  {
+    "name": "Hannah",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "December 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This please is fantastic, the views from the jacuzzi are beautiful! We stayed for Christmas so had stunning views of the snowy mountains. The suite is super comfy and the added surprise of the indoor sauna was a real treat. The kitchen is so well stocked, perfect for groups cooking at home. Overall a great stay and Debra could not have been more helpful and quick to respond, thank you for a wonderful stay Debra!"
+  },
+  {
+    "name": "Brenda",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "September 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This place was amazing, the view, the pool, the suite, pretty much everything was great!!! The host, Debra, met me when I arrived, showed me around, told me how everything works. always answered my messages very quickly. The kitchen was very well stocked, the bed was sooooo comfortable! Everything was great! I will definitely book again and would highly recommend this suite."
+  },
+  {
+    "name": "Ben",
+    "location": "Edmonton, Canada",
+    "rating": 4,
+    "date": "August 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Pros:\n-Pool and hot tub were clean and a blast to use. The water slide was great and the views were really spectacular. \n-There was plenty of space for 3 adults and two little kids. \n-Nice, quiet, removed location was perfect to get away from downtown. \n-Never felt like Debra and her family were in our space at all. \nCons:\nBeds were not all comfortable and bedding/pillows could be a lot better quality.\n-Some cleanliness issues with the kitchen drawers and utensils.\n- The walls throughout were not overly clean. Some incomplete construction areas on the walls as well-nothing major but it took away from our experience. \n-The patio furniture was quite dated. \nOverall we did have a good stay. The space checked off all the boxes, but just could've been better."
+  },
+  {
+    "name": "Shauna",
+    "location": "Pitt Meadows, Canada",
+    "rating": 5,
+    "date": "August 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debras place was amazing! The pool and hot tub were great bonuses. The Airbnb is super spacious and the beds were comfy! It’s in a great location - close to everything. Debra was quick to respond and super welcoming when we arrived. It is a share place, but you would never know it was.  I would definitely recommend this place for a relaxing vacation."
+  },
+  {
+    "name": "Tina",
+    "location": "Toronto, Canada",
+    "rating": 4,
+    "date": "May 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra's place was the perfect location for a reunion of friends with perfect weather and a killer view. The hot tub and pool are wonderful amenities to this well located property. The five of us singles slept comfortably but harder to have more if guests are not couples as beds need to be shared. New kitchen and working appliances like ice maker in fridge and dishwasher a big help for larger groups. Attentive host, accommodating and friendly."
+  },
+  {
+    "name": "Tyrza",
+    "location": "",
+    "rating": 4,
+    "date": "May 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra’s home was exactly like the photos and description. We loved the privacy and the views we had. The location is amazing for being close to stores we needed (Walmart, dollarama). Even with them living above we weren’t woken up to any noise, and it was quiet throughout the day, we didn’t see them much at all either. Great place to stay and affordable!"
+  },
+  {
+    "name": "Parinaz",
+    "location": "",
+    "rating": 5,
+    "date": "August 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra’s place was very clean and exactly like the pictures. All the amenities we needed were provided, and the neighborhood was peaceful and quiet. Just a small note: if you enjoy listening to music, make sure to keep the volume very low since they are quite sensitive . Overall, we had a wonderful stay and really enjoyed our time here."
+  },
+  {
+    "name": "Mark",
+    "location": "Regina, Canada",
+    "rating": 5,
+    "date": "June 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "An absolutely beautiful home!  Debra was awesome!  Very friendly and easy to communicate with to get checked in.  Once we arrived the place was set up perfectly and fit 4 of us with LOTS of room to spare.  The yard is everything you think it will be and more.  Pool, patio, hot tub ... And What a view!\n\nDebra you will definitely be getting another request the next time we come out your way. Thank you for sharing your home it really added a great night to our trip!"
+  },
+  {
+    "name": "Maddy",
+    "location": "West Kelowna, Canada",
+    "rating": 3,
+    "date": "January 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra’s place had a lovely view. It is best suited for a group of adults or adults with older children to stay. \nPros-\n-large enough bedrooms to fit a portable crib or pack and play at the end of the bed \n-nice, spacious hot tub \n-nice linens \nCons-\n-we came across dirty silverware and dishes, which was off putting, especially when considering that there is a high cleaning fee for this space\n-along with the high cleaning fee came a large list of check out cleaning/to do list that we had to do before leaving  \n-we would have preferred curtains on the main door for more privacy \n-quite cold, especially if you have an infant \n-not enough bowls for more than two or three people \n-no washer/dryer (it is as advertised but I didn’t consider that we’d prefer to wash our swimsuits asap rather than packing them while dirty)\nOverall, this space worked okay for our needs, but I’d recommend it to a group of adults or a family with older children."
+  },
+  {
+    "name": "Tiara",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "June 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "I’m not sure why people have written negative reviews about this place. We stayed for a few days, and it was nothing but awesome. Debra walked us through a couple things when we arrived, and made us feel right at home. We have nothing but positive things to say about this place. I’ll be back for sure!"
+  },
+  {
+    "name": "Katrina",
+    "location": "North Vancouver, Canada",
+    "rating": 3,
+    "date": "July 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra was nice and communicative. The outdoor amenities were amazing, and the views-spectacular! Some little extras would have been nice for the price, like coffee grounds etc! Other than that, the place was clean and cozy! Perfect for a weekend getaway with the family! Would stay here again!"
+  },
+  {
+    "name": "Joyce",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "April 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Stayed for 2 nights. Nice house, great hot tub with the view! It would be better if the hot tub could be warmer. Also, a bit cold with the thin duvets and no access for the central heat although we appreciate that Debra already turned up the heat for us. Good communication!"
+  },
+  {
+    "name": "Julie",
+    "location": "",
+    "rating": 5,
+    "date": "October 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Attentive, accommodating and non-intrusive hosts. The suite is quite spacious and Debra has loads of pamphlets on the area. The queen bed and pillows that we used were super comfy. Views from the hot tub were breathtaking! It didn't even matter that it rained because the hot tub is in a covered area from which you can soak in the beauty of the Okanagan lake view. We also enjoyed the scented candles while we snuggled up by the electric fireplace and watched some Netflix. Our home away from home had everything we needed for a perfect little romantic getaway. Thanks for everything Debra!"
+  },
+  {
+    "name": "Ehsan",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "September 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "This place is super nice with a great view and nice pool, sauna and hot tub. The host was friendly and helpful. If you like BBQ'ing while at the pool/hot tub give T-bones a try; they have a large selection of marinated meat which won't disappoint! Our host recommended that and we definitely enjoyed everything during our one-night stay including the BBQ! The only complain would be that the weather wasn't super nice which obviously is out of the host's or anybody else's control! We will be back at this place next summer!!"
+  },
+  {
+    "name": "Ciara",
+    "location": "",
+    "rating": 5,
+    "date": "August 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Excellent stay at Debra’s. Absolutely stunning scenery right from the pool and hot tub. Stores are 10 min drive away, was able to have BBQ. Bath and beach towels provided. Organised our wine tour with Brandy which was incredible value for money. Would highly recommend!"
+  },
+  {
+    "name": "Deveney",
+    "location": "Coaldale, Canada",
+    "rating": 5,
+    "date": "May 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "This property was in a beautiful location. Debra was very communicative with me around check-in and made herself available to come down and go over the place. The property is extremely clean but welcoming. Debra has put in a lot of thought and effort on the small details such as the toilet roll being stamped and the towel placement in each bed. The layout provides lots of room for all to enjoy. The outdoor area was beautiful, the pool is well maintained and they have a great water slide + hot tub. Not enough great things to say about this property. We will be back! Highly recommend:)"
+  },
+  {
+    "name": "Drew",
+    "location": "New Hazelton, Canada",
+    "rating": 5,
+    "date": "February 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Nice location & hot tub. Hosts weren’t too friendly and quite a bit of rules. Overall place was clean & as advertised."
+  },
+  {
+    "name": "Diane",
+    "location": "Edmonton, Canada",
+    "rating": 4,
+    "date": "September 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The view- amazing! It's a basement suite but it doesn't feel like it as the space has plenty of natural light (except the kitchen but we didn't really use it) with lots of big windows. The hot tub and pool were awesome. \nDeborah was a fantastic host, she was helpful and available. She adds some nice touches like chocolates on the pillows and nice big bottles of shampoo and conditioner in the bathroom. Deborah provided a welcome package that included the rules, which looked like a long list of rules at first but they're pretty common sense so we didn't have any problems adhering to them. \nThe layout is a little different but it worked for our needs- the air mattress and pull out couch are in a large common area that the kitchen and bathroom are off. The view from this area is incredible. \nI think it has been mentioned but the wifi isn't the greatest. If you have a good data plan, the cell service is fine."
+  },
+  {
+    "name": "Adam",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "September 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra was awesome and the communication was great, we changed our check in time 3 times with no problems and she was always a phone call away for any questions.   4 of us slept very well and enjoyed the amazing outdoor space, the pool and hot tub were worth the stay alone.  We all would come back anytime.  Enjoy your stay as this host is great."
+  },
+  {
+    "name": "Christine",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "August 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The view is really amazing, there is a lot of space so it doesn't feel crowded.  They layout is slightly odd, but not a huge deal. \n\nDebra was very helpful when we forgot our muffin tin to make breakfast, as she let us borrow one.  The basement suite sleeps 8, with the 2 bedrooms, 1 pullout couch and an inflatable mattress \n\n\n\nDownsides \n\n- Stairs into the backyard are very steep and awkward, hopefully they plan on getting this fixed (If you are older or have any mobility issues, I would avoid this place for that reason)\n\n- No dishwasher currently (though there is mention of them getting one in the fall)\n\n- Wifi connection isn't great, very spotty in the basement.  If you need to work, its probably best to tether off your phone\n\n- Highway is quite close, so you could always hear cars (this didnt bother us at all, but it might to some people) \n\n- Only 1 bathroom (with just a sliding door) this was an inconvenience at times, especially if you have a large group.  We also ran out of TP on the last day, not enough was provided initially and there wasn't any extra in the boiler room where the cleaning supplies were housed. \n\n- Host is very strict on rules and provided additional rules more than what was advertised a week before we arrived.  (She was also mad that we had an extra person at the place for 2 hours, even though I had it approved with her before I booked the place)."
+  },
+  {
+    "name": "Karol",
+    "location": "North Vancouver, Canada",
+    "rating": 5,
+    "date": "April 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Absolutely had a great time at Deb's house. All 7 of us slept comfortably, and there was more than enough space. Awesome location, the hot tub kept us warm into the night, and the waterslide was fun.\n\n\n\nDebra was an amazing host, the right mix of being available and out of the way. If there was we needed she was more than happy to help. One night she even came down to hand us blankets to make sure we were warm enough on the patio. Would definitely book again."
+  },
+  {
+    "name": "Nathan",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "July 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Place was great. My only small complaint was that the Pool was quite chilly, despite the mid30s weather. Kids used the pool and waterslide a ton and then used the hot tub to warm up. \nDebra is very friendly and very prompt with responding to any issues we had. \nI’d stay again."
+  },
+  {
+    "name": "Joey",
+    "location": "Taylorsville, Utah",
+    "rating": 3,
+    "date": "July 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We enjoyed the Lakeview Suite. It was very spacious and comfortable for our group of 3 adults, 1 child and 1 baby. The hot tub was very welcome with the unusually chilly summer weather we experienced! There is some road noise, it's not terrible, but something to consider if you're sensitive to that."
+  },
+  {
+    "name": "Donna",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "October 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "The home was fantastic!  There was a bout 1300 square feet of space with 2 bedrooms, a kitchen, living room with big screen tv (telus optik tv and netflix included).   Each bedroom had a comfy queen size bed.  In addition to the bedrooms was another common area space that had another 2 queen size beds.  There was also a dining area, use of the hot tub and amazing views of the Okanogan Valley.  Grocery store and other amenities were an easy 10 minute drive away.  During the warmer months there is also an awesome pool to use."
+  },
+  {
+    "name": "Amanda",
+    "location": "British Columbia, Canada",
+    "rating": 4,
+    "date": "October 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "We had a very small get together for my husbands 30th birthday here! It’s early October so it was a bit cold, but the hot tub was so nice to relax in. The place was very clean and definitely met our expectations. The only thing that I would give a heads up about is that the sound-proofing is not great. I’m not sure if there’s another suite on the other side of the basement or a family room but we could definitely hear other people pretty well, which made me feel like they could probably hear us also. Not a huge deal but something to be aware of. Over all a really great stay and we would like to come back in the summer some time! The views are absolutely beautiful."
+  },
+  {
+    "name": "Stephen",
+    "location": "Spruce Grove, Canada",
+    "rating": 5,
+    "date": "May 2016",
+    "stay": "Stayed about a week",
+    "source": "Airbnb",
+    "review": "Debra is a fantastic host , she made sure our stay was comfortable. The pool and hot tube were awesome , the house was clean. The neighbourhood is safe and the views were gorgeous. Debra was always making she we had enough towels for the pool and her family was very quite and respectful of our privacy. Highly Recommend staying with this family and I will stay again."
+  },
+  {
+    "name": "Alexandra",
+    "location": "Chilliwack, Canada",
+    "rating": 5,
+    "date": "March 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great mini vacation. First time using air bnb and it did not disappoint. Just what we needed. \nThe suite was much bigger then I expected!! Excellent with respecting the Covid policies.  Overall highly recommend this place.\nI sent the link to over ten of my friends after sharing pictures on social media everyone was asking where this oasis was. Huge hit for the kids definitely will be coming back once the pool is opened. The owner was quick with her responses and very helpful when needed. It also had amazing views 24/7."
+  },
+  {
+    "name": "Kent",
+    "location": "Enderby, Canada",
+    "rating": 5,
+    "date": "November 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "A large and beautiful suite with a lovely backyard and amazing views of the lake and city! We really enjoyed the hot tub, sauna, and the gas fire bowl is great. The pool and slide were beautiful but very cold as we visited in November."
+  },
+  {
+    "name": "Rebekah",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2024",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "My family and I loved our stay here. Very clean and great location. The pool and barbecue area were also a big hit. Debra also organized a wine tour with Brandy, which was amazing! Really well organized and great communication before and throughout our stay. Would really recommend staying here."
+  },
+  {
+    "name": "Joey",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "May 2022",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Awesome place with an amazing view!! Has a pool, hot tub and a infrared sauna!! Quite location perfect for families. Clean and tidy. This is our second time here and would love to come back."
+  },
+  {
+    "name": "James",
+    "location": "Vancouver, Canada",
+    "rating": 3,
+    "date": "June 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Overall good location with a really nice pool and amenities. Host was a bit difficult to communicate with as she replied to texts a lot later and not right away. Bbq was also super disgustingly unclean. Other than that, good experience!"
+  },
+  {
+    "name": "Jarome",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "July 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra was very responsive and accommodating to us. Her place was well maintained, had plenty of useful amenities, and is situated in a beautiful location with scenic views."
+  },
+  {
+    "name": "Rachael",
+    "location": "",
+    "rating": 3,
+    "date": "February 2019",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Debras home was beautiful but was cold and appropriate sleeping arrangements were not met when requested. Her communication skills were sub-par, when we tried to find resolutions we were met with slow or no response. Furthermore, It felt like we were being monitored rather than hosted which led to the whole experience being a little disappointing."
+  },
+  {
+    "name": "Janine",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "July 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "We loved our stay in Kelowna! Mike was very accommodating with our later-than-expected arrival and ensured we had everything we needed for the evening. The view of the Okanagan Valley was amazing, especially in the pool and hot tub (and water slide). It was very clean and spacious! We would recommend people to consider staying here!"
+  },
+  {
+    "name": "Mehran",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "We had a wonderful one-night stay! The place was very clean, cozy, and well-prepared for guests. Everything we needed was available, and the atmosphere was peaceful and relaxing. Debra, the host, was incredibly kind, welcoming, and helpful—she truly made us feel at home. Highly recommended for anyone looking for a comfortable and hassle-free stay. Thank you, Debra!"
+  },
+  {
+    "name": "Kayla",
+    "location": "Spruce Grove, Canada",
+    "rating": 4,
+    "date": "July 2020",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Beautiful location!! Host wasnt as personable as one would hope for given this is an industry where I feel like maybe just a little bit of a warmer demeanor would go a long way. For what you pay the amenities are on par, place was clean and location was stunning. Over all the stay was great!"
+  },
+  {
+    "name": "Fiona",
+    "location": "Airdrie, Canada",
+    "rating": 5,
+    "date": "January 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Had an amazing stay and felt right at home. The space was much larger than expected and had everything we needed."
+  },
+  {
+    "name": "Cait",
+    "location": "Toronto, Canada",
+    "rating": 4,
+    "date": "May 2018",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great spot to stay. The backyard is breathtaking, amazing views! Very spacious inside as well. Felt very private despite having the owner upstairs. Would definitely stay again."
+  },
+  {
+    "name": "George",
+    "location": "",
+    "rating": 2,
+    "date": "June 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "There are 4 of us in the group (2 couples) all above 50 that stayed for 1 night. Our experience did not match the reviews that I had read before booking. As the weather was bad, we did not use the pool or sat long outdoors. That turned our focus indoors and that was where we did not get a good impression. We were planning to do some cooking but did not as the stove and oven were dirty. The crockery and utensils were somewhat grimy. The bathroom had half used soap left over and there was dust and grime on the edges and walls. The stairs leading down to the basement where we stayed are quite steep and may pose some difficulties for seniors. Like a previous guest, we had assumed we were booking an entire home but that turned out not to be the case. However, I understand that it was advertised that way because of Airbnb's policy. On the whole, we did not have a comfortable stay, but in all fairness, it may be because as older people, we have different needs and expectations. The overall impression is that not much was provided by way of hospitality because of the pool, hot tub and other outdoors amenities that are there, as a sort of a trade-off. I suppose for those looking for fun and excitement, the place would probably be great, but I can’t recommend it to older people looking for a clean & comfortable place. Perhaps the problem is not with the host but the entire Airbnb experience. We left feeling that we would have been better off had we continued our stay at a motel in Kelowna that we had stayed just a day before."
+  },
+  {
+    "name": "Gabriel",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "July 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We stayed 2 nights here. Our kids loved the pool and slide that we can use. We also enjoyed the beautiful scenery in the backyard. Debra was quick to respond to any questions we had."
+  },
+  {
+    "name": "Ben",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2022",
+    "stay": "Stayed with a pet",
+    "source": "Airbnb",
+    "review": "Entering the place day one was exactly how the photos were. The place was super clean and of course super fun to experience having your own pool and other amenities. Great for families."
+  },
+  {
+    "name": "Brett",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "September 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "A great experience all around. Super easy check-in (which is much appreciated). The pool deck and hot tub are fantastic. Debra made everything easy and she was super accommodating."
+  },
+  {
+    "name": "Priyanka",
+    "location": "Surrey, Canada",
+    "rating": 3,
+    "date": "July 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The house was very well kept, rooms were neat. Location of house was nice too! Had a very nice view. Kitchen had basic items stocked as well (salt,pepper etc..) The bathroom had a few issues, for instance the shower curtain rod wasn’t secured onto the wall properly and fell multiple times while in the shower. The shower/tub itself did not have a bath mat so it was very easy to fall in there. Neighbours were all very polite & nice! No issues with them at all in terms of us being too loud. Quiet time at 10pm is VERY strict so if you’re a bigger group trying to chill/hang out in the house after 10pm expect a complaint from host/hosts husband. Host contacted me at 9pm the night before to finalize details which I thought was unprofessional & her replies aren’t as quick as one would like."
+  },
+  {
+    "name": "Rayvin",
+    "location": "Edmonton, Canada",
+    "rating": 4,
+    "date": "August 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "All in all we had a good stay. The view was literally breathtaking from the pool side and Debra was very accommodating to any requests or enquiries I had. \nI will say, she is strict on the rules. If you can’t stay quiet past 10pm she will let you know. If you don’t stay out the pool past 10pm she will let you know. We did get a few warnings but adjusted. If you can stay quiet this won’t be an issue."
+  },
+  {
+    "name": "T",
+    "location": "Delta, Canada",
+    "rating": 5,
+    "date": "June 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "If you want an awesome view of Okanagan lake, a pool, a hot tub, a sauna and a lovely living space... this is the place. This is my third AirBnB in Kelowna area and it is my favourite so far. Instructions were clear, the place was well appointed and you can enjoy a lovely glass of Okanagan wine overlooking a pool and a spectacular view. Definitely recommended."
+  },
+  {
+    "name": "Gary",
+    "location": "New Westminster, Canada",
+    "rating": 5,
+    "date": "July 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Amazing place. Pool was perfect. Everything as described."
+  },
+  {
+    "name": "Meghan",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "August 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This place is amazing! The pool, hot tub, outdoor area and view was just perfect. The place was very spacious, and had everything we could have ever needed! Being so close to so many wineries was a huge bonus as well!"
+  },
+  {
+    "name": "Kayla",
+    "location": "Edmonton, Canada",
+    "rating": 4,
+    "date": "October 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great place! Slept 8 people comfortably and was great to be able to use the hot tub and BBQ. Close to town and host was easy to communicate with!"
+  },
+  {
+    "name": "Nicole",
+    "location": "Vernon, Canada",
+    "rating": 5,
+    "date": "March 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Easy check in and out. Place was great for three of us and room for more. We didn't spend too much time at the airbnb other than sleeping but we did use the hot tub at night. Enjoyed our stay, thank you."
+  },
+  {
+    "name": "Tracy",
+    "location": "Regina, Canada",
+    "rating": 5,
+    "date": "May 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We truly enjoyed our stay. The suite was beautiful, spotless and conveniently located. The deck, pool area and views were amazing. Debra was a very pleasant and responsive host. Would definitely recommend."
+  },
+  {
+    "name": "Rebecca",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "June 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Loved the pool and hot tub! I was nervous about the hosts living right above but we had no issues. Sad we only got to stay 2 nights but all 6 of us agreed we would want to stay again if we’re in the area!"
+  },
+  {
+    "name": "Amanda",
+    "location": "Trail, Canada",
+    "rating": 3,
+    "date": "June 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Debra’s place was beautiful, clean and exactly like the photos on Airbnb. However do not make the same mistake as I did and not reading the “additional” rules. We tried to have my son’s cousin over for a visit and we were met with several texts (fair, I didn’t read all the rules) and they were forced to leave but not without several glares from Debra and her husband. Our stay was not relaxing, as I received more texts from the landlord, one even asking for us to not close the door so hard ( we are a family, not a bachelor party). We felt constantly watched, we even looked for cameras at one point cause we couldn’t shake the feeling. I wanted so badly to just fully enjoy myself here but sadly we could not."
+  },
+  {
+    "name": "Randy",
+    "location": "",
+    "rating": 4,
+    "date": "April 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "It was a perfect place great view, very quiet. We found cooking on hot plate to be a little difficult with more than 2 people."
+  },
+  {
+    "name": "Emily",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Our group of 7 loved utilizing the completely private outdoor space (pool, BBQ, hot tub). We were also pleasantly surprised by the spacious/fully equipped kitchen. Could not have asked for a better place to relax/continue the fun after long lake days!"
+  },
+  {
+    "name": "Leanna",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "June 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We came for a girls trip to Kelowna for the weekend and had a wonderful stay at Debra's. They were very welcoming and organized and the place was great with a beautiful view and yard! The pool and water slide was awesome. Would definitely recommend!"
+  },
+  {
+    "name": "Paul",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "September 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We were a group of 6 travelling on a business tour, and fell in love with the photos of the place. The view was beautiful! Debra greeted us when we arrived & gave us a tour of the property, showing us how the hot tub, pool, slide, sauna all turn on. There was a quick and easy communication throughout our stay in case we ever needed anything, and the house itself was very well taken care of. Would highly recommend!"
+  },
+  {
+    "name": "Matthew",
+    "location": "West Kelowna, Canada",
+    "rating": 5,
+    "date": "August 2024",
+    "stay": "Stayed about a week",
+    "source": "Airbnb",
+    "review": "This house is amazing and offers everything. Super big space and hosts are super chill and great to stay with. No compliments, I will definitely be back!"
+  },
+  {
+    "name": "Kim",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "November 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra’s place exceeded all of our expectations. Her suite is very clean and there was plenty of space for all of us. The hot tub and sauna were a great bonus and the views were exceptional! Highly recommended!"
+  },
+  {
+    "name": "Andrea",
+    "location": "",
+    "rating": 5,
+    "date": "August 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "6 of us ladies had a wonderful stay. Beautiful views from the pool. Was perfect for our stay. The Host was very responsive and easy to communicate with."
+  },
+  {
+    "name": "Emily",
+    "location": "Langley, Canada",
+    "rating": 5,
+    "date": "June 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful view, great pool and hot tub! Beds were comfortable, place was clean. Highly recommend and would come again!"
+  },
+  {
+    "name": "Monica",
+    "location": "Chilliwack, Canada",
+    "rating": 5,
+    "date": "September 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra was a great host, she communicated with us throughout our stay and made our stay easy. Her place was really nice and we enjoyed using the pool and hot tub. We would definitely come back and stay with Debra again."
+  },
+  {
+    "name": "Leanne",
+    "location": "Mission, Canada",
+    "rating": 5,
+    "date": "September 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful suite accommodation with everything you need and more. Extremely clean, spacious and a beautiful view. The hosts were very accommodating and easy to communicate with. Would definitely book again."
+  },
+  {
+    "name": "Kelly",
+    "location": "Mission, Canada",
+    "rating": 4,
+    "date": "July 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The space was big and comfortable. The location is close to everything you need and not far from Downtown Kelowna at all. The pool was amazing and I really wish I could wake up to that view every day. The space could use a bit of an update but that’s not really a big deal. Debra was very nice, took a bit longer to get a response one of the days but overall quite responsive. Would recommend for sure."
+  },
+  {
+    "name": "Sarah",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2017",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra's place met all of our expectations. Hosts were super friendly upon arrival, yet the area was so private, we didn't even know they were there. The patio was where we spent the most time, fully equipped with pool, jacuzzi, BBQ, and a large sitting area. The suite was super clean and we found everything we needed, including toiletries, towels, and kitchen supplies. Definitely a must stay!"
+  },
+  {
+    "name": "Dollard",
+    "location": "",
+    "rating": 5,
+    "date": "December 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Place was great over all, bigger than expected. Amazing view from the hot tub, hot tub was under cover. Couldn’t ask for a better place than this one."
+  },
+  {
+    "name": "Kavin",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "May 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great stay! The place was clean, comfortable, and exactly as described. Deb was a responsive and thoughtful host who made everything easy. It felt like a home away from home – highly recommended! Would definitely stay again."
+  },
+  {
+    "name": "Francesco",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The accommodation was very nice with everything one would need from a VRBO. Communicating with Debra was easy and efficient. Would gladly stay again."
+  },
+  {
+    "name": "Greg",
+    "location": "Seattle, Washington",
+    "rating": 5,
+    "date": "December 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "We enjoyed our brief stay at Debra’s place. It was unseasonably cold (-11°F / -24°C!) but between the heaters, sauna and hot tub, we stayed toasty and warm!\nThe views are terrific, the beds were comfy, and we managed a simple meal in the kitchen (if you’re an induction burner newbie like us, make sure to use a steel pan).\nThe pool looks really nice if you’re visiting in the warmer months."
+  },
+  {
+    "name": "Jaime",
+    "location": "Chilliwack, Canada",
+    "rating": 5,
+    "date": "August 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This was the perfect space for our girls weekend. Plenty of room, beautiful view, and the pool was such a treat to have. We can’t wait to visit again!"
+  },
+  {
+    "name": "Lisa",
+    "location": "Delta, Canada",
+    "rating": 5,
+    "date": "August 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Our stay was absolutely fabulous. Check in with Debra was quick and thorough. The unit was especially clean and spacious which was really great. The kitchen was very large and had everything we needed. We loved the pool and hot tub where we spent most of our time getting some much needed R&R. This was an awesome place to stay! Thanks again Debra and Mike!!"
+  },
+  {
+    "name": "Caroline",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "May 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We came to Kelowna for a gymnastics competition.  Debra was incredibly kind and flexible with changing dates which was very appreciated.  \nThe location of the home was incredible.  The views were amazing! \nThe space was incredibly spacious, clean and had everything we needed.   It was nice and quiet and the beds were very comfortable.  The pool and hot tub were a wonderful amenity that we enjoyed. \nDebra was very helpful and made sure everything was perfect.   \nWe would love to stay there again in the future if we have another competition! \nHighly recommend!"
+  },
+  {
+    "name": "Michelle",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "October 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Our stay with Debra was absolutely amazing. She was so accommodating and caring. She gave us our privacy but also cared for us we needed it. Recommend this place to anyone. The amenities are amazing and should rightly be respected."
+  },
+  {
+    "name": "Leanne",
+    "location": "Surrey, Canada",
+    "rating": 5,
+    "date": "July 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful view of lake and mountains. Pool, hot tub and sauna was clean and fun. The suite was much larger than I expected and very well equipped. Debra was available to help us wen we needed her. Kids loved the slide! We will return next time we visit Kelowna!"
+  },
+  {
+    "name": "Vyness",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Wonderful place to stay!! The beds were so comfy and the place was clean. Debra came and met us personally which was really sweet she made sure we were okay during our stay!"
+  },
+  {
+    "name": "Aidan",
+    "location": "Chilliwack, Canada",
+    "rating": 5,
+    "date": "September 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra’s place is the perfect place if you are looking for something quiet and beautiful. The pool and hot tub are awesome and the location is great. Debra was very responsive and even met us at check in to show us around. All in all, we had an amazing stay and would definitely come back. Thanks so much Debra."
+  },
+  {
+    "name": "Kyle",
+    "location": "Delta, Canada",
+    "rating": 4,
+    "date": "August 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We stayed three nights and loved the pool, slide and view. The accommodations met our needs and reflect the reviews we read ahead of time. The host was very friendly and helpful."
+  },
+  {
+    "name": "Meghan",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The house was amazing and well kept. The pool and hot tub was very clean as well as the beds and bedrooms. Loved that it fit 8 of us. We stayed for a stagette and it worked out amazing Beautiful view of the lake. As well close enough to town if you would like to venture."
+  },
+  {
+    "name": "Jocelyn Marie",
+    "location": "British Columbia, Canada",
+    "rating": 5,
+    "date": "June 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Our little family of four had a fantastic stay! The place was just as the pictures show and the view was even better. Nice and clean and had all the essentials a person would need - which was awesome! Such a beautiful poolside to relax by and close to all kinds of amenities. \nGood communication and it was easy for us to check in and out. We had the privacy we needed and the help when we needed it.\nWill return!"
+  },
+  {
+    "name": "James",
+    "location": "",
+    "rating": 5,
+    "date": "July 2016",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "It's so nice view and so fun pool. This house is pretty clean and nice room and kitchen. I strongly recommand this house."
+  },
+  {
+    "name": "Mel",
+    "location": "British Columbia, Canada",
+    "rating": 5,
+    "date": "August 2020",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great pool and beautiful view!  Very clean and spacious.  Comfortable beds.  Great hosts!"
+  },
+  {
+    "name": "Joanna",
+    "location": "Kamloops, Canada",
+    "rating": 4,
+    "date": "February 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful views, spacious, clean, comfy, and the hot tub and infra red sauna were amazing after skiing!! \nCommunication was prompt, but a few issues we identified weren't addressed (like dirty dishes), which felt incongruous with the expectations on us (e.g  empty the dishwasher before we left)."
+  },
+  {
+    "name": "Jing",
+    "location": "",
+    "rating": 3,
+    "date": "October 2017",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "We are two family travel together to Jasper. pay almost 650 CAD for this basement. One bathroom, mean bedroom has no door no privacy. gas grill is not clean. It’s not worth what we pay for. View is okay. You can see part of winery and part of lake. AND landlord ask us to pay other 70 CAD for cleaning fee again. Because I quote “The house is to be left as found. Clearly this is not the case here”."
+  },
+  {
+    "name": "Kara",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "March 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra was very welcoming on check-in. The hot tub and sauna were really nice at the end of the day. Great view and only a 10 minute drive to downtown. It was great for what we needed."
+  },
+  {
+    "name": "Tejanna",
+    "location": "Kamloops, Canada",
+    "rating": 5,
+    "date": "May 2024",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Beautiful place to stay, super clean and spacious! Pool, slide, hottub, sauna, gorgeous view! The bed were so comfy! Would definitely stay here again!"
+  },
+  {
+    "name": "Thisari",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "December 2023",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra was a wonderful host! Check in was a breeze and she communicated with us proactively throughout. The house was very clean and just like the description. Hot tub was definitely the highlight and had a great view of the hills around."
+  },
+  {
+    "name": "Kai",
+    "location": "Campbell River, Canada",
+    "rating": 5,
+    "date": "April 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Enjoyed our stay very much. The place is much larger than I expected and was also very clean, which was appreciated. The bed was very comfortable and the hottub and sauna were nice in the cool early spring weather."
+  },
+  {
+    "name": "Jaskirat",
+    "location": "Burnaby, Canada",
+    "rating": 5,
+    "date": "February 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We had a great stay at this Airbnb in West Kelowna. The place was exactly as described -clean, well-maintained, and thoughtfully set up for guests. The check-in process was smooth and communication with the host was prompt and clear throughout our stay."
+  },
+  {
+    "name": "Parham",
+    "location": "West Vancouver, Canada",
+    "rating": 1,
+    "date": "June 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Host was super cooperative with us even though we were mislead into this home with false advertisement stating that its the entire home? We later found out that it was the basement sweet of the home which wasn't the a huge deal breaker since we were already there. Even though we were super careful throughout the trip I wouldn't stay here ever again.  Host was way to over protective about everything. Wouldn't let the music level go higher than half way on our tiny Bose speaker in the middle of the afternoon. This sums up our experience with Debra. Her husband was the best! Super cool with everything."
+  },
+  {
+    "name": "David",
+    "location": "",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Really lovely place to stay for the night. Very clean and spacious. All amenities excellent. Only minor issue would be to extend the curfew on a weekday during the summer months to 11."
+  },
+  {
+    "name": "Diane",
+    "location": "Lethbridge, Canada",
+    "rating": 5,
+    "date": "June 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Lovely clean spacious rental.  Fit all our needs. Was wonderful having a hot tub after a rainy day out."
+  },
+  {
+    "name": "Haiyi",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "July 2017",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Its close enough to the mission hill and quail's gate winery estate. I like the swimming pool since it is hot in july. Everything is good so far except the noise that from air conditioner or some machines is pretty annoying."
+  },
+  {
+    "name": "Baptiste",
+    "location": "",
+    "rating": 5,
+    "date": "May 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Very nice and spacious apartment! Debra is very welcoming and she really tried to make our stay the most comfortable to have fun. We really enjoyed the swimming-pool, the hot-tub and the beautiful view. We will come back :-)"
+  },
+  {
+    "name": "Nick",
+    "location": "Vernon, Canada",
+    "rating": 5,
+    "date": "May 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great location! View from the pool is beautiful. Debra was quite accommodating and made our stay enjoyable. Would stay again."
+  },
+  {
+    "name": "Natassia",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra's place perfect for our weekend getaway.  There was 6 of us total and 2 toddlers.  The place was spacious and the pool/deck/hot tub were icing on the cake.\n Debra was friendly and always willing to help when we needed something."
+  },
+  {
+    "name": "Amanda",
+    "location": "",
+    "rating": 5,
+    "date": "July 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Comfortable with nice views and pool. A bit noisy from the road below, busy area."
+  },
+  {
+    "name": "Kristina",
+    "location": "",
+    "rating": 4,
+    "date": "September 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Nice place, the host lives upstairs but we had the backyard (pool and hot tub) to ourselves during our visit. We were very happy with this accommodation."
+  },
+  {
+    "name": "Ray",
+    "location": "Edmonton, Canada",
+    "rating": 4,
+    "date": "August 2018",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "great place to relax with the family, would definitely stay here again. Pool and hot tub were real clean."
+  },
+  {
+    "name": "Tara",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2022",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "We had a great stay, it was exactly as described. The location and suite were stunning! We would stay again."
+  },
+  {
+    "name": "Britteny",
+    "location": "Ponoka, Canada",
+    "rating": 4,
+    "date": "April 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra was really responsive and informative on the space. It was really comfortable and the hot tub was an excellent perk! She was flexible when we wanted to extend our stay. Would recommend her place!"
+  },
+  {
+    "name": "Laura",
+    "location": "",
+    "rating": 5,
+    "date": "January 2026",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Beautiful stay, loved the winter evening in the hot tub with a great view.  the beds were really comfortable and the neighbourhood was nice and quiet."
+  },
+  {
+    "name": "Rebecca",
+    "location": "",
+    "rating": 4,
+    "date": "December 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Thank you Debra and to your husband for the warm welcome . You guys are amazing, keep it up . \nThe place was great and it’s beyond our expectations. We love our experience and stay . The sauna and the hot tub was a plus. \nThe place was really big , it can accommodate for 2 family of 4 ."
+  },
+  {
+    "name": "Aida",
+    "location": "Squamish, Canada",
+    "rating": 4,
+    "date": "June 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We noticed the pool was too cold our entire stay and that was disappointing since that was one of the main reasons we chose the bnb.\nOtherwise it was comfortable and we enjoyed our stay."
+  },
+  {
+    "name": "Jenna",
+    "location": "Okotoks, Canada",
+    "rating": 5,
+    "date": "May 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Debra and her family have a beautiful home, in a beautiful location. The view from their backyard is out of this world! The home it self was clean, and spacious. Our daughter’s loved the pool and hot tub. Very friendly family, we had a great weekend stay. We fully recommend staying at this home!"
+  },
+  {
+    "name": "⁨T.J.⁩",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We had an amazing time at Debra's place. The suite has an awesome view overlooking the lake and really nice amenities. We only stayed the one night on our way back to Vancouver but we would stay here again!"
+  },
+  {
+    "name": "David",
+    "location": "Ontario, Canada",
+    "rating": 5,
+    "date": "August 2018",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful home and great location. We were a group of 6 adults and 2 children and were comfortable and enjoyed the outdoor space. The house was located close to downtown Kelowna and close to many wineries. Highly recommend this home."
+  },
+  {
+    "name": "Heather",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "September 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Exactly as pictured! Beautiful home with generous amenities and thoughtful touches. Pool was amazing, slide was a blast and the views were breathtaking. Great location - close enough to anything you could need, but far enough away that you have your privacy. Debra was quick to reach out and check in with us and the communication and directions  were quick and clear. Would highly recommend!!"
+  },
+  {
+    "name": "Kate",
+    "location": "Port Moody, Canada",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great place, great location and beautiful amenities on the property. Will for sure be coming back to this place. Debra was very hospitable and accommodating to our group."
+  },
+  {
+    "name": "John",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "January 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "This place was more than just a 5 star stay. It had a great location, amazing view, and all the amenities one could ask for. The hotub and sauna was very relaxing especially after the long highway drives one takes across the province to reach their destination."
+  },
+  {
+    "name": "Steve",
+    "location": "Grande Prairie, Canada",
+    "rating": 5,
+    "date": "July 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Deb’s place was perfect. 4 of us in total, 2 couples. The view and the pool were great during the +34 c weather. The space was really clean and even though there are some shared spaces (the pool) you wouldn’t know it. \nThe sauna and hot tub were awesome as well. \nWe would definitely stay again."
+  },
+  {
+    "name": "Julia",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Our stay at Debra’s place was fantastic! The location is perfect and the house is absolutely stunning!! Debra was very fast at getting back to us and made sure we were comfortable and had what we needed. Would definitely stay again!:)"
+  },
+  {
+    "name": "Sally",
+    "location": "",
+    "rating": 4,
+    "date": "July 2016",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Very informative when we arrived. We had a 1 night stop over and it was perfect for what we needed."
+  },
+  {
+    "name": "Ian",
+    "location": "Saskatoon, Canada",
+    "rating": 4,
+    "date": "June 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Was a clean, quiet, comfortable place to stay.  Everything was as expected. The pool, hot tub, and sauna were an added bonus."
+  },
+  {
+    "name": "Sheldon",
+    "location": "Victoria, Canada",
+    "rating": 5,
+    "date": "December 2020",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Amazing location and fantastic amenities. Hot tub, pool, propane fireplace. Hosts were good communicators, and very accomodating. Would highly recommend."
+  },
+  {
+    "name": "Cassandra",
+    "location": "Ajax, Canada",
+    "rating": 5,
+    "date": "September 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Had an amazing time here, such a beautiful property and wonderful community. Debra and her family were very accommodating, only wish we could've stayed longer!"
+  },
+  {
+    "name": "Amanda",
+    "location": "Victoria, Canada",
+    "rating": 4,
+    "date": "May 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Pros:\n-Loved the hot tub! \n-Lots of beds and space. \n-Seems like a great family place! \n-Beautiful views! \nCons:\n-To use the outdoor fire pit you had to buy your own propane.\n-The pool was open but not heated prior to May long weekend. This made it unusable, even though that is the lure of this place. \n-The cleaning fee is very high ($125), but we are asked to do a lot of tasks like take out the garbage and strip the beds. The place was clean though. \n-The three of us were chatting outside in the hot tub around 10:00pm and the host came down to tell us to be more quiet. I wouldn't recommend for groups hoping to stay out late. Quiet time strictly enforced. \n-The walk-ability is quite poor in this area - there are no sidewalks and you have to cross a busy highway to get anywhere. We had to drive anywhere we went."
+  },
+  {
+    "name": "Dave",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "July 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra made herself available to show us around upon arrival, she was friendly, helpful and happy for us to move the odd bit of furniture around to suit our needs. Together with the Pool, slide, hot tub and view, this made for an amazing stay!"
+  },
+  {
+    "name": "Damir",
+    "location": "",
+    "rating": 4,
+    "date": "January 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "In general it was a nice experience, but there were a lot(8 pages) of additional rules that weren't  mentioned before you book this place.\nFore examples 25$ fee for each 30 minutes you are late on checkout.\nI don't get why you have to pay 200$ of fees and still must clean all the dishes and a kitchen and remove your garbage.\nEspecially taking into consideration that dishwasher almost didn't work.\nAlso you have to pay extra 25$ for each person that will VISIT you, even without staying at this place overnight.\nI think it must be illegal to force any additional rules if they weren't written in the description of the place."
+  },
+  {
+    "name": "Judith",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "September 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The house worked very well for our needs.  We enjoyed the big kitchen and plenty of spaces to sit and visit.  It was comfortable and relaxed. Sitting in the hot tub was enjoyable after a long day.  The host had quick response times when we had requests and parking was easy.  Netflixs on the tv was a bonus too"
+  },
+  {
+    "name": "Rudy",
+    "location": "Winnipeg, Canada",
+    "rating": 4,
+    "date": "May 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Host met us at the door. Clean, good beds, well-equipped kitchen and a great view from the hot tub."
+  },
+  {
+    "name": "Chris",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "March 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Everything was wonderful, Debra went above and beyond. We will definitely be visiting again."
+  },
+  {
+    "name": "Curtis",
+    "location": "Mission, Canada",
+    "rating": 5,
+    "date": "December 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Very accommodating, super friendly, no noise, more than enough activities to do especially In the winter. I had my daughter for gymnastics competition, they had a whole shelf of DVD, local tv programming, WIFI, and a hot tub, couldn’t ask for a better stay"
+  },
+  {
+    "name": "Corrine",
+    "location": "Kamloops, Canada",
+    "rating": 5,
+    "date": "September 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Super happy with our stay and would definitely visit again. Debra was a great host and the home was beautiful. She was very friendly and helpful and clear in her communication. 10/10 recommend!"
+  },
+  {
+    "name": "Erica",
+    "location": "Oakville, Canada",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Our stay at Debra’s place was amazing! The suite was very clean and private. It felt like we had the whole backyard to ourself, we would definitely recommend this place to stay in West Kelowna!"
+  },
+  {
+    "name": "Tom & Steph",
+    "location": "Prince George, Canada",
+    "rating": 5,
+    "date": "July 2018",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debras place was very relaxing and spacious for my stay with friends the night before my wedding. She allowed us to use the pool and hottub which was great. She also let us check out later so we could have a bit longer to get ready before the wedding. We definitely recommend staying at Debras place."
+  },
+  {
+    "name": "Leia",
+    "location": "Vernon, Canada",
+    "rating": 4,
+    "date": "March 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra is a lovely lady and the place in general was nice. \nThe hot tub and sauna was the main reason i booked this place and it did not disappoint great views and nice and quite outside.\nThe reasons for my lower marks was upon opening tbe blinds in livingroom was a lot of cobwebs and on the tree by the window. And the fact that the cleaning fee was $75 was a little disappointing to see cobwebs, also upon reading the house rules it stated a lot of extra charges like if you had any visitors its an extra $25 and if any dishes were left another $25 and having to remove all the garbage and recycling made check out a bit stressful as i didnt want to get charged any extra.  When looking to book a place it said $125 ln  the end it cost me $257.91.\nThe sound proofing is not very good as i could hear the walking back and forth when i tried to have a nap .\nOverall its a nice place tho and there was even condiments in the fridge and a bonus for me was the fridge has a water & ice dispenser !"
+  },
+  {
+    "name": "Kassi & David",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Wonderful property! Amazing views, great pool and hot tub. Beds were super comfortable. Definitely recommend for a relaxing time in the Okanagan!"
+  },
+  {
+    "name": "Amanda",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra was very helpful with communication and with our arrival.  The place has a lovely view of the Okanagan lake and the valley.  We enjoyed our stay at your place!"
+  },
+  {
+    "name": "Kyoko",
+    "location": "Castlegar, Canada",
+    "rating": 5,
+    "date": "December 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Thank you Debra for your hospitality and accommodations. We enjoyed the hot tub along with the stunning view! A warm up in the sauna was a great addition for the winter season. The beds were very nice and comfortable to sleep in. Would definitely recommend !"
+  },
+  {
+    "name": "Kyle",
+    "location": "Canada",
+    "rating": 5,
+    "date": "August 2018",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great host. Great place to stay. Will go back for sure."
+  },
+  {
+    "name": "Nicola",
+    "location": "",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful spot with amazing view of the lake. Pool was so nice and we sat out on the patio in the evening with lovely twinkly lights, hot tub and a thunderstorm to watch! Couldn't beat it! Space is large. 2 beds in dining room but also 2 other bedrooms with big beds. Kitchen is equipped well if a bit dark. There's a sauna! Two dining areas, inside or outside. We had trouble with the wifi but Ithink it was to do with the modem. Great hospitality...our car keys were taken from the car and the owners let us hang out longer while we waited for the tow truck. Thank you for a lovely family trip!☺️"
+  },
+  {
+    "name": "Tara",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "May 2026",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra’s place was great for our group stay! It has a lovely view and plenty of space. It’s perfect for visiting the wineries in West Kelowna. Debar was very helpful!"
+  },
+  {
+    "name": "Chelsea",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "June 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great view, nice amenities, and lovely host!"
+  },
+  {
+    "name": "Shelly",
+    "location": "Salmon Arm, Canada",
+    "rating": 5,
+    "date": "December 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "was a beautiful spot nice view was a Lil chilly with no heat. beds were comfy.  lots of towels for us to use for the hot tub n shower"
+  },
+  {
+    "name": "Megan",
+    "location": "Regina, Canada",
+    "rating": 5,
+    "date": "June 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra was welcoming and a great host. Pool, sauna and hot tub were fantastic for our group. Loved it and would definitely book again."
+  },
+  {
+    "name": "June",
+    "location": "West Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2018",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "This house is in a good location,  has almost everything we need except washer and dryer, we really enjoyed the hot tub."
+  },
+  {
+    "name": "Sherwin",
+    "location": "Langley, Canada",
+    "rating": 5,
+    "date": "April 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "ALovely home and a great place to stay. The house was clean, well-maintained, and very comfortable. We really enjoyed our time here and would definitely come back"
+  },
+  {
+    "name": "Kevin",
+    "location": "St. Albert, Canada",
+    "rating": 5,
+    "date": "May 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We had a great stay, beautiful location and excellent amenities with the pool and hot tub."
+  },
+  {
+    "name": "Tania",
+    "location": "Delburne, Canada",
+    "rating": 5,
+    "date": "July 2018",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We had a wonderful time. The pool was awesome and having a full kitchen was nice for the days you just wanna stay in. Thanks Debra for sharing your place with us. The kids loved it."
+  },
+  {
+    "name": "Shani",
+    "location": "Edmonton, Canada",
+    "rating": 4,
+    "date": "August 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "This is a great location with a great view point. The pool, hot tub and sauna are awesome. The suite is spacious."
+  },
+  {
+    "name": "Raju",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "October 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Immediately she welcomed us and explained everything. Any communication was answered very quick. \nVery spacious and private. Both the pool and hot tub were clean. We only used one bed but it was super comfortable. \nWe cooked in the kitchen and on the bbq. All utensils, cutlery pits, pans etc were available to use."
+  },
+  {
+    "name": "Matthieu",
+    "location": "",
+    "rating": 5,
+    "date": "August 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra's house is super nice. Magnificent view on the Okanagan lake, spacious, clean house and a nice pool area with BBQ. Everything you need to spend a good time with friends or family."
+  },
+  {
+    "name": "Braden",
+    "location": "",
+    "rating": 5,
+    "date": "August 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Very nice place. The accommodations and view are awesome. Debra was very helpful. Would definitely recommend and would stay there again for sure."
+  },
+  {
+    "name": "Pavnique",
+    "location": "Kamloops, Canada",
+    "rating": 5,
+    "date": "August 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra's place was a relaxing paradise. We thoroughly enjoyed our time in the pool/hot tub. Although we were in a residential area and staying in the basement of Debra's home, we had a lot of privacy and never felt overcrowded by the neighbours or by Debra's family. The suite had plenty of space for 7 ladies and the kitchen was well equipped. All of the ladies had nothing but good things to say about the weekend."
+  },
+  {
+    "name": "Sarah Joy",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "October 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great view. Loved the pool, hot tub, sauna. Beds comfortable."
+  },
+  {
+    "name": "Kristal",
+    "location": "Abbotsford, Canada",
+    "rating": 5,
+    "date": "September 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Nice place to stay, the bed was very comfortable. Good parking across the street if you have a trailer. Would recommend this place to anyone."
+  },
+  {
+    "name": "Monique",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "August 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Spent an amazing week at Debra’s with my family. Pictures online don’t do it justice! The views even more amazing and suite decor is updated. Thanks again!"
+  },
+  {
+    "name": "Pardeep",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "March 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "I had an amazing time during my stay. Views were amazing. Debra was quick to respond and was very friendly. Place looks even better in person! I would highly recommend! Thanks"
+  },
+  {
+    "name": "Ron",
+    "location": "Estevan, Canada",
+    "rating": 5,
+    "date": "August 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great place to stay and convenient location to plenty of things to do in area."
+  },
+  {
+    "name": "Nate",
+    "location": "West Kelowna, Canada",
+    "rating": 5,
+    "date": "November 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Nice and quiet and hot tub with view of the lake was just what I needed. Thanks"
+  },
+  {
+    "name": "Melanie",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "October 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "We needed a mini staycation and this was perfect! Beautiful home and view with a hot tub to relax in."
+  },
+  {
+    "name": "Madi",
+    "location": "Edmonton, Canada",
+    "rating": 4,
+    "date": "October 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Lovely place, great views! Location is a bit out of the way, but overall great experience!"
+  },
+  {
+    "name": "Sherri",
+    "location": "",
+    "rating": 4,
+    "date": "March 2025",
+    "stay": "Stayed about a week",
+    "source": "Airbnb",
+    "review": "Great place to stay. Being there in March we didn’t get to fully appreciate the pool and hot tub. Imagine it would be a great place in the summer. Great beds and pillows. Thanks"
+  },
+  {
+    "name": "Christie",
+    "location": "North Vancouver, Canada",
+    "rating": 5,
+    "date": "June 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra’s place felt like home away from home. \nIt was a great spot for 3 girlfriends in town for a running race. \nThe pool and hot tub were so nice, I’d like to come back with my hubby & kids someday.\nGreat Uber service nearby and lots of wineries really close. \nWe got groceries to bbq at home one night….got in a a realized we needed some cooking oil which Debra’s daughter next door was able to run over to us on a moment’s notice. Super kind! \nWould highly recommend for friends or family to stay here. \nThanks Debra!"
+  },
+  {
+    "name": "Jezinnie",
+    "location": "Spokane Valley, Washington",
+    "rating": 5,
+    "date": "September 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra’s place was stunning plenty of beds and room I love how there was a sauna inside the airbnb a pool and a hot-tub absolutely amazing would definitely stay again!"
+  },
+  {
+    "name": "Molly",
+    "location": "",
+    "rating": 5,
+    "date": "October 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "needed a quiet get away and this place gave us just that. very clean house, comfortable beds, comfortable couches/chairs to hangout on. hot tub has the cutest lights hanging around it. amazing view from inside the hot tub. host was quick to responde to messages. very kid person and gave us the space we needed to just chill."
+  },
+  {
+    "name": "Dj",
+    "location": "",
+    "rating": 5,
+    "date": "October 2022",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "It was an amazing place before opening the door.   The yard with the pool, and sitting area was perfect. And then the view of the lake was a very nice backdrop. The inside was really nice great choice of furniture and colours.   Very clean and full kitchen.  Excellent place.     I will be staying there again"
+  },
+  {
+    "name": "Gurmant",
+    "location": "Surrey, Canada",
+    "rating": 4,
+    "date": "July 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Overall, the view was spectacular as shown in the pictures. Things that can be worked on are 1) the grill can be cleaner; 2) WiFi wasn’t working properly; and the 3) ice machine wasn’t working."
+  },
+  {
+    "name": "Brigitte",
+    "location": "Winnipeg, Canada",
+    "rating": 5,
+    "date": "November 2024",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great place in West Kelowna beautiful backyard and the hot tub was such a bonus. Easy street parking with our own entrance. The place was super clean and the bed were very comfortable. Would stay here again"
+  },
+  {
+    "name": "Laura",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "October 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Fantastic location, gorgeous view, good space, wonderful beds, very helpful and responsive hosts, and excellent coffee!"
+  },
+  {
+    "name": "Michelle",
+    "location": "Winnipeg, Canada",
+    "rating": 5,
+    "date": "May 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great stay that delivers what you’d expect as advertised.  Nothing to complain about here, only wish we could have stayed longer!"
+  },
+  {
+    "name": "Kapil",
+    "location": "Burnaby, Canada",
+    "rating": 4,
+    "date": "July 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great place.... but one bathroom was little tough when it is eight people"
+  },
+  {
+    "name": "Kirra",
+    "location": "Delta, Canada",
+    "rating": 4,
+    "date": "April 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Had a great time with my friends. Host was very welcoming. View from hot tub was great."
+  },
+  {
+    "name": "Megan",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "December 2022",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Was a great little 1 night stay cation. We always love having our own private hot tub to use and the view with the snow falling was fantastic."
+  },
+  {
+    "name": "Erik",
+    "location": "Seattle, Washington",
+    "rating": 5,
+    "date": "July 2018",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great place to relax and unwind with the pool, hot tub, view, and sauna."
+  },
+  {
+    "name": "Kyle",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "September 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "We only stayed for a night, but it was perfect for us. Great for relaxing after day activities, and a beautiful view. The sauna, hot tub, and pool are a great combination for relaxing."
+  },
+  {
+    "name": "Casandra",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "June 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "We had a great stay at Debra’s place, would definitely book again in the future!"
+  },
+  {
+    "name": "Erica",
+    "location": "",
+    "rating": 5,
+    "date": "November 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "I lived in a very clean and welcoming home equipped with everything you need to feel at home, I would gladly return."
+  },
+  {
+    "name": "Sheila",
+    "location": "Cochrane, Canada",
+    "rating": 3,
+    "date": "August 2018",
+    "stay": "Stayed about a week",
+    "source": "Airbnb",
+    "review": "Debra is a lovely host, quick to respond to any questions or requests. Having the pool & hot tub to ourselves was a great treat. Just be aware, this is a basement suite & you will hear noise from upstairs."
+  },
+  {
+    "name": "Andrea",
+    "location": "Winnipeg, Canada",
+    "rating": 4,
+    "date": "May 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra was great at replying in a timely manner to any and all questions we had. The accommodations were comfortable and the views were beautiful."
+  },
+  {
+    "name": "Siomha",
+    "location": "",
+    "rating": 5,
+    "date": "July 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "An amazing place to stay. My friends and I  had such a lovely weekend, chilling by the pool, using the slide, hot tubing and BBQing, with a great view. Debra was really helpful and gave clear instructions. Would highly recommend her place to friends!!"
+  },
+  {
+    "name": "Matthew",
+    "location": "",
+    "rating": 5,
+    "date": "July 2024",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great place to have as a home base for beach days. Pool and hot tub are very nice to have."
+  },
+  {
+    "name": "Jeff",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "July 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Great place with a beautiful pool and hot tub. Debra keeps this place super clean, looks great!!"
+  },
+  {
+    "name": "Emily",
+    "location": "",
+    "rating": 4,
+    "date": "August 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "A great location to relax for a few days! \nIt was so nice to have the pool to ourselves during our stay. \nThis location has a decent proximity to many wineries and great restaurants."
+  },
+  {
+    "name": "Steven",
+    "location": "",
+    "rating": 5,
+    "date": "April 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "hosts were very friendly and helpful place was really nice well stocked with kitchen stuff.i would definitely book again"
+  },
+  {
+    "name": "Chad",
+    "location": "Port Coquitlam, Canada",
+    "rating": 5,
+    "date": "July 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Place was as advertised. Great views and outdoor setup is perfect for my taste. Hot tub and sauna a bonus."
+  },
+  {
+    "name": "Anne",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "September 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "A nice place with a lot of good amenities. Our group enjoyed our stay with the pool, hot tub, BBQ, and sauna. It was a great place to get away to, away from the crowds in Kelowna."
+  },
+  {
+    "name": "Kristy",
+    "location": "Winnipeg, Canada",
+    "rating": 5,
+    "date": "September 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We had a great time and would love to go back one day. We loved having the full kitchen and how spacious everything felt."
+  },
+  {
+    "name": "Charlie",
+    "location": "",
+    "rating": 2,
+    "date": "October 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The view and the hot tub are great but a few issues did spoil the trip for us \n- there is a $50/person/day additional guest fee over 2 guests to cover additional utilities! This came as a surprise as our booking included 2 guests but we were 4 guests in a two bedroom place.\n- communication from the hosts were often very short and verging on being rude\n- the pool was not heated at all! Despite it saying in the listing that it would be, a real shame as was therefore unusable for more than a few minutes \n- noise from upstairs- you can hear the guest and what sounds like a pet moving around above the main bedroom. This is especially in the early morning around 5am when there was also an alarm. \n- the general cleanliness of the apartment was not so great and could be improved\n- the choice of plates and glasses is not great - being located in a wine region then wine glasses (not plastic) should be provided"
+  },
+  {
+    "name": "Samantha",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Debra's property was amazing for me and my family, we brought 3 kids who loved the pool and she even had life jackets! She was always quick to reply and very hospitable. Would definitley recommend!"
+  },
+  {
+    "name": "Letitia",
+    "location": "Abbotsford, Canada",
+    "rating": 5,
+    "date": "August 2021",
+    "stay": "Stayed about a week",
+    "source": "Airbnb",
+    "review": "The place is great, especially the patio with awesome views. Would definitely stay there again."
+  },
+  {
+    "name": "Shamim",
+    "location": "Nelson, Canada",
+    "rating": 4,
+    "date": "March 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Amazing views and amenities. Well worth the price. It is the downstairs of their home that they are living in, and sound will travel (music lovers..). Overall the hospitality was wonderful and the host was accessible to answer any questions and such. Thankful for our time there"
+  },
+  {
+    "name": "Bruce",
+    "location": "Port Coquitlam, Canada",
+    "rating": 4,
+    "date": "September 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Good space, basic equipped kitchen, nice sauna and hottub, full size refrigerator and dishwasher.  Pool was cold, but we knew it was not heated ahead of time."
+  },
+  {
+    "name": "Andrea",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "May 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great place, location, and host. \nonly thing, with no notice, there was a cleaner? Or someone that walked through the backyard to open the shed twice while we were using the sauna. Would’ve been okay if we were informed, was a bit surprising! \nOverall 9.5/10 definitely worth the stay"
+  },
+  {
+    "name": "Alexandre",
+    "location": "Airdrie, Canada",
+    "rating": 5,
+    "date": "August 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Perfect location, great view,nice setup and a great host. Debra’s place is awesome!"
+  },
+  {
+    "name": "Kathy",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The views are stunning and Debra’s place couldn’t have been more perfect. Her place is cozy, spacious, and clean. I would definitely consider staying here again for my next trip to Kelowna."
+  },
+  {
+    "name": "Jazz",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "June 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Beautiful home! Great location and a breathtaking view. Would def stay again."
+  },
+  {
+    "name": "Dayna",
+    "location": "Logan Lake, Canada",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "The view is amazing. The space is clean! The pool and hot tub are clean and great temperatures! Highly recommend this space! Will be returning in the future!"
+  },
+  {
+    "name": "Amanda",
+    "location": "Castlegar, Canada",
+    "rating": 5,
+    "date": "May 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This was a great place to stay. Slept five adults very comfortably. Debra was away from the property for our stay, but checked in frequently to ensure we were comfortable. Would definitely stay here again! Thank you!!"
+  },
+  {
+    "name": "Masimba",
+    "location": "Campbell River, Canada",
+    "rating": 5,
+    "date": "May 2024",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Host was friendly met with us upon arrival showed us around the house."
+  },
+  {
+    "name": "Karen",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "September 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "My friends and I had a great time staying at Debra’s place! We all enjoyed the swimming pool and the hot tub with the amazing view."
+  },
+  {
+    "name": "Hannah",
+    "location": "Nelson, Canada",
+    "rating": 5,
+    "date": "February 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra’s place is lovely! We enjoyed the hot tub and sauna and cooked our meals in the full kitchen. A great spot to land and relax."
+  },
+  {
+    "name": "Svetlana",
+    "location": "Chilliwack, Canada",
+    "rating": 5,
+    "date": "July 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "the pool was amazing, the beds and living area was beautiful and comfortable! Recommend for sure!"
+  },
+  {
+    "name": "Rita",
+    "location": "Victoria, Canada",
+    "rating": 5,
+    "date": "July 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We had such  an amazing stay!! So peaceful and relaxing and exactly what we needed!!!"
+  },
+  {
+    "name": "Ryan",
+    "location": "Kimberley, Canada",
+    "rating": 4,
+    "date": "October 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great views from an older hot tub.  Sauna was amazing. Beds were not great."
+  },
+  {
+    "name": "Nichola",
+    "location": "Anzac, Canada",
+    "rating": 5,
+    "date": "July 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Awesome host! Super friendly and accommodating. Beautiful space we had a great stay!"
+  },
+  {
+    "name": "Christine",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2022",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The suite was clean and spacious and the pool was perfect for our annual girls trip. Close to many wineries! For those aged 30+ wondering if the water slide is a good idea… it definitely is. Enjoy!"
+  },
+  {
+    "name": "Gilbert",
+    "location": "Burnaby, Canada",
+    "rating": 5,
+    "date": "July 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Nice spot! Stayed for a few days with some friends to do some wine touring and it was great to have the amenities available later In the evening! Recommended!"
+  },
+  {
+    "name": "Rodger",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "August 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "The place was very nice.  Really enjoyed the hot tub!  We arrived with 8 people and were able to accommodate everyone."
+  },
+  {
+    "name": "Queenie",
+    "location": "Tofino, Canada",
+    "rating": 5,
+    "date": "June 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra and her husband were wonderful hosts! They were very accommodating of our late arrival and even had the extra beds already set up. Their place was absolutely gorgeous and very spacious. We wish we had a few more days to enjoy the pool and hot tub. :) Also in a great location very close to the wineries in West Kelowna."
+  },
+  {
+    "name": "Erica",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "October 2023",
+    "stay": "Stayed about a week",
+    "source": "Airbnb",
+    "review": "Booked this for my husband and his employee. She was amazing and very flexible. Thanks again."
+  },
+  {
+    "name": "Arleene",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "June 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Good and friendly hosts"
+  },
+  {
+    "name": "Diane",
+    "location": "Wonowon, Canada",
+    "rating": 5,
+    "date": "May 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra’s place was amazing! Exactly like how the pictures described very clean. I would definitely rebook again. Thank you again Debra"
+  },
+  {
+    "name": "Jacqueline",
+    "location": "",
+    "rating": 5,
+    "date": "December 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Had a nice relaxing weekend - beautiful space, look forward to our stay again!"
+  },
+  {
+    "name": "Lillian Li",
+    "location": "",
+    "rating": 5,
+    "date": "June 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Great place, Debra was communicative and friendly."
+  },
+  {
+    "name": "Jordan",
+    "location": "Surrey, Canada",
+    "rating": 5,
+    "date": "October 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra's place is lovely. came with 6 guys for a weekend trip and Debra was kind and available for any needs or questions"
+  },
+  {
+    "name": "Ferdinando",
+    "location": "Richmond, Canada",
+    "rating": 5,
+    "date": "September 2020",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Debra was a great host. The suite is spacious, clean and has everything you need. Pool, hot tub and sauna are amazing!"
+  },
+  {
+    "name": "Marie Josee",
+    "location": "Saguenay, Canada",
+    "rating": 5,
+    "date": "August 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Super clean appartment with all required furnitures to fell like home !  Debra´s appartment is super well located in a very quiet neighborhood.   We recommand this place !"
+  },
+  {
+    "name": "Richard",
+    "location": "Ponoka, Canada",
+    "rating": 4,
+    "date": "August 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "God location, great amenities we would for sure stay again."
+  },
+  {
+    "name": "Tim",
+    "location": "Surrey, Canada",
+    "rating": 5,
+    "date": "January 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Needed a place for my workers on short notice. Debbie  was very helpful."
+  },
+  {
+    "name": "Mario",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "July 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Good place with awesome view and great amenities like pool, hot tub, and sauna."
+  },
+  {
+    "name": "Harman",
+    "location": "",
+    "rating": 5,
+    "date": "May 2026",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Debra was really caring and her communication with us was awesome. Cant wait to come back in a few months one of the best air bnb"
+  },
+  {
+    "name": "Christine",
+    "location": "",
+    "rating": 4,
+    "date": "July 2022",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "We mostly booked this place for our kids to have a pool. And they had a blast. \nMission accomplished."
+  },
+  {
+    "name": "Sophie",
+    "location": "",
+    "rating": 5,
+    "date": "August 2019",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Great house, good location  - very clean, the swimming pool/hot tub are fantastic.  Thank you very much"
+  },
+  {
+    "name": "Agnes",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "June 2023",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra was very kind and accommodating, we had a special event for a bridal shower and she was very helpful with suggestions. Her home allowed us to have a much needed relaxing trip; we were comfortable coming and going once we located the house. The location is very beautiful and close to many stores, if you forget anything it's an easy fix as walmart is minutes away!\nA²"
+  },
+  {
+    "name": "Stephanie",
+    "location": "",
+    "rating": 4,
+    "date": "May 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra has good communication and is able to help wherever needed with questions and has a lovely area. A little bit trickier to find via Google maps but still good location."
+  },
+  {
+    "name": "Wade",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "August 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We only stayed 3 nights but really enjoyed it. Beautiful views thank you."
+  },
+  {
+    "name": "Jessica",
+    "location": "Mission, Canada",
+    "rating": 5,
+    "date": "April 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra was a great host and her daughter Brandy was a fantastic tour guide. They went above and beyond for our group. Would definitely book a stay and wine tour through them again."
+  },
+  {
+    "name": "Melody",
+    "location": "",
+    "rating": 5,
+    "date": "August 2020",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Great stay, lovely view and amenities. We enjoyed our stay here!"
+  },
+  {
+    "name": "Jessica",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "June 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Fantastic suite with the most amazing backyard and view."
+  },
+  {
+    "name": "Evelyn",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great location. Beautiful view. Amazing space for a great relaxing getaway"
+  },
+  {
+    "name": "Julien",
+    "location": "",
+    "rating": 5,
+    "date": "July 2018",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Nice house, beautiful pool and jacuzzi, great view on the Lake"
+  },
+  {
+    "name": "Adam",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "July 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful views from this West Kelowna gem. The pool is absolutely stunning and immaculately maintained."
+  },
+  {
+    "name": "Amanda",
+    "location": "Rock Creek, Canada",
+    "rating": 5,
+    "date": "February 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Was a beautiful place, beds were so comfy! Hot tub was so nice!"
+  },
+  {
+    "name": "Angela",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "July 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Had a great time , the view was spectacular and the pool and hot tub was a plus !"
+  },
+  {
+    "name": "Michelle",
+    "location": "Surrey, Canada",
+    "rating": 4,
+    "date": "July 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Beautiful house and amazing views of Kelowna mountains!"
+  },
+  {
+    "name": "Jean",
+    "location": "Wetaskiwin, Canada",
+    "rating": 5,
+    "date": "June 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Wonderful stay, very nice and quiet place as well as very great hosts"
+  },
+  {
+    "name": "Ron",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "September 2018",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Myself and 3 friends stayed here for a golf trip.  It is about 15 minutes from downtown and close to wineries in west Kelowna.  Hot tub was great and all beds were great for adults."
+  },
+  {
+    "name": "Aynsley",
+    "location": "Abbotsford, Canada",
+    "rating": 5,
+    "date": "March 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra was lovely, welcoming and friendly. We really enjoyed our stay!"
+  },
+  {
+    "name": "Lana",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "February 2022",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "We were visiting for a birthday and Debra was a great host to the 4 of us. \nThe views are spectacular. The hot tub and sauna were perfect 💕 tons of rooms for guests"
+  },
+  {
+    "name": "Diego",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "July 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great location, really nice layout and very clean!"
+  },
+  {
+    "name": "Katie",
+    "location": "",
+    "rating": 4,
+    "date": "March 2022",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Lots of great sleeping space and a beautiful view as we relaxed in the hot tub !"
+  },
+  {
+    "name": "Miranda",
+    "location": "",
+    "rating": 5,
+    "date": "May 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Gorgeous view, relaxing, quiet and clean!"
+  },
+  {
+    "name": "Jordan",
+    "location": "Surrey, Canada",
+    "rating": 4,
+    "date": "June 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra's place was very nice! great view. pool and hot tub was amazing. Would 100% stay again."
+  },
+  {
+    "name": "Maya",
+    "location": "",
+    "rating": 5,
+    "date": "May 2026",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "The view was amazing and our host was so responsive! Will book again!"
+  },
+  {
+    "name": "Sarah",
+    "location": "",
+    "rating": 5,
+    "date": "April 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra was welcoming and instantly put us at ease. My family and I were taking a much needed break after a loss in the family and she gave us great attention and then the privacy we needed. Would visit again in the summer to enjoy the pool"
+  },
+  {
+    "name": "Brendan",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "October 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The views and the hot tub at this place are great!"
+  },
+  {
+    "name": "Adam",
+    "location": "",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Great place! Nice view! We enjoyed our few days by the pool!"
+  },
+  {
+    "name": "Marjan",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2018",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Everything was perfect, we had a really great time here!"
+  },
+  {
+    "name": "Sandy",
+    "location": "New York, New York",
+    "rating": 5,
+    "date": "August 2017",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Great for a one night stay. Good location and a pretty awesome view."
+  },
+  {
+    "name": "Lily",
+    "location": "",
+    "rating": 5,
+    "date": "August 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "As described. Nice cotton linens. \nWell stocked kitchen. Amazing pool and hangout."
+  },
+  {
+    "name": "Val",
+    "location": "Thunder Bay, Canada",
+    "rating": 5,
+    "date": "April 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Friendly, responsive host, great place, great location. Would definitely stay here again and highly recommend."
+  },
+  {
+    "name": "Nathalia",
+    "location": "Porto Alegre, Brazil",
+    "rating": 4,
+    "date": "August 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Beautiful suite, very clean.  Good for a family or group of friends."
+  },
+  {
+    "name": "Nicola",
+    "location": "Kamloops, Canada",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra and her place was awesome! Everything we needed and more! Would recommend this place to anyone! Thanks again!!"
+  },
+  {
+    "name": "Ceejay",
+    "location": "Fort St. John, Canada",
+    "rating": 5,
+    "date": "July 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We had a wonderful stay at this beautiful property. The pool, slide, and hot tub was amazing in the beautiful sunshine. Beds were comfortable, very clean and tidy. Overall we had a great time"
+  },
+  {
+    "name": "Joey",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful place. Great host. Best part is the pool and slide and infared sunna!"
+  },
+  {
+    "name": "Shayan",
+    "location": "North Vancouver, Canada",
+    "rating": 5,
+    "date": "August 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Great host, great view, and a great experience. Thank you."
+  },
+  {
+    "name": "Karen",
+    "location": "",
+    "rating": 5,
+    "date": "September 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra was an amazing host\nWe had issues with our flight and she was certainly accommodating \nThe suite was clean and everything you would wanted Pool Hot-tub sauna \nKitchen fully stocked \nSitting out on the deck with morning coffee looking at the beautiful view \nYour day was off to a great start\nThanks Debra for a great experience and we will be booking with you again in the future"
+  },
+  {
+    "name": "Nathalie",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "June 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Hosts were quick to respond and left us to enjoy our time, even though they were on site they 100% respected our privacy"
+  },
+  {
+    "name": "Neil",
+    "location": "",
+    "rating": 5,
+    "date": "September 2025",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Was a great place to stay. The wine tour with Brandy was magical and would definitely recommend."
+  },
+  {
+    "name": "Joel",
+    "location": "Winnipeg, Canada",
+    "rating": 5,
+    "date": "September 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "A great place for a group. Sparkling clean, quiet and peaceful. Great hosts! Highly recommend."
+  },
+  {
+    "name": "Katie",
+    "location": "Lund, Canada",
+    "rating": 5,
+    "date": "November 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Super cozy place. Loved the hottub and sauna. Beds were lovely and comfortable"
+  },
+  {
+    "name": "Brillian",
+    "location": "Maple Ridge, Canada",
+    "rating": 4,
+    "date": "September 2022",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Nice place with swimming pool and hot tub but we did not expect to  hear loud sound above our bedroom on Sunday early morning"
+  },
+  {
+    "name": "Jessica",
+    "location": "",
+    "rating": 5,
+    "date": "November 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Great place with all the commodities and a great view!!"
+  },
+  {
+    "name": "Shreya",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "November 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great and spacious place with amazing views!"
+  },
+  {
+    "name": "Scott And Laura",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "June 2019",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "It was so lovely to enjoy the patio space while taking in both the daytime and evening views!  Debra was an excellent host and even helped us figure out how to use the TV on a moment's notice"
+  },
+  {
+    "name": "Melissa",
+    "location": "Fort Saskatchewan, Canada",
+    "rating": 5,
+    "date": "June 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Debra's place was exactly as advertised. Nice and clean. Would definitely stay again."
+  },
+  {
+    "name": "Billie",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "April 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Perfect for vacation"
+  },
+  {
+    "name": "Katie",
+    "location": "Airdrie, Canada",
+    "rating": 5,
+    "date": "August 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful property!"
+  },
+  {
+    "name": "Jamie",
+    "location": "",
+    "rating": 5,
+    "date": "October 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Amazing bnb with a beautiful view. Debra is flexible with hours and the best with recommendations."
+  },
+  {
+    "name": "Nas",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "October 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Loved my tranquil two days at Debra’s in West Kelowna. A view I’ll never forget!"
+  },
+  {
+    "name": "Shirley",
+    "location": "Castlegar, Canada",
+    "rating": 5,
+    "date": "April 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "We  had a great stay at this Air BnB, Debra was very accommodating to our ever changing schedule lol. The hot tub and sauna were great after a long day of wine touring and relaxing to hang out with our friends.  The home was spotless, had everything you needed to prepare meals (if you wanted to), easy to find and great location. Thanks Debra for an amazing experience!\nshirley, laura, teresa, betty"
+  },
+  {
+    "name": "Natalie",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "July 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Loved the pool and waterslide! My kids had the best time!"
+  },
+  {
+    "name": "Cassie",
+    "location": "Kamloops, Canada",
+    "rating": 5,
+    "date": "September 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "This was absolutely gorgeous. We are so happy we stayed here."
+  },
+  {
+    "name": "James",
+    "location": "Courtice, Canada",
+    "rating": 5,
+    "date": "March 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra was a great host, her place was very clean and everything you may need was provided. The view was incredible!"
+  },
+  {
+    "name": "Chrissie",
+    "location": "",
+    "rating": 4,
+    "date": "June 2017",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Beautiful view. Central to vineyards."
+  },
+  {
+    "name": "May V",
+    "location": "Singapore",
+    "rating": 5,
+    "date": "August 2022",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Beautiful stay with comfortable settings. The pool and hot tub was a huge highlight for the kids."
+  },
+  {
+    "name": "Krislynn",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "January 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Amazing place to stay!"
+  },
+  {
+    "name": "Matt",
+    "location": "",
+    "rating": 5,
+    "date": "May 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Loved staying here. very clean place, would recommend!"
+  },
+  {
+    "name": "Vanessa",
+    "location": "Saskatoon, Canada",
+    "rating": 5,
+    "date": "September 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This place is no doubt ⭐️⭐️⭐️⭐️⭐️ .  Those that mark it less honestly have challenges.  Let’s be real , you can never get a view like this or a pool , Hottub and sauna and the amount of space - honestly superb .  We will be back and shame on those that rate this place less than 5 stars .  Beautiful , breathtaking and so thankful for the time here. ❤️"
+  },
+  {
+    "name": "호도애",
+    "location": "",
+    "rating": 5,
+    "date": "July 2016",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "A fantastic place that exceeded my expectations. A cozy and clean swimming pool and hot spring pool. Spacious interior and a clean, comfortable decor. Both my children and my wife are satisfied.  Overlooking Lake Okanagan, you can enjoy a pleasant swim and a relaxing stay, so much so that you'll want to spend the whole day at the property. I highly recommend this to all Korean people and all travelers who read this review.",
+    "translationNote": "Translated text supplied by user; original-language text not supplied."
+  },
+  {
+    "name": "LoAnn",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "July 2018",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Recommend for everyone"
+  },
+  {
+    "name": "Alyssa",
+    "location": "",
+    "rating": 4,
+    "date": "September 2024",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Very nice place. Had a lovely time."
+  },
+  {
+    "name": "Lexin",
+    "location": "Richmond, Canada",
+    "rating": 4,
+    "date": "April 2019",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Nice place with good view."
+  },
+  {
+    "name": "Brad",
+    "location": "",
+    "rating": 5,
+    "date": "June 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Fantastic spot with a great pool."
+  },
+  {
+    "name": "Eric",
+    "location": "Coquitlam, Canada",
+    "rating": 5,
+    "date": "September 2020",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Great stay, would recommend it to anyone."
+  },
+  {
+    "name": "Annette",
+    "location": "North Vancouver, Canada",
+    "rating": 4,
+    "date": "September 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Everyone that wrote previous review were correct. Debra does keep an eagle eye on the guests."
+  },
+  {
+    "name": "Marie",
+    "location": "",
+    "rating": 4,
+    "date": "September 2024",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "We had a good night at Debra's place. We slept in one of the most comfortable beds in our lives and the sheets were extremely soft! A good night assured, a very quiet environment and excellent cleanliness. \nThe limitation of an hour in the hot tub was a little short because we had booked the place for this purpose. From the pool and hot tub you will have a magnificent view of nature and the city.",
+    "translationNote": "Translated text supplied by user; original-language text not supplied."
+  },
+  {
+    "name": "Ken",
+    "location": "",
+    "rating": 5,
+    "date": "February 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful views, clean house and quiet neighborhood"
+  },
+  {
+    "name": "Kathryn",
+    "location": "Abbotsford, Canada",
+    "rating": 5,
+    "date": "June 2023",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Wonderful hosts, beautiful stay!"
+  },
+  {
+    "name": "Sukhjit",
+    "location": "Brampton, Canada",
+    "rating": 4,
+    "date": "September 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Good place to stay. Nice location."
+  },
+  {
+    "name": "승민",
+    "location": "",
+    "rating": 5,
+    "date": "September 2025",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "There are several rooms and it's worth the price!",
+    "translationNote": "Translated text supplied by user; original-language text not supplied."
+  },
+  {
+    "name": "Aq",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "June 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great place, great host!"
+  },
+  {
+    "name": "Aylin",
+    "location": "Kamloops, Canada",
+    "rating": 4,
+    "date": "April 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Everything was really good, just barbecue needs to be cleaned."
+  },
+  {
+    "name": "Breanna",
+    "location": "Airdrie, Canada",
+    "rating": 4,
+    "date": "June 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great place amazing view and a ton of fun !"
+  },
+  {
+    "name": "Tamara",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "January 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "The view was just amazing especially from the hot tub.."
+  },
+  {
+    "name": "Dakota",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "March 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Very nice and understanding!"
+  },
+  {
+    "name": "Mackenzie",
+    "location": "Nanaimo, Canada",
+    "rating": 5,
+    "date": "February 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Lovely place, very comfortable. Beautiful view from the hot tub. Had a great experience"
+  },
+  {
+    "name": "Ryan",
+    "location": "Grande Prairie, Canada",
+    "rating": 5,
+    "date": "June 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great view, we enjoyed the pool and hot tub. Nice home away from home"
+  },
+  {
+    "name": "Jennifer",
+    "location": "Ardrossan, Canada",
+    "rating": 5,
+    "date": "September 2022",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great location and outdoor space for kids."
+  },
+  {
+    "name": "Casey",
+    "location": "",
+    "rating": 3,
+    "date": "November 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Thank you Debra for your hospitality!"
+  },
+  {
+    "name": "Jusun",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "August 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Nice location, nice view!"
+  },
+  {
+    "name": "Amanda",
+    "location": "Nakusp, Canada",
+    "rating": 5,
+    "date": "October 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Thank you."
+  },
+  {
+    "name": "Connie",
+    "location": "Chase, Canada",
+    "rating": 5,
+    "date": "March 2022",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Beautiful spot with tons of room.  Clean and fun with a pool, hot tub and sauna."
+  },
+  {
+    "name": "Jesse",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "September 2019",
+    "stay": "Stayed about a week",
+    "source": "Airbnb",
+    "review": "I think she is amazing!"
+  },
+  {
+    "name": "Laura",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "August 2020",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Fantastic host! Debra made sure we were comfortable and had all we needed. Thanks for a great stay 😊"
+  },
+  {
+    "name": "Jonas",
+    "location": "",
+    "rating": 5,
+    "date": "June 2019",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Just awesome! Nice communication😊"
+  },
+  {
+    "name": "Ge",
+    "location": "Burnaby, Canada",
+    "rating": 1,
+    "date": "January 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The most disgusting host I've ever met!!!, Don't stay!!! The couple is a scam, the house is nothing like the photos.\nAt 11 o'clock the male owner immediately rushed into our room, then searched for traces of violation from room to room, check out 10 minutes late to collect 25 knives, left his table by the bathtub without moving back and collecting 25\nAfter we checked in, there was a small pickup parked outside, we had to say that we brought friends to a party, didn't let us go, but we wanted to go to the winery and see the kangaroo for more than half an hour, which proved that the person who came down the pickup hadn't entered our house to let us off, but everyone came out and played with you to watch the surveillance. We wanted to go to the winery and see the kangaroo in the afternoon.This is a place where you can use everyone to come out and play, you don't have to go!!!!",
+    "translationNote": "Translated text supplied by user; original-language text not supplied."
+  },
+  {
+    "name": "Whitney",
+    "location": "Slocan, Canada",
+    "rating": 5,
+    "date": "July 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "the unique layout worked well for our family."
+  },
+  {
+    "name": "Gary",
+    "location": "",
+    "rating": 4,
+    "date": "July 2018",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Nice and tidy."
+  },
+  {
+    "name": "Jaime",
+    "location": "",
+    "rating": 5,
+    "date": "April 2026",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "This place was great. Beautiful views, quiet and peaceful, the space was larger than we anticipated, The host was absolutely amazing and friendly. highly suggest this place- thank you🤍"
+  },
+  {
+    "name": "Alexander",
+    "location": "",
+    "rating": 5,
+    "date": "May 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Would definitely stay again"
+  },
+  {
+    "name": "Michelle",
+    "location": "",
+    "rating": 5,
+    "date": "September 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Excellent stay \nGreat suite \nBeautiful views \nVery fun pool"
+  },
+  {
+    "name": "Jinny",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "July 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Located in West-Kelowna, it was in a great location for a week. It was our anchor point. The accommodation is spacious and clean. The owners are available and helpful in the premises. The terrace and pool are a must for our relaxation. The kitchen lacks a few tools ( a cutting board would have been perfect!)\n\nGrocery stores and markets nearby , we haven't eaten at the restaurant once! Viva el BBQ!\n\n\n\nLocated in West Kelowna, it was perfect for our week off in the valley. It was our base. The suite is spacious and clean. Debra and her family where nice and  helpful. The patio and the pool were the major highlight of our relaxing vacation. The kitchen is good but could be more enjoyable with more tools as a cutting board! Groceries store & market are close, we didnt ate at the restaurant during all our stay!",
+    "translationNote": "Translated text supplied by user; original-language text not supplied."
+  },
+  {
+    "name": "Jamie",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "August 2016",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The host respected our privacy. The neighbourhood was quiet."
+  },
+  {
+    "name": "Aman",
+    "location": "Surrey, Canada",
+    "rating": 5,
+    "date": "April 2024",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Nice place to stay. We would love to visit again"
+  },
+  {
+    "name": "Heather",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "August 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Amazing stay! Place looks exactly like the listing"
+  },
+  {
+    "name": "Dayle",
+    "location": "Edmonton, Canada",
+    "rating": 4,
+    "date": "May 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Excellent place thank you"
+  },
+  {
+    "name": "Sanghee",
+    "location": "Port Coquitlam, Canada",
+    "rating": 4,
+    "date": "July 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "View and place were very impressive."
+  },
+  {
+    "name": "Sam",
+    "location": "Kamloops, Canada",
+    "rating": 4,
+    "date": "June 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "A good place to stay with pool, hot tub and sauna!"
+  },
+  {
+    "name": "Charlie",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "November 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Debra was a great host and it was a great stay"
+  },
+  {
+    "name": "Sueanne & Jim",
+    "location": "St. Albert, Canada",
+    "rating": 5,
+    "date": "September 2022",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "awesome anniversary getaway with loads of relaxation and fun poolside and in the hot tub, nicely laid out accommodations, with comfortable beds and welcomed privacy"
+  },
+  {
+    "name": "Matthew",
+    "location": "Costa Rica",
+    "rating": 5,
+    "date": "June 2016",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Tons of amenities, lots of space and easy check-in. Ten minute drive from downtown Kelowna. Would stay again"
+  },
+  {
+    "name": "Stuart",
+    "location": "Winnipeg, Canada",
+    "rating": 5,
+    "date": "May 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "amazing place! beautiful property! would absolutly book again!"
+  },
+  {
+    "name": "Shelby",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "August 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Excellent space, plenty of perks. Would stay again ✔️"
+  },
+  {
+    "name": "Gabriel",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "September 2017",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "very nice and confortable place to stay with family and friends."
+  },
+  {
+    "name": "Mark",
+    "location": "Chestermere, Canada",
+    "rating": 5,
+    "date": "July 2018",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "I’d highly recommend Debra’s place, wonderful pool area with view, place had everything you’d ever wish for"
+  },
+  {
+    "name": "Brandon",
+    "location": "Portage la Prairie, Canada",
+    "rating": 5,
+    "date": "June 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Amazing experience will definitely be back"
+  },
+  {
+    "name": "Gayatri",
+    "location": "",
+    "rating": 5,
+    "date": "October 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Needed a weekend getaway! And this was the perfect place for it."
+  },
+  {
+    "name": "Dennis",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Thank you Debra and Mike"
+  },
+  {
+    "name": "Jason",
+    "location": "Prince George, Canada",
+    "rating": 5,
+    "date": "September 2019",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Very nice accommodations"
+  },
+  {
+    "name": "Karin",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2022",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "The Airbnb was as advertised; spacious and comfortable. The pool and hot tub were great, the view was fantastic. The host was welcoming and easy to get along with. Highly recommend for a weekend getaway spot"
+  },
+  {
+    "name": "Cory",
+    "location": "",
+    "rating": 5,
+    "date": "April 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "what a great view!\nplace was clean, and the hot tub was amazing."
+  },
+  {
+    "name": "Shira",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "September 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Debra's place was the perfect end to a great vacation in Kelowna. We had a lovely night, and Debra was very accommodating to our group. The pool and hot tub overlooking the gorgeous mountains was unreal."
+  },
+  {
+    "name": "Josh",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "June 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Good spot to stay."
+  },
+  {
+    "name": "Kirsten",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "April 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Great place , the outdoor pool and hot tub were fantastic! House was clean and we would def stay again!!! Thank you 💕"
+  },
+  {
+    "name": "Adle",
+    "location": "Calgary, Canada",
+    "rating": 4,
+    "date": "May 2026",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Good views."
+  },
+  {
+    "name": "Khushaal",
+    "location": "",
+    "rating": 5,
+    "date": "July 2023",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "great pool and hot tub, amazing view. good for a family or freinds group."
+  },
+  {
+    "name": "Manish",
+    "location": "",
+    "rating": 4,
+    "date": "June 2021",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "its great little resort feeling,  perfect for a group or family."
+  },
+  {
+    "name": "Stephen",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "November 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Stayed for work, great place to stay."
+  },
+  {
+    "name": "Rajveer",
+    "location": "",
+    "rating": 5,
+    "date": "September 2025",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "it was very awesome experience. Everything was nice and clean"
+  },
+  {
+    "name": "Sayam",
+    "location": "Surrey, Canada",
+    "rating": 5,
+    "date": "September 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Good view for gettoghter with friends.\nTine limitation but its good"
+  },
+  {
+    "name": "Gaganpreet",
+    "location": "Kelowna, Canada",
+    "rating": 5,
+    "date": "December 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "It was nice place to stay"
+  },
+  {
+    "name": "Derek",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "May 2022",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "It’s beautiful. Great place and very friendly host"
+  },
+  {
+    "name": "Patrick",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "January 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Awesome place"
+  },
+  {
+    "name": "Ruby",
+    "location": "Vancouver, Canada",
+    "rating": 4,
+    "date": "July 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Well appointed, clean, spacious with friendly hosts"
+  },
+  {
+    "name": "River",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "It is a great place!"
+  },
+  {
+    "name": "Youngju",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "May 2018",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Awesome place, Perfect view!!\nMy favourite place in Kelowna :)"
+  },
+  {
+    "name": "Mona",
+    "location": "",
+    "rating": 4,
+    "date": "July 2022",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "nice place"
+  },
+  {
+    "name": "Daria",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "April 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Amazing! The view is amazing and the place is so nice! The location is perfect as-well"
+  },
+  {
+    "name": "Bruna",
+    "location": "Brazil",
+    "rating": 5,
+    "date": "June 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Beautiful place!!!"
+  },
+  {
+    "name": "Hirofumi",
+    "location": "",
+    "rating": 5,
+    "date": "June 2025",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "It was extremely fantastic, we would be staying again if we’re visiting Kelowna someday"
+  },
+  {
+    "name": "Jennifer",
+    "location": "Surrey, Canada",
+    "rating": 5,
+    "date": "July 2025",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "we will definitely be back!"
+  },
+  {
+    "name": "Nam",
+    "location": "Burnaby, Canada",
+    "rating": 5,
+    "date": "July 2019",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Place is nice and clean"
+  },
+  {
+    "name": "Kathy",
+    "location": "",
+    "rating": 5,
+    "date": "November 2024",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "nice place to stay. Great views of the water and mountains"
+  },
+  {
+    "name": "Jessica",
+    "location": "Salmon Arm, Canada",
+    "rating": 5,
+    "date": "October 2023",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great location and place to stay"
+  },
+  {
+    "name": "Baris",
+    "location": "Edmonton, Canada",
+    "rating": 5,
+    "date": "March 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great place , great experience had an amazing time staying here\nWould definitely recommend"
+  },
+  {
+    "name": "Manvinderjit",
+    "location": "",
+    "rating": 4,
+    "date": "June 2024",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "nice place but a bit over priced"
+  },
+  {
+    "name": "Matthew",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "June 2021",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Amazing hosts!"
+  },
+  {
+    "name": "Stephanie",
+    "location": "",
+    "rating": 5,
+    "date": "April 2022",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Very kind and the house and view is amazing! It was a memorable night with my friends ❤️"
+  },
+  {
+    "name": "Melissa",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "August 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Loved the views of the lake and mission hill"
+  },
+  {
+    "name": "Darron",
+    "location": "Sydney, Canada",
+    "rating": 5,
+    "date": "June 2021",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great people to deal with"
+  },
+  {
+    "name": "Volod",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "July 2020",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Great place to stay, property has a pool and a hot tub with a nice view"
+  },
+  {
+    "name": "Julia",
+    "location": "",
+    "rating": 4,
+    "date": "June 2022",
+    "stay": "",
+    "source": "Airbnb",
+    "review": "Otherwise it was great"
+  },
+  {
+    "name": "Somaya",
+    "location": "Coquitlam, Canada",
+    "rating": 5,
+    "date": "July 2020",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "The most beautiful house \nThe was super beautiful and kind person love everything more than that I think 1000% recommended will go back and back the price was so cheap"
+  },
+  {
+    "name": "Ali",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "December 2025",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Great place to stay , responsive host and amazing view"
+  },
+  {
+    "name": "Vahide",
+    "location": "Vancouver, Canada",
+    "rating": 5,
+    "date": "July 2023",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "It’s comfortable place to take a rest and enjoy amazing views"
+  },
+  {
+    "name": "Erin",
+    "location": "Sooke, Canada",
+    "rating": 5,
+    "date": "April 2019",
+    "stay": "Stayed with kids",
+    "source": "Airbnb",
+    "review": "Beautiful view, very spacious and clean. Great communication with our host. Will definitely stay there again when we go back to Kelowna"
+  },
+  {
+    "name": "Conrad",
+    "location": "Victoria, Canada",
+    "rating": 4,
+    "date": "May 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Was a nice place to visit"
+  },
+  {
+    "name": "Ellen",
+    "location": "",
+    "rating": 5,
+    "date": "January 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Lots of room and amazing views from the hot tub ❤️"
+  },
+  {
+    "name": "Maura",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "October 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great spot in Kelowna area to base lots of activities"
+  },
+  {
+    "name": "Bran",
+    "location": "Toronto, Canada",
+    "rating": 5,
+    "date": "November 2024",
+    "stay": "Stayed a few nights",
+    "source": "Airbnb",
+    "review": "Great please to stay, the views are spectacular"
+  },
+  {
+    "name": "Kima",
+    "location": "Calgary, Canada",
+    "rating": 5,
+    "date": "June 2024",
+    "stay": "Group trip",
+    "source": "Airbnb",
+    "review": "Good"
+  },
+  {
+    "name": "Owen",
+    "location": "",
+    "rating": 5,
+    "date": "April 2024",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "good"
+  },
+  {
+    "name": "Willow",
+    "location": "",
+    "rating": 4,
+    "date": "March 2022",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "."
+  },
+  {
+    "name": "Shaveena",
+    "location": "Surrey, Canada",
+    "rating": 2,
+    "date": "January 2019",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "N/A"
+  },
+  {
+    "name": "Starr Lee",
+    "location": "",
+    "rating": 5,
+    "date": "December 2021",
+    "stay": "Stayed one night",
+    "source": "Airbnb",
+    "review": "Fantastic"
+  }
+]
