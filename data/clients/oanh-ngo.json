@@ -1,0 +1,23 @@
+{
+  "id": "oanh-ngo",
+  "name": "Oanh Ngo",
+  "email": "tian.chianti@gmail.com",
+  "phone": "",
+  "login": "",
+  "temp": "warm",
+  "notes": "Requested a free website. Airbnb: https://airbnb.com/h/uomretreat . Initial supplied address: district 1 ho chi minh city, Vietnam. Later listing material describes Dalat, Vietnam; location conflict needs confirmation. Property title Uom Retreat is provisional, derived from Airbnb alias. No phone supplied.",
+  "billingNotes": "",
+  "properties": [
+    {
+      "id": "uom-retreat",
+      "name": "Uom Retreat",
+      "siteUrl": ""
+    }
+  ],
+  "proposals": [],
+  "timeline": {
+    "request": "2026-10-25"
+  },
+  "createdAt": "2026-10-25T23:40:25.793794+00:00",
+  "updatedAt": "2026-10-25T23:40:25.793794+00:00"
+}
