@@ -1,0 +1,85 @@
+{
+  "intakeId": "beautyview-lakeview-suite",
+  "verifiedAt": "2026-10-25T23:39:57.158739+00:00",
+  "purpose": "Sources for About and Guidebook. Research recommendations are distinct from host-authored tips. Confirm opening/access information again before visitor publication.",
+  "places": [
+    {
+      "name": "Mission Hill Family Estate",
+      "category": "Wineries",
+      "url": "https://www.missionhillwinery.com/",
+      "verifiedFacts": [
+        "Wine tastings and experiences are offered.",
+        "Estate access is for members or by reservation; same-day bookings depend on availability."
+      ],
+      "use": "About winery card and Guidebook booking link. No unverified travel time."
+    },
+    {
+      "name": "Quails’ Gate Estate Winery",
+      "category": "Wineries",
+      "url": "https://www.quailsgate.com/reservation/",
+      "verifiedFacts": [
+        "The official page lists wine tasting and estate experiences.",
+        "The estate also links to Old Vines Restaurant and The Market."
+      ],
+      "use": "About winery card and Guidebook tasting reservation link; refer guests to current menus and experience availability."
+    },
+    {
+      "name": "Sncewips Heritage Museum",
+      "category": "Culture",
+      "url": "https://www.sncewips.com/",
+      "verifiedFacts": [
+        "Indigenous owned and operated museum sharing syilx culture and heritage.",
+        "Official address: Unit 260 at 525 Highway 97."
+      ],
+      "use": "About culture reference and Guidebook museum entry. Airbnb supplied an about-10-minute-walk claim; the actual route has not been verified, so omit that duration in guest copy."
+    },
+    {
+      "name": "Boucherie Rush Trail",
+      "category": "Nature and hikes",
+      "url": "https://www.visitwestside.com/listings/boucherie-rush-trail/",
+      "verifiedFacts": [
+        "Official tourism listing gives a 6 km round trip, approximately 1–3 hours.",
+        "Listed difficulty is moderate to difficult; elevation gain is 275 metres.",
+        "Trailhead listed at 2775 East Boundary Road."
+      ],
+      "use": "About hiking card and Guidebook hiking option with current conditions link. Treat timing as the tourism source’s trail estimate, not travel time from the property."
+    },
+    {
+      "name": "Regional parks and trails",
+      "category": "Nature and hikes",
+      "url": "https://www.rdco.com/parks-and-trails/park-and-trail-directory/",
+      "verifiedFacts": [
+        "The official directory lists Kalamoir and Rose Valley as having only some trails open during wildfire recovery.",
+        "The directory links to Gellatly Nut Farm, Glen Canyon and Goats Peak park resources."
+      ],
+      "use": "Guidebook live trail-condition link. Do not promise that whole parks or every trail are open."
+    },
+    {
+      "name": "Bear Creek Park",
+      "category": "Nature and hikes",
+      "url": "https://bcparks.ca/bear-creek-park/",
+      "verifiedFacts": [
+        "BC Parks describes lakeshore, beach and canyon terrain.",
+        "The official search-index advisory says the Canyon Trail network west of Westside Road is closed until further notice."
+      ],
+      "use": "Do not present Canyon Trail as an available hike. Direct guests to current BC Parks advisories before any visit."
+    }
+  ],
+  "guestPlanningNotes": [
+    "Use official venue links for current hours, tasting reservations, availability and trail access.",
+    "Avoid invented distances or driving/walking times from the suite.",
+    "No unsupplied trail, winery or museum photos are represented as Debra’s property photos."
+  ],
+  "listingHighlightSource": {
+    "url": "https://www.airbnb.com/rooms/11870212",
+    "providedBy": "User paste and parent visible listing check, 2026-10-25",
+    "priorities": [
+      "West Kelowna wine-country setting",
+      "Private pool, hot tub and infrared sauna",
+      "1,300 sq ft walkout suite",
+      "Covered deck with lake views",
+      "Attentive host, supported by supplied guest reviews"
+    ],
+    "unverifiedDetail": "About a 10-minute walk to Sncewips Heritage Museum is a listing-summary claim; route unverified."
+  }
+}

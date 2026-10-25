@@ -5,6 +5,7 @@ One photo collection per intake. Originals retain their filenames and bytes. Pre
 | Client / property | Collection | Files | Unique images |
 | --- | --- | ---: | ---: |
 | Augusta Lake House (Andrey) | [Open collection](augusta-lake/photos/) | 73 | 69 |
+| Beautyview Lakeview Suite (Debra Lott) | [Open collection](beautyview-lakeview-suite/photos/) | 32 | 27 |
 | Clearlake Paradise (Anna Gingis) | [Open collection](clearlake-paradise/photos/) | 31 | 29 |
 | Cozy Retreat in Lisbon Falls (Kaily) | [Open collection](lisbon-falls/photos/) | 35 | 30 |
 | Milford Sound Beach House (Dmitry) | [Open collection](milford-sound-beach-house/photos/) | 0 | 0 |
