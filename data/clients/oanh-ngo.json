@@ -5,13 +5,13 @@
   "phone": "",
   "login": "",
   "temp": "warm",
-  "notes": "Requested a free website. Airbnb: https://airbnb.com/h/uomretreat . Initial supplied address: district 1 ho chi minh city, Vietnam. Later listing material describes Dalat, Vietnam; location conflict needs confirmation. Property title Uom Retreat is provisional, derived from Airbnb alias. No phone supplied.",
+  "notes": "Requested a free website. Airbnb: https://airbnb.com/h/uomretreat . Initial supplied address: district 1 ho chi minh city, Vietnam. Later listing material describes Dalat, Vietnam; location conflict needs confirmation. Airbnb alias later matched in connected browser to Retreat House w Garden/3km to Dalat market in Dalat. Canonical listing: https://www.airbnb.com/rooms/1285415119367493577 . User supplied Lazy target: https://dalat-retreat.lazy.vacations/ ; public deployment initially returned NXDOMAIN. No phone supplied.",
   "billingNotes": "",
   "properties": [
     {
       "id": "uom-retreat",
-      "name": "Uom Retreat",
-      "siteUrl": ""
+      "name": "Retreat House w Garden/3km to Dalat market",
+      "siteUrl": "https://dalat-retreat.lazy.vacations/"
     }
   ],
   "proposals": [],
@@ -19,5 +19,5 @@
     "request": "2026-10-25"
   },
   "createdAt": "2026-10-25T23:40:25.793794+00:00",
-  "updatedAt": "2026-10-25T23:40:25.793794+00:00"
+  "updatedAt": "2026-10-25T23:48:30.740851+00:00"
 }
