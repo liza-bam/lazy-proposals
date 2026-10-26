@@ -13,7 +13,7 @@ async function compose({ from, to, subject, html, plain, attachment, attachmentN
   const file = attachment ? path.join(dir, path.basename(attachmentName || 'attachment.pdf')) : '';
   if (file) fs.writeFileSync(file, Buffer.from(attachment, 'base64'));
   await run('osascript', ['-l', 'JavaScript', path.join(__dirname, 'clipboard.js'), path.join(dir, 'm.html'), path.join(dir, 'm.txt')]);
-  await run('osascript', [path.join(__dirname, 'compose.applescript'), from, to || '', subject, file]);
+  await run('osascript', [path.join(__dirname, 'compose.applescript'), from, to || '', subject, file, path.join(__dirname, 'clipboard.js')]);
 }
 
 http.createServer((req, res) => {

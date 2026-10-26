@@ -53,20 +53,8 @@
   const FONT = "Georgia,'Noto Serif','Times New Roman',serif", TEXT = 'font-family:' + FONT + ';font-size:15px;line-height:1.55;color:#17363c;';
   // The LAZY email button (rentals-marketing tools/intake/Code.gs button()), in the site's primary green.
   const emailButton = (u, label) => '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 0;"><tr><td style="background:#057d7b;border-radius:8px;"><a href="' + escHtml(u) + '" style="display:inline-block;padding:13px 24px;font-family:' + FONT + ';font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#ffffff;text-decoration:none;">' + escHtml(label) + '</a></td></tr></table>';
-  // Sandy's signature in every email: the closing, the LAZY logo, her name large, how to reach her.
-  function signature(settings) {
-    const g = settings.signature, lines = String(settings.signoff || '').split('\n'), closing = lines.slice(0, -1).join(' ') || 'Talk soon!';
-    return '<p style="margin:0 0 14px;font-family:' + FONT + ';font-size:16px;line-height:1.5;color:#17363c;">' + escHtml(closing) + '</p>' +
-      '<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>' +
-      '<td valign="middle" style="padding-right:16px;"><img src="' + escHtml(g.logo) + '" width="72" alt="Lazy" style="display:block;border:0;width:72px;height:auto;"></td>' +
-      '<td valign="middle" style="font-family:' + FONT + ';">' +
-      '<div style="font-style:italic;font-weight:700;font-size:26px;line-height:1.1;color:#17363c;">' + escHtml(g.name) + '</div>' +
-      '<div style="font-size:14px;line-height:1.5;color:#068b88;padding-top:2px;">' + escHtml(g.title) + '</div>' +
-      '<div style="font-size:14px;line-height:1.5;padding-top:2px;"><a href="mailto:' + escHtml(settings.senderEmail) + '" style="color:#17363c;text-decoration:none;">' + escHtml(settings.senderEmail) + '</a> &middot; <a href="tel:' + escHtml(g.phone.replace(/[^\d+]/g, '')) + '" style="color:#17363c;text-decoration:none;">' + escHtml(g.phone) + '</a></div>' +
-      '</td></tr></table>';
-  }
   function websiteReadyEmail(template, f, settings, attach) {
-    const fill = { subject: escHtml(f.subject), greeting: escHtml(f.first), marketingUrl: escHtml(settings.marketingUrl), facebookUrl: escHtml(settings.facebookUrl), signature: signature(settings),
+    const fill = { subject: escHtml(f.subject), greeting: escHtml(f.first), marketingUrl: escHtml(settings.marketingUrl), facebookUrl: escHtml(settings.facebookUrl),
       websiteButtons: f.properties.map(p => emailButton(p.siteUrl, f.properties.length > 1 ? p.name : 'Visit your website')).join(''),
       loginLine: f.login ? '<p style="margin:12px 0 0;' + TEXT + '">Your login: <strong>' + escHtml(f.login) + '</strong></p>' : '',
       offerLine: attach ? '<p style="margin:0 0 18px;' + TEXT + '">' + escHtml(settings.proposal.attachNote) + '</p>' : '' };
@@ -86,7 +74,7 @@
     const owner = client.name || '', first = /&| and /.test(owner) ? owner : owner.split(/\s+/)[0];
     const readyDate = addBusinessDays(from, 2).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
     const subject = 'Thank you — your LAZY website is on its way';
-    const fill = { subject: escHtml(subject), greeting: escHtml(first), readyDate: escHtml(readyDate), signature: signature(settings) };
+    const fill = { subject: escHtml(subject), greeting: escHtml(first), readyDate: escHtml(readyDate) };
     return { subject, readyDate, html: template.replace(/\{\{(\w+)\}\}/g, (m, k) => fill[k] == null ? m : fill[k]) };
   }
   return { CLIENT_STEPS, PROPERTY_STEPS, isOther, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields, websiteReadyEmail, addBusinessDays, confirmationEmail };
