@@ -1,0 +1,28 @@
+{
+  "recordedAt": "2026-10-26T03:53:23.924328+00:00",
+  "revision": 16,
+  "published": true,
+  "publicPageVerified": true,
+  "files": [
+    {
+      "path": "publication-evidence.json",
+      "bytes": 2704,
+      "sha256": "cf4a78e23f05c8615e65b252705fecd3c9e11bee42b03fb601d1022085e9fbfc"
+    },
+    {
+      "path": "screenshots/beautyview-live-about-desktop.png",
+      "bytes": 357599,
+      "sha256": "3c31c7f1bbba528ad112e6e8976833dffc6d86186721c6cb7807a86044319c8d"
+    },
+    {
+      "path": "screenshots/beautyview-live-facts-desktop.png",
+      "bytes": 476739,
+      "sha256": "a89644888f4b254dcf39bd9fe8dd28dbb7e394f03f2e8a79388ad645f329d948"
+    },
+    {
+      "path": "screenshots/beautyview-live-home-desktop.png",
+      "bytes": 937939,
+      "sha256": "a8b74816ed161af61c8068ab6a638a8d7bbd18478f829fbcdf9061df65053ccf"
+    }
+  ]
+}

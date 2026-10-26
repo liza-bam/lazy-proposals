@@ -1,0 +1,71 @@
+{
+  "recordedAt": "2026-10-26T03:53:23.924328+00:00",
+  "intakeId": "beautyview-lakeview-suite",
+  "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
+  "slug": "beautyview",
+  "liveUrl": "https://beautyview.lazy.vacations/",
+  "status": "published and visibly verified on actual public domain",
+  "published": true,
+  "publicPageVerified": true,
+  "reviewedContentRevision": 15,
+  "currentPublishedRevision": 16,
+  "publishedAt": "2026-10-26T03:33:37.050Z",
+  "draftMatchesPublished": true,
+  "publishResponse": {
+    "requestedRev": 15,
+    "publishId": "22a195c3-7cb6-468d-88b3-235e214c57a2",
+    "acceptedAt": "2026-10-26T03:31:50.982Z"
+  },
+  "publicationNormalization": {
+    "onlyConfigChange": "Native hero.shareCard generated from existing uploaded property photo.",
+    "authoredSectionsReviewsLibraryGuidebookUnchanged": true,
+    "theme": "Native serialization adds border-width alias and shape tokens to editor preferences; no authored color/font/layout replacement claimed."
+  },
+  "connectedBrowserVerification": {
+    "performedBy": "primary build agent",
+    "actualPublicDomain": true,
+    "pages": [
+      {
+        "name": "Home",
+        "route": "/",
+        "failedImages": 0,
+        "horizontalOverflow": false
+      },
+      {
+        "name": "Stay",
+        "route": "/houseinfo.dc.html",
+        "factsFirst": true,
+        "failedImages": 0
+      },
+      {
+        "name": "About",
+        "route": "/about.dc.html",
+        "failedImages": 0
+      },
+      {
+        "name": "Guidebook",
+        "route": "/guidebook.dc.html",
+        "failedImages": 0
+      }
+    ],
+    "screenshotsCaptured": 3,
+    "inquirySubmitted": false
+  },
+  "independentReadOnlyChecks": {
+    "freshAuthenticatedDraft": true,
+    "reviews": 432,
+    "uniqueLibraryPhotos": 27,
+    "dns": "System and 1.1.1.1 resolvers returned CNAME d3dspltbg95q3w.cloudfront.net TTL300. No DNS or AWS changes performed.",
+    "http": "HTTP/2 200 at Beautyview hostname/SNI through verified CloudFront IP 13.249.182.92 with curl --resolve while local negative DNS cache persisted;492661 bytes, AmazonS3/CloudFront, LAX53, last-modified 2026-10-26T03:34:16Z. This forced-resolution HTTP check is separate from the primary agent actual public browser verification.",
+    "publicBodyContains": [
+      "Beautyview at a glance",
+      "© 2026 Beautyview"
+    ],
+    "liveScreenshotsIndependentlyViewed": true
+  },
+  "pollingLimitation": "Legacy publish statusGET still said building despite actual public bundle and browser verification; it was not used as deployment proof.",
+  "remaining": [
+    "Email delivery untested; no Inquiry sent and no test booking submitted."
+  ],
+  "fullBackendReadbackArchived": false
+}

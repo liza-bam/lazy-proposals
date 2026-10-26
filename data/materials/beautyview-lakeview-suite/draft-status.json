@@ -1,13 +1,13 @@
 {
-  "recordedAt": "2026-10-26T03:20:23.262488+00:00",
-  "status": "completed editable draft; verified; unpublished",
-  "published": false,
-  "publicPageVerified": false,
+  "recordedAt": "2026-10-26T03:53:23.924328+00:00",
+  "status": "published and verified on actual public domain",
+  "published": true,
+  "publicPageVerified": true,
   "verification": {
-    "savedDraftReadback": "fresh authenticated revision15 readback deep-equality verified by primary build agent; captured readback and native data independently inspected",
+    "savedDraftReadback": "Fresh authenticated current revision 16: draftMatchesPublished true; reviewed revision 15 authored content/reviews/library/Guidebook unchanged; native publication adds hero.shareCard and theme serialization.",
     "editableDraftComplete": true,
     "overallBuildComplete": true,
-    "completionScope": "editable draft only; publication and email delivery are separate",
+    "completionScope": "Completed editable website and actual public deployment; email delivery was not tested.",
     "guestVisualQA": {
       "reviewedContentRevision": 14,
       "desktopTabletTiles": 37,
@@ -46,14 +46,44 @@
       "emailDeliveryTested": false
     },
     "allPhotosOpens": true,
-    "externalLinksReviewedAgainstSources": true
+    "externalLinksReviewedAgainstSources": true,
+    "publication": {
+      "performedBy": "primary build agent",
+      "actualPublicDomain": true,
+      "pages": [
+        {
+          "name": "Home",
+          "route": "/",
+          "failedImages": 0,
+          "horizontalOverflow": false
+        },
+        {
+          "name": "Stay",
+          "route": "/houseinfo.dc.html",
+          "factsFirst": true,
+          "failedImages": 0
+        },
+        {
+          "name": "About",
+          "route": "/about.dc.html",
+          "failedImages": 0
+        },
+        {
+          "name": "Guidebook",
+          "route": "/guidebook.dc.html",
+          "failedImages": 0
+        }
+      ],
+      "screenshotsCaptured": 3,
+      "inquirySubmitted": false
+    }
   },
   "completionTimelineMarked": false,
   "intakeId": "beautyview-lakeview-suite",
   "clientId": "debra-lott",
   "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
-  "savedDraftRevision": 15,
-  "savedDraftPublishedAt": null,
+  "savedDraftRevision": 16,
+  "savedDraftPublishedAt": "2026-10-26T03:33:37.050Z",
   "photoSourceFiles": 32,
   "uniquePhotosInLibrary": 27,
   "genuineReviewsImported": 432,
@@ -179,7 +209,6 @@
     "authorizedCustomAdditionsVisible": true
   },
   "remaining": [
-    "Draft is unpublished; no live deployment is claimed.",
     "Email delivery remains untested; no inquiry or booking was submitted.",
     "Any future booking-provider integration or precise date-dependent cancellation terms need separate verification."
   ],
@@ -188,7 +217,8 @@
     "latestCapturedDraftReadbackSha256": "f6475317060aa0586ef7d011ac10357007da9e988a0bf204c9c440277783a85d",
     "originalImportedLibraryAndReviewsReadbackSha256": "2743647c44b33b9fc1320e231c4908800399ad9b1f99f47c26927cc65c30eb3a",
     "priorRevision6DraftReadbackSha256": "dcf903add6508ca079cfe7c3bdde55a1f4990ac76540b9a48461174b1b987a9f",
-    "finalArchiveManifest": "verification/final-revision-15/manifest.json"
+    "finalArchiveManifest": "verification/final-revision-15/manifest.json",
+    "publicationArchiveManifest": "verification/published-revision-16/manifest.json"
   },
   "nativeMasthead": {
     "layout": "split",
@@ -214,5 +244,7 @@
     "otherRecordedRequirements": "pass",
     "unmodifiedStockGatePassClaimed": false
   },
-  "evidenceArchiveUrl": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15"
+  "evidenceArchiveUrl": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/beautyview-lakeview-suite/verification/published-revision-16",
+  "publishedRevision": 16,
+  "liveUrl": "https://beautyview.lazy.vacations/"
 }
