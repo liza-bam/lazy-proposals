@@ -1,12 +1,12 @@
 {
-  "recordedAt": "2026-10-26T00:22:17.630881+00:00",
-  "status": "saved draft; unfinished; not published",
+  "recordedAt": "2026-10-26T00:26:52.678806+00:00",
+  "status": "saved text-only partial draft; unfinished; not published",
   "published": false,
   "publicPageVerified": false,
   "verification": {
-    "savedDraftReadback": "captured authenticated backend readback inspected",
-    "desktopTabletPhoneEditorQA": "pending",
-    "desktopTabletPhoneGuestPreviewQA": "pending",
+    "savedDraftReadback": "captured authenticated backend fresh readback inspected",
+    "desktopTabletPhoneEditorQA": "ongoing; not complete",
+    "desktopTabletPhoneGuestPreviewQA": "pending; not complete",
     "overallBuildComplete": false
   },
   "completionTimelineMarked": false,
@@ -14,18 +14,20 @@
   "clientId": "oanh-ngo",
   "siteId": "52ce0d59-4d43-4abb-a2dd-6e41c90605d6",
   "propertySlug": "dalat-retreat",
-  "savedDraftRevision": 4,
+  "savedDraftRevision": 5,
   "savedDraftPublishedAt": null,
   "nativePropertyAddress": "Da Lat, Vietnam",
   "publicLocationPrecision": "city only; exact property street address pending",
   "photos": {
     "sourceCollectionMissing": true,
-    "websitePhotoImportCompleted": false
+    "websitePhotoImportCompleted": false,
+    "libraryPhotoCount": 0
   },
   "reviews": {
     "sourceGuestReviewsArchived": 37,
     "sourceHostResponsesArchivedSeparately": 2,
-    "importedIntoWebsite": false
+    "importedIntoWebsite": true,
+    "websiteReviewCount": 37
   },
   "guidebook": {
     "mapOn": false,
@@ -35,15 +37,87 @@
     "verifiedDalatCustomCards": "researched proposal prepared only; not saved into website"
   },
   "remaining": [
-    "Actual property photo collection.",
-    "Exact property street address and correct property pin.",
-    "Import the 37 archived guest reviews into the property website.",
-    "Populate authored website pages and requested native Facts type once available.",
-    "Relevant city Guidebook cards require a scoped native write and verification.",
-    "Full editor/guest viewport QA and publication remain undone."
+    "Actual property photo collection and native library import.",
+    "Exact property street address and correct property pin; keep map off until verified.",
+    "Requested standalone native Facts section availability and correct first Stay placement.",
+    "Complete authored pages, visual composition and required section diversity after media is available; this is a partial text draft.",
+    "Relevant city Guidebook card proposal still needs a scoped native save and verification.",
+    "Full editor/guest-preview desktop/tablet/phone QA and publication remain undone."
   ],
   "sourceEvidence": {
     "capturedGuidebookMapHiddenReadbackSha256": "8bbf65e73557377e13c8fbd487942d5a225dce86f6bd707662f6de9a9efa8fdc",
-    "capturedNativeAddressReadbackSha256": "8970cdbc4ac4fa3abe36f159007de6babe94d51826299b45dcbde1ef32abbdc1"
+    "capturedNativeAddressReadbackSha256": "8970cdbc4ac4fa3abe36f159007de6babe94d51826299b45dcbde1ef32abbdc1",
+    "latestTextDraftReadbackSha256": "8c0f74caa925db567a3a0a87a2364e0cf12156d87a994929b3c1fefd09dbbc33"
+  },
+  "authoredContentSections": {
+    "Home": 3,
+    "Stay": 6,
+    "About": 4
+  },
+  "nativeSectionTypesByPage": {
+    "Home": [
+      {
+        "id": "home-amenities",
+        "type": "list"
+      },
+      {
+        "id": "home-garden",
+        "type": "highlights"
+      },
+      {
+        "id": "home-welcome",
+        "type": "guide"
+      }
+    ],
+    "Stay": [
+      {
+        "id": "stay-at-a-glance",
+        "type": "list"
+      },
+      {
+        "id": "stay-sleeping",
+        "type": "guide"
+      },
+      {
+        "id": "stay-amenities",
+        "type": "list"
+      },
+      {
+        "id": "stay-arrival",
+        "type": "guide"
+      },
+      {
+        "id": "stay-rules",
+        "type": "highlights"
+      },
+      {
+        "id": "stay-bring",
+        "type": "list"
+      }
+    ],
+    "About": [
+      {
+        "id": "about-garden",
+        "type": "guide"
+      },
+      {
+        "id": "about-rhythm",
+        "type": "highlights"
+      },
+      {
+        "id": "about-hosts",
+        "type": "guide"
+      },
+      {
+        "id": "about-dalat",
+        "type": "list"
+      }
+    ]
+  },
+  "textDraftSaveVerification": {
+    "sequence": "fresh GET revision4 -> PUT with exact revision4 -> fresh GET revision5; primary build agent reports deep equality of intended and saved config",
+    "capturedReadbackInspected": true,
+    "guidebookExactlyUnchangedFromRev4": true,
+    "themeExactlyUnchangedFromRev4": true
   }
 }
