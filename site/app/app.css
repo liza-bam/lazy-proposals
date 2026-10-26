@@ -66,3 +66,8 @@ textarea.tall { min-height: 180px; }
 .is-skip b { text-decoration: line-through; }
 
 @media (max-width: 760px) { .app { grid-template-columns: 1fr; } .app__side { position: static; } .grid2 { grid-template-columns: 1fr; } }
+
+/* A property's intake opens inside its card on the client page. */
+.intake { margin-top: var(--s2); }
+.intake > summary { cursor: pointer; font-weight: 600; padding: var(--s1) 0; }
+.intake__body { display: flex; flex-direction: column; gap: var(--s3); padding-top: var(--s2); }

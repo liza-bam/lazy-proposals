@@ -7,7 +7,7 @@
 <title>Clients — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css?v=green1">
-<link rel="stylesheet" href="app.css?v=clients5">
+<link rel="stylesheet" href="app.css?v=clients6">
 </head>
 <body>
 <div class="app">
@@ -79,12 +79,19 @@ async function showClient(id,kind) {
   const contact='<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>';
   const notes=clientField('notes','Client notes',c.notes,'area'),details=contact+notes;
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
-  const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>');
+  const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row">'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'<span data-reviews="'+esc(p.id)+'"></span></div><details class="intake" data-intake="'+esc(p.id)+'"><summary>Intake</summary><div class="intake__body"></div></details></article>').join(''):'<p class="muted">Add this client’s first property.</p>')+'<div id="new-intake"></div>';
   $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p>'+(id?contact.replace(/<(input|textarea) /g,'<$1 form="client-rec" '):'')+'</section>'+
     '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Client notes',notes)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
     (id?'':'<div class="row"><button class="go" type="submit">Create client</button><span class="msg" id="msg" role="status"></span></div>')+'</form>'+
     (id?accordion('Properties',properties)+proposalHistory(c):'');
   $('#client-rec').onsubmit=saveClient;
+  props.forEach(p=>reviewsLink(p.id));
+}
+// A property's reviews, linked on GitHub: data/materials/<property>/reviews.csv, or its materials folder.
+async function reviewsLink(id) {
+  const files=await list('data/materials/'+id),el=document.querySelector('[data-reviews="'+CSS.escape(id)+'"]');if(!el)return;
+  const f=files.find(x=>x.name==='reviews.csv')||files.find(x=>/^reviews/.test(x.name));
+  el.outerHTML=f?link('https://github.com/'+REPO+'/blob/main/'+f.path,'Reviews'):'<span class="muted">No reviews file</span>';
 }
 // An other client: one loose card — who, what, where their files are, and notes.
 function showOther(c,id) {
@@ -105,12 +112,12 @@ function proposalHistory(c) {
 // Saves refresh the record; keep the user's place in its native accordions.
 function captureViewState() {
   return {
-    openPanels: [...document.querySelectorAll('#main details[open]')].map(d=>d.querySelector(':scope > summary').textContent),
+    openPanels: [...document.querySelectorAll('#main details[open]:not([data-intake])')].map(d=>d.querySelector(':scope > summary').textContent),
     x: window.scrollX, y: window.scrollY
   };
 }
 function restoreViewState(view) {
-  document.querySelectorAll('#main details').forEach(d=>{d.open=view.openPanels.includes(d.querySelector(':scope > summary').textContent);});
+  document.querySelectorAll('#main details:not([data-intake])').forEach(d=>{d.open=view.openPanels.includes(d.querySelector(':scope > summary').textContent);});
   window.scrollTo(view.x,view.y);
 }
 async function saveClient(e) {
@@ -151,22 +158,32 @@ function readiness(r) {
   return missing.length ? 'To build: add ' + missing.join(', ') + '.' : 'The three core sources are present. Verify the listing and materials before building.';
 }
 
-async function open(id) {
+async function open(id,host) {
   const sequence=++openSequence, f=id?await readJson('data/websites/'+id+'.json'):null;
   if(sequence!==openSequence)return;
   if(id&&!f)throw Error('Property not found. Reload the client.');
   const r=f?f.data:{id:'',name:'',clientId:currentClient.id,timeline:{}};
   const client=ClientModel.clientForProperty(r,clientRecords)||currentClient;
   if(!client)throw Error('This property needs a client before it can be edited.');
-  current=id;currentRecord=r;currentClient=client;sha=f?f.sha:null;side();
+  // The intake opens inside its property's card on the client page; one at a time.
+  if(!host||!host.isConnected){
+    if(!currentClient||currentClient.id!==client.id||!$('#client-rec'))await showClient(client.id);
+    host=id?document.querySelector('[data-intake="'+CSS.escape(id)+'"] .intake__body'):$('#new-intake');
+    if(!host)throw Error('Property not found. Reload the client.');
+  }
+  document.querySelectorAll('.intake__body, #new-intake').forEach(b=>{if(b!==host){b.innerHTML='';const d=b.closest('details[data-intake]');if(d)d.open=false;}});
+  const card=host.closest('details[data-intake]');if(card)card.open=true;
+  [...document.querySelectorAll('#main details')].forEach(d=>{if(d.contains(host))d.open=true;});
+  current=id;currentRecord=r;currentClient=client;sha=f?f.sha:null;
   history.replaceState(null,'','?client='+encodeURIComponent(client.id)+(id?'&property='+encodeURIComponent(id):'&newProperty=1'));
-  $('#main').innerHTML='<div class="row"><button class="go go--quiet" type="button" data-client="'+esc(client.id)+'">← '+esc(client.name)+'</button><span>'+esc(r.name||'New property')+'</span></div><form id="rec"><div class="box intake-actions"><div class="row"><button class="go" type="submit">Save intake</button><a class="go go--quiet" href="propose.html?v=vector2&client='+encodeURIComponent(client.id)+'">Client proposal</a><span class="msg" id="msg" role="status"></span></div><p class="muted" id="readiness">'+esc(readiness(r))+'</p>'+link(r.imageLink,'Open photo collection')+'</div>'+SECTIONS.map((s,i)=>section(s,r,i)).join('')+'<details class="box optional"><summary>Property progress</summary><div class="optional__body">'+timeline(r.timeline,propertySteps())+'</div></details></form>';
-  $('#rec').onsubmit=submit;$('#rec').oninput=()=>{$('#readiness').textContent=readiness(Object.fromEntries(new FormData($('#rec'))));say('Unsaved changes');};
+  host.innerHTML='<form id="rec"><div class="box intake-actions"><div class="row"><button class="go" type="submit">Save intake</button><span class="msg" id="msg-intake" role="status"></span></div><p class="muted" id="readiness">'+esc(readiness(r))+'</p>'+link(r.imageLink,'Open photo collection')+'</div>'+SECTIONS.map((s,i)=>section(s,r,i)).join('')+'<details class="box optional"><summary>Property progress</summary><div class="optional__body">'+timeline(r.timeline,propertySteps())+'</div></details></form>';
+  $('#rec').onsubmit=submit;$('#rec').oninput=()=>{$('#readiness').textContent=readiness(Object.fromEntries(new FormData($('#rec'))));sayIntake('Unsaved changes');};
 }
+const sayIntake=(t,err)=>{const m=$('#msg-intake');if(m){m.textContent=t;m.className='msg'+(err?' msg--err':'');}};
 async function submit(e) {
   e.preventDefault();if(saving)return;
   const view=captureViewState(),entries=new FormData(e.target),d=Object.fromEntries(entries),propertyId=current,source=currentRecord,client=currentClient,revision=sha,id=propertyId||slug(d.name);
-  if(!id||!String(d.name||'').trim())return say('Give the property a name.',true);
+  if(!id||!String(d.name||'').trim())return sayIntake('Give the property a name.',true);
   saving=true;
   try {
     if(!propertyId && await readJson('data/websites/'+id+'.json'))throw Error('A property with that name already exists. Choose another name.');
@@ -174,8 +191,9 @@ async function submit(e) {
     if(!propertyId){r.ownerName=client.name;r.ownerEmail=client.email||'';r.ownerPhone=client.phone||'';r.login=r.login||client.login||'';}
     await save('data/websites/'+id+'.json',JSON.stringify(r,null,2)+'\n',revision,'Property intake: '+r.name);
     const i=records.findIndex(x=>x.id===id);if(i<0)records.push(r);else records[i]=r;
-    await open(id);say('Intake saved');restoreViewState(view);
-  } catch(er){say(er.message,true);}finally{saving=false;}
+    if(!propertyId)await showClient(client.id);
+    await open(id);sayIntake('Intake saved');restoreViewState(view);
+  } catch(er){sayIntake(er.message,true);}finally{saving=false;}
 }
 // The confirmation email, opened in Mail by the Mail helper on this Mac (tools/mail-helper). Never sends.
 async function sendConfirmation(c) {
@@ -192,6 +210,7 @@ async function sendConfirmation(c) {
 // Save client turns primary only once Details or Billing hold an unsaved change; the timeline saves itself.
 document.addEventListener('input',e=>{const f=e.target.form;if(f&&f.id==='client-rec'&&!/^(tl|sk)_/.test(e.target.name||''))$('#save-client')?.classList.remove('go--quiet');});
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
+document.addEventListener('toggle',e=>{const d=e.target;if(d.matches&&d.matches('details[data-intake]')&&d.open&&!d.querySelector('#rec'))open(d.dataset.intake,d.querySelector('.intake__body')).catch(er=>say(er.message,true));},true);
 document.addEventListener('click',async e=>{
   try {
     const c=e.target.closest('[data-client]');if(c){await showClient(c.dataset.client);return;}
@@ -199,7 +218,7 @@ document.addEventListener('click',async e=>{
     const p=e.target.closest('[data-property]');if(p){await open(p.dataset.property);return;}
     if(e.target.id==='new'){await showClient(null);return;}
     if(e.target.id==='new-other'){await showClient(null,'other');return;}
-    if(e.target.id==='add-property'){await open(null);return;}
+    if(e.target.id==='add-property'){await open(null,$('#new-intake'));return;}
     const cal=e.target.closest('[data-cal]');if(cal){const d=cal.form.elements['tl_'+cal.dataset.cal];try{d.showPicker();}catch(er){d.focus();d.click();}}
     const done=e.target.closest('[data-done]'),skip=e.target.closest('[data-skip]'),b=done||skip;
     if(b){const k=done?b.dataset.done:b.dataset.skip,f=b.form;f.elements['tl_'+k].disabled=false;if(done){f.elements['tl_'+k].value=new Date().toISOString().slice(0,10);f.elements['sk_'+k].value='';}else{const h=f.elements['sk_'+k];h.value=h.value?'':'1';if(h.value)f.elements['tl_'+k].value='';}f.requestSubmit();}
