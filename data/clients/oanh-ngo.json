@@ -22,12 +22,14 @@
         "uom-retreat"
       ],
       "path": "proposals/clients/oanh-ngo/mvppru2m/",
-      "pdf": true
+      "pdf": true,
+      "sent": "2026-10-26"
     }
   ],
   "timeline": {
-    "request": "2026-10-25"
+    "request": "2026-10-25",
+    "doneEmail": "2026-10-26"
   },
   "createdAt": "2026-10-25T23:40:25.793794+00:00",
-  "updatedAt": "2026-10-26T20:33:30.250Z"
+  "updatedAt": "2026-10-26T20:34:30.231Z"
 }
