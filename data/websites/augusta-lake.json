@@ -44,7 +44,7 @@
     "uniqueImages": 69,
     "generatedArtworkFiles": 0
   },
-  "updatedAt": "2026-10-20T05:18:39.325015+00:00",
+  "updatedAt": "2026-10-26T21:46:13.304Z",
   "files": [
     {
       "kind": "photos",
@@ -68,5 +68,6 @@
       "sha256": "3541a85685213140a6f6727715e1bcf1510e6a8861d9f20f3e9113a21fd8aa2e"
     }
   ],
-  "clientId": "andrey"
+  "clientId": "andrey",
+  "ownerHighlights": ""
 }
