@@ -1,0 +1,87 @@
+{
+  "intakeId": "beautyview-lakeview-suite",
+  "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
+  "savedRevision": 15,
+  "archivedAt": "2026-10-26T03:20:23.262488+00:00",
+  "state": "completed editable draft; verified; unpublished",
+  "reports": [
+    {
+      "file": "final-draft-evidence.json",
+      "sourceReportSha256": "90c89f31436bddb773cdd38e52e105e882439338a62073278da4c917fb0b7fd1",
+      "archivedSha256": "76dfc3491aeaf8d5bea58a76160510a1e4765c4ff1f3105530fb135f456c04b0",
+      "privatePathsRedacted": true
+    },
+    {
+      "file": "verification-evidence.json",
+      "sourceReportSha256": "f3eeab186083d9d9c9c337fde79f4fd5c66cb6e1c608a70c5e10180ac434c5d6",
+      "archivedSha256": "f3eeab186083d9d9c9c337fde79f4fd5c66cb6e1c608a70c5e10180ac434c5d6",
+      "privatePathsRedacted": true
+    },
+    {
+      "file": "final-content-verification.json",
+      "sourceReportSha256": "693be35a7a5a4fab1c8bb0c1b1324a1fcf68e4ba990e1c40f8bc8ffe3429be74",
+      "archivedSha256": "92c3fce8cd692068c988e1606a483369daeea088dd1e95c5054be9114c47336f",
+      "privatePathsRedacted": true
+    },
+    {
+      "file": "visual-review-final14.json",
+      "sourceReportSha256": "bc998d95c3bb1e53f47330de8c0d19a3b0d6d81a2bcd675ee108923247224282",
+      "archivedSha256": "438ab2d04f55f3a44c01e7eda96baf670dbef81c6758a63193f8e94692771f61",
+      "privatePathsRedacted": true
+    },
+    {
+      "file": "phone-final14-visual-qa-oanh-agent.json",
+      "sourceReportSha256": "26b6620930d74c45d88ba882500a17e98899f0d1edef6641849e65ef6abdfe30",
+      "archivedSha256": "26b6620930d74c45d88ba882500a17e98899f0d1edef6641849e65ef6abdfe30",
+      "privatePathsRedacted": true
+    },
+    {
+      "file": "bc-final15-static-verification.json",
+      "sourceReportSha256": "db02d2d089c10fceb3e4922e692e428165ce1e57ad3ccb6f75340e63fae54f17",
+      "archivedSha256": "db02d2d089c10fceb3e4922e692e428165ce1e57ad3ccb6f75340e63fae54f17",
+      "privatePathsRedacted": true
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "screenshots/beautyview-ready-desktop-v15.png",
+      "bytes": 929824,
+      "sha256": "bfda4147125223580842cc6dd2c770a1ede86826a2e126e109a71d4527129674",
+      "dimensions": [
+        1440,
+        943
+      ],
+      "revision": 15,
+      "visuallyInspectedBy": "primary build agent and archive verifier"
+    },
+    {
+      "file": "screenshots/beautyview-ready-phone-footer-v15.png",
+      "bytes": 78630,
+      "sha256": "9fac8201b59796e5e3a8935dcfdf34e09e2ad84d5e512dcbc4078ea7d6fb9cb9",
+      "dimensions": [
+        430,
+        943
+      ],
+      "revision": 15,
+      "visuallyInspectedBy": "primary build agent and archive verifier"
+    },
+    {
+      "file": "screenshots/beautyview-ready-phone-facts-v15.png",
+      "bytes": 71866,
+      "sha256": "4a756af78b80a47a03d4c3e2e60812f0b39d7d2aafb61dc91701a581cc5f98c5",
+      "dimensions": [
+        430,
+        943
+      ],
+      "revision": 15,
+      "visuallyInspectedBy": "primary build agent and archive verifier"
+    }
+  ],
+  "scopeNotes": [
+    "37 desktop/tablet and25phone overlapping full-page captures were reviewed at revision14. Their source reports are archived; only three selected finalrevision15 screenshots are copied here.",
+    "Revision15 only shortened native footer copyright; footerphone and native editorcopyright field were separately verified. Static native/data checks were rerun at revision15.",
+    "Private source paths in report text and executed-command descriptions are redacted. Results are retained; original source-report hashes are recorded. No session jars, full backend readbacks, maps keys or credentials are archived.",
+    "The historical finalRevisionVisibleChecks block in verification-evidence.json is explicitly revision9; final-draft-evidence.json and revision15 static report describe final state.",
+    "The stock checklist failed only its whole-Guidebook-unchanged assertion because four additions were explicitly requested. Scoped preservation of original60placeobjects/categories was verified; no unmodifiedstockgate pass is claimed."
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "revision": 14,
+  "reviewedAt": "2026-10-26T03:02:36.529811+00:00",
+  "reviewType": "Read-only visual review of clean saved desktop/tablet viewport captures",
+  "count": 37,
+  "reviewedFiles": {
+    "desktop-home": [
+      "{private-captures}/bc-final14-desktop-home-0.png",
+      "{private-captures}/bc-final14-desktop-home-1.png",
+      "{private-captures}/bc-final14-desktop-home-2.png",
+      "{private-captures}/bc-final14-desktop-home-3.png",
+      "{private-captures}/bc-final14-desktop-home-4.png"
+    ],
+    "desktop-stay": [
+      "{private-captures}/bc-final14-desktop-stay-0.png",
+      "{private-captures}/bc-final14-desktop-stay-1.png",
+      "{private-captures}/bc-final14-desktop-stay-2.png",
+      "{private-captures}/bc-final14-desktop-stay-3.png",
+      "{private-captures}/bc-final14-desktop-stay-4.png",
+      "{private-captures}/bc-final14-desktop-stay-5.png",
+      "{private-captures}/bc-final14-desktop-stay-6.png"
+    ],
+    "desktop-about": [
+      "{private-captures}/bc-final14-desktop-about-0.png",
+      "{private-captures}/bc-final14-desktop-about-1.png",
+      "{private-captures}/bc-final14-desktop-about-2.png",
+      "{private-captures}/bc-final14-desktop-about-3.png"
+    ],
+    "tablet-home": [
+      "{private-captures}/bc-final14-tablet-home-0.png",
+      "{private-captures}/bc-final14-tablet-home-1.png",
+      "{private-captures}/bc-final14-tablet-home-2.png",
+      "{private-captures}/bc-final14-tablet-home-3.png",
+      "{private-captures}/bc-final14-tablet-home-4.png",
+      "{private-captures}/bc-final14-tablet-home-5.png",
+      "{private-captures}/bc-final14-tablet-home-6.png"
+    ],
+    "tablet-stay": [
+      "{private-captures}/bc-final14-tablet-stay-0.png",
+      "{private-captures}/bc-final14-tablet-stay-1.png",
+      "{private-captures}/bc-final14-tablet-stay-2.png",
+      "{private-captures}/bc-final14-tablet-stay-3.png",
+      "{private-captures}/bc-final14-tablet-stay-4.png",
+      "{private-captures}/bc-final14-tablet-stay-5.png",
+      "{private-captures}/bc-final14-tablet-stay-6.png",
+      "{private-captures}/bc-final14-tablet-stay-7.png"
+    ],
+    "tablet-about": [
+      "{private-captures}/bc-final14-tablet-about-0.png",
+      "{private-captures}/bc-final14-tablet-about-1.png",
+      "{private-captures}/bc-final14-tablet-about-2.png",
+      "{private-captures}/bc-final14-tablet-about-3.png",
+      "{private-captures}/bc-final14-tablet-about-4.png",
+      "{private-captures}/bc-final14-tablet-about-5.png"
+    ]
+  },
+  "method": "Visually inspected all 37 captures in six labeled contact sheets; each original was scaled to a 650px-wide cell without cropping.",
+  "blockingDefects": [],
+  "observations": [
+    "Transparent sticky subsection navigation is absent on Home, Stay and About; prior overlap defect resolved.",
+    "Superhost icon and label are readable in desktop and tablet trust bands.",
+    "Facts is the first Stay section.",
+    "All displayed image tiles load and gallery captions remain readable.",
+    "No horizontal clipping or unintended blank image placeholders observed.",
+    "Desktop two-column and tablet single-column section layouts are readable."
+  ],
+  "settingsContract": {
+    "home": "config.hero.railMode = none",
+    "stay": "config.yourStay.railMode = none",
+    "about": "config.about.railMode = none"
+  },
+  "limitations": [
+    "Phone final14 review is assigned to another reviewer; this report does not assert a phone visual pass.",
+    "No browser interaction or website writes performed by this reviewer."
+  ]
+}

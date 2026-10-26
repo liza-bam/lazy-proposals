@@ -1,0 +1,65 @@
+{
+  "property": "beautyview",
+  "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
+  "savedRevision": 15,
+  "state": "completed editable draft, unpublished",
+  "facts": {
+    "firstStaySection": "stay-facts-pending",
+    "label": "Facts",
+    "nativeType": "list",
+    "note": "Supported native List named Facts; no unsupported module or custom code."
+  },
+  "sourceChecks": {
+    "nativeValidationErrors": 0,
+    "validatedContentRevision": 14,
+    "revision15Delta": "Shortened native footer copyright only",
+    "genuineReviews": 432,
+    "libraryPhotos": 27,
+    "placedPhotoReferencesValid": 28,
+    "originalGuidebookPlacesRetainedExactly": 60,
+    "authorizedGuidebookAdditions": 4
+  },
+  "visualChecks": {
+    "reviewedRevision": 14,
+    "phoneTilesReviewed": 25,
+    "desktopTabletTilesReviewed": 37,
+    "allAuthoredPagesAtPhoneTabletDesktop": true,
+    "failedImages": 0,
+    "horizontalOverflow": false,
+    "defectsResolved": [
+      "Superhost trust clipping",
+      "Sticky section navigation overlapping content",
+      "Low contrast Stay slideshow captions"
+    ],
+    "revision15FooterVisualReadback": "Copyright is fully visible beside the native badge; inspected saved screenshot"
+  },
+  "editorChecks": {
+    "revision": 15,
+    "pages": [
+      "Home",
+      "Stay",
+      "About"
+    ],
+    "widths": [
+      402,
+      834,
+      1354
+    ],
+    "overflow": false,
+    "failedImages": 0,
+    "factsFieldsPopulated": true,
+    "stayGalleryNativeChoice": "Gallery",
+    "stayGalleryNonemptyPhotoControls": 4,
+    "trustLabelAndLinksPopulated": true,
+    "footerCopyrightField": "© 2026 Beautyview"
+  },
+  "nativeButtons": {
+    "allPhotosOpens": true,
+    "inquiryOpensCorrectForm": true,
+    "inquirySubmitted": false,
+    "emailDeliveryTested": false,
+    "externalLinksReviewedAgainstSources": true
+  },
+  "published": false,
+  "stockChecklistException": "The stock whole-Guidebook-unchanged assertion is inapplicable to the four explicitly requested additions. Original 60 place objects were compared exactly. No claim of an unmodified stock-gate pass."
+}

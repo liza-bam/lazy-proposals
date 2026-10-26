@@ -1,0 +1,106 @@
+{
+  "property": "beautyview",
+  "savedRevision": 15,
+  "published": false,
+  "guidebookDataUnchanged": false,
+  "guidebookNavigationUnchanged": true,
+  "savedAndReopened": true,
+  "allDisplayedPhotosInSiteLibrary": true,
+  "onlySuppliedFolderPhotos": true,
+  "noTemplateChanges": true,
+  "homeAmenitiesListVisible": true,
+  "notes": "The stock whole-Guidebook-unchanged assertion is inapplicable to the four explicitly requested additions. Original 60 place objects were compared exactly. No claim of an unmodified stock-gate pass.",
+  "pages": [
+    {
+      "name": "Home",
+      "sectionTypes": [
+        "guide",
+        "highlights",
+        "list",
+        "photos"
+      ],
+      "visualChecks": {
+        "phone": true,
+        "tablet": true,
+        "desktop": true
+      },
+      "copyComplete": true,
+      "shortLabels": true,
+      "shortSlideshowCaptions": true,
+      "photosMatchCaptions": true,
+      "buttonsChecked": true
+    },
+    {
+      "name": "Stay",
+      "sectionTypes": [
+        "guide",
+        "highlights",
+        "list",
+        "map",
+        "photos"
+      ],
+      "visualChecks": {
+        "phone": true,
+        "tablet": true,
+        "desktop": true
+      },
+      "copyComplete": true,
+      "shortLabels": true,
+      "shortSlideshowCaptions": true,
+      "photosMatchCaptions": true,
+      "buttonsChecked": true
+    },
+    {
+      "name": "About",
+      "sectionTypes": [
+        "cards",
+        "highlights",
+        "list",
+        "map",
+        "photos"
+      ],
+      "visualChecks": {
+        "phone": true,
+        "tablet": true,
+        "desktop": true
+      },
+      "copyComplete": true,
+      "shortLabels": true,
+      "shortSlideshowCaptions": true,
+      "photosMatchCaptions": true,
+      "buttonsChecked": true
+    }
+  ],
+  "pending": [],
+  "observedGuestWidths": [
+    430,
+    834,
+    1440
+  ],
+  "observedEditorWidths": [
+    402,
+    834,
+    1354
+  ],
+  "overflowOrFailedImagesObserved": false,
+  "visualScope": "All 62 overlapping full-page guest viewport captures inspected across three pages and three widths. Native editor fields and nine page/device combinations checked.",
+  "finalRevisionVisibleChecks": {
+    "revision": 9,
+    "mastheadSplitSelected": true,
+    "fiveNonemptyNativePhotoControls": true,
+    "guestDesktopFailedImages": 0,
+    "nativePhoneStayMenu": [
+      "Overview",
+      "Beds",
+      "Gallery",
+      "Amenities",
+      "Arrival",
+      "Rules"
+    ]
+  },
+  "limitations": [
+    "Email delivery not exercised; no inquiry or booking submitted.",
+    "Draft is unpublished."
+  ],
+  "nativeFactsType": "list"
+}

@@ -1,0 +1,78 @@
+{
+  "status": "Final revision14 phone screenshot regression review completed",
+  "reviewedAt": "2026-10-26T03:02:02.433227+00:00",
+  "filesReviewed": [
+    "bc-final14-phone-home-0.png",
+    "bc-final14-phone-home-1.png",
+    "bc-final14-phone-home-2.png",
+    "bc-final14-phone-home-3.png",
+    "bc-final14-phone-home-4.png",
+    "bc-final14-phone-home-5.png",
+    "bc-final14-phone-home-6.png",
+    "bc-final14-phone-home-7.png",
+    "bc-final14-phone-home-8.png",
+    "bc-final14-phone-stay-0.png",
+    "bc-final14-phone-stay-1.png",
+    "bc-final14-phone-stay-2.png",
+    "bc-final14-phone-stay-3.png",
+    "bc-final14-phone-stay-4.png",
+    "bc-final14-phone-stay-5.png",
+    "bc-final14-phone-stay-6.png",
+    "bc-final14-phone-stay-7.png",
+    "bc-final14-phone-stay-8.png",
+    "bc-final14-phone-about-0.png",
+    "bc-final14-phone-about-1.png",
+    "bc-final14-phone-about-2.png",
+    "bc-final14-phone-about-3.png",
+    "bc-final14-phone-about-4.png",
+    "bc-final14-phone-about-5.png",
+    "bc-final14-phone-about-6.png"
+  ],
+  "fileCount": 25,
+  "priorDefectsResolved": [
+    {
+      "issue": "Clipped Superhost trust text",
+      "result": "Resolved: laurel-star mark and complete SUPERHOST label both visible within first trust slot.",
+      "evidence": [
+        "bc-final14-phone-home-1.png"
+      ]
+    },
+    {
+      "issue": "Sticky section menu collision with body/photos",
+      "result": "Resolved: section tabs removed throughout all25tiles; no menu/content overlap.",
+      "evidence": [
+        "bc-final14-phone-home-2.png",
+        "bc-final14-phone-stay-0.png",
+        "bc-final14-phone-about-0.png"
+      ]
+    },
+    {
+      "issue": "Low-contrast Stay slideshow caption on dark blur",
+      "result": "Resolved: gallery captions render below photographs on the light section surface.",
+      "evidence": [
+        "bc-final14-phone-stay-2.png",
+        "bc-final14-phone-stay-3.png"
+      ]
+    }
+  ],
+  "remainingMinorObservations": [
+    {
+      "finding": "Fixed Made with Lazy badge covers the right-hand end of the copyright line at the very bottom of the page. This is separate from authored page content.",
+      "evidence": [
+        "bc-final14-phone-home-8.png",
+        "bc-final14-phone-stay-8.png",
+        "bc-final14-phone-about-6.png"
+      ]
+    }
+  ],
+  "otherObservedResults": [
+    "No blank property photos, empty image columns, clipped authored paragraphs or visible horizontal content overflow in25tiles.",
+    "Facts/At a glance content is first on Stay and readable.",
+    "Pool-led masthead, daytime/evening pool gallery, hot-tub/sauna photos and suite photographs populated.",
+    "About winery, culture, hiking and park-condition content remains visible."
+  ],
+  "limits": [
+    "Screenshot review only; no browser controls, website writes or functional form/link tests executed by this agent.",
+    "No numeric contrast audit performed."
+  ]
+}

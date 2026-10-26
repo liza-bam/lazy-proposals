@@ -1,0 +1,101 @@
+{
+  "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
+  "slug": "beautyview",
+  "finalReviewedRevision": 14,
+  "recordedAt": "2026-10-26T03:00:23.509288+00:00",
+  "scope": "British Columbia source and native-content review only. No browser, backend or website writes in this audit.",
+  "blockingDefects": [],
+  "checks": {
+    "nativeModelValidation": {
+      "observedRevision": 14,
+      "errors": [],
+      "commandIndex": 0
+    },
+    "iconResolution": {
+      "observedRevision": 14,
+      "checked": 22,
+      "unknown": [],
+      "warnings": [],
+      "commandIndex": 1
+    },
+    "sourceAndAssetChecks": {
+      "observedRevision": 14,
+      "commandIndex": 2,
+      "reviewCount": 432,
+      "sourceReviewsExact": true,
+      "reviewHashSha256": "2f3d6fbd6727186d480cef4d45169b2c27363f5f862776ea6f22fa804e23595c",
+      "photoRecords": 27,
+      "uniquePhotoUrls": 27,
+      "allPhotoUrlsFromUploadResults": true,
+      "placedPhotoReferences": 28,
+      "invalidPhotoReferences": [],
+      "originalGuidebookPlacesRetainedExactly": 60,
+      "guidebookPlaceCount": 64,
+      "authorizedAdditionalPlaces": [
+        "Boucherie Rush Trail",
+        "Sncewips Heritage Museum",
+        "Gellatly Nut Farm Regional Park",
+        "Goats Peak Regional Park"
+      ],
+      "sectionTypeCounts": {
+        "home": 4,
+        "stay": 5,
+        "about": 5
+      },
+      "emptyAuthoredSections": [],
+      "paragraphsOver400Characters": [],
+      "cardDescriptionsOver150Characters": [],
+      "wrongClientOrImplementationCopyMatches": []
+    },
+    "factsFirstOnStay": {
+      "observedRevision": 14,
+      "sectionId": "stay-facts-pending",
+      "nativeType": "list",
+      "sectionName": "Facts",
+      "title": "Beautyview at a glance",
+      "standaloneFactsTypeAvailable": false
+    },
+    "factReview": {
+      "basis": "Archived host listing text and complete supplied amenity inventory, plus property-only photo contact-sheet inspection.",
+      "confirmed": [
+        "8 guests, 2 bedrooms, 4 queen beds and 1 bathroom",
+        "Private-entry 1300sqft walkout suite, owners above, concrete stairs",
+        "Pool season, heating cutoff and amenity access hours",
+        "2 parking spaces; lockbox check-in after3PM, checkout before11AM",
+        "Washer/dryer unavailable; nearby laundromat",
+        "Front-yard entry security camera disclosure",
+        "All meaningful supplied amenities represented; obvious hot water omitted from guest copy per SOP"
+      ],
+      "unsupportedVisitorClaimsFound": []
+    }
+  },
+  "commands": [
+    {
+      "command": "node - <<'JS'\nconst fs=require('fs'),vm=require('vm');const draft=JSON.parse(fs.readFileSync('{private-run}/current-reviewed-draft.json'));const ctx={window:{LVSeedData:JSON.parse(fs.readFileSync('{private-temp}/oanh-target-evidence/seed-fresh.json'))},console};vm.createContext(ctx);vm.runInContext(fs.readFileSync('{workspace}/app/js/content-store.js','utf8'),ctx);const errors=ctx.window.LVModel.validate(draft.config);console.log('Native LVModel.validate rev'+draft.rev+':',JSON.stringify(errors));if(errors.length)process.exitCode=1;\nJS",
+      "exitCode": 0,
+      "result": "Native LVModel.validate rev14: []"
+    },
+    {
+      "command": "node - <<'JS'\nconst fs=require('fs'),vm=require('vm');const p='{private-run}/current-reviewed-draft.json';const j=JSON.parse(fs.readFileSync(p));let warnings=[];const ctx={window:{},console:{warn:(...s)=>warnings.push(s.join(' ')),error:(...s)=>warnings.push(s.join(' ')),log:()=>{}}};vm.createContext(ctx);vm.runInContext(fs.readFileSync('{workspace}/app/js/icon-library.js','utf8'),ctx);let vals=new Set;function walk(o){if(!o||typeof o!=='object')return;if(typeof o.icon==='string'&&o.icon)vals.add(o.icon);Object.values(o).forEach(walk)}walk(j.config);let missing=[];for(const id of vals){if(!ctx.window.LVIcons.file(id))missing.push(id)}console.log(JSON.stringify({rev:j.rev,iconCount:vals.size,unknownIcons:missing,warnings},null,2));\nJS",
+      "exitCode": 0,
+      "result": {
+        "rev": 14,
+        "iconCount": 22,
+        "unknownIcons": [],
+        "warnings": []
+      }
+    },
+    {
+      "command": "python3 - <<'PY'\nimport json,re,hashlib\nfrom pathlib import Path\nr=Path('{workspace}/Website maker/.intake-projects/beautyview/backend-run');j=json.loads((r/'current-reviewed-draft.json').read_text());c=j['config'];raw=json.loads((r/'proposal.json').read_text());base=json.loads((r/'baseline/baseline.json').read_text());library=c['photos']['items'];byid={x['id']:x for x in library};errs=[];refs=[];asseturls={a['url'] for a in raw['assets']};seenicons=set()\ndef walk(o,path=''):\n if isinstance(o,dict):\n  if o.get('ref'):\n   if o['ref'] not in byid:errs.append((path,'missinglibref',o['ref']))\n   else:\n    rec=byid[o['ref']];refs.append(o['ref']);url=o.get('img')or o.get('src')or o.get('url')\n    if url and url!=rec['url']:errs.append((path,'url/ref mismatch',url))\n  if isinstance(o.get('icon'),str) and o['icon']:seenicons.add(o['icon'])\n  for k,v in o.items():walk(v,path+'.'+k)\n elif isinstance(o,list):\n  for i,x in enumerate(o):walk(x,path+f'.{i}')\nwalk(c)\nprint('reviews_exact',c['reviews']['items']==raw['sourceReviews'],'count',len(c['reviews']['items']));print('libraryunique',len(library),len({x['url'] for x in library}),'all_uploaded',all(x['url']in asseturls for x in library));print('referenceerrors',errs,'placedrefs',len(refs));print('all_original_guidebook60_exact',all(p in c['guidebook']['places']for p in base['config']['guidebook']['places']),'guidebookcount',len(c['guidebook']['places']));print('newguidebooknames',[p.get('n')for p in c['guidebook']['places']if p not in base['config']['guidebook']['places']]);print('icons',sorted(seenicons))\ntext=json.dumps({k:v for k,v in c.items()if k not in ['reviews','guidebook','photos']},ensure_ascii=False)\nfor needle in ['Dalat','Oanh','Vietnam','Ho Chi','verified','research','deployment','pending release','not available in','standalone native']:\n if needle.lower()in text.lower():print('suspectcopy',needle)\nfor pg in ['homeNav','yourStay','about']:\n print(pg,'types',sorted({d['type']for d in c[pg]['added']}),'first',c[pg]['order'][0]);\n for d in c[pg]['added']:\n  s=c[d['id']];substantive=bool(s.get('intro')or s.get('list')or s.get('cards')or s.get('slots')or s.get('slideshow',{}).get('photos')or s.get('photos',{}).get('items')or s.get('mapTop'))\n  if not substantive:print('EMPTYSECTION',d['id'])\n  for f in ['intro','body','description']:\n   if isinstance(s.get(f),str) and len(s[f])>400:print('OVERLIMIT',d['id'],f,len(s[f]))\n  for card in s.get('cards',[])+s.get('slots',[]):\n   if len(card.get('desc',''))>150:print('OVERCARD',d['id'],card.get('name'),len(card['desc']))\nprint('FACTS',json.dumps(c['stay-facts-pending'],ensure_ascii=False));print('reviewhash',hashlib.sha256(json.dumps(c['reviews']['items'],sort_keys=True,ensure_ascii=False).encode()).hexdigest())\nPY",
+      "exitCode": 0,
+      "result": "reviews_exact True count432;libraryunique27/27 all_uploadedTrue;referenceerrors[] placedrefs28;all_original_guidebook60_exactTrue;guidebookcount64;no emptysections,overlimitfields,suspectcopy."
+    }
+  ],
+  "visualVerification": {
+    "revision": 14,
+    "desktopTabletCaptureCount": 37,
+    "blockingDefects": [],
+    "evidenceFile": "{private-run}/visual-review-final14.json",
+    "phone": "Separate reviewer; not asserted by this report."
+  }
+}

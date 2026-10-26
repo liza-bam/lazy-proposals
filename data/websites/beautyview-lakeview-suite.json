@@ -24,13 +24,13 @@
   "focus": "Pool and outdoor living",
   "homeContent": "POOL FIRST. Photo led, elegant and fancy. Use a strong daytime pool/lake image for the Head and a full property gallery that begins with pool, slide, covered terrace and evening lighting, then hot tub, sauna and interiors. Three POIs exactly: Private pool, Hot tub, Sauna. Trust: Superhost · 400+ guest reviews · 11 years hosting, with the verified 4.66/5 rating. Include an Airbnb-style grouped amenities List in the first two content sections. Proposed native section mix: Head; List; Photos/Gallery; Highlights; Text; genuine Reviews. Make the West Kelowna wine-country setting and lake views clear near the top. Keep the supplied pool-season/access limits and security disclosures visible in practical details. Use only the supplied property photo collection and its verified library records once uploaded.",
   "pageOneName": "Stay",
-  "pageOneContent": "FIRST CONTENT SECTION: the new native Facts section, populated with the supplied property facts. Verify its actual deployed fields and section type before writing; do not substitute a guessed schema. Facts: entire private-entry guest suite; 8 guests; 2 bedrooms; 4 queen beds (one in each bedroom and two in the common living/dining area); 1 bathroom; approximately 1,300 sq ft; owners live above. Continue with Photos/Gallery of rooms and outdoor amenities, grouped practical List, and Text/Map for access and approximate location. At least four distinct supported native section types across the page. Include kitchen equipment as supplied, Wifi/workspace, two parking spaces, seasonal pool and hours, hot tub/sauna access hours, concrete stairs, unavailable washer/dryer, and front-entry exterior camera disclosure. Check-in after 3 PM; checkout before 11 AM; lockbox self check-in. Preserve current source limitations; review anecdotes do not override supplied facts.\nCURRENT SAVED STATUS (revision 6): first Stay content is stay-facts-pending, a provisional native List containing the supplied facts. The requested standalone new Facts type is not in the captured deployed add catalog and remains unfinished; do not report the List as the new Facts section.\nLATEST SAVED STATUS (revision 8): the first Stay section is still the provisional native List stay-facts-pending. The unavailable standalone Facts type remains unfinished. Native Split masthead and fifth masthead-gallery tile are saved elsewhere; visual QA continues.",
+  "pageOneContent": "Saved and verified draft revision 15. Facts is the first Stay content section, implemented using the supported editable native List named Facts, titled Beautyview at a glance. Its actual native type is list; no new built-in module or custom code was created. Populated facts include the private-entry walkout guest suite; approximately 1,300 sq ft; owners living above; up to 8 guests; 2 bedrooms; 4 queen beds (one per bedroom and two in the common area); 1 bathroom; check-in after 3 PM and checkout before 11 AM; lockbox and concrete entrance stairs. The remaining Stay sections cover sleeping, a native Gallery with four populated photo controls, complete grouped amenities, arrival and house rules. Native editor fields, thumbnails and phone/tablet/desktop layouts were verified. Original listingFacts and amenitiesGroups remain the detailed source inventory.",
   "pageTwoName": "About",
   "pageTwoContent": "Nature, wineries and hikes are essential. Build an inviting West Kelowna wine-country story with lake/valley views and Debra’s verified host introduction. Include destination Cards for Mission Hill and Quails’ Gate, a Boucherie Rush Trail hiking option, and Sncewips Heritage Museum cultural context, using local-research.json and official visitor links. Proposed distinct native mix: Text, destination Cards, Photos, Map or Highlights. Use Debra’s property-view photographs for the stay’s setting, without presenting them as photographs of an attraction. Keep destination travel times unclaimed unless independently verified. Museum walk duration is unverified. Add links to current park access information; do not recommend closed trails.",
   "guidebookContent": "Relevant West Kelowna visitor guidance is required: wine tasting/reservations (Mission Hill and Quails’ Gate), nature and hikes (Boucherie Rush Trail and the RDCO directory), Sncewips Heritage Museum, and practical planning links. Use the attached local-research.json; distinguish researched suggestions from Debra’s personal recommendations. Flag Kalamoir and Rose Valley as partly open and avoid recommending the closed Bear Creek Canyon Trail. Link official pages for current conditions, hours and booking. Preserve an existing Guidebook in full while checking how relevant local destinations can be included through the supported workflow; user has requested relevant Guidebook content, which does not authorize wholesale replacement of unrelated data.",
   "additionalIdeas": "",
-  "additionalSources": "User supplied: free website request, Debra’s contact details and address, complete amenities, focus list, listing text and guest reviews. Style direction: “photobased, fancy. she has killer photos.” Listing visibly checked in connected browser on 2026-10-25: https://www.airbnb.com/rooms/11870212 . Original source text is attached under data/materials/beautyview-lakeview-suite/. Review date “3 weeks ago” is preserved; no exact day invented. Review narratives do not establish property facts.\n2026-10-25: Full user-supplied collection saved: 432 guest reviews, 33 host responses kept separately, 5 translated entries marked. Original source and import CSV attached. Guest opinions and historical host responses do not replace current listing facts, amenities or policies.\n2026-10-25: Supplied photo collection archived with all 32 source files and filenames retained, 27 unique images and 5 exact duplicates documented. Pool-first gallery order and captions are in photos/manifest.json. Latest user instructions recorded: pool focus; elegant photo-led styling; Private pool/Hot tub/Sauna POIs; trust facts; nature/wineries/hikes on About; relevant Guidebook; new native Facts section first on Stay. Official destination research is attached in local-research.json.\n2026-10-25 verified build status: target site 0a0691c2-20bc-4f9a-8f06-463b83f098ca saved draft revision 6. Imported 27 unique property-library photos and 432 genuine guest reviews. Native authored content sections: Home 4, Stay 6, About 5. About includes nature, wineries and hikes. Four authorized Guidebook additions saved (Boucherie Rush Trail, Sncewips Heritage Museum, Gellatly Nut Farm, Goats Peak); all original 60 places and original category objects/order retained. Requested standalone Facts section is NOT present in the deployed add catalog. First Stay section is currently a native List with the supplied facts, marked provisional; this does not fulfill the requested new Facts component. Full viewport QA is unfinished. Draft is not published. Sanitized evidence attached as draft-status.json.\n2026-10-25 later saved milestone: Beautyview draft revision 8. Native Split masthead selected through theme {masthead: split}; no global style changes. The masthead’s fifth gallery tile now uses existing uploaded library photo ph_asset_30. The build agent restored the revision6 Guidebook and removed13 unrelated empty records created by the native UI; captured revision8 retains all original60 Guidebook places plus the four authorized additions. All432 review objects and all27 library-photo objects match the earlier saved imported records exactly. Home4/Stay6/About5 content sections remain. Requested standalone Facts is still unavailable; first Stay List remains provisional. Phone/tablet/desktop visual QA is ongoing, not complete. Not published.",
-  "missing": "Requested standalone native Facts type is unavailable; first Stay section remains a provisional List with supplied facts. Visual QA at desktop/tablet/phone editor and guest preview is ongoing or pending, not complete. Latest saved draft revision8 has native Split masthead, populated fifth masthead-gallery tile,27 unique library photos,432 genuine reviews, Home4/Stay6/About5 content sections, and64 Guidebook places retaining the original60. No publication performed. Full expanded current house rules; host-authored local recommendations; museum walking route/duration and date-dependent cancellation details remain unverified.",
+  "additionalSources": "User supplied: free website request, Debra’s contact details and address, complete amenities, focus list, listing text and guest reviews. Style direction: “photobased, fancy. she has killer photos.” Listing visibly checked in connected browser on 2026-10-25: https://www.airbnb.com/rooms/11870212 . Original source text is attached under data/materials/beautyview-lakeview-suite/. Review date “3 weeks ago” is preserved; no exact day invented. Review narratives do not establish property facts.\n2026-10-25: Full user-supplied collection saved: 432 guest reviews, 33 host responses kept separately, 5 translated entries marked. Original source and import CSV attached. Guest opinions and historical host responses do not replace current listing facts, amenities or policies.\n2026-10-25: Supplied photo collection archived with all 32 source files and filenames retained, 27 unique images and 5 exact duplicates documented. Pool-first gallery order and captions are in photos/manifest.json. Latest user instructions recorded: pool focus; elegant photo-led styling; Private pool/Hot tub/Sauna POIs; trust facts; nature/wineries/hikes on About; relevant Guidebook; new native Facts section first on Stay. Official destination research is attached in local-research.json.\n2026-10-25 verified build status: target site 0a0691c2-20bc-4f9a-8f06-463b83f098ca saved draft revision 6. Imported 27 unique property-library photos and 432 genuine guest reviews. Native authored content sections: Home 4, Stay 6, About 5. About includes nature, wineries and hikes. Four authorized Guidebook additions saved (Boucherie Rush Trail, Sncewips Heritage Museum, Gellatly Nut Farm, Goats Peak); all original 60 places and original category objects/order retained. Requested standalone Facts section is NOT present in the deployed add catalog. First Stay section is currently a native List with the supplied facts, marked provisional; this does not fulfill the requested new Facts component. Full viewport QA is unfinished. Draft is not published. Sanitized evidence attached as draft-status.json.\n2026-10-25 later saved milestone: Beautyview draft revision 8. Native Split masthead selected through theme {masthead: split}; no global style changes. The masthead’s fifth gallery tile now uses existing uploaded library photo ph_asset_30. The build agent restored the revision6 Guidebook and removed13 unrelated empty records created by the native UI; captured revision8 retains all original60 Guidebook places plus the four authorized additions. All432 review objects and all27 library-photo objects match the earlier saved imported records exactly. Home4/Stay6/About5 content sections remain. Requested standalone Facts is still unavailable; first Stay List remains provisional. Phone/tablet/desktop visual QA is ongoing, not complete. Not published.\n2026-10-25 final BC milestone: completed editable draft saved and fresh-read at revision 15 for site 0a0691c2-20bc-4f9a-8f06-463b83f098ca (beautyview). All 432 genuine source-exact reviews and 27 unique uploaded library photos are preserved. Native content sections: Home 4, Stay 6, About 5. Facts is first on Stay using the supported native List labeled Facts; no unsupported new module is claimed. Pool-led native Split masthead; Private pool, Hot tub and Sauna POIs; Superhost, 400+ reviews, 11 years and 4.66/5 trust; nature, wineries and hikes on About. Guidebook has 64 places, retaining the original 60 exactly and adding four authorized nature/culture destinations. Full authored page visual review passed across 37 desktop/tablet and 25 phone overlapping captures at revision 14; the footer-only revision 15 change was separately verified by screenshot and native field. Revision 15 native editor checks for Home, Stay and About at widths 402, 834 and 1354 showed zero overflow or failed images; all changed fields and photo thumbnails were checked. Native All Photos and Inquiry open correctly; six Inquiry fields were verified without submitting. The stock checklist fails only whole-Guidebook equality because of the authorized additions; scoped preservation passed and no unmodified stock-gate pass is claimed. Final screenshots and reports are attached under verification/final-revision-15/. Draft remains unpublished; no email delivery or booking submission test was performed.",
+  "missing": "Editable draft is complete and verified at revision 15, with Facts first on Stay as a supported native List named Facts. Publication has not been performed. Email delivery and any booking-provider integration remain untested; no Inquiry or test booking was submitted. Exact date-dependent cancellation terms and any additional host policy details require source confirmation before new claims. The unverified ten-minute museum walking estimate is not asserted in visitor copy.",
   "files": [
     {
       "kind": "source",
@@ -113,13 +113,83 @@
       "kind": "evidence",
       "name": "draft-status.json",
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/draft-status.json",
-      "size": 5231,
-      "sha256": "c37237be2c1e3050746449e3add865f59d66eb5f00af5fef685cbe7d8cbb5b6f"
+      "size": 7099,
+      "sha256": "4317abfbb69259200575ea50ad0cffa9bb8579989e8c071c58c5ae4bde8f5a76"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/manifest.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/manifest.json",
+      "size": 4050,
+      "sha256": "035757f55c201cf71807cea11e10f715d4489413c741b884ed322b6555b1cb8c"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/final-draft-evidence.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/final-draft-evidence.json",
+      "size": 2082,
+      "sha256": "76dfc3491aeaf8d5bea58a76160510a1e4765c4ff1f3105530fb135f456c04b0"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/verification-evidence.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/verification-evidence.json",
+      "size": 2607,
+      "sha256": "f3eeab186083d9d9c9c337fde79f4fd5c66cb6e1c608a70c5e10180ac434c5d6"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/final-content-verification.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/final-content-verification.json",
+      "size": 7418,
+      "sha256": "92c3fce8cd692068c988e1606a483369daeea088dd1e95c5054be9114c47336f"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/visual-review-final14.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/visual-review-final14.json",
+      "size": 3542,
+      "sha256": "438ab2d04f55f3a44c01e7eda96baf670dbef81c6758a63193f8e94692771f61"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/phone-final14-visual-qa-oanh-agent.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/phone-final14-visual-qa-oanh-agent.json",
+      "size": 2906,
+      "sha256": "26b6620930d74c45d88ba882500a17e98899f0d1edef6641849e65ef6abdfe30"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/bc-final15-static-verification.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/bc-final15-static-verification.json",
+      "size": 8742,
+      "sha256": "db02d2d089c10fceb3e4922e692e428165ce1e57ad3ccb6f75340e63fae54f17"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/screenshots/beautyview-ready-desktop-v15.png",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/screenshots/beautyview-ready-desktop-v15.png",
+      "size": 929824,
+      "sha256": "bfda4147125223580842cc6dd2c770a1ede86826a2e126e109a71d4527129674"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/screenshots/beautyview-ready-phone-footer-v15.png",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/screenshots/beautyview-ready-phone-footer-v15.png",
+      "size": 78630,
+      "sha256": "9fac8201b59796e5e3a8935dcfdf34e09e2ad84d5e512dcbc4078ea7d6fb9cb9"
+    },
+    {
+      "kind": "evidence",
+      "name": "verification/final-revision-15/screenshots/beautyview-ready-phone-facts-v15.png",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15/screenshots/beautyview-ready-phone-facts-v15.png",
+      "size": 71866,
+      "sha256": "4a756af78b80a47a03d4c3e2e60812f0b39d7d2aafb61dc91701a581cc5f98c5"
     }
   ],
   "timeline": {},
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
-  "updatedAt": "2026-10-26T00:26:52.678806+00:00",
+  "updatedAt": "2026-10-26T03:20:23.262488+00:00",
   "photoRepository": {
     "url": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/beautyview-lakeview-suite/photos",
     "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/photos/manifest.json",

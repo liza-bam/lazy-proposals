@@ -1,19 +1,58 @@
 {
-  "recordedAt": "2026-10-26T00:26:52.678806+00:00",
-  "status": "saved draft; unfinished; not published",
+  "recordedAt": "2026-10-26T03:20:23.262488+00:00",
+  "status": "completed editable draft; verified; unpublished",
   "published": false,
   "publicPageVerified": false,
   "verification": {
-    "savedDraftReadback": "captured authenticated backend fresh readback inspected",
-    "desktopTabletPhoneEditorQA": "ongoing; not complete",
-    "desktopTabletPhoneGuestPreviewQA": "pending; not complete",
-    "overallBuildComplete": false
+    "savedDraftReadback": "fresh authenticated revision15 readback deep-equality verified by primary build agent; captured readback and native data independently inspected",
+    "editableDraftComplete": true,
+    "overallBuildComplete": true,
+    "completionScope": "editable draft only; publication and email delivery are separate",
+    "guestVisualQA": {
+      "reviewedContentRevision": 14,
+      "desktopTabletTiles": 37,
+      "phoneTiles": 25,
+      "allAuthoredPagesAtPhoneTabletDesktop": true,
+      "blockingDefects": [],
+      "failedImages": 0,
+      "horizontalOverflow": false,
+      "revision15FooterFollowup": "copyright fully visible beside nativebadge; screenshot and native input inspected"
+    },
+    "nativeEditorQA": {
+      "revision": 15,
+      "pages": [
+        "Home",
+        "Stay",
+        "About"
+      ],
+      "widths": [
+        402,
+        834,
+        1354
+      ],
+      "overflow": false,
+      "failedImages": 0,
+      "factsFieldsPopulated": true,
+      "stayGalleryNativeChoice": "Gallery",
+      "stayGalleryNonemptyPhotoControls": 4,
+      "trustLabelAndLinksPopulated": true,
+      "footerCopyrightField": "© 2026 Beautyview"
+    },
+    "revision15StaticChecks": "pass; native model errors0,invalidplacedphotoreferences0,unknownicons0;432sourceexactreviews,27libraryphotos,original60Guidebookplaces preserved",
+    "inquiry": {
+      "correctNativeFormOpens": true,
+      "fieldsVerified": 6,
+      "submitted": false,
+      "emailDeliveryTested": false
+    },
+    "allPhotosOpens": true,
+    "externalLinksReviewedAgainstSources": true
   },
   "completionTimelineMarked": false,
   "intakeId": "beautyview-lakeview-suite",
   "clientId": "debra-lott",
   "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
-  "savedDraftRevision": 8,
+  "savedDraftRevision": 15,
   "savedDraftPublishedAt": null,
   "photoSourceFiles": 32,
   "uniquePhotosInLibrary": 27,
@@ -27,89 +66,95 @@
     "Home": [
       {
         "id": "home-amenities",
-        "type": "list"
+        "type": "list",
+        "name": "Amenities"
       },
       {
         "id": "home-pool-gallery",
-        "type": "photos"
+        "type": "photos",
+        "name": "Pool gallery"
       },
       {
         "id": "home-outdoor-highlights",
-        "type": "highlights"
+        "type": "highlights",
+        "name": "Unwind"
       },
       {
         "id": "home-guest-feedback",
-        "type": "guide"
+        "type": "guide",
+        "name": "Your host"
       }
     ],
     "Stay": [
       {
         "id": "stay-facts-pending",
-        "type": "list"
+        "type": "list",
+        "name": "Facts"
       },
       {
         "id": "stay-sleeping",
-        "type": "guide"
+        "type": "guide",
+        "name": "Beds"
       },
       {
         "id": "stay-gallery",
-        "type": "photos"
+        "type": "photos",
+        "name": "Gallery"
       },
       {
         "id": "stay-amenities",
-        "type": "list"
+        "type": "list",
+        "name": "Amenities"
       },
       {
         "id": "stay-arrival",
-        "type": "map"
+        "type": "map",
+        "name": "Arrival"
       },
       {
         "id": "stay-rules",
-        "type": "highlights"
+        "type": "highlights",
+        "name": "Rules"
       }
     ],
     "About": [
       {
         "id": "about-story",
-        "type": "highlights"
+        "type": "highlights",
+        "name": "Beautyview"
       },
       {
         "id": "about-setting",
-        "type": "photos"
+        "type": "photos",
+        "name": "The setting"
       },
       {
         "id": "about-places",
-        "type": "cards"
+        "type": "cards",
+        "name": "Explore"
       },
       {
         "id": "about-trails",
-        "type": "list"
+        "type": "list",
+        "name": "Outdoors"
       },
       {
         "id": "about-area-map",
-        "type": "map"
+        "type": "map",
+        "name": "The area"
       }
     ]
   },
   "factsSection": {
-    "requested": "new native Facts section first on Stay",
-    "status": "unfinished; requested standalone native type unavailable in captured deployed add catalog",
-    "capturedAvailableAddTypes": [
-      "guide",
-      "map",
-      "cards",
-      "priceCards",
-      "highlights",
-      "photos",
-      "socialFeed",
-      "list",
-      "contactInquiry",
-      "faq"
-    ],
+    "requested": "Facts first on Stay",
+    "status": "implemented and verified first on Stay",
     "firstStaySectionId": "stay-facts-pending",
-    "firstStayImplementedType": "list",
-    "provisionalOnly": true,
-    "notClaimedAsNativeFacts": true
+    "sectionLabel": "Facts",
+    "nativeType": "list",
+    "title": "Beautyview at a glance",
+    "fallbackTransparent": true,
+    "standaloneFactsModuleCreated": false,
+    "note": "Uses the supported editable native List named Facts. No unsupported built-in/module or custom code is claimed."
   },
   "aboutScopeSaved": [
     "nature",
@@ -127,44 +172,47 @@
       "Gellatly Nut Farm Regional Park",
       "Goats Peak Regional Park"
     ],
-    "categoryFilterLimitation": "New fifth Nature & culture category chip is absent at the existing default four-chip desktop limit; cards remain in initial All view and mobile categories. Native viewport verification pending.",
+    "categoryFilterLimitation": "Existing four-chip desktop limit is unchanged; the additional category is supported in native data, its places are visible in initial All view and its chip is available on mobile. No theme/CSS workaround.",
     "guidebookOriginalSha256": "d4395e6096445fd38e2281d1b1503d5a07af8c72abed12c7922a8cccccd57bfb",
-    "currentSavedGuidebookSha256": "a9cd3c7c8815aa0765b904f8ababf1edb22745ab8ee1c0c421c0e76916ed7185"
+    "currentSavedGuidebookSha256": "331ebeb930132f24dd8e15b03f24730dc2b56a065abd533396c20347238c326c",
+    "mainHeaderNavigationPreserved": true,
+    "authorizedCustomAdditionsVisible": true
   },
   "remaining": [
-    "Requested standalone native Facts section is unavailable; first Stay List remains provisional.",
-    "Desktop, tablet and phone editor/guest-preview checks are ongoing or pending; visual verification is not complete.",
-    "Verify final fields, photo thumbnails, gallery frames, cropping, clipping and overflow.",
-    "No publication has been performed."
+    "Draft is unpublished; no live deployment is claimed.",
+    "Email delivery remains untested; no inquiry or booking was submitted.",
+    "Any future booking-provider integration or precise date-dependent cancellation terms need separate verification."
   ],
   "sourceEvidence": {
     "capturedAddCatalogSha256": "89553e5efd82ef34a54c66b5afba66492be7ba4f25028ab13c8ecd59a8e688ee",
-    "latestCapturedDraftReadbackSha256": "6bb3227b3c71f1317b7e738770b4693996c98947e0d52f1bc4cb336718a1fcdb",
+    "latestCapturedDraftReadbackSha256": "f6475317060aa0586ef7d011ac10357007da9e988a0bf204c9c440277783a85d",
     "originalImportedLibraryAndReviewsReadbackSha256": "2743647c44b33b9fc1320e231c4908800399ad9b1f99f47c26927cc65c30eb3a",
-    "priorRevision6DraftReadbackSha256": "dcf903add6508ca079cfe7c3bdde55a1f4990ac76540b9a48461174b1b987a9f"
+    "priorRevision6DraftReadbackSha256": "dcf903add6508ca079cfe7c3bdde55a1f4990ac76540b9a48461174b1b987a9f",
+    "finalArchiveManifest": "verification/final-revision-15/manifest.json"
   },
   "nativeMasthead": {
     "layout": "split",
-    "themePatch": {
-      "masthead": "split"
-    },
+    "nativeRailMode": "none",
     "globalStyleChanges": false,
-    "fifthGalleryTile": {
-      "status": "populated in saved native masthead gallery",
-      "path": "hero.gallery[3]",
-      "libraryRef": "ph_asset_30",
-      "libraryRecordExists": true
-    }
+    "fiveNonemptyNativePhotoControls": true,
+    "poolFocus": true
   },
   "preservation": {
     "all432ReviewObjectsUnchanged": true,
     "all27LibraryPhotoObjectsUnchanged": true,
     "original60GuidebookPlacesAndOrderUnchanged": true,
     "original4GuidebookCategoriesAndOrderUnchanged": true,
-    "authorized64PlaceGuidebookRestored": "Build agent reports revision6 Guidebook restored exactly before saved revision8. Original60prefix and fourcustomnames were independently checked in capturedrevision8 readback.",
     "nativeUIUnrelatedEmptyRecordsRemoved": {
       "count": 13,
       "evidence": "reported by primary build agent; no broad content deletion claimed"
-    }
-  }
+    },
+    "noTemplatesOrCustomCodeChanged": true
+  },
+  "stockChecklist": {
+    "result": "fails only guidebookDataUnchanged",
+    "reason": "Four explicitly requested places were added. Exact original60placeobjects/order and originalcategoryprefix preserved.",
+    "otherRecordedRequirements": "pass",
+    "unmodifiedStockGatePassClaimed": false
+  },
+  "evidenceArchiveUrl": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/beautyview-lakeview-suite/verification/final-revision-15"
 }
