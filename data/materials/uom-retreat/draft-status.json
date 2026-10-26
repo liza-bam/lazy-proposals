@@ -19,9 +19,13 @@
   "nativePropertyAddress": "Da Lat, Vietnam",
   "publicLocationPrecision": "city only; exact property street address pending",
   "photos": {
-    "sourceCollectionMissing": true,
+    "sourceCollectionMissing": false,
     "websitePhotoImportCompleted": false,
-    "libraryPhotoCount": 0
+    "libraryPhotoCount": 0,
+    "sourceFilesArchived": 55,
+    "sourceUniqueImages": 55,
+    "sourceArchiveUrl": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/uom-retreat/photos",
+    "websiteImportStatus": "Historical revision5 had no photos; native import/current build is in progress separately and not established by this photo-archive update."
   },
   "reviews": {
     "sourceGuestReviewsArchived": 37,
@@ -37,7 +41,7 @@
     "verifiedDalatCustomCards": "researched proposal prepared only; not saved into website"
   },
   "remaining": [
-    "Actual property photo collection and native library import.",
+    "Native library import and current media build verification; all 55 original photo sources are now archived.",
     "Exact property street address and correct property pin; keep map off until verified.",
     "Requested standalone native Facts section availability and correct first Stay placement.",
     "Complete authored pages, visual composition and required section diversity after media is available; this is a partial text draft.",
