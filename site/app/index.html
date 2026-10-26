@@ -79,7 +79,7 @@ async function showClient(id,kind) {
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
   const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>');
   $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?latestProposal(c):'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
-    '<form id="client-rec">'+(id?accordion('Details',details)+accordion('Billing',billing)+accordion('Timeline',timeline(c.timeline,clientSteps())):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
+    '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps()))+accordion('Details',details)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
     '<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>'+
     (id?accordion('Properties',properties)+proposalHistory(c,id,props.length):'');
   $('#client-rec').onsubmit=saveClient;
