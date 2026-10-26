@@ -44,7 +44,7 @@
     "uniqueImages": 69,
     "generatedArtworkFiles": 0
   },
-  "updatedAt": "2026-10-26T21:46:13.304Z",
+  "updatedAt": "2026-10-26T21:55:48.448Z",
   "files": [
     {
       "kind": "photos",
@@ -66,8 +66,42 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/augusta-lake/photos/originals.zip",
       "size": 6101275,
       "sha256": "3541a85685213140a6f6727715e1bcf1510e6a8861d9f20f3e9113a21fd8aa2e"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.csv",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/augusta-lake/reviews.csv",
+      "size": 12738,
+      "sha256": "47baebfedb9aae66a0056ee47528f63a19ae4625c012beac1101d40633794327"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/augusta-lake/reviews.json",
+      "size": 16458,
+      "sha256": "126b591f73a31ebedf844515dc76444c53528cfb63b72cfc1935a551e389cb1b"
     }
   ],
   "clientId": "andrey",
-  "ownerHighlights": ""
+  "ownerHighlights": "",
+  "reviewRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/augusta-lake/reviews.csv",
+    "csvUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/augusta-lake/reviews.csv",
+    "jsonUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/augusta-lake/reviews.json",
+    "count": 32,
+    "schema": [
+      "name",
+      "review",
+      "rating",
+      "date",
+      "location",
+      "stay",
+      "source"
+    ],
+    "exportedAt": "2026-10-26",
+    "source": "Fresh saved website draft review records",
+    "sourceWebsiteRevision": 103,
+    "websiteReviewCount": 32,
+    "listingUrl": "https://www.airbnb.com/rooms/1476941696635267700"
+  }
 }

@@ -10,7 +10,7 @@
   "imageLink": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/saddleback-ski-lodge-lazy-vacations/photos",
   "listingFacts": "Existing proposal website: https://saddleback-chalet.lazy.vacations/",
   "amenitiesGroups": "",
-  "reviews": "",
+  "reviews": "135 genuine guest reviews are available in the attached reviews.csv using the builder schema. CSV: https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/saddleback-ski-lodge-lazy-vacations/reviews.csv. Wording, ratings and displayed date precision are preserved. Host responses are separate.",
   "hostStory": "",
   "hostTips": "",
   "propertyType": "",
@@ -38,7 +38,7 @@
     "uniqueImages": 36,
     "generatedArtworkFiles": 0
   },
-  "updatedAt": "2026-10-20T05:18:39.325015+00:00",
+  "updatedAt": "2026-10-26T21:55:48.617Z",
   "files": [
     {
       "kind": "photos",
@@ -53,7 +53,41 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/saddleback-ski-lodge-lazy-vacations/photos/manifest.json",
       "size": 16890,
       "sha256": "3feec845a487c39bbeda3039069b26bc79395c00c6b355f81779beb755442ab8"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.csv",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/saddleback-ski-lodge-lazy-vacations/reviews.csv",
+      "size": 31098,
+      "sha256": "4aaad937414619a8aa055afee53d2aeececc501d48d7960a04ec084eaf621b28"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/saddleback-ski-lodge-lazy-vacations/reviews.json",
+      "size": 46954,
+      "sha256": "cd399cffe8ac17924197583db14246fcf737461e4ed88729b55a9d350a1b0270"
     }
   ],
-  "clientId": "carson"
+  "clientId": "carson",
+  "reviewRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/saddleback-ski-lodge-lazy-vacations/reviews.csv",
+    "csvUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/saddleback-ski-lodge-lazy-vacations/reviews.csv",
+    "jsonUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/saddleback-ski-lodge-lazy-vacations/reviews.json",
+    "count": 135,
+    "schema": [
+      "name",
+      "review",
+      "rating",
+      "date",
+      "location",
+      "stay",
+      "source"
+    ],
+    "exportedAt": "2026-10-26",
+    "source": "Fresh saved website draft review records",
+    "sourceWebsiteRevision": 97,
+    "websiteReviewCount": 135,
+    "listingUrl": ""
+  }
 }

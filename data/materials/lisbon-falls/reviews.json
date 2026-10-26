@@ -1,0 +1,443 @@
+[
+  {
+    "name": "Anna",
+    "review": "Had such a lovely stay here! It’s so cozy and peaceful, had zero problems arriving or during our stay. Thoughtful touches and has everything you need. Definitely recommend!",
+    "rating": 5,
+    "date": "1 day ago",
+    "location": "Dallas, Texas",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Ann",
+    "review": "Had a delightful stay at Kaily's house--everything was perfect. The house is very cozy and comfortable, with a great lawn space that my dog enjoyed. Lisbon Falls is a charming and peaceful little town, situated within a short drive to many \"must see\" Maine attractions.",
+    "rating": 5,
+    "date": "2 weeks ago",
+    "location": "Greenwood, Delaware",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "Jacqueline And Daniel",
+    "review": "This rental is indeed cozy, clean and comfortable.  The unit is as described and pictures are accurate.  Bed was comfortable.  Kaily was very helpful in helping me retrieve items I left in the unit.  I would highly recommend this unit.",
+    "rating": 5,
+    "date": "September 2026",
+    "location": "Springfield, Illinois",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "Megan",
+    "review": "Such a great Airbnb- it felt safe and secure, while also being the perfect cosy spot for us to kick back and relax. We felt right at home immediately upon arriving, and thought the snacks and coffee provided was so sweet. \nKaily was super responsive and was right there to answer any questions we had. We would stay here again, anytime we're in the area!",
+    "rating": 5,
+    "date": "September 2026",
+    "location": "Mount Holly, New Jersey",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Lesa",
+    "review": "Very comfortable. Very close to shopping, restaurants, the coast and Portland. We were familiar with the area, so it fit in perfectly for us.",
+    "rating": 5,
+    "date": "August 2026",
+    "location": "Flagler Beach, Florida",
+    "stay": "Stayed over a week",
+    "source": "airbnb"
+  },
+  {
+    "name": "Jalessa",
+    "review": "We really enjoyed our stay! Kaily was such a great host, very friendly and helpful. There was 4 adults and we all slept comfortably. This was our first time in Maine and so staying here allowed us to check out a lot of different parts of Maine without driving too far. You are about 30 minutes to some great shopping options and about 2 hours away from Old Orchard Beach(Be sure to check out the mini golf there!). There is a very cool Disc Golf course minutes from her place as well! If you're looking for a cute, quiet place to stay, away from the city this is your place! Lisbon Falls is a beautiful area! Can't wait to visit again!",
+    "rating": 5,
+    "date": "July 2026",
+    "location": "Riverview, Canada",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Tiffany",
+    "review": "Very cute home with a cozy boho vibe!  From check in to check out, Kaily answered questions quickly and checked in to ensure we were comfortable.  Everything was neat and clean.  Stocked with coffee and snacks!  We will stay again when in the area in the future.",
+    "rating": 5,
+    "date": "July 2026",
+    "location": "Houlton, Maine",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Julie",
+    "review": "Our stay was comfortable and extremely clean.  Kaily was always responsive and very informative.  We had what we needed and more! Within walking distance of the major streets and the water.",
+    "rating": 5,
+    "date": "July 2026",
+    "location": "Winnebago, Wisconsin",
+    "stay": "Stayed about a week",
+    "source": "airbnb"
+  },
+  {
+    "name": "Emelin",
+    "review": "Peaceful and easy stay!",
+    "rating": 5,
+    "date": "July 2026",
+    "location": "New York, United States",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Christopher",
+    "review": "Had my family stay here for a week, it’s a great location, very clean & comfortable, and Kelly is an outstanding host.",
+    "rating": 5,
+    "date": "June 2026",
+    "location": "Brunswick, Maine",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Brittany",
+    "review": "We had a great stay! Everything was as described or pictured, and Kaily was a very kind and communicative host.",
+    "rating": 5,
+    "date": "June 2026",
+    "location": "4 years on Airbnb",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Julianne",
+    "review": "Our stay was wonderful! We take an annual trip to Maine and look forward to staying at the house again in the future.",
+    "rating": 5,
+    "date": "June 2026",
+    "location": "6 years on Airbnb",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Ken",
+    "review": "Very clean and great location.  Kaily is off to a great start. Let me start with the positive: our bed was super comfy and cozy; overall cleanliness was fantastic; a fresh bag of coffee by the coffee pot, lovely; soaps, detergents, etc. all there; nicely sized bathroom/laundry; kitchen; dining room.",
+    "rating": 4,
+    "date": "May 2026",
+    "location": "9 years on Airbnb",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Jen",
+    "review": "The house was as pictured, was a perfect location for our trip. The house was clean and comfortable and had everything we needed.\nKaily was quick to respond and reached out to make sure everything was good and if we needed anything!!!",
+    "rating": 5,
+    "date": "May 2026",
+    "location": "Farmington, New York",
+    "stay": "Stayed over a week",
+    "source": "airbnb"
+  },
+  {
+    "name": "Michelle",
+    "review": "My husband stayed in Kaily's home while in town on somewhat stressful family business.  The house was centrally located, but tucked away and quite peaceful, perfect for unwinding.  It was spotless and comfortable, and solid WiFi allowed him to get a little work done as well.  We highly recommend this home and host.",
+    "rating": 5,
+    "date": "April 2026",
+    "location": "Rockville, Maryland",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Lynn",
+    "review": "Kaily's house really met all of our needs. It was spacious, clean, and, and easy access. We were traveling with our dog, so having an open area where he could play frisbee was fun for all. \nKaily contacted us before we left so we knew exactly how to communicate with her throughout our stay. She was quick to reply, friendly, and welcoming. We appreciated her clear instructions on finding the home and getting inside. The internet worked great, the beds were comfortable, and there were plenty of towels. We visited in early Spring so we the cozy throw for the large bed was nice.\nWe recommend the Papermill Trail, a paved walking trail which is a short drive from Kaily's house--beautiful wall along the river!",
+    "rating": 5,
+    "date": "April 2026",
+    "location": "Williston, Vermont",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "Elaine",
+    "review": "This place is really convenient for us as we needed a place close to my son and this place was. There is plenty of room, both inside and out.",
+    "rating": 5,
+    "date": "March 2026",
+    "location": "Hopkinton, New Hampshire",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "David",
+    "review": "Great humans",
+    "rating": 5,
+    "date": "February 2026",
+    "location": "Buffalo, New York",
+    "stay": "Stayed about a week",
+    "source": "airbnb"
+  },
+  {
+    "name": "Julie",
+    "review": "Thanks",
+    "rating": 4,
+    "date": "June 2026",
+    "location": "Wasilla, Alaska",
+    "stay": "Stayed with kids",
+    "source": "airbnb"
+  },
+  {
+    "name": "Hillary",
+    "review": "The cozy little place was easy to get to, clean, and quiet. We rented the place for our in-laws who came for a visit. Our place is nearby by not big enough for all. We didn’t even know this gem was down the street, but to worked perfectly for busy family breakfasts, catching up in the living room, and being close enough to the coffee and candy shops for the teens to walk to. They enjoyed the comfy beds and super clean bathroom. We definitely plan to rent again for our next family gathering!",
+    "rating": 5,
+    "date": "August 2025",
+    "location": "Maine, United States",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Dayna",
+    "review": "This house was perfect for what we needed and Kailey was very responsive throughout our stay. The home was exactly as pictured, private, clean, and the bed was very comfortable! Easy to locate and Kailey even provided us with some great local food recommendations. Would stay again if we are ever back in the area.",
+    "rating": 5,
+    "date": "July 2025",
+    "location": "Columbia Falls, Maine",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Hilarie",
+    "review": "We could not have been happier with our stay. Kaily was right there to help us whenever we had an issue. Better than some hotel front desks I have had. The house was enjoyable with modern upgrades made. The issues were so small and immediately resolved they aren’t worth mentioning. We loved the house!",
+    "rating": 5,
+    "date": "April 2025",
+    "location": "Boston, Massachusetts",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Kara",
+    "review": "We felt right at home at Kaily’s place! The space was cozy, clean and comfortable; quite a bit bigger than we thought it’d be! The beds were comfy. All listed amenities were present and then some! We wish we could have stayed longer and hope to be able to visit again one day!",
+    "rating": 5,
+    "date": "July 2025",
+    "location": "Cleveland, Ohio",
+    "stay": "Stayed one night",
+    "source": "airbnb"
+  },
+  {
+    "name": "Kait",
+    "review": "We loved our stay! We had everything we needed and it was bigger than expected! Looking forward to staying here again when we visit family in the area. Kaily couldn’t have been a better host. She gave great recommendations and clear instructions. She was so lovely to work with and was so helpful!",
+    "rating": 5,
+    "date": "April 2025",
+    "location": "11 years on Airbnb",
+    "stay": "",
+    "source": "airbnb"
+  },
+  {
+    "name": "Nicole",
+    "review": "We enjoyed our stay at Kaily’s home! The house was neat, clean, and very comfortable. She was proactive with detailed instructions for finding the house and checking in and was responsive during our stay. We appreciated having a cozy space to return to over the weekend. Thanks again!",
+    "rating": 5,
+    "date": "October 2025",
+    "location": "United States",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "Amy",
+    "review": "Clean, quiet, cute little home with good access to lots of fun and interesting Maine locations. Also great coffee, restaurant, ice cream right down the road. Host was attentive and available.",
+    "rating": 5,
+    "date": "June 2025",
+    "location": "1 year on Airbnb",
+    "stay": "",
+    "source": "airbnb"
+  },
+  {
+    "name": "Krista",
+    "review": "The home was clean, comfortable and cozy. Convenient to multiple restaurants and coffee shops. It was private and quiet, the bed was comfortable with multiple pillow options. Shower pressure was great and linens were clean. Would definitely stay again!",
+    "rating": 5,
+    "date": "June 2025",
+    "location": "Williamstown, Vermont",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Dylan",
+    "review": "Kaily was an amazing host! She was super helpful friendly and communicative. Had wonderful recommendations and the house was clean and felt cozy. We spent our honeymoon here and it was very romantic and sweet. We liked that the house was tucked away from the road. The area was absolutely gorgeous would highly highly recommend.",
+    "rating": 5,
+    "date": "September 2025",
+    "location": "Augusta, Maine",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Ariel",
+    "review": "The home was incredibly clean and comfortable (love the bedsheets!), private from neighbors, and easy to return to after a day of fun. Kaily responds quickly, has great local recommendations, and is so kind and understanding!",
+    "rating": 5,
+    "date": "July 2025",
+    "location": "Charlottesville, Virginia",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Hillary",
+    "review": "This was our second time here and we will be back. Kaily was very responsive and even moved her schedule around so our stay could be a bit longer. Huge shout out for that! The place is clean, cute, and without clutter. Exactly what we were looking for.",
+    "rating": 5,
+    "date": "November 2025",
+    "location": "Maine, United States",
+    "stay": "Stayed over a week",
+    "source": "airbnb"
+  },
+  {
+    "name": "Elaine",
+    "review": "Kaily was very accommodating and responsive. Her place worked out great for us - just 7 minutes from family that we were there to visit and spacious, clean accommodations.",
+    "rating": 5,
+    "date": "November 2025",
+    "location": "Hopkinton, New Hampshire",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "Iris",
+    "review": "Very convenient location, we enjoyed our stay, the place was as described. We appreciated the cleanliness of the place. The host was quick to respond back and very helpful when we needed her. We hope to come back soon.",
+    "rating": 5,
+    "date": "November 2025",
+    "location": "Peabody, Massachusetts",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "Mathew",
+    "review": "Kailey was very friendly and communicative throughout the process from beginning to end. She gave us some great recommendations as well. One of which we particularly liked was the blueberries cafe and breakfast place in Topsham. Highly recommend her air bnb. It’s in a great location to travel fairly quickly to Brunswick, Freeport and Portland for shopping etc and has some nice little spots of its own. \nMy wife and I would definitely stay again. The price was very reasonable too.",
+    "rating": 5,
+    "date": "August 2025",
+    "location": "Brewer, Maine",
+    "stay": "Stayed with kids",
+    "source": "airbnb"
+  },
+  {
+    "name": "Emily",
+    "review": "If you’re debating between this place and another, pick this one! Kelly was so responsive in a very timely manner, and the house was beautiful. Clean, had AC, nice bathroom, and washer and dryer if needed! One of my fav air bnb picks.",
+    "rating": 5,
+    "date": "May 2025",
+    "location": "4 years on Airbnb",
+    "stay": "Stayed one night",
+    "source": "airbnb"
+  },
+  {
+    "name": "Angel",
+    "review": "Kaily's place was the perfect spot to rest with very easy expressway access to Portland! Also right down the road from the L.L. Bean flagship store!  The bed here is EXCESSIVELY comfortable! We really enjoyed our stay!",
+    "rating": 5,
+    "date": "August 2025",
+    "location": "Hudsonville, Michigan",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Jacob",
+    "review": "Kaily's place was as cozy as cozy could get! it was close enough to everything that the drive wasn't bad, but far enough from the road that it was quiet, private and peaceful. Kaily always responded to any questions I had, was very friendly and recommended some of her favorite places! would absolutely rent again in the future.",
+    "rating": 5,
+    "date": "May 2025",
+    "location": "Emmalena, Kentucky",
+    "stay": "Stayed about a week",
+    "source": "airbnb"
+  },
+  {
+    "name": "Zach",
+    "review": "Excellent stay, comfortable accommodations, and overall a nice atmosphere for relaxing for our weekend getaway.",
+    "rating": 5,
+    "date": "February 2026",
+    "location": "Old Town, Maine",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "Leanna",
+    "review": "The property was close to where we needed, private and peaceful.",
+    "rating": 5,
+    "date": "August 2025",
+    "location": "6 years on Airbnb",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Alexandra",
+    "review": "We booked this spot for an overnight trip to Maine for my fiancé’s birthday and it was positively perfect! The home is gorgeous and cozy, and Kaily is an amazing host! She gave us great instructions to get there and let us know that it was ready early even without us asking. 100% recommend coming here!",
+    "rating": 5,
+    "date": "June 2025",
+    "location": "Boston, Massachusetts",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "Jessica",
+    "review": "Great place to stay to be close to downtown Lisbon while also being far enough away to enjoy a nice peaceful neighborhood.",
+    "rating": 5,
+    "date": "July 2025",
+    "location": "Beverly, Massachusetts",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Grant",
+    "review": "This was a great spot to stay in for us. Kaily was very responsive and helpful.",
+    "rating": 5,
+    "date": "May 2025",
+    "location": "Lewes, Delaware",
+    "stay": "Stayed with a pet",
+    "source": "airbnb"
+  },
+  {
+    "name": "苑玲",
+    "review": "Great experience, will continue to stay in the near future.",
+    "rating": 5,
+    "date": "August 2025",
+    "location": "8 years on Airbnb",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "苑玲",
+    "review": "It is very convenient to walk to the beautiful restaurant, and it is very close to the Chinese takeaway shop.The house is very nice and clean, very artistic.The owner was very concerned about everything and was very caring.I'll be back, thanks!",
+    "rating": 5,
+    "date": "September 2025",
+    "location": "8 years on Airbnb",
+    "stay": "Stayed about a week",
+    "source": "airbnb"
+  },
+  {
+    "name": "Christina",
+    "review": "Very cute and clean space.  \nNote:\n-no shower toiletries provided\n-radiators stay very hot with no way to turn off\n-no blinds in bathroom window so be ready for that ;)",
+    "rating": 4,
+    "date": "September 2025",
+    "location": "Chelmsford, Massachusetts",
+    "stay": "Stayed one night",
+    "source": "airbnb"
+  },
+  {
+    "name": "Barb",
+    "review": "I absolutely loved it here. Wish I had more time to enjoy the firepit out back.",
+    "rating": 5,
+    "date": "September 2025",
+    "location": "9 years on Airbnb",
+    "stay": "",
+    "source": "airbnb"
+  },
+  {
+    "name": "Abigail",
+    "review": "Kailys home was lovely to stay at for a few day getaway!!! The house was so much bigger than the pictures and the surroundings were nice! So excited to get back there eventually! Very happy with our stay 😊",
+    "rating": 5,
+    "date": "July 2025",
+    "location": "Lakeville, Massachusetts",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Natalie",
+    "review": "Wonderful place to stay, and the host was super friendly!",
+    "rating": 5,
+    "date": "May 2025",
+    "location": "6 years on Airbnb",
+    "stay": "Stayed one night",
+    "source": "airbnb"
+  },
+  {
+    "name": "Julie",
+    "review": "Terrific communication",
+    "rating": 5,
+    "date": "December 2025",
+    "location": "Apopka, Florida",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  },
+  {
+    "name": "Alisa",
+    "review": "Super cute Air bnb! Would definitely recommend",
+    "rating": 5,
+    "date": "October 2025",
+    "location": "Kilmarnock, Virginia",
+    "stay": "Stayed a few nights",
+    "source": "airbnb"
+  }
+]

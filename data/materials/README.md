@@ -12,3 +12,19 @@ One photo collection per intake. Originals retain their filenames and bytes. Pre
 | Rangeley Waterfront Retreat (Michelle & Darryl) | [Open collection](rangeley-waterfront-retreat/photos/) | 33 | 31 |
 | Saddleback Lodge (Ryan & Carson) | [Open collection](saddleback-lodge/photos/) | 48 | 46 |
 | Saddleback Chalet (Ryan & Carson) | [Open collection](saddleback-ski-lodge-lazy-vacations/photos/) | 37 | 36 |
+
+## Guest review CSVs
+
+Builder-compatible CSVs for every client property. Original review text, ratings and displayed date precision are preserved. Host responses are separate. The manifest records source, count and checksum.
+
+| Client / property | Reviews | CSV |
+| --- | ---: | --- |
+| Augusta Lake House | 32 | [Download / view CSV](augusta-lake/reviews.csv) |
+| Beautyview Lakeview suite with pool *legal* | 432 | [Download / view CSV](beautyview-lakeview-suite/reviews.csv) |
+| Clearlake Paradise | 9 | [Download / view CSV](clearlake-paradise/reviews.csv) |
+| Cozy Retreat in Lisbon Falls | 49 | [Download / view CSV](lisbon-falls/reviews.csv) |
+| Milford Sound Beach House | 124 | [Download / view CSV](milford-sound-beach-house/reviews.csv) |
+| Rangeley Waterfront Retreat | 14 | [Download / view CSV](rangeley-waterfront-retreat/reviews.csv) |
+| Saddleback Lodge | 338 | [Download / view CSV](saddleback-lodge/reviews.csv) |
+| Saddleback Chalet | 135 | [Download / view CSV](saddleback-ski-lodge-lazy-vacations/reviews.csv) |
+| Retreat House w Garden/3km to Dalat market | 37 | [Download / view CSV](uom-retreat/reviews.csv) |

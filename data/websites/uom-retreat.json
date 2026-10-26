@@ -69,20 +69,6 @@
     },
     {
       "kind": "reviews",
-      "name": "reviews.json",
-      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/reviews.json",
-      "size": 18676,
-      "sha256": "5e4ed67ad3c1f790c118d099e732c5bd6092cbef938b11b5d840de1b2794c2f1"
-    },
-    {
-      "kind": "reviews",
-      "name": "reviews.csv",
-      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/reviews.csv",
-      "size": 12958,
-      "sha256": "5637cfff8d2e402c8d5dd20f1115744f604a0d1d497aac715398b7dc290caba5"
-    },
-    {
-      "kind": "reviews",
       "name": "host-responses.json",
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/host-responses.json",
       "size": 1166,
@@ -283,11 +269,25 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/verification/published-revision-14/screenshots/oanh-live14-stay-phone.png",
       "size": 72506,
       "sha256": "747d32ce06780b0191cd5fa697095ba786c58c3cada68f8ec8dc523fb0adfb25"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.csv",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/reviews.csv",
+      "size": 12961,
+      "sha256": "efd9e021c0bc2e2d36521edc4b1266724c5e005f151c10d718c2f3ae4906d3c5"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/reviews.json",
+      "size": 18676,
+      "sha256": "5e4ed67ad3c1f790c118d099e732c5bd6092cbef938b11b5d840de1b2794c2f1"
     }
   ],
   "timeline": {},
   "createdAt": "2026-10-25T23:40:25.793794+00:00",
-  "updatedAt": "2026-10-26T04:53:30.040055+00:00",
+  "updatedAt": "2026-10-26T21:55:48.626Z",
   "photoRepository": {
     "url": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/uom-retreat/photos",
     "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/photos/manifest.json",
@@ -295,5 +295,25 @@
     "sourceFiles": 55,
     "uniqueImages": 55,
     "generatedArtworkFiles": 0
+  },
+  "reviewRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/uom-retreat/reviews.csv",
+    "csvUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/reviews.csv",
+    "jsonUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/reviews.json",
+    "count": 37,
+    "schema": [
+      "name",
+      "review",
+      "rating",
+      "date",
+      "location",
+      "stay",
+      "source"
+    ],
+    "exportedAt": "2026-10-26",
+    "source": "Fresh saved website draft review records",
+    "sourceWebsiteRevision": 16,
+    "websiteReviewCount": 37,
+    "listingUrl": "https://airbnb.com/h/uomretreat"
   }
 }

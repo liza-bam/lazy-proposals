@@ -62,20 +62,6 @@
     },
     {
       "kind": "reviews",
-      "name": "reviews.json",
-      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/reviews.json",
-      "size": 176963,
-      "sha256": "a4904541ce4e41451f93afeeb6c238a20a713bfb9cf0da66d938d344a47ab202"
-    },
-    {
-      "kind": "reviews",
-      "name": "reviews.csv",
-      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/reviews.csv",
-      "size": 125641,
-      "sha256": "846707b929547537a1c75aee1a56485dbecac94c5e169d4dbd4828e9d5d55778"
-    },
-    {
-      "kind": "reviews",
       "name": "host-responses.json",
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/host-responses.json",
       "size": 37889,
@@ -283,11 +269,25 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/verification/published-revision-18/screenshots/beautyview-live18-stay-phone.png",
       "size": 78750,
       "sha256": "f4bf012e808ef685667dc7c073ca162019e329122d51e57f28a4882887d13551"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.csv",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/reviews.csv",
+      "size": 125644,
+      "sha256": "5bfab69c389f1f2684643b37c16d3c8e357b5b7ee14d31ba281764ca2c286c65"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/reviews.json",
+      "size": 176963,
+      "sha256": "a4904541ce4e41451f93afeeb6c238a20a713bfb9cf0da66d938d344a47ab202"
     }
   ],
   "timeline": {},
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
-  "updatedAt": "2026-10-26T04:53:30.040055+00:00",
+  "updatedAt": "2026-10-26T21:55:48.511Z",
   "photoRepository": {
     "url": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/beautyview-lakeview-suite/photos",
     "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/photos/manifest.json",
@@ -295,5 +295,25 @@
     "sourceFiles": 32,
     "uniqueImages": 27,
     "generatedArtworkFiles": 0
+  },
+  "reviewRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/beautyview-lakeview-suite/reviews.csv",
+    "csvUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/reviews.csv",
+    "jsonUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/reviews.json",
+    "count": 432,
+    "schema": [
+      "name",
+      "review",
+      "rating",
+      "date",
+      "location",
+      "stay",
+      "source"
+    ],
+    "exportedAt": "2026-10-26",
+    "source": "Fresh saved website draft review records",
+    "sourceWebsiteRevision": 31,
+    "websiteReviewCount": 432,
+    "listingUrl": "https://airbnb.com/h/lott"
   }
 }

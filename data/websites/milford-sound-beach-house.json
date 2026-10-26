@@ -10,7 +10,7 @@
   "imageLink": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/milford-sound-beach-house/photos",
   "listingFacts": "",
   "amenitiesGroups": "",
-  "reviews": "",
+  "reviews": "124 genuine guest reviews are available in the attached reviews.csv using the builder schema. CSV: https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/milford-sound-beach-house/reviews.csv. Wording, ratings and displayed date precision are preserved. Host responses are separate.",
   "hostStory": "",
   "hostTips": "",
   "propertyType": "",
@@ -31,7 +31,7 @@
   "login": "dima",
   "timeline": {},
   "ownerHighlights": "",
-  "updatedAt": "2026-10-20T05:18:39.325015+00:00",
+  "updatedAt": "2026-10-26T21:55:48.567Z",
   "photoRepository": {
     "url": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/milford-sound-beach-house/photos",
     "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/milford-sound-beach-house/photos/manifest.json",
@@ -54,7 +54,41 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/milford-sound-beach-house/photos/manifest.json",
       "size": 279,
       "sha256": "2b542e6aa046440e24a364c3fc51364b725d3c7b2f24e433e3adc492fda33f4b"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.csv",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/milford-sound-beach-house/reviews.csv",
+      "size": 36835,
+      "sha256": "116f50cf802d4d97e27aee83e3f63084229fce44c2a9d4d5970a241124384789"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/milford-sound-beach-house/reviews.json",
+      "size": 51379,
+      "sha256": "8508c2c7ffede1c53ea68c5721e98c33069e063b5cdc8c479f5f1a05f2ad73c1"
     }
   ],
-  "clientId": "dima-s"
+  "clientId": "dima-s",
+  "reviewRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/milford-sound-beach-house/reviews.csv",
+    "csvUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/milford-sound-beach-house/reviews.csv",
+    "jsonUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/milford-sound-beach-house/reviews.json",
+    "count": 124,
+    "schema": [
+      "name",
+      "review",
+      "rating",
+      "date",
+      "location",
+      "stay",
+      "source"
+    ],
+    "exportedAt": "2026-10-26",
+    "source": "Original supplied Milford Airbnb CSV, 124 records; all four current native review records match the full source",
+    "sourceWebsiteRevision": 40,
+    "websiteReviewCount": 4,
+    "listingUrl": "https://www.airbnb.com/rooms/30885175?guests=1&adults=1&s=67&unique_share_id=991811e5-670f-44fd-9e5e-c4eb57933d91"
+  }
 }

@@ -1,0 +1,206 @@
+{
+  "exportedAt": "2026-10-26",
+  "propertyCount": 9,
+  "totalReviews": 1170,
+  "schema": [
+    "name",
+    "review",
+    "rating",
+    "date",
+    "location",
+    "stay",
+    "source"
+  ],
+  "properties": [
+    {
+      "id": "augusta-lake",
+      "clientId": "andrey",
+      "name": "Augusta Lake House",
+      "count": 32,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/augusta-lake/reviews.csv",
+      "sha256": "47baebfedb9aae66a0056ee47528f63a19ae4625c012beac1101d40633794327",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "Fresh saved website draft review records",
+      "websiteRevision": 103,
+      "websiteReviewCount": 32,
+      "listingUrl": "https://www.airbnb.com/rooms/1476941696635267700"
+    },
+    {
+      "id": "beautyview-lakeview-suite",
+      "clientId": "debra-lott",
+      "name": "Beautyview Lakeview suite with pool *legal*",
+      "count": 432,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/beautyview-lakeview-suite/reviews.csv",
+      "sha256": "5bfab69c389f1f2684643b37c16d3c8e357b5b7ee14d31ba281764ca2c286c65",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "Fresh saved website draft review records",
+      "websiteRevision": 31,
+      "websiteReviewCount": 432,
+      "listingUrl": "https://airbnb.com/h/lott"
+    },
+    {
+      "id": "clearlake-paradise",
+      "clientId": "anna-gingis",
+      "name": "Clearlake Paradise",
+      "count": 9,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/reviews.csv",
+      "sha256": "5bdad30ff7fa5475987621599501d11f7456fbd9ae9ecd010fa0dfd89efeb00f",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "All nine reviews in the connected-browser Airbnb review dialog for listing 19056423, captured 2026-10-26; host responses kept separately",
+      "websiteRevision": 101,
+      "websiteReviewCount": 0,
+      "listingUrl": "https://www.airbnb.com/rooms/19056423",
+      "checkedSourceUrl": "https://www.airbnb.com/rooms/19056423/reviews"
+    },
+    {
+      "id": "lisbon-falls",
+      "clientId": "kaily",
+      "name": "Cozy Retreat in Lisbon Falls",
+      "count": 49,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/reviews.csv",
+      "sha256": "7fee3c0d2058d3eb6c02e8511d78c18919172b87549f944b8cf5e830bfa2e715",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "Fresh saved website draft review records",
+      "websiteRevision": 31,
+      "websiteReviewCount": 49,
+      "listingUrl": "https://www.airbnb.com/rooms/1373821364977254467"
+    },
+    {
+      "id": "milford-sound-beach-house",
+      "clientId": "dima-s",
+      "name": "Milford Sound Beach House",
+      "count": 124,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/milford-sound-beach-house/reviews.csv",
+      "sha256": "116f50cf802d4d97e27aee83e3f63084229fce44c2a9d4d5970a241124384789",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "Original supplied Milford Airbnb CSV, 124 records; all four current native review records match the full source",
+      "websiteRevision": 40,
+      "websiteReviewCount": 4,
+      "listingUrl": "https://www.airbnb.com/rooms/30885175?guests=1&adults=1&s=67&unique_share_id=991811e5-670f-44fd-9e5e-c4eb57933d91"
+    },
+    {
+      "id": "rangeley-waterfront-retreat",
+      "clientId": "michelle-darryl",
+      "name": "Rangeley Waterfront Retreat",
+      "count": 14,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/rangeley-waterfront-retreat/reviews.csv",
+      "sha256": "5837e9deb27ba54eab8d9de037ec8b5d6d1b8a51a152060651a5aad940591643",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "Fresh saved website draft review records",
+      "websiteRevision": 21,
+      "websiteReviewCount": 14,
+      "listingUrl": "https://www.airbnb.com/rooms/1615903668655366123"
+    },
+    {
+      "id": "saddleback-lodge",
+      "clientId": "carson",
+      "name": "Saddleback Lodge",
+      "count": 338,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/saddleback-lodge/reviews.csv",
+      "sha256": "af2e158fca7ae9fdb98af967e8141c37e8c5f444235299d32768f5d3730de84c",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "Fresh saved website draft review records",
+      "websiteRevision": 94,
+      "websiteReviewCount": 338,
+      "listingUrl": ""
+    },
+    {
+      "id": "saddleback-ski-lodge-lazy-vacations",
+      "clientId": "carson",
+      "name": "Saddleback Chalet",
+      "count": 135,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/saddleback-ski-lodge-lazy-vacations/reviews.csv",
+      "sha256": "4aaad937414619a8aa055afee53d2aeececc501d48d7960a04ec084eaf621b28",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "Fresh saved website draft review records",
+      "websiteRevision": 97,
+      "websiteReviewCount": 135,
+      "listingUrl": ""
+    },
+    {
+      "id": "uom-retreat",
+      "clientId": "oanh-ngo",
+      "name": "Retreat House w Garden/3km to Dalat market",
+      "count": 37,
+      "csv": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/uom-retreat/reviews.csv",
+      "sha256": "efd9e021c0bc2e2d36521edc4b1266724c5e005f151c10d718c2f3ae4906d3c5",
+      "schema": [
+        "name",
+        "review",
+        "rating",
+        "date",
+        "location",
+        "stay",
+        "source"
+      ],
+      "source": "Fresh saved website draft review records",
+      "websiteRevision": 16,
+      "websiteReviewCount": 37,
+      "listingUrl": "https://airbnb.com/h/uomretreat"
+    }
+  ]
+}

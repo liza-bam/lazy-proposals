@@ -10,7 +10,7 @@
   "imageLink": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/clearlake-paradise/photos",
   "listingFacts": "Existing proposal website: https://clearlake-paradise.lazy.vacations",
   "amenitiesGroups": "# Anna — Clearlake Paradise amenities\n\nSource: supplied directly by Sandy; Airbnb listing https://www.airbnb.com/rooms/19056423\n\nKeep this complete source in the intake. The guest-facing Stay section emphasizes distinctive benefits and omits routine basics such as hot water. Use native editable sections only.\n\n## Scenic views\n- Canal view\n- Lake view\n- Mountain view\n\n## Bathroom\n- Bathtub\n- Hair dryer\n- Cleaning products\n- Shampoo\n- Body soap\n- Hot water\n- Shower gel\n\n## Bedroom and laundry\n- Essentials: towels, bed sheets, soap, and toilet paper\n- Hangers\n- Bed linens: cotton linens\n- Extra pillows and blankets\n- Room-darkening shades\n- Iron\n- Clothing storage: closet\n\n## Entertainment\n- TV\n\n## Heating and cooling\n- Air conditioning\n- Indoor fireplace\n- Portable fans\n- Heating\n\n## Home safety\n- Exterior security cameras on property: security cameras exterior of the house\n- Smoke alarm\n- Carbon monoxide alarm\n\n## Internet and office\n- Wifi\n\n## Kitchen and dining\n- Kitchen: space where guests can cook their own meals\n- Refrigerator\n- Microwave\n- Cooking basics: pots and pans, oil, salt and pepper\n- Dishes and silverware: plates, bowls, cups, cutlery, and other utensils\n- Freezer\n- Dishwasher\n- Electric stove\n- Samsung double oven\n- Hot water kettle\n- Coffee maker: drip coffee maker\n- Wine glasses\n- Toaster\n- Baking sheet\n- Blender\n- Rice maker\n- Dining table\n- Coffee\n\n## Location features\n- Waterfront: right next to a body of water\n- Beach access: guests can enjoy a nearby beach\n- Lake access: guests can get to a lake using a path or dock\n- Private entrance: separate street or building entrance\n- Laundromat nearby\n\n## Outdoor\n- Private patio or balcony\n- Private backyard, fully fenced: an open space on the property usually covered in grass\n- Outdoor furniture\n- Outdoor dining area\n- Private boat slip\n- Sun loungers\n\n## Parking and facilities\n- Free parking on premises\n- Free street parking\n- Private sauna\n- Single level home: no stairs in home\n\n## Services\n- Pets allowed; assistance animals are always allowed\n- Long term stays allowed: stays of 28 days or more\n- Self check-in: keypad, check yourself into the home with a door code\n\n## Not included\n- Washer unavailable\n- Dryer unavailable\n",
-  "reviews": "",
+  "reviews": "9 genuine guest reviews are available in the attached reviews.csv using the builder schema. CSV: https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/reviews.csv. Wording, ratings and displayed date precision are preserved. Host responses are separate.",
   "hostStory": "",
   "hostTips": "",
   "propertyType": "",
@@ -31,7 +31,7 @@
   "login": "anna_g",
   "timeline": {},
   "ownerHighlights": "",
-  "updatedAt": "2026-10-20T05:18:39.325015+00:00",
+  "updatedAt": "2026-10-26T21:55:48.523Z",
   "photoRepository": {
     "url": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/clearlake-paradise/photos",
     "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/photos/manifest.json",
@@ -54,7 +54,49 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/photos/manifest.json",
       "size": 14028,
       "sha256": "02c225b75b8a385d84cfe64f4e83069d97802091dd709b7388e7a6e0a255a5b9"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.csv",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/reviews.csv",
+      "size": 3816,
+      "sha256": "5bdad30ff7fa5475987621599501d11f7456fbd9ae9ecd010fa0dfd89efeb00f"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/reviews.json",
+      "size": 4838,
+      "sha256": "1bd1ffe357cf01e112258f09724d84836965b5e47add79104e1a11744632f837"
+    },
+    {
+      "kind": "reviews",
+      "name": "host-responses.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/host-responses.json",
+      "size": 698,
+      "sha256": "dbcd6f579df0362f54376fe43b7820b87adb26d364fe0ebdb662884b315bd1ef"
     }
   ],
-  "clientId": "anna-gingis"
+  "clientId": "anna-gingis",
+  "reviewRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/clearlake-paradise/reviews.csv",
+    "csvUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/reviews.csv",
+    "jsonUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/clearlake-paradise/reviews.json",
+    "count": 9,
+    "schema": [
+      "name",
+      "review",
+      "rating",
+      "date",
+      "location",
+      "stay",
+      "source"
+    ],
+    "exportedAt": "2026-10-26",
+    "source": "All nine reviews in the connected-browser Airbnb review dialog for listing 19056423, captured 2026-10-26; host responses kept separately",
+    "sourceWebsiteRevision": 101,
+    "websiteReviewCount": 0,
+    "listingUrl": "https://www.airbnb.com/rooms/19056423",
+    "checkedSourceUrl": "https://www.airbnb.com/rooms/19056423/reviews"
+  }
 }

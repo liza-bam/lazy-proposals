@@ -31,7 +31,7 @@
   "login": "lisbon-falls",
   "timeline": {},
   "ownerHighlights": "\nWifi\nDedicated workspace\nPets allowed\nBackyard\nLong term stays allowed",
-  "updatedAt": "2026-10-20T05:18:39.325015+00:00",
+  "updatedAt": "2026-10-26T21:55:48.536Z",
   "photoRepository": {
     "url": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/lisbon-falls/photos",
     "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/photos/manifest.json",
@@ -61,7 +61,41 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/photos/originals.zip",
       "size": 3528374,
       "sha256": "e2ef62316dd23d5eb873ae77d912bd46d496bea97cdcd5c523b67c31ca49fcfc"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.csv",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/reviews.csv",
+      "size": 14281,
+      "sha256": "7fee3c0d2058d3eb6c02e8511d78c18919172b87549f944b8cf5e830bfa2e715"
+    },
+    {
+      "kind": "reviews",
+      "name": "reviews.json",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/reviews.json",
+      "size": 19982,
+      "sha256": "848c72eff27e9afee20308077c5671926491b5fea01f87a130911cc36ab0fe71"
     }
   ],
-  "clientId": "kaily"
+  "clientId": "kaily",
+  "reviewRepository": {
+    "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/lisbon-falls/reviews.csv",
+    "csvUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/reviews.csv",
+    "jsonUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lisbon-falls/reviews.json",
+    "count": 49,
+    "schema": [
+      "name",
+      "review",
+      "rating",
+      "date",
+      "location",
+      "stay",
+      "source"
+    ],
+    "exportedAt": "2026-10-26",
+    "source": "Fresh saved website draft review records",
+    "sourceWebsiteRevision": 31,
+    "websiteReviewCount": 49,
+    "listingUrl": "https://www.airbnb.com/rooms/1373821364977254467"
+  }
 }
