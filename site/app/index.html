@@ -78,9 +78,9 @@ async function showClient(id,kind) {
   const details='<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>'+clientField('notes','Client notes',c.notes,'area');
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
   const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>');
-  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?latestProposal(c):'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
+  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?latestProposal(c)+'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
     '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps()))+accordion('Details',details)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
-    '<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>'+
+    (id?'':'<div class="row"><button class="go" type="submit">Create client</button><span class="msg" id="msg" role="status"></span></div>')+'</form>'+
     (id?accordion('Properties',properties)+proposalHistory(c,id,props.length):'');
   $('#client-rec').onsubmit=saveClient;
   if(id)fillDoneEmail(c).catch(er=>say(er.message,true));
@@ -191,7 +191,7 @@ async function fillDoneEmail(c) {
   if(!t||!s||currentClient!==c)return;
   const S=s.data,props=ClientModel.propertiesForClient(c,records).filter(p=>safeUrl(p.siteUrl));
   // The LAZY request email's button (rentals-marketing tools/intake/Code.gs button()).
-  const btn=(u,label)=>'<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 0;"><tr><td style="background:#f9426f;border-radius:8px;"><a href="'+esc(u)+'" style="display:inline-block;padding:13px 24px;font-family:Georgia,\'Noto Serif\',\'Times New Roman\',serif;font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#ffffff;text-decoration:none;">'+esc(label)+'</a></td></tr></table>';
+  const btn=(u,label)=>'<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 0;"><tr><td style="background:#057d7b;border-radius:8px;"><a href="'+esc(u)+'" style="display:inline-block;padding:13px 24px;font-family:Georgia,\'Noto Serif\',\'Times New Roman\',serif;font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#ffffff;text-decoration:none;">'+esc(label)+'</a></td></tr></table>';
   const fill={name:esc(c.name),marketingUrl:esc(S.marketingUrl),facebookUrl:esc(S.facebookUrl),signoff:esc(S.signoff),
     websiteButtons:props.map(p=>btn(p.siteUrl,props.length>1?p.name:'Visit your website')).join(''),
     loginLine:c.login?'<p style="margin:12px 0 0;font-family:Georgia,\'Noto Serif\',\'Times New Roman\',serif;font-size:15px;line-height:1.55;color:#17363c;">Your login: <strong>'+esc(c.login)+'</strong></p>':''};
@@ -210,6 +210,8 @@ async function composeDoneEmail() {
     say('Done email opened in Mail.');
   } catch(er){say('Mail helper: '+(er.message==='Failed to fetch'?'not running. Open tools/mail-helper/Mail helper.command.':er.message),true);}
 }
+// Save client turns primary only once Details or Billing hold an unsaved change; the timeline saves itself.
+document.addEventListener('input',e=>{const f=e.target.form;if(f&&f.id==='client-rec'&&!/^(tl|sk)_/.test(e.target.name||''))$('#save-client')?.classList.remove('go--quiet');});
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
 document.addEventListener('click',async e=>{
   try {

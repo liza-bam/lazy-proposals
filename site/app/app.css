@@ -35,7 +35,7 @@ label { display: flex; flex-direction: column; gap: var(--s1); font-size: var(--
 input, select, textarea { font: inherit; font-weight: 400; color: var(--ink); padding: var(--s2); border: var(--frame) solid var(--line); border-radius: var(--r-btn); background: var(--white); width: 100%; box-sizing: border-box; }
 textarea { min-height: 96px; resize: vertical; }
 textarea.tall { min-height: 180px; }
-.go { align-self: flex-start; background: var(--coral); color: var(--white); border: 0; padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; }
+.go { align-self: flex-start; background: var(--green); color: var(--white); border: 0; padding: var(--s2) var(--s4); border-radius: var(--r-btn); font: inherit; font-weight: 600; cursor: pointer; text-decoration: none; }
 .go--quiet { background: var(--tint); color: var(--ink); }
 .go[disabled] { opacity: .6; cursor: progress; }
 .row { display: flex; gap: var(--s2); align-items: center; flex-wrap: wrap; }
