@@ -16,9 +16,18 @@ on run argv
 		end repeat
 		set w to window 1
 		if name of w is not subj then error "The new message did not open."
+		-- The paste goes to the front app, so it waits for Mail to be in front and never types anywhere else.
+		set frontmost to true
+		repeat 20 times
+			if frontmost then exit repeat
+			delay 0.2
+		end repeat
+		if not frontmost then error "Mail did not come to the front; nothing was pasted."
+		perform action "AXRaise" of w
 		set body to UI element 1 of UI element 1 of UI element 1 of (first UI element of w whose role is "AXGroup")
 		set focused of body to true
-		delay 0.3
+		delay 0.4
+		if not frontmost then error "Mail lost the front; nothing was pasted."
 		keystroke "v" using command down
 	end tell
 	if attachPath is not "" then
