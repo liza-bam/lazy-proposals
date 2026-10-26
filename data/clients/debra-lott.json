@@ -40,6 +40,15 @@
       ],
       "path": "proposals/clients/debra-lott/mvpoi7e7/",
       "pdf": true
+    },
+    {
+      "token": "mvpp09oq",
+      "date": "2026-10-26",
+      "properties": [
+        "beautyview-lakeview-suite"
+      ],
+      "path": "proposals/clients/debra-lott/mvpp09oq/",
+      "pdf": true
     }
   ],
   "timeline": {
@@ -48,5 +57,5 @@
     "doneEmail": "2026-10-26"
   },
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
-  "updatedAt": "2026-10-26T19:58:01.231Z"
+  "updatedAt": "2026-10-26T20:12:04.374Z"
 }
