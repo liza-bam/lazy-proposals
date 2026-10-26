@@ -14,12 +14,21 @@
       "siteUrl": ""
     }
   ],
-  "proposals": [],
+  "proposals": [
+    {
+      "token": "mvpno63z",
+      "date": "2026-10-26",
+      "properties": [
+        "beautyview-lakeview-suite"
+      ],
+      "path": "proposals/clients/debra-lott/mvpno63z/"
+    }
+  ],
   "timeline": {
     "request": "2026-10-25",
     "deliveryDate": "2026-10-26",
-    "proposal": "skip"
+    "proposal": "2026-10-26"
   },
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
-  "updatedAt": "2026-10-26T19:04:46.357Z"
+  "updatedAt": "2026-10-26T19:34:39.874Z"
 }
