@@ -93,7 +93,7 @@ async function openInMail(f){
     const g=generatedDraft,body={from:'Sandy <'+S.senderEmail+'>',to:f.to,subject:f.subject,html:g.html,plain:g.plain};
     if(g.pdf)Object.assign(body,{attachment:await blobBase64(g.pdf),attachmentName:f.attachName});
     const r=await fetch('http://127.0.0.1:47317/compose',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}),j=await r.json();
-    if(!j.ok)throw Error(j.error);$('#result-msg').textContent='Opened in Mail.';
+    if(!j.ok)throw Error(j.error);$('#result-msg').textContent='';
   }catch(er){$('#result-msg').textContent='Mail helper: '+(er.message==='Failed to fetch'?'not running, or Chrome blocked it. Open tools/mail-helper/Mail helper.command, then allow Chrome to reach it.':er.message);}
 }
 async function make(e){

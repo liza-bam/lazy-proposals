@@ -211,7 +211,6 @@ async function sendConfirmation(c) {
   try {
     const r=await fetch('http://127.0.0.1:47317/compose',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({from:'Sandy <'+s.data.senderEmail+'>',to:c.email||'',subject:e.subject,html:e.html,plain})});
     const j=await r.json();if(!j.ok)throw Error(j.error);
-    say('Confirmation email opened in Mail · ready for review '+e.readyDate+'.');
   } catch(er){say('Mail helper: '+(er.message==='Failed to fetch'?'not running, or Chrome blocked it. Open tools/mail-helper/Mail helper.command, then allow Chrome to reach it.':er.message),true);}
 }
 // Save client turns primary only once Details or Billing hold an unsaved change; the timeline saves itself.
