@@ -5,7 +5,7 @@
   else root.ClientModel = model;
 })(typeof globalThis === 'object' ? globalThis : this, function () {
   'use strict';
-  const CLIENT_STEPS = ['request', 'confirmation', 'doneEmail', 'demo', 'billing', 'cancel'];
+  const CLIENT_STEPS = ['request', 'confirmation', 'doneEmail', 'demoScheduled', 'demo', 'billing', 'cancel'];
   const PROPERTY_STEPS = ['built', 'intake', 'integration', 'launch'];
   function propertiesForClient(client, websites) {
     return websites.filter(p => p.clientId ? p.clientId === client.id : (client.properties || []).some(x => x.id === p.id))

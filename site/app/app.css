@@ -74,3 +74,7 @@ textarea.tall { min-height: 180px; }
 .sent h3 { margin: 0 0 var(--s1); font-size: var(--text-sm); }
 .sent ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--s1); }
 .sent li { display: flex; flex-wrap: wrap; gap: var(--s2); align-items: baseline; }
+.client-card > summary { cursor: pointer; list-style: none; }
+.client-card > summary::-webkit-details-marker { display: none; }
+.client-card[open] > summary { margin-bottom: var(--s3); }
+.client-card > * + * { margin-top: var(--s3); }

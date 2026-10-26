@@ -95,6 +95,7 @@ const TIMELINE = [
   ['built', 'Website built', 'Usually 3–4 business days · design and setup free during launch'],
   ['intake', 'Intake filled', ''],
   ['doneEmail', 'Website ready email sent', 'With the demo invite, and the offer PDF when attached'],
+  ['demoScheduled', 'Demo scheduled', 'The client books it through the calendar'],
   ['demo', 'Demo and training session', ''],
   ['integration', 'Integration session', 'If booked · integration is free'],
   ['launch', 'Launch', 'First month of hosting and support free'],

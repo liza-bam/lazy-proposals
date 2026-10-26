@@ -7,7 +7,7 @@
 <title>Clients — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css?v=green1">
-<link rel="stylesheet" href="app.css?v=clients7">
+<link rel="stylesheet" href="app.css?v=clients8">
 </head>
 <body>
 <div class="app">
@@ -18,8 +18,8 @@
   <aside class="app__side" id="side"></aside>
   <main class="app__main" id="main"><p class="muted">Loading…</p></main>
 </div>
-<script src="app.js?v=clients4"></script>
-<script src="client-model.js?v=clients4"></script>
+<script src="app.js?v=clients5"></script>
+<script src="client-model.js?v=clients5"></script>
 <script>
 
 let records = [], clientRecords = [], current = null, currentClient = null, currentRecord = null, sha = null, clientSha = null, openSequence = 0, saving = false;
@@ -80,7 +80,8 @@ async function showClient(id,kind) {
   const notes=clientField('notes','Client notes',c.notes,'area'),details=contact+notes;
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
   const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row">'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'<span data-reviews="'+esc(p.id)+'"></span></div><details class="intake" data-intake="'+esc(p.id)+'"><summary>Intake</summary><div class="intake__body"></div></details></article>').join(''):'<p class="muted">Add this client’s first property.</p>')+'<div id="new-intake"></div>';
-  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p>'+(id?(contact+notes).replace(/<(input|textarea) /g,'<$1 form="client-rec" ')+sentEmails(c):'')+'</section>'+
+  // The client card closes to its line: the name and Save.
+  $('#main').innerHTML='<details class="box client-card" open><summary class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</summary><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p>'+(id?(contact+notes).replace(/<(input|textarea) /g,'<$1 form="client-rec" ')+sentEmails(c):'')+'</details>'+
     '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Billing'+billingStart(c),billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
     (id?'':'<div class="row"><button class="go" type="submit">Create client</button><span class="msg" id="msg" role="status"></span></div>')+'</form>'+
     (id?accordion('Properties',properties):'');
