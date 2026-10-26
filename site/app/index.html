@@ -7,7 +7,7 @@
 <title>Clients — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css?v=green1">
-<link rel="stylesheet" href="app.css?v=clients6">
+<link rel="stylesheet" href="app.css?v=clients7">
 </head>
 <body>
 <div class="app">
@@ -80,10 +80,10 @@ async function showClient(id,kind) {
   const notes=clientField('notes','Client notes',c.notes,'area'),details=contact+notes;
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
   const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row">'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'<span data-reviews="'+esc(p.id)+'"></span></div><details class="intake" data-intake="'+esc(p.id)+'"><summary>Intake</summary><div class="intake__body"></div></details></article>').join(''):'<p class="muted">Add this client’s first property.</p>')+'<div id="new-intake"></div>';
-  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p>'+(id?contact.replace(/<(input|textarea) /g,'<$1 form="client-rec" '):'')+'</section>'+
-    '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Client notes',notes)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
+  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p>'+(id?(contact+notes).replace(/<(input|textarea) /g,'<$1 form="client-rec" ')+sentEmails(c):'')+'</section>'+
+    '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
     (id?'':'<div class="row"><button class="go" type="submit">Create client</button><span class="msg" id="msg" role="status"></span></div>')+'</form>'+
-    (id?accordion('Properties',properties)+proposalHistory(c):'');
+    (id?accordion('Properties',properties):'');
   $('#client-rec').onsubmit=saveClient;
   props.forEach(p=>reviewsLink(p.id));
 }
@@ -99,15 +99,15 @@ function showOther(c,id) {
     '<form class="box" id="client-rec"><h2>Client details</h2><input type="hidden" name="kind" value="other"><div class="grid2">'+clientField('name','Client name',c.name)+clientField('business','Business',c.business)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('platform','Platform',c.platform)+clientField('status','Status',c.status)+clientField('siteUrl','Website',c.siteUrl,'url')+clientField('driveUrl','Drive folder',c.driveUrl,'url')+'</div>'+clientField('notes','Notes',c.notes,'area')+'<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>';
   $('#client-rec').onsubmit=saveClient;
 }
-// Every website ready email sent: the saved email, and the offer PDF when one went with it. Closed: the Timeline makes new ones.
-function proposalHistory(c) {
+// Every website ready email sent, listed in the client card: the saved email, and the offer PDF when one went with it.
+function sentEmails(c) {
   const rows=[...(c.proposals||[])].reverse();
   if(!rows.length)return '';
-  return '<details class="box optional"><summary>Sent emails</summary><div class="optional__body">'+rows.map(p=>{
+  return '<div class="sent"><h3>Sent emails</h3><ul>'+rows.map(p=>{
     const names=(p.properties||[]).map(id=>records.find(r=>r.id===id)?.name||id).join(', ');
     const dir=p.path?p.path.replace(/\/$/,''):'';
-    return '<article class="property-card"><strong>'+esc(names||c.name)+'</strong><p class="muted">'+esc(p.date||'Date not recorded')+'</p><div class="row">'+(dir?link('https://github.com/'+REPO+'/blob/main/'+dir+'/email.html','Email')+(p.pdf===false?'':link('https://raw.githubusercontent.com/'+REPO+'/main/'+dir+'/proposal.pdf','Offer PDF')):'<span class="muted">Earlier email · '+esc(p.token)+'</span>')+'</div></article>';
-  }).join('')+'</div></details>';
+    return '<li><span>'+esc(p.date||'')+' · '+esc(names||c.name)+'</span>'+(dir?link('https://github.com/'+REPO+'/blob/main/'+dir+'/email.html','Email')+(p.pdf===false?'':link('https://raw.githubusercontent.com/'+REPO+'/main/'+dir+'/proposal.pdf','Offer PDF')):'<span class="muted">earlier email</span>')+'</li>';
+  }).join('')+'</ul></div>';
 }
 // Saves refresh the record; keep the user's place in its native accordions.
 function captureViewState() {
