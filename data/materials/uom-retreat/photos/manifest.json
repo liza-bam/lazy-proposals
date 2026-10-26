@@ -1,0 +1,1007 @@
+{
+  "intakeId": "uom-retreat",
+  "property": "Dalat Retreat House",
+  "owner": "Oanh Ngo",
+  "status": "archived",
+  "archivedAt": "2026-10-26T03:34:44.918573+00:00",
+  "sourceFiles": 55,
+  "uniqueImages": 55,
+  "generatedArtworkFiles": 0,
+  "previewsGenerated": false,
+  "featuredPhotoOrder": [
+    "946e0a6e-387e-4c1c-92b3-4c851f36bb28.avif",
+    "4b5ae365-0453-4e17-86c4-13f342f6a4a8.avif",
+    "32311667-106c-4c47-8e5f-f6fce128e62e.avif",
+    "0439c978-d6b1-4e8d-9f2c-b4364c01d5ff.webp",
+    "cd64daba-e18e-4468-addf-d2b414f83dde.avif"
+  ],
+  "gallerySets": {
+    "heroSplit": [
+      "946e0a6e-387e-4c1c-92b3-4c851f36bb28.avif",
+      "4b5ae365-0453-4e17-86c4-13f342f6a4a8.avif",
+      "32311667-106c-4c47-8e5f-f6fce128e62e.avif",
+      "0439c978-d6b1-4e8d-9f2c-b4364c01d5ff.webp",
+      "cd64daba-e18e-4468-addf-d2b414f83dde.avif"
+    ],
+    "homeGardenHouse": [
+      "946e0a6e-387e-4c1c-92b3-4c851f36bb28.avif",
+      "6cd46b53-4d70-48d0-978a-975a65a84634.avif",
+      "0439c978-d6b1-4e8d-9f2c-b4364c01d5ff.webp",
+      "4b5ae365-0453-4e17-86c4-13f342f6a4a8.avif",
+      "cd64daba-e18e-4468-addf-d2b414f83dde.avif",
+      "b6a14cec-918b-4983-adc2-3429fd852a0c.jpg",
+      "73e5d950-8c04-4526-8274-56691a7afb7e.jpg"
+    ],
+    "stayRooms": [
+      "9d15b9cc-2949-4d0b-b86e-9ef3b2d9607c.jpg",
+      "02d629f1-f2ce-4f10-8a3c-1613d1e12276.jpg",
+      "32311667-106c-4c47-8e5f-f6fce128e62e.avif",
+      "b15ed0f3-8266-4add-abda-a7b6225511a9.avif",
+      "0055ce52-b9b3-4a99-b684-207913418ec3.avif",
+      "82dbc63f-2934-4c53-a031-81cf5a0ddb30.jpg",
+      "1533f152-db2d-4731-96b7-bada6d51ab6b.jpg",
+      "5454cbff-037f-48fd-bf03-3cf79a65fed0.avif"
+    ],
+    "aboutGarden": [
+      "f775b986-745a-4dec-8b9b-f5e7333a8d07.avif",
+      "2a98511d-290a-4f71-8366-ecd9ea6a5722.avif",
+      "5f1389d1-7a6f-4eac-9b66-a2e0143180df.avif",
+      "6f2284a4-38e1-4330-802a-dd1659ef68b1.jpg",
+      "a12bd2ff-2bbb-4780-8d05-58ad9a004d35.avif",
+      "fe79772c-6927-41ea-98cc-ce6d8ab4a38d.avif"
+    ]
+  },
+  "files": [
+    {
+      "sourceFilename": "0055ce52-b9b3-4a99-b684-207913418ec3.avif",
+      "original": "originals/0055ce52-b9b3-4a99-b684-207913418ec3.avif",
+      "bytes": 83621,
+      "sha256": "0cf1dd0176293dd9612eb7728db3575face3dd3e9851398b24d6b4c6e271ec7a",
+      "duplicateOf": null,
+      "caption": "Bathroom with patterned tiles",
+      "alt": "Bathroom with patterned tiles, a glazed shower partition and a window.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "bathroom",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "02d629f1-f2ce-4f10-8a3c-1613d1e12276.jpg",
+      "original": "originals/02d629f1-f2ce-4f10-8a3c-1613d1e12276.jpg",
+      "bytes": 167503,
+      "sha256": "bfd288c34281f9f37a842f25fd82203a97fa2dd4d2de6396a92ff1a38dc511c9",
+      "duplicateOf": null,
+      "caption": "Curtained mezzanine beds",
+      "alt": "Mezzanine sleeping area with white curtains, bedding and wooden flooring.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "mezzanine",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "042944dd-a539-437b-a69d-8182dc562065.jpg",
+      "original": "originals/042944dd-a539-437b-a69d-8182dc562065.jpg",
+      "bytes": 90484,
+      "sha256": "8a73252320958762bf05d93c4a7676faaf10c2378df896b02c9c0185a16a585a",
+      "duplicateOf": null,
+      "caption": "Garden-facing glass wall",
+      "alt": "Floor-to-ceiling glazing and doors looking into the green garden.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "house",
+        "windows",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "0439c978-d6b1-4e8d-9f2c-b4364c01d5ff.webp",
+      "original": "originals/0439c978-d6b1-4e8d-9f2c-b4364c01d5ff.webp",
+      "bytes": 182692,
+      "sha256": "d0e28476be0d79b1524e70081c4fc6ba78f8e2af7ef11dfc516ada75e4fe824f",
+      "duplicateOf": null,
+      "caption": "House and garden after dark",
+      "alt": "House lit after dark behind a garden path and flowering hydrangeas.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "house",
+        "garden",
+        "night",
+        "home",
+        "hero"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "0acc1e01-53b4-46cd-9aab-347502ffe95e.avif",
+      "original": "originals/0acc1e01-53b4-46cd-9aab-347502ffe95e.avif",
+      "bytes": 34585,
+      "sha256": "307c38e13fc976c6a799a17f7cb9c788004e3650aa3c26ad61cd435708adf6b8",
+      "duplicateOf": null,
+      "caption": "Private bedroom",
+      "alt": "Bed with white bedding in the private bedroom, beside a garden-facing window.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bedroom",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "0bd86fcf-8624-4b27-8b2a-45d9b5381575.avif",
+      "original": "originals/0bd86fcf-8624-4b27-8b2a-45d9b5381575.avif",
+      "bytes": 91353,
+      "sha256": "2ca2f12a2e8e2c1ac28794e8e1dd8a69c4e4ab60a5821bc48add127c829f4659",
+      "duplicateOf": null,
+      "caption": "A green garden path",
+      "alt": "Narrow garden path between leafy plants and shrubs.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "plants",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "0c7198d1-b6c1-485d-9709-058cbfbefe7a.avif",
+      "original": "originals/0c7198d1-b6c1-485d-9709-058cbfbefe7a.avif",
+      "bytes": 54852,
+      "sha256": "04a006a6baac9ca90d6754f8c25ed3f5e15d81424f639891b234182b2649de8e",
+      "duplicateOf": null,
+      "caption": "Bedroom in daylight",
+      "alt": "Private bedroom with white bedding, wooden ceiling, window and floor lamp.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bedroom",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "14cfb7ab-bb68-4467-b841-183d46c64c46.avif",
+      "original": "originals/14cfb7ab-bb68-4467-b841-183d46c64c46.avif",
+      "bytes": 111802,
+      "sha256": "58bfa1656d1506f4a78679f5e386dbe900ec24aff35bc88c24674f4d244b85c1",
+      "duplicateOf": null,
+      "caption": "Pink hydrangea flowers",
+      "alt": "Pink hydrangea flower cluster among leaves in the garden.",
+      "width": 720,
+      "height": 960,
+      "roles": [
+        "garden",
+        "flowers",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "1533f152-db2d-4731-96b7-bada6d51ab6b.jpg",
+      "original": "originals/1533f152-db2d-4731-96b7-bada6d51ab6b.jpg",
+      "bytes": 89338,
+      "sha256": "a00dd9eaef8c24b0ef64dfbf1921156e6d14ad70bc309eedca60ce06d40d6e3c",
+      "duplicateOf": null,
+      "caption": "Living area and stairs",
+      "alt": "Living area beneath the mezzanine, with stairs beside a tall glazed wall.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "living",
+        "stairs",
+        "access",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "1666f56f-cf98-425e-82d3-7db001c70215.avif",
+      "original": "originals/1666f56f-cf98-425e-82d3-7db001c70215.avif",
+      "bytes": 41011,
+      "sha256": "792425e28506e8ad3ce8f56284640d06567fb6ae2953efe2224896b225003433",
+      "duplicateOf": null,
+      "caption": "Bathroom doorway",
+      "alt": "Bathroom doorway beside a wooden partition, with shower fittings visible inside.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bathroom",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "19bc3bca-ef1f-4938-8c15-59d3f1bb75a0.avif",
+      "original": "originals/19bc3bca-ef1f-4938-8c15-59d3f1bb75a0.avif",
+      "bytes": 43670,
+      "sha256": "29f718513248f6a3751a7f7b2d975fdb025149ec8ad92242137b3c9b8e010f1a",
+      "duplicateOf": null,
+      "caption": "Wooden bed and partition",
+      "alt": "Bedroom bed with white bedding and a wooden headboard and partition.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bedroom",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "200d4ab7-9c34-4d85-84d6-dfdb73ff8d71.avif",
+      "original": "originals/200d4ab7-9c34-4d85-84d6-dfdb73ff8d71.avif",
+      "bytes": 101757,
+      "sha256": "068ddf7e802c31da8d7da3321bd431196ad4e9d87d0ef8f82f0aba02b5792a9b",
+      "duplicateOf": null,
+      "caption": "Blue hydrangeas",
+      "alt": "Blue and lilac hydrangea flowers among dense garden greenery.",
+      "width": 720,
+      "height": 960,
+      "roles": [
+        "garden",
+        "flowers",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "2a98511d-290a-4f71-8366-ecd9ea6a5722.avif",
+      "original": "originals/2a98511d-290a-4f71-8366-ecd9ea6a5722.avif",
+      "bytes": 91456,
+      "sha256": "9e686b429735201492f83eabfebe6bb5e667e90cc2ca210982eb4fee853c9727",
+      "duplicateOf": null,
+      "caption": "Hydrangea-lined path",
+      "alt": "Stone garden path curving past blue hydrangeas and leafy planting.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "path",
+        "flowers",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "32311667-106c-4c47-8e5f-f6fce128e62e.avif",
+      "original": "originals/32311667-106c-4c47-8e5f-f6fce128e62e.avif",
+      "bytes": 106685,
+      "sha256": "9e19bb2bfa0e4c3ff6c6ea465bc0dc576c941d1efd6b966649173876a47e7765",
+      "duplicateOf": null,
+      "caption": "Mezzanine in sunlight",
+      "alt": "Sunlight reaches the curtained mezzanine beds beside the glass wall.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "mezzanine",
+        "sleeping",
+        "stay",
+        "hero"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "3876f0f9-ba81-4216-97ee-54274978dde9.avif",
+      "original": "originals/3876f0f9-ba81-4216-97ee-54274978dde9.avif",
+      "bytes": 54236,
+      "sha256": "6d0eb940c990d3968c739470e87ae42b5d852dfc5ede69467479830d5ec73f7c",
+      "duplicateOf": null,
+      "caption": "Mezzanine curtain detail",
+      "alt": "White curtains beside the mezzanine railing and open stairwell.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "mezzanine",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "3d702465-049b-4409-8152-eca8d0652e3c.avif",
+      "original": "originals/3d702465-049b-4409-8152-eca8d0652e3c.avif",
+      "bytes": 59021,
+      "sha256": "6234f2f9325f68827540e81acda3d0c023db24d262480849d1bbca8e8355a288",
+      "duplicateOf": null,
+      "caption": "Bedroom and garden window",
+      "alt": "Bed with white bedding in a private bedroom with a window and wardrobe.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bedroom",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "415de313-e337-49d4-bec9-d991cdbf8727.avif",
+      "original": "originals/415de313-e337-49d4-bec9-d991cdbf8727.avif",
+      "bytes": 104282,
+      "sha256": "24dd55cb50249d39f134fea2e59fb64d7a228ca23ef287024e7c567b96721446",
+      "duplicateOf": null,
+      "caption": "House roofline in the garden",
+      "alt": "Roofline and glass walls seen through large garden leaves.",
+      "width": 720,
+      "height": 960,
+      "roles": [
+        "house",
+        "garden",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "44524b08-6d41-48f6-905e-97520905d02a.avif",
+      "original": "originals/44524b08-6d41-48f6-905e-97520905d02a.avif",
+      "bytes": 43670,
+      "sha256": "94f49df69561aa46c22f4cf11cbfb4054e901e6cfb6ed161b939afab60001c8c",
+      "duplicateOf": null,
+      "caption": "Mezzanine and tall glazing",
+      "alt": "Mezzanine railing and wooden floor beside a tall glazed wall looking into trees.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "mezzanine",
+        "windows",
+        "house"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "4b5ae365-0453-4e17-86c4-13f342f6a4a8.avif",
+      "original": "originals/4b5ae365-0453-4e17-86c4-13f342f6a4a8.avif",
+      "bytes": 108863,
+      "sha256": "d067e94ff212bdf7c92b8c9749de8f4578497eb6176ac3cbca7f6c37b6de9beb",
+      "duplicateOf": null,
+      "caption": "Sunlit living space",
+      "alt": "Sunlit living area with a sofa, coffee table and mezzanine above.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "living",
+        "house",
+        "home",
+        "hero"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "53b1ec27-213a-4925-9578-a347076c680c.jpg",
+      "original": "originals/53b1ec27-213a-4925-9578-a347076c680c.jpg",
+      "bytes": 143636,
+      "sha256": "5c9b451f39684feb0719e4e9529261bf1512cc507222acd0bd78104849adadcd",
+      "duplicateOf": null,
+      "caption": "Bedroom window view",
+      "alt": "Bed and a window with white curtains in the private bedroom.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "bedroom",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "5454cbff-037f-48fd-bf03-3cf79a65fed0.avif",
+      "original": "originals/5454cbff-037f-48fd-bf03-3cf79a65fed0.avif",
+      "bytes": 46808,
+      "sha256": "d347dd9eb2b8bedc0a1e670e61a7359502f58662da2eba7f09f9c63fbbdeffcc",
+      "duplicateOf": null,
+      "caption": "Living and dining area",
+      "alt": "Open living and dining area beneath the mezzanine, with tall windows.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "living",
+        "dining",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "5486c392-9664-4123-b28e-d569a77837ce.jpg",
+      "original": "originals/5486c392-9664-4123-b28e-d569a77837ce.jpg",
+      "bytes": 53301,
+      "sha256": "f81f49932633e076940ecb74fbb189c4e644a046788cd7912f43a47aad2bff98",
+      "duplicateOf": null,
+      "caption": "A bright bedroom window",
+      "alt": "White curtains and a wooden ledge beneath a garden-facing bedroom window.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bedroom",
+        "window",
+        "detail"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "5da962dc-1296-49e0-8b99-3ac5ecb3d2d4.avif",
+      "original": "originals/5da962dc-1296-49e0-8b99-3ac5ecb3d2d4.avif",
+      "bytes": 44150,
+      "sha256": "1fba51743ca8b66c763a5be837c67ccaada239d51de6bf5f25f05e70e0c1e663",
+      "duplicateOf": null,
+      "caption": "Mezzanine beds by the windows",
+      "alt": "Beds beneath the sloping mezzanine roof, beside tall glass windows.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "mezzanine",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "5f1389d1-7a6f-4eac-9b66-a2e0143180df.avif",
+      "original": "originals/5f1389d1-7a6f-4eac-9b66-a2e0143180df.avif",
+      "bytes": 116283,
+      "sha256": "4014806911cde8f6075223b854187d8fe94621e3e8e243194c1e650640f2cdfd",
+      "duplicateOf": null,
+      "caption": "Light through garden trees",
+      "alt": "Warm sunlight through branches and foliage in the garden.",
+      "width": 720,
+      "height": 960,
+      "roles": [
+        "garden",
+        "light",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "6478f053-f341-4edd-b79f-be358ffe5c3c.jpg",
+      "original": "originals/6478f053-f341-4edd-b79f-be358ffe5c3c.jpg",
+      "bytes": 59167,
+      "sha256": "e22b929b9441c330b36c48cccf00f1783b6f52b4bc07d098fa66fba06ccbf32a",
+      "duplicateOf": null,
+      "caption": "Bedroom woodwork",
+      "alt": "Wooden bedroom headboard and partition beside white bedding.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bedroom",
+        "sleeping",
+        "detail"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "6cd46b53-4d70-48d0-978a-975a65a84634.avif",
+      "original": "originals/6cd46b53-4d70-48d0-978a-975a65a84634.avif",
+      "bytes": 89626,
+      "sha256": "dd719df3adc8c879488c22abd99f37a08e812bcacb7a70afd506f2f39e2629f5",
+      "duplicateOf": null,
+      "caption": "Hydrangeas beside the house",
+      "alt": "Blue hydrangea clusters in the garden with part of the house behind.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "flowers",
+        "home",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "6f2284a4-38e1-4330-802a-dd1659ef68b1.jpg",
+      "original": "originals/6f2284a4-38e1-4330-802a-dd1659ef68b1.jpg",
+      "bytes": 185011,
+      "sha256": "1a5115c32b635a4652c5e0acef645da371ff41692ed56fdd7b7ce12e314e2b7f",
+      "duplicateOf": null,
+      "caption": "Dog by the garden gate",
+      "alt": "A dog sitting on the stone garden path near a wooden gate.",
+      "width": 720,
+      "height": 960,
+      "roles": [
+        "dog",
+        "pets",
+        "garden",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "73e5d950-8c04-4526-8274-56691a7afb7e.jpg",
+      "original": "originals/73e5d950-8c04-4526-8274-56691a7afb7e.jpg",
+      "bytes": 282266,
+      "sha256": "9c3e9af578c4d616c743f5ee875ddd991abc57dddb011ef2ffacaf22d743862e",
+      "duplicateOf": null,
+      "caption": "A gateway into the garden",
+      "alt": "Open garden gate framed by trees and flowering plants.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "garden",
+        "gate",
+        "home"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "7dfc6b85-2b14-4376-8679-4ab31c4cfc0b.avif",
+      "original": "originals/7dfc6b85-2b14-4376-8679-4ab31c4cfc0b.avif",
+      "bytes": 35854,
+      "sha256": "08b36a28d0ce3fea276184987ea6486ee12296ba9afbb0890a4e910529714aff",
+      "duplicateOf": null,
+      "caption": "Mezzanine beds and stairwell",
+      "alt": "Mezzanine beds with white curtains beside the railing and open stairs.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "mezzanine",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "82dbc63f-2934-4c53-a031-81cf5a0ddb30.jpg",
+      "original": "originals/82dbc63f-2934-4c53-a031-81cf5a0ddb30.jpg",
+      "bytes": 66207,
+      "sha256": "4a20b5407430f30762226cf49597e4731d12ff043649384d8eff457d6c2521f3",
+      "duplicateOf": null,
+      "caption": "Indoor dining table",
+      "alt": "Wooden indoor dining table and chairs beside a partition and noticeboard.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "dining",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "86fed125-e26e-4189-9030-efe1dc85bbc3.avif",
+      "original": "originals/86fed125-e26e-4189-9030-efe1dc85bbc3.avif",
+      "bytes": 125776,
+      "sha256": "3b0296484fb5e90b7c0fa597e606f78f7525d58772561a4e63226fb7812e023c",
+      "duplicateOf": null,
+      "caption": "Looking up to the mezzanine",
+      "alt": "Living-room wall hanging and the mezzanine railing beneath the sloping roof.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "living",
+        "mezzanine",
+        "architecture"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "89e8af0b-1728-4a41-b7cc-2c20e606b408.jpg",
+      "original": "originals/89e8af0b-1728-4a41-b7cc-2c20e606b408.jpg",
+      "bytes": 97747,
+      "sha256": "4b6c4bcb9f902b773f07ee148f8f073b9642bfd8c783fd42d316e5801b24fdbf",
+      "duplicateOf": null,
+      "caption": "Bathroom from the living area",
+      "alt": "Open bathroom doorway showing patterned wall tiles and fixtures.",
+      "width": 720,
+      "height": 960,
+      "roles": [
+        "bathroom",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "8a186dc7-06ac-43c7-882f-05017586b3cd.jpg",
+      "original": "originals/8a186dc7-06ac-43c7-882f-05017586b3cd.jpg",
+      "bytes": 52495,
+      "sha256": "84dae5637c82051c269d67e74a44d9c6db55501be8ffaa86bfcbf744f489bed6",
+      "duplicateOf": null,
+      "caption": "Curtains by the bedroom window",
+      "alt": "Bedroom window with white curtains, sunlight and a wooden ledge.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bedroom",
+        "window",
+        "detail"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "901b4376-68b9-49fd-9b43-7fd20d77d5be.avif",
+      "original": "originals/901b4376-68b9-49fd-9b43-7fd20d77d5be.avif",
+      "bytes": 90664,
+      "sha256": "3a15933c86eec064a7f5e7955685e29262b0a380c02fcb5ff35955e0be6926c7",
+      "duplicateOf": null,
+      "caption": "Stone path and garden gate",
+      "alt": "Stone garden path and gate beneath trees and greenery.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "path",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "946e0a6e-387e-4c1c-92b3-4c851f36bb28.avif",
+      "original": "originals/946e0a6e-387e-4c1c-92b3-4c851f36bb28.avif",
+      "bytes": 255593,
+      "sha256": "4ce2e26df0daddbdd0bf98b2defa512c338444719b1f96b3c26565fc81c38a7a",
+      "duplicateOf": null,
+      "caption": "Path leading to the house",
+      "alt": "Garden path lined with hydrangeas and leafy plants leading toward the house.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "garden",
+        "house",
+        "path",
+        "home",
+        "hero"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "960eee91-a856-4b2b-9dc5-c1973567ec21.jpg",
+      "original": "originals/960eee91-a856-4b2b-9dc5-c1973567ec21.jpg",
+      "bytes": 105157,
+      "sha256": "6bac24db11e470a184fd76995bcc8793e70292d63af85e8318684bda5522542f",
+      "duplicateOf": null,
+      "caption": "Garden flowers and stone path",
+      "alt": "Hydrangeas and colourful garden flowers beside a stone path and the house.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "flowers",
+        "path",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "97d0aa27-0997-4a74-9fd1-f023371c54bf.jpg",
+      "original": "originals/97d0aa27-0997-4a74-9fd1-f023371c54bf.jpg",
+      "bytes": 162276,
+      "sha256": "d487220a6f096b8d90ead48062e2473da5b16a40090bd65957e87ec18db316ee",
+      "duplicateOf": null,
+      "caption": "Curtained mezzanine sleeping area",
+      "alt": "White curtains around mezzanine beds beside the railing and wooden floor.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "mezzanine",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "9d15b9cc-2949-4d0b-b86e-9ef3b2d9607c.jpg",
+      "original": "originals/9d15b9cc-2949-4d0b-b86e-9ef3b2d9607c.jpg",
+      "bytes": 180838,
+      "sha256": "f66766530d210c5ec2188b5d14d808c652f8104b3d4d95b5c04a620515f35fac",
+      "duplicateOf": null,
+      "caption": "Private bedroom with wooden ceiling",
+      "alt": "Private bedroom with white bedding, wooden ceiling and headboard.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "bedroom",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "a12bd2ff-2bbb-4780-8d05-58ad9a004d35.avif",
+      "original": "originals/a12bd2ff-2bbb-4780-8d05-58ad9a004d35.avif",
+      "bytes": 87363,
+      "sha256": "69879c14639b2e6e829d642834ca5feef3bd9cd58f09683211372b8040bea135",
+      "duplicateOf": null,
+      "caption": "Garden seats around a fire ring",
+      "alt": "Folding chairs arranged around a stone fire ring in a gravel garden clearing.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "seating",
+        "firepit",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "a2735a58-de10-4c7e-81b6-62204c8b39e7.avif",
+      "original": "originals/a2735a58-de10-4c7e-81b6-62204c8b39e7.avif",
+      "bytes": 70302,
+      "sha256": "420e6f90f54601ac9c6ce099b33d35c2b9560e031985f342de7fd3bf0c3a308a",
+      "duplicateOf": null,
+      "caption": "From the mezzanine stair",
+      "alt": "View across the mezzanine railing toward the open living area below.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "mezzanine",
+        "stairs",
+        "architecture"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "b15ed0f3-8266-4add-abda-a7b6225511a9.avif",
+      "original": "originals/b15ed0f3-8266-4add-abda-a7b6225511a9.avif",
+      "bytes": 32136,
+      "sha256": "4627d2330a14d7e684e9ac34ccc64f3b1f361e152d473e9284347e53fcaf5f49",
+      "duplicateOf": null,
+      "caption": "Bathroom basin and round mirror",
+      "alt": "Bathroom with a washbasin, round mirror, window and wooden ceiling.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "bathroom",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "b3020893-b747-4376-84b5-3926f8ee8961.avif",
+      "original": "originals/b3020893-b747-4376-84b5-3926f8ee8961.avif",
+      "bytes": 60855,
+      "sha256": "7220286b3e36b73055563120e5a25ed9b011380f37a4323b20813b312f193448",
+      "duplicateOf": null,
+      "caption": "Sofa beneath the mezzanine",
+      "alt": "Sofa and coffee table in the sunlit living area below the mezzanine.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "living",
+        "house",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "b6a14cec-918b-4983-adc2-3429fd852a0c.jpg",
+      "original": "originals/b6a14cec-918b-4983-adc2-3429fd852a0c.jpg",
+      "bytes": 123098,
+      "sha256": "35f2a6beadbc80cde89ae7f340123a21c0634a9b094eb768013a53e2f1e828b3",
+      "duplicateOf": null,
+      "caption": "Garden seating beside the house",
+      "alt": "Folding chairs in a tree-shaded gravel garden beside the house and exterior stairs.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "seating",
+        "house",
+        "home",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "b8b50227-a556-4502-b225-e8796d463aca.avif",
+      "original": "originals/b8b50227-a556-4502-b225-e8796d463aca.avif",
+      "bytes": 30734,
+      "sha256": "b6ce7c5acf552e76af8f60e33eb8f6b866400af0dcbb23837c9e53895abbe45f",
+      "duplicateOf": null,
+      "caption": "Mezzanine curtains and railing",
+      "alt": "White curtains, mezzanine railing and stair opening inside the house.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "mezzanine",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "ba4eec84-c61e-4fc1-a6c9-92467670b0cc.jpg",
+      "original": "originals/ba4eec84-c61e-4fc1-a6c9-92467670b0cc.jpg",
+      "bytes": 99566,
+      "sha256": "5d3bc85a6e1d7a27be530999cb47903338c9cebe4045665f79e444fefe06ca71",
+      "duplicateOf": null,
+      "caption": "Tall windows and garden trees",
+      "alt": "Tall glazed doors and windows framing trees in the garden.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "house",
+        "windows",
+        "garden"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "bf4961be-eb43-44d1-a3f7-7998cf8fa61c.jpg",
+      "original": "originals/bf4961be-eb43-44d1-a3f7-7998cf8fa61c.jpg",
+      "bytes": 63415,
+      "sha256": "28ce40e5240b341ab55331ddc76025056b2eb34f77e7bfc28de20365d89501b4",
+      "duplicateOf": null,
+      "caption": "Handwritten noticeboard card",
+      "alt": "A handwritten thank-you card pinned to an indoor noticeboard.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "detail",
+        "noticeboard"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "cac443df-4e55-485c-b5b2-a0cc2f60cd5a.avif",
+      "original": "originals/cac443df-4e55-485c-b5b2-a0cc2f60cd5a.avif",
+      "bytes": 232280,
+      "sha256": "f9bee1a98df64225966559b8ebae65695c8b7544768f079f9d0e77ae1ea2cce1",
+      "duplicateOf": null,
+      "caption": "House beneath the trees",
+      "alt": "Wood and glass house exterior beneath garden trees, with a gravel path alongside.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "house",
+        "garden",
+        "architecture"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "cd64daba-e18e-4468-addf-d2b414f83dde.avif",
+      "original": "originals/cd64daba-e18e-4468-addf-d2b414f83dde.avif",
+      "bytes": 74899,
+      "sha256": "1aa2cdb59eb338631bebf43d0368975c2975735892ad172be572cca98a9183f8",
+      "duplicateOf": null,
+      "caption": "Glass-front house in the garden",
+      "alt": "Glass-front house with exterior steps, wooden walls and trees in the garden.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "house",
+        "garden",
+        "hero",
+        "home"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "d8463f9c-56f1-422f-8e7d-39eeb276da68.avif",
+      "original": "originals/d8463f9c-56f1-422f-8e7d-39eeb276da68.avif",
+      "bytes": 146620,
+      "sha256": "fe493454ce0a668cac2acb89f91b8f1760424d1f39cc2959de7d68928b7cace1",
+      "duplicateOf": null,
+      "caption": "Garden steps through flowers",
+      "alt": "Stepping stones and shallow garden steps between flowers and leafy plants.",
+      "width": 720,
+      "height": 960,
+      "roles": [
+        "garden",
+        "steps",
+        "access"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "dc526389-7795-417d-ba9a-8979e10dd9ed.jpg",
+      "original": "originals/dc526389-7795-417d-ba9a-8979e10dd9ed.jpg",
+      "bytes": 110074,
+      "sha256": "99f3dc974cb729f2ca827ba75ad92976a2b576f0d6382ea8800e390b99aa78c6",
+      "duplicateOf": null,
+      "caption": "Bathroom fixtures and patterned tiles",
+      "alt": "Bathroom with patterned tiles, a washbasin and toilet beside the doorway.",
+      "width": 720,
+      "height": 960,
+      "roles": [
+        "bathroom",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "eb5576d5-d620-4daf-8ee2-7b0db73c4767.avif",
+      "original": "originals/eb5576d5-d620-4daf-8ee2-7b0db73c4767.avif",
+      "bytes": 75393,
+      "sha256": "c22d436b92a694d0e5149afc91edca135d183e98f811ca142425ced376cc8d56",
+      "duplicateOf": null,
+      "caption": "Mezzanine beds in daylight",
+      "alt": "Curtained mezzanine beds with white bedding, wooden flooring and garden-facing windows.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "mezzanine",
+        "sleeping",
+        "stay"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "f775b986-745a-4dec-8b9b-f5e7333a8d07.avif",
+      "original": "originals/f775b986-745a-4dec-8b9b-f5e7333a8d07.avif",
+      "bytes": 228150,
+      "sha256": "bd113ef9099fc5ad6ab208d98cd7212238ca3ed7d9abbdcb5df5ae6c28c4879a",
+      "duplicateOf": null,
+      "caption": "Sunny path through the garden",
+      "alt": "Sunlit stone path through a lush garden with flowering plants and the house behind.",
+      "width": 1200,
+      "height": 900,
+      "roles": [
+        "garden",
+        "house",
+        "path",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "fb8247af-d5ef-4c3e-b2bb-192984d39359.avif",
+      "original": "originals/fb8247af-d5ef-4c3e-b2bb-192984d39359.avif",
+      "bytes": 64852,
+      "sha256": "c41d21d8a7b7568a15b7d10d5c712f537894a905388e5ceb68362f6a82587d11",
+      "duplicateOf": null,
+      "caption": "Photographs on the noticeboard",
+      "alt": "Small photographs and illustrated pet cards pinned to a noticeboard.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "detail",
+        "noticeboard"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "fcbf79a4-5555-4f7d-893f-611d2b8f282c.avif",
+      "original": "originals/fcbf79a4-5555-4f7d-893f-611d2b8f282c.avif",
+      "bytes": 79449,
+      "sha256": "32c51093019b436d587b464bf5873a2858d450b87ecba727a4fc317bfc99baf4",
+      "duplicateOf": null,
+      "caption": "Garden steps from above",
+      "alt": "View down exterior garden steps beside the house glazing and leafy plants.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "steps",
+        "access"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    },
+    {
+      "sourceFilename": "fe79772c-6927-41ea-98cc-ce6d8ab4a38d.avif",
+      "original": "originals/fe79772c-6927-41ea-98cc-ce6d8ab4a38d.avif",
+      "bytes": 83813,
+      "sha256": "9ffdd15e6c19f661334e2b8f9ba607a517b01679767afbb64173c5b80c109b12",
+      "duplicateOf": null,
+      "caption": "Potted cactus garden detail",
+      "alt": "Potted cacti and other leafy plants in a corner of the garden.",
+      "width": 720,
+      "height": 540,
+      "roles": [
+        "garden",
+        "plants",
+        "detail",
+        "about"
+      ],
+      "provenance": "Original photograph supplied for this property; inspected visually. No image manipulation."
+    }
+  ],
+  "visualLimitations": [
+    "No clearly visible standalone BBQ grill photograph identified; keep BBQ as a source-confirmed amenity without assigning a false grill image.",
+    "A stone fire ring and folding chairs are visible in a12bd2ff-2bbb-4780-8d05-58ad9a004d35.avif.",
+    "A live dog is visible in6f2284a4-38e1-4330-802a-dd1659ef68b1.jpg; no live cat photograph identified.",
+    "Bedrooms and mezzanine are matched visually to supplied listing details; photographs do not establish permissions, safety or guest capacity.",
+    "Original image bytes are unchanged. Contact sheets/JPG detail previews exist only privately for analysis."
+  ]
+}
