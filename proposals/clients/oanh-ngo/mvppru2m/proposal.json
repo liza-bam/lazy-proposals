@@ -1,0 +1,25 @@
+{
+  "id": "oanh-ngo",
+  "clientId": "oanh-ngo",
+  "propertyIds": [
+    "uom-retreat"
+  ],
+  "properties": [
+    {
+      "id": "uom-retreat",
+      "name": "Retreat House w Garden/3km to Dalat market",
+      "siteUrl": "https://dalat-retreat.lazy.vacations/"
+    }
+  ],
+  "to": "tian.chianti@gmail.com",
+  "subject": "Your website for Retreat House w Garden/3km to Dalat market is ready",
+  "attachName": "LAZY proposal - Retreat House w Garden/3km to Dalat market.pdf",
+  "fields": {
+    "owner": "Oanh Ngo",
+    "first": "Oanh",
+    "login": "tian_chianti",
+    "intro": "We're so glad you're here. Your new website for Retreat House w Garden/3km to Dalat market is ready, and everything you need to get started is below."
+  },
+  "renderer": "pdfkit-0.15.2",
+  "made": "2026-10-26T20:33:28.999Z"
+}
