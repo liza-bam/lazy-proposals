@@ -17,9 +17,10 @@
     "confirmation": "skip",
     "deliveryDate": "skip",
     "proposal": "2026-10-20",
-    "doneEmail": "2026-10-20"
+    "doneEmail": "2026-10-20",
+    "demo": "2026-10-26"
   },
-  "updatedAt": "2026-10-20T23:04:03.843Z",
+  "updatedAt": "2026-10-26T18:45:31.323Z",
   "phone": "",
   "notes": "",
   "billingNotes": ""
