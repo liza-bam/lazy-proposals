@@ -36,7 +36,20 @@
     "failedVisibleImages": 0,
     "horizontalOverflow": false,
     "allPhotosAndInquiryControls": "verified separately; no inquiry sent or email delivery tested",
-    "inquiryFlow": "Home Inquire opens native dialog. Secondary-page Inquire routes to home.dc.html#contact; a second Home Inquire click opens dialog."
+    "inquiryFlow": "Home Inquire opens native dialog. Secondary-page Inquire routes to home.dc.html#contact; a second Home Inquire click opens dialog.",
+    "actualPublicPhone": {
+      "width": 430,
+      "pages": [
+        "home",
+        "stay",
+        "about",
+        "guidebook"
+      ],
+      "overflow": false,
+      "failedVisibleImages": 0,
+      "performedBy": "primary build agent",
+      "independentSelectedScreenshotReview": true
+    }
   },
   "reviewScope": {
     "priorFullAuthoredPageQA": "retained for unchanged sections",

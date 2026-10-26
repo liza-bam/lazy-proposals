@@ -62,8 +62,8 @@
     },
     {
       "path": "publication-evidence.json",
-      "bytes": 2749,
-      "sha256": "96fadb3dcd8e803d27d1b06f5d5bbdb2b7206f3177dbad3aba9be51dd68ec8d5"
+      "bytes": 3049,
+      "sha256": "67cdb8c8e254c0d6d80868240a7e7b7d1a42276df034e62fa9417cfadd204d80"
     },
     {
       "path": "screenshots/oanh-live14-about-desktop.png",
@@ -71,9 +71,19 @@
       "sha256": "a1202b87321b0eee7b80cadeb36e293bff1408805f155791201bcf96ca965e58"
     },
     {
+      "path": "screenshots/oanh-live14-about-phone.png",
+      "bytes": 376905,
+      "sha256": "d5f63283803c6e590250ef8c06fdac5e988859d29ede5b8223fdba7c8c27092f"
+    },
+    {
       "path": "screenshots/oanh-live14-guidebook-desktop.png",
       "bytes": 165425,
       "sha256": "e1e05f98a23a73fef9c8c64830e7f84ccdb8dd60a4576b89c7eba1ebc5cd370a"
+    },
+    {
+      "path": "screenshots/oanh-live14-guidebook-phone.png",
+      "bytes": 87471,
+      "sha256": "bacd3425c5c32801b318a5e0d33cf0c58336b32c9221ec57c380132c18c1b9ee"
     },
     {
       "path": "screenshots/oanh-live14-home-desktop.png",
@@ -81,9 +91,19 @@
       "sha256": "0c06cf15bdf76fa4db244bb43e0af4f223208d3ed9fb8ffe2406166d1b2b134f"
     },
     {
+      "path": "screenshots/oanh-live14-home-phone.png",
+      "bytes": 339095,
+      "sha256": "6825a79f96f1158e8ae01fcd5538e723d746faf7e670a1199cf38cf3803bc4cd"
+    },
+    {
       "path": "screenshots/oanh-live14-stay-desktop.png",
       "bytes": 361657,
       "sha256": "de24dccea2b0a88763161848c8ce244d3384e643bdbf398d0bb9f62e1e1bc11b"
+    },
+    {
+      "path": "screenshots/oanh-live14-stay-phone.png",
+      "bytes": 72506,
+      "sha256": "747d32ce06780b0191cd5fa697095ba786c58c3cada68f8ec8dc523fb0adfb25"
     }
   ]
 }

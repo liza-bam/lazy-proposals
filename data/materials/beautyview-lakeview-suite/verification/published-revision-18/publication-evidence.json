@@ -35,7 +35,18 @@
     "allFourPagesCorrectHeadings": true,
     "failedVisibleImages": 0,
     "horizontalOverflow": false,
-    "allPhotosAndInquiryControls": "verified separately; no inquiry sent or email delivery tested"
+    "allPhotosAndInquiryControls": "verified separately; no inquiry sent or email delivery tested",
+    "actualPublicPhone": {
+      "width": 430,
+      "pages": [
+        "home",
+        "stay"
+      ],
+      "overflow": false,
+      "failedVisibleImages": 0,
+      "performedBy": "primary build agent",
+      "independentSelectedScreenshotReview": true
+    }
   },
   "reviewScope": {
     "priorFullAuthoredPageQA": "retained for unchanged sections",

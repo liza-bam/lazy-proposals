@@ -92,7 +92,16 @@
       "result": "PASS",
       "sourceOrder": true
     },
-    "buttons": "Actual public controls reviewed by primary agent; inquiry not submitted."
+    "buttons": "Actual public controls reviewed by primary agent; inquiry not submitted.",
+    "publicFinalPhone": {
+      "width": 430,
+      "pages": [
+        "home",
+        "stay"
+      ],
+      "overflow": false,
+      "failedVisibleImages": 0
+    }
   },
   "completionTimelineMarked": false,
   "intakeId": "beautyview-lakeview-suite",

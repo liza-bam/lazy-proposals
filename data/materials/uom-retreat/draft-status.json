@@ -99,6 +99,17 @@
       "secondaryPageFlow": "Routes to home.dc.html#contact; second Home Inquire click opens dialog.",
       "submitted": false,
       "emailDeliveryTested": false
+    },
+    "publicFinalPhone": {
+      "width": 430,
+      "pages": [
+        "home",
+        "stay",
+        "about",
+        "guidebook"
+      ],
+      "overflow": false,
+      "failedVisibleImages": 0
     }
   },
   "completionTimelineMarked": false,

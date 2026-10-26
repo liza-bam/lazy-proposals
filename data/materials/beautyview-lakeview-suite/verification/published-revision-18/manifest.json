@@ -12,8 +12,8 @@
     },
     {
       "path": "publication-evidence.json",
-      "bytes": 2125,
-      "sha256": "17093dfaac0a6cf58e50a7f5f7ca12f8e8861b5c83f45095f7df5704ef4be079"
+      "bytes": 2387,
+      "sha256": "57c415020ff6f66fbe2d794d09f2920e225c0c67a32f388b4d53156cbbd52ad2"
     },
     {
       "path": "screenshots/beautyview-live18-about-desktop.png",
@@ -26,6 +26,11 @@
       "sha256": "fad0a69d40b898465433461995421de56b7b84889229c122934c551370db618c"
     },
     {
+      "path": "screenshots/beautyview-live18-home-phone.png",
+      "bytes": 233714,
+      "sha256": "b2b63a079d2eb38ae90ffc122f839593ee60528a749ab2ef2f34be05eb7b36d3"
+    },
+    {
       "path": "screenshots/beautyview-live18-offers-desktop.png",
       "bytes": 425504,
       "sha256": "841a2e0bd53e7b50e0088c14df685de535fddf2bc32d40521f4905a96bf3e1ba"
@@ -34,6 +39,11 @@
       "path": "screenshots/beautyview-live18-stay-desktop.png",
       "bytes": 440929,
       "sha256": "f1e2a53a4a27775a23668f7f9da33b787ded4f91ada5f4c26228aba0a53fa25f"
+    },
+    {
+      "path": "screenshots/beautyview-live18-stay-phone.png",
+      "bytes": 78750,
+      "sha256": "f4bf012e808ef685667dc7c073ca162019e329122d51e57f28a4882887d13551"
     }
   ]
 }
