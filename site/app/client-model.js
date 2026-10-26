@@ -61,5 +61,21 @@
     return template.replace(/\{\{button:(\w+):([^}]+)\}\}/g, (m, k, label) => settings[k] ? emailButton(settings[k], label) : '')
       .replace(/\{\{(\w+)\}\}/g, (m, k) => fill[k] == null ? m : fill[k]);
   }
-  return { CLIENT_STEPS, PROPERTY_STEPS, isOther, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields, websiteReadyEmail };
+  // A date n business days (Monday to Friday) after a YYYY-MM-DD day.
+  function addBusinessDays(day, n) {
+    const d = new Date(day + 'T12:00:00');
+    while (n > 0) { d.setDate(d.getDate() + 1); if (d.getDay() % 6) n--; }
+    return d;
+  }
+  // The confirmation email: data/templates/confirmation-email.html, ready for review 2 business days after the intake.
+  function confirmationEmail(template, client, websites, settings, today) {
+    const intake = propertiesForClient(client, websites).map(p => (p.timeline || {}).intake).filter(v => v && v !== 'skip').sort().pop();
+    const request = (client.timeline || {}).request, from = intake || (request && request !== 'skip' ? request : today);
+    const owner = client.name || '', first = /&| and /.test(owner) ? owner : owner.split(/\s+/)[0];
+    const readyDate = addBusinessDays(from, 2).toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+    const subject = 'Thank you — your LAZY website is on its way';
+    const fill = { subject: escHtml(subject), greeting: escHtml(first), readyDate: escHtml(readyDate), signoff: escHtml(settings.signoff) };
+    return { subject, readyDate, html: template.replace(/\{\{(\w+)\}\}/g, (m, k) => fill[k] == null ? m : fill[k]) };
+  }
+  return { CLIENT_STEPS, PROPERTY_STEPS, isOther, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields, websiteReadyEmail, addBusinessDays, confirmationEmail };
 });

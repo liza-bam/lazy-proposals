@@ -34,3 +34,9 @@ test('the website ready email carries the offer line only when the PDF goes with
  assert.ok(on.includes(S.proposal.attachNote.replace(/'/g,'&#39;').slice(0,20)));assert.ok(!off.includes('{{'));assert.ok(!on.includes('{{'));assert.ok(!off.includes(S.proposal.attachNote.replace(/'/g,'&#39;').slice(0,20)));
  for(const p of f.properties)assert.ok(on.includes(p.siteUrl));
 });
+test('the confirmation email promises the review 2 business days after the intake, over a weekend',()=>{
+ assert.equal(M.addBusinessDays('2026-10-23',2).toDateString(),new Date('2026-10-27T12:00:00').toDateString());
+ const t=require('fs').readFileSync(require('path').join(__dirname,'../data/templates/confirmation-email.html'),'utf8');
+ const e=M.confirmationEmail(t,{id:'x',name:'Debra Lott',timeline:{request:'2026-10-26'}},[],S,'2026-10-30');
+ assert.equal(e.readyDate,'Wednesday, October 28');assert.ok(e.html.includes('Dear Debra,'));assert.ok(!e.html.includes('{{'));
+});

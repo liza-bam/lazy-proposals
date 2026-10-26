@@ -18,8 +18,8 @@
   <aside class="app__side" id="side"></aside>
   <main class="app__main" id="main"><p class="muted">Loading…</p></main>
 </div>
-<script src="app.js?v=clients3"></script>
-<script src="client-model.js?v=clients3"></script>
+<script src="app.js?v=clients4"></script>
+<script src="client-model.js?v=clients4"></script>
 <script>
 
 let records = [], clientRecords = [], current = null, currentClient = null, currentRecord = null, sha = null, clientSha = null, openSequence = 0, saving = false;
@@ -58,7 +58,7 @@ function side() {
 function timeline(tl,steps,id) {
   return '<ol class="tl">'+steps.map(([k,title,note],i)=>{
     const v=(tl||{})[k]||'', skip=v==='skip',now=k===nowStep(tl,steps);
-    return '<li class="tl__row'+(v&&!skip?' is-done':'')+(skip?' is-skip':'')+(now?' is-now':'')+'"><span class="tl__n">'+(v&&!skip?'&#10003;':i+1)+'</span><span class="tl__text"><b>'+esc(title)+'</b>'+(note?'<small>'+esc(note)+'</small>':'')+(k==='doneEmail'&&id?'<a class="tl__btn" href="propose.html?v=ready1&client='+encodeURIComponent(id)+'">Make the email</a>':'')+'</span><span class="tl__when"><button type="button" class="tl__cal" data-cal="'+k+'"'+(skip?' disabled':'')+' aria-label="'+esc(title)+': pick a date">'+(v&&!skip?esc(short(v)):CAL)+'</button><input class="tl__date" type="date" name="tl_'+k+'" value="'+esc(skip?'':v)+'" tabindex="-1" aria-hidden="true"'+(skip?' disabled':'')+'></span><input type="hidden" name="sk_'+k+'" value="'+(skip?'1':'')+'"><button type="button" class="tl__btn" data-done="'+k+'">Done</button><button type="button" class="tl__btn" data-skip="'+k+'">'+(skip?'Unskip':'Skip')+'</button></li>';
+    return '<li class="tl__row'+(v&&!skip?' is-done':'')+(skip?' is-skip':'')+(now?' is-now':'')+'"><span class="tl__n">'+(v&&!skip?'&#10003;':i+1)+'</span><span class="tl__text"><b>'+esc(title)+'</b>'+(note?'<small>'+esc(note)+'</small>':'')+(k==='doneEmail'&&id?'<a class="tl__btn" href="propose.html?v=ready1&client='+encodeURIComponent(id)+'">Make the email</a>':'')+(k==='confirmation'&&id?'<button type="button" class="tl__btn" data-confirmation>Send confirmation email</button>':'')+'</span><span class="tl__when"><button type="button" class="tl__cal" data-cal="'+k+'"'+(skip?' disabled':'')+' aria-label="'+esc(title)+': pick a date">'+(v&&!skip?esc(short(v)):CAL)+'</button><input class="tl__date" type="date" name="tl_'+k+'" value="'+esc(skip?'':v)+'" tabindex="-1" aria-hidden="true"'+(skip?' disabled':'')+'></span><input type="hidden" name="sk_'+k+'" value="'+(skip?'1':'')+'"><button type="button" class="tl__btn" data-done="'+k+'">Done</button><button type="button" class="tl__btn" data-skip="'+k+'">'+(skip?'Unskip':'Skip')+'</button></li>';
   }).join('')+'</ol>';
 }
 function clientField(key,label,value,kind='') {
@@ -74,12 +74,12 @@ async function showClient(id,kind) {
   history.replaceState(null,'',id?'?client='+encodeURIComponent(id):location.pathname);side();
   if(ClientModel.isOther(c)) return showOther(c,id);
   const props=ClientModel.propertiesForClient(c,records);
-  const accordion=(title,body)=>'<details class="box optional"><summary>'+title+'</summary><div class="optional__body">'+body+'</div></details>';
+  const accordion=(title,body,open)=>'<details class="box optional"'+(open?' open':'')+'><summary>'+title+'</summary><div class="optional__body">'+body+'</div></details>';
   const details='<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>'+clientField('notes','Client notes',c.notes,'area');
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
   const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>');
   $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
-    '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id))+accordion('Details',details)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
+    '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Details',details)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
     (id?'':'<div class="row"><button class="go" type="submit">Create client</button><span class="msg" id="msg" role="status"></span></div>')+'</form>'+
     (id?accordion('Properties',properties)+proposalHistory(c):'');
   $('#client-rec').onsubmit=saveClient;
@@ -175,12 +175,25 @@ async function submit(e) {
     await open(id);say('Intake saved');restoreViewState(view);
   } catch(er){say(er.message,true);}finally{saving=false;}
 }
+// The confirmation email, opened in Mail by the Mail helper on this Mac (tools/mail-helper). Never sends.
+async function sendConfirmation(c) {
+  const [t,s]=await Promise.all([readText('data/templates/confirmation-email.html'),readJson('data/settings.json')]);
+  if(!t||!s)throw Error('Missing data/templates/confirmation-email.html or data/settings.json');
+  const e=ClientModel.confirmationEmail(t,c,records,s.data,new Date().toISOString().slice(0,10));
+  const d=new DOMParser().parseFromString(e.html,'text/html'),plain=d.body.innerText.replace(/\n{3,}/g,'\n\n').trim();
+  try {
+    const r=await fetch('http://127.0.0.1:47317/compose',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({from:'Sandy <'+s.data.senderEmail+'>',to:c.email||'',subject:e.subject,html:e.html,plain})});
+    const j=await r.json();if(!j.ok)throw Error(j.error);
+    say('Confirmation email opened in Mail · ready for review '+e.readyDate+'.');
+  } catch(er){say('Mail helper: '+(er.message==='Failed to fetch'?'not running, or Chrome blocked it. Open tools/mail-helper/Mail helper.command, then allow Chrome to reach it.':er.message),true);}
+}
 // Save client turns primary only once Details or Billing hold an unsaved change; the timeline saves itself.
 document.addEventListener('input',e=>{const f=e.target.form;if(f&&f.id==='client-rec'&&!/^(tl|sk)_/.test(e.target.name||''))$('#save-client')?.classList.remove('go--quiet');});
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
 document.addEventListener('click',async e=>{
   try {
     const c=e.target.closest('[data-client]');if(c){await showClient(c.dataset.client);return;}
+    if(e.target.closest('[data-confirmation]')){await sendConfirmation(currentClient);return;}
     const p=e.target.closest('[data-property]');if(p){await open(p.dataset.property);return;}
     if(e.target.id==='new'){await showClient(null);return;}
     if(e.target.id==='new-other'){await showClient(null,'other');return;}
