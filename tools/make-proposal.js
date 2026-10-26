@@ -1,9 +1,9 @@
 #!/usr/bin/env node
-/* MAKE PROPOSAL, no browser. A client and their selected property intakes, plus the offer
- * (data/settings.json → proposal) make the short email and the one-page PDF.
- *   node tools/make-proposal.js <client-id>           show the filled proposal, to check
+/* THE WEBSITE READY EMAIL, no browser. A client and their selected property intakes, plus the offer
+ * (data/settings.json → proposal) make the email (data/templates/done-email.html) and, unless --no-pdf, the one-page PDF.
+ *   node tools/make-proposal.js <client-id>           show the filled email fields, to check
  *   node tools/make-proposal.js <client-id> --make    write proposals/clients/<client-id>/<token>/ (proposal.pdf, email.html, proposal.json)
- *                                              and date the timeline's Proposal step
+ *                                              and date the timeline's Website ready email step
  * Claude then makes the Gmail draft from proposal.json, email.html and proposal.pdf (skill make-proposal). */
 'use strict';
 const fs = require('fs');
@@ -12,8 +12,6 @@ const PDFDocument = require('pdfkit');
 
 const ROOT = path.resolve(__dirname, '..');
 const read = (p) => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
-const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const C = { ink: '#17363c', mute: '#8fa3a4', line: '#d3ede6', tint: '#eafaf6', coral: '#f9426f', logo: '#ff6f5e', cream: '#fffdf6' };
 
 const Model = require('../site/app/client-model.js');
 function fields(id, propertyIds) {
@@ -25,21 +23,9 @@ function fields(id, propertyIds) {
   return Model.proposalFields(client, websites, read('data/settings.json'), propertyIds);
 }
 
-// The email: tables and inline styles, as email clients need.
-function email(f, S) {
-  const font = "font-family:'Noto Serif',Georgia,serif;", text = font + 'font-size:16px;line-height:1.6;color:' + C.ink + ';';
-  const btn = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener" style="display:inline-block;background:' + C.coral + ';color:#ffffff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;' + font + '">' + esc(t) + '</a>';
-  return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>' + esc(f.subject) + '</title></head>' +
-    '<body style="margin:0;padding:0;background:' + C.cream + ';"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:' + C.cream + ';"><tr><td align="center" style="padding:24px 12px;">' +
-    '<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">' +
-    '<tr><td style="padding-bottom:16px;"><img src="' + esc(S.siteBase) + 'lazy-logo-email.png" width="120" alt="Lazy" style="display:block;border:0;"></td></tr>' +
-    '<tr><td style="' + font + 'font-size:26px;font-weight:600;color:' + C.ink + ';">Welcome, ' + esc(f.first) + '!</td></tr>' +
-    '<tr><td style="' + text + 'padding-top:12px;">' + esc(f.intro) + '</td></tr>' +
-    f.properties.map(p => '<tr><td style="padding-top:20px;">' + btn(p.siteUrl, f.properties.length > 1 ? p.name : 'Visit your website') + '</td></tr>').join('') +
-    '<tr><td style="padding-top:12px;">' + btn(S.editorUrl, 'Open the editor') + '</td></tr>' +
-    (f.login ? '<tr><td style="' + text + 'padding-top:12px;">Your login: <strong>' + esc(f.login) + '</strong>. ' + esc(S.editorNote) + '</td></tr>' : '') +
-    '<tr><td style="' + text + 'padding-top:20px;">' + esc(S.proposal.attachNote) + '</td></tr>' +
-    '<tr><td style="' + text + 'padding-top:28px;white-space:pre-line;">' + esc(S.signoff) + '</td></tr></table></td></tr></table></body></html>\n';
+// The website ready email: the template and builder the online app uses.
+function email(f, S, attach) {
+  return Model.websiteReadyEmail(fs.readFileSync(path.join(ROOT, 'data/templates/done-email.html'), 'utf8'), f, S, attach !== false);
 }
 
 // The one-page proposal on Letter: the offer's two cards for this owner and property.
@@ -52,9 +38,9 @@ function pdf(f,S,out){
 
 async function main() {
   const [id, ...args] = process.argv.slice(2);
-  const flag = args.includes('--make') ? '--make' : '';
+  const flag = args.includes('--make') ? '--make' : '', attach = !args.includes('--no-pdf');
   const option = args.find(x => x.startsWith('--properties='));
-  if (!id) throw new Error('Usage: node tools/make-proposal.js <client-id> [--properties=id1,id2] [--make]');
+  if (!id) throw new Error('Usage: node tools/make-proposal.js <client-id> [--properties=id1,id2] [--no-pdf] [--make]');
   const f = fields(id, option ? option.slice('--properties='.length).split(',') : undefined), S = read('data/settings.json');
   if (flag !== '--make') {
     for (const k of ['to', 'owner', 'first', 'property', 'siteUrl', 'login', 'subject', 'intro', 'attachName']) console.log(k.padEnd(10), f[k] || '—');
@@ -66,12 +52,12 @@ async function main() {
   if (f.missing.length) throw new Error('Missing: ' + f.missing.join(', '));
   const token = Date.now().toString(36), dir = path.join(ROOT, 'proposals', 'clients', f.clientId, token);
   fs.mkdirSync(dir, { recursive: true });
-  fs.writeFileSync(path.join(dir, 'email.html'), email(f, S));
-  await pdf(f, S, path.join(dir, 'proposal.pdf'));
+  fs.writeFileSync(path.join(dir, 'email.html'), email(f, S, attach));
+  if (attach) await pdf(f, S, path.join(dir, 'proposal.pdf'));
   fs.writeFileSync(path.join(dir, 'proposal.json'), JSON.stringify({ id: f.clientId, clientId: f.clientId, propertyIds: f.propertyIds, properties: f.properties.map(p => ({ id: p.id, name: p.name, siteUrl: p.siteUrl })), to: f.to, subject: f.subject, attachName: f.attachName, made: new Date().toISOString() }, null, 2) + '\n');
   const rf = path.join(ROOT, 'data/clients', f.clientId + '.json'), r = JSON.parse(fs.readFileSync(rf, 'utf8'));
-  r.timeline = Object.assign({}, r.timeline, { proposal: new Date().toISOString().slice(0, 10) });
-  r.proposals = [...(r.proposals || []), { token, date: new Date().toISOString().slice(0, 10), properties: f.propertyIds, path: path.relative(ROOT, dir) + '/' }];
+  r.timeline = Object.assign({}, r.timeline, { doneEmail: new Date().toISOString().slice(0, 10) });
+  r.proposals = [...(r.proposals || []), { token, date: new Date().toISOString().slice(0, 10), properties: f.propertyIds, path: path.relative(ROOT, dir) + '/', pdf: attach }];
   r.updatedAt = new Date().toISOString();
   fs.writeFileSync(rf, JSON.stringify(r, null, 2) + '\n');
   console.log(path.relative(ROOT, dir));

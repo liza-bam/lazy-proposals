@@ -5,14 +5,15 @@ const http = require('http'), fs = require('fs'), os = require('os'), path = req
 const PORT = 47317, ORIGINS = ['https://liza-bam.github.io'];
 const run = (cmd, args) => new Promise((ok, no) => execFile(cmd, args, (e, out, err) => e ? no(Error(err || e.message)) : ok(out)));
 
-async function compose({ from, to, subject, html, plain }) {
+async function compose({ from, to, subject, html, plain, attachment, attachmentName }) {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'mail-helper-'));
-  try {
-    fs.writeFileSync(path.join(dir, 'm.html'), html);
-    fs.writeFileSync(path.join(dir, 'm.txt'), plain || '');
-    await run('osascript', ['-l', 'JavaScript', path.join(__dirname, 'clipboard.js'), path.join(dir, 'm.html'), path.join(dir, 'm.txt')]);
-    await run('osascript', [path.join(__dirname, 'compose.applescript'), from, to || '', subject]);
-  } finally { fs.rmSync(dir, { recursive: true, force: true }); }
+  fs.writeFileSync(path.join(dir, 'm.html'), html);
+  fs.writeFileSync(path.join(dir, 'm.txt'), plain || '');
+  // The attachment stays on disk: Mail reads it while the message is open. The folder is the system's temporary one.
+  const file = attachment ? path.join(dir, path.basename(attachmentName || 'attachment.pdf')) : '';
+  if (file) fs.writeFileSync(file, Buffer.from(attachment, 'base64'));
+  await run('osascript', ['-l', 'JavaScript', path.join(__dirname, 'clipboard.js'), path.join(dir, 'm.html'), path.join(dir, 'm.txt')]);
+  await run('osascript', [path.join(__dirname, 'compose.applescript'), from, to || '', subject, file]);
 }
 
 http.createServer((req, res) => {

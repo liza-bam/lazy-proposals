@@ -4,28 +4,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Make proposal — Lazy</title>
+<title>Website ready email — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
-<link rel="stylesheet" href="../proposal.css">
-<link rel="stylesheet" href="app.css?v=clients3">
+<link rel="stylesheet" href="../proposal.css?v=green1">
+<link rel="stylesheet" href="app.css?v=clients5">
 </head>
 <body>
 <div class="app">
   <header class="app__head">
-    <h1>Make proposal</h1>
+    <h1>Website ready email</h1>
     <nav class="app__nav"><a href="./" id="back">Clients</a><a href="https://lazy.vacations/hq/">Command center</a></nav>
   </header>
   <main class="app__main" id="main" style="grid-column: 1 / -1;"><p class="muted">Loading…</p></main>
 </div>
 <script src="vendor/pdfkit-0.15.2.js"></script>
 <script src="proposal-pdf.js?v=vector2"></script>
-<script src="app.js?v=clients1"></script>
-<script src="client-model.js?v=clients1"></script>
+<script src="app.js?v=clients3"></script>
+<script src="client-model.js?v=clients3"></script>
 <script>
 
 const $ = s => document.querySelector(s);
 const query=new URLSearchParams(location.search);
-let client=null,clientSha=null,websites=[],owned=[],S=null;
+let client=null,clientSha=null,websites=[],owned=[],S=null,TEMPLATE='';
 const say=(t,err)=>{const m=$('#msg');if(m){m.textContent=t;m.className='msg'+(err?' msg--err':'');}};
 const FIELDS=[['to','Recipient email','email'],['owner','Client name'],['first','Greeting name'],['login','Editor login'],['subject','Subject']];
 async function start(){
@@ -40,12 +40,12 @@ async function start(){
       else{const files=(await list('data/clients')).filter(f=>f.name.endsWith('.json'));const clients=(await Promise.all(files.map(f=>readJson(f.path)))).map(r=>r.data);id=ClientModel.clientForProperty(property,clients)?.id;}
     }
     if(!id)throw Error('Choose a client before making a proposal.');
-    const [c,s]=await Promise.all([readJson('data/clients/'+id+'.json'),readJson('data/settings.json')]);
-    if(!c||!s)throw Error('Client or proposal settings not found.');client=c.data;clientSha=c.sha;S=s.data;owned=ClientModel.propertiesForClient(client,websites);
+    const [c,s,t]=await Promise.all([readJson('data/clients/'+id+'.json'),readJson('data/settings.json'),readText('data/templates/done-email.html')]);
+    if(!c||!s||!t)throw Error('Client, settings or the email template not found.');TEMPLATE=t;client=c.data;clientSha=c.sha;S=s.data;owned=ClientModel.propertiesForClient(client,websites);
     if(!owned.length)throw Error('Add a property for this client first.');
     $('#back').href='./?client='+encodeURIComponent(id);
     const f=ClientModel.proposalFields(client,websites,S);
-    $('#main').innerHTML='<form class="box" id="pf"><h2>Proposal for '+esc(client.name)+'</h2><fieldset><legend>Websites in this proposal</legend>'+owned.map(p=>'<label class="property-choice"><input type="checkbox" name="properties" value="'+esc(p.id)+'" checked><span>'+esc(p.name)+'<small>'+esc(p.siteUrl||'Website missing')+'</small></span></label>').join('')+'</fieldset><p class="muted" id="scope-summary"></p><div class="grid2">'+FIELDS.map(([k,l,t])=>'<label>'+l+'<input name="'+k+'" value="'+esc(f[k])+'"'+(t?' type="'+t+'"':'')+(k==='to'?' required':'')+'></label>').join('')+'</div><label>Email opening<textarea name="intro">'+esc(f.intro)+'</textarea></label><div class="row"><button class="go" id="ok">Make email and PDF</button><span class="msg" id="msg" role="status"></span></div></form><section class="box" id="done" hidden aria-label="Finished proposal"><h2>Your email and PDF are ready</h2><p>Copy the email, download the PDF and attach it in your email app.</p><div class="row"><button type="button" class="go" id="copy-email">Copy email</button><button type="button" class="go go--quiet" id="copy-subject">Copy subject</button><a class="go go--quiet" id="download-pdf">Download PDF</a><a class="go go--quiet" id="download-email">Download email</a></div><p class="msg" id="result-msg" role="status"></p><p><strong>Subject:</strong> <span id="result-subject"></span></p><iframe id="email-preview" title="Email draft" sandbox="allow-popups allow-popups-to-escape-sandbox" style="width:100%;height:460px;border:1px solid var(--line)"></iframe><details><summary>View PDF</summary><iframe id="pdf" title="The one-page proposal" style="width:100%;height:80vh;border:0"></iframe></details><div class="row"><a class="go" id="finish">Done — back to client</a><button type="button" class="go go--quiet" id="edit-draft">Make changes</button></div></section>';
+    $('#main').innerHTML='<form class="box" id="pf"><h2>Website ready email for '+esc(client.name)+'</h2><fieldset><legend>Websites in this email</legend>'+owned.map(p=>'<label class="property-choice"><input type="checkbox" name="properties" value="'+esc(p.id)+'" checked><span>'+esc(p.name)+'<small>'+esc(p.siteUrl||'Website missing')+'</small></span></label>').join('')+'</fieldset><p class="muted" id="scope-summary"></p><div class="grid2">'+FIELDS.map(([k,l,t])=>'<label>'+l+'<input name="'+k+'" value="'+esc(f[k])+'"'+(t?' type="'+t+'"':'')+(k==='to'?' required':'')+'></label>').join('')+'</div><label class="property-choice"><input type="checkbox" name="attachPdf" checked><span>Attach the offer (PDF)</span></label><div class="row"><button class="go" id="ok">Make the email</button><span class="msg" id="msg" role="status"></span></div></form><section class="box" id="done" hidden aria-label="Finished proposal"><h2>Your email is ready</h2><div class="row"><button type="button" class="go" id="open-mail">Open in Mail</button><button type="button" class="go go--quiet" id="copy-email">Copy email</button><button type="button" class="go go--quiet" id="copy-subject">Copy subject</button><a class="go go--quiet" id="download-pdf">Download PDF</a><a class="go go--quiet" id="download-email">Download email</a></div><p class="msg" id="result-msg" role="status"></p><p><strong>Subject:</strong> <span id="result-subject"></span></p><iframe id="email-preview" title="Email draft" sandbox="allow-popups allow-popups-to-escape-sandbox" style="width:100%;height:460px;border:1px solid var(--line)"></iframe><details><summary>View PDF</summary><iframe id="pdf" title="The one-page proposal" style="width:100%;height:80vh;border:0"></iframe></details><div class="row"><a class="go" id="finish">Done — back to client</a><button type="button" class="go go--quiet" id="edit-draft">Make changes</button></div></section>';
     $('#pf').onsubmit=make;$('#pf').onchange=e=>{if(e.target.name==='properties')scopeChanged();};scopeChanged();
   }catch(e){$('#main').innerHTML='<p class="msg msg--err">'+esc(e.message)+'</p>';}
 }
@@ -53,26 +53,11 @@ function selectedFields(){
   return ClientModel.proposalFields(client,websites,S,new FormData($('#pf')).getAll('properties'));
 }
 function scopeChanged(){
-  try{const f=selectedFields();$('#scope-summary').textContent=f.properties.length+' '+(f.properties.length===1?'website':'websites')+' · Hosting & support: '+f.support.price+' · '+f.support.badge;$('#pf').elements.subject.value=f.subject;$('#pf').elements.intro.value=f.intro;$('#ok').disabled=false;say('');}
+  try{const f=selectedFields();$('#scope-summary').textContent=f.properties.length+' '+(f.properties.length===1?'website':'websites')+' · Hosting & support: '+f.support.price+' · '+f.support.badge;$('#pf').elements.subject.value=f.subject;$('#ok').disabled=false;say('');}
   catch(e){$('#scope-summary').textContent=e.message;$('#ok').disabled=true;}
 }
-// The email: tables and inline styles, as email clients need.
-function email(f) {
-  const C = { ink: '#17363c', coral: '#f9426f', cream: '#fffdf6' }, font = "font-family:'Noto Serif',Georgia,serif;";
-  const text = font + 'font-size:16px;line-height:1.6;color:' + C.ink + ';';
-  const btn = (u, t) => '<a href="' + esc(u) + '" target="_blank" rel="noopener" style="display:inline-block;background:' + C.coral + ';color:#ffffff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;' + font + '">' + esc(t) + '</a>';
-  return '<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>' + esc(f.subject) + '</title></head>' +
-    '<body style="margin:0;padding:0;background:' + C.cream + ';"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:' + C.cream + ';"><tr><td align="center" style="padding:24px 12px;">' +
-    '<table role="presentation" width="600" cellpadding="0" cellspacing="0" style="max-width:600px;width:100%;">' +
-    '<tr><td style="padding-bottom:16px;"><img src="' + esc(S.siteBase) + 'lazy-logo-email.png" width="120" alt="Lazy" style="display:block;border:0;"></td></tr>' +
-    '<tr><td style="' + font + 'font-size:26px;font-weight:600;color:' + C.ink + ';">Welcome, ' + esc(f.first) + '!</td></tr>' +
-    '<tr><td style="' + text + 'padding-top:12px;">' + esc(f.intro) + '</td></tr>' +
-    f.properties.map(p => '<tr><td style="padding-top:20px;">' + btn(p.siteUrl, f.properties.length > 1 ? p.name : 'Visit your website') + '</td></tr>').join('') +
-    '<tr><td style="padding-top:12px;">' + btn(S.editorUrl, 'Open the editor') + '</td></tr>' +
-    (f.login ? '<tr><td style="' + text + 'padding-top:12px;">Your login: <strong>' + esc(f.login) + '</strong>. ' + esc(S.editorNote) + '</td></tr>' : '') +
-    '<tr><td style="' + text + 'padding-top:20px;">' + esc(S.proposal.attachNote) + '</td></tr>' +
-    '<tr><td style="' + text + 'padding-top:28px;white-space:pre-line;">' + esc(S.signoff) + '</td></tr></table></td></tr></table></body></html>';
-}
+// The website ready email: one template and one builder, shared with tools/make-proposal.js.
+const email=f=>ClientModel.websiteReadyEmail(TEMPLATE,f,S,f.attachPdf);
 // Draw the same vector PDF as the working CLI, independently of page scroll or viewport.
 let pdfAssetsPromise=null,previewUrl=null,emailUrl=null,generatedDraft=null;
 async function pdfAssets(){
@@ -87,36 +72,47 @@ async function sheet(f){
 }
 function blobBase64(blob){return new Promise((resolve,reject)=>{const reader=new FileReader();reader.onload=()=>resolve(String(reader.result).split(',')[1]);reader.onerror=reject;reader.readAsDataURL(blob);});}
 
-function plainEmail(f){return ['Welcome, '+f.first+'!',f.intro,...f.properties.map(p=>p.name+': '+p.siteUrl),'Open the editor: '+S.editorUrl,f.login?'Your login: '+f.login+'. '+S.editorNote:'',S.proposal.attachNote,S.signoff].filter(Boolean).join('\n\n');}
+function plainEmail(html){const d=new DOMParser().parseFromString(html,'text/html');d.querySelectorAll('a').forEach(l=>{if(!l.querySelector('img'))l.after(' ('+l.href+')');});return d.body.innerText.replace(/\n{3,}/g,'\n\n').trim();}
 function showResult(f,pdf){
- generatedDraft={fields:f,html:email(f),plain:plainEmail(f)};
+ const html=email(f);generatedDraft={fields:f,html,plain:plainEmail(html),pdf};
  if(previewUrl)URL.revokeObjectURL(previewUrl);if(emailUrl)URL.revokeObjectURL(emailUrl);
- previewUrl=URL.createObjectURL(pdf);emailUrl=URL.createObjectURL(new Blob([generatedDraft.html],{type:'text/html'}));
- $('#pdf').src=previewUrl;$('#download-pdf').href=previewUrl;$('#download-pdf').download=S.proposal.pdfName.replace('{property}',f.property);
+ previewUrl=pdf?URL.createObjectURL(pdf):null;emailUrl=URL.createObjectURL(new Blob([generatedDraft.html],{type:'text/html'}));
+ $('#download-pdf').hidden=$('#pdf').closest('details').hidden=!pdf;if(pdf){$('#pdf').src=previewUrl;$('#download-pdf').href=previewUrl;}$('#download-pdf').download=S.proposal.pdfName.replace('{property}',f.property);
  $('#download-email').href=emailUrl;$('#download-email').download='LAZY email - '+f.owner+'.html';
  $('#result-subject').textContent=f.subject;$('#email-preview').srcdoc=generatedDraft.html;
  $('#finish').href='./?client='+encodeURIComponent(client.id);$('#done').hidden=false;$('#done').scrollIntoView({behavior:'smooth',block:'start'});$('#ok').textContent='Update email and PDF';
  $('#copy-subject').onclick=async()=>{try{await navigator.clipboard.writeText(f.subject);$('#result-msg').textContent='Subject copied';}catch(e){$('#result-msg').textContent='Select the subject above and copy it.';}};
  $('#copy-email').onclick=async()=>{try{if(window.ClipboardItem){try{await navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([generatedDraft.html],{type:'text/html'}),'text/plain':new Blob([generatedDraft.plain],{type:'text/plain'})})]);}catch(e){await navigator.clipboard.writeText(generatedDraft.plain);}}else await navigator.clipboard.writeText(generatedDraft.plain);$('#result-msg').textContent='Email copied — paste it in your email app and attach the downloaded PDF.';}catch(e){$('#result-msg').textContent='Clipboard access was unavailable. Download the email to copy it.';}};
+ $('#open-mail').onclick=()=>openInMail(f);
  $('#edit-draft').onclick=()=>{$('#pf').scrollIntoView({behavior:'smooth',block:'start'});$('#pf').elements.intro.focus();};
 }
 
+// The Mail helper on this Mac (tools/mail-helper) opens the email in Mail, formatted, from Sandy, the PDF attached. Never sends.
+async function openInMail(f){
+  try{
+    const g=generatedDraft,body={from:'Sandy <'+S.senderEmail+'>',to:f.to,subject:f.subject,html:g.html,plain:g.plain};
+    if(g.pdf)Object.assign(body,{attachment:await blobBase64(g.pdf),attachmentName:f.attachName});
+    const r=await fetch('http://127.0.0.1:47317/compose',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}),j=await r.json();
+    if(!j.ok)throw Error(j.error);$('#result-msg').textContent='Opened in Mail.';
+  }catch(er){$('#result-msg').textContent='Mail helper: '+(er.message==='Failed to fetch'?'not running, or Chrome blocked it. Open tools/mail-helper/Mail helper.command, then allow Chrome to reach it.':er.message);}
+}
 async function make(e){
   e.preventDefault();const ok=$('#ok');ok.disabled=true;
   try{
     const f=Object.assign(selectedFields(),Object.fromEntries(new FormData(e.target)));
     // FormData's repeated checkbox names are not the property records.
+    f.attachPdf=!!e.target.elements.attachPdf.checked;
     f.properties=selectedFields().properties;f.propertyIds=f.properties.map(p=>p.id);f.support=ClientModel.supportForCount(S,f.properties.length);
     if(!String(f.to||'').trim())throw Error('Add a recipient email.');
     if(f.properties.some(p=>!p.siteUrl))throw Error('Add a website URL for every selected property.');
-    say('Making the PDF…');const pdf=await sheet(f),encoded=await blobBase64(pdf),token=Date.now().toString(36),dir='proposals/clients/'+client.id+'/'+token+'/';
+    const pdf=f.attachPdf?(say('Making the PDF…'),await sheet(f)):null,token=Date.now().toString(36),dir='proposals/clients/'+client.id+'/'+token+'/';
     const today=new Date().toISOString().slice(0,10);say('Saving…');
-    await save(dir+'proposal.pdf',encoded,null,'Client proposal PDF: '+client.name,true);
+    if(pdf)await save(dir+'proposal.pdf',await blobBase64(pdf),null,'Client proposal PDF: '+client.name,true);
     await save(dir+'email.html',email(f),null,'Client proposal email: '+client.name);
     await save(dir+'proposal.json',JSON.stringify({id:client.id,clientId:client.id,propertyIds:f.propertyIds,properties:f.properties.map(p=>({id:p.id,name:p.name,siteUrl:p.siteUrl})),to:f.to.trim(),subject:f.subject,attachName:S.proposal.pdfName.replace('{property}',f.property),fields:{owner:f.owner,first:f.first,login:f.login,intro:f.intro},renderer:'pdfkit-0.15.2',made:new Date().toISOString()},null,2)+'\n',null,'Client proposal: '+client.name);
-    const updated=Object.assign({},client,{timeline:Object.assign({},client.timeline,{proposal:today}),proposals:[...(client.proposals||[]),{token,date:today,properties:f.propertyIds,path:dir}],updatedAt:new Date().toISOString()});
-    clientSha=await save('data/clients/'+client.id+'.json',JSON.stringify(updated,null,2)+'\n',clientSha,'Proposal prepared: '+client.name);client=updated;
-    showResult(f,pdf);say('Email and PDF saved for '+client.name+' · '+f.properties.length+' '+(f.properties.length===1?'website':'websites')+'.');
+    const updated=Object.assign({},client,{timeline:Object.assign({},client.timeline,{doneEmail:today}),proposals:[...(client.proposals||[]),{token,date:today,properties:f.propertyIds,path:dir,pdf:!!pdf}],updatedAt:new Date().toISOString()});
+    clientSha=await save('data/clients/'+client.id+'.json',JSON.stringify(updated,null,2)+'\n',clientSha,'Website ready email: '+client.name);client=updated;
+    showResult(f,pdf);say((pdf?'Email and PDF':'Email')+' saved for '+client.name+' · '+f.properties.length+' '+(f.properties.length===1?'website':'websites')+'.');
   }catch(er){say(er.message,true);}finally{ok.disabled=false;}
 }
 start();

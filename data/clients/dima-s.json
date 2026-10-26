@@ -15,8 +15,6 @@
   "timeline": {
     "request": "skip",
     "confirmation": "skip",
-    "deliveryDate": "skip",
-    "proposal": "2026-10-20",
     "doneEmail": "2026-10-20",
     "demo": "2026-10-26"
   },

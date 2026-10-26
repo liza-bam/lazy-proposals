@@ -31,8 +31,7 @@
   "login": "andrey",
   "timeline": {
     "request": "skip",
-    "confirmation": "skip",
-    "deliveryDate": "skip"
+    "confirmation": "skip"
   },
   "photoRepositoryPreviousLinks": [
     "/Users/sandy/Desktop/Augusta-Andrey"

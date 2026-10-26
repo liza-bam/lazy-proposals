@@ -91,12 +91,10 @@ const CHOICES = {
 // The client's timeline, in order; a client can start at any step.
 const TIMELINE = [
   ['request', 'Request received', 'Free, no credit card to start'],
-  ['confirmation', 'Confirmation email sent', ''],
-  ['deliveryDate', 'Delivery date given', 'Within 1 business day'],
+  ['confirmation', 'Confirmation email sent', 'With the delivery date · within 1 business day'],
   ['built', 'Website built', 'Usually 3–4 business days · design and setup free during launch'],
   ['intake', 'Intake filled', ''],
-  ['proposal', 'Proposal prepared', 'Email and PDF saved for this client'],
-  ['doneEmail', 'Done email sent', 'With the demo invite'],
+  ['doneEmail', 'Website ready email sent', 'With the demo invite, and the offer PDF when attached'],
   ['demo', 'Demo and training session', ''],
   ['integration', 'Integration session', 'If booked · integration is free'],
   ['launch', 'Launch', 'First month of hosting and support free'],

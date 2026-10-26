@@ -1,7 +1,7 @@
 -- A new Mail message from the sender to the recipient, with the clipboard pasted into its body. Never sent.
--- osascript compose.applescript <from> <to> <subject>
+-- osascript compose.applescript <from> <to> <subject> [<attachment file>]
 on run argv
-	set {fromAddr, toAddr, subj} to argv
+	set {fromAddr, toAddr, subj, attachPath} to argv
 	tell application "System Events" to set nBefore to count windows of process "Mail"
 	tell application "Mail"
 		set m to make new outgoing message with properties {subject:subj, sender:fromAddr, visible:true}
@@ -21,4 +21,8 @@ on run argv
 		delay 0.3
 		keystroke "v" using command down
 	end tell
+	if attachPath is not "" then
+		delay 0.5
+		tell application "Mail" to tell content of m to make new attachment with properties {file name:(POSIX file attachPath as alias)} at after last paragraph
+	end if
 end run

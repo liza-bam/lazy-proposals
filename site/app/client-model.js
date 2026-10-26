@@ -5,7 +5,7 @@
   else root.ClientModel = model;
 })(typeof globalThis === 'object' ? globalThis : this, function () {
   'use strict';
-  const CLIENT_STEPS = ['request', 'confirmation', 'deliveryDate', 'proposal', 'doneEmail', 'demo', 'billing', 'cancel'];
+  const CLIENT_STEPS = ['request', 'confirmation', 'doneEmail', 'demo', 'billing', 'cancel'];
   const PROPERTY_STEPS = ['built', 'intake', 'integration', 'launch'];
   function propertiesForClient(client, websites) {
     return websites.filter(p => p.clientId ? p.clientId === client.id : (client.properties || []).some(x => x.id === p.id))
@@ -48,5 +48,18 @@
       attachName: settings.proposal.pdfName.replace('{property}', joined), support: supportForCount(settings, properties.length),
       missing: [!client.email && 'client email', ...properties.filter(p => !p.siteUrl).map(p => 'website for ' + p.name), !owner && 'client name'].filter(Boolean) };
   }
-  return { CLIENT_STEPS, PROPERTY_STEPS, isOther, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields };
+  // The website ready email: data/templates/done-email.html filled from the proposal fields; the offer line only with the PDF.
+  const escHtml = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  const FONT = "Georgia,'Noto Serif','Times New Roman',serif", TEXT = 'font-family:' + FONT + ';font-size:15px;line-height:1.55;color:#17363c;';
+  // The LAZY email button (rentals-marketing tools/intake/Code.gs button()), in the site's primary green.
+  const emailButton = (u, label) => '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 0;"><tr><td style="background:#057d7b;border-radius:8px;"><a href="' + escHtml(u) + '" style="display:inline-block;padding:13px 24px;font-family:' + FONT + ';font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#ffffff;text-decoration:none;">' + escHtml(label) + '</a></td></tr></table>';
+  function websiteReadyEmail(template, f, settings, attach) {
+    const fill = { subject: escHtml(f.subject), greeting: escHtml(f.first), marketingUrl: escHtml(settings.marketingUrl), facebookUrl: escHtml(settings.facebookUrl), signoff: escHtml(settings.signoff),
+      websiteButtons: f.properties.map(p => emailButton(p.siteUrl, f.properties.length > 1 ? p.name : 'Visit your website')).join(''),
+      loginLine: f.login ? '<p style="margin:12px 0 0;' + TEXT + '">Your login: <strong>' + escHtml(f.login) + '</strong></p>' : '',
+      offerLine: attach ? '<p style="margin:0 0 18px;' + TEXT + '">' + escHtml(settings.proposal.attachNote) + '</p>' : '' };
+    return template.replace(/\{\{button:(\w+):([^}]+)\}\}/g, (m, k, label) => settings[k] ? emailButton(settings[k], label) : '')
+      .replace(/\{\{(\w+)\}\}/g, (m, k) => fill[k] == null ? m : fill[k]);
+  }
+  return { CLIENT_STEPS, PROPERTY_STEPS, isOther, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields, websiteReadyEmail };
 });
