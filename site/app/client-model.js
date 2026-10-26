@@ -53,12 +53,12 @@
   const FONT = "Georgia,'Noto Serif','Times New Roman',serif", TEXT = 'font-family:' + FONT + ';font-size:15px;line-height:1.55;color:#17363c;';
   // The LAZY email button (rentals-marketing tools/intake/Code.gs button()), in the site's primary green.
   const emailButton = (u, label) => '<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 0;"><tr><td style="background:#057d7b;border-radius:8px;"><a href="' + escHtml(u) + '" style="display:inline-block;padding:13px 24px;font-family:' + FONT + ';font-size:15px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:#ffffff;text-decoration:none;">' + escHtml(label) + '</a></td></tr></table>';
-  // Sandy's signature in every email: the closing, her photo and name large, how to reach her.
+  // Sandy's signature in every email: the closing, the LAZY logo, her name large, how to reach her.
   function signature(settings) {
     const g = settings.signature, lines = String(settings.signoff || '').split('\n'), closing = lines.slice(0, -1).join(' ') || 'Talk soon!';
     return '<p style="margin:0 0 14px;font-family:' + FONT + ';font-size:16px;line-height:1.5;color:#17363c;">' + escHtml(closing) + '</p>' +
       '<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>' +
-      '<td valign="middle" style="padding-right:16px;"><img src="' + escHtml(g.photo) + '" width="72" height="72" alt="' + escHtml(g.name) + '" style="display:block;border:0;width:72px;height:72px;border-radius:36px;"></td>' +
+      '<td valign="middle" style="padding-right:16px;"><img src="' + escHtml(g.logo) + '" width="72" alt="Lazy" style="display:block;border:0;width:72px;height:auto;"></td>' +
       '<td valign="middle" style="font-family:' + FONT + ';">' +
       '<div style="font-style:italic;font-weight:700;font-size:26px;line-height:1.1;color:#17363c;">' + escHtml(g.name) + '</div>' +
       '<div style="font-size:14px;line-height:1.5;color:#068b88;padding-top:2px;">' + escHtml(g.title) + '</div>' +
