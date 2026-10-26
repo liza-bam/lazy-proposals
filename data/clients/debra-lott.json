@@ -27,8 +27,9 @@
   ],
   "timeline": {
     "request": "2026-10-26",
-    "confirmation": "2026-10-26"
+    "confirmation": "2026-10-26",
+    "doneEmail": "2026-10-26"
   },
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
-  "updatedAt": "2026-10-26T20:23:12.197Z"
+  "updatedAt": "2026-10-26T20:28:30.063Z"
 }
