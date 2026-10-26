@@ -1,0 +1,143 @@
+{
+  "recordedAt": "2026-10-26T00:22:17.630881+00:00",
+  "status": "saved draft; unfinished; not published",
+  "published": false,
+  "publicPageVerified": false,
+  "verification": {
+    "savedDraftReadback": "captured authenticated backend readback inspected",
+    "desktopTabletPhoneEditorQA": "pending",
+    "desktopTabletPhoneGuestPreviewQA": "pending",
+    "overallBuildComplete": false
+  },
+  "completionTimelineMarked": false,
+  "intakeId": "beautyview-lakeview-suite",
+  "clientId": "debra-lott",
+  "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
+  "savedDraftRevision": 6,
+  "savedDraftPublishedAt": null,
+  "photoSourceFiles": 32,
+  "uniquePhotosInLibrary": 27,
+  "genuineReviewsImported": 432,
+  "authoredContentSections": {
+    "Home": 4,
+    "Stay": 6,
+    "About": 5
+  },
+  "nativeSectionTypesByPage": {
+    "Home": [
+      {
+        "id": "home-amenities",
+        "type": "list"
+      },
+      {
+        "id": "home-pool-gallery",
+        "type": "photos"
+      },
+      {
+        "id": "home-outdoor-highlights",
+        "type": "highlights"
+      },
+      {
+        "id": "home-guest-feedback",
+        "type": "guide"
+      }
+    ],
+    "Stay": [
+      {
+        "id": "stay-facts-pending",
+        "type": "list"
+      },
+      {
+        "id": "stay-sleeping",
+        "type": "guide"
+      },
+      {
+        "id": "stay-gallery",
+        "type": "photos"
+      },
+      {
+        "id": "stay-amenities",
+        "type": "list"
+      },
+      {
+        "id": "stay-arrival",
+        "type": "map"
+      },
+      {
+        "id": "stay-rules",
+        "type": "highlights"
+      }
+    ],
+    "About": [
+      {
+        "id": "about-story",
+        "type": "highlights"
+      },
+      {
+        "id": "about-setting",
+        "type": "photos"
+      },
+      {
+        "id": "about-places",
+        "type": "cards"
+      },
+      {
+        "id": "about-trails",
+        "type": "list"
+      },
+      {
+        "id": "about-area-map",
+        "type": "map"
+      }
+    ]
+  },
+  "factsSection": {
+    "requested": "new native Facts section first on Stay",
+    "status": "unfinished; requested standalone native type unavailable in captured deployed add catalog",
+    "capturedAvailableAddTypes": [
+      "guide",
+      "map",
+      "cards",
+      "priceCards",
+      "highlights",
+      "photos",
+      "socialFeed",
+      "list",
+      "contactInquiry",
+      "faq"
+    ],
+    "firstStaySectionId": "stay-facts-pending",
+    "firstStayImplementedType": "list",
+    "provisionalOnly": true,
+    "notClaimedAsNativeFacts": true
+  },
+  "aboutScopeSaved": [
+    "nature",
+    "wineries",
+    "hikes"
+  ],
+  "guidebook": {
+    "totalPlaces": 64,
+    "originalPlacesPreserved": 60,
+    "originalPlaceObjectsAndOrderUnchanged": true,
+    "originalCategoriesAndOrderUnchanged": true,
+    "authorizedCustomAdditions": [
+      "Boucherie Rush Trail",
+      "Sncewips Heritage Museum",
+      "Gellatly Nut Farm Regional Park",
+      "Goats Peak Regional Park"
+    ],
+    "categoryFilterLimitation": "New fifth Nature & culture category chip is absent at the existing default four-chip desktop limit; cards remain in initial All view and mobile categories. Native viewport verification pending.",
+    "guidebookOriginalSha256": "d4395e6096445fd38e2281d1b1503d5a07af8c72abed12c7922a8cccccd57bfb"
+  },
+  "remaining": [
+    "Requested standalone Facts section must be available and populated; current List is provisional.",
+    "Complete desktop, tablet and phone checks in actual editor and guest preview.",
+    "Verify populated fields, photo thumbnails, gallery images, library references, clipping and overflow.",
+    "No publication has been performed."
+  ],
+  "sourceEvidence": {
+    "capturedDraftReadbackSha256": "dcf903add6508ca079cfe7c3bdde55a1f4990ac76540b9a48461174b1b987a9f",
+    "capturedAddCatalogSha256": "89553e5efd82ef34a54c66b5afba66492be7ba4f25028ab13c8ecd59a8e688ee"
+  }
+}

@@ -5,7 +5,7 @@
   "phone": "2508782542",
   "login": "",
   "temp": "warm",
-  "notes": "Requested a free website. Airbnb: https://airbnb.com/h/lott . Property address supplied: 3040 Ensign Way, West Kelowna, BC. Direction from Sandy: photo based, fancy; Debra has excellent photos. Linked property intake contains full listing facts, amenities, focus items and supplied reviews.",
+  "notes": "Requested a free website. Airbnb: https://airbnb.com/h/lott . Property address supplied: 3040 Ensign Way, West Kelowna, BC. Direction from Sandy: photo based, fancy; Debra has excellent photos. Linked property intake contains full listing facts, amenities, focus items and supplied reviews.\n2026-10-25 current status: Saved website draft revision 6 on site 0a0691c2-20bc-4f9a-8f06-463b83f098ca, with 27 unique library photos and 432 genuine reviews imported. Authored sections Home4/Stay6/About5. First Stay facts content is a provisional native List because the requested standalone Facts type is unavailable. Full viewport QA is unfinished; not published.",
   "billingNotes": "",
   "properties": [
     {
@@ -19,5 +19,5 @@
     "request": "2026-10-25"
   },
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
-  "updatedAt": "2026-10-25T23:26:15.859091+00:00"
+  "updatedAt": "2026-10-26T00:22:17.630881+00:00"
 }
