@@ -183,9 +183,8 @@ async function submit(e) {
     await open(id);say('Intake saved');restoreViewState(view);
   } catch(er){say(er.message,true);}finally{saving=false;}
 }
-// The done email: data/templates/done-email.html filled for this client. The click copies it and opens a new message
-// in the mail app (to and subject set); paste the email into the body. A link, not window.open: this page's open() takes that name.
-let doneEmailCopy=null;
+// The done email: data/templates/done-email.html filled for this client, downloaded as an email file that opens in Mail.
+// A link, not window.open: this page's open() takes that name.
 async function fillDoneEmail(c) {
   const a=document.querySelector('[data-send-done]');if(!a)return;
   const [t,s]=await Promise.all([readText('data/templates/done-email.html'),readJson('data/settings.json')]);
@@ -198,21 +197,20 @@ async function fillDoneEmail(c) {
   const html=t.replace(/\{\{(\w+)\}\}/g,(m,k)=>fill[k]==null?m:fill[k]),doc=new DOMParser().parseFromString(html,'text/html');
   doc.querySelectorAll('a').forEach(l=>l.after(' ('+l.href+')'));
   const plain=doc.body.innerText.replace(/\n{3,}/g,'\n\n').trim(),su=doc.title;
-  doneEmailCopy={html,plain};
-  a.href='mailto:'+encodeURIComponent(c.email||'')+'?subject='+encodeURIComponent(su);
+  // A ready email file: Mail opens it formatted, from Sandy; Message › Send Again makes it ready to send.
+  const b64=t=>btoa(unescape(encodeURIComponent(t))).replace(/.{76}/g,'$&\r\n'),word=t=>'=?UTF-8?B?'+btoa(unescape(encodeURIComponent(t)))+'?=',cut='lazy-done-'+Date.now();
+  const eml=['From: Sandy <'+S.senderEmail+'>','To: '+(c.email||''),'Subject: '+word(su),'X-Unsent: 1','MIME-Version: 1.0','Content-Type: multipart/alternative; boundary="'+cut+'"','',
+    '--'+cut,'Content-Type: text/plain; charset=utf-8','Content-Transfer-Encoding: base64','',b64(plain),
+    '--'+cut,'Content-Type: text/html; charset=utf-8','Content-Transfer-Encoding: base64','',b64(html),'--'+cut+'--',''].join('\r\n');
+  if(a.href.startsWith('blob:'))URL.revokeObjectURL(a.href);
+  a.href=URL.createObjectURL(new Blob([eml],{type:'message/rfc822'}));
+  a.download='Done email – '+c.name+'.eml';
   a.hidden=false;
-}
-function copyDoneEmail() {
-  if(!doneEmailCopy)return;
-  const {html,plain}=doneEmailCopy;
-  (window.ClipboardItem?navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([plain],{type:'text/plain'})})]):navigator.clipboard.writeText(plain))
-    .then(()=>say('Done email copied: paste it into the new message.'),()=>say('Could not copy the email.',true));
 }
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
 document.addEventListener('click',async e=>{
   try {
     const c=e.target.closest('[data-client]');if(c){await showClient(c.dataset.client);return;}
-    if(e.target.closest('[data-send-done]')){copyDoneEmail();return;}
     const p=e.target.closest('[data-property]');if(p){await open(p.dataset.property);return;}
     if(e.target.id==='new'){await showClient(null);return;}
     if(e.target.id==='new-other'){await showClient(null,'other');return;}
