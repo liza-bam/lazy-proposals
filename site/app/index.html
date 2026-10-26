@@ -18,7 +18,7 @@
   <aside class="app__side" id="side"></aside>
   <main class="app__main" id="main"><p class="muted">Loading…</p></main>
 </div>
-<script src="app.js?v=clients5"></script>
+<script src="app.js?v=clients6"></script>
 <script src="client-model.js?v=clients9"></script>
 <script>
 
@@ -106,14 +106,14 @@ function billingStart(c) {
   const t=new Date(d+'T12:00:00');t.setMonth(t.getMonth()+1);
   return ' · starts on '+t.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
 }
-// Every website ready email sent, listed in the client card: the saved email, and the offer PDF when one went with it.
+// Every website ready email made, listed in the client card: the saved email, and the offer PDF when one went with it.
 function sentEmails(c) {
   const rows=[...(c.proposals||[])].reverse();
   if(!rows.length)return '';
-  return '<div class="sent"><h3>Sent emails</h3><ul>'+rows.map(p=>{
+  return '<div class="sent"><h3>Emails</h3><ul>'+rows.map(p=>{
     const names=(p.properties||[]).map(id=>records.find(r=>r.id===id)?.name||id).join(', ');
     const dir=p.path?p.path.replace(/\/$/,''):'';
-    return '<li><span>'+esc(p.date||'')+' · '+esc(names||c.name)+'</span>'+(dir?link('https://github.com/'+REPO+'/blob/main/'+dir+'/email.html','Email')+(p.pdf===false?'':link('https://raw.githubusercontent.com/'+REPO+'/main/'+dir+'/proposal.pdf','Offer PDF')):'<span class="muted">earlier email</span>')+'</li>';
+    return '<li><span>'+esc(p.date||'')+' · '+esc(names||c.name)+' · '+(p.sent?'sent '+esc(p.sent):'not sent')+'</span>'+(dir?link('https://github.com/'+REPO+'/blob/main/'+dir+'/email.html','Email')+(p.pdf===false?'':link('https://raw.githubusercontent.com/'+REPO+'/main/'+dir+'/proposal.pdf','Offer PDF')):'<span class="muted">earlier email</span>')+'</li>';
   }).join('')+'</ul></div>';
 }
 // Saves refresh the record; keep the user's place in its native accordions.
@@ -209,7 +209,7 @@ async function sendConfirmation(c) {
   const e=ClientModel.confirmationEmail(t,c,records,s.data,new Date().toISOString().slice(0,10));
   const d=new DOMParser().parseFromString(e.html,'text/html'),plain=d.body.innerText.replace(/\n{3,}/g,'\n\n').trim();
   try {
-    const r=await fetch('http://127.0.0.1:47317/compose',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({from:'Sandy <'+s.data.senderEmail+'>',to:c.email||'',subject:e.subject,html:e.html,plain})});
+    const r=await fetch('http://127.0.0.1:47317/compose',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({from:'Sandy <'+s.data.senderEmail+'>',to:c.email||'',subject:e.subject,html:e.html,plain,track:{clientId:c.id,step:'confirmation'}})});
     const j=await r.json();if(!j.ok)throw Error(j.error);
   } catch(er){say('Mail helper: '+(er.message==='Failed to fetch'?'not running, or Chrome blocked it. Open tools/mail-helper/Mail helper.command, then allow Chrome to reach it.':er.message),true);}
 }

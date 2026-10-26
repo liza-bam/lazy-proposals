@@ -19,7 +19,7 @@
 </div>
 <script src="vendor/pdfkit-0.15.2.js"></script>
 <script src="proposal-pdf.js?v=vector2"></script>
-<script src="app.js?v=clients5"></script>
+<script src="app.js?v=clients6"></script>
 <script src="client-model.js?v=clients9"></script>
 <script>
 
@@ -90,7 +90,7 @@ function showResult(f,pdf){
 // The Mail helper on this Mac (tools/mail-helper) opens the email in Mail, formatted, from Sandy, the PDF attached. Never sends.
 async function openInMail(f){
   try{
-    const g=generatedDraft,body={from:'Sandy <'+S.senderEmail+'>',to:f.to,subject:f.subject,html:g.html,plain:g.plain};
+    const g=generatedDraft,body={from:'Sandy <'+S.senderEmail+'>',to:f.to,subject:f.subject,html:g.html,plain:g.plain,track:{clientId:client.id,step:'doneEmail',token:g.token}};
     if(g.pdf)Object.assign(body,{attachment:await blobBase64(g.pdf),attachmentName:f.attachName});
     const r=await fetch('http://127.0.0.1:47317/compose',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(body)}),j=await r.json();
     if(!j.ok)throw Error(j.error);$('#result-msg').textContent='';
@@ -110,9 +110,11 @@ async function make(e){
     if(pdf)await save(dir+'proposal.pdf',await blobBase64(pdf),null,'Client proposal PDF: '+client.name,true);
     await save(dir+'email.html',email(f),null,'Client proposal email: '+client.name);
     await save(dir+'proposal.json',JSON.stringify({id:client.id,clientId:client.id,propertyIds:f.propertyIds,properties:f.properties.map(p=>({id:p.id,name:p.name,siteUrl:p.siteUrl})),to:f.to.trim(),subject:f.subject,attachName:S.proposal.pdfName.replace('{property}',f.property),fields:{owner:f.owner,first:f.first,login:f.login,intro:f.intro},renderer:'pdfkit-0.15.2',made:new Date().toISOString()},null,2)+'\n',null,'Client proposal: '+client.name);
-    const updated=Object.assign({},client,{timeline:Object.assign({},client.timeline,{doneEmail:today}),proposals:[...(client.proposals||[]),{token,date:today,properties:f.propertyIds,path:dir,pdf:!!pdf}],updatedAt:new Date().toISOString()});
+    // Made is not sent: the Timeline step is ticked by hand once the email goes out. A remake the same day replaces the earlier one.
+    const same=x=>x.date===today&&String(x.properties)===String(f.propertyIds);
+    const updated=Object.assign({},client,{proposals:[...(client.proposals||[]).filter(x=>!same(x)),{token,date:today,properties:f.propertyIds,path:dir,pdf:!!pdf}],updatedAt:new Date().toISOString()});
     clientSha=await save('data/clients/'+client.id+'.json',JSON.stringify(updated,null,2)+'\n',clientSha,'Website ready email: '+client.name);client=updated;
-    showResult(f,pdf);say((pdf?'Email and PDF':'Email')+' saved for '+client.name+' · '+f.properties.length+' '+(f.properties.length===1?'website':'websites')+'.');
+    showResult(f,pdf);generatedDraft.token=token;say((pdf?'Email and PDF':'Email')+' saved for '+client.name+' · '+f.properties.length+' '+(f.properties.length===1?'website':'websites')+'.');
   }catch(er){say(er.message,true);}finally{ok.disabled=false;}
 }
 start();
