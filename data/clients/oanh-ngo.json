@@ -14,10 +14,20 @@
       "siteUrl": "https://dalat-retreat.lazy.vacations/"
     }
   ],
-  "proposals": [],
+  "proposals": [
+    {
+      "token": "mvppru2m",
+      "date": "2026-10-26",
+      "properties": [
+        "uom-retreat"
+      ],
+      "path": "proposals/clients/oanh-ngo/mvppru2m/",
+      "pdf": true
+    }
+  ],
   "timeline": {
     "request": "2026-10-25"
   },
   "createdAt": "2026-10-25T23:40:25.793794+00:00",
-  "updatedAt": "2026-10-26T04:53:30.040055+00:00"
+  "updatedAt": "2026-10-26T20:33:30.250Z"
 }
