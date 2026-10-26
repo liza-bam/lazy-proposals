@@ -16,12 +16,12 @@
   ],
   "proposals": [
     {
-      "token": "mvpp569m",
+      "token": "mvpp763i",
       "date": "2026-10-26",
       "properties": [
         "beautyview-lakeview-suite"
       ],
-      "path": "proposals/clients/debra-lott/mvpp569m/",
+      "path": "proposals/clients/debra-lott/mvpp763i/",
       "pdf": true
     }
   ],
@@ -30,5 +30,5 @@
     "confirmation": "2026-10-26"
   },
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
-  "updatedAt": "2026-10-26T20:15:53.088Z"
+  "updatedAt": "2026-10-26T20:17:26.024Z"
 }
