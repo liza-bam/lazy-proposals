@@ -75,11 +75,13 @@ async function showClient(id,kind) {
   if(ClientModel.isOther(c)) return showOther(c,id);
   const props=ClientModel.propertiesForClient(c,records);
   const accordion=(title,body,open)=>'<details class="box optional"'+(open?' open':'')+'><summary>'+title+'</summary><div class="optional__body">'+body+'</div></details>';
-  const details='<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>'+clientField('notes','Client notes',c.notes,'area');
+  // Who the client is sits in the client line on top; the panel below is the client's notes only.
+  const contact='<div class="grid2">'+clientField('name','Client name',c.name)+clientField('email','Email',c.email,'email')+clientField('phone','Phone',c.phone,'tel')+clientField('login','Editor login',c.login)+'</div>';
+  const notes=clientField('notes','Client notes',c.notes,'area'),details=contact+notes;
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
   const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row"><button class="go go--quiet" type="button" data-property="'+esc(p.id)+'">Open intake</button>'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'</div></article>').join(''):'<p class="muted">Add this client’s first property.</p>');
-  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p></section>'+
-    '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Details',details)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
+  $('#main').innerHTML='<section class="box"><div class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</div><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p>'+(id?contact.replace(/<(input|textarea) /g,'<$1 form="client-rec" '):'')+'</section>'+
+    '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Client notes',notes)+accordion('Billing',billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
     (id?'':'<div class="row"><button class="go" type="submit">Create client</button><span class="msg" id="msg" role="status"></span></div>')+'</form>'+
     (id?accordion('Properties',properties)+proposalHistory(c):'');
   $('#client-rec').onsubmit=saveClient;
