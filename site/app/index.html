@@ -106,11 +106,11 @@ function billingStart(c) {
   const t=new Date(d+'T12:00:00');t.setMonth(t.getMonth()+1);
   return ' · starts on '+t.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
 }
-// Every website ready email sent, listed in the client card: the saved email, and the offer PDF when one went with it.
+// Every website ready email made, listed in the client card: the saved email, and the offer PDF when one went with it.
 function sentEmails(c) {
   const rows=[...(c.proposals||[])].reverse();
   if(!rows.length)return '';
-  return '<div class="sent"><h3>Sent emails</h3><ul>'+rows.map(p=>{
+  return '<div class="sent"><h3>Emails</h3><ul>'+rows.map(p=>{
     const names=(p.properties||[]).map(id=>records.find(r=>r.id===id)?.name||id).join(', ');
     const dir=p.path?p.path.replace(/\/$/,''):'';
     return '<li><span>'+esc(p.date||'')+' · '+esc(names||c.name)+'</span>'+(dir?link('https://github.com/'+REPO+'/blob/main/'+dir+'/email.html','Email')+(p.pdf===false?'':link('https://raw.githubusercontent.com/'+REPO+'/main/'+dir+'/proposal.pdf','Offer PDF')):'<span class="muted">earlier email</span>')+'</li>';

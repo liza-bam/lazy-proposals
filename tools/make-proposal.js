@@ -3,7 +3,6 @@
  * (data/settings.json → proposal) make the email (data/templates/done-email.html) and, unless --no-pdf, the one-page PDF.
  *   node tools/make-proposal.js <client-id>           show the filled email fields, to check
  *   node tools/make-proposal.js <client-id> --make    write proposals/clients/<client-id>/<token>/ (proposal.pdf, email.html, proposal.json)
- *                                              and date the timeline's Website ready email step
  * Claude then makes the Gmail draft from proposal.json, email.html and proposal.pdf (skill make-proposal). */
 'use strict';
 const fs = require('fs');
@@ -56,8 +55,9 @@ async function main() {
   if (attach) await pdf(f, S, path.join(dir, 'proposal.pdf'));
   fs.writeFileSync(path.join(dir, 'proposal.json'), JSON.stringify({ id: f.clientId, clientId: f.clientId, propertyIds: f.propertyIds, properties: f.properties.map(p => ({ id: p.id, name: p.name, siteUrl: p.siteUrl })), to: f.to, subject: f.subject, attachName: f.attachName, made: new Date().toISOString() }, null, 2) + '\n');
   const rf = path.join(ROOT, 'data/clients', f.clientId + '.json'), r = JSON.parse(fs.readFileSync(rf, 'utf8'));
-  r.timeline = Object.assign({}, r.timeline, { doneEmail: new Date().toISOString().slice(0, 10) });
-  r.proposals = [...(r.proposals || []), { token, date: new Date().toISOString().slice(0, 10), properties: f.propertyIds, path: path.relative(ROOT, dir) + '/', pdf: attach }];
+  // Made is not sent: the Timeline step is ticked by hand once the email goes out. A remake the same day replaces the earlier one.
+  const today = new Date().toISOString().slice(0, 10), same = x => x.date === today && String(x.properties) === String(f.propertyIds);
+  r.proposals = [...(r.proposals || []).filter(x => !same(x)), { token, date: today, properties: f.propertyIds, path: path.relative(ROOT, dir) + '/', pdf: attach }];
   r.updatedAt = new Date().toISOString();
   fs.writeFileSync(rf, JSON.stringify(r, null, 2) + '\n');
   console.log(path.relative(ROOT, dir));

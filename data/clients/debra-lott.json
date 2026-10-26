@@ -16,23 +16,6 @@
   ],
   "proposals": [
     {
-      "token": "mvpno63z",
-      "date": "2026-10-26",
-      "properties": [
-        "beautyview-lakeview-suite"
-      ],
-      "path": "proposals/clients/debra-lott/mvpno63z/"
-    },
-    {
-      "token": "mvpo8av9",
-      "date": "2026-10-26",
-      "properties": [
-        "beautyview-lakeview-suite"
-      ],
-      "path": "proposals/clients/debra-lott/mvpo8av9/",
-      "pdf": true
-    },
-    {
       "token": "mvpoi7e7",
       "date": "2026-10-26",
       "properties": [
@@ -44,8 +27,7 @@
   ],
   "timeline": {
     "request": "2026-10-26",
-    "confirmation": "2026-10-26",
-    "doneEmail": "2026-10-26"
+    "confirmation": "2026-10-26"
   },
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
   "updatedAt": "2026-10-26T19:58:01.231Z"
