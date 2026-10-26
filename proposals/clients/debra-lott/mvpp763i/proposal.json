@@ -1,0 +1,25 @@
+{
+  "id": "debra-lott",
+  "clientId": "debra-lott",
+  "propertyIds": [
+    "beautyview-lakeview-suite"
+  ],
+  "properties": [
+    {
+      "id": "beautyview-lakeview-suite",
+      "name": "Beautyview Lakeview suite with pool *legal*",
+      "siteUrl": "https://beautyview.lazy.vacations/"
+    }
+  ],
+  "to": "debralynnlott@gmail.com",
+  "subject": "Your website for Beautyview Lakeview suite with pool *legal* is ready",
+  "attachName": "LAZY proposal - Beautyview Lakeview suite with pool *legal*.pdf",
+  "fields": {
+    "owner": "Debra Lott",
+    "first": "Debra",
+    "login": "debralott",
+    "intro": "We're so glad you're here. Your new website for Beautyview Lakeview suite with pool *legal* is ready, and everything you need to get started is below."
+  },
+  "renderer": "pdfkit-0.15.2",
+  "made": "2026-10-26T20:17:24.733Z"
+}
