@@ -1,0 +1,19 @@
+Subject: Your website is done — welcome to LAZY
+
+Dear {{name}},
+
+Your website is done! Welcome to LAZY.
+
+{{websites}}
+
+Your editor: {{editorUrl}}
+{{login}}
+
+Pick a time for your editor demo here:
+{{demoSchedulerUrl}}
+
+We are going to have some cool news. Follow us on the LAZY website and on Facebook:
+{{marketingUrl}}
+{{facebookUrl}}
+
+{{signoff}}

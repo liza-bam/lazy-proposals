@@ -182,20 +182,21 @@ async function submit(e) {
     await open(id);say('Intake saved');restoreViewState(view);
   } catch(er){say(er.message,true);}finally{saving=false;}
 }
-// The done email, opened in Gmail for Sandy to read and send: the websites, the editor and the demo calendar.
+// The done email: data/templates/done-email.txt filled for this client, opened in Gmail for Sandy to read and send.
 async function sendDoneEmail(c) {
-  // Opened during the click, so the pop-up blocker lets it through; filled once the settings load.
+  // Opened during the click, so the pop-up blocker lets it through; filled once the template loads.
   const w=window.open('','_blank');if(w)w.opener=null;
-  const s=await readJson('data/settings.json');if(!s){if(w)w.close();throw Error('Settings missing: data/settings.json');}
-  const S=s.data,props=ClientModel.propertiesForClient(c,records).filter(p=>safeUrl(p.siteUrl));
-  const body=['Dear '+c.name+',','','Your website is done! Welcome to LAZY.','',
-    'Your website'+(props.length===1?'':'s')+':',...props.map(p=>p.name+': '+p.siteUrl),'',
-    'Your editor: '+S.editorUrl,...(c.login?['Your login: '+c.login]:[]),'',
-    'Pick a time for your editor demo here:',S.demoSchedulerUrl,'',
-    'We are going to have some cool news. Follow us on the LAZY website and on Facebook:',S.marketingUrl,S.facebookUrl,'',S.signoff].join('\n');
-  const q=new URLSearchParams({view:'cm',fs:'1',to:c.email||'',su:'Your website is done — welcome to LAZY',body});
-  const url='https://mail.google.com/mail/?'+q.toString();
-  if(w)w.location.href=url;else window.open(url,'_blank','noopener');
+  try {
+    const [t,s]=await Promise.all([readText('data/templates/done-email.txt'),readJson('data/settings.json')]);
+    if(!t||!s)throw Error('Missing data/templates/done-email.txt or data/settings.json');
+    const S=s.data,props=ClientModel.propertiesForClient(c,records).filter(p=>safeUrl(p.siteUrl));
+    const fill={name:c.name,editorUrl:S.editorUrl,demoSchedulerUrl:S.demoSchedulerUrl,marketingUrl:S.marketingUrl,facebookUrl:S.facebookUrl,signoff:S.signoff,
+      websites:'Your website'+(props.length===1?'':'s')+':\n'+props.map(p=>p.name+': '+p.siteUrl).join('\n'),login:c.login?'Your login: '+c.login:''};
+    const text=t.replace(/\{\{(\w+)\}\}/g,(m,k)=>fill[k]==null?m:fill[k]),[,su]=text.match(/^Subject: *(.*)\n/)||[,''];
+    const body=text.replace(/^Subject:.*\n\n?/,'').replace(/\n{3,}/g,'\n\n').trim();
+    const url='https://mail.google.com/mail/?'+new URLSearchParams({view:'cm',fs:'1',to:c.email||'',su,body}).toString();
+    if(w)w.location.href=url;else window.open(url,'_blank','noopener');
+  } catch(er){if(w)w.close();throw er;}
 }
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
 document.addEventListener('click',async e=>{

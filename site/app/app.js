@@ -22,6 +22,11 @@ async function readJson(path) {
   const f = await gh(path);
   return f ? { data: JSON.parse(unb64(f.content)), sha: f.sha } : null;
 }
+// A text file, or null.
+async function readText(path) {
+  const f = await gh(path);
+  return f ? unb64(f.content) : null;
+}
 // Save text (or base64 with raw=true); sha is the version read, so a newer save is never overwritten.
 async function save(path, body, sha, message, raw) {
   const res = await gh(path, { method: 'PUT', headers: { 'content-type': 'application/json' },
