@@ -1,0 +1,15 @@
+{
+  "command": [
+    "node",
+    "tools/website-fill-check.cjs",
+    "PRIVATE_RUN/.intake-projects/uom-retreat/backend-run/evidence-final14.json"
+  ],
+  "cwd": "/Users/sandy/Documents/GitHub/lazy-project/Website maker",
+  "exitCode": 1,
+  "stdout": "",
+  "stderr": "FAIL guidebookDataUnchanged: evidence required\n",
+  "onlyExpectedFailure": true,
+  "interpretation": "The unmodified stock checker requires the entire Guidebook unchanged. User-authorized six Dalat cards/intro/category cleanup intentionally fail that one policy; all other evidence gates pass. Original60hiddenplaces preserved exactly; no override and no false unchanged claim.",
+  "manifestSha256": "01e07ba62a6ef6a6b2160ebef4f452f8e659cb63b9292e3ee6f23448363e0f44",
+  "recordedAt": "2026-10-26T04:53:28.150312+00:00"
+}

@@ -1,5 +1,5 @@
 {
-  "recordedAt": "2026-10-26T03:53:23.924328+00:00",
+  "recordedAt": "2026-10-26T04:53:30.040055+00:00",
   "status": "published and verified on actual public domain",
   "published": true,
   "publicPageVerified": true,
@@ -7,7 +7,7 @@
     "savedDraftReadback": "Fresh authenticated current revision 16: draftMatchesPublished true; reviewed revision 15 authored content/reviews/library/Guidebook unchanged; native publication adds hero.shareCard and theme serialization.",
     "editableDraftComplete": true,
     "overallBuildComplete": true,
-    "completionScope": "Completed editable website and actual public deployment; email delivery was not tested.",
+    "completionScope": "Completed native editable website and actual public deployment; email delivery untested.",
     "guestVisualQA": {
       "reviewedContentRevision": 14,
       "desktopTabletTiles": 37,
@@ -76,14 +76,30 @@
       ],
       "screenshotsCaptured": 3,
       "inquirySubmitted": false
-    }
+    },
+    "publicFinalRevision": 18,
+    "publicFinalPages": [
+      "Home",
+      "Stay",
+      "About",
+      "Guidebook"
+    ],
+    "publicFinalDesktopWidth": 1440,
+    "publicFinalOverflow": false,
+    "publicFinalFailedVisibleImages": 0,
+    "finalAmenityOrderReview": {
+      "tiles": 16,
+      "result": "PASS",
+      "sourceOrder": true
+    },
+    "buttons": "Actual public controls reviewed by primary agent; inquiry not submitted."
   },
   "completionTimelineMarked": false,
   "intakeId": "beautyview-lakeview-suite",
   "clientId": "debra-lott",
   "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
-  "savedDraftRevision": 16,
-  "savedDraftPublishedAt": "2026-10-26T03:33:37.050Z",
+  "savedDraftRevision": 18,
+  "savedDraftPublishedAt": "2026-10-26T04:47:16.092Z",
   "photoSourceFiles": 32,
   "uniquePhotosInLibrary": 27,
   "genuineReviewsImported": 432,
@@ -184,7 +200,13 @@
     "title": "Beautyview at a glance",
     "fallbackTransparent": true,
     "standaloneFactsModuleCreated": false,
-    "note": "Uses the supported editable native List named Facts. No unsupported built-in/module or custom code is claimed."
+    "note": "Uses the supported editable native List named Facts. No unsupported built-in/module or custom code is claimed.",
+    "registration": {
+      "municipal": "8221",
+      "provincial": "H717497174",
+      "nativeFactsList": true,
+      "actualPublicStayVerified": true
+    }
   },
   "aboutScopeSaved": [
     "nature",
@@ -209,8 +231,7 @@
     "authorizedCustomAdditionsVisible": true
   },
   "remaining": [
-    "Email delivery remains untested; no inquiry or booking was submitted.",
-    "Any future booking-provider integration or precise date-dependent cancellation terms need separate verification."
+    "Email delivery and booking-provider integration untested; no inquiry or test booking submitted."
   ],
   "sourceEvidence": {
     "capturedAddCatalogSha256": "89553e5efd82ef34a54c66b5afba66492be7ba4f25028ab13c8ecd59a8e688ee",
@@ -244,7 +265,8 @@
     "otherRecordedRequirements": "pass",
     "unmodifiedStockGatePassClaimed": false
   },
-  "evidenceArchiveUrl": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/beautyview-lakeview-suite/verification/published-revision-16",
-  "publishedRevision": 16,
-  "liveUrl": "https://beautyview.lazy.vacations/"
+  "evidenceArchiveUrl": "https://github.com/liza-bam/lazy-proposals/tree/main/data/materials/beautyview-lakeview-suite/verification/published-revision-18",
+  "publishedRevision": 18,
+  "liveUrl": "https://beautyview.lazy.vacations/",
+  "draftMatchesPublished": true
 }

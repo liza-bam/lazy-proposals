@@ -1,0 +1,74 @@
+{
+  "recordedAt": "2026-10-26T04:53:30.040055+00:00",
+  "intakeId": "uom-retreat",
+  "siteId": "52ce0d59-4d43-4abb-a2dd-6e41c90605d6",
+  "slug": "dalat-retreat",
+  "currentPublishedRevision": 14,
+  "publishedAt": "2026-10-26T04:48:42.097Z",
+  "draftMatchesPublished": true,
+  "published": true,
+  "publicPageVerified": true,
+  "liveUrl": "https://dalat-retreat.lazy.vacations/",
+  "freshPublishedReadbackSha256": "f9506e796dcf8845af64f46606c680db29fdb64c94195db6bec4e939901fd01c",
+  "reviews": 37,
+  "uniqueLibraryPhotos": 55,
+  "authoredSections": {
+    "homeNav": 4,
+    "yourStay": 7,
+    "about": 5
+  },
+  "firstStaySection": {
+    "id": "stay-at-a-glance",
+    "type": "list",
+    "name": "Facts"
+  },
+  "connectedBrowserVerification": {
+    "performedBy": "primary build agent",
+    "actualPublicDomain": true,
+    "width": 1440,
+    "pages": [
+      "Home",
+      "Stay",
+      "About",
+      "Guidebook"
+    ],
+    "allFourPagesCorrectHeadings": true,
+    "failedVisibleImages": 0,
+    "horizontalOverflow": false,
+    "allPhotosAndInquiryControls": "verified separately; no inquiry sent or email delivery tested",
+    "inquiryFlow": "Home Inquire opens native dialog. Secondary-page Inquire routes to home.dc.html#contact; a second Home Inquire click opens dialog."
+  },
+  "reviewScope": {
+    "priorFullAuthoredPageQA": "retained for unchanged sections",
+    "finalChangedAmenityTilesReviewed": 19,
+    "finalChangedAmenityReviewBy": "debra_target",
+    "finalChangedAmenityResult": "PASS",
+    "nativeHomeAndStayAmenityFields": "actual populated fields inspected by primary agent"
+  },
+  "sourcePreservation": "Original intake listing facts, amenity inventory, review source and timeline retained unchanged.",
+  "nativeFactsFallback": "Supported native List named Facts is first on Stay; no new standalone module or custom code claimed.",
+  "fullBackendReadbackArchived": false,
+  "remaining": [
+    "Email delivery and booking-provider integration untested; no inquiry or test booking submitted.",
+    "Exact property street address and verified property pin unknown; city-level location used and map remains off.",
+    "Native secondary-page Inquire uses a two-step flow through Home; retained and disclosed."
+  ],
+  "guidebook": {
+    "mapOn": false,
+    "original60WrongAreaPlacesRetainedHidden": true,
+    "visibleDestinationCards": [
+      "Đà Lạt Central Market",
+      "Xuân Hương Lake",
+      "Domaine de Marie Church",
+      "Vạn Thành Flower Village",
+      "Tuyền Lâm Lake",
+      "Langbiang Tourist Area"
+    ],
+    "visibleCategories": [
+      "Explore Đà Lạt"
+    ],
+    "noCustomCoordinatesInvented": true,
+    "wholeUnchangedGatePassClaimed": false
+  },
+  "homeStaySourceCategoryOrder12Verified": true
+}

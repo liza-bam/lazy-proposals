@@ -1,0 +1,181 @@
+{
+  "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
+  "revision": 18,
+  "sourceOrderVerifiedBy": "primary build agent in actual native fields and public pages",
+  "nativeLists": {
+    "home": [
+      {
+        "label": "Featured amenities",
+        "items": [
+          "Kitchen",
+          "Wifi",
+          "Dedicated workspace",
+          "Free parking on premises – 2 spaces",
+          "Private pool",
+          "Private hot tub",
+          "Private sauna",
+          "TV with standard cable",
+          "Air conditioning",
+          "Exterior security cameras on property"
+        ]
+      },
+      {
+        "label": "More comforts",
+        "items": [
+          "Bathtub, hair dryer and toiletries",
+          "Bed linens, extra pillows, blankets and room-darkening shades",
+          "Travel crib, high chair, window guards and board games",
+          "Refrigerator, microwave, dishwasher and large toaster oven",
+          "Keurig coffee maker, kettle, toaster and dining table",
+          "Covered deck, lake views, outdoor dining and BBQ grill",
+          "Private entrance and lockbox self check-in"
+        ]
+      },
+      {
+        "label": "Plan ahead",
+        "items": [
+          "Pool: May long weekend–mid-September; heated until September 15",
+          "Pool and hot tub close at 10 PM; slide closes at 8 PM",
+          "Owners live above; concrete stairs lead to the suite",
+          "Exterior cameras cover the front-yard entryway",
+          "Washer and dryer unavailable; laundromat nearby"
+        ]
+      }
+    ],
+    "stay": [
+      {
+        "label": "Bathroom",
+        "items": [
+          "Bathtub",
+          "Hair dryer",
+          "Shampoo",
+          "Conditioner",
+          "Body soap",
+          "Shower gel",
+          "Towels, soap and toilet paper"
+        ]
+      },
+      {
+        "label": "Bedroom and laundry",
+        "items": [
+          "Hangers",
+          "Bed linens",
+          "Extra pillows and blankets",
+          "Room-darkening shades",
+          "Iron",
+          "Clothing storage"
+        ]
+      },
+      {
+        "label": "Entertainment",
+        "items": [
+          "TV with standard cable",
+          "Books and reading material"
+        ]
+      },
+      {
+        "label": "Family",
+        "items": [
+          "Pack ’n play / travel crib",
+          "High chair",
+          "Window guards",
+          "Board games"
+        ]
+      },
+      {
+        "label": "Heating and cooling",
+        "items": [
+          "Air conditioning",
+          "Indoor fireplace",
+          "Heating"
+        ]
+      },
+      {
+        "label": "Home safety",
+        "items": [
+          "Exterior security cameras cover the front-yard entryway",
+          "Smoke alarm",
+          "Carbon monoxide alarm",
+          "Fire extinguisher",
+          "First aid kit",
+          "Pool/hot tub has no gate or lock; nearby water"
+        ]
+      },
+      {
+        "label": "Internet and office",
+        "items": [
+          "Wifi",
+          "Dedicated workspace"
+        ]
+      },
+      {
+        "label": "Kitchen and dining",
+        "items": [
+          "Kitchen for preparing your own meals",
+          "Refrigerator",
+          "Microwave",
+          "Dishes and silverware",
+          "Mini fridge",
+          "Freezer",
+          "Dishwasher",
+          "Large toaster oven",
+          "Hot water kettle",
+          "Keurig coffee maker",
+          "Toaster",
+          "Baking sheet",
+          "Blender",
+          "Rice maker",
+          "Barbecue utensils",
+          "Dining table",
+          "Coffee"
+        ]
+      },
+      {
+        "label": "Location features",
+        "items": [
+          "Private entrance",
+          "Laundromat nearby",
+          "Concrete stairs lead to the suite; owners live above"
+        ]
+      },
+      {
+        "label": "Outdoor",
+        "items": [
+          "Covered patio/deck with lake views",
+          "Backyard",
+          "Outdoor furniture",
+          "Outdoor dining area",
+          "BBQ grill"
+        ]
+      },
+      {
+        "label": "Parking and facilities",
+        "items": [
+          "Free parking on premises – 2 spaces",
+          "Private pool with water slide",
+          "Pool: May long weekend–mid-September; heated until September 15",
+          "Pool 8 AM–10 PM; slide closes at 8 PM",
+          "Private hot tub year-round when available; access until 10 PM",
+          "Private infrared sauna; access until 10 PM"
+        ]
+      },
+      {
+        "label": "Services",
+        "items": [
+          "Long stays of 28 days or more allowed",
+          "Self check-in",
+          "Lockbox",
+          "Host greeting available"
+        ]
+      },
+      {
+        "label": "Not included",
+        "items": [
+          "Washer unavailable",
+          "Dryer unavailable"
+        ]
+      }
+    ]
+  },
+  "sourceInventoryChanged": false
+}

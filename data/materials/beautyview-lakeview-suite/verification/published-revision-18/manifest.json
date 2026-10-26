@@ -1,0 +1,39 @@
+{
+  "intakeId": "beautyview-lakeview-suite",
+  "publishedRevision": 18,
+  "published": true,
+  "publicPageVerified": true,
+  "sourceReports": "Earlier report9/12 evidence is historical; publication-evidence.json and final14 reports establish final state. Full backend/session files are not archived.",
+  "files": [
+    {
+      "path": "amenities-order-evidence.json",
+      "bytes": 4877,
+      "sha256": "7c373a58b16ed54eac7e4b3d283254ead3b4940081f0c564dc4df90fe229cd33"
+    },
+    {
+      "path": "publication-evidence.json",
+      "bytes": 2125,
+      "sha256": "17093dfaac0a6cf58e50a7f5f7ca12f8e8861b5c83f45095f7df5704ef4be079"
+    },
+    {
+      "path": "screenshots/beautyview-live18-about-desktop.png",
+      "bytes": 360824,
+      "sha256": "6177f0248cbe34436123a437027f3d161186c36052b8a37408926527e4b1635a"
+    },
+    {
+      "path": "screenshots/beautyview-live18-home-desktop.png",
+      "bytes": 937318,
+      "sha256": "fad0a69d40b898465433461995421de56b7b84889229c122934c551370db618c"
+    },
+    {
+      "path": "screenshots/beautyview-live18-offers-desktop.png",
+      "bytes": 425504,
+      "sha256": "841a2e0bd53e7b50e0088c14df685de535fddf2bc32d40521f4905a96bf3e1ba"
+    },
+    {
+      "path": "screenshots/beautyview-live18-stay-desktop.png",
+      "bytes": 440929,
+      "sha256": "f1e2a53a4a27775a23668f7f9da33b787ded4f91ada5f4c26228aba0a53fa25f"
+    }
+  ]
+}

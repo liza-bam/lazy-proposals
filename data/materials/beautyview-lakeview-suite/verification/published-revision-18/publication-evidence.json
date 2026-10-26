@@ -1,0 +1,65 @@
+{
+  "recordedAt": "2026-10-26T04:53:30.040055+00:00",
+  "intakeId": "beautyview-lakeview-suite",
+  "siteId": "0a0691c2-20bc-4f9a-8f06-463b83f098ca",
+  "slug": "beautyview",
+  "currentPublishedRevision": 18,
+  "publishedAt": "2026-10-26T04:47:16.092Z",
+  "draftMatchesPublished": true,
+  "published": true,
+  "publicPageVerified": true,
+  "liveUrl": "https://beautyview.lazy.vacations/",
+  "freshPublishedReadbackSha256": "8cb948299b2f6d262331e1d407aa2f32d58e27c6b66b7c57105996ec8fc2c77e",
+  "reviews": 432,
+  "uniqueLibraryPhotos": 27,
+  "authoredSections": {
+    "homeNav": 4,
+    "yourStay": 6,
+    "about": 5
+  },
+  "firstStaySection": {
+    "id": "stay-facts-pending",
+    "type": "list",
+    "name": "Facts"
+  },
+  "connectedBrowserVerification": {
+    "performedBy": "primary build agent",
+    "actualPublicDomain": true,
+    "width": 1440,
+    "pages": [
+      "Home",
+      "Stay",
+      "About",
+      "Guidebook"
+    ],
+    "allFourPagesCorrectHeadings": true,
+    "failedVisibleImages": 0,
+    "horizontalOverflow": false,
+    "allPhotosAndInquiryControls": "verified separately; no inquiry sent or email delivery tested"
+  },
+  "reviewScope": {
+    "priorFullAuthoredPageQA": "retained for unchanged sections",
+    "finalChangedAmenityTilesReviewed": 16,
+    "finalChangedAmenityReviewBy": "debra_target",
+    "finalChangedAmenityResult": "PASS",
+    "nativeHomeAndStayAmenityFields": "actual populated fields inspected by primary agent"
+  },
+  "sourcePreservation": "Original intake listing facts, amenity inventory, review source and timeline retained unchanged.",
+  "nativeFactsFallback": "Supported native List named Facts is first on Stay; no new standalone module or custom code claimed.",
+  "fullBackendReadbackArchived": false,
+  "remaining": [
+    "Email delivery and booking-provider integration untested; no inquiry or test booking submitted."
+  ],
+  "registration": {
+    "municipal": "8221",
+    "provincial": "H717497174",
+    "nativeFactsList": true,
+    "actualPublicStayVerified": true
+  },
+  "aboutVerified": [
+    "nature",
+    "wineries",
+    "hikes"
+  ],
+  "homeFocusOrder10Verified": true
+}

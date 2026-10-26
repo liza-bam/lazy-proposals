@@ -1,0 +1,32 @@
+{
+  "status": "PASS: final revision12 Guidebook phone visual review",
+  "reviewedAt": "2026-10-26T04:15:38.710000+00:00",
+  "revisionLabel": 12,
+  "filesReviewed": [
+    "oanh-final12-phone-guidebook-0.png",
+    "oanh-final12-phone-guidebook-1.png",
+    "oanh-final12-phone-guidebook-2.png"
+  ],
+  "fileCount": 3,
+  "visibleDestinations": [
+    "Đà Lạt Central Market",
+    "Xuân Hương Lake",
+    "Domaine de Marie Church",
+    "Vạn Thành Flower Village",
+    "Tuyền Lâm Lake",
+    "Langbiang Tourist Area"
+  ],
+  "blockingDefectsObserved": [],
+  "checks": [
+    "Intro title/body and four native buttons are readable and wrap within phonewidth.",
+    "One Explore Đà Lạt categoryfilter is visible.",
+    "All six native destination cards render with names, area, descriptions and Directions/View on Google links.",
+    "Guidebook map is not shown; no unverified property pin is displayed.",
+    "No blankcards,missingimageplaceholders,clippedauthoredparagraphs orvisiblehorizontaloverflow observed.",
+    "Full page reviewed throughfooter."
+  ],
+  "priorAuthoredPageReview": "phone-qa9-visual-report.json covers27Home/Stay/Abouttiles. Parent confirmsrevision12authoredcontentunchanged.",
+  "limits": [
+    "Visual filesystem screenshot review only; no browsercontrols,websitewritesorfunctionalDirections/linktests by thisagent."
+  ]
+}

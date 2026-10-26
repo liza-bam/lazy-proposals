@@ -1,0 +1,203 @@
+{
+  "siteId": "52ce0d59-4d43-4abb-a2dd-6e41c90605d6",
+  "revision": 14,
+  "sourceOrderVerifiedBy": "primary build agent in actual native fields and public pages",
+  "nativeLists": {
+    "home": [
+      {
+        "label": "Scenic views",
+        "items": [
+          "Garden, city skyline, resort and valley views"
+        ]
+      },
+      {
+        "label": "Bathroom",
+        "items": [
+          "Hair dryer, shampoo, bidet and shower gel"
+        ]
+      },
+      {
+        "label": "Bedroom and laundry",
+        "items": [
+          "Washer, cotton linens and room-darkening shades",
+          "Iron and drying rack"
+        ]
+      },
+      {
+        "label": "Entertainment",
+        "items": [
+          "TV and Ethernet connection"
+        ]
+      },
+      {
+        "label": "Heating and cooling",
+        "items": [
+          "Portable fans"
+        ]
+      },
+      {
+        "label": "Home safety",
+        "items": [
+          "Cameras at garden entrances; fire extinguisher and first aid kit",
+          "Smoke and carbon monoxide alarms not reported"
+        ]
+      },
+      {
+        "label": "Internet and office",
+        "items": [
+          "Wi-Fi and dedicated workspace"
+        ]
+      },
+      {
+        "label": "Kitchen and dining",
+        "items": [
+          "Kitchen with refrigerator, electric stove and cooking basics",
+          "Rice maker, kettle, coffee and dining table"
+        ]
+      },
+      {
+        "label": "Location features",
+        "items": [
+          "Laundromat nearby",
+          "About 100 m of uphill slope and stairs to enter"
+        ]
+      },
+      {
+        "label": "Outdoor",
+        "items": [
+          "Private fenced garden, patio and outdoor dining",
+          "BBQ and fire pit; firewood supplied"
+        ]
+      },
+      {
+        "label": "Parking and facilities",
+        "items": [
+          "Free parking on premises"
+        ]
+      },
+      {
+        "label": "Services",
+        "items": [
+          "One guest pet maximum; resident pets live here",
+          "Lockbox self check-in, luggage drop-off and long stays",
+          "Smoking allowed"
+        ]
+      }
+    ],
+    "stay": [
+      {
+        "label": "Scenic views",
+        "items": [
+          "Garden view",
+          "City skyline view",
+          "Resort view",
+          "Valley view"
+        ]
+      },
+      {
+        "label": "Bathroom",
+        "items": [
+          "Hair dryer",
+          "Cleaning products",
+          "Shampoo",
+          "Bidet",
+          "Shower gel",
+          "Toilet paper and toothpaste supplied",
+          "Bring a toothbrush and comb"
+        ]
+      },
+      {
+        "label": "Bedroom and laundry",
+        "items": [
+          "Washer",
+          "Hangers",
+          "Cotton bed linens",
+          "Room-darkening shades",
+          "Iron",
+          "Drying rack for clothing",
+          "Clothing storage: closet"
+        ]
+      },
+      {
+        "label": "Entertainment",
+        "items": [
+          "Ethernet connection",
+          "TV"
+        ]
+      },
+      {
+        "label": "Heating and cooling",
+        "items": [
+          "Portable fans"
+        ]
+      },
+      {
+        "label": "Home safety",
+        "items": [
+          "Exterior cameras at garden entrances",
+          "Fire extinguisher",
+          "First aid kit",
+          "Smoke and carbon monoxide alarms not reported"
+        ]
+      },
+      {
+        "label": "Internet and office",
+        "items": [
+          "Wi-Fi",
+          "Dedicated workspace"
+        ]
+      },
+      {
+        "label": "Kitchen and dining",
+        "items": [
+          "Kitchen for preparing your own meals",
+          "Refrigerator",
+          "Pots, pans, oil, salt and pepper",
+          "Electric stove",
+          "Hot water kettle",
+          "Rice maker",
+          "Trash compactor",
+          "Barbecue utensils",
+          "Dining table",
+          "Coffee"
+        ]
+      },
+      {
+        "label": "Location features",
+        "items": [
+          "Laundromat nearby",
+          "About 100 m of uphill slope and stairs to enter"
+        ]
+      },
+      {
+        "label": "Outdoor",
+        "items": [
+          "Private patio or balcony",
+          "Private fully fenced backyard with edible plants",
+          "Fire pit; firewood supplied",
+          "Outdoor furniture",
+          "Outdoor dining area",
+          "BBQ grill"
+        ]
+      },
+      {
+        "label": "Parking and facilities",
+        "items": [
+          "Free parking on premises"
+        ]
+      },
+      {
+        "label": "Services",
+        "items": [
+          "One guest pet maximum; resident pets live here",
+          "Assistance animals always allowed",
+          "Luggage drop-off allowed",
+          "Smoking allowed",
+          "Long stays of 28 days or more allowed",
+          "Self check-in with lockbox"
+        ]
+      }
+    ]
+  },
+  "sourceInventoryChanged": false
+}

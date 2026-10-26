@@ -1,0 +1,92 @@
+{
+  "target": {
+    "slug": "dalat-retreat",
+    "siteId": "52ce0d59-4d43-4abb-a2dd-6e41c90605d6"
+  },
+  "observedRevision": 9,
+  "baselineRevision": 6,
+  "recordedAt": "2026-10-26T03:53:59.748179+00:00",
+  "nativeModelErrors": [],
+  "reviewCount": 37,
+  "reviewObjectExact": true,
+  "photoRecords": 55,
+  "uniquePhotoUrls": 55,
+  "placedReferences": 34,
+  "uniquePlacedPhotos": 23,
+  "allPhotosMatchedReturnedUploadResults": true,
+  "guidebook": {
+    "original60ExactAndOrdered": true,
+    "original4CategoriesExactAndOrdered": true,
+    "homeAndRadiusExact": true,
+    "mapOn": false,
+    "customDalatCards": 6,
+    "customCoordinatesUnspecified": true,
+    "nativeDirectionsChecked": 6,
+    "sourceProposal": "guidebook-completion-proposal.json",
+    "directionsEvidence": "guidebook-directions-verification.json",
+    "authorizedDelta": [
+      "title",
+      "body",
+      "fourbuttons",
+      "onecategory",
+      "sixcustomplaces"
+    ]
+  },
+  "preservation": {
+    "headerAndPageSelectorExact": true,
+    "footerLinksExact": true,
+    "bookingExact": true,
+    "reviewsExact": true,
+    "themeOnlyDelta": {
+      "masthead": "split"
+    },
+    "footerCopyrightOnlyDelta": "© 2026 Dalat Retreat"
+  },
+  "pageTypes": {
+    "homeNav": [
+      "guide",
+      "highlights",
+      "list",
+      "photos"
+    ],
+    "yourStay": [
+      "guide",
+      "highlights",
+      "list",
+      "photos"
+    ],
+    "about": [
+      "guide",
+      "highlights",
+      "list",
+      "photos"
+    ]
+  },
+  "firstStaySection": {
+    "id": "stay-at-a-glance",
+    "type": "list",
+    "name": "Facts"
+  },
+  "galleryCounts": {
+    "home-gallery": 7,
+    "stay-gallery": 8,
+    "about-gallery": 6
+  },
+  "checks": [
+    {
+      "command": "node tools/website-fill-verify.cjs .intake-projects/uom-retreat/backend-run/photo-completion-verification-proposal.json .intake-projects/uom-retreat/backend-run/photo-build-baseline/baseline.json PRIVATE_RUN/oanh-owner-session.json .intake-projects/uom-retreat/backend-run/photo-verification-readback.json",
+      "observedRevision": 7,
+      "exitCode": 0,
+      "result": "55 library records,23 unique placedphotos,protectedUnchanged:true;sharedThemeUnchanged:false for authorized Home masthead delta"
+    },
+    {
+      "command": "node tools/website-fill-verify.cjs .intake-projects/uom-retreat/backend-run/final-verification-proposal.json .intake-projects/uom-retreat/backend-run/photo-build-baseline/baseline.json PRIVATE_RUN/oanh-owner-session.json .intake-projects/uom-retreat/backend-run/final-shared-check-readback.json",
+      "observedRevision": 9,
+      "exitCode": 1,
+      "result": "guidebook changed",
+      "interpretation": "Expected whole-Guidebook equality failure for the six authorized additions and intro. Original60/home/categories/radius preservation separately passed; unchanged-Guidebook gate is not claimed."
+    }
+  ],
+  "workflowDeviation": "Shared online engine uploaded55 and generated a proposal, then returned13legacy validation errors including actual deployed photos type and native section keys. Generated copy was not applied. Existing revision-checked draft endpoint saved scoped native photo completion against exact rev6, then two photo/text corrections atrev8 and final authorized Guidebook/display additions atrev9. Native LVModel.validate returned0errors on eachsavedconfig.",
+  "browserVerification": "Pending root editor/viewport/public QA; this report claims backend/source/reference verification only. No publish by this agent."
+}

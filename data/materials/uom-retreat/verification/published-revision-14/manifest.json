@@ -1,0 +1,89 @@
+{
+  "intakeId": "uom-retreat",
+  "publishedRevision": 14,
+  "published": true,
+  "publicPageVerified": true,
+  "sourceReports": "Earlier report9/12 evidence is historical; publication-evidence.json and final14 reports establish final state. Full backend/session files are not archived.",
+  "files": [
+    {
+      "path": "amenities-order-evidence.json",
+      "bytes": 4921,
+      "sha256": "ae48b27a40e7a371ac3f7d85e9c204b442922123f51216f957e02e9278653e9e"
+    },
+    {
+      "path": "evidence-final14-check-result.json",
+      "bytes": 788,
+      "sha256": "3d133d6879f702180ab49279818180129011fcb6cc89582b4ee108fccd64211a"
+    },
+    {
+      "path": "evidence-final14.json",
+      "bytes": 22983,
+      "sha256": "15ce37bacb966e2310f6a3b8dc55afe4b57c9c16b418f1b1bb7ee6ec31ea5c81"
+    },
+    {
+      "path": "final-content-verification.json",
+      "bytes": 3506,
+      "sha256": "88797e5fe23c1de83bebd988cb649d9d6b7172ad378133fa5d47a24c061e587b"
+    },
+    {
+      "path": "final14-photo-provenance-checks.json",
+      "bytes": 848,
+      "sha256": "91943c251dc4e7f9a5898b65e446151cf9d89a4521a5fedcb497ee7d1e19ed01"
+    },
+    {
+      "path": "final14-public-action-evidence.json",
+      "bytes": 2311,
+      "sha256": "1a5344da2d504148943ea7b7943c3559565c092f0240d64e4c4b9b639c2b4333"
+    },
+    {
+      "path": "guidebook-completion-proposal.json",
+      "bytes": 9923,
+      "sha256": "f5eebc2bf2f250a22b39f4beeae7da80fe56c14e8c9497e0ca6ef74ca9582e5b"
+    },
+    {
+      "path": "guidebook-directions-verification.json",
+      "bytes": 2446,
+      "sha256": "b160d45a5d35fa2c2657dec258baa365bc2babcb400bc759f230cfc78ac2a7f0"
+    },
+    {
+      "path": "guidebook-scope-preservation-final14.json",
+      "bytes": 10692,
+      "sha256": "629f3bed3b1b9dafdfbed49d7f844e60f6b7bf04b50e3b0d756e36f0ad56b3e4"
+    },
+    {
+      "path": "phone-final12-guidebook-visual-report.json",
+      "bytes": 1353,
+      "sha256": "3f930e8cc419e613792c219f4c7a179a04c3030fef0a6d830ba11d756ece190e"
+    },
+    {
+      "path": "phone-qa9-visual-report.json",
+      "bytes": 2221,
+      "sha256": "800b0fda34d157dc48c612e2aa87256b9fd82d21dbb90bdcbfbf97e44364b3c4"
+    },
+    {
+      "path": "publication-evidence.json",
+      "bytes": 2749,
+      "sha256": "96fadb3dcd8e803d27d1b06f5d5bbdb2b7206f3177dbad3aba9be51dd68ec8d5"
+    },
+    {
+      "path": "screenshots/oanh-live14-about-desktop.png",
+      "bytes": 1331749,
+      "sha256": "a1202b87321b0eee7b80cadeb36e293bff1408805f155791201bcf96ca965e58"
+    },
+    {
+      "path": "screenshots/oanh-live14-guidebook-desktop.png",
+      "bytes": 165425,
+      "sha256": "e1e05f98a23a73fef9c8c64830e7f84ccdb8dd60a4576b89c7eba1ebc5cd370a"
+    },
+    {
+      "path": "screenshots/oanh-live14-home-desktop.png",
+      "bytes": 1186127,
+      "sha256": "0c06cf15bdf76fa4db244bb43e0af4f223208d3ed9fb8ffe2406166d1b2b134f"
+    },
+    {
+      "path": "screenshots/oanh-live14-stay-desktop.png",
+      "bytes": 361657,
+      "sha256": "de24dccea2b0a88763161848c8ce244d3384e643bdbf398d0bb9f62e1e1bc11b"
+    }
+  ]
+}

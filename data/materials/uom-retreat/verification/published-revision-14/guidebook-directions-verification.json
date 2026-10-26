@@ -1,0 +1,39 @@
+{
+  "revision": 9,
+  "contract": "GuidebookPage.dirUrl nonempty addr -> LVButtons.directions(addr)",
+  "directions": [
+    {
+      "name": "Đà Lạt Central Market",
+      "address": "Chợ Đà Lạt, Nguyễn Thị Minh Khai, Đà Lạt, Lâm Đồng, Việt Nam",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=Ch%E1%BB%A3%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20Nguy%E1%BB%85n%20Th%E1%BB%8B%20Minh%20Khai%2C%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng%2C%20Vi%E1%BB%87t%20Nam"
+    },
+    {
+      "name": "Xuân Hương Lake",
+      "address": "Hồ Xuân Hương, Trần Quốc Toản, Đà Lạt, Lâm Đồng, Việt Nam",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=H%E1%BB%93%20Xu%C3%A2n%20H%C6%B0%C6%A1ng%2C%20Tr%E1%BA%A7n%20Qu%E1%BB%91c%20To%E1%BA%A3n%2C%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng%2C%20Vi%E1%BB%87t%20Nam"
+    },
+    {
+      "name": "Domaine de Marie Church",
+      "address": "Nhà thờ Domaine de Marie, 1 Ngô Quyền, Đà Lạt, Lâm Đồng, Việt Nam",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=Nh%C3%A0%20th%E1%BB%9D%20Domaine%20de%20Marie%2C%201%20Ng%C3%B4%20Quy%E1%BB%81n%2C%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng%2C%20Vi%E1%BB%87t%20Nam"
+    },
+    {
+      "name": "Vạn Thành Flower Village",
+      "address": "Làng hoa Vạn Thành, 43 Vạn Thành, Đà Lạt, Lâm Đồng, Việt Nam",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=L%C3%A0ng%20hoa%20V%E1%BA%A1n%20Th%C3%A0nh%2C%2043%20V%E1%BA%A1n%20Th%C3%A0nh%2C%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng%2C%20Vi%E1%BB%87t%20Nam"
+    },
+    {
+      "name": "Tuyền Lâm Lake",
+      "address": "Hồ Tuyền Lâm, Đà Lạt, Lâm Đồng, Việt Nam",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=H%E1%BB%93%20Tuy%E1%BB%81n%20L%C3%A2m%2C%20%C4%90%C3%A0%20L%E1%BA%A1t%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng%2C%20Vi%E1%BB%87t%20Nam"
+    },
+    {
+      "name": "Langbiang Tourist Area",
+      "address": "Khu du lịch Langbiang, Lạc Dương, Lâm Đồng, Việt Nam",
+      "href": "https://www.google.com/maps/dir/?api=1&destination=Khu%20du%20l%E1%BB%8Bch%20Langbiang%2C%20L%E1%BA%A1c%20D%C6%B0%C6%A1ng%2C%20L%C3%A2m%20%C4%90%E1%BB%93ng%2C%20Vi%E1%BB%87t%20Nam"
+    }
+  ],
+  "original60PreservedExactly": true,
+  "homePreservedExactly": true,
+  "mapOn": false
+}

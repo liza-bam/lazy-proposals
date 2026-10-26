@@ -1,0 +1,208 @@
+{
+  "status": "Native Guidebook completion proposal only; no website write by this agent",
+  "createdAt": "2026-10-26T03:44:30.126010+00:00",
+  "target": {
+    "slug": "dalat-retreat",
+    "siteId": "52ce0d59-4d43-4abb-a2dd-6e41c90605d6"
+  },
+  "scope": "Authorized relevant Dalat Guidebook intro plus six custom text cards; exact property location remains unresolved.",
+  "guidebookFieldsToMerge": {
+    "title": "A little more Đà Lạt",
+    "body": "Begin at Đà Lạt Market or the paths around Xuân Hương Lake. Explore Vạn Thành’s flowers and Domaine de Marie, or plan a day farther afield at Langbiang and Tuyền Lâm Lake. Follow the destination links for current visiting details, then return to a quiet evening in the garden.",
+    "buttons": [
+      {
+        "text": "Đà Lạt Market",
+        "href": "https://www.google.com/maps/search/?api=1&query=Cho%20Da%20Lat%20Nguyen%20Thi%20Minh%20Khai%20Da%20Lat%20Vietnam"
+      },
+      {
+        "text": "Xuân Hương Lake",
+        "href": "https://www.google.com/maps/search/?api=1&query=Ho%20Xuan%20Huong%20Da%20Lat%20Vietnam"
+      },
+      {
+        "text": "Domaine de Marie",
+        "href": "https://www.google.com/maps/search/?api=1&query=Domaine%20de%20Marie%201%20Ngo%20Quyen%20Da%20Lat%20Vietnam"
+      },
+      {
+        "text": "Vạn Thành flowers",
+        "href": "https://www.google.com/maps/search/?api=1&query=Lang%20hoa%20Van%20Thanh%2043%20Van%20Thanh%20Da%20Lat%20Vietnam"
+      }
+    ],
+    "mapOn": false
+  },
+  "photosPolicy": "Leave current guidebook.photos unchanged; no new photographs or asset references proposed.",
+  "categoriesToAppend": [
+    {
+      "id": "dalat-sights",
+      "label": "Explore Đà Lạt",
+      "token": "--accent",
+      "type": "tourist_attraction"
+    }
+  ],
+  "placesToAppend": [
+    {
+      "n": "Đà Lạt Central Market",
+      "cat": "dalat-sights",
+      "r": null,
+      "a": "Đà Lạt",
+      "d": "Explore stalls of local produce, flowers, preserves and regional food in the city’s central market area. The surrounding evening market is another way to experience Đà Lạt’s food culture.",
+      "addr": "Chợ Đà Lạt, Nguyễn Thị Minh Khai, Đà Lạt, Lâm Đồng, Việt Nam",
+      "lat": null,
+      "lng": null,
+      "auto": false,
+      "hidden": false
+    },
+    {
+      "n": "Xuân Hương Lake",
+      "cat": "dalat-sights",
+      "r": null,
+      "a": "Đà Lạt",
+      "d": "Follow the lakeside paths for a gentle walk, a pause by the water or a glimpse of daily life in the city centre.",
+      "addr": "Hồ Xuân Hương, Trần Quốc Toản, Đà Lạt, Lâm Đồng, Việt Nam",
+      "lat": null,
+      "lng": null,
+      "auto": false,
+      "hidden": false
+    },
+    {
+      "n": "Domaine de Marie Church",
+      "cat": "dalat-sights",
+      "r": null,
+      "a": "Đà Lạt",
+      "d": "Visit this distinctive church and convent on Mai Anh Hill for a quieter cultural stop and a look at Đà Lạt’s architectural heritage. Respect worship and check visitor access before going.",
+      "addr": "Nhà thờ Domaine de Marie, 1 Ngô Quyền, Đà Lạt, Lâm Đồng, Việt Nam",
+      "lat": null,
+      "lng": null,
+      "auto": false,
+      "hidden": false
+    },
+    {
+      "n": "Vạn Thành Flower Village",
+      "cat": "dalat-sights",
+      "r": null,
+      "a": "Đà Lạt",
+      "d": "Discover a flower-growing district known for roses and other blooms. Visitor access and seasonal displays vary; confirm the current visiting area before setting out.",
+      "addr": "Làng hoa Vạn Thành, 43 Vạn Thành, Đà Lạt, Lâm Đồng, Việt Nam",
+      "lat": null,
+      "lng": null,
+      "auto": false,
+      "hidden": false
+    },
+    {
+      "n": "Tuyền Lâm Lake",
+      "cat": "dalat-sights",
+      "r": null,
+      "a": "Around Đà Lạt",
+      "d": "A pine-fringed lake landscape for a slower outing beyond the city centre. Choose a confirmed visitor access point or arrange activities with a current local operator.",
+      "addr": "Hồ Tuyền Lâm, Đà Lạt, Lâm Đồng, Việt Nam",
+      "lat": null,
+      "lng": null,
+      "auto": false,
+      "hidden": false
+    },
+    {
+      "n": "Langbiang Tourist Area",
+      "cat": "dalat-sights",
+      "r": null,
+      "a": "Lạc Dương · Đà Lạt area",
+      "d": "A highland outing north of Đà Lạt with mountain scenery and hiking possibilities. Confirm the current access route, conditions and any guided activity directly before visiting.",
+      "addr": "Khu du lịch Langbiang, Lạc Dương, Lâm Đồng, Việt Nam",
+      "lat": null,
+      "lng": null,
+      "auto": false,
+      "hidden": false
+    }
+  ],
+  "preservationRequirements": [
+    "Fresh-read target draft and exact revision immediately before apply.",
+    "Retain all60original auto-place objects exactly, including hidden:true; do not delete or replace them and do not change their order.",
+    "Retain the existing guidebook.home object and mapOn:false. Do not substitute a city centroid as the house pin.",
+    "Append curated custom places only if not already present by normalized name plus address.",
+    "Retain existing categories and all unrelatedconfig/theme/schema/navigation/library/reviews.",
+    "No new geocoding, ratings, distances, minute estimates, inventedcoordinates or destination photo assets."
+  ],
+  "nativeContractEvidence": [
+    {
+      "file": "/Users/sandy/Documents/GitHub/lazy-project/app/components/component-GuidebookPage.dc.html",
+      "lines": "44-46,445-455",
+      "finding": "Intro reads guidebook.title/body/photos/buttons and passes them to component-Intro."
+    },
+    {
+      "file": "/Users/sandy/Documents/GitHub/lazy-project/app/components/component-FormButtons.dc.html",
+      "lines": "23-25",
+      "finding": "Native editable buttons maximum is4, so intro has4links; all6destinations additionally have separate native cards."
+    },
+    {
+      "file": "/Users/sandy/Documents/GitHub/lazy-project/app/components/component-GuidebookPage.dc.html",
+      "lines": "215-222,376-419",
+      "finding": "Native places() filters hidden/duplicate names and areas, not coordinates. Card mapping uses name/description/address/category and optional photo; nullcoords do not suppress textcards."
+    },
+    {
+      "file": "/Users/sandy/Documents/GitHub/lazy-project/app/components/component-GuidebookPage.dc.html",
+      "lines": "319-322",
+      "finding": "Directions use nonempty addr text; no coordinates required when verified named address is supplied."
+    },
+    {
+      "file": "/Users/sandy/Documents/GitHub/lazy-project/app/components/component-PlaceCard.dc.html",
+      "lines": "17-27",
+      "finding": "Card displays name/metadata/description plus Directions and View on Google links."
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "place": "Đà Lạt Central Market",
+      "sources": [
+        "https://vietnam.travel/things-to-do/8-things-to-do-in-dalat/",
+        "https://dalat.vn/en/detailnews/?id=news_146&t=top-8-da-lat-tourist-destinations-were-most-searched-2019",
+        "https://dalat.vn/en/chodemdalat"
+      ],
+      "verified": "National tourism page describes central market produce, food, fabrics and preserved products. Official city tourism listing identifies NguyễnThịMinhKhaiStreet; night-market hours conflict within its text, so no hours used.",
+      "addressPrecision": "Verified named market street, no specific entrance or building number."
+    },
+    {
+      "place": "Xuân Hương Lake",
+      "sources": [
+        "https://vietnam.travel/things-to-do/8-things-to-do-in-dalat/",
+        "https://dalat.vn/en/hoxuanhuong"
+      ],
+      "verified": "National tourism describes paths beside the lake; city tourism listing identifies TrầnQuốcToản in ĐàLạt.",
+      "addressPrecision": "Verified lake and bordering street, no specific arrival pin."
+    },
+    {
+      "place": "Domaine de Marie Church",
+      "sources": [
+        "https://vietnam.travel/things-to-do/8-things-to-do-in-dalat/",
+        "https://dalat.vn/vi/nhathodomainedem"
+      ],
+      "verified": "National tourism recommends church/convent as an architectural stop. Official city listing supplies1NgôQuyền.",
+      "addressPrecision": "Verified street address."
+    },
+    {
+      "place": "Vạn Thành Flower Village",
+      "sources": [
+        "https://dalat.vn/en/langhoavanthanh"
+      ],
+      "verified": "Official city tourism index describes flower cultivation and roses; published address43VạnThành.",
+      "addressPrecision": "Verified listing address; actual visitor entrance and current access remain to be checked."
+    },
+    {
+      "place": "Tuyền Lâm Lake",
+      "sources": [
+        "https://vietnam.travel/things-to-do/8-things-to-do-in-dalat/",
+        "https://dalat.vn/en/hotuyenlam"
+      ],
+      "verified": "National tourism describes a pine-fringed lake outside centralĐàLạt. City listing confirms lake destination.",
+      "addressPrecision": "Destination-level name only; no precise visitor-access point chosen."
+    },
+    {
+      "place": "Langbiang Tourist Area",
+      "sources": [
+        "https://vietnam.travel/things-to-do/8-things-to-do-in-dalat/",
+        "https://dalat.vn/en/langbiang"
+      ],
+      "verified": "National tourism discusses Langbiang hiking. Official city tourism identifies the tourismarea in LạcDương.",
+      "addressPrecision": "Named tourism area only. No summit/entrance coordinate chosen."
+    }
+  ],
+  "verificationStatus": "Local native model/renderer inspected. Browser visual/field verification must follow parent application. No live-render verification by this agent.",
+  "presentationNote": "Default active filter is all. Desktop default shows only first4categorychips, so a fifth appendedcategory may lack its own visiblechip though all6cards render underAll; do not change theme/CSS to address this."
+}

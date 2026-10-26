@@ -1,0 +1,65 @@
+{
+  "status": "PASS inspected native public behavior with disclosed two-step inquiry flow",
+  "observedRevision": 14,
+  "verifiedBy": "root agent using connected browser",
+  "source": "Root collaboration action report",
+  "pagesOpened": [
+    "Home",
+    "Stay",
+    "About",
+    "Guidebook"
+  ],
+  "publicDesktopWidth": 1440,
+  "overflowCount": 0,
+  "failedImages": 0,
+  "authoredButtonsChecked": true,
+  "actions": [
+    {
+      "action": "Click Home Inquire",
+      "result": "Plan your Dalat stay dialog opened; Name, Email, two dates, Party Size, Message and Email inquiry button visible; closed without sending."
+    },
+    {
+      "action": "Inspect Home View on Airbnb",
+      "result": "href correct: https://airbnb.com/h/uomretreat"
+    },
+    {
+      "action": "Inspect About Read the Airbnb listing",
+      "result": "href correct: https://airbnb.com/h/uomretreat"
+    },
+    {
+      "action": "Click header Stay, About, Guidebook navigation",
+      "result": "Each actual page opened successfully."
+    },
+    {
+      "action": "Inspect secondary-page Inquire href",
+      "result": "Routes to home.dc.html#contact; does not auto-open dialog. Home Inquire click then opens dialog. Native two-step flow explicitly retained."
+    },
+    {
+      "action": "Inspect Guidebook map actions",
+      "result": "Four named map buttons and six Directions URLs verified rendered correctly at revision9 and unchanged through14."
+    }
+  ],
+  "limitations": [
+    "No inquiry email was sent; delivery is untested.",
+    "Secondary-page Inquire requires a second Home Inquire click to open the dialog."
+  ],
+  "sourceHref": "https://airbnb.com/h/uomretreat",
+  "screenshotEvidence": [
+    {
+      "path": "PRIVATE_RUN/oanh-live14-about-desktop.png",
+      "sha256": "a1202b87321b0eee7b80cadeb36e293bff1408805f155791201bcf96ca965e58"
+    },
+    {
+      "path": "PRIVATE_RUN/oanh-live14-guidebook-desktop.png",
+      "sha256": "e1e05f98a23a73fef9c8c64830e7f84ccdb8dd60a4576b89c7eba1ebc5cd370a"
+    },
+    {
+      "path": "PRIVATE_RUN/oanh-live14-home-desktop.png",
+      "sha256": "0c06cf15bdf76fa4db244bb43e0af4f223208d3ed9fb8ffe2406166d1b2b134f"
+    },
+    {
+      "path": "PRIVATE_RUN/oanh-live14-stay-desktop.png",
+      "sha256": "de24dccea2b0a88763161848c8ce244d3384e643bdbf398d0bb9f62e1e1bc11b"
+    }
+  ]
+}

@@ -1,0 +1,615 @@
+{
+  "siteId": "52ce0d59-4d43-4abb-a2dd-6e41c90605d6",
+  "slug": "dalat-retreat",
+  "observedRevision": 14,
+  "recordedAt": "2026-10-26T04:53:28.103071+00:00",
+  "guidebookDataUnchanged": false,
+  "guidebookNavigationUnchanged": true,
+  "savedAndReopened": true,
+  "allDisplayedPhotosInSiteLibrary": true,
+  "onlySuppliedFolderPhotos": true,
+  "noTemplateChanges": true,
+  "homeAmenitiesListVisible": true,
+  "pages": [
+    {
+      "name": "Home",
+      "sectionTypes": [
+        "guide",
+        "highlights",
+        "list",
+        "photos"
+      ],
+      "sectionOrder": [
+        "home-amenities",
+        "home-gallery",
+        "home-garden",
+        "home-welcome"
+      ],
+      "navigationLabels": [
+        "Amenities",
+        "Gallery",
+        "Garden days",
+        "Welcome"
+      ],
+      "maximumLabelCharacters": 11,
+      "visualChecks": {
+        "phone": true,
+        "tablet": true,
+        "desktop": true
+      },
+      "copyComplete": true,
+      "shortLabels": true,
+      "shortSlideshowCaptions": true,
+      "photosMatchCaptions": true,
+      "buttonsChecked": true,
+      "buttonEvidence": "final14-public-action-evidence.json"
+    },
+    {
+      "name": "Stay",
+      "sectionTypes": [
+        "guide",
+        "highlights",
+        "list",
+        "photos"
+      ],
+      "sectionOrder": [
+        "stay-at-a-glance",
+        "stay-sleeping",
+        "stay-gallery",
+        "stay-amenities",
+        "stay-arrival",
+        "stay-rules",
+        "stay-bring"
+      ],
+      "navigationLabels": [
+        "Facts",
+        "Beds",
+        "Gallery",
+        "Amenities",
+        "Arrival",
+        "Rules",
+        "Pack"
+      ],
+      "maximumLabelCharacters": 9,
+      "visualChecks": {
+        "phone": true,
+        "tablet": true,
+        "desktop": true
+      },
+      "copyComplete": true,
+      "shortLabels": true,
+      "shortSlideshowCaptions": true,
+      "photosMatchCaptions": true,
+      "buttonsChecked": true,
+      "buttonEvidence": "final14-public-action-evidence.json"
+    },
+    {
+      "name": "About",
+      "sectionTypes": [
+        "guide",
+        "highlights",
+        "list",
+        "photos"
+      ],
+      "sectionOrder": [
+        "about-garden",
+        "about-gallery",
+        "about-rhythm",
+        "about-hosts",
+        "about-dalat"
+      ],
+      "navigationLabels": [
+        "The garden",
+        "Garden gallery",
+        "A slower rhythm",
+        "Your hosts",
+        "Dalat days"
+      ],
+      "maximumLabelCharacters": 15,
+      "visualChecks": {
+        "phone": true,
+        "tablet": true,
+        "desktop": true
+      },
+      "copyComplete": true,
+      "shortLabels": true,
+      "shortSlideshowCaptions": true,
+      "photosMatchCaptions": true,
+      "buttonsChecked": true,
+      "buttonEvidence": "final14-public-action-evidence.json"
+    }
+  ],
+  "scopeNotes": {
+    "guidebook": "The user authorized relevant Dalat Guidebook content and exceptions. Six native destination cards plus intro/buttons and category cleanup intentionally change whole Guidebook data. Stock unchanged gate must fail; original 60 wrong-area objects remain exact, ordered, hidden; original home/radius preserved and map off.",
+    "facts": "Stay first section is native list named Facts, because the new facts type was not deployed. Do not describe it as a new component type.",
+    "noTemplateChanges": "Existing native editable sections and settings used; no component/template code modified. Native theme/settings changes are not claimed unchanged.",
+    "photos": "All placed page photographs resolve to current site library and supplied folder provenance. Native auto-generated hero.shareCard social metadata is not a placed page photo; root confirmed normal preview/publish normalization.",
+    "copyReview": "Previous30phone/45desktop-tablet cover unchanged sections. New19revision14tiles cover changed Home/Stay amenity lists; root also opened all4publishedpages at1440 and verified source category order and photos. Revision13to14 changes exactly two list values; native theme/reviews/photos preserved."
+  },
+  "guidebookPreservationEvidence": "guidebook-scope-preservation-final14.json",
+  "photoProvenanceEvidence": "final14-photo-provenance-checks.json",
+  "reviewEvidence": {
+    "count": 37,
+    "exactNativeReviewsMatchBaseline6": true,
+    "source": "final-content-verification.json"
+  },
+  "nativeEditorAttestation": {
+    "attestedBy": "root agent",
+    "source": "collaboration message to oanh_intake",
+    "checks": "All 16 native section fields/thumbnails and nine editor widths checked by root; saved/reopened native content verified. Revision14 Home and Stay native List fields verified populated with all12 ordered labels.",
+    "archivedDetailedScreenshotPath": null
+  },
+  "visualEvidence": {
+    "phone": {
+      "count": 30,
+      "reports": [
+        "phone-qa9-visual-report.json",
+        "phone-final12-guidebook-visual-report.json"
+      ],
+      "inspectedBy": "oanh_intake agent",
+      "blockingDefects": []
+    },
+    "desktopAndTablet": {
+      "count": 45,
+      "desktop": 20,
+      "tablet": 25,
+      "inspectedBy": "root agent",
+      "rootAttestation": "Root independently viewed ALL45 final12desktop/tablet now PASS (20desktop,25tablet); no blocking defects.",
+      "files": [
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-about-0.png",
+          "sha256": "715ee4c6258d87bd27ef0a6b04b2e321959f66d7be0a5ec36732c2fe2352aa8b"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-about-1.png",
+          "sha256": "51ae12f99ab86a37feab2fd31d0f46222aa5e661871289b54ddedeca3a1c151e"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-about-2.png",
+          "sha256": "4a4e678ad41758357a33d72ef80f488d7ad0a84afca2d983e2ecef6935d7b2d1"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-about-3.png",
+          "sha256": "77426793b687bb85cd85a6b47b09e8cc90157e07f56068425b2fec9914f83178"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-about-4.png",
+          "sha256": "e10966b89c808c73af4d8b815f70849965b0ece57d2022154312d1fed639c92d"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-guidebook-0.png",
+          "sha256": "530f72aba8e9a421e2593d703a15e820fb480809a64960ff2a4ae13f811e943a"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-guidebook-1.png",
+          "sha256": "c26c81d0cb72403946e7d4513f57b5c0b61562b010d244bd6075431fe6caccec"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-home-0.png",
+          "sha256": "29f23705c478618b12b812c46a7ce30e639e9222bbeda00dd9af2f322413feb4"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-home-1.png",
+          "sha256": "4ae5944c4616836270918aa367c0a9d742266a2f2172a63619e5749e33640c87"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-home-2.png",
+          "sha256": "eb3788a82306c228c930eccc55f64f9b199ef20316d173ec2b04ee42309082ab"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-home-3.png",
+          "sha256": "83d6ec6948e7391c4ac8c53ccd19275b92b5ca7482c8a5a6a73a74c8683427e2"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-home-4.png",
+          "sha256": "c6881af9a936909ee90676e6d4dc0bb2376285b6c3a27730d7b6b0a246e12b48"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-stay-0.png",
+          "sha256": "590bf8e399341171008699c051bf8844f235e1743bfa548dfcaf8445d65179fa"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-stay-1.png",
+          "sha256": "ed37e7ec3a6745d8d345c4081c56e6e11eaf7214e4083fc5b116e2729eb825db"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-stay-2.png",
+          "sha256": "e9a8e9cc7f242d286ed09c61a59f0f507dded97c5c145740182a3f909cb0c7bf"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-stay-3.png",
+          "sha256": "b06d31bf8e7f7dc8ee82b700f229b7505a6d8673b4661097ddfed991865f1842"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-stay-4.png",
+          "sha256": "a6e1e86ddb7163fdffc8937ade1c394392536fbc3b7cf1e86e15b893594c0098"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-stay-5.png",
+          "sha256": "ba5b8231fc6a115f5786e7fe1497435a4acd47bae38856cf24170d741850dba8"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-stay-6.png",
+          "sha256": "1ed855a0faea14f8e928a7a1f167c7d68f661b3b54759268e15ae4dce13c7ea9"
+        },
+        {
+          "viewport": "desktop",
+          "path": "PRIVATE_RUN/oanh-final12-desktop-stay-7.png",
+          "sha256": "7aa0ee9130b1a28a377f0d94a4a4bc0bb440805eb9bc20c1ffa3610040cc5504"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-about-0.png",
+          "sha256": "9093cb1e5cb9f7aad2d140faeb5380e9332f2b13de0a22c0bc5dc4d5425b5b1a"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-about-1.png",
+          "sha256": "8a5577c279a7574e5bccb32b5e75ba072cde059c90b0f7f540db5a5a39128073"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-about-2.png",
+          "sha256": "7462f63cc25cbe5725a7b79177838d71a858997a0a5f5fb8088533c141c50762"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-about-3.png",
+          "sha256": "ed925c4c6d8d4784383c11c956e0ae94f2a39b19ab5ca0c7e013b6846c7dda00"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-about-4.png",
+          "sha256": "1ee220644febfbb60a69157ba9dea00b4c9709c020bd5ce5366efd6fe3b8e9bb"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-about-5.png",
+          "sha256": "6ada9c6ac6d2a210ab1370293ab5cf39860130b1fee985988bca87ed0f001162"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-guidebook-0.png",
+          "sha256": "cae7be243732bc465896ba9839136704e9abc86bc3c54f89ebdcb5d0a89f697a"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-guidebook-1.png",
+          "sha256": "50008a834ae4156be34ae415c292acfc21764758ab9c25a26e4e46ac5515d373"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-home-0.png",
+          "sha256": "f8692460eff809d9e4de4410f21fb797e3a9241a2364df2badb3fb54e3e44ff3"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-home-1.png",
+          "sha256": "2d95f7fa89d9a570f93d6b2a7b1655025f7c2bf12d50f4e700967e78964a7653"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-home-2.png",
+          "sha256": "c96ba3d6c7f4bd38bc83a05d95349888b6799ad0598e29df64f2c0e2d3cd15d2"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-home-3.png",
+          "sha256": "f58d1de6a9b0d54b7be3cf4b3d0cce7d7f7c0552523c900e50f6c89c29834cbc"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-home-4.png",
+          "sha256": "d90465c092675e554ed853e6187de3fc681a1419b52741994924b7ff5da6305d"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-home-5.png",
+          "sha256": "2688e88d54632b1658a9103766d511b62f295edcfc209ae1ed1d2972d1b681bd"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-home-6.png",
+          "sha256": "ce376365b9f077369aa1168398791745121e499b51ad04e1f2c6f5851a7719bf"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-home-7.png",
+          "sha256": "b1b0518a2e58ee7a26f3cb0dd49032cf415efd1a53defde2c327da649bf67650"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-0.png",
+          "sha256": "4a9530213e49f2994e713b72ef8b021aa258e9293e8de1780c17b1841b106ae0"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-1.png",
+          "sha256": "c9454da8b6532a49f12be73cc06e96ba66ee3a2b11b15b1679aac9294caf55d1"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-2.png",
+          "sha256": "84eca452e0aed415449f02aa881837cd60a242d5fd115b736c2631b9c045d0df"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-3.png",
+          "sha256": "b6a02074cc9dcae2da08f755eb94dc13e7a9d69cbf0e790e51151520fd3b0f9b"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-4.png",
+          "sha256": "3871ac6588bfec16fd767d82936e5c02ee68987ea249fa7c30db99e5b4c69f51"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-5.png",
+          "sha256": "00b2f6448a95f461b6f6c1661d1f867853bce81ea756f31a847a168003098711"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-6.png",
+          "sha256": "5857271580f306f445b717b3ba020d110e513965ab932fd63610c494636ed8c7"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-7.png",
+          "sha256": "86533c67c389a9c86a99215a8dd3547653b01418335cdb191d79d2833e7251dd"
+        },
+        {
+          "viewport": "tablet",
+          "path": "PRIVATE_RUN/oanh-final12-tablet-stay-8.png",
+          "sha256": "e15e4bc3cff7914dc40107090a14d76cf6fb8b257e1ccbf17396f3511de83967"
+        }
+      ],
+      "blockingDefects": []
+    },
+    "revision14ChangedSections": {
+      "count": 19,
+      "inspectedBy": "debra_target agent; PASS attested by root",
+      "blockingDefects": [],
+      "files": [
+        {
+          "path": "PRIVATE_RUN/oanh-order14-desktop-home-0.png",
+          "sha256": "6e4b51a392f6370d50ad0294c7904ddb86ac77ab59e918ddbe89fdd03602319c"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-desktop-home-1.png",
+          "sha256": "12aaed3cdb9b19a67de858b2a73e43421ed169e3f73ab0d05ea1ee3c7c0d4bad"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-desktop-stay-0.png",
+          "sha256": "fcd6ea8971cb99f75b270405719c38d2bcf6ede7c0a5970174f63297340c48d9"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-desktop-stay-1.png",
+          "sha256": "0ca9beb87fb3eafd609575e3ab46b7e1dc18155558c47ca2037273ec2bd3e746"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-desktop-stay-2.png",
+          "sha256": "ea0b89ccc1441f720f851805b9505a42aad2a50586966e7dcd03c11eeeda68a5"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-desktop-stay-3.png",
+          "sha256": "28b8d2f26b64abcc996a54d9e34f65e7bbe437d268785844804058d27de9d1b8"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-phone-home-0.png",
+          "sha256": "dd73d0871815f1ea2e8068fbe51a66cf2fdc3ecbadfeeea327844a8f8b552d97"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-phone-home-1.png",
+          "sha256": "edafa9502bee981a1961ebb0450bed44efdd6267f389dac1a66f6a994d62faaf"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-phone-home-2.png",
+          "sha256": "93cad9f660fd9aa31fd46f3bcaf7ea6b239f4c2c8323103ed06840d2aa659b1d"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-phone-stay-0.png",
+          "sha256": "55d5b3db53a98f8c8ed6677a7ef625f32311a45a36b661b4ee5191ee890307fa"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-phone-stay-1.png",
+          "sha256": "0b8192c9b560bf77ac9511b26af5b434886b7f3f3cf05649097388566a39ae22"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-phone-stay-2.png",
+          "sha256": "83620c4e86ca4743c673eec0767da22409df5e69ceeee738694a83a2e4067f30"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-phone-stay-3.png",
+          "sha256": "b65234f5241d4c45f7c9e9ee2263a892ba9853712df54d954cf0a8d35b8025ae"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-tablet-home-0.png",
+          "sha256": "ea8d3d06e8450eef55b422351a675413feadcf414555fd51f4d4c00d2d7eac18"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-tablet-home-1.png",
+          "sha256": "a54b5af58080fbebfbfe77310e8d8d27d59505132ada9006b45bbabde7a8f70c"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-tablet-stay-0.png",
+          "sha256": "dc61e91ab078006afbee15064e3798909eb1a5def8b1057b3a455b5fae4828a8"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-tablet-stay-1.png",
+          "sha256": "4ef6c58a5c7bf39ceedc7a8eed9204f0265ca2f74023cbc2d7152ec7aca8151f"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-tablet-stay-2.png",
+          "sha256": "1e43849430d7291415b43736a3a4d62e09f9b52ffcb4576dc216016c8c8b3979"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-order14-tablet-stay-3.png",
+          "sha256": "bb259fd4166475593749b91a11854bfb763e36faf6eab8823c32bfad55eaafb8"
+        }
+      ],
+      "coverage": "Home desktop2, tablet2, phone3; Stay desktop4, tablet4, phone4. All12 ordered category labels populated; no clipping/overflow/missing photos observed."
+    },
+    "publishedRevision14": {
+      "count": 4,
+      "inspectedBy": "root agent",
+      "viewport": 1440,
+      "files": [
+        {
+          "path": "PRIVATE_RUN/oanh-live14-about-desktop.png",
+          "sha256": "a1202b87321b0eee7b80cadeb36e293bff1408805f155791201bcf96ca965e58"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-live14-guidebook-desktop.png",
+          "sha256": "e1e05f98a23a73fef9c8c64830e7f84ccdb8dd60a4576b89c7eba1ebc5cd370a"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-live14-home-desktop.png",
+          "sha256": "0c06cf15bdf76fa4db244bb43e0af4f223208d3ed9fb8ffe2406166d1b2b134f"
+        },
+        {
+          "path": "PRIVATE_RUN/oanh-live14-stay-desktop.png",
+          "sha256": "de24dccea2b0a88763161848c8ce244d3384e643bdbf398d0bb9f62e1e1bc11b"
+        }
+      ],
+      "overflowCount": 0,
+      "failedImages": 0,
+      "blockingDefects": []
+    }
+  },
+  "publicFunctionalEvidence": {
+    "status": "PASS inspected native public behavior with disclosed two-step inquiry flow",
+    "observedRevision": 14,
+    "verifiedBy": "root agent using connected browser",
+    "source": "Root collaboration action report",
+    "pagesOpened": [
+      "Home",
+      "Stay",
+      "About",
+      "Guidebook"
+    ],
+    "publicDesktopWidth": 1440,
+    "overflowCount": 0,
+    "failedImages": 0,
+    "authoredButtonsChecked": true,
+    "actions": [
+      {
+        "action": "Click Home Inquire",
+        "result": "Plan your Dalat stay dialog opened; Name, Email, two dates, Party Size, Message and Email inquiry button visible; closed without sending."
+      },
+      {
+        "action": "Inspect Home View on Airbnb",
+        "result": "href correct: https://airbnb.com/h/uomretreat"
+      },
+      {
+        "action": "Inspect About Read the Airbnb listing",
+        "result": "href correct: https://airbnb.com/h/uomretreat"
+      },
+      {
+        "action": "Click header Stay, About, Guidebook navigation",
+        "result": "Each actual page opened successfully."
+      },
+      {
+        "action": "Inspect secondary-page Inquire href",
+        "result": "Routes to home.dc.html#contact; does not auto-open dialog. Home Inquire click then opens dialog. Native two-step flow explicitly retained."
+      },
+      {
+        "action": "Inspect Guidebook map actions",
+        "result": "Four named map buttons and six Directions URLs verified rendered correctly at revision9 and unchanged through14."
+      }
+    ],
+    "limitations": [
+      "No inquiry email was sent; delivery is untested.",
+      "Secondary-page Inquire requires a second Home Inquire click to open the dialog."
+    ],
+    "sourceHref": "https://airbnb.com/h/uomretreat",
+    "screenshotEvidence": [
+      {
+        "path": "PRIVATE_RUN/oanh-live14-about-desktop.png",
+        "sha256": "a1202b87321b0eee7b80cadeb36e293bff1408805f155791201bcf96ca965e58"
+      },
+      {
+        "path": "PRIVATE_RUN/oanh-live14-guidebook-desktop.png",
+        "sha256": "e1e05f98a23a73fef9c8c64830e7f84ccdb8dd60a4576b89c7eba1ebc5cd370a"
+      },
+      {
+        "path": "PRIVATE_RUN/oanh-live14-home-desktop.png",
+        "sha256": "0c06cf15bdf76fa4db244bb43e0af4f223208d3ed9fb8ffe2406166d1b2b134f"
+      },
+      {
+        "path": "PRIVATE_RUN/oanh-live14-stay-desktop.png",
+        "sha256": "de24dccea2b0a88763161848c8ce244d3384e643bdbf398d0bb9f62e1e1bc11b"
+      }
+    ]
+  },
+  "publication": {
+    "status": "Published and live verified by root",
+    "revision": 14,
+    "publishedAt": "2026-10-26T04:48:42.097Z",
+    "draftMatchesPublished": true,
+    "source": "published-final/baseline.json and root connected-browser verification"
+  },
+  "pending": [],
+  "limitations": [
+    "No inquiry email was sent; delivery is untested.",
+    "Secondary-page Inquire requires a second Home Inquire click to open the dialog."
+  ],
+  "amenityOrderEvidence": {
+    "baselineRevision": 13,
+    "savedRevision": 14,
+    "savedAndPublishedConfigExact": true,
+    "changedConfigKeys": [
+      "home-amenities",
+      "stay-amenities"
+    ],
+    "themeUnchanged13To14": true,
+    "reviewsUnchanged13To14": true,
+    "photosUnchanged13To14": true,
+    "homeLabels": [
+      "Scenic views",
+      "Bathroom",
+      "Bedroom and laundry",
+      "Entertainment",
+      "Heating and cooling",
+      "Home safety",
+      "Internet and office",
+      "Kitchen and dining",
+      "Location features",
+      "Outdoor",
+      "Parking and facilities",
+      "Services"
+    ],
+    "stayLabels": [
+      "Scenic views",
+      "Bathroom",
+      "Bedroom and laundry",
+      "Entertainment",
+      "Heating and cooling",
+      "Home safety",
+      "Internet and office",
+      "Kitchen and dining",
+      "Location features",
+      "Outdoor",
+      "Parking and facilities",
+      "Services"
+    ]
+  }
+}

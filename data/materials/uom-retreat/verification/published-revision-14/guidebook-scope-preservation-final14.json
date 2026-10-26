@@ -1,0 +1,381 @@
+{
+  "siteId": "52ce0d59-4d43-4abb-a2dd-6e41c90605d6",
+  "observedRevision": 14,
+  "recordedAt": "2026-10-26T04:53:28.086186+00:00",
+  "baselineRevision": 4,
+  "baselineFile": "guidebook-map-hidden-evidence.json#readback",
+  "currentFile": "published-final/baseline.json",
+  "wholeGuidebookEqual": false,
+  "originalPlacesCount": 60,
+  "currentPlacesCount": 66,
+  "original60ExactAndOrdered": true,
+  "original60AllHidden": true,
+  "original60AggregateSha256": "eed84120a6b481741bacfe695a108d61b57fb308d7cf8185b4e010ddfca74b0d",
+  "currentFirst60AggregateSha256": "eed84120a6b481741bacfe695a108d61b57fb308d7cf8185b4e010ddfca74b0d",
+  "original60IndividualHashes": [
+    {
+      "index": 0,
+      "sha256": "336be0a7897537c198ff194e5d7905d04f4e56ae8c068ed62159e315c71aed71",
+      "currentMatch": true
+    },
+    {
+      "index": 1,
+      "sha256": "67965258e9fd0b0fd5724c86459d2294d66369c09cb2a1bf46d91d83218f6a08",
+      "currentMatch": true
+    },
+    {
+      "index": 2,
+      "sha256": "2ddb86305863bb5ef7d3e078a131489bff25a67611396304154bbb475a3319b4",
+      "currentMatch": true
+    },
+    {
+      "index": 3,
+      "sha256": "1cbae83e2b4afbd24b08c5c2ba777926dd01327c91ef8945387b8476306aef2b",
+      "currentMatch": true
+    },
+    {
+      "index": 4,
+      "sha256": "4e07c32c1411d702398d76410491a7f91d6aeb8b980e689d86e5e755513f58ba",
+      "currentMatch": true
+    },
+    {
+      "index": 5,
+      "sha256": "3bb11e1d2e8d19d84ae2b267cc9dce38110e262216f0b1ef7aa37b6c466e56ab",
+      "currentMatch": true
+    },
+    {
+      "index": 6,
+      "sha256": "76f725e41afa04598ed3831a24fa244d1354fe3bf79bd374db2272f6a96a8c36",
+      "currentMatch": true
+    },
+    {
+      "index": 7,
+      "sha256": "ffe8850838487d29f18254079fa98bcfa688f3e44004d8551b8ca592ff7294d8",
+      "currentMatch": true
+    },
+    {
+      "index": 8,
+      "sha256": "ee9d7cad1be3867732a9faa9a09f08b7fef3ab936dba1f676995ab6525de6176",
+      "currentMatch": true
+    },
+    {
+      "index": 9,
+      "sha256": "192190111a8b75404f5d2b613ce1e44fc0d9e25cc797e896aeeb60f1ef470560",
+      "currentMatch": true
+    },
+    {
+      "index": 10,
+      "sha256": "e82ff306c2e7a2a5deb39f5b12ff40b66e96bb760e942b7969f6097c812d0e83",
+      "currentMatch": true
+    },
+    {
+      "index": 11,
+      "sha256": "a09c20d626ec524fa68a0bb1f41f779f7255fd81ae1b9fc465fdefaf54e150e5",
+      "currentMatch": true
+    },
+    {
+      "index": 12,
+      "sha256": "a3b84469784f82a5c19e4da84a3aacb45167248f0e31084a43465cba37d9e90c",
+      "currentMatch": true
+    },
+    {
+      "index": 13,
+      "sha256": "266b0221898be11116263217e497666ddac6b587e65c3cd3efe45fa332393393",
+      "currentMatch": true
+    },
+    {
+      "index": 14,
+      "sha256": "acd68d2c9196459389ed019773525187b81530d18cbefa522a5fd14579f77932",
+      "currentMatch": true
+    },
+    {
+      "index": 15,
+      "sha256": "9809f90380290cb9e883876a2b0c4c10303327efb218b3d5e6ddc03e318b24ef",
+      "currentMatch": true
+    },
+    {
+      "index": 16,
+      "sha256": "d5d6630bb29f35a2674974bfab8f86ebd67d9d6cdf1fa885c8cc5929142a1bd3",
+      "currentMatch": true
+    },
+    {
+      "index": 17,
+      "sha256": "263d79e359fa44ef252693cbe4bdcbaa37411e33d566088baf4bf68e30a37502",
+      "currentMatch": true
+    },
+    {
+      "index": 18,
+      "sha256": "9fc60abbc140b0d3d31349cf2c497af93dfe4a3f4161922cb9303001aa2ce66d",
+      "currentMatch": true
+    },
+    {
+      "index": 19,
+      "sha256": "295e3bb31f291421d7e47b3ec695eef3a83f528b3f5809fe693740fa40bd7351",
+      "currentMatch": true
+    },
+    {
+      "index": 20,
+      "sha256": "4ad0e3aa1265cb49ef227c91deda43f66889fcc325597a3f43d8969426df5105",
+      "currentMatch": true
+    },
+    {
+      "index": 21,
+      "sha256": "843f16979fcca89d62c80aa87e78cc8a59c0c333295247a12a380f4e7f1d2b89",
+      "currentMatch": true
+    },
+    {
+      "index": 22,
+      "sha256": "7d0ad29e35a95b63f88da59c1aa94471ce362029cc0ddb6ce11c5346f20e405e",
+      "currentMatch": true
+    },
+    {
+      "index": 23,
+      "sha256": "a28192d43dd09da828ca188ba07df89f94223f4d09172f4abab70f9390906d2c",
+      "currentMatch": true
+    },
+    {
+      "index": 24,
+      "sha256": "e78b6c85b294827c96ae482395a487669bc719d5573f399a88e0bc1fb83bcd57",
+      "currentMatch": true
+    },
+    {
+      "index": 25,
+      "sha256": "46af3b3b78029582a159b5b0da012248d4aa25df729aa1fd1f5c1b999996b12f",
+      "currentMatch": true
+    },
+    {
+      "index": 26,
+      "sha256": "636e363f760bcbd6316f82747449a7bf0eff1ae2d1641cc66302832e0a07e84b",
+      "currentMatch": true
+    },
+    {
+      "index": 27,
+      "sha256": "3c21d3714090ac08901526dc2d25402ba0bf6c9da1d8ffb62348819b454c974b",
+      "currentMatch": true
+    },
+    {
+      "index": 28,
+      "sha256": "6718674231816c043b338dfc58136ec06c8f3f20a6469135f1d7a77b0e6474af",
+      "currentMatch": true
+    },
+    {
+      "index": 29,
+      "sha256": "3e6f68d2893e8549234ec48909b0c55174a6713d62f42744a061a16787f28cdb",
+      "currentMatch": true
+    },
+    {
+      "index": 30,
+      "sha256": "15cc6f9ed0dcd72df0bc131e120cb31e5d05cf62625d58a48d957cd5541373dd",
+      "currentMatch": true
+    },
+    {
+      "index": 31,
+      "sha256": "42cc9c47c10bf0b9dfabbd1e99edce4a07db9ceed4873d3fe0d395381a2133f6",
+      "currentMatch": true
+    },
+    {
+      "index": 32,
+      "sha256": "e9365d7d6ffc4b864564df6d36227bfacf7d908d285e53f10442079adc92a684",
+      "currentMatch": true
+    },
+    {
+      "index": 33,
+      "sha256": "128fcde097a9c1f4975bbb557d04905098cf8729edf007c10af7dcd01ad3121e",
+      "currentMatch": true
+    },
+    {
+      "index": 34,
+      "sha256": "8d5a46f536852f248c34db88aa1ab14f1121aa30eb7d4e34191a271d048ca7e4",
+      "currentMatch": true
+    },
+    {
+      "index": 35,
+      "sha256": "cd5cabcedce3f09724b919a5e2e4ec29fc1cc44abb50d0deacaf92ffce07626f",
+      "currentMatch": true
+    },
+    {
+      "index": 36,
+      "sha256": "d85f995bc4dfa9975276beb7c144e95ecd7e7e36c06cc27d6533b13e80ad551a",
+      "currentMatch": true
+    },
+    {
+      "index": 37,
+      "sha256": "307224ebb582480247be3ab0db4bd64e82d7795b59d426568cbe7e00330ad02e",
+      "currentMatch": true
+    },
+    {
+      "index": 38,
+      "sha256": "5f79d786b8d6d0f8474ee2f77c8fd64479971ab55d74bad0567c401494bebcb0",
+      "currentMatch": true
+    },
+    {
+      "index": 39,
+      "sha256": "4e6a7dd24672d46346cb4d73cc18053d8f665291ad9218ba007fd2eb6be136b3",
+      "currentMatch": true
+    },
+    {
+      "index": 40,
+      "sha256": "78ad5277d61601426b2a314d3e4308b267044887fb4432bedd5744c7a23ec67b",
+      "currentMatch": true
+    },
+    {
+      "index": 41,
+      "sha256": "c7b1908c284f2f5ed726555005933ab4c24984f2e5d0bff53500f5bd6f79d6aa",
+      "currentMatch": true
+    },
+    {
+      "index": 42,
+      "sha256": "fe7fe5101b8197f1a062627b719046a42f5eeb702876795c8b39d2c2dc34f396",
+      "currentMatch": true
+    },
+    {
+      "index": 43,
+      "sha256": "c53424440a9d3fc16f1935a4de02ef7a108f7ced102df7307199d9b7c2c547a9",
+      "currentMatch": true
+    },
+    {
+      "index": 44,
+      "sha256": "fcce2ce012378b95d6a833af7435714d0a433d33cf408622118dc7215f888940",
+      "currentMatch": true
+    },
+    {
+      "index": 45,
+      "sha256": "9bbeca8a0a86281593b05c14b0d6676c3ff6d46ce50223b9a251908184942f61",
+      "currentMatch": true
+    },
+    {
+      "index": 46,
+      "sha256": "3145f6ec74ebe7ba9622ed37cfeed651edff01c2f03a939b11e13036ecdb2024",
+      "currentMatch": true
+    },
+    {
+      "index": 47,
+      "sha256": "854dfa20e2c3b0a9e19932e5db0af4d84b8942ed64524c0012bed0c19dd3b683",
+      "currentMatch": true
+    },
+    {
+      "index": 48,
+      "sha256": "879c6e2941a6fbf9a109bfe62eb0231860bc527e2ad715b8916e4cf2ca2534d1",
+      "currentMatch": true
+    },
+    {
+      "index": 49,
+      "sha256": "bc40d00a073a2842356fed91a7c5982e34c41845e6385a40e9397bac93dacd7a",
+      "currentMatch": true
+    },
+    {
+      "index": 50,
+      "sha256": "03e2e50e203410a380e3cad6f3c3706278bc0e14ac6aa125cce7f85917e0e7bc",
+      "currentMatch": true
+    },
+    {
+      "index": 51,
+      "sha256": "3c18e15c6b02b922f8d2157f1bdfdfb310ad40bdd7c79cc1f5318046ba2bdcf2",
+      "currentMatch": true
+    },
+    {
+      "index": 52,
+      "sha256": "0a871ff8758a4a87dd2d3b79ef87b8bf4d8b994251adcc20b7da4896af803029",
+      "currentMatch": true
+    },
+    {
+      "index": 53,
+      "sha256": "f7f64c38fe16858d049aa1fb44f086defe64f561af4c40e56f8f4af409fba526",
+      "currentMatch": true
+    },
+    {
+      "index": 54,
+      "sha256": "edd757360a2b74994ca7ccfd3dec233af8524de5b131303a934b4117436996dc",
+      "currentMatch": true
+    },
+    {
+      "index": 55,
+      "sha256": "074043fd48989841720140ac0b31cd80f1d111642683417f2842d518ce159d3a",
+      "currentMatch": true
+    },
+    {
+      "index": 56,
+      "sha256": "3ae2c0ff856b46d9cb37f5595eb89ab01c29cbf3c5d6f6766ab0d831e9b7dd86",
+      "currentMatch": true
+    },
+    {
+      "index": 57,
+      "sha256": "5fbe9027eadc07bc9fcf76ab48b7c0ebb13ee9465a5dd9d927288d9339f51823",
+      "currentMatch": true
+    },
+    {
+      "index": 58,
+      "sha256": "467d4116cccb9ef4ea3c3b81bc06da127a0da2032f4e260e5e614e9d7fefab7d",
+      "currentMatch": true
+    },
+    {
+      "index": 59,
+      "sha256": "f1ec0ea80aff6e3dd1e49a173d8c35a217c3e68678ba168fcfa425d01c4b3714",
+      "currentMatch": true
+    }
+  ],
+  "homeExact": true,
+  "radiusExact": true,
+  "mapOn": false,
+  "categoryListChanged": true,
+  "currentCategories": [
+    {
+      "id": "dalat-sights",
+      "label": "Explore Đà Lạt",
+      "token": "--accent",
+      "type": "tourist_attraction"
+    }
+  ],
+  "addedPlaces": [
+    {
+      "id": null,
+      "name": null,
+      "hidden": false,
+      "lat": null,
+      "lng": null,
+      "rating": null
+    },
+    {
+      "id": null,
+      "name": null,
+      "hidden": false,
+      "lat": null,
+      "lng": null,
+      "rating": null
+    },
+    {
+      "id": null,
+      "name": null,
+      "hidden": false,
+      "lat": null,
+      "lng": null,
+      "rating": null
+    },
+    {
+      "id": null,
+      "name": null,
+      "hidden": false,
+      "lat": null,
+      "lng": null,
+      "rating": null
+    },
+    {
+      "id": null,
+      "name": null,
+      "hidden": false,
+      "lat": null,
+      "lng": null,
+      "rating": null
+    },
+    {
+      "id": null,
+      "name": null,
+      "hidden": false,
+      "lat": null,
+      "lng": null,
+      "rating": null
+    }
+  ],
+  "authorization": "User requested relevant Dalat guidebook and authorized exceptions; six native Dalat destination cards and intro added, category list cleaned. Whole-guidebook-unchanged is false and must not be claimed.",
+  "retainedLocationLimitation": "Exact property street address remains unresolved; map intentionally hidden and original home object retained."
+}

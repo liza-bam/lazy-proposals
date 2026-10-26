@@ -1,0 +1,51 @@
+{
+  "status": "Phone visual QA passed for Home/Stay/About; Guidebook screenshot review pending capture",
+  "reviewedAt": "2026-10-26T04:03:06.711502+00:00",
+  "revisionLabel": 9,
+  "filesReviewed": [
+    "oanh-qa9-phone-home-0.png",
+    "oanh-qa9-phone-home-1.png",
+    "oanh-qa9-phone-home-2.png",
+    "oanh-qa9-phone-home-3.png",
+    "oanh-qa9-phone-home-4.png",
+    "oanh-qa9-phone-home-5.png",
+    "oanh-qa9-phone-home-6.png",
+    "oanh-qa9-phone-home-7.png",
+    "oanh-qa9-phone-home-8.png",
+    "oanh-qa9-phone-home-9.png",
+    "oanh-qa9-phone-stay-0.png",
+    "oanh-qa9-phone-stay-1.png",
+    "oanh-qa9-phone-stay-2.png",
+    "oanh-qa9-phone-stay-3.png",
+    "oanh-qa9-phone-stay-4.png",
+    "oanh-qa9-phone-stay-5.png",
+    "oanh-qa9-phone-stay-6.png",
+    "oanh-qa9-phone-stay-7.png",
+    "oanh-qa9-phone-stay-8.png",
+    "oanh-qa9-phone-stay-9.png",
+    "oanh-qa9-phone-stay-10.png",
+    "oanh-qa9-phone-about-0.png",
+    "oanh-qa9-phone-about-1.png",
+    "oanh-qa9-phone-about-2.png",
+    "oanh-qa9-phone-about-3.png",
+    "oanh-qa9-phone-about-4.png",
+    "oanh-qa9-phone-about-5.png"
+  ],
+  "fileCount": 27,
+  "blockingDefectsObserved": [],
+  "checks": [
+    "Actual property hero photographs match supplied55imagecatalog.",
+    "Home garden/house gallery captions match visible subjects.",
+    "Trust marks and complete rating/review labels fit in phonewidth.",
+    "Home amenities appear in the first content section.",
+    "Stay first content is Facts/At a glance with max8,1privatequeenbedroom+mezzanine,2bathrooms and upstairslope/stair approach.",
+    "Stay bedroom/mezzanine/bathroom/dining/living photographs match captions.",
+    "Accessrules,pets,smoking,quiettimes,latecheckoutfee,cameras and alarmnotreporteddisclosure are readable.",
+    "About garden,pet,fire-ring and house images match captions and suppliedfacts.",
+    "No blankimages,emptyimagecolumns,clippedauthoredparagraphs,stickysectionmenucollisions orvisiblehorizontaloverflow."
+  ],
+  "pending": [
+    "Guidebook screenshots not present; six destination cards and hiddenmap require separate visible verification."
+  ],
+  "actionsTaken": "Filesystem image inspection and private report only. No browser control or website writes."
+}

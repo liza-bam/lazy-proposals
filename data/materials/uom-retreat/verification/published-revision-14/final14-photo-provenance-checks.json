@@ -1,0 +1,20 @@
+{
+  "libraryCount": 55,
+  "placedReferences": 34,
+  "uniquePlacedRefs": 23,
+  "allPlacedReferencesMatchLibrary": true,
+  "allImageUrlsInLibrary": false,
+  "libraryUrlsMatchReturnedUploadResults": true,
+  "all55SuppliedSourceHashesMatch": true,
+  "allLibraryItemsMappedToSuppliedSource": true,
+  "allDisplayedPhotoReferencesMatchLibrary": true,
+  "nonDisplayedShareMetadataImage": {
+    "field": "config.hero.shareCard.url",
+    "url": "/assets/sites/52ce0d59-4d43-4abb-a2dd-6e41c90605d6/c734cfa4-3b16-48c0-b24f-cb6ed4aaaf56-1024.webp",
+    "status": "Native auto-generated preview/publish social image metadata; root confirmed normal normalization. Not a placed page photo."
+  },
+  "observedRevision": 14,
+  "currentFile": "published-final/baseline.json",
+  "libraryExactSinceRevision12": true,
+  "placedReferencesRecomputedFromRevision14": true
+}
