@@ -58,7 +58,7 @@ function side() {
 function timeline(tl,steps) {
   return '<ol class="tl">'+steps.map(([k,title,note],i)=>{
     const v=(tl||{})[k]||'', skip=v==='skip',now=k===nowStep(tl,steps);
-    return '<li class="tl__row'+(v&&!skip?' is-done':'')+(skip?' is-skip':'')+(now?' is-now':'')+'"><span class="tl__n">'+(v&&!skip?'&#10003;':i+1)+'</span><span class="tl__text"><b>'+esc(title)+'</b>'+(note?'<small>'+esc(note)+'</small>':'')+(k==='doneEmail'?'<a class="tl__btn" data-send-done hidden>Send done email</a>':'')+'</span><span class="tl__when"><button type="button" class="tl__cal" data-cal="'+k+'"'+(skip?' disabled':'')+' aria-label="'+esc(title)+': pick a date">'+(v&&!skip?esc(short(v)):CAL)+'</button><input class="tl__date" type="date" name="tl_'+k+'" value="'+esc(skip?'':v)+'" tabindex="-1" aria-hidden="true"'+(skip?' disabled':'')+'></span><input type="hidden" name="sk_'+k+'" value="'+(skip?'1':'')+'"><button type="button" class="tl__btn" data-done="'+k+'">Done</button><button type="button" class="tl__btn" data-skip="'+k+'">'+(skip?'Unskip':'Skip')+'</button></li>';
+    return '<li class="tl__row'+(v&&!skip?' is-done':'')+(skip?' is-skip':'')+(now?' is-now':'')+'"><span class="tl__n">'+(v&&!skip?'&#10003;':i+1)+'</span><span class="tl__text"><b>'+esc(title)+'</b>'+(note?'<small>'+esc(note)+'</small>':'')+(k==='doneEmail'?'<button type="button" class="tl__btn" data-send-done hidden>Send done email</button>':'')+'</span><span class="tl__when"><button type="button" class="tl__cal" data-cal="'+k+'"'+(skip?' disabled':'')+' aria-label="'+esc(title)+': pick a date">'+(v&&!skip?esc(short(v)):CAL)+'</button><input class="tl__date" type="date" name="tl_'+k+'" value="'+esc(skip?'':v)+'" tabindex="-1" aria-hidden="true"'+(skip?' disabled':'')+'></span><input type="hidden" name="sk_'+k+'" value="'+(skip?'1':'')+'"><button type="button" class="tl__btn" data-done="'+k+'">Done</button><button type="button" class="tl__btn" data-skip="'+k+'">'+(skip?'Unskip':'Skip')+'</button></li>';
   }).join('')+'</ol>';
 }
 function clientField(key,label,value,kind='') {
@@ -183,10 +183,10 @@ async function submit(e) {
     await open(id);say('Intake saved');restoreViewState(view);
   } catch(er){say(er.message,true);}finally{saving=false;}
 }
-// The done email: data/templates/done-email.html filled for this client, downloaded as an email file that opens in Mail.
-// A link, not window.open: this page's open() takes that name.
+// The done email: data/templates/done-email.html filled for this client.
+let doneEmail=null;
 async function fillDoneEmail(c) {
-  const a=document.querySelector('[data-send-done]');if(!a)return;
+  const a=document.querySelector('[data-send-done]');doneEmail=null;if(!a)return;
   const [t,s]=await Promise.all([readText('data/templates/done-email.html'),readJson('data/settings.json')]);
   if(!t||!s||currentClient!==c)return;
   const S=s.data,props=ClientModel.propertiesForClient(c,records).filter(p=>safeUrl(p.siteUrl));
@@ -197,20 +197,23 @@ async function fillDoneEmail(c) {
   const html=t.replace(/\{\{(\w+)\}\}/g,(m,k)=>fill[k]==null?m:fill[k]),doc=new DOMParser().parseFromString(html,'text/html');
   doc.querySelectorAll('a').forEach(l=>l.after(' ('+l.href+')'));
   const plain=doc.body.innerText.replace(/\n{3,}/g,'\n\n').trim(),su=doc.title;
-  // A ready email file: Mail opens it formatted, from Sandy; Message › Send Again makes it ready to send.
-  const b64=t=>btoa(unescape(encodeURIComponent(t))).replace(/.{76}/g,'$&\r\n'),word=t=>'=?UTF-8?B?'+btoa(unescape(encodeURIComponent(t)))+'?=',cut='lazy-done-'+Date.now();
-  const eml=['From: Sandy <'+S.senderEmail+'>','To: '+(c.email||''),'Subject: '+word(su),'X-Unsent: 1','MIME-Version: 1.0','Content-Type: multipart/alternative; boundary="'+cut+'"','',
-    '--'+cut,'Content-Type: text/plain; charset=utf-8','Content-Transfer-Encoding: base64','',b64(plain),
-    '--'+cut,'Content-Type: text/html; charset=utf-8','Content-Transfer-Encoding: base64','',b64(html),'--'+cut+'--',''].join('\r\n');
-  if(a.href.startsWith('blob:'))URL.revokeObjectURL(a.href);
-  a.href=URL.createObjectURL(new Blob([eml],{type:'message/rfc822'}));
-  a.download='Done email – '+c.name+'.eml';
+  doneEmail={from:'Sandy <'+S.senderEmail+'>',to:c.email||'',subject:su,html,plain};
   a.hidden=false;
+}
+// The Mail helper on this Mac (tools/mail-helper) opens it in Mail, formatted, ready to read and send. It never sends.
+async function composeDoneEmail() {
+  if(!doneEmail)return;
+  try {
+    const r=await fetch('http://127.0.0.1:47317/compose',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(doneEmail)});
+    const j=await r.json();if(!j.ok)throw Error(j.error);
+    say('Done email opened in Mail.');
+  } catch(er){say('Mail helper: '+(er.message==='Failed to fetch'?'not running. Open tools/mail-helper/Mail helper.command.':er.message),true);}
 }
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
 document.addEventListener('click',async e=>{
   try {
     const c=e.target.closest('[data-client]');if(c){await showClient(c.dataset.client);return;}
+    if(e.target.closest('[data-send-done]')){await composeDoneEmail();return;}
     const p=e.target.closest('[data-property]');if(p){await open(p.dataset.property);return;}
     if(e.target.id==='new'){await showClient(null);return;}
     if(e.target.id==='new-other'){await showClient(null,'other');return;}
