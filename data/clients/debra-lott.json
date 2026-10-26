@@ -17,8 +17,9 @@
   "proposals": [],
   "timeline": {
     "request": "2026-10-25",
-    "deliveryDate": "2026-10-26"
+    "deliveryDate": "2026-10-26",
+    "proposal": "skip"
   },
   "createdAt": "2026-10-25T23:26:15.859091+00:00",
-  "updatedAt": "2026-10-26T18:45:41.512Z"
+  "updatedAt": "2026-10-26T18:45:47.646Z"
 }
