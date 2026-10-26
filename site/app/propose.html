@@ -105,6 +105,9 @@ async function make(e){
     f.properties=selectedFields().properties;f.propertyIds=f.properties.map(p=>p.id);f.support=ClientModel.supportForCount(S,f.properties.length);
     if(!String(f.to||'').trim())throw Error('Add a recipient email.');
     if(f.properties.some(p=>!p.siteUrl))throw Error('Add a website URL for every selected property.');
+    // The template and settings as they are now, not as they were when this page opened.
+    const [t,s]=await Promise.all([readText('data/templates/done-email.html'),readJson('data/settings.json')]);
+    if(!t||!s)throw Error('The email template or settings could not be read.');TEMPLATE=t;S=s.data;
     const pdf=f.attachPdf?(say('Making the PDF…'),await sheet(f)):null,token=Date.now().toString(36),dir='proposals/clients/'+client.id+'/'+token+'/';
     const today=new Date().toISOString().slice(0,10);say('Saving…');
     if(pdf)await save(dir+'proposal.pdf',await blobBase64(pdf),null,'Client proposal PDF: '+client.name,true);
