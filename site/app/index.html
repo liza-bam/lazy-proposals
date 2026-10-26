@@ -183,24 +183,36 @@ async function submit(e) {
     await open(id);say('Intake saved');restoreViewState(view);
   } catch(er){say(er.message,true);}finally{saving=false;}
 }
-// The done email: data/templates/done-email.txt filled for this client, a link that opens it in the mail app for Sandy to read and send.
-// A link, not window.open: this page's own open() (a property) takes that name.
+// The done email: data/templates/done-email.html filled for this client. The click copies it and opens a new message
+// in the mail app (to and subject set); paste the email into the body. A link, not window.open: this page's open() takes that name.
+let doneEmailCopy=null;
 async function fillDoneEmail(c) {
   const a=document.querySelector('[data-send-done]');if(!a)return;
-  const [t,s]=await Promise.all([readText('data/templates/done-email.txt'),readJson('data/settings.json')]);
+  const [t,s]=await Promise.all([readText('data/templates/done-email.html'),readJson('data/settings.json')]);
   if(!t||!s||currentClient!==c)return;
   const S=s.data,props=ClientModel.propertiesForClient(c,records).filter(p=>safeUrl(p.siteUrl));
-  const fill={name:c.name,editorUrl:S.editorUrl,demoSchedulerUrl:S.demoSchedulerUrl,marketingUrl:S.marketingUrl,facebookUrl:S.facebookUrl,signoff:S.signoff,
-    websites:'Your website'+(props.length===1?'':'s')+':\n'+props.map(p=>p.name+': '+p.siteUrl).join('\n'),login:c.login?'Your login: '+c.login:''};
-  const text=t.replace(/\{\{(\w+)\}\}/g,(m,k)=>fill[k]==null?m:fill[k]),[,su]=text.match(/^Subject: *(.*)\n/)||[,''];
-  const body=text.replace(/^Subject:.*\n\n?/,'').replace(/\n{3,}/g,'\n\n').trim();
-  a.href='mailto:'+encodeURIComponent(c.email||'')+'?subject='+encodeURIComponent(su)+'&body='+encodeURIComponent(body);
+  const btn=(u,label)=>'<tr><td style="padding-top:20px;"><a href="'+esc(u)+'" target="_blank" rel="noopener" style="display:inline-block;background:#f9426f;color:#ffffff;text-decoration:none;font-weight:600;padding:10px 22px;border-radius:8px;font-family:\'Noto Serif\',Georgia,serif;">'+esc(label)+'</a></td></tr>';
+  const fill={name:esc(c.name),siteBase:esc(S.siteBase),editorUrl:esc(S.editorUrl),demoSchedulerUrl:esc(S.demoSchedulerUrl),marketingUrl:esc(S.marketingUrl),facebookUrl:esc(S.facebookUrl),signoff:esc(S.signoff),
+    websiteButtons:props.map(p=>btn(p.siteUrl,props.length>1?p.name:'Visit your website')).join(''),
+    loginLine:c.login?'<tr><td style="font-family:\'Noto Serif\',Georgia,serif;font-size:16px;line-height:1.6;color:#17363c;padding-top:12px;">Your login: <strong>'+esc(c.login)+'</strong></td></tr>':''};
+  const html=t.replace(/\{\{(\w+)\}\}/g,(m,k)=>fill[k]==null?m:fill[k]),doc=new DOMParser().parseFromString(html,'text/html');
+  doc.querySelectorAll('a').forEach(l=>l.after(' ('+l.href+')'));
+  const plain=doc.body.innerText.replace(/\n{3,}/g,'\n\n').trim(),su=doc.title;
+  doneEmailCopy={html,plain};
+  a.href='mailto:'+encodeURIComponent(c.email||'')+'?subject='+encodeURIComponent(su);
   a.hidden=false;
+}
+function copyDoneEmail() {
+  if(!doneEmailCopy)return;
+  const {html,plain}=doneEmailCopy;
+  (window.ClipboardItem?navigator.clipboard.write([new ClipboardItem({'text/html':new Blob([html],{type:'text/html'}),'text/plain':new Blob([plain],{type:'text/plain'})})]):navigator.clipboard.writeText(plain))
+    .then(()=>say('Done email copied: paste it into the new message.'),()=>say('Could not copy the email.',true));
 }
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
 document.addEventListener('click',async e=>{
   try {
     const c=e.target.closest('[data-client]');if(c){await showClient(c.dataset.client);return;}
+    if(e.target.closest('[data-send-done]')){copyDoneEmail();return;}
     const p=e.target.closest('[data-property]');if(p){await open(p.dataset.property);return;}
     if(e.target.id==='new'){await showClient(null);return;}
     if(e.target.id==='new-other'){await showClient(null,'other');return;}
