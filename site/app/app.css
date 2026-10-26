@@ -57,7 +57,7 @@ textarea.tall { min-height: 180px; }
 .tl__cal[disabled] { opacity: .4; cursor: default; }
 /* The real date input sits under its button: the picker opens from it, nothing of it shows. */
 .tl__date { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; pointer-events: none; padding: 0; border: 0; }
-.tl__btn { font: inherit; font-size: var(--text-xs); background: var(--tint); color: var(--ink); border: 0; border-radius: var(--r-pill); padding: var(--s1) var(--s3); cursor: pointer; }
+.tl__btn { font: inherit; font-size: var(--text-xs); text-decoration: none; background: var(--tint); color: var(--ink); border: 0; border-radius: var(--r-pill); padding: var(--s1) var(--s3); cursor: pointer; }
 .tl__now { background: var(--coral); color: var(--white); border-radius: var(--r-pill); padding: 0 var(--s2); font-size: var(--text-xs); font-weight: 600; }
 .is-done .tl__n { background: var(--teal); color: var(--white); }
 .is-now .tl__n { background: var(--coral); color: var(--white); }

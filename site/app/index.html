@@ -58,7 +58,7 @@ function side() {
 function timeline(tl,steps) {
   return '<ol class="tl">'+steps.map(([k,title,note],i)=>{
     const v=(tl||{})[k]||'', skip=v==='skip',now=k===nowStep(tl,steps);
-    return '<li class="tl__row'+(v&&!skip?' is-done':'')+(skip?' is-skip':'')+(now?' is-now':'')+'"><span class="tl__n">'+(v&&!skip?'&#10003;':i+1)+'</span><span class="tl__text"><b>'+esc(title)+'</b>'+(note?'<small>'+esc(note)+'</small>':'')+(k==='doneEmail'?'<button type="button" class="tl__btn" data-send-done>Send done email</button>':'')+'</span><span class="tl__when"><button type="button" class="tl__cal" data-cal="'+k+'"'+(skip?' disabled':'')+' aria-label="'+esc(title)+': pick a date">'+(v&&!skip?esc(short(v)):CAL)+'</button><input class="tl__date" type="date" name="tl_'+k+'" value="'+esc(skip?'':v)+'" tabindex="-1" aria-hidden="true"'+(skip?' disabled':'')+'></span><input type="hidden" name="sk_'+k+'" value="'+(skip?'1':'')+'"><button type="button" class="tl__btn" data-done="'+k+'">Done</button><button type="button" class="tl__btn" data-skip="'+k+'">'+(skip?'Unskip':'Skip')+'</button></li>';
+    return '<li class="tl__row'+(v&&!skip?' is-done':'')+(skip?' is-skip':'')+(now?' is-now':'')+'"><span class="tl__n">'+(v&&!skip?'&#10003;':i+1)+'</span><span class="tl__text"><b>'+esc(title)+'</b>'+(note?'<small>'+esc(note)+'</small>':'')+(k==='doneEmail'?'<a class="tl__btn" data-send-done target="_blank" rel="noopener" hidden>Send done email</a>':'')+'</span><span class="tl__when"><button type="button" class="tl__cal" data-cal="'+k+'"'+(skip?' disabled':'')+' aria-label="'+esc(title)+': pick a date">'+(v&&!skip?esc(short(v)):CAL)+'</button><input class="tl__date" type="date" name="tl_'+k+'" value="'+esc(skip?'':v)+'" tabindex="-1" aria-hidden="true"'+(skip?' disabled':'')+'></span><input type="hidden" name="sk_'+k+'" value="'+(skip?'1':'')+'"><button type="button" class="tl__btn" data-done="'+k+'">Done</button><button type="button" class="tl__btn" data-skip="'+k+'">'+(skip?'Unskip':'Skip')+'</button></li>';
   }).join('')+'</ol>';
 }
 function clientField(key,label,value,kind='') {
@@ -83,6 +83,7 @@ async function showClient(id,kind) {
     '<div class="row"><button class="go" type="submit">'+(id?'Save client':'Create client')+'</button><span class="msg" id="msg" role="status"></span></div></form>'+
     (id?accordion('Properties',properties)+proposalHistory(c,id,props.length):'');
   $('#client-rec').onsubmit=saveClient;
+  if(id)fillDoneEmail(c).catch(er=>say(er.message,true));
 }
 // An other client: one loose card — who, what, where their files are, and notes.
 function showOther(c,id) {
@@ -182,21 +183,19 @@ async function submit(e) {
     await open(id);say('Intake saved');restoreViewState(view);
   } catch(er){say(er.message,true);}finally{saving=false;}
 }
-// The done email: data/templates/done-email.txt filled for this client, opened in Gmail for Sandy to read and send.
-async function sendDoneEmail(c) {
-  // Opened during the click, so the pop-up blocker lets it through; filled once the template loads.
-  const w=window.open('','_blank');if(w)w.opener=null;
-  try {
-    const [t,s]=await Promise.all([readText('data/templates/done-email.txt'),readJson('data/settings.json')]);
-    if(!t||!s)throw Error('Missing data/templates/done-email.txt or data/settings.json');
-    const S=s.data,props=ClientModel.propertiesForClient(c,records).filter(p=>safeUrl(p.siteUrl));
-    const fill={name:c.name,editorUrl:S.editorUrl,demoSchedulerUrl:S.demoSchedulerUrl,marketingUrl:S.marketingUrl,facebookUrl:S.facebookUrl,signoff:S.signoff,
-      websites:'Your website'+(props.length===1?'':'s')+':\n'+props.map(p=>p.name+': '+p.siteUrl).join('\n'),login:c.login?'Your login: '+c.login:''};
-    const text=t.replace(/\{\{(\w+)\}\}/g,(m,k)=>fill[k]==null?m:fill[k]),[,su]=text.match(/^Subject: *(.*)\n/)||[,''];
-    const body=text.replace(/^Subject:.*\n\n?/,'').replace(/\n{3,}/g,'\n\n').trim();
-    const url='https://mail.google.com/mail/?'+new URLSearchParams({view:'cm',fs:'1',to:c.email||'',su,body}).toString();
-    if(w)w.location.href=url;else window.open(url,'_blank','noopener');
-  } catch(er){if(w)w.close();throw er;}
+// The done email: data/templates/done-email.txt filled for this client, a link that opens it in Gmail for Sandy to read and send.
+// A link, not window.open: this page's own open() (a property) takes that name.
+async function fillDoneEmail(c) {
+  const a=document.querySelector('[data-send-done]');if(!a)return;
+  const [t,s]=await Promise.all([readText('data/templates/done-email.txt'),readJson('data/settings.json')]);
+  if(!t||!s||currentClient!==c)return;
+  const S=s.data,props=ClientModel.propertiesForClient(c,records).filter(p=>safeUrl(p.siteUrl));
+  const fill={name:c.name,editorUrl:S.editorUrl,demoSchedulerUrl:S.demoSchedulerUrl,marketingUrl:S.marketingUrl,facebookUrl:S.facebookUrl,signoff:S.signoff,
+    websites:'Your website'+(props.length===1?'':'s')+':\n'+props.map(p=>p.name+': '+p.siteUrl).join('\n'),login:c.login?'Your login: '+c.login:''};
+  const text=t.replace(/\{\{(\w+)\}\}/g,(m,k)=>fill[k]==null?m:fill[k]),[,su]=text.match(/^Subject: *(.*)\n/)||[,''];
+  const body=text.replace(/^Subject:.*\n\n?/,'').replace(/\n{3,}/g,'\n\n').trim();
+  a.href='https://mail.google.com/mail/?'+new URLSearchParams({view:'cm',fs:'1',to:c.email||'',su,body}).toString();
+  a.hidden=false;
 }
 document.addEventListener('change',e=>{if(e.target.classList.contains('tl__date'))e.target.form.requestSubmit();});
 document.addEventListener('click',async e=>{
@@ -207,7 +206,6 @@ document.addEventListener('click',async e=>{
     if(e.target.id==='new-other'){await showClient(null,'other');return;}
     if(e.target.id==='add-property'){await open(null);return;}
     const cal=e.target.closest('[data-cal]');if(cal){const d=cal.form.elements['tl_'+cal.dataset.cal];try{d.showPicker();}catch(er){d.focus();d.click();}}
-    if(e.target.closest('[data-send-done]')){await sendDoneEmail(currentClient);return;}
     const done=e.target.closest('[data-done]'),skip=e.target.closest('[data-skip]'),b=done||skip;
     if(b){const k=done?b.dataset.done:b.dataset.skip,f=b.form;f.elements['tl_'+k].disabled=false;if(done){f.elements['tl_'+k].value=new Date().toISOString().slice(0,10);f.elements['sk_'+k].value='';}else{const h=f.elements['sk_'+k];h.value=h.value?'':'1';if(h.value)f.elements['tl_'+k].value='';}f.requestSubmit();}
   }catch(er){say(er.message,true);}
