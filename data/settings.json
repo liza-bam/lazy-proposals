@@ -94,5 +94,8 @@
     "cancel": "No lock-in. Cancel anytime and take your site with you, or leave it with us as a portfolio piece.",
     "start": "No credit card to start.",
     "contact": "Sandy · sandy@lazy.vacations · +1 (415) 317-3404 · lazy.vacations"
-  }
+  },
+  "demoSchedulerUrl": "https://395183eb03dc4a73b8e2434edfccc7b1.elf.site",
+  "facebookUrl": "https://www.facebook.com/lazy.vacations",
+  "marketingUrl": "https://lazy.vacations/"
 }
