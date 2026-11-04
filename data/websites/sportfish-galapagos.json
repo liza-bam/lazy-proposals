@@ -10,7 +10,7 @@
   "ownerName": "Al DiFlumeri",
   "timeline": {},
   "createdAt": "2026-11-04T20:05:00Z",
-  "updatedAt": "2026-11-04T20:21:00Z",
+  "updatedAt": "2026-11-04T20:22:00Z",
   "sourceRepository": "https://github.com/liza-bam/fishing",
   "sourceCommit": "002c53c438558f752584ec2f2b6e919c2f48067c",
   "materialInventoryUrl": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/sportfish-galapagos/README.md",
@@ -52,7 +52,7 @@
   "homeContent": "Existing redesign: home, fishing, boats, accommodations, expeditions, experience and story pages. Source code uses React/Babel in the browser; GitHub Pages serves docs/. Preserve the original site separately from the redesign.",
   "additionalSources": "Original: https://sportfishgalapagos.com/ ; Our Story: https://sportfishgalapagos.com/our-story/ ; Contact: https://sportfishgalapagos.com/contact/ ; landing page: https://galapagosfishingcharter.com/ ; repository: https://github.com/liza-bam/fishing ; strategy brief and full asset inventory linked in Files.",
   "reviews": "No independently verified guest review dataset located in the inspected repository. Do not manufacture reviews or turn marketing text into testimonials.",
-  "missing": "2026-11-04 original website observation: read-only retrieval of https://sportfishgalapagos.com/ returned unrelated gambling content. Fishing-business inner pages, including https://sportfishgalapagos.com/our-story/, also showed gambling links in the footer. This may indicate a compromised site, but compromise, cause and scope have not been confirmed. Be cautious about directing visitors to the original domain until its owner or hosting provider checks it. This observation concerns the original Sportfish domain, not the separate GitHub Pages redesign.\n\nConfirm Al's preferred business email/direct phone and any account identity. Redesign source has placeholder WhatsApp number +593000000000 and an enquiry form whose handler only prevents default and closes the drawer, with no transmission. Its hello@sportfishgalapagos.com email differs from the original site's info@sportfishgalapagos.com. Fleet count differs: home says five, story says six. Verify vessel list/specifications and claims before launch. Source image originality and licensing are not individually verified. No change to either website made.",
+  "missing": "Confirm Al's preferred business email/direct phone and any account identity. Redesign source has placeholder WhatsApp number +593000000000 and an enquiry form whose handler only prevents default and closes the drawer, with no transmission. Its hello@sportfishgalapagos.com email differs from the original site's info@sportfishgalapagos.com. Fleet count differs: home says five, story says six. Verify vessel list/specifications and claims before launch. Source image originality and licensing are not individually verified. No change to either website made.",
   "verification": {
     "checkedAt": "2026-11-04",
     "redesignVisiblyRendered": true,
