@@ -25,12 +25,12 @@
   ],
   "proposals": [
     {
-      "token": "mw2g8rsn",
+      "token": "mw2ggzro",
       "date": "2026-11-04",
       "properties": [
         "xytor"
       ],
-      "path": "proposals/clients/eugene-baron/mw2g8rsn/",
+      "path": "proposals/clients/eugene-baron/mw2ggzro/",
       "pdf": true
     }
   ],
@@ -39,7 +39,7 @@
     "request": "2026-11-04"
   },
   "createdAt": "2026-11-04T17:14:13.703440Z",
-  "updatedAt": "2026-11-04T18:27:44.991Z",
+  "updatedAt": "2026-11-04T18:34:08.492Z",
   "contactPreference": "Text before calling.",
   "emailHistory": [
     {
