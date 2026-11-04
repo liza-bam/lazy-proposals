@@ -1,0 +1,30 @@
+{
+  "id": "eugene-baron",
+  "name": "Eugene Baron",
+  "email": "Hutorski@gmail.com",
+  "login": "baron",
+  "phone": "",
+  "notes": "Business correspondence: use Hutorski@gmail.com, as directed by Alexandra on 2026-11-04. Existing LAZY account is baron, registered to ebaron@gmail.com; the account has not been changed. Property is called Hutor/HutorSki in correspondence and Emerald Lake Club in the live site/admin. Partners: Max Adelman (maxim.adelman@gmail.com) and Anton Matskovski (Anton.Matskovski@gmail.com). Partner roles, account access and authority to receive every communication are not established. Eugene requested login/editing tools in his 2026-11-03 HutorSki web site email. Admin shows onboarding email sent to ebaron@gmail.com; actual delivery and successful login are not verified.",
+  "partners": [
+    {
+      "name": "Max Adelman",
+      "email": "maxim.adelman@gmail.com"
+    },
+    {
+      "name": "Anton Matskovski",
+      "email": "Anton.Matskovski@gmail.com"
+    }
+  ],
+  "billingNotes": "",
+  "properties": [
+    {
+      "id": "xytor",
+      "name": "Emerald Lake Club (HutorSki)",
+      "siteUrl": "https://xytor.lazy.vacations/"
+    }
+  ],
+  "proposals": [],
+  "timeline": {},
+  "createdAt": "2026-11-04T17:14:13.703440Z",
+  "updatedAt": "2026-11-04T17:14:13.703440Z"
+}
