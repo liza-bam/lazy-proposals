@@ -78,3 +78,9 @@ textarea.tall { min-height: 180px; }
 .client-card > summary::-webkit-details-marker { display: none; }
 .client-card[open] > summary { margin-bottom: var(--s3); }
 .client-card > * + * { margin-top: var(--s3); }
+.proposal-group h3 { margin: 0 0 var(--s2); font-size: var(--text-sm); }
+.proposal-list { list-style: none; margin: 0; padding: 0; }
+.proposal-card { display: grid; grid-template-columns: minmax(0,1fr) minmax(180px,240px); gap: var(--s3); padding: var(--s3) 0; border-top: var(--frame) solid var(--line); }
+.proposal-card p { margin: var(--s1) 0 var(--s2); }
+.proposal-card label { font-size: var(--text-xs); }
+@media (max-width: 760px) { .proposal-card { grid-template-columns: 1fr; } }

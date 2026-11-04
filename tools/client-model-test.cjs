@@ -40,3 +40,27 @@ test('the confirmation email promises the review 2 business days after the intak
  const e=M.confirmationEmail(t,{id:'x',name:'Debra Lott',timeline:{request:'2026-10-26'}},[],S,'2026-10-30');
  assert.equal(e.readyDate,'Wednesday, October 28');assert.ok(e.html.includes('Dear Debra,'));assert.ok(!e.html.includes('{{'));
 });
+test('proposal delivery becomes proposed, while acceptance must be recorded explicitly',()=>{
+ assert.equal(M.proposalStatus({}), 'draft');
+ assert.equal(M.proposalStatus({status:'draft',sent:'2026-11-04'}), 'proposed');
+ assert.equal(M.proposalStatus({status:'proposed'}), 'proposed');
+ assert.equal(M.proposalStatus({status:'active',sent:'2026-11-04'}), 'active');
+});
+test('saving proposal statuses preserves delivery, attachments, other offers and billing history',()=>{
+ const c={id:'x',name:'Client',timeline:{doneEmail:'2026-10-20',billing:'2027-03-20'},proposals:[{token:'a',sent:'2026-10-20',path:'saved/a/',pdf:true,properties:['house'],custom:'keep'},{token:'b',date:'2026-10-01'}]};
+ const before=JSON.parse(JSON.stringify(c));
+ const saved=M.mergeClientRecord(c,[['proposal_status_a','active']],'x');
+ assert.equal(saved.proposals[0].status,'active');
+ assert.deepEqual(saved.proposals[0],{...c.proposals[0],status:'active'});
+ assert.deepEqual(saved.proposals[1],c.proposals[1]);
+ assert.deepEqual(saved.timeline,c.timeline);assert.deepEqual(c,before);
+ assert.throws(()=>M.mergeClientRecord(c,[['proposal_status_a','draft']],'x'),/sent proposal/);
+ assert.throws(()=>M.mergeClientRecord(c,[['proposal_status_a','unknown']],'x'),/Choose Draft/);
+});
+test('regenerating a draft retains proposed, active, sent and earlier offers',()=>{
+ const date='2026-11-04',properties=['a','b'];
+ const offers=[{token:'draft',date,properties:['b','a']},{token:'active',date,properties,status:'active'},{token:'proposed',date,properties,status:'proposed'},{token:'sent',date,properties,sent:date},{token:'prior',date:'2026-11-03',properties}];
+ const result=M.appendProposalDraft(offers,{token:'new',date,properties});
+ assert.deepEqual(result.map(p=>p.token),['active','proposed','sent','prior','new']);
+ assert.equal(result.at(-1).status,'draft');assert.equal(offers.length,5);
+});

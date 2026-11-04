@@ -7,6 +7,17 @@
   'use strict';
   const CLIENT_STEPS = ['request', 'confirmation', 'doneEmail', 'demoScheduled', 'demo', 'billing', 'cancel'];
   const PROPERTY_STEPS = ['built', 'intake', 'integration', 'launch'];
+  const PROPOSAL_STATUSES = ['draft', 'proposed', 'active'];
+  // Delivery makes an offer proposed; acceptance is recorded explicitly by Sandy.
+  function proposalStatus(proposal) {
+    if (proposal.status === 'active') return 'active';
+    return proposal.status === 'proposed' || proposal.sent ? 'proposed' : 'draft';
+  }
+  function appendProposalDraft(proposals, draft) {
+    const sameDraft = p => proposalStatus(p) === 'draft' && !p.sent && p.date === draft.date &&
+      JSON.stringify([...(p.properties || [])].sort()) === JSON.stringify([...(draft.properties || [])].sort());
+    return [...(proposals || []).filter(p => !sameDraft(p)), Object.assign({}, draft, { status: 'draft' })];
+  }
   function propertiesForClient(client, websites) {
     return websites.filter(p => p.clientId ? p.clientId === client.id : (client.properties || []).some(x => x.id === p.id))
       .sort((a, b) => a.name.localeCompare(b.name));
@@ -21,6 +32,16 @@
       if (fields['sk_' + k] === '1') out.timeline[k] = 'skip';
       else if (fields['tl_' + k]) out.timeline[k] = fields['tl_' + k];
       else if (Object.prototype.hasOwnProperty.call(fields, 'tl_' + k)) delete out.timeline[k];
+    }
+    if ((out.proposals || []).some(p => Object.prototype.hasOwnProperty.call(fields, 'proposal_status_' + p.token))) {
+      out.proposals = out.proposals.map(p => {
+        const key = 'proposal_status_' + p.token;
+        if (!Object.prototype.hasOwnProperty.call(fields, key)) return p;
+        const status = fields[key];
+        if (!PROPOSAL_STATUSES.includes(status)) throw new Error('Choose Draft, Proposed or Active for the proposal.');
+        if (status === 'draft' && p.sent) throw new Error('A sent proposal must remain Proposed or Active.');
+        return Object.assign({}, p, { status });
+      });
     }
     out.updatedAt = new Date().toISOString();
     if (!out.createdAt && !(existing || {}).id) out.createdAt = out.updatedAt;
@@ -77,5 +98,5 @@
     const fill = { subject: escHtml(subject), greeting: escHtml(first), readyDate: escHtml(readyDate) };
     return { subject, readyDate, html: template.replace(/\{\{(\w+)\}\}/g, (m, k) => fill[k] == null ? m : fill[k]) };
   }
-  return { CLIENT_STEPS, PROPERTY_STEPS, isOther, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields, websiteReadyEmail, addBusinessDays, confirmationEmail };
+  return { CLIENT_STEPS, PROPERTY_STEPS, PROPOSAL_STATUSES, proposalStatus, appendProposalDraft, isOther, propertiesForClient, clientForProperty, mergeClientRecord, supportForCount, proposalFields, websiteReadyEmail, addBusinessDays, confirmationEmail };
 });

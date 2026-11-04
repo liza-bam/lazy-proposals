@@ -7,7 +7,7 @@
 <title>Clients — Lazy</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="../proposal.css?v=green1">
-<link rel="stylesheet" href="app.css?v=clients8">
+<link rel="stylesheet" href="app.css?v=proposals1">
 </head>
 <body>
 <div class="app">
@@ -19,7 +19,7 @@
   <main class="app__main" id="main"><p class="muted">Loading…</p></main>
 </div>
 <script src="app.js?v=clients6"></script>
-<script src="client-model.js?v=clients9"></script>
+<script src="client-model.js?v=proposals1"></script>
 <script>
 
 let records = [], clientRecords = [], current = null, currentClient = null, currentRecord = null, sha = null, clientSha = null, openSequence = 0, saving = false;
@@ -81,8 +81,8 @@ async function showClient(id,kind) {
   const billing=clientField('billingNotes','Billing notes',c.billingNotes,'area');
   const properties='<div class="row"><button class="go go--quiet" id="add-property" type="button">Add property</button></div>'+ (props.length?props.map(p=>'<article class="property-card"><h3>'+esc(p.name)+'</h3><p class="muted">'+(p.timeline&&p.timeline.built&&p.timeline.built!=='skip'?'Website built · '+esc(p.timeline.built):'Property intake')+'</p><div class="row">'+link(p.siteUrl,'View website')+link(p.imageLink,'Photos')+'<span data-reviews="'+esc(p.id)+'"></span></div><details class="intake" data-intake="'+esc(p.id)+'"><summary>Intake</summary><div class="intake__body"></div></details></article>').join(''):'<p class="muted">Add this client’s first property.</p>')+'<div id="new-intake"></div>';
   // The client card closes to its line: the name and Save.
-  $('#main').innerHTML='<details class="box client-card" open><summary class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</summary><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p>'+(id?(contact+notes).replace(/<(input|textarea) /g,'<$1 form="client-rec" ')+sentEmails(c):'')+'</details>'+
-    '<form id="client-rec">'+(id?accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Billing'+billingStart(c),billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
+  $('#main').innerHTML='<details class="box client-card" open><summary class="row"><h2>'+esc(c.name||'New client')+'</h2>'+(id?'<button class="go go--quiet" type="submit" form="client-rec" id="save-client">Save client</button><span class="msg" id="msg" role="status"></span>':'')+'</summary><p class="muted">'+(id?props.length+' '+(props.length===1?'property':'properties'):'Add the client, then add their properties.')+'</p>'+(id?(contact+notes).replace(/<(input|textarea) /g,'<$1 form="client-rec" '):'')+'</details>'+
+    '<form id="client-rec">'+(id?accordion('Proposals',proposalList(c),true)+accordion('Timeline',timeline(c.timeline,clientSteps(),id),true)+accordion('Billing'+billingStart(c),billing):'<section class="box"><h2>Client details</h2>'+details+billing+'</section>')+
     (id?'':'<div class="row"><button class="go" type="submit">Create client</button><span class="msg" id="msg" role="status"></span></div>')+'</form>'+
     (id?accordion('Properties',properties):'');
   $('#client-rec').onsubmit=saveClient;
@@ -106,25 +106,30 @@ function billingStart(c) {
   const t=new Date(d+'T12:00:00');t.setMonth(t.getMonth()+1);
   return ' · starts on '+t.toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric'});
 }
-// Every website ready email made, listed in the client card: the saved email, and the offer PDF when one went with it.
-function sentEmails(c) {
+// Proposal status is separate from delivery dates, client milestones and billing.
+function proposalList(c) {
   const rows=[...(c.proposals||[])].reverse();
-  if(!rows.length)return '';
-  return '<div class="sent"><h3>Emails</h3><ul>'+rows.map(p=>{
+  const item=p=>{
     const names=(p.properties||[]).map(id=>records.find(r=>r.id===id)?.name||id).join(', ');
-    const dir=p.path?p.path.replace(/\/$/,''):'';
-    return '<li><span>'+esc(p.date||'')+' · '+esc(names||c.name)+' · '+(p.sent?'sent '+esc(p.sent):'not sent')+'</span>'+(dir?link('https://github.com/'+REPO+'/blob/main/'+dir+'/email.html','Email')+(p.pdf===false?'':link('https://raw.githubusercontent.com/'+REPO+'/main/'+dir+'/proposal.pdf','Offer PDF')):'<span class="muted">earlier email</span>')+'</li>';
-  }).join('')+'</ul></div>';
+    const dir=p.path?p.path.replace(/\/$/, ''):'',status=ClientModel.proposalStatus(p);
+    const control=p.token?'<label>Status for '+esc(names||c.name)+' · '+esc(p.date||'undated')+'<select name="proposal_status_'+esc(p.token)+'">'+ClientModel.PROPOSAL_STATUSES.map(s=>'<option value="'+s+'"'+(s===status?' selected':'')+(s==='draft'&&p.sent?' disabled':'')+'>'+s[0].toUpperCase()+s.slice(1)+'</option>').join('')+'</select></label>':'';
+    return '<li class="proposal-card"><div><strong>'+esc(names||c.name)+'</strong><p class="muted">'+esc(p.date||'Undated')+' · '+(p.sent?'Sent '+esc(p.sent):'Not marked sent')+'</p><div class="row">'+(dir?link('https://github.com/'+REPO+'/blob/main/'+dir+'/email.html','Email')+(p.pdf===false?'':link('https://raw.githubusercontent.com/'+REPO+'/main/'+dir+'/proposal.pdf','Offer PDF')):'<span class="muted">Earlier email</span>')+'</div></div>'+control+'</li>';
+  };
+  return '<p class="muted">Proposed: offer presented. Active: accepted and ongoing. Saved emails stay in Drafts until marked proposed or confirmed sent.</p>'+[['active','Active'],['proposed','Proposed'],['draft','Drafts']].map(([status,label])=>{
+    const group=rows.filter(p=>ClientModel.proposalStatus(p)===status);
+    return '<section class="proposal-group"><h3>'+label+' ('+group.length+')</h3>'+(group.length?'<ul class="proposal-list">'+group.map(item).join('')+'</ul>':'<p class="muted">'+(status==='draft'?'No drafts yet.':status==='proposed'?'No proposed offers yet.':'No active proposals yet.')+'</p>')+'</section>';
+  }).join('')+(rows.length?'<button class="go go--quiet" type="submit">Save proposal statuses</button>':'');
 }
 // Saves refresh the record; keep the user's place in its native accordions.
+const panelKey = d => d.matches('.client-card') ? 'client-card' : d.querySelector(':scope > summary').textContent;
 function captureViewState() {
   return {
-    openPanels: [...document.querySelectorAll('#main details[open]:not([data-intake])')].map(d=>d.querySelector(':scope > summary').textContent),
+    openPanels: [...document.querySelectorAll('#main details[open]:not([data-intake])')].map(panelKey),
     x: window.scrollX, y: window.scrollY
   };
 }
 function restoreViewState(view) {
-  document.querySelectorAll('#main details:not([data-intake])').forEach(d=>{d.open=view.openPanels.includes(d.querySelector(':scope > summary').textContent);});
+  document.querySelectorAll('#main details:not([data-intake])').forEach(d=>{d.open=view.openPanels.includes(panelKey(d));});
   window.scrollTo(view.x,view.y);
 }
 async function saveClient(e) {

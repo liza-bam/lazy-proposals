@@ -51,3 +51,16 @@ test('saving an older record does not invent its creation date', () => {
   assert.equal(result.createdAt, undefined);
   assert.ok(result.updatedAt);
 });
+test('proposal groups expose saved status controls and retain delivery evidence safely', () => {
+ context.ClientModel=require('../site/app/client-model.js');
+ vm.runInContext('records=[{id:"house",name:"House <A>"}]',context);
+ const render=vm.runInContext('proposalList',context);
+ const html=render({name:'Owner',proposals:[{token:'draft',date:'2026-11-04',properties:['house']},{token:'sent',date:'2026-11-03',properties:['house'],sent:'2026-11-03'},{token:'accepted',date:'2026-11-02',properties:['house'],status:'active'}]});
+ for(const heading of ['Active (1)','Proposed (1)','Drafts (1)'])assert.ok(html.includes(heading));
+ assert.ok(html.includes('name="proposal_status_accepted"'));
+ assert.ok(html.includes('<option value="active" selected>Active</option>'));
+ assert.ok(html.includes('Sent 2026-11-03'));assert.ok(html.includes('House &lt;A&gt;'));
+ assert.ok(html.includes('Save proposal statuses'));
+ const empty=render({name:'Owner',proposals:[]});
+ assert.ok(empty.includes('Active (0)'));assert.ok(empty.includes('Proposed (0)'));
+});

@@ -55,9 +55,9 @@ async function main() {
   if (attach) await pdf(f, S, path.join(dir, 'proposal.pdf'));
   fs.writeFileSync(path.join(dir, 'proposal.json'), JSON.stringify({ id: f.clientId, clientId: f.clientId, propertyIds: f.propertyIds, properties: f.properties.map(p => ({ id: p.id, name: p.name, siteUrl: p.siteUrl })), to: f.to, subject: f.subject, attachName: f.attachName, made: new Date().toISOString() }, null, 2) + '\n');
   const rf = path.join(ROOT, 'data/clients', f.clientId + '.json'), r = JSON.parse(fs.readFileSync(rf, 'utf8'));
-  // Made is not sent: the Timeline step is ticked by hand once the email goes out. A remake the same day replaces the earlier one.
-  const today = new Date().toISOString().slice(0, 10), same = x => x.date === today && String(x.properties) === String(f.propertyIds);
-  r.proposals = [...(r.proposals || []).filter(x => !same(x)), { token, date: today, properties: f.propertyIds, path: path.relative(ROOT, dir) + '/', pdf: attach }];
+  // Remakes replace only an unsent draft; presented and active offers remain in history.
+  const today = new Date().toISOString().slice(0, 10);
+  r.proposals = Model.appendProposalDraft(r.proposals, { token, date: today, properties: f.propertyIds, path: path.relative(ROOT, dir) + '/', pdf: attach });
   r.updatedAt = new Date().toISOString();
   fs.writeFileSync(rf, JSON.stringify(r, null, 2) + '\n');
   console.log(path.relative(ROOT, dir));
