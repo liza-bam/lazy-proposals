@@ -13,13 +13,14 @@
   ],
   "proposals": [
     {
-      "token": "mw2mf36d",
+      "token": "mw2ofw0d",
       "date": "2026-11-04",
       "properties": [
         "milford-sound-beach-house"
       ],
-      "path": "proposals/clients/dima-s/mw2mf36d/",
-      "pdf": true
+      "path": "proposals/clients/dima-s/mw2ofw0d/",
+      "pdf": true,
+      "status": "draft"
     }
   ],
   "timeline": {
@@ -28,7 +29,7 @@
     "doneEmail": "2026-10-20",
     "demo": "2026-10-26"
   },
-  "updatedAt": "2026-11-04T21:20:37.190Z",
+  "updatedAt": "2026-11-04T22:17:13.666Z",
   "phone": "",
   "notes": "",
   "billingNotes": ""
