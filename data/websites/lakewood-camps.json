@@ -1,0 +1,68 @@
+{
+  "id": "lakewood-camps",
+  "clientId": "al-diflumeri",
+  "name": "Lakewood Camps",
+  "projectType": "custom-website",
+  "sourcePlatform": "Direct business website",
+  "listingUrl": "",
+  "originalSiteUrl": "https://www.lakewoodcamps.com/",
+  "siteUrl": "https://liza-bam.github.io/Lakewood/",
+  "ownerName": "Al DiFlumeri",
+  "timeline": {},
+  "createdAt": "2026-11-04T20:05:00Z",
+  "updatedAt": "2026-11-04T20:05:00Z",
+  "sourceRepository": "https://github.com/liza-bam/Lakewood",
+  "sourceCommit": "e2d0fff875e776470d124403d6bb208cb8257e04",
+  "materialInventoryUrl": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/lakewood-camps/README.md",
+  "photoRepository": {
+    "url": "https://github.com/liza-bam/Lakewood/tree/main/assets/photos",
+    "manifestUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/lakewood-camps/photos/manifest.json",
+    "status": "indexed-existing-public-repository",
+    "sourceFiles": 112,
+    "uniqueImages": 84,
+    "notes": "Counts cover all image files across the project repository, including source images, selected assets, branding, generated artwork and duplicates. No new image copies or original-file ZIP were created in HQ."
+  },
+  "files": [
+    {
+      "kind": "source-index",
+      "name": "Materials and source notes",
+      "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/lakewood-camps/README.md"
+    },
+    {
+      "kind": "photos",
+      "name": "Image and asset source manifest",
+      "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/lakewood-camps/photos/manifest.json"
+    },
+    {
+      "kind": "source",
+      "name": "Historical original website content",
+      "url": "https://github.com/liza-bam/Lakewood/blob/main/design/lakewoodcamps-content.md"
+    },
+    {
+      "kind": "design",
+      "name": "Logo and design working files",
+      "url": "https://github.com/liza-bam/Lakewood/tree/main/design"
+    }
+  ],
+  "ownerEmail": "reservations@lakewoodcamps.com",
+  "ownerPhone": "+1 207-303-4699",
+  "approximateLocation": "Lower Richardson Lake at Middle Dam, Andover / Rangeley Lakes Region, western Maine",
+  "imageLink": "https://github.com/liza-bam/Lakewood/tree/main/assets/photos",
+  "listingFacts": "Lakewood Camps is a sporting camp by Lower Richardson Lake and the Rapid River, offering cabins, fly fishing and hunting. Guests normally arrive by boat. Current original site, checked 2026-11-04: 174th season May 14–June 30, 2027; two-person cabin $500/night, four-person $1,000/night; meals and incidentals $60/person/night; two-night minimum. A 50% deposit is required, balance due 60 days before arrival. Its general hunting FAQ conflicts with a notice of fall improvements; verify availability with the operator. These are source details, not an approved LAZY quote.",
+  "hostStory": "The original business website dates the camp to 1853. Association with Al is user-reported. Do not infer a precise legal ownership role or management team from the camp name.",
+  "propertyType": "Sporting camp",
+  "setting": "Lakefront and remote forest",
+  "websiteStyle": "Modern Maine, warm and photography-led",
+  "focus": "Fishing, hunting, cabins, dining and boat arrival",
+  "homeContent": "Existing redesign includes Home, The Camp, Fishing, Hunting, Wildlife, Plan Your Trip, Rates and Events. Source assets and design working files are retained in liza-bam/Lakewood. The repository's original-site content snapshot is historical, not current booking terms.",
+  "additionalSources": "Original: https://www.lakewoodcamps.com/ ; redesign: https://liza-bam.github.io/Lakewood/ ; original content snapshot: https://github.com/liza-bam/Lakewood/blob/main/design/lakewoodcamps-content.md ; rates source: https://github.com/liza-bam/Lakewood/blob/main/js/page-rates.jsx ; season source: https://github.com/liza-bam/Lakewood/blob/main/js/page-camp.jsx",
+  "reviews": "Redesign contains three hard-coded testimonial cards and a link labeled 45 reviews. No original review export or evidence validating those testimonials was found. They have not been archived or represented as genuine guest reviews.",
+  "missing": "Reconcile the redesign with current operator-approved terms: code still says May 17–June 30, 2026 / 173rd season, $600/person/day all-inclusive and ACH accepted. Historical content snapshot says $50 meals; current original site says $60. Do not assume which commercial offer the client wants. Verify three testimonial cards against source reviews, full photo provenance, staff bios, room capacities and booking integration. Source image originality and licensing are not individually verified. No change to either website made.",
+  "verification": {
+    "checkedAt": "2026-11-04",
+    "redesignVisiblyRendered": true,
+    "source": "Read-only browser inspection",
+    "lazyAdminMatch": "No matching account/property found using Flumeri, Sportfish, Galapagos and Lakewood searches; no account created.",
+    "materials": "Existing repository files inventoried by Git object identity; not newly copied into HQ."
+  }
+}

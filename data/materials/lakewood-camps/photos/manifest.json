@@ -1,0 +1,835 @@
+{
+  "propertyId": "lakewood-camps",
+  "capturedAt": "2026-11-04T20:04:00Z",
+  "repository": "liza-bam/Lakewood",
+  "sourceCommit": "e2d0fff875e776470d124403d6bb208cb8257e04",
+  "sourceTreeTruncated": false,
+  "status": "indexed-existing-public-repository",
+  "storage": "Existing source repository; no image bytes copied into HQ in this pass.",
+  "verification": "Paths, byte sizes and Git object SHAs verified through GitHub tree API. Duplicate relationships use identical Git blob SHA. Image pixels, originality, licensing and factual accuracy not individually verified.",
+  "imageFiles": 112,
+  "uniqueImageBlobs": 84,
+  "assetFiles": 113,
+  "generatedArtworkIdentification": "Only filenames explicitly containing ChatGPT Image are marked generated. Other imagery may also be generated or edited; provenance remains unverified.",
+  "files": [
+    {
+      "path": "Artboard 1100.png",
+      "size": 653069,
+      "gitBlobSha": "7bdae989721de1d458f16bd62240e163c3787bfb",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/Artboard%201100.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "assets/logos/lakewood-hero-lockup.png",
+      "size": 49440,
+      "gitBlobSha": "6b42846e4884db77ebb50c24c0dcc32dd6fc5bb5",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/logos/lakewood-hero-lockup.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "assets/logos/lakewood-trout-mark.jpg",
+      "size": 350399,
+      "gitBlobSha": "f322477a80484be54cddfcc924dcd7abaf4dfb03",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/logos/lakewood-trout-mark.jpg",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "assets/logos/lockup-horizontal-transparent.png",
+      "size": 392605,
+      "gitBlobSha": "30ff8efece26230c6dd696621f4f6d3c8f9d17d1",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/logos/lockup-horizontal-transparent.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "assets/logos/lockup-stacked-transparent.png",
+      "size": 180940,
+      "gitBlobSha": "4fdc1e2da5cff445302e414cfe3c50f836728465",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/logos/lockup-stacked-transparent.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "assets/patterns/flies-espresso.png",
+      "size": 1223874,
+      "gitBlobSha": "54659f7dd97d3e189657eaaa0a7e0ae46ccb04d2",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/patterns/flies-espresso.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "assets/photos/arrival-dock.jpg",
+      "size": 6617,
+      "gitBlobSha": "7597aa7623096100512863482693a454a44e5fe1",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/arrival-dock.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/brook-trout-net.jpg",
+      "size": 1651819,
+      "gitBlobSha": "7b18feec37a120f39031c4d139e725388932a450",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/brook-trout-net.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/brook-trout-release.jpg",
+      "size": 297397,
+      "gitBlobSha": "f41ca9ae2ca6841d170571d9fbe2a068c31926e7",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/brook-trout-release.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/cabin-beds.jpg",
+      "size": 351620,
+      "gitBlobSha": "40f4dd7d09ae5f28b4da7183589449a36f7b6ffa",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/cabin-beds.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/cabin-sitting-room.jpg",
+      "size": 55074,
+      "gitBlobSha": "d091c17f4866cc2fe7478c066a2dd9403fd01476",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/cabin-sitting-room.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/cabins-lake-golden.png",
+      "size": 3303072,
+      "gitBlobSha": "6f410671a8f9ba00e88546de00ea86eef1da70d0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/cabins-lake-golden.png",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/cabins-lawn-birch.jpg",
+      "size": 2908216,
+      "gitBlobSha": "c322a7c2380c95b6635c176c34446945d7c739c7",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/cabins-lawn-birch.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/camp-cabins-lakeside.png",
+      "size": 2576488,
+      "gitBlobSha": "37f97618a6a30d708a7edd1e8a9ae6fd2d715368",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/camp-cabins-lakeside.png",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/dock-boat-arrival.jpg",
+      "size": 189176,
+      "gitBlobSha": "fdc8692df3078a572201dd5dbb103e8c98546481",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/dock-boat-arrival.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/firepit-dock-evening.png",
+      "size": 3161743,
+      "gitBlobSha": "cc9ee82c08e06d5fd3a7a172165bffe7bd9dbc4c",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/firepit-dock-evening.png",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/guests-lake-trout.jpg",
+      "size": 143392,
+      "gitBlobSha": "ff5dbfe04d6e6dac00b7b7044f471f68c764106d",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/guests-lake-trout.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/guides-truck.jpg",
+      "size": 285250,
+      "gitBlobSha": "edb174074ec37d90ad24a30acedd01245e5babd9",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/guides-truck.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/hero-dock-2.jpg",
+      "size": 579981,
+      "gitBlobSha": "948b0e0e273816bcf6fe6e63558800b8d2c03de4",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/hero-dock-2.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/hero-sky-mobile.jpg",
+      "size": 70449,
+      "gitBlobSha": "dee5533d864857272347ee552bd74836bf367500",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/hero-sky-mobile.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/hunter-orange-field.jpg",
+      "size": 704715,
+      "gitBlobSha": "9600ed2445cf07fae40631289b6b09acfb14e775",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/hunter-orange-field.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/lodge-hearth.jpg",
+      "size": 450074,
+      "gitBlobSha": "6a734f048f0091334e50d9c9540edc55f5c4adaf",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/lodge-hearth.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/lodge-misty-lawn.jpg",
+      "size": 232839,
+      "gitBlobSha": "ce2aa8866ae4865ebd8007b6a32a4725b4f73121",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/lodge-misty-lawn.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/lodge-sitting-room.jpg",
+      "size": 89765,
+      "gitBlobSha": "7e89c2c0190ad5fd70a6543ec127e4c4c0e60ea0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/lodge-sitting-room.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/moose-bulls.jpg",
+      "size": 491186,
+      "gitBlobSha": "485dd427830a0f2aa035f8df7372ff1bad011525",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/moose-bulls.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/moose-calf.jpg",
+      "size": 61466,
+      "gitBlobSha": "7c6d70430a45b648962115acbd63a287ca682d65",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/moose-calf.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/porch-lamplight.png",
+      "size": 1667237,
+      "gitBlobSha": "4bb8fc4dd7ce4b916f49332bf47a38fa69da6d64",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/porch-lamplight.png",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/salmon-catch.webp",
+      "size": 21246,
+      "gitBlobSha": "6ca74687a33a3a1e1ca1a151c95fa1138eb804c0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/salmon-catch.webp",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/setter-upland.jpg",
+      "size": 504573,
+      "gitBlobSha": "763e9bca2ce06bfd75ef767da9d18d962409bfa6",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/setter-upland.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "assets/photos/shoreline-misty-morning.jpg",
+      "size": 3164506,
+      "gitBlobSha": "cfd1e7772cfdc0969e7579ae98611d3d62b35860",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/assets/photos/shoreline-misty-morning.jpg",
+      "category": "redesign-selected-image-unverified-provenance"
+    },
+    {
+      "path": "design/Lakewood-Camps-Sunset-topaz-low resolution v1-1x.jpeg",
+      "size": 847404,
+      "gitBlobSha": "77003bd66e0ad4f5e48328e50f8de8fbda9a63e5",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/Lakewood-Camps-Sunset-topaz-low%20resolution%20v1-1x.jpeg",
+      "category": "image-unverified-provenance"
+    },
+    {
+      "path": "design/caption.jpg",
+      "size": 538889,
+      "gitBlobSha": "8c6d45530d6ad73d2a8459e6b042a2f6b4ee9b5e",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/caption.jpg",
+      "category": "image-unverified-provenance"
+    },
+    {
+      "path": "design/design progress/ChatGPT Image Jun 11, 2026, 03_25_07 PM.png",
+      "size": 2402506,
+      "gitBlobSha": "375f6bee5ee9672cfc6143166033463540c87912",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2003_25_07%20PM.png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/design progress/ChatGPT Image Jun 11, 2026, 04_10_37 PM.png",
+      "size": 2172623,
+      "gitBlobSha": "68523e7892ccf9ff13f6d5ccc39ef55755e1e3c3",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2004_10_37%20PM.png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/design progress/ChatGPT Image Jun 11, 2026, 04_13_34 PM.png",
+      "size": 2002367,
+      "gitBlobSha": "cab0835f410ee458190c507ab81cb75fb7d098bb",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2004_13_34%20PM.png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/design progress/ChatGPT Image Jun 11, 2026, 05_29_48 PM.png",
+      "size": 2238225,
+      "gitBlobSha": "71c14b79e002b9a1ae9eecd7d7ef6338d59b04ae",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2005_29_48%20PM.png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/design progress/ChatGPT Image Jun 11, 2026, 05_35_18 PM.png",
+      "size": 2237607,
+      "gitBlobSha": "9b9a530e2d920ebddf63d889ea255bb4a8164e1d",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2005_35_18%20PM.png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/design progress/mess images/348s.jpg",
+      "size": 31565,
+      "gitBlobSha": "12a3a6e140f7ee20c08f49a0776e333ba17de8a8",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/348s.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/625547_365478480189309_1044858450_n-1.jpg",
+      "size": 210738,
+      "gitBlobSha": "2a8705e009c2d1c8b3771c311f39a922f25e6036",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/625547_365478480189309_1044858450_n-1.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/625547_365478480189309_1044858450_n-topaz-low resolution v2-4x.jpeg",
+      "size": 4995820,
+      "gitBlobSha": "1d2e50213bcdfb1d909199d84cb95b2cc7ce9b6b",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/625547_365478480189309_1044858450_n-topaz-low%20resolution%20v2-4x.jpeg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/625547_365478480189309_1044858450_n.jpg",
+      "size": 210738,
+      "gitBlobSha": "2a8705e009c2d1c8b3771c311f39a922f25e6036",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/625547_365478480189309_1044858450_n.jpg",
+      "category": "design-working-file",
+      "duplicateOf": "design/design progress/mess images/625547_365478480189309_1044858450_n-1.jpg"
+    },
+    {
+      "path": "design/design progress/mess images/689015452_1517881003461503_1260929037896699969_n.jpg",
+      "size": 552072,
+      "gitBlobSha": "282f233fb65450c49046aacdb1ce7d811957c3e5",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/689015452_1517881003461503_1260929037896699969_n.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/698766331_1524347899481480_275319790587152645_n-1.jpg",
+      "size": 189176,
+      "gitBlobSha": "fdc8692df3078a572201dd5dbb103e8c98546481",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/698766331_1524347899481480_275319790587152645_n-1.jpg",
+      "category": "design-working-file",
+      "duplicateOf": "assets/photos/dock-boat-arrival.jpg"
+    },
+    {
+      "path": "design/design progress/mess images/704869103_1533887888527481_6451779499804802598_n.jpg",
+      "size": 137392,
+      "gitBlobSha": "2abebf75c2f4e1a3ba45cd9d5f150a1b69751bb4",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/704869103_1533887888527481_6451779499804802598_n.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/710099697_1539101608006109_5369429459617842900_n.jpg",
+      "size": 242808,
+      "gitBlobSha": "134d2348db8e3f9b741194d0f9c9e05df19d71f7",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/710099697_1539101608006109_5369429459617842900_n.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/714982345_1544175260832077_6815330509890291280_n.jpg",
+      "size": 496121,
+      "gitBlobSha": "d355f100c990e371b69d76c565ccb1cc033eb630",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/714982345_1544175260832077_6815330509890291280_n.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/971554_502475343156288_1288433059_n.jpg",
+      "size": 85783,
+      "gitBlobSha": "6fe3231a46ffdab8d09958e442bf136a2485079f",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/971554_502475343156288_1288433059_n.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/ChatGPT Image Jun 11, 2026, 04_50_08 PM.png",
+      "size": 1063708,
+      "gitBlobSha": "f22e53ed62150de616581a5d56bf02a6f29e59be",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2004_50_08%20PM.png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/design progress/mess images/IMG_6015-scaled.jpg",
+      "size": 1861901,
+      "gitBlobSha": "8e23995841d1fa91b388d136220fcc04aaa8d08c",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/IMG_6015-scaled.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/LWInsideMeetingSpace_DiningHall2.webp",
+      "size": 178832,
+      "gitBlobSha": "43403f3325d087b22478d556c0ab30350901017d",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/LWInsideMeetingSpace_DiningHall2.webp",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/Lakewood-Camps-Sunset-1.jpg",
+      "size": 241250,
+      "gitBlobSha": "d4c9e0157d1e8c1ed7b8bf8ee46cb4c8e10b8cdc",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/Lakewood-Camps-Sunset-1.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/Lakewood-Camps-Sunset.jpg",
+      "size": 241250,
+      "gitBlobSha": "d4c9e0157d1e8c1ed7b8bf8ee46cb4c8e10b8cdc",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/Lakewood-Camps-Sunset.jpg",
+      "category": "design-working-file",
+      "duplicateOf": "design/design progress/mess images/Lakewood-Camps-Sunset-1.jpg"
+    },
+    {
+      "path": "design/design progress/mess images/Maine1.png",
+      "size": 338832,
+      "gitBlobSha": "fcb96792b966a811b51c043e3a1b1ef2d0c2513b",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/Maine1.png",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/Screenshot 2026-06-11 at 3.42.31 PM.jpg",
+      "size": 1458531,
+      "gitBlobSha": "8330b5271afc4512f7f41ec2b19f9c0fd689e6c3",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/Screenshot%202026-06-11%20at%203.42.31%E2%80%AFPM.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/Screenshot 2026-06-11 at 3.42.37 PM.jpg",
+      "size": 1044289,
+      "gitBlobSha": "20ffb710deadf802c220e96931004729f9669d76",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/Screenshot%202026-06-11%20at%203.42.37%E2%80%AFPM.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/bste7v8cvaxc1.jpg",
+      "size": 79380,
+      "gitBlobSha": "861d69bf23edb4545b81929bc131737d3b488bd0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/bste7v8cvaxc1.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/caption-1.jpg",
+      "size": 536012,
+      "gitBlobSha": "72f0f4d4c023b07a475b50a30b36097fea8fbc73",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/caption-1.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/caption.jpg",
+      "size": 154845,
+      "gitBlobSha": "1b950672edf736029ba99212ddd71c69af13a1a4",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/caption.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/download-1.jpg",
+      "size": 9672,
+      "gitBlobSha": "827cfa1eb967625bb89069c27edb38870bfccdd2",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/download-1.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/download-2.jpg",
+      "size": 12327,
+      "gitBlobSha": "4ba1da876236a369ffa434bdaabb96fe3dbcb67e",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/download-2.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/download.jpg",
+      "size": 7445,
+      "gitBlobSha": "1f5e25968f05f067455ce81e60f30233ba95b716",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/download.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/images-1.jpg",
+      "size": 6716,
+      "gitBlobSha": "907e65f94da8e859261d24a088838bb8690a818b",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/images-1.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/images-2.jpg",
+      "size": 10793,
+      "gitBlobSha": "d26c856006f087ab2a2702315324476873b08604",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/images-2.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/images-3.jpg",
+      "size": 14390,
+      "gitBlobSha": "be1be9787d5e868b18357a379f3c98253f201305",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/images-3.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/images-4.jpg",
+      "size": 14225,
+      "gitBlobSha": "3cd3a3b850a1c909cd835b716ef914f8c77cc0d6",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/images-4.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/images-5.jpg",
+      "size": 14415,
+      "gitBlobSha": "eeaa61674e7e59367559e37d6947f0633f9ffb53",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/images-5.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/images.jpg",
+      "size": 8814,
+      "gitBlobSha": "9dcb4bb8d9b8ec23d8b0a877197eb416751bf6c1",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/images.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/img_1426.webp",
+      "size": 37790,
+      "gitBlobSha": "5a80e6cff9e05b530114dca95d71900a4c71e3c9",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/img_1426.webp",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/lakewood logos.ai",
+      "size": 223470,
+      "gitBlobSha": "6ae2335555e792d57c16624ebacab6aa405ea277",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/lakewood%20logos.ai",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "design/design progress/mess images/lakewood-camps-1.jpg",
+      "size": 276490,
+      "gitBlobSha": "983a00e9773d7ef9cd63c2dec2e4678e974675d3",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/lakewood-camps-1.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/lakewood-camps-2.jpg",
+      "size": 413021,
+      "gitBlobSha": "4b4adb8fcc02416d5a694f12c77372d2f773e6c2",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/lakewood-camps-2.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/lakewood-camps-3.jpg",
+      "size": 422484,
+      "gitBlobSha": "5d70295e85d4b9812def2d3d9d649114475c70df",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/lakewood-camps-3.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/lakewood-camps.jpg",
+      "size": 139911,
+      "gitBlobSha": "8bcac6c9d3be43eb6d737147d41bdad4b124d6d9",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/lakewood-camps.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/maine.png",
+      "size": 124772,
+      "gitBlobSha": "f3a4fd545d18c6217809a8ab9757c608f098778f",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/maine.png",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/new-logo-no-background.jpg",
+      "size": 125179,
+      "gitBlobSha": "99548672d04e2f015d64aeb3f180c712aab95cc6",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/new-logo-no-background.jpg",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "design/design progress/mess images/o-2.jpg",
+      "size": 85192,
+      "gitBlobSha": "ff36bcdc87c3672d9a858547359cf289a929d380",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/o-2.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/o-3.jpg",
+      "size": 126754,
+      "gitBlobSha": "ab9298d95733d9822618d7aeba9add78efda796e",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/o-3.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/o-4.jpg",
+      "size": 71688,
+      "gitBlobSha": "35478a60758d2a7382d2790cdb06c4a80a813fdc",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/o-4.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/o-5.jpg",
+      "size": 40914,
+      "gitBlobSha": "bf251ace1a2e216c82c8dc112f8cc138d309ed3e",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/o-5.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/o-6.jpg",
+      "size": 68157,
+      "gitBlobSha": "05764eb33eb72fef8b69d6327a534b11c56389a0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/o-6.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/o-7.jpg",
+      "size": 62685,
+      "gitBlobSha": "d78476d58dc98269370c448473dcf6dff7f5ba17",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/o-7.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/design progress/mess images/o.jpg",
+      "size": 164102,
+      "gitBlobSha": "1df38cca59b4b107be8b952decc4e863e7cb6639",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/design%20progress/mess%20images/o.jpg",
+      "category": "design-working-file"
+    },
+    {
+      "path": "design/images/1185376_523488484388307_1306393805_n.jpg",
+      "size": 89765,
+      "gitBlobSha": "7e89c2c0190ad5fd70a6543ec127e4c4c0e60ea0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/1185376_523488484388307_1306393805_n.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/lodge-sitting-room.jpg"
+    },
+    {
+      "path": "design/images/33c26b98-c50b-4f0e-9d1c-fc0b14dfddb9-1.jpg",
+      "size": 351620,
+      "gitBlobSha": "40f4dd7d09ae5f28b4da7183589449a36f7b6ffa",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/33c26b98-c50b-4f0e-9d1c-fc0b14dfddb9-1.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/cabin-beds.jpg"
+    },
+    {
+      "path": "design/images/698766331_1524347899481480_275319790587152645_n.jpg",
+      "size": 189176,
+      "gitBlobSha": "fdc8692df3078a572201dd5dbb103e8c98546481",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/698766331_1524347899481480_275319790587152645_n.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/dock-boat-arrival.jpg"
+    },
+    {
+      "path": "design/images/710149655_1539941737922096_7479507817143560803_n.jpg",
+      "size": 285250,
+      "gitBlobSha": "edb174074ec37d90ad24a30acedd01245e5babd9",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/710149655_1539941737922096_7479507817143560803_n.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/guides-truck.jpg"
+    },
+    {
+      "path": "design/images/971554_502475343156288_1288433059_n-topaz-standard v2-4x.jpeg",
+      "size": 3164506,
+      "gitBlobSha": "cfd1e7772cfdc0969e7579ae98611d3d62b35860",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/971554_502475343156288_1288433059_n-topaz-standard%20v2-4x.jpeg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/shoreline-misty-morning.jpg"
+    },
+    {
+      "path": "design/images/Brook-Trout-Catch.jpg",
+      "size": 297397,
+      "gitBlobSha": "f41ca9ae2ca6841d170571d9fbe2a068c31926e7",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/Brook-Trout-Catch.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/brook-trout-release.jpg"
+    },
+    {
+      "path": "design/images/ChatGPT Image Jun 11, 2026, 07_23_18 PM.png",
+      "size": 2576488,
+      "gitBlobSha": "37f97618a6a30d708a7edd1e8a9ae6fd2d715368",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2007_23_18%20PM.png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "assets/photos/camp-cabins-lakeside.png"
+    },
+    {
+      "path": "design/images/ChatGPT Image Jun 11, 2026, 07_24_55 PM-topaz-standard v2-2x.jpeg",
+      "size": 2908216,
+      "gitBlobSha": "c322a7c2380c95b6635c176c34446945d7c739c7",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2007_24_55%20PM-topaz-standard%20v2-2x.jpeg",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "assets/photos/cabins-lawn-birch.jpg"
+    },
+    {
+      "path": "design/images/ChatGPT Image Jun 11, 2026, 07_32_36 PM.png",
+      "size": 3161743,
+      "gitBlobSha": "cc9ee82c08e06d5fd3a7a172165bffe7bd9dbc4c",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2007_32_36%20PM.png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "assets/photos/firepit-dock-evening.png"
+    },
+    {
+      "path": "design/images/ChatGPT Image Jun 11, 2026, 07_55_33 PM.png",
+      "size": 1667237,
+      "gitBlobSha": "4bb8fc4dd7ce4b916f49332bf47a38fa69da6d64",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2007_55_33%20PM.png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "assets/photos/porch-lamplight.png"
+    },
+    {
+      "path": "design/images/Lakewood-Moose-hunting1.jpg",
+      "size": 491186,
+      "gitBlobSha": "485dd427830a0f2aa035f8df7372ff1bad011525",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/Lakewood-Moose-hunting1.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/moose-bulls.jpg"
+    },
+    {
+      "path": "design/images/Lodge-Photo.jpg",
+      "size": 450074,
+      "gitBlobSha": "6a734f048f0091334e50d9c9540edc55f5c4adaf",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/Lodge-Photo.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/lodge-hearth.jpg"
+    },
+    {
+      "path": "design/images/Maine1.png",
+      "size": 338832,
+      "gitBlobSha": "fcb96792b966a811b51c043e3a1b1ef2d0c2513b",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/Maine1.png",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "design/design progress/mess images/Maine1.png"
+    },
+    {
+      "path": "design/images/Screenshot 2026-06-11 at 3.42.19 PM.jpg",
+      "size": 1651819,
+      "gitBlobSha": "7b18feec37a120f39031c4d139e725388932a450",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/Screenshot%202026-06-11%20at%203.42.19%E2%80%AFPM.jpg",
+      "category": "design-working-file",
+      "duplicateOf": "assets/photos/brook-trout-net.jpg"
+    },
+    {
+      "path": "design/images/Upland-Bird-Hunting-and-Ryman-type-English-setter-1.jpg",
+      "size": 504573,
+      "gitBlobSha": "763e9bca2ce06bfd75ef767da9d18d962409bfa6",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/Upland-Bird-Hunting-and-Ryman-type-English-setter-1.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/setter-upland.jpg"
+    },
+    {
+      "path": "design/images/hero-2.jpg",
+      "size": 579981,
+      "gitBlobSha": "948b0e0e273816bcf6fe6e63558800b8d2c03de4",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/hero-2.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/hero-dock-2.jpg"
+    },
+    {
+      "path": "design/images/img_1302-1.webp",
+      "size": 21246,
+      "gitBlobSha": "6ca74687a33a3a1e1ca1a151c95fa1138eb804c0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/img_1302-1.webp",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/salmon-catch.webp"
+    },
+    {
+      "path": "design/images/maine-moose-hunting-north-woods-chandler-lake-sporting-camps-2021e.jpg",
+      "size": 704715,
+      "gitBlobSha": "9600ed2445cf07fae40631289b6b09acfb14e775",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/maine-moose-hunting-north-woods-chandler-lake-sporting-camps-2021e.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/hunter-orange-field.jpg"
+    },
+    {
+      "path": "design/images/o-1.jpg",
+      "size": 143392,
+      "gitBlobSha": "ff5dbfe04d6e6dac00b7b7044f471f68c764106d",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/o-1.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/guests-lake-trout.jpg"
+    },
+    {
+      "path": "design/images/sitting-room-cabin-pic.jpg",
+      "size": 55074,
+      "gitBlobSha": "d091c17f4866cc2fe7478c066a2dd9403fd01476",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/sitting-room-cabin-pic.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/cabin-sitting-room.jpg"
+    },
+    {
+      "path": "design/images/unnamed.jpg",
+      "size": 61466,
+      "gitBlobSha": "7c6d70430a45b648962115acbd63a287ca682d65",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/images/unnamed.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/moose-calf.jpg"
+    },
+    {
+      "path": "design/lakewood moodboard.png",
+      "size": 2238225,
+      "gitBlobSha": "71c14b79e002b9a1ae9eecd7d7ef6338d59b04ae",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/lakewood%20moodboard.png",
+      "category": "design-or-brand-asset",
+      "duplicateOf": "design/design progress/ChatGPT Image Jun 11, 2026, 05_29_48 PM.png"
+    },
+    {
+      "path": "design/lakewood-camps.jpg",
+      "size": 232839,
+      "gitBlobSha": "ce2aa8866ae4865ebd8007b6a32a4725b4f73121",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/lakewood-camps.jpg",
+      "category": "image-unverified-provenance",
+      "duplicateOf": "assets/photos/lodge-misty-lawn.jpg"
+    },
+    {
+      "path": "design/logo/ChatGPT Image Jun 11, 2026, 04_51_08 PM.png",
+      "size": 970737,
+      "gitBlobSha": "a64fcb663eea9f165326bfd35236e7223a670c7b",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/logo/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2004_51_08%20PM.png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/logo/Screenshot 2026-06-11 at 6.15.28 PM.jpg",
+      "size": 208196,
+      "gitBlobSha": "2eda1425b44d0a4b46667240dba6892c1370ea43",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/logo/Screenshot%202026-06-11%20at%206.15.28%E2%80%AFPM.jpg",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "design/logo/Screenshot 2026-06-11 at 6.15.52 PM.jpg",
+      "size": 60814,
+      "gitBlobSha": "f2ce880bb855299cdac396dfffb16e1b3be2d3d0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/logo/Screenshot%202026-06-11%20at%206.15.52%E2%80%AFPM.jpg",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "design/logo/Screenshot 2026-06-11 at 6.15.56 PM.jpg",
+      "size": 56884,
+      "gitBlobSha": "d76634c035b5880bc5d6895e2a8def11d94becb9",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/logo/Screenshot%202026-06-11%20at%206.15.56%E2%80%AFPM.jpg",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "design/logo/lakewood-trout-mark.jpg",
+      "size": 350399,
+      "gitBlobSha": "f322477a80484be54cddfcc924dcd7abaf4dfb03",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/logo/lakewood-trout-mark.jpg",
+      "category": "design-or-brand-asset",
+      "duplicateOf": "assets/logos/lakewood-trout-mark.jpg"
+    },
+    {
+      "path": "design/texture/ChatGPT Image Jun 11, 2026, 05_56_40 PM (2).png",
+      "size": 2352935,
+      "gitBlobSha": "65610d2b57019eeb8221e5d1ce4cce3a24003b56",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/texture/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2005_56_40%20PM%20(2).png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/texture/ChatGPT Image Jun 11, 2026, 05_56_41 PM (4).png",
+      "size": 936716,
+      "gitBlobSha": "7a12daa73717ff323e1256285f8fe024896a81a0",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/texture/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2005_56_41%20PM%20(4).png",
+      "category": "generated-artwork-by-filename"
+    },
+    {
+      "path": "design/texture/ChatGPT Image Jun 11, 2026, 05_57_56 PM.png",
+      "size": 1223874,
+      "gitBlobSha": "54659f7dd97d3e189657eaaa0a7e0ae46ccb04d2",
+      "url": "https://github.com/liza-bam/Lakewood/blob/e2d0fff875e776470d124403d6bb208cb8257e04/design/texture/ChatGPT%20Image%20Jun%2011%2C%202026%2C%2005_57_56%20PM.png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "assets/patterns/flies-espresso.png"
+    }
+  ]
+}

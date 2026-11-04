@@ -1,0 +1,2062 @@
+{
+  "propertyId": "sportfish-galapagos",
+  "capturedAt": "2026-11-04T20:04:00Z",
+  "repository": "liza-bam/fishing",
+  "sourceCommit": "002c53c438558f752584ec2f2b6e919c2f48067c",
+  "sourceTreeTruncated": false,
+  "status": "indexed-existing-public-repository",
+  "storage": "Existing source repository; no image bytes copied into HQ in this pass.",
+  "verification": "Paths, byte sizes and Git object SHAs verified through GitHub tree API. Duplicate relationships use identical Git blob SHA. Image pixels, originality, licensing and factual accuracy not individually verified.",
+  "imageFiles": 278,
+  "uniqueImageBlobs": 185,
+  "assetFiles": 279,
+  "generatedArtworkIdentification": "Only filenames explicitly containing ChatGPT Image are marked generated. Other imagery may also be generated or edited; provenance remains unverified.",
+  "files": [
+    {
+      "path": "Sportfish-Galapagos-Strategy-Brief (2).docx",
+      "size": 20706,
+      "gitBlobSha": "a68eed7768c6cee46599a82af83952d4ca14dbbe",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/Sportfish-Galapagos-Strategy-Brief%20(2).docx",
+      "category": "strategy-document"
+    },
+    {
+      "path": "design-system/assets/sportfish-logo-navy.png",
+      "size": 263381,
+      "gitBlobSha": "e0e7b538d1656c83f54247b2de1572d34a6ce7fa",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/design-system/assets/sportfish-logo-navy.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "design-system/assets/sportfish-logo-white.png",
+      "size": 220305,
+      "gitBlobSha": "2e1b519cc968f1c2f38a2fe3d18cad0d87f2d419",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/design-system/assets/sportfish-logo-white.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "docs/assets/sportfish-logo-navy.png",
+      "size": 99055,
+      "gitBlobSha": "65e2f894ac37430527541c6ef76b4be1df0905d5",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/assets/sportfish-logo-navy.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "docs/assets/sportfish-logo-white.png",
+      "size": 70435,
+      "gitBlobSha": "b6ea98c7425fd5ae3a738e58868cf7f582a2f006",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/assets/sportfish-logo-white.png",
+      "category": "design-or-brand-asset"
+    },
+    {
+      "path": "docs/fleet/alya.png",
+      "size": 1004207,
+      "gitBlobSha": "b2a1f5a6cd782db9d29ca9a73ba4ccb86b31bdca",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/fleet/alya.png",
+      "category": "image-unverified-provenance"
+    },
+    {
+      "path": "docs/fleet/patricia.png",
+      "size": 1070298,
+      "gitBlobSha": "7c6344b502645cce0479e26a313b5f84e53f6e57",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/fleet/patricia.png",
+      "category": "image-unverified-provenance"
+    },
+    {
+      "path": "docs/fleet/vertigo-i.png",
+      "size": 1098641,
+      "gitBlobSha": "90234b7ad2b8147add99a2e8fd8d1078c73d35f4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/fleet/vertigo-i.png",
+      "category": "image-unverified-provenance"
+    },
+    {
+      "path": "docs/fleet/vertigo-ii.png",
+      "size": 1079420,
+      "gitBlobSha": "0512b55b2036b1e3b827cf7db3170710d6e25ee6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/fleet/vertigo-ii.png",
+      "category": "image-unverified-provenance"
+    },
+    {
+      "path": "docs/fleet/yualka-ii.png",
+      "size": 1081923,
+      "gitBlobSha": "be456f5b599d385d7511a5be901b38c39d3537e2",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/fleet/yualka-ii.png",
+      "category": "image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/Hotel-Miconia.jpeg",
+      "size": 92201,
+      "gitBlobSha": "4eef2810c5195a10aa0dfeb5c1a6638f9be51294",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/Hotel-Miconia.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/Seaside-Hotel.jpeg",
+      "size": 75163,
+      "gitBlobSha": "3a3f4a02f5792bb96aa2240ad8bcc18417bf6670",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/Seaside-Hotel.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/acco-img.webp",
+      "size": 262338,
+      "gitBlobSha": "ab96a718cdb39df615c50ecd0aba529efa92bfba",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/acco-img.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/accomodation-gal-img-01.webp",
+      "size": 33718,
+      "gitBlobSha": "4b079320c985806cd351e45ca70b36dba57a469b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/accomodation-gal-img-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/accomodation-gal-img-02.webp",
+      "size": 63310,
+      "gitBlobSha": "8f85f8c719aa2bff55e12d5a9748fc9bad0f6d13",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/accomodation-gal-img-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/accomodation-gal-img-03.webp",
+      "size": 203508,
+      "gitBlobSha": "7d173c71c521921ef5cb266cb430521aa84a7b99",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/accomodation-gal-img-03.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/accomodation-gal-img-04.webp",
+      "size": 295722,
+      "gitBlobSha": "9898f953ddb9b84630bb4067ad73825e802a805e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/accomodation-gal-img-04.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/accomodation-gal-img-07.webp",
+      "size": 223778,
+      "gitBlobSha": "5ec570bd7e31f6d5eb850881cdfdb150eaf76b3b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/accomodation-gal-img-07.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/accomodation-gal-img-08.webp",
+      "size": 233362,
+      "gitBlobSha": "e20cbb2f4f90c443305acfa4f94e10fdda513401",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/accomodation-gal-img-08.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/accomodation-gal-img-09.webp",
+      "size": 231292,
+      "gitBlobSha": "33e6b8eeecc98ca194a8c160e4988ae061509493",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/accomodation-gal-img-09.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/accomodation-hero-img.webp",
+      "size": 176150,
+      "gitBlobSha": "fcd4feab019a8e747330ad7b724e57b29e00bd89",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/accomodation-hero-img.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/accommodations/san-cristobal-hotels.webp",
+      "size": 244386,
+      "gitBlobSha": "b8f5861544a4fa9bf74cd1b4587f505d92e69e4c",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/accommodations/san-cristobal-hotels.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/contact/contact-img.webp",
+      "size": 182370,
+      "gitBlobSha": "2b3436c668db1603ffb515bd0a8de649a742326b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/contact/contact-img.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/cuisine/Cuisine-gal-img-01.webp",
+      "size": 99482,
+      "gitBlobSha": "1eb59a40ad9d214796ab2db0aebfb82290bd7d26",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/cuisine/Cuisine-gal-img-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/cuisine/Cuisine-gal-img-04.webp",
+      "size": 192294,
+      "gitBlobSha": "b52ceb04f0888d8817a05e8bbda9a5d169e584cf",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/cuisine/Cuisine-gal-img-04.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/cuisine/Cuisine-gal-img-05.webp",
+      "size": 148820,
+      "gitBlobSha": "15a6290acda28187f2de2ac4f7e8096611299344",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/cuisine/Cuisine-gal-img-05.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/cuisine/Cuisine-hero.webp",
+      "size": 212448,
+      "gitBlobSha": "d01179fac112c375237a52a6b595a03fc0b8ac9e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/cuisine/Cuisine-hero.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-01.webp",
+      "size": 237518,
+      "gitBlobSha": "71c9811f6602d33c6bb1552469045b75491bbee6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-04.webp",
+      "size": 284520,
+      "gitBlobSha": "8ef74e19c584e366592c6bcbe92de2dc2b2160f2",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-04.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-07.webp",
+      "size": 191600,
+      "gitBlobSha": "c5db0e3d711fd3c4b67d6bd3d7d72f5374e35344",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-07.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-10.webp",
+      "size": 195666,
+      "gitBlobSha": "827c6eb12da727c0fe66ca8b11428631be49086a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-10.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-12.webp",
+      "size": 143270,
+      "gitBlobSha": "932bf0046e63160287626b266dac4d587bed44d9",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-12.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-tuna-fishing/tuna-img-08.webp",
+      "size": 156662,
+      "gitBlobSha": "61383233c52f2d21e84cae3a25e02265efd28015",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-tuna-fishing/tuna-img-08.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-tuna-fishing/tuna-img-09.webp",
+      "size": 181206,
+      "gitBlobSha": "817b24d579be802bae782ec92b9b2d66bbeb8240",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-tuna-fishing/tuna-img-09.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-tuna-fishing/tuna-img-12.webp",
+      "size": 168166,
+      "gitBlobSha": "ff28f5e4005e63df05d9244b20508f2fb324ad40",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-tuna-fishing/tuna-img-12.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-tuna-fishing/tuna-img-13.webp",
+      "size": 184074,
+      "gitBlobSha": "3a9c6e4395870ba9105f767a95e16b30ff8673e7",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-tuna-fishing/tuna-img-13.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-wahoo-fishing/wahoo-04.jpg",
+      "size": 190305,
+      "gitBlobSha": "08ae17d48ee8cfba8a743c137eda24105c063a88",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-wahoo-fishing/wahoo-04.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/galapagos-wahoo-fishing/wahoo-05.jpg",
+      "size": 264598,
+      "gitBlobSha": "542c21d95a26dff41984caf340e5d17350a474bf",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/galapagos-wahoo-fishing/wahoo-05.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-01.jpg",
+      "size": 192414,
+      "gitBlobSha": "bb59d08b2adf3235705660cf870d585f15088c37",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-01.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-02.jpg",
+      "size": 59251,
+      "gitBlobSha": "5a2345865b026e38887ee1e37ebb02e9db53594e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-02.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-04.jpg",
+      "size": 196172,
+      "gitBlobSha": "6081acb5895fd9410f626207b5f7ee5d9eb2c05e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-04.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-05.jpg",
+      "size": 199798,
+      "gitBlobSha": "2ddcfca32e688d6ea152892fcfc40d80db68f893",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-05.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-06.jpg",
+      "size": 150211,
+      "gitBlobSha": "0ff54c123fd9e1f2cc12f988d2b1f74071ce9c82",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-06.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-07.jpg",
+      "size": 232114,
+      "gitBlobSha": "f83bb5095b62c34dde9640683e39f491e56dd09b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-07.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-08.jpg",
+      "size": 140842,
+      "gitBlobSha": "048e04e5c733f056757da858c426f48dca13ca9a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-08.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-09.jpg",
+      "size": 85098,
+      "gitBlobSha": "3121516dcf0ee1641fb6c1db983d20f2c71dda3d",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-09.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-10.jpg",
+      "size": 94074,
+      "gitBlobSha": "628512e08dc6ca3cf4ed8de71554f7fbd8556550",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-10.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-11.jpg",
+      "size": 82873,
+      "gitBlobSha": "1fc90e746adf469aeaddc24fdaed2af25e9ad8b5",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-11.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-13.jpg",
+      "size": 170517,
+      "gitBlobSha": "8dc41700d5b45bc9fe4fe21994ccf59825cc9235",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-13.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-14.jpg",
+      "size": 253990,
+      "gitBlobSha": "7d9261533f90c9e915bbe99c566b18fa039f030b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-14.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-15.jpg",
+      "size": 153784,
+      "gitBlobSha": "daf5952e0231bc29475bfe300cfa8991a2729d0f",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-15.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-16.jpg",
+      "size": 277725,
+      "gitBlobSha": "cce9a261fbecd4847a2e7c5c5e6866175b4456f8",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-16.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/gallery/other-species-17.jpg",
+      "size": 303892,
+      "gitBlobSha": "8091f064cc40aaa91a2088b320217ece633af236",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/gallery/other-species-17.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/about-img.webp",
+      "size": 198406,
+      "gitBlobSha": "7872c0300e133306ecb280b2c31f14044ac12a9e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/about-img.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-04.jpg",
+      "size": 294312,
+      "gitBlobSha": "12025959206ed2726ce2952ef266be7bb1e249bc",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-04.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-05.jpg",
+      "size": 607811,
+      "gitBlobSha": "3c03715ef23973c3456535ddfc9898c054310492",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-05.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-06.jpg",
+      "size": 351837,
+      "gitBlobSha": "c64e644920b4a680a11b54ba7f3d71ace2cf770e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-06.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-07.jpg",
+      "size": 301869,
+      "gitBlobSha": "8a3c864a4c83e1f61bdfc9ef3d662754903cfa39",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-07.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-08.jpeg",
+      "size": 1377843,
+      "gitBlobSha": "bdfe78bcfd443cf49044a056f88d57037dd0d911",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-08.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-09.jpeg",
+      "size": 1046078,
+      "gitBlobSha": "1db9ca7bbe0e91e9c357fcb7d2eefa9b2f3aae0f",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-09.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-12.jpg",
+      "size": 372288,
+      "gitBlobSha": "195e764a1836080aadd000664685300c47acc520",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-12.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-13.jpeg",
+      "size": 568976,
+      "gitBlobSha": "6aada74c8b19bd57906181cdb36ab25677215743",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-13.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-16.jpg",
+      "size": 236427,
+      "gitBlobSha": "e31fc8e8b21b5295f3a84c8fa5a407d6604a4652",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-16.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-20.jpg",
+      "size": 640767,
+      "gitBlobSha": "81d3fbd821f2098e12a92858fb0c9b11f21fd0ca",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-20.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-23.jpg",
+      "size": 916377,
+      "gitBlobSha": "22191c5589eabce977bdaf233d1c4ca2585b0bf0",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-23.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/gallery-image-24.jpg",
+      "size": 380513,
+      "gitBlobSha": "12e8043b5344231c52e0d0a8e615184f34c72fbe",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/gallery-image-24.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/home/hero-img.jpeg",
+      "size": 3804833,
+      "gitBlobSha": "9d436788ed56f3bd3347686c147fa792a70c935d",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/home/hero-img.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/alya-catamaran.jpg",
+      "size": 192047,
+      "gitBlobSha": "686c91f064bc6d01c18b12ae9cfbc19fbb2bab77",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/alya-catamaran.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/boat-01.jpg",
+      "size": 93228,
+      "gitBlobSha": "36283576e8e632ee530026b76c313f056ca5fad3",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/boat-01.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/boat-02.jpg",
+      "size": 89228,
+      "gitBlobSha": "1a551c2825b934942fe3b7663ac44eaa096133ca",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/boat-02.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/boat-03.jpg",
+      "size": 70526,
+      "gitBlobSha": "1b1c510b7b7df86b2abc15f139bb59a3992aae69",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/boat-03.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/boat-04.jpg",
+      "size": 91025,
+      "gitBlobSha": "edca76ae5b214faac837d7ad3d70b21f5d309ed6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/boat-04.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/boat-05.jpg",
+      "size": 94146,
+      "gitBlobSha": "0df3d428ce7caa419ca9482232d8418dc06a2dc6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/boat-05.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/boat-06.jpg",
+      "size": 82607,
+      "gitBlobSha": "399b8d4160369119ec76b207c067ec6c1ef3c189",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/boat-06.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/excursion-01.webp",
+      "size": 129778,
+      "gitBlobSha": "924e3d202c1901b6c8fb00c8e96e413e7d713115",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/excursion-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/excursion-02.webp",
+      "size": 187006,
+      "gitBlobSha": "83a1782bd016867c4d42a579d0074768f4a0d277",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/excursion-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/excursion-03.webp",
+      "size": 190932,
+      "gitBlobSha": "707ecb732d6725fa76b7f62f344372f40cfea611",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/excursion-03.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/excursion-04.webp",
+      "size": 94884,
+      "gitBlobSha": "3e3aa4095ef2dca109180b4dccda820740fde5a5",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/excursion-04.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/island-expeditions/travel-01.webp",
+      "size": 202430,
+      "gitBlobSha": "f9ff7c3489512328692b8081da59b59b13c8e7cb",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/island-expeditions/travel-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/our-boats/boat-01.jpeg",
+      "size": 3857780,
+      "gitBlobSha": "e3d763380e0867f2377f0d6926a87ff4a3904ac5",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/our-boats/boat-01.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/our-boats/boat-02.jpeg",
+      "size": 158300,
+      "gitBlobSha": "8d157fe14f5df7a26fa8421f0a9ba04dc03691eb",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/our-boats/boat-02.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/our-boats/boat-03.jpeg",
+      "size": 276961,
+      "gitBlobSha": "9dcb6aa4fb82afd024c2be6b6a76c12df53d8c2a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/our-boats/boat-03.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/our-boats/boat-main-img.webp",
+      "size": 129112,
+      "gitBlobSha": "7c20139618798522d409ea1f72690e3b3c14e330",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/our-boats/boat-main-img.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/our-boats/boats-header-img.webp",
+      "size": 158020,
+      "gitBlobSha": "2ba01d5e1dab7f67d6f7cfef6d82d11a5bae76f0",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/our-boats/boats-header-img.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/our-gear/Gear-01.webp",
+      "size": 213264,
+      "gitBlobSha": "1ee17e367bb47f7012424ad554002b596d334d10",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/our-gear/Gear-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/our-gear/Gear-02.webp",
+      "size": 340152,
+      "gitBlobSha": "6cf281e6fdf4851ceb1604a1f04299c8a9e1e0bd",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/our-gear/Gear-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/our-story/story-02.webp",
+      "size": 115430,
+      "gitBlobSha": "c17bc2644d224b3b7c5b4ddeb8b3d60f51bb5d7d",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/our-story/story-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/travel/Iguana-2.jpg",
+      "size": 285901,
+      "gitBlobSha": "2f802d9e65729163478ef9b9a2a4de779292a8c6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/travel/Iguana-2.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/travel/travel-hero.webp",
+      "size": 211342,
+      "gitBlobSha": "0c7d7fef7ec5af4171001afb8d304d86b224051a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/travel/travel-hero.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/unsplash/amy-perez.jpg",
+      "size": 3456682,
+      "gitBlobSha": "4ee8c639327e802e78326ca216a8adad1fd1bdea",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/unsplash/amy-perez.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/unsplash/christine-ellsay.jpg",
+      "size": 1099895,
+      "gitBlobSha": "f50ac49a954671063e4fa2736f8c0c4e9ca19af0",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/unsplash/christine-ellsay.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/unsplash/hans-jurgen-iguana.jpg",
+      "size": 4745067,
+      "gitBlobSha": "1c714281db25b2e19b4018788274ce66b90c747a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/unsplash/hans-jurgen-iguana.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/unsplash/heidi-bruce.jpg",
+      "size": 1770799,
+      "gitBlobSha": "a7562361ea138eb3837a6fc55a78a257361083e4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/unsplash/heidi-bruce.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/unsplash/nicolas-martin-kicker-rock.jpg",
+      "size": 3376492,
+      "gitBlobSha": "3a3bcf68d653363204c976c2811e6a63a48df639",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/unsplash/nicolas-martin-kicker-rock.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/unsplash/simon-iguana-lava.jpg",
+      "size": 2457637,
+      "gitBlobSha": "de28f63717d04680ae05ab8195974591ae8fe672",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/unsplash/simon-iguana-lava.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/sportfish-images/unsplash/wyatt-iguana-surf.jpg",
+      "size": 1950144,
+      "gitBlobSha": "5bd9dad32a5973250b1e3a17cd08a5f4f28a85ea",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/sportfish-images/unsplash/wyatt-iguana-surf.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "docs/uploads/ChatGPT Image Jun 9, 2026, 06_34_01 PM (2).png",
+      "size": 1098641,
+      "gitBlobSha": "90234b7ad2b8147add99a2e8fd8d1078c73d35f4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/uploads/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(2).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/vertigo-i.png"
+    },
+    {
+      "path": "docs/uploads/ChatGPT Image Jun 9, 2026, 06_34_01 PM (3).png",
+      "size": 1004207,
+      "gitBlobSha": "b2a1f5a6cd782db9d29ca9a73ba4ccb86b31bdca",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/uploads/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(3).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/alya.png"
+    },
+    {
+      "path": "docs/uploads/ChatGPT Image Jun 9, 2026, 06_34_01 PM (4).png",
+      "size": 1081923,
+      "gitBlobSha": "be456f5b599d385d7511a5be901b38c39d3537e2",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/uploads/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(4).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/yualka-ii.png"
+    },
+    {
+      "path": "docs/uploads/ChatGPT Image Jun 9, 2026, 06_34_01 PM (5).png",
+      "size": 1070298,
+      "gitBlobSha": "7c6344b502645cce0479e26a313b5f84e53f6e57",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/uploads/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(5).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/patricia.png"
+    },
+    {
+      "path": "docs/uploads/ChatGPT Image Jun 9, 2026, 06_34_01 PM (6).png",
+      "size": 1079420,
+      "gitBlobSha": "0512b55b2036b1e3b827cf7db3170710d6e25ee6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/uploads/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(6).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/vertigo-ii.png"
+    },
+    {
+      "path": "docs/uploads/test.jpg",
+      "size": 2081616,
+      "gitBlobSha": "dd360706d64d68b454bdf0a2de5c7f6ac36bcb51",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/docs/uploads/test.jpg",
+      "category": "image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/accommodations/Hotel-Miconia.jpeg",
+      "size": 92201,
+      "gitBlobSha": "4eef2810c5195a10aa0dfeb5c1a6638f9be51294",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/Hotel-Miconia.jpeg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/Hotel-Miconia.jpeg"
+    },
+    {
+      "path": "sportfish-images/accommodations/Seaside-Hotel.jpeg",
+      "size": 75163,
+      "gitBlobSha": "3a3f4a02f5792bb96aa2240ad8bcc18417bf6670",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/Seaside-Hotel.jpeg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/Seaside-Hotel.jpeg"
+    },
+    {
+      "path": "sportfish-images/accommodations/acco-img.webp",
+      "size": 262338,
+      "gitBlobSha": "ab96a718cdb39df615c50ecd0aba529efa92bfba",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/acco-img.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/acco-img.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-01.webp",
+      "size": 33718,
+      "gitBlobSha": "4b079320c985806cd351e45ca70b36dba57a469b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-01.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/accomodation-gal-img-01.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-02.webp",
+      "size": 63310,
+      "gitBlobSha": "8f85f8c719aa2bff55e12d5a9748fc9bad0f6d13",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-02.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/accomodation-gal-img-02.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-03.webp",
+      "size": 203508,
+      "gitBlobSha": "7d173c71c521921ef5cb266cb430521aa84a7b99",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-03.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/accomodation-gal-img-03.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-04.webp",
+      "size": 295722,
+      "gitBlobSha": "9898f953ddb9b84630bb4067ad73825e802a805e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-04.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/accomodation-gal-img-04.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-05.webp",
+      "size": 111136,
+      "gitBlobSha": "2898a41a7733e2d15912bf2b749958061e0b26b2",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-05.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-06.webp",
+      "size": 67770,
+      "gitBlobSha": "00c759676677b3e8d93a32dac4b6210a24515d89",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-06.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-07.webp",
+      "size": 223778,
+      "gitBlobSha": "5ec570bd7e31f6d5eb850881cdfdb150eaf76b3b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-07.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/accomodation-gal-img-07.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-08.webp",
+      "size": 233362,
+      "gitBlobSha": "e20cbb2f4f90c443305acfa4f94e10fdda513401",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-08.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/accomodation-gal-img-08.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-09.webp",
+      "size": 231292,
+      "gitBlobSha": "33e6b8eeecc98ca194a8c160e4988ae061509493",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-09.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/accomodation-gal-img-09.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-10.webp",
+      "size": 209536,
+      "gitBlobSha": "f4f345ac25d56ca51544cc2da518403a8fc09274",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-10.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-gal-img-11.webp",
+      "size": 231790,
+      "gitBlobSha": "2d12253bc5a5944c4f7149b50748e3142f87bccd",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-gal-img-11.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/accommodations/accomodation-hero-img.webp",
+      "size": 176150,
+      "gitBlobSha": "fcd4feab019a8e747330ad7b724e57b29e00bd89",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/accomodation-hero-img.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/accomodation-hero-img.webp"
+    },
+    {
+      "path": "sportfish-images/accommodations/san-cristobal-hotels.webp",
+      "size": 244386,
+      "gitBlobSha": "b8f5861544a4fa9bf74cd1b4587f505d92e69e4c",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/accommodations/san-cristobal-hotels.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/accommodations/san-cristobal-hotels.webp"
+    },
+    {
+      "path": "sportfish-images/contact/contact-img.webp",
+      "size": 182370,
+      "gitBlobSha": "2b3436c668db1603ffb515bd0a8de649a742326b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/contact/contact-img.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/contact/contact-img.webp"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-01.webp",
+      "size": 99482,
+      "gitBlobSha": "1eb59a40ad9d214796ab2db0aebfb82290bd7d26",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-01.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/cuisine/Cuisine-gal-img-01.webp"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-02.webp",
+      "size": 77972,
+      "gitBlobSha": "dd2bc0e6fb0e4f5038abed43bf632c7359c1b7f0",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-03.webp",
+      "size": 13902,
+      "gitBlobSha": "0fc49943d013a13ebb9273962f38b2958e3e430b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-03.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-04.webp",
+      "size": 192294,
+      "gitBlobSha": "b52ceb04f0888d8817a05e8bbda9a5d169e584cf",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-04.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/cuisine/Cuisine-gal-img-04.webp"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-05.webp",
+      "size": 148820,
+      "gitBlobSha": "15a6290acda28187f2de2ac4f7e8096611299344",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-05.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/cuisine/Cuisine-gal-img-05.webp"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-06.webp",
+      "size": 51898,
+      "gitBlobSha": "6afd5823214c201241badc82b0bd545b897ed15e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-06.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-07.webp",
+      "size": 116390,
+      "gitBlobSha": "75df0c8e26d19f8ac3ac5f0c7b4c3584ce464417",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-07.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-08.webp",
+      "size": 38646,
+      "gitBlobSha": "da039a5669dfda0307e743b48d27a2682afd5bc2",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-08.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-09.webp",
+      "size": 100260,
+      "gitBlobSha": "813f0576ca8e6211179ab2ad8e9781053e0ce175",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-09.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-10.webp",
+      "size": 96716,
+      "gitBlobSha": "05be487c9f416e3ea80abc32881838aae1f8f87e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-10.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-11.webp",
+      "size": 156460,
+      "gitBlobSha": "4054113c19d6b6bda2814f1cac16e8057d9c70b4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-11.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-12.webp",
+      "size": 101956,
+      "gitBlobSha": "7026b7cee24b519785a095eb3b8de4330494aeeb",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-12.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-13.webp",
+      "size": 109756,
+      "gitBlobSha": "d7d1d6d603174c3e1cb4b3372a50ccd4e066e80a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-13.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-14.webp",
+      "size": 50956,
+      "gitBlobSha": "e0e4f54a2b33eac411fd98b88572b91c6b442c22",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-14.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-15.webp",
+      "size": 30156,
+      "gitBlobSha": "37f7d730f7e5de2f71a490b4013977960934d466",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-15.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-16.webp",
+      "size": 53502,
+      "gitBlobSha": "dbbf3fb67d37bf72f92f8b625b84636f808d0d0b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-16.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-17.webp",
+      "size": 30460,
+      "gitBlobSha": "649fcdcb5ee8c123de53a0b1e6b3747b056ebaac",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-17.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-18.webp",
+      "size": 37482,
+      "gitBlobSha": "3953e37a51416a683bb4f381ba40a9c9651943a4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-18.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-19.webp",
+      "size": 26490,
+      "gitBlobSha": "4fee2663c85583e09c6de3f5ec66809c18648dfe",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-19.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-20.webp",
+      "size": 42548,
+      "gitBlobSha": "4fac60a8a489e430bfafd47163425077433c69ad",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-20.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-gal-img-21.webp",
+      "size": 67078,
+      "gitBlobSha": "45b035fc824be977bd3417f52cf70e2630d07c03",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-gal-img-21.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/Cuisine-hero.webp",
+      "size": 212448,
+      "gitBlobSha": "d01179fac112c375237a52a6b595a03fc0b8ac9e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/Cuisine-hero.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/cuisine/Cuisine-hero.webp"
+    },
+    {
+      "path": "sportfish-images/cuisine/cuisine-01.webp",
+      "size": 63648,
+      "gitBlobSha": "cc144904f428e25fae9957925ad78ccbfaad08ca",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/cuisine-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/cuisine-02.webp",
+      "size": 85746,
+      "gitBlobSha": "4bfe00fcefec89860bff8121e550c5ab39d5edc6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/cuisine-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/cuisine/cuisines-img.webp",
+      "size": 205976,
+      "gitBlobSha": "8e23ee7a462af0be248749b6e8efde299a0fa008",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/cuisine/cuisines-img.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/fishing-img.webp",
+      "size": 99716,
+      "gitBlobSha": "e7cdd22f9609d7c57ddbb76ff4391137026f8204",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/fishing-img.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/fishing.webp",
+      "size": 166540,
+      "gitBlobSha": "76ea6f620760fe9bf7befd9059f375a9d75c17dc",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/fishing.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-01.webp",
+      "size": 75460,
+      "gitBlobSha": "4ac94aff5bbaf28acf654586d4f401f7e036b88e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-02.webp",
+      "size": 89390,
+      "gitBlobSha": "6997d7008c68e488ab9a3a117abb4ae3aa74222a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-03.webp",
+      "size": 137392,
+      "gitBlobSha": "da27b894824366c905215ded107e75061606bb77",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-03.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-04.webp",
+      "size": 95064,
+      "gitBlobSha": "9a7ef58cbbbbc70164b400d3dd878f5bca153ee9",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-04.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-05.webp",
+      "size": 131734,
+      "gitBlobSha": "b80176e1b076e193dd782e20cab1a650aefc9039",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-05.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-06.webp",
+      "size": 198962,
+      "gitBlobSha": "e96daad8efdef29b214f2643772125ee558a4b71",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-06.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-07.webp",
+      "size": 110530,
+      "gitBlobSha": "a2fab788a2023d99f0e569895b045d2f1a5c11a4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-07.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-08.webp",
+      "size": 74666,
+      "gitBlobSha": "6d69d6e9701fcdaf9a12d7344aaef8c36a368161",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-08.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-09.webp",
+      "size": 217638,
+      "gitBlobSha": "598a6b3b278ab1da819959e52ee8205756cf20e8",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-09.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-10.webp",
+      "size": 117166,
+      "gitBlobSha": "fbc64b8129c48f2e6afc1d15562654b5ec369783",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-10.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-11.webp",
+      "size": 191528,
+      "gitBlobSha": "7039ab1a53afd5c5dcb1279dc42e020dfd59f2aa",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-11.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-12.webp",
+      "size": 137650,
+      "gitBlobSha": "2ab7ed3eb3d881dd127a9dc95e9a6338940c439a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-12.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-13.webp",
+      "size": 153060,
+      "gitBlobSha": "84c391bb31a060d2321c167081aa331a1d95ec85",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-13.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-14.webp",
+      "size": 220940,
+      "gitBlobSha": "00a2ea4542aaae918dc7b0ad5e6c2b996560bb0b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-14.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-15.webp",
+      "size": 118594,
+      "gitBlobSha": "dc332ea523700a50c905edc2a54b00fb7f99659c",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-15.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-16.webp",
+      "size": 211048,
+      "gitBlobSha": "692965cc81f0ca49d07e83fd700258a05c686c65",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-16.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-17.webp",
+      "size": 142924,
+      "gitBlobSha": "64f977ff5d4043042bc692e7f5fb5dba67df5ab5",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-17.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-18.webp",
+      "size": 218128,
+      "gitBlobSha": "2f91b54ff44289d23d8dc5041c7c4f2bf3d46f85",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-18.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-19.webp",
+      "size": 182186,
+      "gitBlobSha": "364c9b799b6dc17213f24f8504d39a3a9d0c9788",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-19.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/fishing-info/gallery-20.webp",
+      "size": 129468,
+      "gitBlobSha": "8cf45ff1c6eaf64e6e26627192bc512fd36cb962",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/fishing-info/gallery-20.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-01.webp",
+      "size": 237518,
+      "gitBlobSha": "71c9811f6602d33c6bb1552469045b75491bbee6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-01.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-01.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-02.webp",
+      "size": 74444,
+      "gitBlobSha": "c061256bbe786c40ff6e231c7561b17c60b4d39e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-03.webp",
+      "size": 168880,
+      "gitBlobSha": "850196c673f5c45ef2bf611a47452080e94985e2",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-03.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-04.webp",
+      "size": 284520,
+      "gitBlobSha": "8ef74e19c584e366592c6bcbe92de2dc2b2160f2",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-04.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-04.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-05.webp",
+      "size": 103386,
+      "gitBlobSha": "e8b6d96006d3a4cdfada2f4cff45ffd282f1bc3b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-05.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-06.webp",
+      "size": 110122,
+      "gitBlobSha": "8c34351ac203b6f872a58fabd24da049f486927e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-06.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-07.webp",
+      "size": 191600,
+      "gitBlobSha": "c5db0e3d711fd3c4b67d6bd3d7d72f5374e35344",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-07.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-07.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-08.webp",
+      "size": 120584,
+      "gitBlobSha": "d7d24fdb371e18cc7eb2b2726e48257b9b92b7f4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-08.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-09.webp",
+      "size": 107148,
+      "gitBlobSha": "24f08fd500a0e0a086a027dfa62e11fde4e7fc92",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-09.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-10.webp",
+      "size": 195666,
+      "gitBlobSha": "827c6eb12da727c0fe66ca8b11428631be49086a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-10.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-10.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-11.webp",
+      "size": 128434,
+      "gitBlobSha": "690d0683783d44a3bacf03383ec64686cfe70226",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-11.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-12.webp",
+      "size": 143270,
+      "gitBlobSha": "932bf0046e63160287626b266dac4d587bed44d9",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-12.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-marlin-fishing/marlin-fish-12.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-marlin-fishing/marlin-fish-13.webp",
+      "size": 91302,
+      "gitBlobSha": "c8de6b5037c3598c17d7a2ec158743591ae8d4ba",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-marlin-fishing/marlin-fish-13.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-fishing-main-img.jpg",
+      "size": 65726,
+      "gitBlobSha": "bbd169a1711aebeaa84b061bff6428a700a0bd54",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-fishing-main-img.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-01.webp",
+      "size": 73986,
+      "gitBlobSha": "a4b1010758c563a124f367cc26a83b7b7ee72870",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-01.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-02.webp",
+      "size": 80232,
+      "gitBlobSha": "32ffa9bacb00fa7d4d68b1109a75016271548301",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-02.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-03.webp",
+      "size": 46506,
+      "gitBlobSha": "4a1fcf2e1c400540d255e72fde3a65b149ce2819",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-03.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-04.webp",
+      "size": 103782,
+      "gitBlobSha": "acc1748daf257958f7d85b07cc288a295f63412c",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-04.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-05.webp",
+      "size": 81082,
+      "gitBlobSha": "1a5191e86ba8b86f5bf2935f6a504cfd283ba0a8",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-05.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-06.webp",
+      "size": 69974,
+      "gitBlobSha": "36eae3c90991ad88a755a98d619b6bc85845fa57",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-06.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-07.webp",
+      "size": 56522,
+      "gitBlobSha": "5edf93d1548982e43caa9acbd7866dd5580b8bbf",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-07.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-08.webp",
+      "size": 156662,
+      "gitBlobSha": "61383233c52f2d21e84cae3a25e02265efd28015",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-08.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-tuna-fishing/tuna-img-08.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-09.webp",
+      "size": 181206,
+      "gitBlobSha": "817b24d579be802bae782ec92b9b2d66bbeb8240",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-09.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-tuna-fishing/tuna-img-09.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-10.webp",
+      "size": 106384,
+      "gitBlobSha": "6422755fa9792e00dea94411299305da7d0af371",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-10.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-11.webp",
+      "size": 138116,
+      "gitBlobSha": "cbbe9edfbbdb9cbeb5d61ece8824b2f773a8ab01",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-11.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-12.webp",
+      "size": 168166,
+      "gitBlobSha": "ff28f5e4005e63df05d9244b20508f2fb324ad40",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-12.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-tuna-fishing/tuna-img-12.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-13.webp",
+      "size": 184074,
+      "gitBlobSha": "3a9c6e4395870ba9105f767a95e16b30ff8673e7",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-13.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-tuna-fishing/tuna-img-13.webp"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-14.webp",
+      "size": 176014,
+      "gitBlobSha": "0a65b55174a46657c161254f34387c3e691fea9e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-14.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-15.webp",
+      "size": 122576,
+      "gitBlobSha": "302c3fd332ccae9a072987e5d0c97ae4d57cc84e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-15.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-16.webp",
+      "size": 148326,
+      "gitBlobSha": "598346fa87a52cb8a4606441341a493f1538b887",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-16.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-17.webp",
+      "size": 87314,
+      "gitBlobSha": "da4bf8132cb39e4b7da1054ff6c6486437282e0c",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-17.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-tuna-fishing/tuna-img-18.webp",
+      "size": 77150,
+      "gitBlobSha": "0d5fd9e0f8c3999d7d17c85e8d8d3476499bdea1",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-tuna-fishing/tuna-img-18.webp",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-wahoo-fishing/wahoo-01.jpg",
+      "size": 18157,
+      "gitBlobSha": "b5937399f526b2a124cf2be76cdf7f105e69b7aa",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-wahoo-fishing/wahoo-01.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-wahoo-fishing/wahoo-02.jpg",
+      "size": 73342,
+      "gitBlobSha": "2e826bdc00a00fdfcf0933be13b3766c05aead8f",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-wahoo-fishing/wahoo-02.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-wahoo-fishing/wahoo-03.jpg",
+      "size": 68718,
+      "gitBlobSha": "bd0772b06d23a81911e8ccc077a7c10af081cd15",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-wahoo-fishing/wahoo-03.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/galapagos-wahoo-fishing/wahoo-04.jpg",
+      "size": 190305,
+      "gitBlobSha": "08ae17d48ee8cfba8a743c137eda24105c063a88",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-wahoo-fishing/wahoo-04.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-wahoo-fishing/wahoo-04.jpg"
+    },
+    {
+      "path": "sportfish-images/galapagos-wahoo-fishing/wahoo-05.jpg",
+      "size": 264598,
+      "gitBlobSha": "542c21d95a26dff41984caf340e5d17350a474bf",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/galapagos-wahoo-fishing/wahoo-05.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/galapagos-wahoo-fishing/wahoo-05.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-01.jpg",
+      "size": 192414,
+      "gitBlobSha": "bb59d08b2adf3235705660cf870d585f15088c37",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-01.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-01.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-02.jpg",
+      "size": 59251,
+      "gitBlobSha": "5a2345865b026e38887ee1e37ebb02e9db53594e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-02.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-02.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-04.jpg",
+      "size": 196172,
+      "gitBlobSha": "6081acb5895fd9410f626207b5f7ee5d9eb2c05e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-04.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-04.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-05.jpg",
+      "size": 199798,
+      "gitBlobSha": "2ddcfca32e688d6ea152892fcfc40d80db68f893",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-05.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-05.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-06.jpg",
+      "size": 150211,
+      "gitBlobSha": "0ff54c123fd9e1f2cc12f988d2b1f74071ce9c82",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-06.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-06.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-07.jpg",
+      "size": 232114,
+      "gitBlobSha": "f83bb5095b62c34dde9640683e39f491e56dd09b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-07.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-07.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-08.jpg",
+      "size": 140842,
+      "gitBlobSha": "048e04e5c733f056757da858c426f48dca13ca9a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-08.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-08.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-09.jpg",
+      "size": 85098,
+      "gitBlobSha": "3121516dcf0ee1641fb6c1db983d20f2c71dda3d",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-09.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-09.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-10.jpg",
+      "size": 94074,
+      "gitBlobSha": "628512e08dc6ca3cf4ed8de71554f7fbd8556550",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-10.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-10.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-11.jpg",
+      "size": 82873,
+      "gitBlobSha": "1fc90e746adf469aeaddc24fdaed2af25e9ad8b5",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-11.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-11.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-13.jpg",
+      "size": 170517,
+      "gitBlobSha": "8dc41700d5b45bc9fe4fe21994ccf59825cc9235",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-13.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-13.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-14.jpg",
+      "size": 253990,
+      "gitBlobSha": "7d9261533f90c9e915bbe99c566b18fa039f030b",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-14.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-14.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-15.jpg",
+      "size": 153784,
+      "gitBlobSha": "daf5952e0231bc29475bfe300cfa8991a2729d0f",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-15.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-15.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-16.jpg",
+      "size": 277725,
+      "gitBlobSha": "cce9a261fbecd4847a2e7c5c5e6866175b4456f8",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-16.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-16.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/catch/other-species-17.jpg",
+      "size": 303892,
+      "gitBlobSha": "8091f064cc40aaa91a2088b320217ece633af236",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/catch/other-species-17.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/gallery/other-species-17.jpg"
+    },
+    {
+      "path": "sportfish-images/gallery/fauna/excursion-01.webp",
+      "size": 129778,
+      "gitBlobSha": "924e3d202c1901b6c8fb00c8e96e413e7d713115",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/fauna/excursion-01.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/excursion-01.webp"
+    },
+    {
+      "path": "sportfish-images/gallery/fauna/excursion-02.webp",
+      "size": 187006,
+      "gitBlobSha": "83a1782bd016867c4d42a579d0074768f4a0d277",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/fauna/excursion-02.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/excursion-02.webp"
+    },
+    {
+      "path": "sportfish-images/gallery/fauna/excursion-03.webp",
+      "size": 190932,
+      "gitBlobSha": "707ecb732d6725fa76b7f62f344372f40cfea611",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/fauna/excursion-03.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/excursion-03.webp"
+    },
+    {
+      "path": "sportfish-images/gallery/fauna/excursion-04.webp",
+      "size": 94884,
+      "gitBlobSha": "3e3aa4095ef2dca109180b4dccda820740fde5a5",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/fauna/excursion-04.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/excursion-04.webp"
+    },
+    {
+      "path": "sportfish-images/gallery/fauna/travel-01.webp",
+      "size": 202430,
+      "gitBlobSha": "f9ff7c3489512328692b8081da59b59b13c8e7cb",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/fauna/travel-01.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/travel-01.webp"
+    },
+    {
+      "path": "sportfish-images/gallery/lifestyle/boats-header-img.webp",
+      "size": 158020,
+      "gitBlobSha": "2ba01d5e1dab7f67d6f7cfef6d82d11a5bae76f0",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/gallery/lifestyle/boats-header-img.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/our-boats/boats-header-img.webp"
+    },
+    {
+      "path": "sportfish-images/home/about-img.webp",
+      "size": 198406,
+      "gitBlobSha": "7872c0300e133306ecb280b2c31f14044ac12a9e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/about-img.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/about-img.webp"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-04.jpg",
+      "size": 294312,
+      "gitBlobSha": "12025959206ed2726ce2952ef266be7bb1e249bc",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-04.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-04.jpg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-05.jpg",
+      "size": 607811,
+      "gitBlobSha": "3c03715ef23973c3456535ddfc9898c054310492",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-05.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-05.jpg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-06.jpg",
+      "size": 351837,
+      "gitBlobSha": "c64e644920b4a680a11b54ba7f3d71ace2cf770e",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-06.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-06.jpg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-07.jpg",
+      "size": 301869,
+      "gitBlobSha": "8a3c864a4c83e1f61bdfc9ef3d662754903cfa39",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-07.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-07.jpg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-08.jpeg",
+      "size": 1377843,
+      "gitBlobSha": "bdfe78bcfd443cf49044a056f88d57037dd0d911",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-08.jpeg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-08.jpeg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-09.jpeg",
+      "size": 1046078,
+      "gitBlobSha": "1db9ca7bbe0e91e9c357fcb7d2eefa9b2f3aae0f",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-09.jpeg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-09.jpeg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-12.jpg",
+      "size": 372288,
+      "gitBlobSha": "195e764a1836080aadd000664685300c47acc520",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-12.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-12.jpg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-13.jpeg",
+      "size": 568976,
+      "gitBlobSha": "6aada74c8b19bd57906181cdb36ab25677215743",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-13.jpeg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-13.jpeg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-16.jpg",
+      "size": 236427,
+      "gitBlobSha": "e31fc8e8b21b5295f3a84c8fa5a407d6604a4652",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-16.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-16.jpg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-20.jpg",
+      "size": 640767,
+      "gitBlobSha": "81d3fbd821f2098e12a92858fb0c9b11f21fd0ca",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-20.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-20.jpg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-22-topaz-low resolution v1-4x-faceai.jpeg",
+      "size": 875887,
+      "gitBlobSha": "9c673a22dfc1a1f76a8aa10446fb181359268f6f",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-22-topaz-low%20resolution%20v1-4x-faceai.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-23.jpg",
+      "size": 916377,
+      "gitBlobSha": "22191c5589eabce977bdaf233d1c4ca2585b0bf0",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-23.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-23.jpg"
+    },
+    {
+      "path": "sportfish-images/home/gallery-image-24.jpg",
+      "size": 380513,
+      "gitBlobSha": "12e8043b5344231c52e0d0a8e615184f34c72fbe",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/gallery-image-24.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/gallery-image-24.jpg"
+    },
+    {
+      "path": "sportfish-images/home/hero-img.jpeg",
+      "size": 3804833,
+      "gitBlobSha": "9d436788ed56f3bd3347686c147fa792a70c935d",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/home/hero-img.jpeg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/home/hero-img.jpeg"
+    },
+    {
+      "path": "sportfish-images/island-expeditions/alya-catamaran.jpg",
+      "size": 192047,
+      "gitBlobSha": "686c91f064bc6d01c18b12ae9cfbc19fbb2bab77",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/island-expeditions/alya-catamaran.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/alya-catamaran.jpg"
+    },
+    {
+      "path": "sportfish-images/island-expeditions/boat-01.jpg",
+      "size": 93228,
+      "gitBlobSha": "36283576e8e632ee530026b76c313f056ca5fad3",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/island-expeditions/boat-01.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/boat-01.jpg"
+    },
+    {
+      "path": "sportfish-images/island-expeditions/boat-02.jpg",
+      "size": 89228,
+      "gitBlobSha": "1a551c2825b934942fe3b7663ac44eaa096133ca",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/island-expeditions/boat-02.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/boat-02.jpg"
+    },
+    {
+      "path": "sportfish-images/island-expeditions/boat-03.jpg",
+      "size": 70526,
+      "gitBlobSha": "1b1c510b7b7df86b2abc15f139bb59a3992aae69",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/island-expeditions/boat-03.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/boat-03.jpg"
+    },
+    {
+      "path": "sportfish-images/island-expeditions/boat-04.jpg",
+      "size": 91025,
+      "gitBlobSha": "edca76ae5b214faac837d7ad3d70b21f5d309ed6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/island-expeditions/boat-04.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/boat-04.jpg"
+    },
+    {
+      "path": "sportfish-images/island-expeditions/boat-05.jpg",
+      "size": 94146,
+      "gitBlobSha": "0df3d428ce7caa419ca9482232d8418dc06a2dc6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/island-expeditions/boat-05.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/boat-05.jpg"
+    },
+    {
+      "path": "sportfish-images/island-expeditions/boat-06.jpg",
+      "size": 82607,
+      "gitBlobSha": "399b8d4160369119ec76b207c067ec6c1ef3c189",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/island-expeditions/boat-06.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/island-expeditions/boat-06.jpg"
+    },
+    {
+      "path": "sportfish-images/our-boats/ChatGPT Image Jun 9, 2026, 06_34_01 PM (2).png",
+      "size": 1098641,
+      "gitBlobSha": "90234b7ad2b8147add99a2e8fd8d1078c73d35f4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-boats/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(2).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/vertigo-i.png"
+    },
+    {
+      "path": "sportfish-images/our-boats/ChatGPT Image Jun 9, 2026, 06_34_01 PM (3).png",
+      "size": 1004207,
+      "gitBlobSha": "b2a1f5a6cd782db9d29ca9a73ba4ccb86b31bdca",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-boats/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(3).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/alya.png"
+    },
+    {
+      "path": "sportfish-images/our-boats/ChatGPT Image Jun 9, 2026, 06_34_01 PM (4).png",
+      "size": 1081923,
+      "gitBlobSha": "be456f5b599d385d7511a5be901b38c39d3537e2",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-boats/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(4).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/yualka-ii.png"
+    },
+    {
+      "path": "sportfish-images/our-boats/ChatGPT Image Jun 9, 2026, 06_34_01 PM (5).png",
+      "size": 1070298,
+      "gitBlobSha": "7c6344b502645cce0479e26a313b5f84e53f6e57",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-boats/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(5).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/patricia.png"
+    },
+    {
+      "path": "sportfish-images/our-boats/ChatGPT Image Jun 9, 2026, 06_34_01 PM (6).png",
+      "size": 1079420,
+      "gitBlobSha": "0512b55b2036b1e3b827cf7db3170710d6e25ee6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-boats/ChatGPT%20Image%20Jun%209%2C%202026%2C%2006_34_01%20PM%20(6).png",
+      "category": "generated-artwork-by-filename",
+      "duplicateOf": "docs/fleet/vertigo-ii.png"
+    },
+    {
+      "path": "sportfish-images/our-boats/boat-01.jpeg",
+      "size": 271385,
+      "gitBlobSha": "12e6c307cf2bd144889aef5b5266be5f24b1c113",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-boats/boat-01.jpeg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/our-boats/boat-main-img.webp",
+      "size": 129112,
+      "gitBlobSha": "7c20139618798522d409ea1f72690e3b3c14e330",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-boats/boat-main-img.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/our-boats/boat-main-img.webp"
+    },
+    {
+      "path": "sportfish-images/our-gear/Gear-01.webp",
+      "size": 213264,
+      "gitBlobSha": "1ee17e367bb47f7012424ad554002b596d334d10",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-gear/Gear-01.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/our-gear/Gear-01.webp"
+    },
+    {
+      "path": "sportfish-images/our-gear/Gear-02.webp",
+      "size": 340152,
+      "gitBlobSha": "6cf281e6fdf4851ceb1604a1f04299c8a9e1e0bd",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-gear/Gear-02.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/our-gear/Gear-02.webp"
+    },
+    {
+      "path": "sportfish-images/our-story/story-02.webp",
+      "size": 115430,
+      "gitBlobSha": "c17bc2644d224b3b7c5b4ddeb8b3d60f51bb5d7d",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/our-story/story-02.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/our-story/story-02.webp"
+    },
+    {
+      "path": "sportfish-images/travel/Hotel-Miconia-3.jpg",
+      "size": 189759,
+      "gitBlobSha": "21804e8d211e2ef485333e4251f28aa165fcedb0",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/Hotel-Miconia-3.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/Hotel-Miconia.jpg",
+      "size": 157438,
+      "gitBlobSha": "26c2e266d3768ee7e51c1db31ff316867eb7bcba",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/Hotel-Miconia.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/Iguana-2.jpg",
+      "size": 285901,
+      "gitBlobSha": "2f802d9e65729163478ef9b9a2a4de779292a8c6",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/Iguana-2.jpg",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/travel/Iguana-2.jpg"
+    },
+    {
+      "path": "sportfish-images/travel/Iguana-3.jpg",
+      "size": 165466,
+      "gitBlobSha": "24967dad87333801db1a365616ef967a48ef6a77",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/Iguana-3.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno-2.jpg",
+      "size": 96738,
+      "gitBlobSha": "f49cbdb8b9089790755b1f62f420db97c97330e3",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno-2.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno-3.jpg",
+      "size": 49837,
+      "gitBlobSha": "5ef6e608266f0102086dbee60a4c990cfc865176",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno-3.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno-4.jpg",
+      "size": 105114,
+      "gitBlobSha": "8ed7d293283463c373efff4d3a1cc8e281058306",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno-4.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno-5.jpg",
+      "size": 114798,
+      "gitBlobSha": "328e2a36e5555e23d0cc7bad298ef5041e5acc51",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno-5.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno.jpg",
+      "size": 107807,
+      "gitBlobSha": "7434869fd80b56bf3868afadac0a754783fdf8d8",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/hotel-indigo-puerto-baquerizo-moreno.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/sea-side-Lodge.jpg",
+      "size": 53704,
+      "gitBlobSha": "ea38c2fbc73df3ce2ee425c1bc3682c6283b33e7",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/sea-side-Lodge.jpg",
+      "category": "website-source-image-unverified-provenance"
+    },
+    {
+      "path": "sportfish-images/travel/travel-hero.webp",
+      "size": 211342,
+      "gitBlobSha": "0c7d7fef7ec5af4171001afb8d304d86b224051a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/travel/travel-hero.webp",
+      "category": "website-source-image-unverified-provenance",
+      "duplicateOf": "docs/sportfish-images/travel/travel-hero.webp"
+    },
+    {
+      "path": "sportfish-images/unsplash images/amy-perez-EN24LvCaHw0-unsplash.jpg",
+      "size": 3456682,
+      "gitBlobSha": "4ee8c639327e802e78326ca216a8adad1fd1bdea",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/amy-perez-EN24LvCaHw0-unsplash.jpg",
+      "category": "stock-reference-images",
+      "duplicateOf": "docs/sportfish-images/unsplash/amy-perez.jpg"
+    },
+    {
+      "path": "sportfish-images/unsplash images/christine-ellsay-JAXbGerC7nc-unsplash.jpg",
+      "size": 1099895,
+      "gitBlobSha": "f50ac49a954671063e4fa2736f8c0c4e9ca19af0",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/christine-ellsay-JAXbGerC7nc-unsplash.jpg",
+      "category": "stock-reference-images",
+      "duplicateOf": "docs/sportfish-images/unsplash/christine-ellsay.jpg"
+    },
+    {
+      "path": "sportfish-images/unsplash images/david-torres-nFKq0v9gd2E-unsplash.jpg",
+      "size": 7086736,
+      "gitBlobSha": "2bff686ce7c1cb636082ac8502f46d0134e23c56",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/david-torres-nFKq0v9gd2E-unsplash.jpg",
+      "category": "stock-reference-images"
+    },
+    {
+      "path": "sportfish-images/unsplash images/dustin-haney-s6B6mlgqIjk-unsplash.jpg",
+      "size": 6197595,
+      "gitBlobSha": "58ec64d4acdcf5c148b3997cf29034856d1a3125",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/dustin-haney-s6B6mlgqIjk-unsplash.jpg",
+      "category": "stock-reference-images"
+    },
+    {
+      "path": "sportfish-images/unsplash images/hans-jurgen-mager-waK1IVkVUBY-unsplash.jpg",
+      "size": 4745067,
+      "gitBlobSha": "1c714281db25b2e19b4018788274ce66b90c747a",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/hans-jurgen-mager-waK1IVkVUBY-unsplash.jpg",
+      "category": "stock-reference-images",
+      "duplicateOf": "docs/sportfish-images/unsplash/hans-jurgen-iguana.jpg"
+    },
+    {
+      "path": "sportfish-images/unsplash images/heidi-bruce-x3MzkGHn5Ac-unsplash.jpg",
+      "size": 6142217,
+      "gitBlobSha": "2e163e797227553f6a101d6fe85893085c0d1f09",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/heidi-bruce-x3MzkGHn5Ac-unsplash.jpg",
+      "category": "stock-reference-images"
+    },
+    {
+      "path": "sportfish-images/unsplash images/heidi-bruce-xB8vPvpV4n0-unsplash.jpg",
+      "size": 1770799,
+      "gitBlobSha": "a7562361ea138eb3837a6fc55a78a257361083e4",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/heidi-bruce-xB8vPvpV4n0-unsplash.jpg",
+      "category": "stock-reference-images",
+      "duplicateOf": "docs/sportfish-images/unsplash/heidi-bruce.jpg"
+    },
+    {
+      "path": "sportfish-images/unsplash images/istockphoto-1283566570-1024x1024.jpg",
+      "size": 125000,
+      "gitBlobSha": "b2388031e1a8869988b0faa8ac9ad5e5092b3719",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/istockphoto-1283566570-1024x1024.jpg",
+      "category": "stock-reference-images"
+    },
+    {
+      "path": "sportfish-images/unsplash images/nicolas-martin-2rWejl1BABE-unsplash.jpg",
+      "size": 3376492,
+      "gitBlobSha": "3a3bcf68d653363204c976c2811e6a63a48df639",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/nicolas-martin-2rWejl1BABE-unsplash.jpg",
+      "category": "stock-reference-images",
+      "duplicateOf": "docs/sportfish-images/unsplash/nicolas-martin-kicker-rock.jpg"
+    },
+    {
+      "path": "sportfish-images/unsplash images/simon-qOmxP7W8svM-unsplash.jpg",
+      "size": 2457637,
+      "gitBlobSha": "de28f63717d04680ae05ab8195974591ae8fe672",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/simon-qOmxP7W8svM-unsplash.jpg",
+      "category": "stock-reference-images",
+      "duplicateOf": "docs/sportfish-images/unsplash/simon-iguana-lava.jpg"
+    },
+    {
+      "path": "sportfish-images/unsplash images/sonder-quest-NAk2S9R0iuI-unsplash.jpg",
+      "size": 7137016,
+      "gitBlobSha": "5dcc18e73b6838b7c91f2ffe5d6825cf4524bda5",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/sonder-quest-NAk2S9R0iuI-unsplash.jpg",
+      "category": "stock-reference-images"
+    },
+    {
+      "path": "sportfish-images/unsplash images/wyatt-n-lFc95Ygm0lk-unsplash.jpg",
+      "size": 1950144,
+      "gitBlobSha": "5bd9dad32a5973250b1e3a17cd08a5f4f28a85ea",
+      "url": "https://github.com/liza-bam/fishing/blob/002c53c438558f752584ec2f2b6e919c2f48067c/sportfish-images/unsplash%20images/wyatt-n-lFc95Ygm0lk-unsplash.jpg",
+      "category": "stock-reference-images",
+      "duplicateOf": "docs/sportfish-images/unsplash/wyatt-iguana-surf.jpg"
+    }
+  ]
+}

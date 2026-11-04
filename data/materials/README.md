@@ -28,3 +28,10 @@ Builder-compatible CSVs for every client property. Original review text, ratings
 | Saddleback Lodge | 338 | [Download / view CSV](saddleback-lodge/reviews.csv) |
 | Saddleback Chalet | 135 | [Download / view CSV](saddleback-ski-lodge-lazy-vacations/reviews.csv) |
 | Retreat House w Garden/3km to Dalat market | 37 | [Download / view CSV](uom-retreat/reviews.csv) |
+
+## Custom website source collections
+
+Al DiFlumeri is a Proposed client with two non-Airbnb projects. Their existing public repositories retain source images, redesign assets and design files. The linked inventories distinguish those from newly archived originals.
+
+- [Sportfish Galapagos](sportfish-galapagos/README.md): 278 image paths, 185 distinct image blobs, plus the strategy brief.
+- [Lakewood Camps](lakewood-camps/README.md): 112 image paths, 84 distinct image blobs, plus an Illustrator logo file.

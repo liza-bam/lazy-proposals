@@ -1,0 +1,57 @@
+{
+  "id": "al-diflumeri",
+  "name": "Al DiFlumeri",
+  "kind": "other",
+  "status": "proposed",
+  "business": "Sportfish Galapagos & Lakewood Camps",
+  "platform": "Custom websites · GitHub Pages",
+  "email": "info@sportfishgalapagos.com",
+  "phone": "+1 617-544-3188",
+  "login": "",
+  "siteUrl": "https://liza-bam.github.io/fishing/",
+  "driveUrl": "",
+  "notes": "Proposed client. Not an Airbnb lead. Two custom website projects: Sportfish Galapagos and Lakewood Camps. Status and association with both projects were supplied by the user on 2026-11-04.\n\nIdentity: Sportfish Galapagos's Our Story page names Peter and Al. The International Game Fish Association names Al DiFlumeri and Pete Santini as Sportfish Galapagos contributors. The public Sportfish contact page lists info@sportfishgalapagos.com and +1 617-544-3188; these are shared business contacts, not a verified personal email or direct line for Al. The separate charter landing page lists (781) 926-1141. Confirm the preferred correspondence route before sending.\n\nSportfish Galapagos\nOriginal: https://sportfishgalapagos.com/\nCreated website: https://liza-bam.github.io/fishing/\nAdditional public landing page: https://galapagosfishingcharter.com/\nSource repository: https://github.com/liza-bam/fishing\nMaterials: https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/sportfish-galapagos/README.md\n\nLakewood Camps\nOriginal: https://www.lakewoodcamps.com/\nCreated website: https://liza-bam.github.io/Lakewood/\nSource repository: https://github.com/liza-bam/Lakewood\nMaterials: https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/lakewood-camps/README.md\nPublic reservations contact: reservations@lakewoodcamps.com, (207) 303-4699. This is a business booking contact, not a verified personal contact for Al.\n\nResearch coverage: public original sites, both public project repositories, source asset inventories and Sportfish strategy brief. Private correspondence and account reconciliation are not included in this public record. No message delivery, launch acceptance, billing start or proposal-sent date is inferred.",
+  "partners": [
+    {
+      "name": "Peter (Pete) Santini",
+      "business": "Sportfish Galapagos",
+      "role": "Named alongside Al in public Sportfish/IGFA sources; no recipient or account permissions inferred."
+    }
+  ],
+  "properties": [
+    {
+      "id": "sportfish-galapagos",
+      "name": "Sportfish Galapagos",
+      "siteUrl": "https://liza-bam.github.io/fishing/",
+      "originalSiteUrl": "https://sportfishgalapagos.com/"
+    },
+    {
+      "id": "lakewood-camps",
+      "name": "Lakewood Camps",
+      "siteUrl": "https://liza-bam.github.io/Lakewood/",
+      "originalSiteUrl": "https://www.lakewoodcamps.com/"
+    }
+  ],
+  "proposals": [],
+  "timeline": {},
+  "createdAt": "2026-11-04T20:05:00Z",
+  "updatedAt": "2026-11-04T20:05:00Z",
+  "sources": [
+    {
+      "url": "https://sportfishgalapagos.com/our-story/",
+      "supports": "Peter and Al; owner-operated Galapagos business context"
+    },
+    {
+      "url": "https://sportfishgalapagos.com/contact/",
+      "supports": "Public shared business contact details"
+    },
+    {
+      "url": "https://igfa.org/2025/12/19/the-42nd-igfa-international-auction-january-24th-in-fort-lauderdale-online-worldwide/",
+      "supports": "Full name Al DiFlumeri, named with Pete Santini for Sportfish Galapagos"
+    },
+    {
+      "url": "https://www.lakewoodcamps.com/",
+      "supports": "Lakewood business contact and original site"
+    }
+  ]
+}
