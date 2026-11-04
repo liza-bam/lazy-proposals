@@ -23,13 +23,23 @@
       "siteUrl": "https://xytor.lazy.vacations/"
     }
   ],
-  "proposals": [],
+  "proposals": [
+    {
+      "token": "mw2fyfzs",
+      "date": "2026-11-04",
+      "properties": [
+        "xytor"
+      ],
+      "path": "proposals/clients/eugene-baron/mw2fyfzs/",
+      "pdf": true
+    }
+  ],
   "timeline": {
     "confirmation": "skip",
     "request": "2026-11-04"
   },
   "createdAt": "2026-11-04T17:14:13.703440Z",
-  "updatedAt": "2026-11-04T18:19:29.376Z",
+  "updatedAt": "2026-11-04T18:19:43.425Z",
   "contactPreference": "Text before calling.",
   "emailHistory": [
     {
