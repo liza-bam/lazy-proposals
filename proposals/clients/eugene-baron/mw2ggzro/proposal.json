@@ -1,0 +1,25 @@
+{
+  "id": "eugene-baron",
+  "clientId": "eugene-baron",
+  "propertyIds": [
+    "xytor"
+  ],
+  "properties": [
+    {
+      "id": "xytor",
+      "name": "Emerald Lake Club (HutorSki)",
+      "siteUrl": "https://xytor.lazy.vacations/"
+    }
+  ],
+  "to": "Hutorski@gmail.com",
+  "subject": "Your website for Emerald Lake Club (HutorSki) is ready",
+  "attachName": "LAZY proposal - Emerald Lake Club (HutorSki).pdf",
+  "fields": {
+    "owner": "Eugene Baron",
+    "first": "Eugene",
+    "login": "baron",
+    "intro": "We're so glad you're here. Your new website for Emerald Lake Club (HutorSki) is ready, and everything you need to get started is below."
+  },
+  "renderer": "pdfkit-0.15.2",
+  "made": "2026-11-04T18:34:06.931Z"
+}
