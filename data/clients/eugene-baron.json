@@ -4,7 +4,7 @@
   "email": "Hutorski@gmail.com",
   "login": "baron",
   "phone": "914-319-9108",
-  "notes": "Business correspondence: use Hutorski@gmail.com, as directed by Alexandra on 2026-11-04. Existing LAZY account is baron, registered to ebaron@gmail.com; the account has not been changed. Property is called Hutor/HutorSki in correspondence and Emerald Lake Club in the live site/admin. Partners: Max Adelman (maxim.adelman@gmail.com) and Anton Matskovski (Anton.Matskovski@gmail.com). Partner roles, account access and authority to receive every communication are not established. Eugene requested login/editing tools in his 2026-11-03 HutorSki web site email. Admin shows onboarding email sent to ebaron@gmail.com; actual delivery and successful login are not verified.\n\nPhone: 914-319-9108. Text before calling.\n\nEmail history (Pacific time):\n2026-11-01 17:46 — Sasha - Zhenya, Zhenya - Sasha: Yuri introduced Eugene (Zhenya) and supplied Airbnb listing https://www.airbnb.com/rooms/21642453.\n2026-11-02 07:06 — Re: Sasha - Zhenya, Zhenya - Sasha: Eugene provided phone 914-319-9108 and asked to text before calling.\n2026-11-03 12:49 — HutorSki web site: Eugene introduced partners Max Adelman (maxim.adelman@gmail.com) and Anton Matskovski (Anton.Matskovski@gmail.com) and requested login/editing tools.\n2026-11-04 09:06 — Re: HutorSki web site: Eugene requested shared business mailbox Hutorski@gmail.com for the account, saying it is the address they all receive. This records the request; the existing admin account email has not been changed.\n\nThese email-history dates do not establish website-ready email delivery or billing commencement.",
+  "notes": "Business correspondence: use Hutorski@gmail.com, as directed by Alexandra on 2026-11-04. Existing LAZY account login is baron. It was verified with ebaron@gmail.com; Alexandra subsequently reported that the admin email is fixed. That correction has not been independently reverified. Retain ebaron@gmail.com as an alternate contact. Property is called Hutor/HutorSki in correspondence and Emerald Lake Club in the live site/admin. Partners: Max Adelman (maxim.adelman@gmail.com) and Anton Matskovski (Anton.Matskovski@gmail.com). Partner roles, account access and authority to receive every communication are not established. Eugene requested login/editing tools in his 2026-11-03 HutorSki web site email. Admin shows onboarding email sent to ebaron@gmail.com; actual delivery and successful login are not verified.\n\nPhone: 914-319-9108. Text before calling.\n\nEmail history (Pacific time):\n2026-11-01 17:46 — Sasha - Zhenya, Zhenya - Sasha: Yuri introduced Eugene (Zhenya) and supplied Airbnb listing https://www.airbnb.com/rooms/21642453.\n2026-11-02 07:06 — Re: Sasha - Zhenya, Zhenya - Sasha: Eugene provided phone 914-319-9108 and asked to text before calling.\n2026-11-03 12:49 — HutorSki web site: Eugene introduced partners Max Adelman (maxim.adelman@gmail.com) and Anton Matskovski (Anton.Matskovski@gmail.com) and requested login/editing tools.\n2026-11-04 09:06 — Re: HutorSki web site: Eugene requested shared business mailbox Hutorski@gmail.com for the account, saying it is the address they all receive. Alexandra subsequently reported that the admin email is fixed; this has not been independently reverified.\n\nThese email-history dates do not establish website-ready email delivery or billing commencement.",
   "partners": [
     {
       "name": "Max Adelman",
@@ -26,7 +26,7 @@
   "proposals": [],
   "timeline": {},
   "createdAt": "2026-11-04T17:14:13.703440Z",
-  "updatedAt": "2026-11-04T17:23:48.875Z",
+  "updatedAt": "2026-11-04T17:31:39.999Z",
   "contactPreference": "Text before calling.",
   "emailHistory": [
     {
@@ -55,7 +55,7 @@
       "time": "09:06",
       "timeZone": "America/Los_Angeles",
       "subject": "Re: HutorSki web site",
-      "summary": "Eugene requested shared business mailbox Hutorski@gmail.com for the account, saying it is the address they all receive. This records the request; the existing admin account email has not been changed."
+      "summary": "Eugene requested shared business mailbox Hutorski@gmail.com for the account, saying it is the address they all receive. Alexandra subsequently reported that the admin email is fixed; this has not been independently reverified."
     }
   ]
 }
