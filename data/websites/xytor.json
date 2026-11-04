@@ -14,13 +14,13 @@
   "amenitiesGroups": "Layout\n- 8 bedrooms\n- 19 beds\n- 3.5 bathrooms\n- Sleeps 16+\n- Extra guests by arrangement, $40+ per night above 16\n\nScenic views\n- Mountain view\n\nBathroom\n- Hair dryer\n- Cleaning products\n- Shampoo\n- Hot water\n\nBedroom and laundry\n- Free washer in unit\n- Free dryer in unit\n- Essentials: towels, bed sheets, soap, toilet paper\n- Hangers\n- Bed linens\n- Iron\n\nEntertainment\n- 41 inch HDTV with Roku\n- Sound system\n- Ping pong table\n- Pool table\n- Books and reading material\n\nFamily\n- Pack 'n play / travel crib\n\nHeating and cooling\n- Portable air conditioning\n- Heating\n\nHome safety\n- Exterior security cameras: parking, owners' house and backyard\n- Smoke alarm\n- Carbon monoxide alarm\n- Fire extinguisher\n\nInternet and office\n- Wifi\n- Dedicated workspace in a common space\n\nKitchen and dining\n- Kitchen for cooking your own meals\n- Refrigerator\n- Microwave\n- Cooking basics: pots, pans, oil, salt and pepper\n- Dishes and silverware\n- Freezer\n- Dishwasher\n- Stove\n- Oven\n- Hot water kettle\n- Coffee maker\n- Wine glasses\n- Baking sheet\n- Blender\n- Rice maker\n- Barbecue utensils\n- Dining table\n\nLocation features\n- Beach access: nearby beach\n- Lake access: path or dock\n- Private entrance\n\nOutdoor\n- Private patio or balcony\n- Shared backyard, not fully fenced\n- Fire pit\n- Outdoor furniture\n- Hammock\n- Outdoor dining area\n- BBQ grill\n\nParking and facilities\n- Free parking on premises\n- EV charger, level 2: 220 volts, 12–35 miles per hour\n\nServices\n- Pets allowed; assistance animals always allowed\n- Luggage dropoff allowed\n- Long term stays allowed: 28 days or more\n- Self check-in, smart lock",
   "reviews": "77 original Airbnb review records from the existing Emerald Lake Club intake, captured 2026-11-02. Exact original reviews.csv archived without rewriting; SHA-256 df70cb0298d85653af38653f2490809899b768d488fa833a429618b11ffaefdb. Fields: name, review, rating, date, location, stay, source. Dates August 2020–October 2026. Comparison to published website found identical substantive fields; only source capitalization differs.",
   "additionalSources": "Public website: https://xytor.lazy.vacations/ ; Airbnb: https://www.airbnb.com/rooms/21642453 . Identity and partner details reconciled with Apple Mail correspondence and admin account/property records on 2026-11-04. Existing website has 27 photo-library items; imageLink points to that website, not a separately archived photo collection.\nAirbnb listing was supplied in Yuri's introduction on 2026-11-01. Dated correspondence and contact preferences are preserved in the Eugene Baron client record.\nOriginal reviews.csv located in the existing Emerald Lake Club intake and archived unchanged. Existing source/reviews-raw.txt is 31,895 bytes. A separate local collection has 75 original JPG photos (21,474,528 bytes); the public website uses 27 derivatives.",
-  "missing": "Alexandra reports that the admin email is fixed; not independently reverified. Property inquiry delivery recipient remains unverified. Do not change account or website settings without further instruction. Confirm onboarding delivery and client access. Original reviews.csv is archived and linked. The 75-photo original collection and raw review text still need HQ archiving; photo upload has not completed. Partner roles and access permissions are not established. Do not infer billing commencement from account onboarding email.",
+  "missing": "Alexandra reports that the admin email is fixed; not independently reverified. Property inquiry delivery recipient remains unverified. Do not change account or website settings without further instruction. Confirm onboarding delivery and client access. Original reviews.csv is archived and linked. The original CSV and raw review text are archived. The 75-photo original collection still needs HQ archiving; photo upload has not completed. Partner roles and access permissions are not established. Do not infer billing commencement from account onboarding email.",
   "timeline": {
     "built": "2026-11-02",
     "launch": "2026-11-02"
   },
   "createdAt": "2026-11-04T17:14:13.703440Z",
-  "updatedAt": "2026-11-04T17:42:09.731Z",
+  "updatedAt": "2026-11-04T17:44:41.804Z",
   "reviewRepository": {
     "url": "https://github.com/liza-bam/lazy-proposals/blob/main/data/materials/xytor/reviews.csv",
     "csvUrl": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/xytor/reviews.csv",
@@ -45,6 +45,13 @@
       "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/xytor/reviews.csv",
       "size": 30497,
       "sha256": "df70cb0298d85653af38653f2490809899b768d488fa833a429618b11ffaefdb"
+    },
+    {
+      "kind": "reviews",
+      "name": "source/reviews-raw.txt",
+      "url": "https://raw.githubusercontent.com/liza-bam/lazy-proposals/main/data/materials/xytor/source/reviews-raw.txt",
+      "size": 31895,
+      "sha256": "07af23a73f2db618aebc661bbda171d85cb4c2701cac522904d29e2e699bc8ff"
     }
   ]
 }
