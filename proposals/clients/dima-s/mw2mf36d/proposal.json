@@ -1,0 +1,25 @@
+{
+  "id": "dima-s",
+  "clientId": "dima-s",
+  "propertyIds": [
+    "milford-sound-beach-house"
+  ],
+  "properties": [
+    {
+      "id": "milford-sound-beach-house",
+      "name": "Milford Sound Beach House",
+      "siteUrl": "https://milford-by-the-sea.lazy.vacations/"
+    }
+  ],
+  "to": "yuri.shlyakhter@gmail.com",
+  "subject": "Your website for Milford Sound Beach House is ready",
+  "attachName": "LAZY proposal - Milford Sound Beach House.pdf",
+  "fields": {
+    "owner": "Dmitry Talisman",
+    "first": "Dmitry and Yura",
+    "login": "dima",
+    "intro": "We're so glad you're here. Your new website for Milford Sound Beach House is ready, and everything you need to get started is below."
+  },
+  "renderer": "pdfkit-0.15.2",
+  "made": "2026-11-04T21:20:35.679Z"
+}
